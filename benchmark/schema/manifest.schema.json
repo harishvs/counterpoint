@@ -21,7 +21,7 @@
   "$defs": {
     "source": {
       "type": "object",
-      "required": ["evidence_id", "urls", "sha256", "file_name"],
+      "required": ["evidence_id", "urls", "file_name"],
       "properties": {
         "evidence_id": {
           "type": "string",
@@ -67,6 +67,10 @@
           "type": "string",
           "format": "date",
           "description": "When the URL was last verified"
+        },
+        "youtube_id": {
+          "type": "string",
+          "description": "YouTube video ID for yt-dlp download (age-restricted videos need --cookies)"
         },
         "notes": {
           "type": "string"

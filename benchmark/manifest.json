@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "created": "2026-10-26",
-  "description": "Evidence sources for the Counterpoint benchmark. Video/audio files are not distributed — this manifest provides download URLs to publicly available sources.",
+  "description": "Evidence sources for the Counterpoint benchmark. Video/audio files are not distributed \u2014 this manifest provides download URLs to publicly available sources.",
   "sources": [
     {
       "evidence_id": "ocda-001-valdez-pdf",
@@ -210,6 +210,234 @@
       "origin": "OCDA OIS Investigation: Clemente De Garay Mejia, Tustin PD",
       "origin_url": "https://ocdistrictattorney.gov/officer-involved-shootings/",
       "access_date": "2026-10-27"
+    },
+    {
+      "evidence_id": "ocda-001-valdez-video",
+      "file_name": "ocda-001-valdez-video.mp4",
+      "urls": [
+        "https://archive.org/download/ocda-report-officer-involved-shooting-jose-david-valdez-yezm-8dyx-omi/OCDA%20REPORT%20OFFICER-INVOLVED%20SHOOTING%20-%20Jose%20David%20Valdez%20%5BYEzm8dyxOMI%5D.mp4",
+        "https://www.youtube.com/watch?v=YEzm8dyxOMI"
+      ],
+      "format": "mp4",
+      "youtube_id": "YEzm8dyxOMI",
+      "origin": "OCDA OIS Investigation: Jose David Valdez, Costa Mesa PD",
+      "origin_url": "https://www.youtube.com/watch?v=YEzm8dyxOMI",
+      "access_date": "2026-10-27",
+      "sha256": "038c98b6046ad0a8be1e62bb0edae1229fdfc0a3d14b3eac3ae96cd31313d5f4",
+      "file_size_bytes": 206562979
+    },
+    {
+      "evidence_id": "ocda-002-montes-video",
+      "file_name": "ocda-002-montes-video.mp4",
+      "urls": [
+        "https://archive.org/download/ocda-report-officer-involved-shooting-alejandro-sanchez-montes-b-5-kz-bb-xr-2-d-4/OCDA%20REPORT%EF%BC%9A%20OFFICER-INVOLVED%20SHOOTING%20-%20Alejandro%20Sanchez%20Montes%20%5BB5KzBbXR2D4%5D.mp4",
+        "https://www.youtube.com/watch?v=B5KzBbXR2D4"
+      ],
+      "format": "mp4",
+      "youtube_id": "B5KzBbXR2D4",
+      "origin": "OCDA OIS Investigation: Alejandro Sanchez Montes, Santa Ana PD",
+      "origin_url": "https://www.youtube.com/watch?v=B5KzBbXR2D4",
+      "access_date": "2026-10-27",
+      "sha256": "edbb69c18e8f9ab633b2f764e9d3b048c9575b4225446d009dce42eedf57f2b7",
+      "file_size_bytes": 63252630
+    },
+    {
+      "evidence_id": "ocda-003-emch-video",
+      "file_name": "ocda-003-emch-video.mp4",
+      "urls": [
+        "https://archive.org/download/ocda-report-officer-involved-shooting-michael-emch-kdsa-dvym-7w-8/OCDA%20REPORT%EF%BC%9A%20OFFICER-INVOLVED%20SHOOTING%20-%20Michael%20Emch%20%5BKdsaDvym7w8%5D.mp4",
+        "https://www.youtube.com/watch?v=KdsaDvym7w8"
+      ],
+      "format": "mp4",
+      "youtube_id": "KdsaDvym7w8",
+      "origin": "OCDA OIS Investigation: Michael Emch Jr, Seal Beach PD",
+      "origin_url": "https://www.youtube.com/watch?v=KdsaDvym7w8",
+      "access_date": "2026-10-27",
+      "sha256": "664309fa3154b312698962ad63069bdffa07eb5b561bf9bfe9837c4552a6e8b1",
+      "file_size_bytes": 170595617
+    },
+    {
+      "evidence_id": "ocda-004-vargas-video",
+      "file_name": "ocda-004-vargas-video.mp4",
+      "urls": [
+        "https://www.youtube.com/watch?v=QM3rJCuCz_0"
+      ],
+      "format": "mp4",
+      "youtube_id": "QM3rJCuCz_0",
+      "origin": "OCDA OIS Investigation: Hugo Vargas, Costa Mesa PD",
+      "origin_url": "https://www.youtube.com/watch?v=QM3rJCuCz_0",
+      "access_date": "2026-10-27",
+      "notes": "Age-restricted on YouTube; no IA mirror. Requires yt-dlp with --cookies to download."
+    },
+    {
+      "evidence_id": "ocda-005-brown-video",
+      "file_name": "ocda-005-brown-video.mp4",
+      "urls": [
+        "https://www.youtube.com/watch?v=-X4H21dTIms"
+      ],
+      "format": "mp4",
+      "youtube_id": "-X4H21dTIms",
+      "origin": "OCDA OIS Investigation: Osman Brown, Anaheim PD",
+      "origin_url": "https://www.youtube.com/watch?v=-X4H21dTIms",
+      "access_date": "2026-10-27",
+      "notes": "Age-restricted on YouTube; no IA mirror. Requires yt-dlp with --cookies to download."
+    },
+    {
+      "evidence_id": "ocda-006-sanchez-video",
+      "file_name": "ocda-006-sanchez-video.mp4",
+      "urls": [
+        "https://www.youtube.com/watch?v=8mfhxmo8cL4"
+      ],
+      "format": "mp4",
+      "youtube_id": "8mfhxmo8cL4",
+      "origin": "OCDA OIS Investigation: Raul Sanchez, Anaheim PD",
+      "origin_url": "https://www.youtube.com/watch?v=8mfhxmo8cL4",
+      "access_date": "2026-10-27",
+      "notes": "Age-restricted on YouTube; no IA mirror. Requires yt-dlp with --cookies to download."
+    },
+    {
+      "evidence_id": "ocda-007-to-video",
+      "file_name": "ocda-007-to-video.mp4",
+      "urls": [
+        "https://www.youtube.com/watch?v=DmRtfF2KWso"
+      ],
+      "format": "mp4",
+      "youtube_id": "DmRtfF2KWso",
+      "origin": "OCDA OIS Investigation: Khang Chi To, Westminster PD",
+      "origin_url": "https://www.youtube.com/watch?v=DmRtfF2KWso",
+      "access_date": "2026-10-27",
+      "notes": "Age-restricted on YouTube; no IA mirror. Requires yt-dlp with --cookies to download."
+    },
+    {
+      "evidence_id": "ocda-008-tice-video",
+      "file_name": "ocda-008-tice-video.mp4",
+      "urls": [
+        "https://archive.org/download/ocda-report-officer-involed-shooting-hunter-tice-c-bpc-xsp-6-ei/OCDA%20REPORT%EF%BC%9A%20OFFICER-INVOLED%20SHOOTING%20-%20Hunter%20Tice%20%5Bc_bpcXSP6EI%5D.mp4",
+        "https://www.youtube.com/watch?v=c_bpcXSP6EI"
+      ],
+      "format": "mp4",
+      "youtube_id": "c_bpcXSP6EI",
+      "origin": "OCDA OIS Investigation: Hunter Tice",
+      "origin_url": "https://www.youtube.com/watch?v=c_bpcXSP6EI",
+      "access_date": "2026-10-27",
+      "sha256": "606984c53ea3983b3cfb141beb40b51b0404e8889f1d7bcd5fd30709f0bbb174",
+      "file_size_bytes": 183136881
+    },
+    {
+      "evidence_id": "ocda-009-steinmetz-video",
+      "file_name": "ocda-009-steinmetz-video.mp4",
+      "urls": [
+        "https://www.youtube.com/watch?v=eF51P_XNql0"
+      ],
+      "format": "mp4",
+      "youtube_id": "eF51P_XNql0",
+      "origin": "OCDA OIS Investigation: Tobiah Paul Steinmetz, Long Beach PD",
+      "origin_url": "https://www.youtube.com/watch?v=eF51P_XNql0",
+      "access_date": "2026-10-27",
+      "notes": "Age-restricted on YouTube; no IA mirror. Requires yt-dlp with --cookies to download."
+    },
+    {
+      "evidence_id": "ocda-011-reinhold-video",
+      "file_name": "ocda-011-reinhold-video.mp4",
+      "urls": [
+        "https://archive.org/download/ocda-report-officer-involved-shooting-kurt-reinhold-ozj-t-3e-e-3u-q/OCDA%20Report%20Officer-Involved%20Shooting%20-%20Kurt%20Reinhold%20%5BOZjT3eE3u-Q%5D.mp4",
+        "https://www.youtube.com/watch?v=OZjT3eE3u-Q"
+      ],
+      "format": "mp4",
+      "youtube_id": "OZjT3eE3u-Q",
+      "origin": "OCDA OIS Investigation: Kurt Reinhold, OC Sheriff",
+      "origin_url": "https://www.youtube.com/watch?v=OZjT3eE3u-Q",
+      "access_date": "2026-10-27",
+      "sha256": "02a870be7c8f400c4a40ce97c124b5004e361a783bc97041d4233aeb8938e5b2",
+      "file_size_bytes": 98944230
+    },
+    {
+      "evidence_id": "ocda-013-wong-video",
+      "file_name": "ocda-013-wong-video.mp4",
+      "urls": [
+        "https://archive.org/download/ocda-report-officer-involved-shooting-matthew-wong-kqf-fjti-5-a-4/OCDA%20REPORT%20OFFICER-INVOLVED%20SHOOTING%20-%20Matthew%20Wong%20%5BKqf-FJti5A4%5D.mp4",
+        "https://www.youtube.com/watch?v=Kqf-FJti5A4"
+      ],
+      "format": "mp4",
+      "youtube_id": "Kqf-FJti5A4",
+      "origin": "OCDA OIS Investigation: Matthew Wong, Placentia PD",
+      "origin_url": "https://www.youtube.com/watch?v=Kqf-FJti5A4",
+      "access_date": "2026-10-27",
+      "sha256": "165941120ff13c0e7c3f59e820a31f6b2a770082e7f6c05366f750e1958a4615",
+      "file_size_bytes": 343360667
+    },
+    {
+      "evidence_id": "ocda-014-tran-video",
+      "file_name": "ocda-014-tran-video.mp4",
+      "urls": [
+        "https://archive.org/download/ocda-report-officer-involved-shooting-matthew-tuan-ahn-tran-peq-vt-c-1-yn-4k/OCDA%20REPORT%20OFFICER-INVOLVED%20SHOOTING%20-%20Matthew-Tuan%20Ahn%20Tran%20%5BPEqVtC1Yn4k%5D.mp4",
+        "https://www.youtube.com/watch?v=PEqVtC1Yn4k"
+      ],
+      "format": "mp4",
+      "youtube_id": "PEqVtC1Yn4k",
+      "origin": "OCDA OIS Investigation: Matthew-Tuan Ahn Tran, La Habra PD",
+      "origin_url": "https://www.youtube.com/watch?v=PEqVtC1Yn4k",
+      "access_date": "2026-10-27",
+      "sha256": "a364c3238414b333cf60093a0c6dbe51a2ec9b86394a0b9b6aa342c74b84356a",
+      "file_size_bytes": 107000216
+    },
+    {
+      "evidence_id": "ocda-015-baxter-video",
+      "file_name": "ocda-015-baxter-video.mp4",
+      "urls": [
+        "https://archive.org/download/ocda-report-officer-involved-shooting-cedric-baxter-x-jf-5-f-ubn-1c/OCDA%20REPORT%EF%BC%9A%20OFFICER-INVOLVED%20SHOOTING%20-%20Cedric%20Baxter%20%5BxJF5_fUBn1c%5D.mp4",
+        "https://www.youtube.com/watch?v=xJF5_fUBn1c"
+      ],
+      "format": "mp4",
+      "youtube_id": "xJF5_fUBn1c",
+      "origin": "OCDA OIS Investigation: Cedric Baxter, Buena Park PD",
+      "origin_url": "https://www.youtube.com/watch?v=xJF5_fUBn1c",
+      "access_date": "2026-10-27",
+      "sha256": "8a829aafa26a0bb7c707c84a9553167f7086ea010b9963dc2852807f6ac80bad",
+      "file_size_bytes": 208412365
+    },
+    {
+      "evidence_id": "ocda-016-salac-video",
+      "file_name": "ocda-016-salac-video.mp4",
+      "urls": [
+        "https://www.youtube.com/watch?v=-TSzqer7D7Q"
+      ],
+      "format": "mp4",
+      "youtube_id": "-TSzqer7D7Q",
+      "origin": "OCDA OIS Investigation: Sunshine Kamille Salac",
+      "origin_url": "https://www.youtube.com/watch?v=-TSzqer7D7Q",
+      "access_date": "2026-10-27",
+      "notes": "Age-restricted on YouTube; no IA mirror. Requires yt-dlp with --cookies to download."
+    },
+    {
+      "evidence_id": "ocda-017-aguirre-video",
+      "file_name": "ocda-017-aguirre-video.mp4",
+      "urls": [
+        "https://archive.org/download/ocda-report-officer-involved-shooting-randolph-valendino-aguirre-05f-urk-la-ycc/OCDA%20Report%20Officer-Involved%20Shooting%20-%20Randolph%20Valendino%20Aguirre%20%5B05fURkLaYcc%5D.mp4",
+        "https://www.youtube.com/watch?v=05fURkLaYcc"
+      ],
+      "format": "mp4",
+      "youtube_id": "05fURkLaYcc",
+      "origin": "OCDA OIS Investigation: Randolph Aguirre, La Habra PD",
+      "origin_url": "https://www.youtube.com/watch?v=05fURkLaYcc",
+      "access_date": "2026-10-27",
+      "sha256": "21a870adac2c9337df0c468180665bfbc178c2d776172316be849c91727f688b",
+      "file_size_bytes": 641225782
+    },
+    {
+      "evidence_id": "ocda-018-mejia-video",
+      "file_name": "ocda-018-mejia-video.mp4",
+      "urls": [
+        "https://archive.org/download/ocda-report-officer-involved-shooting-clemente-de-garay-mejia-s-dmtt-564-dww/OCDA%20REPORT%EF%BC%9A%20OFFICER-INVOLVED%20SHOOTING%20-%20Clemente%20De%20Garay%20Mejia%20%5BsDMtt564DWw%5D.mp4",
+        "https://www.youtube.com/watch?v=sDMtt564DWw"
+      ],
+      "format": "mp4",
+      "youtube_id": "sDMtt564DWw",
+      "origin": "OCDA OIS Investigation: Clemente De Garay Mejia, Tustin PD",
+      "origin_url": "https://www.youtube.com/watch?v=sDMtt564DWw",
+      "access_date": "2026-10-27",
+      "sha256": "cdb5501a1cf2a23f8582ac2dc1352d9585b984df165d33d3f9cd9e560625096b",
+      "file_size_bytes": 112579035
     }
   ]
 }

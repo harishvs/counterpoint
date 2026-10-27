@@ -14,9 +14,10 @@
 
 ## Next: Populate manifest with verified cases
 - [x] Download OCDA PDFs, verify URLs still work (16/18 alive; Hernandez + Nava 404'd, dropped)
-- [ ] Grab YouTube and Internet Archive URLs for each video
-- [x] Compute SHA-256 hashes for all PDF files
-- [x] Populate manifest.json with 16 PDF sources
+- [x] Grab YouTube and Internet Archive URLs for each video (16/16 YT alive, 10 IA mirrors verified)
+- [x] Compute SHA-256 hashes for all files (16 PDFs + 10 IA videos; 6 YT-only need cookies)
+- [x] Populate manifest.json with all sources (32 entries: 16 PDFs + 16 videos)
+- [x] Add yt-dlp support to download.py for age-restricted YouTube videos
 - [ ] Test download.py end-to-end (fresh download from empty evidence/)
 
 ## Next: Create annotations
