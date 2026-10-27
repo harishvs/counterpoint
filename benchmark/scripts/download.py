@@ -6,8 +6,9 @@ Usage:
     python3 -I scripts/download.py --list              # list sources without downloading
     python3 -I scripts/download.py --cookies cookies.txt  # pass cookies for age-restricted YouTube
 
-For age-restricted YouTube videos (officer-involved shooting footage), you need
-to export browser cookies. See: https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp
+For age-restricted YouTube videos (officer-involved shooting footage), use Firefox
+cookies. Chrome cookie extraction is unreliable. Example:
+    python3 -I scripts/download.py --cookies-from-browser firefox
 """
 
 import argparse
@@ -53,7 +54,8 @@ def download_http(url: str, dest: Path) -> bool:
         return False
 
 
-def download_ytdlp(youtube_id: str, dest: Path, cookies: str | None = None) -> bool:
+def download_ytdlp(youtube_id: str, dest: Path, cookies: str | None = None,
+                    cookies_from_browser: str | None = None) -> bool:
     if not shutil.which("yt-dlp"):
         print("    yt-dlp not installed (pip install yt-dlp)")
         return False
@@ -62,10 +64,13 @@ def download_ytdlp(youtube_id: str, dest: Path, cookies: str | None = None) -> b
         "yt-dlp",
         "-f", "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best",
         "--merge-output-format", "mp4",
+        "--remote-components", "ejs:github",
         "-o", str(dest),
         "--no-playlist",
     ]
-    if cookies:
+    if cookies_from_browser:
+        cmd.extend(["--cookies-from-browser", cookies_from_browser])
+    elif cookies:
         cmd.extend(["--cookies", cookies])
 
     cmd.append(f"https://www.youtube.com/watch?v={youtube_id}")
@@ -87,7 +92,8 @@ def download_ytdlp(youtube_id: str, dest: Path, cookies: str | None = None) -> b
         return False
 
 
-def download_source(source: dict, force: bool = False, cookies: str | None = None) -> bool:
+def download_source(source: dict, force: bool = False, cookies: str | None = None,
+                     cookies_from_browser: str | None = None) -> bool:
     evidence_id = source["evidence_id"]
     file_name = source["file_name"]
     dest = EVIDENCE_DIR / file_name
@@ -111,7 +117,7 @@ def download_source(source: dict, force: bool = False, cookies: str | None = Non
             if not youtube_id:
                 continue
             print(f"  {evidence_id}: downloading via yt-dlp...")
-            if download_ytdlp(youtube_id, dest, cookies):
+            if download_ytdlp(youtube_id, dest, cookies, cookies_from_browser):
                 return _verify(evidence_id, dest, expected_hash)
         else:
             print(f"  {evidence_id}: downloading from {url}")
@@ -142,6 +148,7 @@ def main():
     parser.add_argument("--force", action="store_true", help="Re-download even if file exists")
     parser.add_argument("--list", action="store_true", help="List sources without downloading")
     parser.add_argument("--cookies", help="Path to cookies.txt for age-restricted YouTube videos")
+    parser.add_argument("--cookies-from-browser", help="Browser to extract cookies from (e.g. firefox)")
     args = parser.parse_args()
 
     manifest = load_manifest()
@@ -179,7 +186,8 @@ def main():
     ok = 0
     fail = 0
     for source in sources:
-        if download_source(source, force=args.force, cookies=args.cookies):
+        if download_source(source, force=args.force, cookies=args.cookies,
+                           cookies_from_browser=args.cookies_from_browser):
             ok += 1
         else:
             fail += 1
