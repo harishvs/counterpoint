@@ -1,0 +1,252 @@
+{
+  "scenario_id": "sc-009",
+  "evidence_id": "ocda-009-steinmetz-video",
+  "report_id": "sc-009_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-10-27",
+  "scenario_summary": "Officer pursues a stolen Mercedes at high speed through Laguna Beach. After a PIT maneuver stops the vehicle, the unarmed subject exits and advances toward officers while simulating having a gun. Officer fires six rounds; subject is ultimately tased and survives. Based on OCDA OIS investigation of Tobiah Paul Steinmetz, Laguna Beach PD, Mar 11 2021.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "I exited my patrol vehicle and began approaching the vehicle on the passenger side.",
+      "report_location": "Narrative, paragraph 2, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Radel exited his vehicle and approached the Mercedes on the driver's side, not the passenger side."
+        }
+      ],
+      "explanation": "The DA letter states Officer Radel exited and approached Steinmetz on the driver's side. The report places the approach on the passenger side.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The driver abruptly accelerated away from the traffic stop, making a hard-right turn across oncoming traffic.",
+      "report_location": "Narrative, paragraph 2, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Steinmetz made a hard-left turn, not a hard-right turn, and quickly accelerated away from Officer Radel."
+        }
+      ],
+      "explanation": "The DA investigation states Steinmetz 'suddenly made a hard-left turn.' The report says hard-right — a directional error.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "During the pursuit, the subject collided with two civilian vehicles, causing one vehicle to overturn.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Steinmetz collided with multiple cars. One vehicle was caused to veer off the road and another flipped and ended up on its side — two vehicles were seriously affected."
+        }
+      ],
+      "explanation": "The DA letter says the collision caused one vehicle to flip and another to end up on its side — that's two vehicles with major damage. The report says only one overturned, minimizing the scope of the collisions.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Laguna Beach Police officers successfully deployed a spike strip, which caused all four tires of the Mercedes to deflate.",
+      "report_location": "Narrative, paragraph 4, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The spike strip was deployed and caused severe tire damage. Three of the four tires fell off the rims, not all four."
+        }
+      ],
+      "explanation": "The DA letter states three of the four tires fell off the rims. The report claims all four tires deflated — an exaggeration of the spike strip's effect.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "My patrol unit, Officer Trujillo's unit, and Sergeant Holt's unit took positions approximately 15 feet from the stopped Mercedes.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Three police units positioned approximately 15 feet from the Mercedes, consistent with the DA investigation."
+        }
+      ],
+      "explanation": "The DA letter confirms three units were approximately 15 feet away. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "I observed the subject remain seated in the driver's seat for approximately 30 seconds, appearing to look around the interior of the vehicle.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Steinmetz exited the vehicle less than 15 seconds after the Mercedes came to a stop, at 6:38:54 PM. He did not remain seated for 30 seconds."
+        }
+      ],
+      "explanation": "The DA letter states Steinmetz exited less than 15 seconds after the Mercedes stopped. The report nearly doubles this duration to 30 seconds, exaggerating how long the officer had to assess the situation.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject placed his left hand behind his back and made a distinct reaching motion toward his left hip area.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Upon exiting, Steinmetz stepped backward and put both hands to his right hip, not left hand to left hip. He also turned his right hip away from officers."
+        }
+      ],
+      "explanation": "The DA letter describes Steinmetz putting both hands immediately to his right hip, and turning his right hip away from officers. The report changes this to left hand reaching to the left hip — wrong hand, wrong side, and singles out one hand instead of both.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "I discharged my department-issued Glock 17 firearm, firing four rounds at the subject at approximately 1839 hours.",
+      "report_location": "Narrative, paragraph 7, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Six gunshots audible on bodycam audio in rapid succession."
+        }
+      ],
+      "explanation": "Forensic analysis confirmed Officer Radel fired six rounds, and six cartridge cases were recovered. The report claims only four rounds. The weapon type (Glock 17) and approximate time are accurate.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "At this point, Officer Trujillo deployed his department-issued Taser, which struck the subject and caused him to fall to the ground.",
+      "report_location": "Narrative, paragraph 8, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Officer Meyer (not Trujillo/the reporting officer's partner) announced 'Taser!' and deployed the Taser. The Taser successfully incapacitated Steinmetz.",
+          "transcript_excerpt": "Officer Meyer announces 'Taser!' before deploying."
+        }
+      ],
+      "explanation": "The DA letter states Officer Meyer announced 'Taser!' and discharged his Taser. The report attributes the Taser deployment to Officer Trujillo instead of Meyer. The Taser itself was effective — that detail is accurate.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I conducted a search of the subject's person and recovered a small black semi-automatic pistol from the subject's right front waistband area.",
+      "report_location": "Narrative, paragraph 9, sentence 3",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "No firearm was found on Steinmetz. BWC footage after the shooting clearly shows Steinmetz drops his hands and is visibly not holding a weapon. Officer Meyer specifically searched Steinmetz for a gun and found none.",
+          "transcript_excerpt": "Officer Meyer can be heard stating he was searching Steinmetz for a weapon because he was 'reaching and acting like he had a gun.'"
+        }
+      ],
+      "explanation": "Steinmetz was unarmed. No weapon was recovered from his person. The DA investigation confirms he was simulating having a gun but did not actually possess one. This is a complete fabrication of physical evidence.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject reached speeds of approximately 90 miles per hour and was observed driving on the wrong side of the road and swerving into oncoming traffic.",
+      "report_location": "Narrative, paragraph 3, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Patrol video and helicopter footage show the Mercedes reaching high speeds, driving on the wrong side, and swerving into oncoming traffic."
+        }
+      ],
+      "explanation": "The DA letter confirms Steinmetz reached almost 90 mph, drove on the wrong side of the road, and swerved in and out of oncoming traffic. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Sergeant Holt broadcast over the radio that shots had been fired and a Taser had been deployed.",
+      "report_location": "Narrative, paragraph 8, sentence 4",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Sergeant Downing broadcast over radio at 6:39:23 PM that shots were fired and a Taser was deployed."
+        }
+      ],
+      "explanation": "The DA letter confirms Sergeant Downing (fictionalized as Holt) broadcast over the radio at 6:39:23 PM that shots were fired and a Taser was deployed. The content and action are accurate; only the name is fictionalized.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The subject survived his injuries, which included two gunshot wounds to the upper torso and one to the left forearm.",
+      "report_location": "Narrative, paragraph 9, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Medical records indicate three gunshot wounds: one to the upper left chest, one to the lower right abdomen, and one to the lower left forearm."
+        }
+      ],
+      "explanation": "The DA letter specifies three wounds: upper left chest, lower right abdomen, and lower left forearm. The report says 'two gunshot wounds to the upper torso' — combining chest and abdomen, but the abdomen wound was to the lower right, not the upper torso. The forearm wound is accurate. The overall count of three wounds matches but the characterization of location is misleading.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Corporal Novak successfully executed a pursuit intervention technique (PIT) maneuver, bringing the Mercedes to a stop in the southbound lane of Pacific Coast Highway.",
+      "report_location": "Narrative, paragraph 4, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Corporal Gramer (fictionalized as Novak) tapped the rear of the Mercedes, causing it to spin and stop in the southbound lane of PCH."
+        }
+      ],
+      "explanation": "The DA letter confirms the PIT maneuver was performed by Corporal Gramer (fictionalized as Novak), and the Mercedes came to a stop in the southbound lane of PCH. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject yelled profanities at the officers while continuing to make threatening gestures consistent with pointing a weapon.",
+      "report_location": "Narrative, paragraph 8, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Steinmetz yelled 'Fuck you guys!' while moving toward officers, and continued simulating having a gun."
+        }
+      ],
+      "explanation": "The DA letter confirms Steinmetz yelled profanities including 'Fuck you guys!' and 'I fucking hate this crap!' while continuing to simulate having a weapon and advancing toward officers.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}

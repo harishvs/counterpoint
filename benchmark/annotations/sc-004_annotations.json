@@ -1,0 +1,234 @@
+{
+  "scenario_id": "sc-004",
+  "evidence_id": "ocda-004-vargas-video",
+  "report_id": "sc-004_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-10-27",
+  "scenario_summary": "Officers respond to a commercial burglary alarm and find a subject inside the business armed with a knife. After a prolonged standoff, the subject emerges with a rifle and points it at officers, who open fire. The subject survives. Based on OCDA OIS investigation of Hugo Vargas, Costa Mesa PD, July 13, 2022.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Officers D. Tran and C. Webb were dispatched to the location, arriving at approximately 0518 hours.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officers arrive in marked CMPD vehicles at the business location."
+        }
+      ],
+      "explanation": "The DA investigation confirms Officers Bruno and Salem were dispatched and arrived at approximately 5:18 AM. The time is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "W-1 reported observing a male individual using a hammer to break into the business through a rear window.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Area resident reports a 'crazy man with a hammer destroying the inside' of the business."
+        }
+      ],
+      "explanation": "The resident reported the subject was destroying the inside of the business with a hammer, not that he used a hammer to break in through a rear window. The report fabricates the method of entry. The actual entry was through the front door, which had a broken window.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Officer Tran observed the subject inside the business going through cabinets and drawers while holding a large knife, approximately eight to ten inches in length, in his left hand.",
+      "report_location": "Narrative, paragraph 2, sentence 5",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject is visible rummaging through cabinets with one hand while holding the knife in the other hand."
+        }
+      ],
+      "explanation": "The DA letter does not specify which hand held the knife. However, the rifle was later described as being held in the subject's right hand. The knife hand is stated as left in the report but is unspecified in the investigation — this is a claim about a detail that may or may not be verifiable from BWC footage depending on camera angle.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Each of us was equipped with a body-worn camera.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Multiple officers have BWCs visible. However, not all arriving officers had BWCs."
+        }
+      ],
+      "explanation": "The DA investigation notes that Officer Nicolas's BWC was NOT activated prior to arrival, and the text specifies 'with the exception of Officer Nicolas, each officer's BWC was activated.' The report claims all arriving officers were equipped, but one officer did not have an active BWC.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Officer Ruiz and I approached the front doors with our handguns drawn and pointed in the low-ready position.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Two officers approach front doors with handguns drawn in low-ready position."
+        }
+      ],
+      "explanation": "The DA investigation confirms Nicolas and Bruno approached the front doors with handguns drawn and pointed in low-ready position at approximately 5:28 AM. This is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "We called out, 'Costa Mesa Police Department!' and ordered the subject to drop the knife and exit the business.",
+      "report_location": "Narrative, paragraph 3, sentence 4",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Officers call out 'Costa Mesa Police Department!' and order subject to drop the knife and exit."
+        }
+      ],
+      "explanation": "The DA investigation confirms officers called out their identification and ordered Vargas to drop the knife and exit. This is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "He turned away from the officers and began pacing through different rooms of the business.",
+      "report_location": "Narrative, paragraph 3, sentence 6",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject does not comply but instead looks toward officers and begins repeatedly stabbing the front reception desk with the knife."
+        }
+      ],
+      "explanation": "The DA investigation states that instead of complying, Vargas looked at the officers and began repeatedly stabbing the front reception desk with the knife. The report omits this aggressive knife use and instead describes benign pacing. While Vargas did eventually move through rooms, the immediate response was aggressive stabbing, not passive pacing.",
+      "discrepancy_type": "omission",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer Webb obtained a 40mm less-lethal rubber-bullet launcher and took up a position behind me.",
+      "report_location": "Narrative, paragraph 4, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Jacobi (not Webb/Salem) obtains the 40mm launcher and positions behind Officer Nicolas."
+        }
+      ],
+      "explanation": "The DA investigation states it was Officer Jacobi who armed himself with the 40mm launcher and positioned behind Officer Nicolas. The report attributes this action to the wrong officer.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Officer Tran would deploy his Taser as the less-lethal option.",
+      "report_location": "Narrative, paragraph 4, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Bruno (the first arriving officer) was designated as the Taser/less-lethal option, not the officer mapped to 'Tran' in this scenario."
+        }
+      ],
+      "explanation": "The DA investigation states Officer Bruno was designated as less-lethal cover with a Taser. Officer Bruno was mapped to Officer Tran in the report (as the first arriving officer). However, the report correctly assigns the Taser role to the first officer on scene. This claim is actually consistent with the facts when the name mapping is considered.",
+      "discrepancy_type": "none",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject emerged from a room on the southeast side of the building carrying what appeared to be a shotgun in his right hand.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject emerges from a southwest room holding a bolt-action rifle, not a shotgun."
+        }
+      ],
+      "explanation": "Two errors: (1) The subject emerged from a southwest room, not southeast. (2) The weapon was a bolt-action rifle (Remington Model 34, .22 caliber), not a shotgun. The report misidentifies both the direction and the weapon type.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject fell forward onto his back inside the business.",
+      "report_location": "Narrative, paragraph 6, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject falls onto his stomach, not his back."
+        }
+      ],
+      "explanation": "The DA investigation states Vargas 'fell onto his stomach inside the business, with his hands concealed under his body.' The report says he fell onto his back — the opposite body position.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officers forced entry into the business through the front doors, handcuffed the subject, and began rendering medical aid.",
+      "report_location": "Narrative, paragraph 7, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officers force entry through front doors, handcuff subject, and begin rendering aid."
+        }
+      ],
+      "explanation": "The DA investigation confirms at approximately 5:37 AM officers forced entry, handcuffed Vargas, and began rendering aid. This is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The firearm recovered from the scene was later determined to be a loaded semi-automatic rifle, .223 caliber, which did not belong to the business.",
+      "report_location": "Narrative, paragraph 8, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Rifle recovered from scene visible through broken windowpane area."
+        }
+      ],
+      "explanation": "Three errors: (1) The rifle was a bolt-action, not semi-automatic. (2) It was .22 caliber, not .223 caliber. (3) It was unloaded, not loaded. (4) It belonged to the business owner. Every factual detail about the recovered weapon is wrong.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The subject was conscious, alert, and screaming profanities.",
+      "report_location": "Narrative, paragraph 7, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Subject screaming curse words, making threats, yelling profanities at officers."
+        }
+      ],
+      "explanation": "The DA investigation confirms that after being shot, Vargas was yelling in pain, threatening officers, screaming curse words, and was conscious throughout. The paramedic also confirmed Vargas was conscious and screaming. This is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}

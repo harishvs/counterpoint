@@ -1,0 +1,236 @@
+{
+  "scenario_id": "sc-001",
+  "evidence_id": "ocda-001-valdez-video",
+  "report_id": "sc-001_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-10-27",
+  "scenario_summary": "Two officers approach an occupied vehicle in a hotel parking lot. The subject reverses the vehicle, running over a handcuffed witness. Officers fire at the subject. Based on OCDA OIS investigation of Jose David Valdez, Costa Mesa PD, Feb 19 2021.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "I observed the subject seated in the front passenger seat with his head slumped forward against the dashboard.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject is visible in the driver's seat, not the passenger seat, with head slumped on the steering wheel, not the dashboard."
+        }
+      ],
+      "explanation": "The DA investigation and bodycam footage establish that Valdez was in the driver's seat with his head on the steering wheel. The report places him in the passenger seat against the dashboard — two factual errors.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I observed two additional occupants: a female in the driver's seat (W-1) and a male in the left rear seat (W-2).",
+      "report_location": "Narrative, paragraph 2, sentence 3",
+      "claim_type": "identity_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "W-1 is visible in the front passenger seat, not the driver's seat. The subject occupies the driver's seat."
+        }
+      ],
+      "explanation": "Since the subject was actually in the driver's seat, placing W-1 in the driver's seat contradicts the video. W-1 was the front passenger. W-2's position in the left rear is accurate.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "I approached the passenger side of the vehicle and made contact with the subject.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The reporting officer (Lopez) approached the driver's side to contact the subject, who was in the driver's seat. The second officer (Molina) approached the passenger side."
+        }
+      ],
+      "explanation": "The report has the officer approaching the wrong side. Since the subject was in the driver's seat, the contacting officer approached the driver's side.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I instructed the subject to step out of the vehicle and place his hands where I could see them.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Officer instructs subject to keep his hands on the steering wheel."
+        }
+      ],
+      "explanation": "The officer instructed Valdez to keep his hands on the steering wheel, not to step out of the vehicle. The report fabricates a different command.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I observed that the subject's right hand was bandaged.",
+      "report_location": "Narrative, paragraph 3, sentence 4",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The subject's left hand was bandaged, not the right hand."
+        }
+      ],
+      "explanation": "The DA letter states Valdez's left hand was bandaged. The report says right hand — a left/right swap.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject became increasingly agitated and stated, \"You're not taking me in, I'll kill you before that happens.\"",
+      "report_location": "Narrative, paragraph 3, sentence 5",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "No verbal threat from the subject is documented in the investigation or captured on bodycam audio."
+        }
+      ],
+      "explanation": "No evidence supports this verbal threat. The DA investigation does not mention any such statement by Valdez, and bodycam audio would capture it. This is a fabricated quote.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer Sandoval located drug paraphernalia on W-2's person and placed W-2 in handcuffs.",
+      "report_location": "Narrative, paragraph 4, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer searches W-2 and handcuffs him behind his back."
+        }
+      ],
+      "explanation": "The DA investigation confirms Molina located drug paraphernalia on Witness 2 and cuffed his hands behind his back. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Without warning, the subject reached across to the driver's side, started the vehicle, and slowly began to roll the vehicle backward.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Subject was already in the driver's seat and suddenly accelerated in reverse. The vehicle did not 'slowly roll' — it reversed rapidly.",
+          "transcript_excerpt": "Tires screeching, officers shouting commands."
+        }
+      ],
+      "explanation": "Two errors: (1) The subject was already in the driver's seat, so 'reached across' is inconsistent. (2) The vehicle suddenly accelerated in reverse — the DA letter says 'suddenly started the vehicle, placed it in reverse, and accelerated.' Describing it as 'slowly began to roll' is a minimization.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I observed W-2 move clear of the vehicle's path.",
+      "report_location": "Narrative, paragraph 5, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "W-2, handcuffed and seated behind the rear bumper, was struck by the reversing vehicle. The left rear tire ran over W-2's handcuffed hands. W-2 was also struck by the open passenger door and front right tire.",
+          "transcript_excerpt": "W-2 screaming. Officers yelling 'Stop!'"
+        }
+      ],
+      "explanation": "W-2 did not move clear. W-2 was run over by the vehicle — handcuffed hands were run over by the left rear tire, and W-2 was struck by the door and front tire. The report omits the serious injury to W-2 and falsely states W-2 was clear.",
+      "discrepancy_type": "omission",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I discharged my firearm three times toward the vehicle. Officer Sandoval simultaneously discharged his firearm twice through the front windshield.",
+      "report_location": "Narrative, paragraph 6, sentences 2-3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Multiple gunshots audible on bodycam audio."
+        }
+      ],
+      "explanation": "The shot count is swapped. Forensic analysis determined Lopez (the reporting officer) fired 3 total rounds and Molina fired 7 total. But the first exchange was Lopez 2, Molina 3 — then Molina fired 4 more and Lopez 1 more. The report attributes only the initial exchange to both officers and swaps who fired how many, then omits the second volley entirely.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "A search of the subject's person revealed a loaded Hellcat .380 semi-automatic handgun in the right pocket of his jacket.",
+      "report_location": "Narrative, paragraph 8, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Handgun recovered from the left pocket of the subject's jacket."
+        }
+      ],
+      "explanation": "The DA letter states the handgun was in the left pocket. The report says right pocket — another left/right swap consistent with the earlier bandaged-hand error.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "At approximately 1015 hours, Officer Sandoval and I were assigned to the Community Policing Unit and were patrolling in a marked police vehicle.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officers in CMPD uniforms, marked patrol vehicle visible."
+        }
+      ],
+      "explanation": "Time, unit assignment, and vehicle type are consistent with the DA investigation. Accurately reflects the evidence.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The vehicle came to a stop after traveling approximately 15 feet forward.",
+      "report_location": "Narrative, paragraph 6, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Vehicle moves forward after being shifted into drive, comes to stop. Exact distance difficult to determine from bodycam angle."
+        }
+      ],
+      "explanation": "The DA letter states the car 'advanced forward slowly' after Valdez succumbed. The exact distance is not specified in the investigation and would be difficult to verify precisely from bodycam footage alone.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Officer Sandoval and I removed the subject from the vehicle and immediately began administering CPR.",
+      "report_location": "Narrative, paragraph 7, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officers pull subject from vehicle and begin CPR."
+        }
+      ],
+      "explanation": "The DA investigation confirms officers removed Valdez and provided CPR until paramedics arrived. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "scenario_id": "sc-003",
+  "evidence_id": "ocda-003-emch-video",
+  "report_id": "sc-003_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-10-27",
+  "scenario_summary": "Officers respond to a 911 call about a male kicking a resident's door at a condominium. The subject refuses commands, walks back into an enclosed patio, is Tased, then draws a handgun. Officers fire. Based on OCDA OIS investigation of Michael Emch Jr, Seal Beach PD, Jan 16 2023.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "I observed a male subject standing on the concrete walkway outside the courtyard gate. The subject was in full view and matched the description provided by dispatch.",
+      "report_location": "Narrative, paragraph 2, sentences 4-5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The subject was peering over the brick wall of the enclosed patio area. Only his head was visible — he was not standing in full view on the walkway outside the gate."
+        }
+      ],
+      "explanation": "The DA investigation states Knight observed Emch 'peering over the brick wall of the enclosed patio area' with 'only Emch's head visible.' The report falsely places the subject in full view outside the gate.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The subject held a beverage can in his left hand throughout the encounter.",
+      "report_location": "Narrative, paragraph 3, sentence 4",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The subject initially held the beverage can in his right hand, then deliberately moved it to his left hand — the transfer was a significant observation that raised officer suspicion."
+        }
+      ],
+      "explanation": "The beverage can started in the subject's right hand and was transferred to the left. The report says it was in the left hand 'throughout,' omitting the deliberate switch that was a key behavioral indicator.",
+      "discrepancy_type": "omission",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject placed his left hand in his front jacket pocket, turned his back to me, and began walking toward the enclosed patio area.",
+      "report_location": "Narrative, paragraph 4, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The subject placed his right hand in his right front jacket pocket, not his left hand."
+        }
+      ],
+      "explanation": "The DA letter is clear that Emch 'placed his right hand in his right front jacket pocket.' The report swaps it to the left hand, which is significant because the right hand was the hand suspected of reaching for a weapon.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject stated he was there to visit a friend and asked me to call my supervisor.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Emch replied he was there to see the reporting party. He asked the officer to call his 'staff sergeant.'"
+        }
+      ],
+      "explanation": "Emch said he was there to see 'the reporting party' (not 'a friend'), and asked the officer to call his 'staff sergeant' (a military term, not 'supervisor'). The report softens both statements — 'the reporting party' implies he knew who called 911, while 'a friend' is vague. The military term was noted as significant by officers.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Corporal Fuentes deployed his Taser, striking the subject in the chest. The subject fell forward onto his stomach within the enclosed patio area.",
+      "report_location": "Narrative, paragraph 5, sentences 3-4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The Taser struck the subject in the back (he was walking away from officers). The subject fell onto his left side and then flat on his back, not forward onto his stomach."
+        }
+      ],
+      "explanation": "The DA letter clearly states Balderrama 'deployed his Taser toward Emch, striking him in the back' and that Emch 'fell onto his left side and then flat on his back.' The report contradicts both the strike location (chest vs. back) and the fall direction (face down vs. on back). This matters because the subject ended up on his back with his waistband accessible.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "I approached the threshold of the patio and observed the subject lying face down.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The subject was lying on his back, not face down."
+        }
+      ],
+      "explanation": "Consistent with the previous Taser claim, the report continues with 'face down' when the subject was on his back. The DA letter states Knight 'could see Emch lying on his back on the patio floor.'",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Corporal Fuentes was approximately ten feet to my right.",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Corporal Balderrama was approximately three feet behind and to the left of Officer Knight, not ten feet to the right."
+        }
+      ],
+      "explanation": "The DA investigation states Balderrama was 'about three feet behind and to the left of Officer Knight.' The report says ten feet to the right — wrong distance and wrong side.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject then reached toward his left waistband with his right hand and produced what appeared to be a black semi-automatic handgun.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The subject reached for the handgun from his right-side waistband, not his left waistband."
+        }
+      ],
+      "explanation": "The DA letter states Emch 'reached for what appeared to be a black, Glock handgun from his right-side waistband.' The report says left waistband — a left/right swap.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The subject raised the weapon and pointed it in my direction.",
+      "report_location": "Narrative, paragraph 6, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Knight saw Emch point the gun directly in Corporal Balderrama's direction, not Knight's direction."
+        }
+      ],
+      "explanation": "The DA letter states Knight 'saw Emch point the gun directly in Corporal Balderrama's direction. Believing his partner was about to be shot in the head, he pointed his gun at Emch and fired.' The gun was pointed at Balderrama, not the reporting officer.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I discharged my duty weapon, firing approximately twelve rounds.",
+      "report_location": "Narrative, paragraph 6, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Extended gunfire audible on BWC."
+        }
+      ],
+      "explanation": "Officer Knight fired 21 rounds (the full capacity of his weapon — he did not reload). The report says approximately twelve, substantially understating the number.",
+      "discrepancy_type": "minimization",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The weapon was later identified as a Glock 22, .40-caliber handgun, registered to the subject.",
+      "report_location": "Narrative, paragraph 7, sentence 4",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The Glock 22 was registered to the subject's father, not to the subject."
+        }
+      ],
+      "explanation": "The DA letter states the gun 'was found to be registered to Emch's father.' The report claims it was registered to the subject himself.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "At approximately 2136 hours, dispatch received a 9-1-1 call from a female resident (W-1) reporting that an unknown male was kicking her front door and demanding entry.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Dispatch records confirm the 911 call at approximately 9:36 PM."
+        }
+      ],
+      "explanation": "The DA letter confirms SBPD dispatch received the 911 call at approximately 9:36 PM. The description of the call is also accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I identified myself as a police officer and ordered the subject to approach me with his hands visible.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Officer Knight used flashlight to illuminate Emch, asked who he was, and commanded that he needed to come out of the enclosed area."
+        }
+      ],
+      "explanation": "The DA letter confirms Knight used his flashlight and commanded Emch to come out and show his hands. This claim is substantially accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Officer Pistilli arrived on scene and secured the weapon from the subject's immediate reach. Officer Pistilli handcuffed the subject and applied a tourniquet to the subject's upper left thigh.",
+      "report_location": "Narrative, paragraph 7, sentences 2-3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Pistilli removed the gun, handcuffed Emch, and placed a tourniquet on Emch's left upper thigh area."
+        }
+      ],
+      "explanation": "The DA letter confirms Pistilli removed the gun, handcuffed Emch, and placed a tourniquet on his left upper thigh. This is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "W-1 described the male as wearing a jacket, mask, beanie, and dark brown work boots.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "identity_description",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Dispatch relayed a description matching: jacket, mask, beanie, and dark brown work boots."
+        }
+      ],
+      "explanation": "The DA letter says Jane Doe 1 described the male as wearing 'a jacket, mask, beanie, and dark brown work boots.' This matches the report. However, the caller did not see the person's face — the description is based on W-1's account, not direct officer observation, and its accuracy against the video is uncertain since Emch wore a 'black hat' and 'clear glasses' when contacted.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    }
+  ]
+}

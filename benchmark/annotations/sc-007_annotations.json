@@ -1,0 +1,236 @@
+{
+  "scenario_id": "sc-007",
+  "evidence_id": "ocda-007-to-video",
+  "report_id": "sc-007_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-10-27",
+  "scenario_summary": "Officer responds to vandalism call, locates subject carrying a metal pole in an alley. Subject refuses to comply for over four minutes, walks several blocks, strikes objects with the pole, then charges officers in a parking lot. Officer fires five rounds; subject survives. Based on OCDA OIS investigation of Khang Chi To, Westminster PD, Dec 24 2022.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 0044 hours, I was dispatched to Imperial - Health & Beauty, a business located at 9196 Bolsa Avenue, regarding a reported vandalism.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Dispatch records indicate Officer Doan self-assigned to the pending vandalism call at approximately 12:44:20 a.m., not dispatched."
+        }
+      ],
+      "explanation": "The DA investigation states Officer Doan 'became available and assigned himself' to the pending vandalism call. He was not dispatched — the call had been pending because no officer was available. Officer Dam was dispatched to the burglary, not Doan to the vandalism.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "A male subject wearing a gray shirt had used a wooden baseball bat to repeatedly strike the front of the business and an exterior surveillance camera.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Surveillance footage shown to the officer depicts subject using a metal stick or pole (not a wooden baseball bat). The reporting party described it as a 'metal stick or pole.'"
+        }
+      ],
+      "explanation": "The reporting party told the officer the subject used 'a metal stick or pole,' and surveillance footage showed a white-colored pole. The report falsely characterizes it as a 'wooden baseball bat' and the subject's shirt as gray when the actual clothing described was a gray jacket.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The footage captured a male wearing a gray jacket and blue jeans striking the camera with a white-colored stick or pole.",
+      "report_location": "Narrative, paragraph 2, sentence 3",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Surveillance video shows male in gray jacket and blue jeans with a white pole striking the camera."
+        }
+      ],
+      "explanation": "This accurately matches the surveillance footage description in the DA investigation. John Doe 1's recording showed a male in a gray jacket and blue jeans with a white pole.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject was carrying a long pole in his left hand.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject is observed carrying the pole in his right hand when first located in the alley."
+        }
+      ],
+      "explanation": "The DA investigation states To was 'carrying a long pole in his right hand.' The report says left hand — a left/right error.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject immediately complied by stopping and placing the pole on the ground, but then quickly picked it up again and began walking westbound away from me.",
+      "report_location": "Narrative, paragraph 4, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Subject immediately begins walking westbound and away from the officer upon contact. Subject never stops or puts the pole down at initial contact.",
+          "transcript_excerpt": "Officer repeatedly commands subject to stop, drop the pole, and sit down. Subject ignores all commands."
+        }
+      ],
+      "explanation": "The DA investigation clearly states To 'immediately began walking westbound and away from Officer Doan' and 'continued walking away.' There is no indication To ever briefly complied. This fabricates a moment of compliance that did not occur.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officer Kessler spoke to the subject only in English.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Officer Dam spoke to the subject in Vietnamese to ensure the subject understood the officers' commands."
+        }
+      ],
+      "explanation": "The DA letter states Officer Dam spoke to To in Vietnamese while Officer Doan spoke in English, to ensure comprehension. The report omits that the second officer communicated in Vietnamese, falsely stating he spoke only in English. To responded in both languages, confirming he understood.",
+      "discrepancy_type": "omission",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "While walking, the subject struck a fire hydrant on the south sidewalk of 9200 Bolsa with the metal pole, producing a loud noise.",
+      "report_location": "Narrative, paragraph 6, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Subject strikes a fire hydrant on the south sidewalk of 9200 Bolsa with the metal pole.",
+          "transcript_excerpt": "Loud metallic noise audible on bodycam."
+        }
+      ],
+      "explanation": "The DA investigation confirms To struck a fire hydrant at 9200 Bolsa with the metal pole at approximately 12:58:58 a.m., producing a loud noise. However, the report omits that To also struck a traffic signal pole earlier at the southwest corner of Bolsa and Saigon.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject turned and began walking southbound across all traffic lanes of Bolsa Avenue.",
+      "report_location": "Narrative, paragraph 7, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject walks northbound across all traffic lanes of Bolsa Avenue, not southbound."
+        }
+      ],
+      "explanation": "The DA investigation states To 'began walking northbound across all traffic lanes of Bolsa Avenue' at approximately 12:59:12 a.m. and reached the north sidewalk. The report says southbound — a directional error.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The subject raised it above his head in an overhead striking position.",
+      "report_location": "Narrative, paragraph 8, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject raises the pole to shoulder level and behind his head in a baseball batter stance, not an overhead striking position."
+        }
+      ],
+      "explanation": "The DA investigation describes To raising the pole 'to shoulder level and behind his head similar to a baseball batter.' Multiple witnesses described a 'batter's swing' stance. An overhead striking position is a different posture than a lateral baseball swing. The report exaggerates the threat posture.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject then charged directly toward Officer Kessler, who was closest to the subject.",
+      "report_location": "Narrative, paragraph 8, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Dam was directly east of To and closest. Officer Bouffard was south of Officer Dam. Officer Doan was south of To and southwest of Officers Dam and Bouffard."
+        }
+      ],
+      "explanation": "The DA investigation establishes that Officer Dam was 'directly east of To' and closest, with Bouffard south of Dam. The report claims the subject charged at 'Officer Kessler' (Dam analog) who was 'closest,' which is correct about proximity but the subject charged toward both Dam and Bouffard. Doan was positioned further away, southwest. The overall direction of charge is roughly accurate but attributing it solely to one officer oversimplifies.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I discharged my firearm three times at the subject.",
+      "report_location": "Narrative, paragraph 9, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Five gunshots audible on bodycam audio. Five cartridge cases recovered at the scene."
+        }
+      ],
+      "explanation": "The DA investigation states Officer Doan fired his handgun five times, and five 9mm cartridge cases were recovered. The report claims only three rounds were discharged — a significant undercount.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officers moved in and handcuffed the subject, who remained conscious. We immediately began rendering medical aid.",
+      "report_location": "Narrative, paragraph 10, sentence 1-2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officers approach subject on the ground, handcuff him. Subject appears conscious and alert. Officers begin rendering medical aid."
+        }
+      ],
+      "explanation": "The DA investigation confirms To was handcuffed at approximately 1:01:25 a.m. while 'conscious and alert' and that officers 'immediately began rendering medical aid.' This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Orange County Fire Authority paramedics arrived at approximately 0107 hours and assumed patient care.",
+      "report_location": "Narrative, paragraph 10, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Paramedics arriving on scene audible/visible on bodycam."
+        }
+      ],
+      "explanation": "The DA investigation states OCFA Paramedics arrived at approximately 1:07 a.m. and assumed patient care. This matches the report.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I drew my TASER Electronic Control Weapon and followed the subject on foot. At approximately 0057 hours, I holstered my TASER and transitioned to my service weapon as the subject continued to ignore my commands.",
+      "report_location": "Narrative, paragraph 5, sentences 1-2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer draws TASER while following subject, later transitions to handgun."
+        }
+      ],
+      "explanation": "The DA investigation confirms Officer Doan drew his TASER at approximately 12:57:19 a.m. and transitioned to his handgun at approximately 12:57:47 a.m. The sequence and approximate timing match the report.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "scenario_id": "sc-011",
+  "evidence_id": "ocda-011-reinhold-video",
+  "report_id": "sc-011_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-10-27",
+  "scenario_summary": "Two sheriff's deputies contact a homeless man for a pedestrian violation. The subject walks away, becomes physically resistive, and during a ground struggle grabs a deputy's holstered firearm. The other deputy fires twice. Based on OCDA OIS investigation of Kurt Andreas Reinhold, OC Sheriff, Sep 23 2020.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "We were in standard blue OCSD patrol uniforms with department-issued badges and equipment.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Deputies are wearing green OCSD uniforms with bullet-proof vests bearing 'SHERIFF' in large yellow letters on the back, not blue patrol uniforms."
+        }
+      ],
+      "explanation": "The DA letter specifies the deputies wore OCSD-issued green uniforms with bullet-proof vests. The report falsely states blue patrol uniforms.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I observed the subject jaywalking across El Camino Real against a solid red hand pedestrian signal. I alerted Deputy Galvan to the violation.",
+      "report_location": "Narrative, paragraph 2, sentences 1-2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Deputy Duran (the passenger/reporting officer equivalent) was typing on his keyboard and did not observe the jaywalking. Deputy Israel (the driver) was the one who observed it."
+        }
+      ],
+      "explanation": "The DA investigation establishes that Deputy Duran (the passenger, analogous to the reporting officer here) did not observe Reinhold's jaywalking because he was typing a report. He even told his partner 'don't make case law' because he hadn't personally witnessed it. The report falsely claims the reporting officer saw the violation and alerted the driver, when it was the reverse.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Deputy Galvan parked the Explorer on El Camino Real and we both exited the vehicle. I took the lead in contacting the subject.",
+      "report_location": "Narrative, paragraph 3, sentences 1-2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Deputy Israel (the driver) took the lead in contacting Reinhold and attempting to detain him. Deputy Duran acted as back-up."
+        }
+      ],
+      "explanation": "The DA letter states Deputy Israel took the lead in attempting to contact Reinhold and Deputy Duran was his back-up. The report reverses the roles, claiming the reporting officer took the lead.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject stated, \"I didn't do anything wrong,\" and immediately began walking away from us in the direction of oncoming traffic.",
+      "report_location": "Narrative, paragraph 3, sentence 4",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Reinhold responded 'get off me I did nothing wrong' per civilian witness. He walked away from deputies into the middle of the street."
+        }
+      ],
+      "explanation": "Civilian witness John Doe #2 heard Reinhold say 'get off me I did nothing wrong.' The DA letter also confirms Reinhold walked away from the deputies into the middle of the street. The substance of this claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "At no point did we raise our voices aggressively or use profane language.",
+      "report_location": "Narrative, paragraph 4, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "DA investigation confirms deputies kept their voices controlled and did not raise their voice, swear, or attempt to instigate Reinhold."
+        }
+      ],
+      "explanation": "The DA letter explicitly states 'At no point did either of the deputies raise their voice, swear or attempt to instigate Reinhold. Keeping their voices controlled and trying to direct him out of the street were their attempts at de-escalation.' This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject punched me in the face with a closed fist, causing me to stagger backward.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Reinhold slapped Deputy Israel's hand away and then hit his hand and arm three additional times. No punching to the face is documented."
+        }
+      ],
+      "explanation": "The DA letter describes Reinhold slapping the deputy's hand away and hitting his hand and arm three more times during a period of about 1.5 minutes. There is no mention of a closed-fist punch to the face. The report exaggerates the nature of the battery.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject then shoved Deputy Galvan, who nearly fell into the traffic lane.",
+      "report_location": "Narrative, paragraph 5, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Reinhold's physical resistance was directed at slapping/hitting the lead deputy's hands and arms. No shoving of the backup deputy into traffic is documented in the investigation."
+        }
+      ],
+      "explanation": "The DA letter details the physical contact as Reinhold slapping and hitting one deputy's hand and arm. There is no mention of shoving the second deputy toward traffic. This appears to be a fabrication that exaggerates the threat level.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Over the course of approximately three minutes, the subject struck both of us multiple times as we attempted de-escalation.",
+      "report_location": "Narrative, paragraph 5, sentence 4",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "The battery against the deputy's hand and arm lasted approximately one minute and thirty seconds, not three minutes.",
+          "transcript_excerpt": "Deputies giving verbal commands to stop throughout."
+        }
+      ],
+      "explanation": "The DA letter specifies the battery period lasted approximately one minute and thirty seconds. The report doubles this to three minutes. Additionally, the strikes were directed at one deputy (Israel), not both.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Deputy Galvan then felt the subject grasp the handle of his department-issued SIG Sauer P226 service weapon, which was holstered on Deputy Galvan's right hip.",
+      "report_location": "Narrative, paragraph 7, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Hotel surveillance video shows Reinhold reaching for and grabbing the deputy's holstered weapon. DNA evidence later confirmed Reinhold's DNA on the pistol grip.",
+          "transcript_excerpt": "Deputy yelling 'He's got my gun!'"
+        }
+      ],
+      "explanation": "The DA letter, Miramar Hotel surveillance video, DNA evidence, and Deputy Israel's statements all confirm Reinhold grabbed the grip of Israel's SIG Sauer P226. The service weapon was on the right side of his body. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Deputy Galvan screamed, \"He's still got my gun, shoot him again!\"",
+      "report_location": "Narrative, paragraph 8, sentence 4",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Deputy Israel yelled 'He's still got my gun, Shoot him again!'"
+        }
+      ],
+      "explanation": "The DA letter quotes Deputy Israel as saying 'He's still got my gun, Shoot him again!' after the first shot. This claim accurately reflects what was said.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I discharged my firearm three times into the subject's chest.",
+      "report_location": "Narrative, paragraph 8, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Two gunshots audible. Two cartridge cases recovered from scene."
+        }
+      ],
+      "explanation": "The DA investigation established that Deputy Duran fired exactly two rounds, not three. Two cartridge cases were recovered from the scene, and autopsy confirmed two gunshot wounds to the right upper torso. The report inflates the shot count.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Three (3) cartridge cases from scene",
+      "report_location": "Evidence Collected, item 5",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Two cartridge cases (EM2 and EM3) were collected from the scene per the DA investigation."
+        }
+      ],
+      "explanation": "The DA letter documents two cartridge cases from the scene (EM2 and EM3), both fired from Duran's Glock. The report lists three, consistent with the inflated shot count in the narrative.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Deputy Galvan and I rolled the subject onto his back and began administering chest compressions.",
+      "report_location": "Narrative, paragraph 9, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Deputies rolled Reinhold on his back and began chest compressions until paramedics arrived."
+        }
+      ],
+      "explanation": "The DA letter confirms Deputy Duran rolled Reinhold on his back and both deputies began chest compressions until paramedics arrived. This is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Deputy Galvan broadcast \"shots fired\" over the radio.",
+      "report_location": "Narrative, paragraph 9, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Deputy Israel put out on the radio 'shots fired.'"
+        }
+      ],
+      "explanation": "The DA letter states Deputy Israel immediately put out on the radio 'shots fired.' In the report, the roles of the two deputies are swapped throughout (Navarro=Duran, Galvan=Israel), so attributing the radio call to Galvan (Israel) would be correct for role mapping. However, the DA letter says it was Israel who broadcast this, and the report correctly maps this. This claim is actually supported given the name substitution, but reviewing against video: the deputy beneath the subject (who had his gun grabbed) was the one who broadcast. This is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I commanded the subject to release the weapon, stating, \"Drop it or I'll shoot.\"",
+      "report_location": "Narrative, paragraph 8, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Deputy Duran told Reinhold 'Drop it or I'll shoot' two separate times per the DA investigation."
+        }
+      ],
+      "explanation": "The DA letter states Duran said 'Drop it or I'll shoot' two separate times. The report mentions it only once. The substance of the command is accurate but the report omits the repetition, which is a minor discrepancy that may be ambiguous depending on how precisely one interprets 'stating' versus 'repeatedly stating.'",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    }
+  ]
+}

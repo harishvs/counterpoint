@@ -1,0 +1,245 @@
+{
+  "scenario_id": "sc-018",
+  "evidence_id": "ocda-018-mejia-video",
+  "report_id": "sc-018_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-10-27",
+  "scenario_summary": "Officers respond to a man walking with a large bloody knife on a public street. After repeated commands to drop the knife are ignored, the subject charges at an officer and is fatally shot. Based on OCDA OIS investigation of Clemente De Garay Mejia, Tustin PD, Jan 8 2023.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "RP-3 regarding a male Hispanic walking westbound on Warner Avenue at Red Hill Avenue carrying a large knife in his bloody hands.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Dispatch describes subject walking westbound on Warner Avenue at Red Hill Avenue."
+        }
+      ],
+      "explanation": "The 9-1-1 call described the subject walking westbound, which matches. However, the call specified a nine-inch chef's knife, not just 'a large knife.' More importantly, the report's wording is mostly consistent with the actual call, but this claim is supported by dispatch audio.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I immediately observed the subject walking southbound on the west sidewalk of Warner Avenue.",
+      "report_location": "Narrative, paragraph 2, sentence 4",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject is visible walking southbound on the east sidewalk of Warner Avenue, not the west sidewalk."
+        }
+      ],
+      "explanation": "The DA investigation states officers 'located Mejia walking southbound on the east sidewalk of Warner Avenue.' The report places him on the west sidewalk — an east/west swap.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject was carrying a large knife with a white handle in his right hand.",
+      "report_location": "Narrative, paragraph 2, sentence 5",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject is visible holding a large knife in his left hand, not his right hand."
+        }
+      ],
+      "explanation": "The DA investigation consistently states the knife was in Mejia's left hand. After being shot, 'Mejia fell to the asphalt... with the knife still held in his left hand.' The report says right hand — a left/right swap.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Officer Torres parked directly in front of my vehicle.",
+      "report_location": "Narrative, paragraph 2, sentence 2",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The backup officer (Sanchez) parked behind the handling officer's (Newman's) patrol car, not in front of it."
+        }
+      ],
+      "explanation": "The DA letter states 'Officer Sanchez parked behind Officer Newman's vehicle.' The report says the backup parked in front — the spatial relationship is reversed.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I called out to the subject, saying 'Hey, man. Have a seat. Have a seat, Dude.'",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Officer Newman: 'Hey, man. Have a seat. Have a seat, Dude.'"
+        }
+      ],
+      "explanation": "This is a direct match with the documented verbal commands from the DA investigation, captured on bodycam audio.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officer Vega parked in the southbound number one lane and drew his service handgun. He then holstered his handgun and deployed his Taser.",
+      "report_location": "Narrative, paragraph 4, sentences 2-3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Third officer (Diaz) arrives, initially draws handgun, then holsters it and draws Taser."
+        }
+      ],
+      "explanation": "The DA investigation confirms Diaz initially drew his service handgun, then holstered it and drew his Taser. This sequence is accurately described in the report.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject stopped walking and appeared to look directly at Officer Torres.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject looked over his right shoulder toward Officer Diaz (the third officer with the Taser), not toward Officer Sanchez (Torres in the report)."
+        }
+      ],
+      "explanation": "The DA letter states Mejia 'looked over his right shoulder toward Officer Diaz' before charging. The report says he looked at Officer Torres (the Sanchez equivalent). Mejia actually looked at the third officer (Diaz/Vega), not the backup officer (Sanchez/Torres).",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject turned and sprinted directly toward me from a distance of approximately 32 feet, raising the knife above his head in an overhead stabbing motion.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject ran toward Officer Sanchez (Torres in report), not toward the reporting officer (Newman/Brandt). No evidence of an overhead stabbing motion — subject ran with knife in hand."
+        }
+      ],
+      "explanation": "Two errors: (1) Mejia charged toward Officer Sanchez, not toward Officer Newman (the report's narrator). The DA letter states Mejia 'began to run toward Officer Sanchez from approximately 32 feet away.' (2) No 'overhead stabbing motion' is described in the investigation — this is an exaggeration of the threat posture.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I discharged my firearm five times at the subject. Officer Torres simultaneously discharged his firearm five times.",
+      "report_location": "Narrative, paragraph 6, sentences 3-4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Multiple rapid gunshots audible on bodycam audio."
+        }
+      ],
+      "explanation": "Forensic analysis determined Newman fired 3 rounds and Sanchez fired 7 rounds (10 total). The report claims 5 and 5 — the total is correct but the individual counts are wrong, splitting them evenly between the officers.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The entire sequence from the subject's charge to the final shot lasted approximately four seconds.",
+      "report_location": "Narrative, paragraph 6, sentence 5",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Bodycam timestamps show approximately 1.57 seconds between charge and shots."
+        }
+      ],
+      "explanation": "The DA investigation states the ten gunshots were fired 'in approximately 1.57 seconds.' The report claims 'approximately four seconds' — inflating the duration by more than double, which subtly implies the officers had more time to assess the threat.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "After the subject fell, I observed the knife was still in his right hand.",
+      "report_location": "Narrative, paragraph 7, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject fell with the knife still in his left hand."
+        }
+      ],
+      "explanation": "Consistent with cl-003, the report maintains the right-hand error. The DA investigation states 'Mejia fell to the asphalt in the #1 lane of northbound Warner Avenue with the knife still held in his left hand.'",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officer Vega approached and secured the knife at approximately 0847:44 hours.",
+      "report_location": "Narrative, paragraph 7, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Third officer removes knife from subject's hand."
+        }
+      ],
+      "explanation": "The DA investigation confirms 'At approximately 8:47:44 a.m., Officer Diaz removed the knife from Mejia's hand.' The time and action match.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I initiated Cardiopulmonary Resuscitation (CPR) at approximately 0848:39 hours.",
+      "report_location": "Narrative, paragraph 7, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Diaz (Vega in report), not Officer Newman (Brandt in report), initiated CPR."
+        }
+      ],
+      "explanation": "The DA letter states 'Officer Diaz initiated Cardiopulmonary Resuscitation (CPR).' The report claims the reporting officer (Newman/Brandt) initiated CPR. The time is correct but the actor is wrong.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "A welfare check was subsequently conducted at the subject's last known residence. No injured parties were found at the location.",
+      "report_location": "Narrative, paragraph 8",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [],
+      "explanation": "The DA investigation confirms SAPD officers conducted a welfare check at Mejia's residence at 1114 W. Santa Ana Blvd #27 and found no injured parties. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officer Vega attempted to deploy his Taser but was unable to get a clear shot due to the subject's sudden movement.",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Diaz was moving toward Mejia and attempted to deploy Taser. The DA letter states he was unable to do so 'due to Mejia suddenly charging at Officers Newman and Sanchez,' not because he lacked a clear shot."
+        }
+      ],
+      "explanation": "The DA letter says Diaz 'attempted to deploy his Taser against Mejia; however, he was unable to do so due to Mejia suddenly charging at Officers Newman and Sanchez.' The report's characterization of 'unable to get a clear shot' is a plausible but not precisely documented reason. The actual reason was the sudden charge, which may or may not be the same as lacking a clear shot.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    }
+  ]
+}

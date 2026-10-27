@@ -21,10 +21,12 @@
 - [ ] Test download.py end-to-end (fresh download from empty evidence/)
 
 ## Next: Create annotations
-- [ ] Watch each video, document what actually happens
-- [ ] Write fictional incident reports per scenario (using report template)
-- [ ] Create ground-truth annotation JSON for each scenario
-- [ ] Validate all annotations against schema
+- [x] Write fictional incident reports per scenario (15 scenarios from DA letters)
+- [x] Create ground-truth annotation JSON for each scenario (220 claims total)
+- [x] Validate all annotations against schema
+- [ ] Add video timestamps (start_seconds/end_seconds) to evidence_references
+- [ ] Verify claims against actual bodycam video (spot-check discrepancies)
+- Note: SC-008 (Tice) skipped — PDF was a press release, not an investigation letter
 
 ## Later: Expand benchmark
 - [ ] Add American Fork PD scenarios

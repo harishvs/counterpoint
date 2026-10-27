@@ -1,0 +1,250 @@
+{
+  "scenario_id": "sc-006",
+  "evidence_id": "ocda-006-sanchez-video",
+  "report_id": "sc-006_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-10-27",
+  "scenario_summary": "Officers respond to a 911 call about a subject brandishing a firearm. After an extended foot pursuit through a residential neighborhood with helicopter support, the subject is shot by a perimeter officer in a backyard at dusk. The subject survived. Based on OCDA OIS investigation of Raul Sanchez, Anaheim PD, Nov 13 2020.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The subject immediately fled southbound on foot upon seeing Officer Dahl and was observed entering the Walmart parking lot.",
+      "report_location": "Narrative, paragraph 2, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject ran northbound from the 7-Eleven parking lot and was observed entering the Walmart parking lot to the north."
+        }
+      ],
+      "explanation": "The DA investigation states Sanchez ran northbound, not southbound. The Walmart parking lot is north of the 7-Eleven. The report reverses the direction of flight.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "At approximately 1629 hours, Officer T. Ross and Officer A. Gutierrez observed the subject walking eastbound on Adams Way near Grand Avenue.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officers Richardson and Rothans observed Sanchez walking eastbound on Adams Way."
+        }
+      ],
+      "explanation": "The direction (eastbound) and street are accurate, but the report uses fictional officer names. The actual observation was by Officers Hunter Richardson and Andrew Rothans. Since all names are fictionalized in the report, the direction and timing are the testable claims — the direction is correct. However, the narrative states they 'drove to the residential area of Adams Way and Grand Avenue' which is accurate. This claim is supported on the factual elements visible in evidence.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "APD Sgt. J. Harmon distributed a wanted flyer identifying the subject as Renteria, who was wanted by the Buena Park Police Department in connection with a residential burglary in which a firearm was stolen.",
+      "report_location": "Narrative, paragraph 4, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Wanted flyer describes suspect in connection with residential burglary in which two firearms were stolen."
+        }
+      ],
+      "explanation": "The actual BPPD wanted flyer stated that two firearms were stolen in the burglary, not one. The report minimizes the number of stolen firearms.",
+      "discrepancy_type": "minimization",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Officers within the helicopter made repeated public address announcements in English and Spanish, directing the subject to exit the residence at 7896 Adams with his hands raised.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Helicopter PA announcements audible in both English and Spanish directing subject to come out with hands up. A canine warning was also included."
+        }
+      ],
+      "explanation": "The DA investigation confirms that Angel made multiple PA announcements in both English and Spanish directing Sanchez to come out with his hands up. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject was observed through the windows walking up and down the stairs but made no effort to comply.",
+      "report_location": "Narrative, paragraph 5, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject visible inside residence walking up and down stairs, not raising hands or exiting."
+        }
+      ],
+      "explanation": "The DA investigation confirms Sanchez was seen walking up and down stairs inside the residence and at no time complied with PA commands.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "I observed the subject exit from the front door of 7896 Adams.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject exited from the rear of the residence at 7896 Adams, not the front door."
+        }
+      ],
+      "explanation": "The DA investigation states Sanchez was observed exiting the rear of the residence. He exited covertly, hunched over, attempting to slip out unnoticed. The report claims a front-door exit, which contradicts the evidence.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject walked directly toward our position in the backyard of 7914 Adams.",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject ran westbound through multiple backyards, jumping fences between 7896, 7902, and 7908 Adams before entering the backyard of 7914 Adams. He did not walk directly to 7914."
+        }
+      ],
+      "explanation": "Sanchez did not walk directly to the officers' location. He ran westbound through several backyards, scaling fences between multiple properties. The report omits the extended flight through multiple yards and makes it appear the subject approached voluntarily.",
+      "discrepancy_type": "omission",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "There was adequate ambient lighting from nearby streetlights, and I was able to clearly see the subject's hands and movements as he approached.",
+      "report_location": "Narrative, paragraph 6, sentences 3-4",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Incident occurred past sunset with no artificial lighting in the backyard. The only lighting was from a shed in the northeast corner of the backyard. Visibility was poor."
+        }
+      ],
+      "explanation": "The DA investigation explicitly states it was past sunset, there was a lack of artificial lighting, and visibility in the backyard was poor. The only light came from a shed in the northeast corner. The report falsely claims adequate lighting and clear visibility — a critical misrepresentation that affects evaluation of the shooting.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The subject was carrying an object in his right hand that I believed to be a dark-colored handgun.",
+      "report_location": "Narrative, paragraph 6, sentence 5",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Abuhadwan stated he could not see Sanchez's right hand at the time of the shooting. No weapon was found on Sanchez's person."
+        }
+      ],
+      "explanation": "The DA investigation states Officer Abuhadwan could NOT see Sanchez's right hand at the time. No firearm was recovered from Sanchez. The report fabricates a visual observation of a weapon in the subject's hand.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject stopped approximately 20 feet from our position, raised both hands above his head, and then suddenly lowered his right hand toward his waistband.",
+      "report_location": "Narrative, paragraph 7, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject charged toward officers, slipped and fell approximately 15-20 feet away, got back up and continued running toward the north wall. His left hand (not right) canted toward his waistband. He did not stop or raise his hands."
+        }
+      ],
+      "explanation": "Multiple errors: (1) Sanchez did not stop and raise his hands — he charged toward the officers. (2) He slipped and fell, then got back up. (3) It was his left hand that moved toward his waistband, not his right. The report fabricates a compliant gesture followed by a furtive movement, when the actual sequence was a continuous charge with no compliance.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I discharged my firearm four times at the subject's center mass.",
+      "report_location": "Narrative, paragraph 7, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Three gunshots audible on bodycam audio."
+        }
+      ],
+      "explanation": "Forensic analysis determined Officer Abuhadwan's pistol fired three rounds, matching the three cartridge cases collected at the scene. The report claims four shots.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I observed the subject had sustained gunshot wounds to his upper torso and right arm.",
+      "report_location": "Narrative, paragraph 8, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Medical records show subject sustained gunshot wounds to each leg (one per leg) and one to his back."
+        }
+      ],
+      "explanation": "Medical personnel at UCIMC determined Sanchez had three gunshot wounds: one to each leg and one to his back. The report claims upper torso and right arm wounds — completely different locations.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "A search of the immediate area revealed a black semi-automatic handgun on the ground approximately three feet from where the subject fell, consistent with the subject having dropped the weapon when he was shot.",
+      "report_location": "Narrative, paragraph 9, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "No firearm was found on or near the subject. A cell phone was found in the grass near the shed in the northeast corner of the yard. The original 911 caller's report of a person brandishing a firearm was later determined not to involve this subject."
+        }
+      ],
+      "explanation": "No weapon was recovered from Sanchez or from the area where he fell. The only item found nearby was a dropped cell phone. Furthermore, police later contacted the original 911 caller and determined Sanchez was NOT the individual who had brandished a firearm. The report fabricates the presence of a weapon at the scene.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "At approximately 1615 hours, APD dispatch received a 911 call reporting a male subject brandishing a firearm at a reporting party in a vehicle.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Dispatch records confirm 911 call received at approximately 4:15 PM reporting a male brandishing a firearm."
+        }
+      ],
+      "explanation": "The time and nature of the 911 call are accurately described and consistent with the DA investigation.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject fled on foot and jumped a wall into the yard of a residence at 7944 Adams Way.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject observed running from officers and jumping a wall into 7944 Adams Way."
+        }
+      ],
+      "explanation": "The DA investigation confirms Sanchez ran and jumped a wall into the yard at 7944 Adams Way upon seeing Officers Richardson and Rothans. This is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}

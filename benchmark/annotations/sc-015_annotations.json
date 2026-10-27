@@ -1,0 +1,234 @@
+{
+  "scenario_id": "sc-015",
+  "evidence_id": "ocda-015-baxter-video",
+  "report_id": "sc-015_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-10-27",
+  "scenario_summary": "A parolee-at-large pursues his estranged wife (a school bus driver) with a handgun, fires at the school bus, leads police on a 7+ minute pursuit, crashes in a school district parking lot, and is fatally shot by two officers after exiting his vehicle with a gun. Based on OCDA OIS investigation of Cedric Baxter, Buena Park PD, Sep 3 2021.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "I was on the far north side of the city at the time of the broadcast.",
+      "report_location": "Narrative, paragraph 1, sentence 3",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Officer Bernal stated he was on the far South side of the Buena Park City when he first heard the call."
+        }
+      ],
+      "explanation": "The DA letter states Officer Bernal was on the far South side of Buena Park City. The report says 'far north side' — a direct location contradiction.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I observed a grey Chevrolet Suburban being pursued southbound by Officer Fuentes.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The subject's vehicle was a grey Chevrolet Tahoe, not a Suburban. Additionally, the initial pursuing officer was Rubalcava, not 'Fuentes'."
+        }
+      ],
+      "explanation": "The vehicle was a Chevrolet Tahoe, not a Suburban. While both are large Chevy SUVs, this is a factual misidentification of the vehicle model that would be visible on bodycam and aerial footage.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Due to damage to Officer Fuentes's vehicle from a prior attempted vehicle stop, I assumed the lead position.",
+      "report_location": "Narrative, paragraph 2, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Rubalcava's vehicle sustained damage from attempting to stop Baxter by trying to hit his vehicle. Bernal took over as lead because he was in a better position."
+        }
+      ],
+      "explanation": "The DA letter confirms that Officer Rubalcava attempted a vehicle stop that resulted in damage to his police vehicle, and Bernal subsequently assumed the lead position. The reason for assuming lead is accurately described, though the other officer's name is fictionalized.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "At the time I became lead vehicle, the subject had been pursued with continuously activated lights and sirens for over seven minutes.",
+      "report_location": "Narrative, paragraph 2, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Multiple marked police vehicles with activated lights and sirens visible in pursuit. Duration consistent with timeline from radio broadcast at ~13:59 to Bernal assuming lead."
+        }
+      ],
+      "explanation": "The DA letter confirms Baxter had been pursued by multiple marked police vehicles with continuously activated lights and sirens for over 7 minutes by the time Bernal became the lead vehicle. This is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject turned into the Buena Park Unified School District Office parking lot, driving through the closed entry gate and dislodging it from its hinges.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject's vehicle breaks through the closed gate of the school district parking lot, blowing it open and off its hinges."
+        }
+      ],
+      "explanation": "The DA letter confirms Baxter drove through the closed gate into the parking lot, blowing it open and off its hinges. This is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject's vehicle collided with a parked vehicle at low speed before coming to a complete stop.",
+      "report_location": "Narrative, paragraph 4, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The subject rammed a parked car with enough force to push it back approximately 10 yards."
+        }
+      ],
+      "explanation": "The DA letter states the force of the collision moved the parked car back approximately 10 yards. Describing this as 'low speed' is a significant minimization of the impact force.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject remained seated inside the vehicle for approximately thirty seconds before exiting.",
+      "report_location": "Narrative, paragraph 4, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Bernal stated that 'immediately upon opening my door, I could see that the driver was producing a firearm.' The subject began to exit his vehicle while holding his handgun almost immediately after the vehicle stopped."
+        }
+      ],
+      "explanation": "The DA letter indicates the subject began exiting the vehicle essentially immediately — Bernal saw him producing a firearm as soon as he opened his own door. A 30-second delay is fabricated and would imply the officers had more time to assess than they actually did.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "I observed him holding a handgun in his left hand.",
+      "report_location": "Narrative, paragraph 4, sentence 4",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Baxter was still holding a handgun in his right hand when he went back into his vehicle and during the exit at the parking lot."
+        }
+      ],
+      "explanation": "The DA letter specifies Baxter was holding the handgun in his right hand. The report states left hand — a left/right swap.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I discharged my firearm thirteen times at the subject.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Multiple gunshots audible in rapid succession."
+        }
+      ],
+      "explanation": "Forensic analysis determined Bernal fired 15 cartridge cases and Choi fired 13 cartridge cases. The report attributes Choi's count (13) to the reporting officer (Bernal), who actually fired 15. The shot counts are swapped between the officers.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject walked toward us for several seconds while pointing his weapon before falling to the ground.",
+      "report_location": "Narrative, paragraph 5, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Baxter walked toward officers with his gun pointed at Officer Bernal and then Choi for a few seconds before ultimately falling to the ground."
+        }
+      ],
+      "explanation": "The DA letter confirms Baxter pointed his gun at Bernal and then Choi, walked toward them for a few seconds, and then fell to the ground. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I immediately requested medical assistance via radio at 1408 hours.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Officer requests medics over radio."
+        }
+      ],
+      "explanation": "The DA letter confirms Officer Choi requested medics at 14:08. The report attributes this to the reporting officer (Bernal), but the time is accurate. This is rated supported since it accurately reflects the action even if the specific attribution is part of the fictionalization.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "It should be noted that the child passenger had already been removed from the bus prior to the shooting at the school district parking lot. W-1 had dropped the child at a school earlier on her route, and the bus was empty at the time the subject fired his weapon at it on Orangethorpe Avenue.",
+      "report_location": "Narrative, paragraph 7",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Bus surveillance footage shows Jane Doe screaming about having a child passenger on the bus during the pursuit. The 6-year-old was on the bus when Baxter first approached and fired. The child was later taken inside Buena Park Middle School for safety along with Doe."
+        }
+      ],
+      "explanation": "The DA letter clearly states the 6-year-old passenger was on the bus when Baxter approached and throughout much of the incident. Doe screams about having her child passenger on the bus. The child was only removed to safety later at the Middle School. This claim fabricates an early removal to downplay the danger to the child.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "He was wearing a black T-shirt, blue jeans, a load bearing vest with a BPPD badge and a large cloth patch that said 'Police' on the front.",
+      "report_location": "Narrative (implied description of detective's attire — not explicitly in this report but referenced in how Bernal described himself)",
+      "claim_type": "identity_description",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Bernal is visible on bodycam but exact details of attire may vary between bodycam angles; DA letter describes him wearing black T-shirt, blue jeans, load bearing vest with BPPD badge and Police patch."
+        }
+      ],
+      "explanation": "The DA letter describes Bernal's attire this way. Whether this precisely matches what is visible on all bodycam angles is uncertain — the bodycam may not clearly show all patches and badges from the wearer's own camera.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I was aware from radio traffic that the subject had fired at a school bus carrying children and that the subject was armed with a handgun.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Radio traffic broadcast by Officer Rubalcava at approximately 13:59 reporting armed individual had shot at a school bus. Bernal also heard broadcast that Baxter was trying to kill his ex-wife."
+        }
+      ],
+      "explanation": "The DA letter confirms Bernal heard over police radio that shots had been fired at a school bus and that Baxter was armed. He also heard that Baxter was trying to kill his wife. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "scenario_id": "sc-014",
+  "evidence_id": "ocda-014-tran-video",
+  "report_id": "sc-014_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-10-27",
+  "scenario_summary": "A man follows a woman from the freeway to a police station. Two officers respond. While one officer turns his back after briefly questioning the subject, the subject draws a firearm and shoots the officer. The second officer returns fire. Based on OCDA OIS investigation of Matthew-Tuan Anh Tran, La Habra PD, Aug 6 2021.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Each of us drove a separate marked black and white police vehicle and wore department-issued navy-blue uniforms with badges and body-worn cameras.",
+      "report_location": "Narrative, paragraph 1, sentence 3",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Both officers arrive in separate marked black and white vehicles, wearing navy-blue uniforms with LHPD patches, metal badges on left shirt pocket, and body-worn cameras on their chests."
+        }
+      ],
+      "explanation": "The DA investigation confirms each officer drove a separate marked B&W, wore department-issued navy-blue police uniforms with LHPD patches on both shoulders, metal badges pinned above the left shirt pocket, and body-worn cameras attached to the front of their uniforms.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The station lobby was open and staffed at the time of our arrival.",
+      "report_location": "Narrative, paragraph 2, sentence 3",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The station lobby was closed. Tran attempted to open the doors but found them closed, then pushed the intercom button."
+        }
+      ],
+      "explanation": "The DA letter states the lobby was closed — Tran attempted to open the doors, found them closed, and pushed the intercom button next to the door. The report falsely states the lobby was open and staffed.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "W-1 stated she recognized the individual as someone she had seen in her neighborhood before.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Doe expressed that she did not recognize the individual who had followed her."
+        }
+      ],
+      "explanation": "The DA investigation states Doe 'expressed that she did not recognize the individual who had followed her.' The report fabricates that she recognized him from her neighborhood — the opposite of what she stated.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject stated he was 'just waiting for a friend.'",
+      "report_location": "Narrative, paragraph 4, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Tran told Officer Milward that he was there to see someone."
+        }
+      ],
+      "explanation": "According to the DA investigation, Tran told the officer 'he was there to see someone,' not that he was 'waiting for a friend.' The report alters the quoted statement.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Officer Webb remained facing the subject and continued to question him.",
+      "report_location": "Narrative, paragraph 4, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Milward turned his back to Tran and walked away after telling Tran he would be with him in a second."
+        }
+      ],
+      "explanation": "The DA investigation and bodycam footage show Officer Milward turned his back to Tran and walked away. The report states the officer remained facing the subject and continued questioning — a critical factual error that changes the tactical narrative of the encounter.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject produced a firearm from his right jacket pocket, racked the slide, and pointed it at Officer Webb from a distance of approximately 15 feet.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Tran removed the firearm from his waist belt, not a jacket pocket. He was wearing a T-shirt, not a jacket."
+        }
+      ],
+      "explanation": "The DA letter states Tran 'removed a firearm from his waist belt, cocked it, and aimed it directly at Officer Milward's back.' The report says 'right jacket pocket' — but Tran was wearing a T-shirt (listed in evidence collected as 'one black T-shirt'), not a jacket. The source of the weapon is misrepresented.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "I saw the subject raise the weapon and immediately shouted, 'Drop the weapon! Drop it now!'",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Officer Fox yelled 'Hey! Hey! Hey!' upon seeing Tran with the handgun."
+        }
+      ],
+      "explanation": "The DA investigation states Officer Fox yelled 'Hey! Hey! Hey!' — not 'Drop the weapon! Drop it now!' The report fabricates a weapons-specific verbal command that was not given prior to the shooting.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject then fired three rounds at Officer Webb.",
+      "report_location": "Narrative, paragraph 5, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Two gunshots audible in rapid succession before the officer falls."
+        }
+      ],
+      "explanation": "The DA investigation states Tran fired two rounds at Officer Milward, not three. The forensic evidence at the scene shows three total cartridge cases from Tran's gun (EM #9, #11, and one in chamber), but only two were fired at Milward. The report exaggerates the number of shots.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "One round struck Officer Webb's ballistic vest in the left upper chest area, causing him to stumble backward but remain standing.",
+      "report_location": "Narrative, paragraph 5, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The round pierced Officer Milward's bulletproof vest striking him in the right upper chest, causing him to fall to the ground."
+        }
+      ],
+      "explanation": "Two errors: (1) The round struck the right upper chest, not the left. (2) Milward fell to the ground — he did not 'stumble backward but remain standing.' The report minimizes the severity of the officer's injury and swaps left/right.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I drew my department-issued firearm and fired three rounds at the subject.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Five rapid gunshots audible from Officer Fox's position."
+        }
+      ],
+      "explanation": "The DA investigation and forensic analysis confirm Officer Fox fired five rounds in rapid succession (EM #1-5, all .40 S&W Federal cartridge cases). The report claims three rounds — an undercount of 40%.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "One round struck the subject in the torso, causing him to fall to the ground.",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Autopsy found three gunshot wounds: head/scalp, right flank, and right thigh. A round to the head was the critical injury causing the fall."
+        }
+      ],
+      "explanation": "The autopsy found three gunshot wounds, not one. The gunshot wound to Tran's head entered his scalp and caused a subarachnoid hemorrhage and skull fractures — this was the likely cause of his immediate incapacitation, not a single torso hit. The report omits the headshot and understates the number of hits.",
+      "discrepancy_type": "omission",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "W-1 stated that a male driving the Toyota had been following her since she exited the northbound 57 freeway at Lambert Road.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Doe informed Officer Fox about the situation and pointed out it was the Toyota that followed her."
+        }
+      ],
+      "explanation": "The DA investigation confirms Doe noticed the tailgating on the I-5 freeway, continued on the 57, and exited at Lambert Road. The Toyota following her is accurately described.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "At approximately 1916 hours, the subject was disarmed, moved to the sidewalk, and handcuffed.",
+      "report_location": "Narrative, paragraph 7, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officers approach with K-9, disarm Tran, move him from station front doors to the sidewalk, and handcuff him."
+        }
+      ],
+      "explanation": "The DA investigation confirms that at approximately 7:16:35 p.m. LHPD officers approached Tran with a K-9, disarmed him, moved him away from the station's front doors and out onto the sidewalk, where they handcuffed him. Time and actions match.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "A subsequent search recovered two firearms from the subject's person: a Glock-style 9mm semi-automatic pistol with no serial number and a .40 caliber Glock semi-automatic pistol with a mounted flashlight.",
+      "report_location": "Narrative, paragraph 9, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Two firearms recovered: a Glock-style ghost gun (9mm, no serial number) and a Glock 22 .40 caliber with frame-mounted Streamlight flashlight."
+        }
+      ],
+      "explanation": "The evidence inventory confirms both firearms: a fabricated Glock-style 9mm 'Ghost' gun with no serial number and a Glock Generation 4, Model 22, .40 caliber with a frame mounted Streamlight TLR-1 HL flashlight. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Two (2) 9mm cartridge cases, headstamped 'WIN 9mm LUGER'",
+      "report_location": "Evidence Collected section, item 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Evidence inventory lists EM #9 and EM #11 as 9mm cartridge cases headstamped WIN 9mm LUGER, plus one cartridge recovered from the chamber of the pistol."
+        }
+      ],
+      "explanation": "The evidence inventory lists two 9mm cartridge cases found at the scene (EM #9 and #11 headstamped WIN 9mm LUGER) plus one .40 caliber cartridge with 'FEDERAL 40 S&W' headstamp from the chamber of Tran's Glock. The report lists two 9mm cases, which matches the scene cases, but there was also a third round from the chamber. Technically the report is accurate for cases found at the scene but could be seen as incomplete.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    }
+  ]
+}

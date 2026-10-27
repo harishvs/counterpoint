@@ -1,0 +1,253 @@
+{
+  "scenario_id": "sc-017",
+  "evidence_id": "ocda-017-aguirre-video",
+  "report_id": "sc-017_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-10-27",
+  "scenario_summary": "Officers respond to a call about vehicle theft at an auto body shop at night. A sole occupant in a Cadillac Escalade refuses commands for over 20 minutes, makes threatening gestures, is hit with OC rounds without effect, rams multiple vehicles, then accelerates toward officers who open fire. Based on OCDA OIS investigation of Randolph Valendino Aguirre, La Habra PD, Sept 26 2019.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "I observed a chain-link gate on the south side of the street that appeared to have been forced open.",
+      "report_location": "Narrative, paragraph 2, sentence 2",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The forced-open gate was on the north side of Alpine Street, not the south side."
+        }
+      ],
+      "explanation": "The DA letter states the gate was 'on the north side of the street.' The report places it on the south side — a directional error.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I observed a black Cadillac Escalade parked in the driveway past the open gate with its headlights on and the radio playing at low volume.",
+      "report_location": "Narrative, paragraph 2, sentence 4",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "The Escalade's lights were on.",
+          "transcript_excerpt": "Audible music playing from the Escalade at noticeable volume."
+        }
+      ],
+      "explanation": "The DA letter describes the music as 'audible' — noticeable enough to document. The report minimizes this to 'low volume.' Also, the DA letter says 'lights were on' without specifying headlights vs. interior lights.",
+      "discrepancy_type": "minimization",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "I exited my patrol vehicle and approached the driver's side of the Escalade.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Coleman approached the passenger side of the Escalade, not the driver's side."
+        }
+      ],
+      "explanation": "The DA investigation states Coleman 'approached the passenger side of the Escalade.' The report says driver's side — the opposite side.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I gave verbal commands for the subject to exit the vehicle, but the subject refused to comply and made incoherent statements.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Officer commands subject to exit. Subject makes 'all kinds of weird statements' and refuses to comply."
+        }
+      ],
+      "explanation": "The DA letter confirms Coleman gave exit commands and Aguirre made 'all kinds of weird statements' and failed to comply. The report's characterization as 'incoherent' is a reasonable paraphrase.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "This initial contact was not captured on body-worn camera.",
+      "report_location": "Narrative, paragraph 3, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Body-worn cameras were not activated until after the K9 unit arrived."
+        }
+      ],
+      "explanation": "The DA letter confirms BWCs were activated once the K9 officers arrived and took positions, which was after Coleman's initial contact. Accurate claim.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject rolled down the driver's side window and extended both hands outside the vehicle momentarily.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Aguirre lowered the front passenger window (not the driver's side), briefly held one hand up (not both hands), then closed the window again."
+        }
+      ],
+      "explanation": "Two errors: (1) Aguirre lowered the front passenger window, not the driver's side. (2) He held one hand up, not both hands. The report changes both the window and the number of hands.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "K9 Officer Webb took a position near the driver's side door of the K9 vehicle and began issuing commands and K9 announcements through the PA speaker, instructing the subject to exit from the driver's side with his hands up.",
+      "report_location": "Narrative, paragraph 5, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Officer Nelson stood behind the passenger side door of the K9 vehicle while issuing PA commands.",
+          "transcript_excerpt": "PA commands instruct subject to exit from the passenger side."
+        }
+      ],
+      "explanation": "The DA letter says Nelson 'stood behind the passenger side door' and instructed Aguirre 'to exit the Escalade from the passenger side.' The report places the K9 officer at the driver's side door and changes the exit instruction to driver's side.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "He yelled profanities at officers in English.",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Subject yells profanities in both English and Spanish."
+        }
+      ],
+      "explanation": "The DA letter states Aguirre yelled 'inaudibly in English and Spanish.' The report omits that profanities were also in Spanish.",
+      "discrepancy_type": "omission",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "At approximately 0301 hours, Sergeant Daniels deployed a 40mm OC round through the open rear hatch.",
+      "report_location": "Narrative, paragraph 6, sentence 6",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Sergeant Hurst deployed the first OC round into the Escalade (through the vehicle, not through the rear hatch). The rear hatch had opened at 2:57 a.m. but the OC deployment at 3:01 a.m. was into the vehicle generally."
+        }
+      ],
+      "explanation": "The DA letter specifies Sergeant Hurst deployed the OC 'into the Escalade,' not specifically through the rear hatch. The report misattributes this to Sergeant Daniels (the fictional name for Torres, not Hurst). This changes which sergeant performed the action.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject shifted to drive and accelerated forward through the open gate, colliding with several vehicles parked inside the auto body shop.",
+      "report_location": "Narrative, paragraph 7, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Escalade drives forward, collides with multiple vehicles inside the auto body shop.",
+          "transcript_excerpt": "Sounds of screeching tires and collisions audible."
+        }
+      ],
+      "explanation": "The DA letter confirms Aguirre drove forward and collided with the K9 vehicle, then three additional vehicles inside the body shop. The report accurately summarizes this sequence.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I was positioned on the east sidewalk approximately eighteen feet south of the Escalade.",
+      "report_location": "Narrative, paragraph 8, sentence 1",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Coleman stood on the west sidewalk approximately eighteen feet south of the Escalade, not the east sidewalk."
+        }
+      ],
+      "explanation": "The DA letter places Coleman 'on the west sidewalk approximately eighteen feet south of the Escalade.' The report changes west to east.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I observed the subject raise his left arm toward the driver's side window in what appeared to be a shooting position.",
+      "report_location": "Narrative, paragraph 9, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Coleman saw Aguirre raise his right arm toward the passenger front window, not his left arm toward the driver's side window."
+        }
+      ],
+      "explanation": "The DA letter states Coleman 'saw Aguirre raise his right arm toward the passenger front window.' The report swaps both the arm (left vs. right) and the window (driver vs. passenger).",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I discharged my Colt AR-15A4 patrol rifle seven rounds in approximately two seconds as I advanced toward the Escalade.",
+      "report_location": "Narrative, paragraph 9, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Rapid rifle fire audible on bodycam."
+        }
+      ],
+      "explanation": "The DA letter confirms Coleman fired seven rounds from his AR-15A4 in approximately 1.77 seconds while advancing. The report's 'approximately two seconds' is a reasonable rounding. Accurate claim.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The Escalade stopped moving. The engine was still running and the vehicle was in drive.",
+      "report_location": "Narrative, paragraph 10, sentence 1-2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Escalade stops. Engine still running, in drive, directly behind the Mercedes."
+        }
+      ],
+      "explanation": "The DA letter confirms the Escalade stopped, engine still running and in drive. Accurate claim.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject appeared to look directly at officers and had what I described as an aggressive expression.",
+      "report_location": "Narrative, paragraph 8, sentence 4",
+      "claim_type": "subjective_characterization",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Coleman described Aguirre's face as having a look of 'evil.' Whether this constitutes an 'aggressive expression' is subjective and difficult to verify from bodycam footage at distance in darkness."
+        }
+      ],
+      "explanation": "Coleman described the look as 'evil,' which is subjective. The report paraphrases as 'aggressive expression.' Both are subjective characterizations that are difficult to confirm or refute from video evidence, especially at night from a distance.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    }
+  ]
+}

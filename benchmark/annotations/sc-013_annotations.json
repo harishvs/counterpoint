@@ -1,0 +1,251 @@
+{
+  "scenario_id": "sc-013",
+  "evidence_id": "ocda-013-wong-video",
+  "report_id": "sc-013_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-10-27",
+  "scenario_summary": "A lone subject in a parked vehicle behind a closed shopping center refuses to comply with officers for over 20 minutes. After less-lethal rounds fail to gain compliance, the subject fires a ghost handgun at officers, who return fire. Based on OCDA OIS investigation of Matthew Wong, Placentia PD, May 29 2021.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "I observed a gray four-door Honda Accord, California license plate #5AMS437, parked in the northernmost marked stall behind Ralph's Grocery.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The vehicle is a gray 2002 Honda Civic, 2-door, not a four-door Honda Accord."
+        }
+      ],
+      "explanation": "The DA investigation identifies the vehicle as a 2002 Honda Civic, 2-door. The report changes both the model (Accord vs. Civic) and the body style (four-door vs. two-door).",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The vehicle was parked head-in, facing east.",
+      "report_location": "Narrative, paragraph 2, sentence 2",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The Honda was parked head in, facing west, not east."
+        }
+      ],
+      "explanation": "The DA letter states the vehicle was 'parked head in, facing west.' The report says facing east — a directional reversal.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Both the PVS and my Body Worn Camera were activated throughout the incident.",
+      "report_location": "Narrative, paragraph 1, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Only the BWC was activated. The PVS (Patrol Video System) was not activated during the incident."
+        }
+      ],
+      "explanation": "The DA letter explicitly states 'The PVS was not activated during the incident' for Eriksen's vehicle. Only the BWC was active. The report falsely claims both systems were recording.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "At approximately 0112 hours, the subject started the engine.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Engine starts. Officer yells at subject to roll down the window."
+        }
+      ],
+      "explanation": "The DA letter states Wong started the engine at approximately 1:12:44 a.m., which matches the report's '0112 hours' approximation. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject stated, \"How's it going?\" I responded, \"It's going alright man. Can you roll down the window all the way?\"",
+      "report_location": "Narrative, paragraph 5, sentences 3-4",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Wong: 'How's it going?' Eriksen: 'It's going alright man. Can you roll down the window all the way?'"
+        }
+      ],
+      "explanation": "The DA letter documents this exact exchange occurring at approximately 1:13:13 a.m. The quoted dialogue is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "PPD Dispatch notified us that the Honda was registered to the subject. Dispatch also advised that no firearms were registered to the subject.",
+      "report_location": "Narrative, paragraph 9, sentences 3-4",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Dispatch advises that multiple firearms are registered to the subject."
+        }
+      ],
+      "explanation": "The DA letter states that at approximately 1:27:32 a.m., PPD Dispatch advised that 'multiple firearms were registered to Mr. Wong.' The report falsely claims dispatch said NO firearms were registered — a critical inversion of the actual intelligence.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "I told Officer Coelho that I did not know if the subject was arming himself and that I intended to use my ASP baton to break the window. Officer Coelho recommended we wait for additional units.",
+      "report_location": "Narrative, paragraph 8, sentences 4-5",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Eriksen tells Navarro he intends to use his department-issued asp to break the window. Navarro recommends they wait for additional officers."
+        }
+      ],
+      "explanation": "The DA letter confirms Eriksen told Navarro he was going to use his department-issued asp to break out the window, and Navarro recommended they wait. This is accurately reported.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The first round fired by the subject struck the passenger side of the windshield of Unit #13.",
+      "report_location": "Narrative, paragraph 13, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The first round struck the driver's side of the windshield of Unit #13, not the passenger side."
+        }
+      ],
+      "explanation": "The DA letter states the round 'struck the driver's side of the windshield of Unit #13.' The report says 'passenger side' — a left/right reversal.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The subject discharged a firearm through the driver's side door window, shattering it.",
+      "report_location": "Narrative, paragraph 13, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Two gunshots audible in rapid succession from inside the Honda, followed immediately by return fire from officers.",
+          "visual_description": "Driver door window shatters. Two muzzle flashes visible from inside the vehicle."
+        }
+      ],
+      "explanation": "The DA letter states 'Mr. Wong fired two rounds in quick succession.' The report implies a single discharge with singular phrasing ('discharged a firearm'), omitting that the subject fired twice.",
+      "discrepancy_type": "minimization",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Cruz reached through the broken window and recovered a Polymer80 nine-millimeter semi-automatic handgun from the subject's lap area.",
+      "report_location": "Narrative, paragraph 14, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer reaches through window frame and recovers handgun from the subject's lap."
+        }
+      ],
+      "explanation": "The DA letter confirms Martinez (mapped to Cruz) reached through the window frame and recovered a Polymer80 9mm semi-automatic handgun from Wong's lap area. The claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I rendered the handgun safe by removing the magazine and ejecting a live cartridge from the chamber.",
+      "report_location": "Narrative, paragraph 14, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer renders the recovered handgun safe by removing the magazine and ejecting a live cartridge from the chamber."
+        }
+      ],
+      "explanation": "The DA letter confirms Eriksen rendered the gun safe by removing the magazine from the well and ejecting a live cartridge from the chamber. This matches the report exactly.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Four (4) cartridge cases, 5.56x45mm rifle, WCC 14+",
+      "report_location": "Evidence Collected, line 5",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Evidence markers show seven 5.56x45mm rifle cartridge cases were collected from the scene (EM 9, EM 10, EM 13, EM 16, and EM 30 which contained three cases)."
+        }
+      ],
+      "explanation": "Officer Martinez fired seven rounds from his SIG Sauer rifle. The evidence log lists multiple 5.56x45mm cartridge cases totaling seven (EM 9, 10, 13, 16 each with one, and EM 30 with three). The report claims only four — a significant undercount of rifle rounds fired.",
+      "discrepancy_type": "minimization",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Due to heavy dark tint on all windows, I was unable to observe the interior.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The Honda had dark tint on the rear and side windows, not all windows. The officer was able to see Wong through the driver's door window using a flashlight."
+        }
+      ],
+      "explanation": "The DA letter states Eriksen 'was unable to see inside the vehicle due to the dark tint on the rear and side windows,' but then notes he approached the driver's door and 'illuminated the interior of the Honda with his handheld flashlight' and saw Wong seated in the driver's seat. Saying 'all windows' exaggerates the extent of the tint, since the driver's door window was not as opaque.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The subject was transported to UCI Medical Center, where he was pronounced deceased at approximately 0217 hours.",
+      "report_location": "Narrative, paragraph 15, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject loaded into ambulance and transported."
+        }
+      ],
+      "explanation": "The DA letter confirms Wong was transported to UCIMC and pronounced deceased at 2:17 a.m. This matches the report.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officer Vega gave the subject repeated commands in both English and Spanish.",
+      "report_location": "Narrative, paragraph 10, sentence 1",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Officer Iniguez resumed commands in English and Spanish after the second 40mm round."
+        }
+      ],
+      "explanation": "The DA letter states that Officer Iniguez (mapped to Vega) 'resumed commands in English and Spanish' after one of the 40mm deployments. However, the extended period of commands came from multiple officers, and the audio may not clearly distinguish who gave which commands. The bilingual commands are confirmed but attribution to a specific officer from bodycam perspective alone may be ambiguous.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    }
+  ]
+}

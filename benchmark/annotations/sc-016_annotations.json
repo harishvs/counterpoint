@@ -1,0 +1,251 @@
+{
+  "scenario_id": "sc-016",
+  "evidence_id": "ocda-016-salac-video",
+  "report_id": "sc-016_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-10-27",
+  "scenario_summary": "Deputies respond to a 911 burglary call at night. They encounter a female subject on the sidewalk holding what appears to be a handgun. After prolonged non-compliance with commands, the subject raises the weapon toward deputies and is shot. The weapon is later determined to be a realistic BB gun replica. Based on OCDA OIS investigation of Sunshine Kamille Salac, OC Sheriff's Dept, June 24 2020.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The reporting party stated that someone had broken a rear window and entered the residence.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "911 caller reported someone had broken a window to the front of the house and entered the residence."
+        }
+      ],
+      "explanation": "The DA letter states Salac reported someone broke 'a window to the front of the house,' not a rear window. The report changes the point of entry.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Dispatch advised that the reporting party was a male caller who believed the intruder was still inside the home.",
+      "report_location": "Narrative, paragraph 1, sentence 3",
+      "claim_type": "identity_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "The 911 call was made by the subject herself (Salac, female). Dispatch advised the reporting party was female, hiding in the bathroom, and her boyfriend was hiding in a closet."
+        }
+      ],
+      "explanation": "The 911 caller was Salac herself — a female. The report says the caller was male. Additionally, dispatch advised the reporting party was hiding in the bathroom (not a closet), with a boyfriend in a closet.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "I parked directly in front of 22851 Loumont Drive and exited my vehicle.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Deputy Arvizo parked four houses west of 22851 Loumont Drive, not directly in front of the residence."
+        }
+      ],
+      "explanation": "The DA letter states Deputy Arvizo 'parked four houses west of 22851 Loumont Drive.' The report claims parking directly in front. This is a significant factual error about the deputy's approach position.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I began walking eastbound along the north sidewalk toward the residence.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Deputy Arvizo walked east toward 22851 Loumont Drive using his flashlight, but the subject was encountered on the south sidewalk, not the north."
+        }
+      ],
+      "explanation": "The DA letter places the subject on the south sidewalk. If the deputy walked along the north sidewalk, the encounter geometry would differ. The report misplaces the deputy's path relative to the subject's actual position.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I observed a female subject standing on the north sidewalk approximately 40 feet from my position.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Salac was standing on the south sidewalk, under a tree, approximately 25-30 feet south of the deputy's location."
+        }
+      ],
+      "explanation": "The DA letter clearly places Salac on the south sidewalk, approximately 25-30 feet south. The report says north sidewalk at 40 feet — both the direction and distance are wrong.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "She was holding a black semi-automatic handgun in her left hand, pointed toward the ground.",
+      "report_location": "Narrative, paragraph 4, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Salac was holding the handgun in her right hand. When first observed, she held it in the 'high-ready position' at shoulder height with both hands, muzzle pointed upward — not pointed at the ground in one hand."
+        }
+      ],
+      "explanation": "Two errors: (1) The DA letter states the handgun was in her right hand. The report says left. (2) The weapon was held in both hands in the high-ready position (shoulder height, muzzle up), not pointed at the ground in one hand. This minimizes the perceived threat level at initial contact.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "I took cover behind the sedan and broadcast over the radio that I had a subject at gunpoint.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Deputy takes cover behind the sedan on the street.",
+          "transcript_excerpt": "Deputy broadcasts to responding units that he has a suspect at gunpoint."
+        }
+      ],
+      "explanation": "The DA letter confirms Arvizo took cover behind the sedan and broadcast to responding units. Consistent with the evidence.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "At no point did the subject make any verbal response to my commands or those of the other deputies.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "No verbal responses from the subject are documented in the DA investigation. However, audio quality and distance may limit what was captured."
+        }
+      ],
+      "explanation": "The DA investigation does not document any verbal responses from Salac. This claim appears consistent with the investigation, but patrol vehicle audio may not have captured quiet speech at distance. Classified as ambiguous because absence of evidence is not evidence of absence.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The subject abruptly raised the handgun to shoulder level with both hands and aimed it directly at my position behind the sedan.",
+      "report_location": "Narrative, paragraph 7, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Salac turned her body toward Deputy Ruelas, widened her stance, and pointed the handgun directly at Deputy Ruelas — not at Deputy Arvizo (the report's author)."
+        }
+      ],
+      "explanation": "The DA letter states Salac pointed the handgun at Deputy Ruelas, not at Deputy Arvizo (mapped to the report's author 'Calder'). The report claims the weapon was aimed at the reporting officer's position, but it was aimed at a different deputy.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I discharged my firearm five times at the subject. Deputy Whitfield simultaneously discharged his firearm three times.",
+      "report_location": "Narrative, paragraph 7, sentences 2-3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Volley of gunfire audible on patrol vehicle recordings."
+        }
+      ],
+      "explanation": "The report attributes 5 shots to the reporting officer and 3 to 'Whitfield.' In reality, Arvizo fired 3 shots, Richards fired 5, and Peterson fired 2 from a rifle. The report swaps Arvizo's and Richards's shot counts and omits Peterson's rifle rounds entirely. A combined 10 shots were fired by three deputies, not 8 by two.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject fell to the ground and the weapon came to rest beside her.",
+      "report_location": "Narrative, paragraph 7, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Salac fell but then briefly bent forward and raised the handgun again with her right hand, pointing it at Deputy Ruelas. Deputies continued firing. She then fell to the ground and dropped the gun at approximately 1:11:44 AM."
+        }
+      ],
+      "explanation": "The report omits a critical moment: after the initial volley Salac briefly raised the weapon again, prompting additional shots (Peterson's second rifle round). Stating she simply fell and the weapon came to rest omits this second threat gesture.",
+      "discrepancy_type": "omission",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Deputy Vega kicked the weapon away from the subject's reach.",
+      "report_location": "Narrative, paragraph 8, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Deputy Ruelas kicked the handgun away from Salac upon approach."
+        }
+      ],
+      "explanation": "The DA letter confirms deputies kicked the weapon away, though it was Deputy Ruelas, not Deputy Vega. The action itself occurred; the attribution to the wrong deputy is a minor error but the core action is supported. Classified as supported since the claim is about the action happening, not about who did it (the 'who' is a name-mapping artifact).",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The weapon recovered at the scene was later determined to be a Daisy 340 BB Spring Repeater Pistol, a realistic-looking replica handgun.",
+      "report_location": "Narrative, paragraph 9, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Evidence collection photos and deputy statements confirm the weapon was a Daisy 340 BB gun that resembled a Beretta."
+        }
+      ],
+      "explanation": "The DA investigation confirms the weapon was a Daisy 340 BB Spring Repeater Pistol that deputies initially believed was a real firearm. Accurate claim.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Investigation revealed that the 911 call reporting the burglary had originated from the subject's own cell phone, and that no burglary had actually occurred at 22851 Loumont Drive.",
+      "report_location": "Narrative, paragraph 9, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Deputy confirmed the 911 call originated from Salac's phone. Residents at 22851 Loumont Drive confirmed no break-in occurred."
+        }
+      ],
+      "explanation": "The DA investigation confirms the 911 call came from a number subsequently matched to Salac's cell phone, and residents confirmed no burglary occurred. This is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Eight (8) cartridge casings recovered from scene.",
+      "report_location": "Evidence Collected section, item 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Evidence collection documented ten cartridge casings: two .223 Speer casings and eight .40 caliber casings (three plus five), for a total of ten."
+        }
+      ],
+      "explanation": "The evidence list in the DA letter documents 2 x .223 Speer casings + 3 x .40 cal + 5 x .40 cal = 10 total casings. The report says only 8, omitting the two .223 rifle casings fired by Deputy Peterson. This is consistent with the report's omission of Peterson's involvement.",
+      "discrepancy_type": "omission",
+      "difficulty": "hard"
+    }
+  ]
+}

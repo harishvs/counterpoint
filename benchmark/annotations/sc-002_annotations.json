@@ -1,0 +1,236 @@
+{
+  "scenario_id": "sc-002",
+  "evidence_id": "ocda-002-montes-video",
+  "report_id": "sc-002_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-10-27",
+  "scenario_summary": "Two officers conduct a traffic stop on a Mercedes with expired tags. After removing the driver and a rear passenger, the front-seat subject repeatedly refuses to comply with hand-placement commands, then produces a firearm. Both officers fire. Based on OCDA OIS investigation of Alejandro Sanchez Montes, Santa Ana PD, Nov 16 2022.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The driver of the Mercedes was subsequently identified as W-1, who was alone in the vehicle with the subject, Diego Renteria, in the front passenger seat.",
+      "report_location": "Narrative, paragraph 2, sentence 3",
+      "claim_type": "identity_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Three occupants are visible in the Mercedes: the driver (W-1), the subject in the front passenger seat, and a third male (John Doe 2) in the right rear passenger seat."
+        }
+      ],
+      "explanation": "The DA investigation establishes three occupants in the Mercedes: the driver, Montes (front passenger), and a rear-seat passenger (John Doe 2). The report omits the third occupant entirely, claiming the driver was 'alone in the vehicle' with the subject.",
+      "discrepancy_type": "omission",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Officer Cho was positioned on the driver's side of the Mercedes near the front fender.",
+      "report_location": "Narrative, paragraph 4, sentence 2",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Park stood on the sidewalk on the passenger side of the Mercedes, not on the driver's side near the fender."
+        }
+      ],
+      "explanation": "The DA letter states Officer Park walked up to the passenger side area and stood on the sidewalk while Officer Buan contacted the driver. Park was not on the driver's side. The report places the second officer in the wrong position.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject complied and placed both hands flat on the dashboard.",
+      "report_location": "Narrative, paragraph 4, sentence 6",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject does not place hands on dashboard. He places his hands on his thighs. Officer Buan repeats the command multiple times but the subject never fully complies."
+        }
+      ],
+      "explanation": "The DA investigation details that Montes repeatedly refused to place his hands on the dash despite multiple requests. He placed his hands on his thighs instead. The report fabricates compliance that never occurred.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I observed the subject grip the weapon and begin to raise it in the direction of Officer Cho, who was standing on the driver's side.",
+      "report_location": "Narrative, paragraph 5, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject reaches down to his right side, lifts a black semi-automatic handgun with his right hand, and transitions it to his left hand. The direction the weapon was being raised is difficult to determine precisely from bodycam angle."
+        }
+      ],
+      "explanation": "The DA letter confirms Montes picked up a handgun and transitioned it between hands, but does not specify that he was raising it toward any particular officer. The bodycam captures the weapon in Montes' hands but the intended direction of aim is ambiguous from the camera angle. Additionally, Officer Cho (Park) was not on the driver's side as claimed.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I immediately drew my service weapon and discharged it four times at the subject through the open rear passenger window.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Six rapid gunshots audible from the reporting officer's position.",
+          "visual_description": "Officer Buan fires from the passenger side of the vehicle. The window and door position are consistent with the front passenger area, not the rear."
+        }
+      ],
+      "explanation": "The DA investigation states Officer Buan fired six shots, not four. Additionally, Buan was positioned at the right rear passenger side of the Mercedes, but the report says 'through the open rear passenger window' — Buan was near the passenger side but the actual firing position and shot count are misstated.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Simultaneously, Officer Cho discharged his firearm three times from his position near the driver's side front fender.",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "One shot audible from the second officer's position.",
+          "visual_description": "Officer Park fires from the curb/sidewalk area on the passenger side, behind the car, not from the driver's side fender."
+        }
+      ],
+      "explanation": "Officer Park fired one shot, not three. Park was positioned on the curb behind the Mercedes on the passenger side, not on the driver's side fender. Both the shot count and position are wrong.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "A black semi-automatic handgun was recovered from the floorboard beneath the subject's legs.",
+      "report_location": "Narrative, paragraph 7, sentence 5",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "When officers breach the car, the handgun with extended magazine is observed laying on the subject's left thigh. The muzzle faces the front passenger door."
+        }
+      ],
+      "explanation": "The DA investigation states the handgun was found on Montes' lap/left thigh with the muzzle facing the front passenger door, not on the floorboard beneath his legs. The report misplaces the weapon's recovery location.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "At approximately 1400 hours, I initiated a traffic stop on a black Mercedes Benz, California license plate 8YQZ992, at 100 S. McClay Street, after observing that the vehicle's registration tags had expired.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Black Mercedes Benz visible being stopped. Officers exit patrol vehicle and approach."
+        }
+      ],
+      "explanation": "The time, vehicle description, license plate, location, and reason for the stop are all consistent with the DA investigation. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "W-1 responded that he was on AB109 supervision.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "W-1 replies 'I'm on AB109' when asked about probation or parole status."
+        }
+      ],
+      "explanation": "The DA investigation confirms John Doe 1 stated he was on AB109. This is accurately reported.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject then picked up his cell phone and began texting.",
+      "report_location": "Narrative, paragraph 4, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject is seen lifting a bag of food from his lap to the center console, then beginning to use his cell phone."
+        }
+      ],
+      "explanation": "The DA letter confirms that at 2:03:07, Montes started texting on his cell phone after placing the food bag on the center console. This is accurately described.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "After a short pause, the subject's right hand dropped off the dashboard and he began reaching toward his right side near the floorboard area.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject's hands were never on the dashboard to drop from. Subject had hands on his thighs. The reaching motion toward the right side is consistent with the investigation."
+        }
+      ],
+      "explanation": "Since the subject never actually placed his hands on the dashboard (see cl-003), they could not have 'dropped off the dashboard.' The reaching toward the right side is consistent with the DA account, but the starting position is fabricated to support the false compliance claim.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Both officers were wearing SAPD polo uniform shirts with identification patches and black outer vests clearly marked \"POLICE.\"",
+      "report_location": "Narrative, paragraph 1, sentence 3",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Both officers visible in SAPD polo shirts with patches on shoulders, black vests with large white 'POLICE' text on front and back."
+        }
+      ],
+      "explanation": "The DA investigation confirms both officers wore SAPD polo uniform shirts with identification patches and black outer vests with clearly visible 'POLICE' patches. This is accurately reported.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "At approximately 1409 hours, a K9 unit arrived. The K9 was deployed into the vehicle at approximately 1414 hours but the subject was unresponsive.",
+      "report_location": "Narrative, paragraph 7, sentences 3-4",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "K9 officer arrives on scene. K9 is released into the Mercedes. K9 returns without eliciting a response from the subject."
+        }
+      ],
+      "explanation": "The DA investigation confirms K9 Officer Esquerra arrived at approximately 2:09 p.m. and the K9 was deployed into the Mercedes at 2:14:09 p.m. The K9 was unsuccessful and Montes was unresponsive. Times and outcome are consistent.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I then approached the right rear passenger side of the Mercedes and contacted the subject, Renteria.",
+      "report_location": "Narrative, paragraph 4, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Buan approaches the right rear passenger side of the Mercedes where Officer Park was standing on the sidewalk. Buan takes up a position observing the front passenger (Montes)."
+        }
+      ],
+      "explanation": "While Buan did approach the right rear passenger side of the Mercedes, the report attributes this to the reporting officer ('Officer Navarro' = Buan) as though it was to directly contact the subject. In fact, at 2:02:57, Buan approached that side to observe Montes while Park was on the sidewalk. The approach side is correct but the narrative implies direct face-to-face contact from that position, which is slightly misleading but broadly consistent.",
+      "discrepancy_type": "none",
+      "difficulty": "hard"
+    }
+  ]
+}

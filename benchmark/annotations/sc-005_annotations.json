@@ -1,0 +1,251 @@
+{
+  "scenario_id": "sc-005",
+  "evidence_id": "ocda-005-brown-video",
+  "report_id": "sc-005_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-10-27",
+  "scenario_summary": "Armed barricaded subject standoff at a residence in Anaheim. Subject repeatedly emerges onto porch over several hours, eventually points a revolver at officers near a K9 vehicle. Officers fire rifles. K9 deployed. Subject pronounced deceased. Based on OCDA OIS investigation of Osman Brown, Anaheim PD, March 3 2022.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "W-1 stated that the subject possessed a single firearm, a small handgun.",
+      "report_location": "Narrative, paragraph 1, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Ex-girlfriend told officers the handgun Brown had held and fired was one of two firearms he possessed."
+        }
+      ],
+      "explanation": "The DA letter states that W-1 told Sgt. Lahmon the handgun was 'one of two firearms he possessed.' The report changes this to 'a single firearm,' omitting the second weapon (an AR-15 style rifle was later found inside). This minimizes the known threat level.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "At approximately 0022 hours, the Tactical Response Group (TRG) was activated and assumed responsibility for the incident.",
+      "report_location": "Narrative, paragraph 2, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "TRG notified at approximately 0022 hours but SWAT officers did not assume perimeter responsibility until approximately 0205 hours."
+        }
+      ],
+      "explanation": "The DA letter states TRG was notified at 12:22 a.m. (0022) but SWAT officers assumed perimeter responsibility at approximately 2:05 a.m. (0205). The report conflates notification with assumption of responsibility, compressing the timeline by nearly two hours.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Beginning at approximately 0308 hours, Officer Vega, the primary negotiator, began making PA announcements encouraging the subject to exit the residence peacefully.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "PA system announcements audible beginning at approximately 3:08 a.m."
+        }
+      ],
+      "explanation": "The DA letter confirms APD Officer Ernesto Sena began PA announcements at approximately 3:08 a.m. The time and action are accurate (the officer name is fictionalized as 'Vega').",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "At approximately 0314 hours and again at 0322 hours, the subject briefly emerged onto the rear patio of the residence, shouted at officers, and returned inside each time.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject emerges onto the front porch, not the rear patio. The front porch faces the officers and patrol vehicles."
+        }
+      ],
+      "explanation": "The DA letter states Brown walked out onto the front porch at 3:14, 3:22, 3:36, and 3:38. The report changes this to 'rear patio,' which would place the subject on the opposite side of the house from the officers. This contradicts what the bodycam would show.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "At approximately 0341 hours, the subject came out onto the front porch and pointed what appeared to be a handgun directly at officers using both hands in a shooting stance.",
+      "report_location": "Narrative, paragraph 4, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "At approximately 3:41 a.m., subject walked out and simulated a handgun with his fingers, pointed it at a police vehicle. He did not have an actual weapon in his hands at this time."
+        }
+      ],
+      "explanation": "The DA letter states Brown 'simulated a handgun with his fingers' and pointed it at a police vehicle. The report upgrades this to 'what appeared to be a handgun' in a 'shooting stance' — an exaggeration that makes the threat appear more immediate than it was.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "At approximately 0350 hours, in response to a recorded surrender request from W-1, the subject emerged holding a short-barreled rifle with a standard 30-round magazine.",
+      "report_location": "Narrative, paragraph 4, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject holds what appears to be a short-barreled AR-15 style firearm with a double drum magazine inserted, not a standard 30-round magazine."
+        }
+      ],
+      "explanation": "The DA letter describes the weapon as 'a short-barreled AR-15 style firearm with a double drum magazine inserted.' The report changes this to a 'standard 30-round magazine,' which significantly understates the weapon's visible capacity and distinctive appearance.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject exited the front door holding the same rifle in his left hand.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject exits holding a revolver in his right hand, not the rifle. Multiple officers confirmed seeing a revolver in his right hand."
+        }
+      ],
+      "explanation": "At the final emergence (~3:52 a.m.), Brown came out with a revolver in his right hand, not the rifle in his left hand. The DA letter and all four shooting officers' statements confirm it was a revolver in the right hand. The report gets both the weapon and the hand wrong.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject raised the rifle to shoulder level and pointed it directly at the marked K9 patrol vehicle parked in front of the residence where several officers were positioned.",
+      "report_location": "Narrative, paragraph 5, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject pointed a revolver (not rifle) up in the air first, then in a northeast direction toward the K9 patrol vehicle."
+        }
+      ],
+      "explanation": "The weapon was a revolver, not a rifle. Additionally, Brown first pointed the handgun up in the air before directing it toward the K9 vehicle — the report omits the initial upward motion and misidentifies the weapon, though the general direction toward the K9 vehicle is accurate.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The subject fell forward onto the porch in a prone position.",
+      "report_location": "Narrative, paragraph 5, last sentence",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject fell to a seated position facing north on the front porch, with the revolver still held in his right hand."
+        }
+      ],
+      "explanation": "The DA letter states Brown 'fell to a seated position facing north on the front porch of the residence with the revolver still held in his right hand.' The report says prone (face-down), which contradicts the seated position documented in the investigation.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject was observed lying face-down with no weapon in his hands.",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject was seated (not face-down) and still holding the revolver in his right hand. He did not respond to commands to drop it."
+        }
+      ],
+      "explanation": "Brown was in a seated position and still held the revolver in his right hand. The arrest team formed and moved to the gate specifically because he would not drop the gun. Two Less Lethal rounds were deployed and he still didn't drop it. The K9 was deployed to cause him to release the weapon. The report falsely claims he had no weapon.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Officer Kapoor deployed two 40 mm Less Lethal rounds as a precaution but the subject showed no response.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Officer deploys two 40mm Less Lethal rounds at the subject. Subject moves but does not drop the handgun.",
+          "transcript_excerpt": "Impact sounds audible. No verbal response from subject."
+        }
+      ],
+      "explanation": "The DA letter confirms Officer Hasani deployed two 40mm Less Lethal rounds at approximately 3:56 a.m. Brown moved but did not drop the handgun. The claim about lack of response to drop the weapon is essentially accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officer Diaz subsequently deployed the K9, which made contact with the subject and pulled him from the porch onto the sidewalk.",
+      "report_location": "Narrative, paragraph 6, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "K9 deployed, makes contact with subject, pulls him east from the porch onto the sidewalk in front of the residence. Subject drops the handgun."
+        }
+      ],
+      "explanation": "The DA letter confirms Officer Mullins deployed a K9 which caused Brown to drop the handgun and pulled him east from the porch onto the sidewalk. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "A subsequent search of the residence recovered one firearm: a .38 caliber revolver, Smith and Wesson, found on the porch near the front door. No rifle was recovered from the residence.",
+      "report_location": "Narrative, paragraph 7",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Revolver was recovered on the porch (accurate). However, an AR-15 style rifle with a double drum magazine containing 99 rounds of .223 caliber ammunition was found on the sofa in the living room."
+        }
+      ],
+      "explanation": "While the revolver location is accurate, claiming no rifle was recovered is false. The DA letter documents an AR-15 style .223 Wylde caliber rifle found on the sofa in the living room, loaded with a double drum magazine containing 99 fully jacketed cartridges. This omission conceals a significant piece of evidence.",
+      "discrepancy_type": "omission",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Anaheim Fire Department paramedics arrived at approximately 0404 hours; the subject was pronounced deceased at approximately 0411 hours.",
+      "report_location": "Narrative, paragraph 6, last sentence",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Radio traffic and timestamps consistent with paramedics arriving approximately 4:04 a.m."
+        }
+      ],
+      "explanation": "The DA letter confirms paramedics were summoned at approximately 4:04 a.m. and Brown was pronounced deceased at approximately 4:11 a.m. These times are accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The situation was classified as a Negotiator Driven Incident under Penal Code section 1370 due to information that the subject had previously been found mentally incompetent.",
+      "report_location": "Narrative, paragraph 2, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Briefing information provided to SWAT and TNU upon arrival at Command Post."
+        }
+      ],
+      "explanation": "The DA letter confirms that information concerning Brown's background was provided including that he had been previously found mentally incompetent per PC 1370, and the situation was classified as a Negotiator Driven Incident. This is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}
