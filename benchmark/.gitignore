@@ -1,2 +1,5 @@
 # Downloaded evidence files — not distributed, fetched via scripts/download.py
 evidence/
+
+# Derived data (transcripts, temp files)
+raw/
