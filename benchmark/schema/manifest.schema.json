@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Benchmark Manifest",
+  "description": "Evidence source manifest with download URLs and integrity hashes",
+  "type": "object",
+  "required": ["version", "sources"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Manifest schema version"
+    },
+    "created": {
+      "type": "string",
+      "format": "date"
+    },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/source" }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "required": ["evidence_id", "urls", "sha256", "file_name"],
+      "properties": {
+        "evidence_id": {
+          "type": "string",
+          "description": "Stable identifier for this evidence file"
+        },
+        "file_name": {
+          "type": "string",
+          "description": "Local filename after download"
+        },
+        "urls": {
+          "type": "array",
+          "items": { "type": "string", "format": "uri" },
+          "minItems": 1,
+          "description": "Download URLs in preference order (fallbacks for link rot)"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "SHA-256 hash of the expected file"
+        },
+        "file_size_bytes": {
+          "type": "integer",
+          "description": "Expected file size"
+        },
+        "format": {
+          "type": "string",
+          "enum": ["mp4", "mkv", "webm", "wav", "mp3", "pdf"]
+        },
+        "duration_seconds": {
+          "type": "number",
+          "description": "Media duration for audio/video files"
+        },
+        "origin": {
+          "type": "string",
+          "description": "Where this file comes from (e.g. 'Chicago COPA Case 2024-0001234')"
+        },
+        "origin_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the source page (not the direct download)"
+        },
+        "access_date": {
+          "type": "string",
+          "format": "date",
+          "description": "When the URL was last verified"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

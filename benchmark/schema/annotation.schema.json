@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Scenario Annotation",
+  "description": "Ground-truth annotation for a single benchmark scenario",
+  "type": "object",
+  "required": ["scenario_id", "evidence_id", "report_id", "claims"],
+  "properties": {
+    "scenario_id": {
+      "type": "string",
+      "pattern": "^sc-\\d{3}$",
+      "description": "Unique scenario identifier"
+    },
+    "evidence_id": {
+      "type": "string",
+      "description": "References manifest.json entry"
+    },
+    "report_id": {
+      "type": "string",
+      "description": "Filename of the authored incident report"
+    },
+    "annotator": {
+      "type": "string",
+      "description": "Who created this annotation"
+    },
+    "annotation_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "scenario_summary": {
+      "type": "string",
+      "description": "Brief description of the scenario for human reference"
+    },
+    "claims": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/claim" },
+      "minItems": 1
+    }
+  },
+  "$defs": {
+    "claim": {
+      "type": "object",
+      "required": ["claim_id", "claim_text", "report_location", "ground_truth_relationship"],
+      "properties": {
+        "claim_id": {
+          "type": "string",
+          "pattern": "^cl-\\d{3}$"
+        },
+        "claim_text": {
+          "type": "string",
+          "description": "The factual claim as stated in the report"
+        },
+        "report_location": {
+          "type": "string",
+          "description": "Where in the report this claim appears (paragraph, sentence)"
+        },
+        "claim_type": {
+          "type": "string",
+          "enum": [
+            "spoken_statement",
+            "action_description",
+            "object_description",
+            "temporal_sequence",
+            "location_description",
+            "identity_description",
+            "subjective_characterization"
+          ]
+        },
+        "ground_truth_relationship": {
+          "type": "string",
+          "enum": ["supported", "conflict", "ambiguous", "no_evidence"],
+          "description": "The known relationship between this claim and the evidence"
+        },
+        "evidence_references": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/evidence_reference" },
+          "description": "Specific evidence segments relevant to this claim"
+        },
+        "explanation": {
+          "type": "string",
+          "description": "Why this ground-truth label was assigned"
+        },
+        "discrepancy_type": {
+          "type": "string",
+          "enum": [
+            "direct_contradiction",
+            "omission",
+            "sequence_mismatch",
+            "temporal_mismatch",
+            "exaggeration",
+            "minimization",
+            "fabrication",
+            "ambiguous_language",
+            "none"
+          ],
+          "description": "Category of discrepancy, if any"
+        },
+        "difficulty": {
+          "type": "string",
+          "enum": ["easy", "medium", "hard"],
+          "description": "How hard this discrepancy is to detect"
+        }
+      }
+    },
+    "evidence_reference": {
+      "type": "object",
+      "required": ["modality"],
+      "properties": {
+        "modality": {
+          "type": "string",
+          "enum": ["audio", "visual", "both"]
+        },
+        "start_seconds": {
+          "type": "number",
+          "description": "Start of relevant segment in seconds from media start"
+        },
+        "end_seconds": {
+          "type": "number",
+          "description": "End of relevant segment in seconds from media start"
+        },
+        "transcript_excerpt": {
+          "type": "string",
+          "description": "What is said in the audio, if applicable"
+        },
+        "visual_description": {
+          "type": "string",
+          "description": "What is visible in the video, if applicable"
+        }
+      }
+    }
+  }
+}

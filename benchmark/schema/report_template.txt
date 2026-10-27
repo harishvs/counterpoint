@@ -1,0 +1,44 @@
+INCIDENT REPORT
+
+Case Number: [SCENARIO_ID]
+Date of Incident: [DATE]
+Time of Incident: [TIME]
+Location: [ADDRESS/LOCATION]
+Reporting Officer: [FICTIONAL NAME]
+Badge Number: [FICTIONAL]
+
+PERSONS INVOLVED:
+  Subject: [FICTIONAL NAME], [AGE], [DESCRIPTION]
+  Officer(s): [FICTIONAL NAME(S)]
+  Witness(es): [IF APPLICABLE]
+
+NARRATIVE:
+
+[Write 3-6 paragraphs describing the incident from the officer's perspective.
+Include specific factual claims that can be compared against the evidence:
+
+- Direct quotes attributed to the subject or witnesses
+- Descriptions of physical actions (movements, gestures, positions)
+- Descriptions of objects (what was seen, where, when)
+- Sequence of events (what happened first, second, etc.)
+- Time references (approximate times, durations)
+- Location details (where people were standing, which direction)
+
+Deliberately include a mix of:
+- Claims that accurately reflect the video evidence
+- Claims that contradict the video evidence
+- Claims about things not visible/audible in the evidence
+- Subjective characterizations of behavior
+
+Write in the style of a real police incident report: formal, third-person,
+past tense, with specific detail.]
+
+EVIDENCE COLLECTED:
+  - Body-worn camera footage ([DURATION])
+  - [OTHER EVIDENCE IF APPLICABLE]
+
+ACTIONS TAKEN:
+  [BRIEF SUMMARY OF OUTCOME]
+
+Officer Signature: [FICTIONAL NAME]
+Date of Report: [DATE]

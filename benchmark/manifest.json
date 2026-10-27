@@ -1,0 +1,215 @@
+{
+  "version": "0.1.0",
+  "created": "2026-10-26",
+  "description": "Evidence sources for the Counterpoint benchmark. Video/audio files are not distributed — this manifest provides download URLs to publicly available sources.",
+  "sources": [
+    {
+      "evidence_id": "ocda-001-valdez-pdf",
+      "file_name": "ocda-001-valdez.pdf",
+      "urls": [
+        "https://ocdistrictattorney.gov/wp-content/uploads/2022/11/Valdez-OIS-SA-21-000554-Final-Signed-letter.pdf"
+      ],
+      "sha256": "dc7efc8423cd99206b7276f227eaa6510f3fe23fbc9d56393e32d0556e347a82",
+      "file_size_bytes": 783319,
+      "format": "pdf",
+      "origin": "OCDA OIS Investigation: Jose David Valdez, Costa Mesa PD",
+      "origin_url": "https://ocdistrictattorney.gov/officer-involved-shootings/",
+      "access_date": "2026-10-27"
+    },
+    {
+      "evidence_id": "ocda-002-montes-pdf",
+      "file_name": "ocda-002-montes.pdf",
+      "urls": [
+        "https://ocdistrictattorney.gov/wp-content/uploads/2023/10/Montes-Alejandro-SAPD-SA-22-003506-Final-Signed-Letter.pdf"
+      ],
+      "sha256": "2a0a7c71676a184c26a4be7f82037e9c2c3a15ee50f96be0d9809bab06efc52f",
+      "file_size_bytes": 843196,
+      "format": "pdf",
+      "origin": "OCDA OIS Investigation: Alejandro Sanchez Montes, Santa Ana PD",
+      "origin_url": "https://ocdistrictattorney.gov/officer-involved-shootings/",
+      "access_date": "2026-10-27"
+    },
+    {
+      "evidence_id": "ocda-003-emch-pdf",
+      "file_name": "ocda-003-emch.pdf",
+      "urls": [
+        "https://ocdistrictattorney.gov/wp-content/uploads/2023/12/Emch-Michael-SBPD-SA-23-000134-Final-Signed-Letter-2.pdf"
+      ],
+      "sha256": "600fbf4e114a8a7ce4ff876a398f31273691c9e437aa2b4820561bce214a0b95",
+      "file_size_bytes": 7465871,
+      "format": "pdf",
+      "origin": "OCDA OIS Investigation: Michael Emch Jr, Seal Beach PD",
+      "origin_url": "https://ocdistrictattorney.gov/officer-involved-shootings/",
+      "access_date": "2026-10-27"
+    },
+    {
+      "evidence_id": "ocda-004-vargas-pdf",
+      "file_name": "ocda-004-vargas.pdf",
+      "urls": [
+        "https://ocdistrictattorney.gov/wp-content/uploads/2023/08/Vargas-Hugo-CMPD-SA-22-002116-Final-Signed-Letter-1.pdf"
+      ],
+      "sha256": "135ab87a37bda4c6aa65d039f2d8215d7f9c11eef63972779ac06732ad4ac50b",
+      "file_size_bytes": 799781,
+      "format": "pdf",
+      "origin": "OCDA OIS Investigation: Hugo Vargas, Costa Mesa PD",
+      "origin_url": "https://ocdistrictattorney.gov/officer-involved-shootings/",
+      "access_date": "2026-10-27"
+    },
+    {
+      "evidence_id": "ocda-005-brown-pdf",
+      "file_name": "ocda-005-brown.pdf",
+      "urls": [
+        "https://ocdistrictattorney.gov/wp-content/uploads/2023/07/Brown-Osman-APD-SA-22-000588-Completed-and-Signed-Letter-6.7.2023.pdf"
+      ],
+      "sha256": "587eed83459b8a921e1c7cead5d73777cd4a224345c7c527091a877f9d4735b4",
+      "file_size_bytes": 942414,
+      "format": "pdf",
+      "origin": "OCDA OIS Investigation: Osman Brown, Anaheim PD",
+      "origin_url": "https://ocdistrictattorney.gov/officer-involved-shootings/",
+      "access_date": "2026-10-27"
+    },
+    {
+      "evidence_id": "ocda-006-sanchez-pdf",
+      "file_name": "ocda-006-sanchez.pdf",
+      "urls": [
+        "https://ocdistrictattorney.gov/wp-content/uploads/2023/07/Sanchez-APD-SA-20-030-Completed-and-Signed-Letter.pdf"
+      ],
+      "sha256": "90c234c5eeebb30b2c4ebdde4c49567395ee03288aee0685b268b03bd19113f2",
+      "file_size_bytes": 878474,
+      "format": "pdf",
+      "origin": "OCDA OIS Investigation: Raul Sanchez, Anaheim PD",
+      "origin_url": "https://ocdistrictattorney.gov/officer-involved-shootings/",
+      "access_date": "2026-10-27"
+    },
+    {
+      "evidence_id": "ocda-007-to-pdf",
+      "file_name": "ocda-007-to.pdf",
+      "urls": [
+        "https://ocdistrictattorney.gov/wp-content/uploads/2024/03/To-Khang-WPD-SA-22-003949-Final-Signed-Letter-Revised.pdf"
+      ],
+      "sha256": "3303891b5520787154068ee22ee8b2bd7140b97a20a106d6abd664d05080a9d2",
+      "file_size_bytes": 838700,
+      "format": "pdf",
+      "origin": "OCDA OIS Investigation: Khang Chi To, Westminster PD",
+      "origin_url": "https://ocdistrictattorney.gov/officer-involved-shootings/",
+      "access_date": "2026-10-27"
+    },
+    {
+      "evidence_id": "ocda-008-tice-pdf",
+      "file_name": "ocda-008-tice.pdf",
+      "urls": [
+        "https://ocdistrictattorney.gov/wp-content/uploads/2023/12/Tice-Hunter-OIS-News-Release.pdf"
+      ],
+      "sha256": "f812b1b7748290ef7c391e501297e98acb66f8a0c29474c99e9e3ef36c588bc1",
+      "file_size_bytes": 139389,
+      "format": "pdf",
+      "origin": "OCDA OIS Investigation: Hunter Tice",
+      "origin_url": "https://ocdistrictattorney.gov/officer-involved-shootings/",
+      "access_date": "2026-10-27"
+    },
+    {
+      "evidence_id": "ocda-009-steinmetz-pdf",
+      "file_name": "ocda-009-steinmetz.pdf",
+      "urls": [
+        "https://ocdistrictattorney.gov/wp-content/uploads/2023/10/Steinmetz-Tobiah-Paul-LBPD-SA-21-835-Final-Signed-Letter.pdf"
+      ],
+      "sha256": "36547f2f1ca9e36ff7ceff61067e1425c957f8ceefcf3c757a180f36446f0940",
+      "file_size_bytes": 869017,
+      "format": "pdf",
+      "origin": "OCDA OIS Investigation: Tobiah Paul Steinmetz, Long Beach PD",
+      "origin_url": "https://ocdistrictattorney.gov/officer-involved-shootings/",
+      "access_date": "2026-10-27"
+    },
+    {
+      "evidence_id": "ocda-011-reinhold-pdf",
+      "file_name": "ocda-011-reinhold.pdf",
+      "urls": [
+        "https://ocdistrictattorney.gov/wp-content/uploads/2022/02/Reinhold-Final-Signed-Feb-8-2022.pdf"
+      ],
+      "sha256": "3f2cd5dc7f369a89026e25a1f5319d75a637d38374e7a138627535e00898b5fa",
+      "file_size_bytes": 1140658,
+      "format": "pdf",
+      "origin": "OCDA OIS Investigation: Kurt Reinhold, OC Sheriff",
+      "origin_url": "https://ocdistrictattorney.gov/officer-involved-shootings/",
+      "access_date": "2026-10-27"
+    },
+    {
+      "evidence_id": "ocda-013-wong-pdf",
+      "file_name": "ocda-013-wong.pdf",
+      "urls": [
+        "https://ocdistrictattorney.gov/wp-content/uploads/2023/01/Wong-Matthew-PPD-SA-21-001941-Final-Letter-with-Signatures.pdf"
+      ],
+      "sha256": "ebbfeb575f470fcb8b837739464224e603c26999f1921eade0cdf8d6ff23d8dd",
+      "file_size_bytes": 988193,
+      "format": "pdf",
+      "origin": "OCDA OIS Investigation: Matthew Wong, Placentia PD",
+      "origin_url": "https://ocdistrictattorney.gov/officer-involved-shootings/",
+      "access_date": "2026-10-27"
+    },
+    {
+      "evidence_id": "ocda-014-tran-pdf",
+      "file_name": "ocda-014-tran.pdf",
+      "urls": [
+        "https://ocdistrictattorney.gov/wp-content/uploads/2022/12/Tran-Matthew-LHPD-S.A.-21-2922-Final-Letter-with-All-Signatures.pdf"
+      ],
+      "sha256": "869ada2d3bdda6327779f1461bb04b8944b9a8bc0d01baeaf1d2cfee93db23f1",
+      "file_size_bytes": 809686,
+      "format": "pdf",
+      "origin": "OCDA OIS Investigation: Matthew-Tuan Ahn Tran, La Habra PD",
+      "origin_url": "https://ocdistrictattorney.gov/officer-involved-shootings/",
+      "access_date": "2026-10-27"
+    },
+    {
+      "evidence_id": "ocda-015-baxter-pdf",
+      "file_name": "ocda-015-baxter.pdf",
+      "urls": [
+        "https://ocdistrictattorney.gov/wp-content/uploads/2022/09/Cedric-Baster-21-003557-Final-Signed-8.29.22.pdf"
+      ],
+      "sha256": "cf629defa449af95f95fcc883e4d4976e78cd5cea2794eb7316384bf7ebc1608",
+      "file_size_bytes": 921403,
+      "format": "pdf",
+      "origin": "OCDA OIS Investigation: Cedric Baxter, Buena Park PD",
+      "origin_url": "https://ocdistrictattorney.gov/officer-involved-shootings/",
+      "access_date": "2026-10-27"
+    },
+    {
+      "evidence_id": "ocda-016-salac-pdf",
+      "file_name": "ocda-016-salac.pdf",
+      "urls": [
+        "https://ocdistrictattorney.gov/wp-content/uploads/2021/03/Salac-SA-20-015-OIS-Fatal-Report-FINAL-Jan-15-2021.pdf"
+      ],
+      "sha256": "2efefe235dc23070ee5b11582028f4857c95a544b0e60480d6d03f1b06298a5c",
+      "file_size_bytes": 449702,
+      "format": "pdf",
+      "origin": "OCDA OIS Investigation: Sunshine Kamille Salac",
+      "origin_url": "https://ocdistrictattorney.gov/officer-involved-shootings/",
+      "access_date": "2026-10-27"
+    },
+    {
+      "evidence_id": "ocda-017-aguirre-pdf",
+      "file_name": "ocda-017-aguirre.pdf",
+      "urls": [
+        "https://ocdistrictattorney.gov/wp-content/uploads/2020/12/Aguirre-SA-19-021-Final-Nov-4-2020.pdf"
+      ],
+      "sha256": "3da2cc0553697a723c8ba17b163fa5bcb1f64b39f83d48012321b5993ea55ba9",
+      "file_size_bytes": 603619,
+      "format": "pdf",
+      "origin": "OCDA OIS Investigation: Randolph Aguirre, La Habra PD",
+      "origin_url": "https://ocdistrictattorney.gov/officer-involved-shootings/",
+      "access_date": "2026-10-27"
+    },
+    {
+      "evidence_id": "ocda-018-mejia-pdf",
+      "file_name": "ocda-018-mejia.pdf",
+      "urls": [
+        "https://ocdistrictattorney.gov/wp-content/uploads/2024/01/OIS-Clemente-De-Garay-Mejia-correction.pdf"
+      ],
+      "sha256": "aa2fa82a6400484a56a9570919eadcd45d7c7302f8276514179ecebd6401f8f6",
+      "file_size_bytes": 190126,
+      "format": "pdf",
+      "origin": "OCDA OIS Investigation: Clemente De Garay Mejia, Tustin PD",
+      "origin_url": "https://ocdistrictattorney.gov/officer-involved-shootings/",
+      "access_date": "2026-10-27"
+    }
+  ]
+}
