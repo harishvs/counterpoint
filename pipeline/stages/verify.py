@@ -74,6 +74,15 @@ def verify_claim(claim: ExtractedClaim, segment: RetrievedSegment,
     )
     result = adapter.complete_structured(prompt, VERIFY_SCHEMA, media=media if media else None)
 
+    if "error" in result:
+        return VerifiedClaim(
+            claim_id=claim.claim_id,
+            claim_text=claim.claim_text,
+            evidence_relationship="not_assessed",
+            retrieval_status=segment.retrieval_status,
+            evidence_observations=f"Parse error: {result.get('raw', '')[:100]}",
+        )
+
     return VerifiedClaim(
         claim_id=claim.claim_id,
         claim_text=claim.claim_text,

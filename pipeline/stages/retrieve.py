@@ -73,6 +73,9 @@ def retrieve_segments(claim: ExtractedClaim, transcript_path: Path,
     )
     result = adapter.complete_structured(prompt, RETRIEVE_SCHEMA)
 
+    if "error" in result:
+        return RetrievedSegment(claim_id=claim.claim_id, retrieval_status="failed")
+
     refs = []
     for seg in result.get("segments", []):
         refs.append(EvidenceReference(

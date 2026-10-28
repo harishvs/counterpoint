@@ -85,7 +85,17 @@ class ClaudeAdapter(ModelAdapter):
         if text.endswith("```"):
             text = text[:-3].strip()
         text = re.sub(r",\s*([}\]])", r"\1", text)
-        return json.loads(text)
+        try:
+            return json.loads(text)
+        except json.JSONDecodeError:
+            match = re.search(r"\{[\s\S]*\}", text)
+            if match:
+                try:
+                    cleaned = re.sub(r",\s*([}\]])", r"\1", match.group())
+                    return json.loads(cleaned)
+                except json.JSONDecodeError:
+                    pass
+            return {"error": "json_parse_failed", "raw": text[:200]}
 
     def _build_content(self, prompt: str, media: list[Path] | None) -> list[dict]:
         content = []
