@@ -35,60 +35,117 @@ SCENARIO_TO_CASE = {
     "sc-018": "ocda-018-mejia",
 }
 
+EVENT_KEYWORDS = [
+    "stop", "don't move", "dont move", "hands up", "get down", "drop it",
+    "get on the ground", "show me your hands", "put your hands",
+    "shots fired", "taser", "fire", "shoot", "gun", "weapon", "knife",
+    "reverse", "backing", "drive", "vehicle", "car",
+    "screaming", "yelling", "running", "fleeing",
+    "handcuff", "cuff", "detained", "arrest",
+    "paramedic", "ambulance", "medical", "cpr",
+    "driver", "passenger", "steering wheel",
+    "comply", "resist", "cooperate",
+    "reach", "waistband", "pocket",
+]
+
 
 def normalize(text: str) -> str:
     return re.sub(r"[^a-z0-9 ]", "", text.lower()).strip()
 
 
-def search_transcript(segments: list[dict], keywords: list[str], window: int = 5) -> dict | None:
-    """Search transcript for keywords, return best matching segment with context window."""
-    best_score = 0
-    best_segment = None
+def build_sliding_windows(segments: list[dict], window_size: int = 3) -> list[dict]:
+    """Build overlapping text windows for broader matching."""
+    windows = []
+    for i in range(len(segments)):
+        end = min(i + window_size, len(segments))
+        combined_text = " ".join(normalize(s["text"]) for s in segments[i:end])
+        windows.append({
+            "text": combined_text,
+            "start": segments[i]["start"],
+            "end": segments[end - 1]["end"],
+            "idx": i,
+        })
+    return windows
 
-    for i, seg in enumerate(segments):
-        seg_text = normalize(seg["text"])
-        score = sum(1 for kw in keywords if kw in seg_text)
+
+def search_transcript(segments: list[dict], keywords: list[str],
+                      context_window: int = 3) -> dict | None:
+    """Search transcript for keywords using sliding windows."""
+    if not keywords:
+        return None
+
+    windows = build_sliding_windows(segments, window_size=3)
+    best_score = 0
+    best_window = None
+
+    for win in windows:
+        score = 0
+        for kw in keywords:
+            if kw in win["text"]:
+                score += 1
+                if len(kw) > 5:
+                    score += 0.5
 
         if score > best_score:
             best_score = score
-            start_idx = max(0, i - window)
-            end_idx = min(len(segments) - 1, i + window)
-            best_segment = {
-                "start_seconds": segments[start_idx]["start"],
-                "end_seconds": segments[end_idx]["end"],
-                "match_text": seg["text"],
+            start_idx = max(0, win["idx"] - context_window)
+            end_idx = min(len(segments) - 1, win["idx"] + context_window + 2)
+            best_window = {
+                "start_seconds": round(segments[start_idx]["start"], 1),
+                "end_seconds": round(segments[end_idx]["end"], 1),
+                "match_text": win["text"][:100],
                 "score": score,
             }
 
-    return best_segment if best_score > 0 else None
+    return best_window
 
 
 def extract_keywords(claim: dict) -> list[str]:
-    """Extract search keywords from a claim's text and evidence references."""
-    keywords = []
+    """Extract search keywords from all available claim fields."""
+    keywords = set()
 
     for ref in claim.get("evidence_references", []):
         excerpt = ref.get("transcript_excerpt", "")
         if excerpt:
             words = normalize(excerpt).split()
-            keywords.extend([w for w in words if len(w) > 3])
+            keywords.update(w for w in words if len(w) > 2)
 
         desc = ref.get("visual_description", "")
         if desc:
-            action_words = []
-            for phrase in ["driver", "passenger", "steering wheel", "reverse",
-                           "handcuff", "fired", "shots", "gun", "weapon",
-                           "taser", "knife", "stop", "hands up", "get down",
-                           "screaming", "running", "vehicle"]:
-                if phrase in desc.lower():
-                    action_words.extend(phrase.split())
-            keywords.extend(action_words)
+            desc_lower = desc.lower()
+            for phrase in EVENT_KEYWORDS:
+                if phrase in desc_lower:
+                    keywords.update(phrase.split())
+            words = normalize(desc).split()
+            keywords.update(w for w in words if len(w) > 4)
 
-    claim_text = normalize(claim.get("claim_text", ""))
-    for quoted in re.findall(r'"([^"]+)"', claim.get("claim_text", "")):
-        keywords.extend([w for w in normalize(quoted).split() if len(w) > 3])
+    explanation = claim.get("explanation", "")
+    if explanation:
+        exp_lower = explanation.lower()
+        for phrase in EVENT_KEYWORDS:
+            if phrase in exp_lower:
+                keywords.update(phrase.split())
 
-    return list(set(keywords))
+    claim_text = claim.get("claim_text", "")
+    for quoted in re.findall(r'"([^"]*)"', claim_text):
+        words = normalize(quoted).split()
+        keywords.update(w for w in words if len(w) > 2)
+
+    claim_lower = claim_text.lower()
+    for phrase in EVENT_KEYWORDS:
+        if phrase in claim_lower:
+            keywords.update(phrase.split())
+
+    claim_words = normalize(claim_text).split()
+    keywords.update(w for w in claim_words if len(w) > 5)
+
+    keywords.discard("")
+    stopwords = {"the", "that", "this", "with", "from", "was", "were", "been",
+                 "have", "had", "has", "being", "which", "their", "there",
+                 "about", "would", "could", "should", "into", "also",
+                 "officer", "officers", "subject", "vehicle", "report",
+                 "stated", "observed", "approximately"}
+    return list(keywords - stopwords)
 
 
 def fmt_time(seconds: float) -> str:
@@ -99,12 +156,15 @@ def fmt_time(seconds: float) -> str:
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--apply", action="store_true", help="Write updated annotations")
+    parser.add_argument("--threshold", type=float, default=1.0,
+                        help="Minimum match score (default: 1.0)")
     args = parser.parse_args()
 
     total_claims = 0
     matched = 0
     already_had = 0
     no_transcript = 0
+    skipped_low = 0
 
     for ann_file in sorted(ANNOTATIONS_DIR.glob("*.json")):
         with open(ann_file) as f:
@@ -144,7 +204,7 @@ def main():
                 continue
 
             result = search_transcript(segments, keywords)
-            if result and result["score"] >= 2:
+            if result and result["score"] >= args.threshold:
                 matched += 1
                 modified = True
 
@@ -159,7 +219,10 @@ def main():
                     }]
 
                 print(f"    {claim['claim_id']}: {fmt_time(result['start_seconds'])}-{fmt_time(result['end_seconds'])} "
-                      f"(score={result['score']}, match='{result['match_text'][:60]}')")
+                      f"(score={result['score']}, kw={len(keywords)}, "
+                      f"match='{result['match_text'][:50]}')")
+            else:
+                skipped_low += 1
 
         if modified and args.apply:
             with open(ann_file, "w") as f:
@@ -171,6 +234,7 @@ def main():
     print(f"  Total claims: {total_claims}")
     print(f"  Matched: {matched}")
     print(f"  Already had timestamps: {already_had}")
+    print(f"  Below threshold: {skipped_low}")
     print(f"  No transcript available: {no_transcript}")
     if not args.apply and matched > 0:
         print(f"\n  Run with --apply to write changes")
