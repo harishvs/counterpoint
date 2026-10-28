@@ -38,7 +38,8 @@
 - [ ] Run claim-first pipeline on one scenario (needs ANTHROPIC_API_KEY)
 - [ ] Run single-pass baseline on one scenario
 - [ ] Compare baselines and get first metrics
-- [ ] Research Nemotron Omni capabilities and API format
+- [x] Research Nemotron Omni capabilities and API format (video+audio+text confirmed, 2-min video limit)
+- [x] Implement Nemotron adapter (OpenAI-compatible, vLLM, video clip extraction)
 - [ ] Implement transcript-only baseline
 
 ## Later: Expand benchmark

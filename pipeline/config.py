@@ -20,6 +20,9 @@ def make_adapter(config: PipelineConfig):
         return ClaudeAdapter(model_name=config.model_id, use_bedrock=config.use_bedrock)
     elif config.model_adapter == "nemotron":
         from .adapters.nemotron import NemotronAdapter
-        return NemotronAdapter()
+        return NemotronAdapter(
+            endpoint=config.nemotron_endpoint,
+            model_name=config.model_id,
+        )
     else:
         raise ValueError(f"Unknown adapter: {config.model_adapter}")

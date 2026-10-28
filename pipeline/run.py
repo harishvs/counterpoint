@@ -171,6 +171,8 @@ def main():
     parser.add_argument("--model", default="claude-haiku-5-5", help="Model ID")
     parser.add_argument("--bedrock", action="store_true", default=True, help="Use AWS Bedrock")
     parser.add_argument("--no-bedrock", dest="bedrock", action="store_false")
+    parser.add_argument("--endpoint", default="http://localhost:8000/v1",
+                        help="Model endpoint URL (for Nemotron/vLLM)")
     parser.add_argument("--pipeline", default="claim-first",
                         choices=["claim-first", "single-pass", "transcript-only"])
     parser.add_argument("--out", type=Path, default=PREDICTIONS_DIR)
@@ -184,6 +186,7 @@ def main():
     config.model_adapter = args.adapter
     config.model_id = args.model
     config.use_bedrock = args.bedrock
+    config.nemotron_endpoint = args.endpoint
 
     args.out.mkdir(parents=True, exist_ok=True)
 
