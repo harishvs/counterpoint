@@ -139,6 +139,7 @@ def run_single_pass(scenario_id: str, config: PipelineConfig) -> ScenarioPredict
     for raw in result.get("claims", []):
         verified.append(VerifiedClaim(
             claim_id=raw["claim_id"],
+            claim_text=raw.get("claim_text", ""),
             evidence_relationship=raw["evidence_relationship"],
             evidence_observations=raw.get("evidence_observations", ""),
         ))

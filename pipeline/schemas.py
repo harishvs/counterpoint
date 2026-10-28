@@ -30,6 +30,7 @@ class RetrievedSegment:
 class VerifiedClaim:
     claim_id: str
     evidence_relationship: str  # supported | potential_conflict | ambiguous_or_insufficient | not_assessed
+    claim_text: str = ""
     retrieval_status: str = "retrieved"
     evidence_references: list[EvidenceReference] = field(default_factory=list)
     evidence_observations: str = ""
@@ -69,6 +70,7 @@ class ScenarioPrediction:
             "claims": [
                 {
                     "claim_id": c.claim_id,
+                    "claim_text": c.claim_text,
                     "evidence_relationship": c.evidence_relationship,
                     "retrieval_status": c.retrieval_status,
                     "evidence_references": [

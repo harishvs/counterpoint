@@ -51,11 +51,72 @@ def compute_iou(pred_start: float, pred_end: float,
     return intersection / union
 
 
+def _normalize(text: str) -> set[str]:
+    """Normalize text to a set of lowercase words for comparison."""
+    import re
+    words = re.sub(r"[^a-z0-9 ]", "", text.lower()).split()
+    return set(w for w in words if len(w) > 2)
+
+
+def _text_similarity(a: str, b: str) -> float:
+    """Jaccard similarity between two text strings."""
+    wa, wb = _normalize(a), _normalize(b)
+    if not wa or not wb:
+        return 0.0
+    return len(wa & wb) / len(wa | wb)
+
+
+def match_claims(gt_claims: list[dict], pred_claims: list[dict],
+                 threshold: float = 0.3) -> dict[str, dict | None]:
+    """Match ground-truth claims to predictions by claim_id or text similarity.
+
+    Returns dict mapping gt claim_id → best matching prediction (or None).
+    """
+    gt_by_id = {c["claim_id"]: c for c in gt_claims}
+    pred_by_id = {c["claim_id"]: c for c in pred_claims}
+
+    id_hits = sum(1 for cid in gt_by_id if cid in pred_by_id)
+    if id_hits >= len(gt_by_id) * 0.5:
+        return {cid: pred_by_id.get(cid) for cid in gt_by_id}
+
+    matched = {}
+    used_preds = set()
+
+    for gt in gt_claims:
+        gt_text = gt.get("claim_text", "")
+        best_score = 0.0
+        best_pred = None
+
+        for pred in pred_claims:
+            pid = id(pred)
+            if pid in used_preds:
+                continue
+            pred_text = pred.get("claim_text", "")
+            if not pred_text:
+                continue
+            score = _text_similarity(gt_text, pred_text)
+            if score > best_score:
+                best_score = score
+                best_pred = pred
+                best_pred_id = pid
+
+        if best_pred and best_score >= threshold:
+            matched[gt["claim_id"]] = best_pred
+            used_preds.add(best_pred_id)
+        else:
+            matched[gt["claim_id"]] = None
+
+    return matched
+
+
 def evaluate_scenario(prediction: dict, annotation: dict,
                       iou_threshold: float = 0.3) -> dict:
     """Evaluate a single scenario's predictions against ground truth."""
-    gt_claims = {c["claim_id"]: c for c in annotation["claims"]}
-    pred_claims = {c["claim_id"]: c for c in prediction.get("claims", [])}
+    gt_claims_list = annotation["claims"]
+    pred_claims_list = prediction.get("claims", [])
+
+    claim_matches = match_claims(gt_claims_list, pred_claims_list)
+    gt_claims = {c["claim_id"]: c for c in gt_claims_list}
 
     tp = fp = fn = 0
     abstentions = 0
@@ -68,7 +129,7 @@ def evaluate_scenario(prediction: dict, annotation: dict,
     per_claim = []
 
     for claim_id, gt in gt_claims.items():
-        pred = pred_claims.get(claim_id)
+        pred = claim_matches.get(claim_id)
         gt_rel = gt["ground_truth_relationship"]
         gt_disc = gt.get("discrepancy_type", "unknown")
         gt_diff = gt.get("difficulty", "unknown")
@@ -160,11 +221,16 @@ def evaluate_scenario(prediction: dict, annotation: dict,
     source_ref_acc = source_ref_correct / source_ref_total if source_ref_total > 0 else None
     abstention_rate = abstentions / len(gt_claims) if gt_claims else 0.0
 
+    matched_count = sum(1 for v in claim_matches.values() if v is not None)
+
     return {
         "scenario_id": annotation["scenario_id"],
         "model": prediction.get("model", "unknown"),
         "pipeline": prediction.get("pipeline", "unknown"),
         "counts": {"tp": tp, "fp": fp, "fn": fn, "total": len(gt_claims)},
+        "claims_matched": matched_count,
+        "claims_gt": len(gt_claims),
+        "claims_predicted": len(pred_claims_list),
         "precision": round(precision, 4),
         "recall": round(recall, 4),
         "f1": round(f1, 4),
@@ -287,8 +353,9 @@ def print_summary(agg: dict, scenario_results: list[dict]):
 
     print(f"\n  Per-scenario:")
     for sr in scenario_results:
+        match_info = f"matched={sr.get('claims_matched', '?')}/{sr.get('claims_gt', '?')}"
         print(f"    {sr['scenario_id']}  P={sr['precision']:.1%}  R={sr['recall']:.1%}  F1={sr['f1']:.1%}  "
-              f"(tp={sr['counts']['tp']} fp={sr['counts']['fp']} fn={sr['counts']['fn']})")
+              f"(tp={sr['counts']['tp']} fp={sr['counts']['fp']} fn={sr['counts']['fn']})  {match_info}")
     print()
 
 

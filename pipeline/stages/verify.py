@@ -76,6 +76,7 @@ def verify_claim(claim: ExtractedClaim, segment: RetrievedSegment,
 
     return VerifiedClaim(
         claim_id=claim.claim_id,
+        claim_text=claim.claim_text,
         evidence_relationship=result["evidence_relationship"],
         retrieval_status=segment.retrieval_status,
         evidence_references=segment.evidence_references,
