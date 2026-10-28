@@ -14,6 +14,7 @@ from pathlib import Path
 
 from .config import default_config, make_adapter
 from .schemas import PipelineConfig, ScenarioPrediction, RetrievedSegment
+from .stages.clip import extract_clip
 from .stages.extract import extract_claims
 from .stages.retrieve import retrieve_segments
 from .stages.verify import verify_claim
@@ -42,13 +43,25 @@ SCENARIO_TO_CASE = {
 
 
 def run_claim_first(scenario_id: str, config: PipelineConfig) -> ScenarioPrediction:
-    """Run the full claim-first pipeline: extract → retrieve → verify."""
+    """Run the full claim-first pipeline: extract → retrieve → verify.
+
+    When video evidence is available, cuts a clip per claim using timestamps
+    from the retrieve stage (stays under Nemotron's 2-min video limit).
+    """
     case_id = SCENARIO_TO_CASE[scenario_id]
     report_path = config.reports_dir / f"{scenario_id}_report.txt"
     transcript_path = config.transcript_dir / f"{case_id}.json" if config.transcript_dir else None
+    video_path = config.evidence_dir / f"{case_id}-video.mp4"
+    has_video = video_path.exists()
+    clip_dir = config.evidence_dir / "clips"
 
     adapter = make_adapter(config)
     start = time.time()
+
+    if has_video:
+        print(f"  [{scenario_id}] Video available: {video_path.name}")
+    else:
+        print(f"  [{scenario_id}] No local video — transcript only")
 
     print(f"  [{scenario_id}] Extracting claims from report...")
     claims = extract_claims(report_path, adapter)
@@ -62,8 +75,19 @@ def run_claim_first(scenario_id: str, config: PipelineConfig) -> ScenarioPredict
         else:
             segment = RetrievedSegment(claim_id=claim.claim_id, retrieval_status="not_retrieved")
 
+        clip_path = None
+        if has_video and segment.evidence_references:
+            ref = segment.evidence_references[0]
+            if ref.start_seconds is not None and ref.end_seconds is not None:
+                padding = 5.0
+                clip_start = max(0, ref.start_seconds - padding)
+                clip_end = ref.end_seconds + padding
+                clip_path = extract_clip(video_path, clip_start, clip_end, clip_dir)
+                if clip_path:
+                    print(f"  [{scenario_id}] {claim.claim_id}: clip {clip_start:.0f}s-{clip_end:.0f}s")
+
         print(f"  [{scenario_id}] {claim.claim_id}: verifying ({segment.retrieval_status})...")
-        result = verify_claim(claim, segment, adapter)
+        result = verify_claim(claim, segment, adapter, video_path=clip_path)
         verified.append(result)
         print(f"  [{scenario_id}] {claim.claim_id}: {result.evidence_relationship}")
 

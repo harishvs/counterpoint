@@ -5,7 +5,7 @@ from pathlib import Path
 from ..adapters.base import ModelAdapter
 from ..schemas import ExtractedClaim, RetrievedSegment, VerifiedClaim, EvidenceReference
 
-VERIFY_PROMPT = """\
+VERIFY_PROMPT_TEXT = """\
 You are a fact-checker comparing a claim from a police incident report against bodycam evidence.
 
 CLAIM FROM REPORT:
@@ -21,6 +21,26 @@ Compare the claim against the evidence and determine the relationship:
 - "not_assessed": Unable to evaluate (e.g., evidence is purely visual and no video frames available).
 
 Be precise. A conflict requires specific observable evidence that contradicts the claim, not speculation. If the evidence doesn't clearly address the claim, classify as ambiguous_or_insufficient rather than guessing.
+"""
+
+VERIFY_PROMPT_VIDEO = """\
+You are a fact-checker comparing a claim from a police incident report against bodycam video evidence.
+
+CLAIM FROM REPORT:
+"{claim_text}"
+
+TRANSCRIPT OF THIS SEGMENT:
+{evidence_text}
+
+The attached video clip is the relevant segment of bodycam footage. Watch it carefully and compare what you see and hear against the claim.
+
+Determine the relationship:
+- "supported": The video/audio directly supports this claim.
+- "potential_conflict": The video/audio appears to contradict this claim. Explain specifically what you see or hear that conflicts.
+- "ambiguous_or_insufficient": The video is unclear, obstructed, or does not directly show what the claim describes.
+- "not_assessed": Unable to evaluate from this clip.
+
+Be precise. Base your assessment on what is actually visible and audible in the video, not assumptions.
 """
 
 VERIFY_SCHEMA = {
@@ -67,8 +87,11 @@ def verify_claim(claim: ExtractedClaim, segment: RetrievedSegment,
     media = []
     if video_path and video_path.exists():
         media.append(video_path)
+        template = VERIFY_PROMPT_VIDEO
+    else:
+        template = VERIFY_PROMPT_TEXT
 
-    prompt = VERIFY_PROMPT.format(
+    prompt = template.format(
         claim_text=claim.claim_text,
         evidence_text=evidence_text,
     )

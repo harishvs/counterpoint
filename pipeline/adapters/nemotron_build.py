@@ -64,7 +64,7 @@ class NemotronBuildAdapter(ModelAdapter):
 
         import time
         for attempt in range(self._max_retries):
-            response = http_requests.post(BUILD_API_URL, headers=headers, json=payload, timeout=120)
+            response = http_requests.post(BUILD_API_URL, headers=headers, json=payload, timeout=300)
             self._calls += 1
 
             if response.status_code == 200:
