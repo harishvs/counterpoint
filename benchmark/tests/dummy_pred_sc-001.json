@@ -1,0 +1,80 @@
+{
+  "scenario_id": "sc-001",
+  "model": "dummy-test",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 42.5,
+  "total_tokens": 15000,
+  "total_api_calls": 14,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved"
+    },
+    {
+      "claim_id": "cl-002",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved"
+    },
+    {
+      "claim_id": "cl-003",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved"
+    },
+    {
+      "claim_id": "cl-004",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved"
+    },
+    {
+      "claim_id": "cl-005",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved"
+    },
+    {
+      "claim_id": "cl-006",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved"
+    },
+    {
+      "claim_id": "cl-007",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved"
+    },
+    {
+      "claim_id": "cl-008",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved"
+    },
+    {
+      "claim_id": "cl-009",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved"
+    },
+    {
+      "claim_id": "cl-010",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved"
+    },
+    {
+      "claim_id": "cl-011",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved"
+    },
+    {
+      "claim_id": "cl-012",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved"
+    },
+    {
+      "claim_id": "cl-013",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved"
+    },
+    {
+      "claim_id": "cl-014",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved"
+    }
+  ]
+}

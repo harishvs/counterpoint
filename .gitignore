@@ -4,3 +4,4 @@ public_defense_evidence_review_poster_brief.md
 
 # Intermediate build artifacts
 benchmark/scripts/_*.json
+__pycache__/

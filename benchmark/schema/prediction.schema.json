@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Scenario Prediction",
+  "description": "Model predictions for a single benchmark scenario",
+  "type": "object",
+  "required": ["scenario_id", "model", "pipeline", "claims"],
+  "properties": {
+    "scenario_id": {
+      "type": "string",
+      "pattern": "^sc-\\d{3}$"
+    },
+    "model": {
+      "type": "string",
+      "description": "Model identifier (e.g. nemotron-omni-30b, claude-sonnet-5-5)"
+    },
+    "pipeline": {
+      "type": "string",
+      "enum": ["single-pass", "transcript-only", "claim-first"],
+      "description": "Which baseline pipeline produced this prediction"
+    },
+    "processing_time_seconds": {
+      "type": "number",
+      "description": "Wall-clock time to process this scenario"
+    },
+    "total_tokens": {
+      "type": "integer",
+      "description": "Total tokens consumed (input + output)"
+    },
+    "total_api_calls": {
+      "type": "integer",
+      "description": "Number of model API calls made"
+    },
+    "claims": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/predicted_claim" }
+    }
+  },
+  "$defs": {
+    "predicted_claim": {
+      "type": "object",
+      "required": ["claim_id", "evidence_relationship"],
+      "properties": {
+        "claim_id": {
+          "type": "string",
+          "pattern": "^cl-\\d{3}$"
+        },
+        "evidence_relationship": {
+          "type": "string",
+          "enum": ["supported", "potential_conflict", "ambiguous_or_insufficient", "not_assessed"]
+        },
+        "retrieval_status": {
+          "type": "string",
+          "enum": ["retrieved", "not_retrieved", "failed"]
+        },
+        "evidence_references": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "start_seconds": { "type": "number" },
+              "end_seconds": { "type": "number" }
+            }
+          }
+        },
+        "evidence_observations": {
+          "type": "string",
+          "description": "What the model observed in the evidence"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    }
+  }
+}

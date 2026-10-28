@@ -28,6 +28,19 @@
 - [ ] Verify claims against actual bodycam video (spot-check discrepancies)
 - Note: SC-008 (Tice) skipped — PDF was a press release, not an investigation letter
 
+## Next: Pipeline & Evaluation
+- [x] Build evaluation runner (precision, recall, F1, IoU, stratified breakdowns)
+- [x] Define prediction schema
+- [x] Build pipeline scaffold (extract → retrieve → verify)
+- [x] Implement Claude adapter
+- [x] Implement Nemotron adapter (stub)
+- [x] Implement single-pass baseline
+- [ ] Run claim-first pipeline on one scenario (needs ANTHROPIC_API_KEY)
+- [ ] Run single-pass baseline on one scenario
+- [ ] Compare baselines and get first metrics
+- [ ] Research Nemotron Omni capabilities and API format
+- [ ] Implement transcript-only baseline
+
 ## Later: Expand benchmark
 - [ ] Add American Fork PD scenarios
 - [ ] Write synthetic reports for additional discrepancy types
