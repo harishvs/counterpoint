@@ -167,7 +167,7 @@ def main():
     parser = argparse.ArgumentParser(description="Run evidence review pipeline")
     parser.add_argument("--scenario", help="Scenario ID (e.g. sc-001)")
     parser.add_argument("--all", action="store_true", help="Run all scenarios")
-    parser.add_argument("--adapter", default="claude", choices=["claude", "nemotron"])
+    parser.add_argument("--adapter", default="claude", choices=["claude", "nemotron", "nemotron-build"])
     parser.add_argument("--model", default="claude-haiku-5-5", help="Model ID")
     parser.add_argument("--bedrock", action="store_true", default=True, help="Use AWS Bedrock")
     parser.add_argument("--no-bedrock", dest="bedrock", action="store_false")

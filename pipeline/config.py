@@ -24,5 +24,8 @@ def make_adapter(config: PipelineConfig):
             endpoint=config.nemotron_endpoint,
             model_name=config.model_id,
         )
+    elif config.model_adapter == "nemotron-build":
+        from .adapters.nemotron_build import NemotronBuildAdapter
+        return NemotronBuildAdapter()
     else:
         raise ValueError(f"Unknown adapter: {config.model_adapter}")
