@@ -1,0 +1,860 @@
+{
+  "scenario_id": "sc-016",
+  "model": "us.anthropic.claude-haiku-5-5",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 346.61,
+  "total_tokens": 233329,
+  "total_api_calls": 107,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Incident occurred on June 24, 2020 at approximately 0103 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 27,
+          "end_seconds": 33
+        },
+        {
+          "start_seconds": 141,
+          "end_seconds": 179
+        }
+      ],
+      "evidence_observations": "The transcript segments contain only audio dialogue at timestamps 0:27-0:33 and 2:21-2:59 of the bodycam recording. They include a caller reporting someone entering her house, a request for an address, and a dispatch-style broadcast about a informant hearing a front window break. Neither segment mentions a date (June 24, 2020) or a time (0103 hours), and no on-screen date or time overlay is quoted. The recording's relative timestamps do not map to clock time. Nothing in the evidence contradicts the claim, but nothing directly confirms it either.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Incident location was the 22800 block of Loumont Drive, Lake Forest, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 46
+        },
+        {
+          "start_seconds": 26,
+          "end_seconds": 32
+        },
+        {
+          "start_seconds": 33,
+          "end_seconds": 37
+        }
+      ],
+      "evidence_observations": "The transcript has an address of 22851 in Lake Forest. House number 22851 falls within the 22800 block, and the city matches. The street name is rendered as \"lumon\" (\"22851 lumon in lake forest correct yes\"), not \"Loumont\". The transcript is garbled elsewhere (\"what's the straight name\", \"blue month eight ninety one golf five\"), and no spelling of the street name is clearly given. The \"Lumon\" versus \"Loumont\" difference could be a transcription or pronunciation artifact or a real discrepancy, and the evidence does not resolve which.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Subject is a female, approximately 25-30 years old, dressed in dark clothing",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 95,
+          "end_seconds": 109
+        },
+        {
+          "start_seconds": 173,
+          "end_seconds": 176
+        }
+      ],
+      "evidence_observations": "The transcript segments do not mention clothing or age, so those parts of the claim are not addressed. On gender, the segments refer to a hiding individual as male: at [1:35-1:49] officers ask \"where is he hiding\" and the answer is \"he's hiding in the bathroom,\" and at [2:53-2:56] \"the boyfriend is hiding in the closet.\" The informant is referred to as \"her\" and is described as home with her boyfriend. The report does not state whether the \"Subject\" is the hiding male, the informant, or another person, so the transcript cannot be confirmed to conflict with the claim that the subject is female. If the report's subject is the individual described as hiding, the male references would contradict the claim, but that link is not established in the evidence.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "There were no witnesses at the scene",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "failed",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content against which to compare the claim that there were no witnesses at the scene. The claim cannot be evaluated.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Orange County Communications Center received a 911 call at approximately 0103 hours reporting a residential burglary at 22851 Loumont Drive",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 33.0
+        },
+        {
+          "start_seconds": 46.0,
+          "end_seconds": 89.0
+        },
+        {
+          "start_seconds": 144.0,
+          "end_seconds": 179.0
+        }
+      ],
+      "evidence_observations": "The transcript supports parts of the claim. A caller reports someone broke into their house, gives the address as 22851 'Lumon[t]' in Lake Forest, and describes a crash and a window break, with someone inside the residence. Dispatch radio traffic at [2:24-2:59] repeats the address and the informant's report of a front window break with someone believed to be inside a residence. The transcript does not show a timestamp of approximately 0103 hours, so the call time cannot be verified. It also never names the Orange County Communications Center, though Lake Forest is in Orange County. The transcript renders the street name inconsistently ('lumon', 'month'), so the exact street spelling is not confirmed by the transcript alone. The caller's reference to 'a house or an apartment' is not resolved in the segments, although the dispatch radio says 'residence'.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The reporting party stated that someone had broken a rear window and entered the residence",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 29,
+          "end_seconds": 31
+        },
+        {
+          "start_seconds": 50,
+          "end_seconds": 51
+        },
+        {
+          "start_seconds": 60,
+          "end_seconds": 67
+        },
+        {
+          "start_seconds": 156,
+          "end_seconds": 160
+        }
+      ],
+      "evidence_observations": "The reporting party stated that someone just came into her house ([0:29-0:31]) and, when asked if someone came in, said yes and that someone was inside ([1:00-1:07]). These segments support the entry portion of the claim. However, at [2:36-2:40] the summary states the informant 'heard what sounded like the front window break,' which contradicts the claim's specific statement that a rear window was broken. No segment mentions a rear window. The evidence also does not clearly confirm the method of entry, since the informant only heard a crash and the window break is described as a sound, not observed.",
+      "confidence": 0.75
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Dispatch advised that the reporting party was a male caller who believed the intruder was still inside the home",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.24,
+          "end_seconds": 2.59
+        },
+        {
+          "start_seconds": 1.35,
+          "end_seconds": 1.51
+        }
+      ],
+      "evidence_observations": "The dispatch transcript describes the reporting party as female. It states 'the informant heard what sounded like the front window break and she believes someone is inside a residence,' and 'the informant is home with her boyfriend... the informant is hiding in the bathroom.' The reporting party/informant is referred to with female pronouns and is the person hiding in the bathroom, with the boyfriend hiding in the closet. The claim that the reporting party was a male caller conflicts with this. The part of the claim that the caller believed the intruder was still inside is consistent with 'she believes someone is inside a residence.' Transcript segments are garbled in places, so the gender reference is the key point of conflict.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Deputy Vega was dispatched to the call",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 24,
+          "end_seconds": 59
+        }
+      ],
+      "evidence_observations": "The transcript shows dispatch traffic for the call: a unit is directed to follow up on the informant's report of a window breaking and someone possibly inside a one-story residence, and unit '4647' is heard responding to the location. However, no segment names Deputy Vega, and no segment links Vega to unit 4647 or any other unit number. The transcript does not establish whether Vega was dispatched, so the claim is neither confirmed nor contradicted.",
+      "confidence": 0.2
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Deputies Calder, Whitfield, and Navarro also responded to the call",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.4,
+          "end_seconds": 2.9
+        },
+        {
+          "start_seconds": 4.6,
+          "end_seconds": 5.1
+        }
+      ],
+      "evidence_observations": "The transcript segments contain two radio transmissions: at 0:02 'four six one with units to follow' and at 0:04-0:05 'four six four four seven responding to luma.' The second transmission shows one unit (designated 4647 or similar) responding to the call, and the first suggests additional units will follow. Neither segment names Deputy Calder, Whitfield, or Navarro, and no segment identifies how many units responded or who they were. The 'units to follow' statement is consistent with additional responders but does not confirm that these three deputies responded. The evidence neither confirms nor contradicts the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "While en route, dispatch advised that the reporting party stated he was hiding in a bedroom closet",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.51,
+          "end_seconds": 3.0
+        },
+        {
+          "start_seconds": 1.43,
+          "end_seconds": 1.52
+        }
+      ],
+      "evidence_observations": "The dispatch transmission at [0:02-0:03] states that 'the informant is home with her boyfriend,' that 'the boyfriend is hiding in the closet,' and that 'the informant is hiding in the bathroom.' The claim says the reporting party was hiding in a bedroom closet. The transmission places the reporting party (the informant) in a bathroom, not a closet, and it places the closet hiding with the boyfriend, not the reporting party. It also does not say 'bedroom closet.' A second garbled segment at [0:01] says 'he's hiding in the bathroom' and 'we're hiding,' which is inconsistent and does not clearly resolve who is where. The transcript is fragmented, so the attribution is not fully certain, but the specific observable statement about the reporting party's location conflicts with the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The 911 call was subsequently disconnected and the dispatcher's attempts to reestablish contact were unsuccessful",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.59,
+          "end_seconds": 3.44
+        }
+      ],
+      "evidence_observations": "The only segment provided is [0:02-0:03], in which a speaker says \"it's a one-story residence the line disconnected.\" This partially corresponds to the claim's first element, that the 911 call was disconnected, but it does not establish the timing or circumstances of the disconnect. The segment says nothing about the dispatcher's attempts to reestablish contact, so the claim's second element is unaddressed. The evidence is too limited to confirm or contradict the full claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "At approximately 0109 hours, Deputy Calder arrived on Loumont Drive and turned off emergency lights",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.51,
+          "end_seconds": 2.53
+        },
+        {
+          "start_seconds": 4.59,
+          "end_seconds": 5.1
+        }
+      ],
+      "evidence_observations": "At [0:04-0:05] a speaker says \"you just put your spy lights on here,\" which describes emergency/spy lights being activated at the arrival location. This points against the report's claim that the deputy turned the lights off on arriving at Loumont Drive. The segments do not show a 0109 timestamp, do not show the lights being switched off, and cover only about five seconds of footage, so the conflict is indirect and depends on whether 'here' refers to the arrival point.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Deputy Calder parked directly in front of 22851 Loumont Drive and exited the vehicle",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.4,
+          "end_seconds": 2.9
+        },
+        {
+          "start_seconds": 4.0,
+          "end_seconds": 5.0
+        }
+      ],
+      "evidence_observations": "The transcript segments contain radio traffic at 0:02 referencing a unit responding to an address (transcribed as '22851 Blue Month', likely Loumont Drive) and a remark at 0:04-0:05 that the deputy 'just put your spy lights on here'. Neither segment shows the vehicle parking, its final position relative to 22851 Loumont Drive, or the deputy exiting the vehicle. The segments establish that a response to the address was underway and that lights were activated, but they do not directly address the claimed parking location or exit. Any finding about the parking position would require the bodycam footage or additional transcript covering the arrival.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Deputy Calder was using a flashlight and walking eastbound along the north sidewalk toward the residence",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.59,
+          "end_seconds": 5.1
+        }
+      ],
+      "evidence_observations": "The transcript segment [0:04-0:05] contains speech referring to 'spy lights,' 'spotlight,' and 'watch the crossfire,' and an unidentified voice saying 'put it down.' The segment may reference a light being activated, which loosely relates to the claim that the deputy was using a flashlight. However, it does not identify the speaker as Deputy Calder, does not specify whether the light is a flashlight versus a vehicle or other spotlight, and says nothing about the deputy walking, the direction of travel (eastbound), or the sidewalk (north). No observable content in this segment confirms or contradicts those elements. Additional footage covering the deputy's movement and the direction of travel is needed to assess the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Deputy Calder approached a gray sedan parked on the street near 22855 Loumont Drive",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1.26,
+          "end_seconds": 1.32
+        },
+        {
+          "start_seconds": 2.31,
+          "end_seconds": 2.37
+        }
+      ],
+      "evidence_observations": "The transcript contains only two short segments. Segment [0:01] has an officer confirming an address as '22851 lumon in lake forest' and receiving 'correct yes.' The claim places the sedan near '22855 Loumont Drive.' The house number (22851 vs. 22855) and street name (Lumon vs. Loumont) differ, but this may be a transcription or spoken-address error, and the segment does not establish which location is correct. Segment [0:02] is garbled ('info prior to one four five nine two two eight five one blue month eight ninety one golf five') and appears to relay vehicle or plate information, possibly including a color word that may be 'blue.' This is not clearly a description of a gray sedan, and it does not identify the vehicle type. Neither segment shows or describes Deputy Calder approaching any vehicle, or a vehicle being parked on the street. The evidence does not directly confirm or refute the approach, the vehicle's color or type, or its parked status.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "Deputy Calder heard a noise to his left",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 54,
+          "end_seconds": 58
+        },
+        {
+          "start_seconds": 60,
+          "end_seconds": 63
+        },
+        {
+          "start_seconds": 156,
+          "end_seconds": 159
+        }
+      ],
+      "evidence_observations": "The transcript segments do not state or show the direction of the noise. At [0:54-0:58] a speaker asks 'okay where did you hear it coming from,' which seeks a direction but contains no answer. At [1:00-1:03] a speaker asks 'what did you hear that crash,' which concerns the sound's identity, not its direction. At [2:36-2:39] the informant reports hearing 'what sounded like the front window break,' which describes the informant's perception, not Deputy Calder's, and gives no direction. No segment mentions 'left' or identifies which direction Deputy Calder heard the noise from. The evidence neither confirms nor contradicts the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "Deputy Calder observed a female subject standing on the north sidewalk approximately 40 feet from his position",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record addresses Deputy Calder's position, the subject's location or sex, the sidewalk, or the approximately 40-foot distance, so the claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The subject was dressed entirely in black, including a black hooded sweatshirt with the hood pulled up",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.26,
+          "end_seconds": 5.1
+        },
+        {
+          "start_seconds": 6.03,
+          "end_seconds": 6.15
+        }
+      ],
+      "evidence_observations": "The transcript segments contain only audio dialogue: officer commands ('hands up', 'drop it drop it', 'drop the gun drop the gun') at 0:04-0:05 and 'yeah hey come over here with me man come on come here we'll be moving' at 0:06. None of these segments describes the subject's clothing, color, or whether a hood was up. No video frames are provided, so the visual claim that the subject wore entirely black clothing with the hood pulled up cannot be confirmed or contradicted from the available evidence.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "Deputy Calder illuminated the subject with his flashlight",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.98,
+          "end_seconds": 5.17
+        },
+        {
+          "start_seconds": 5.57,
+          "end_seconds": 5.9
+        }
+      ],
+      "evidence_observations": "The transcript segments reference a 'spy lights' or 'spotlight' being turned on ('you just put your spy lights on here spotlight spotlight watch the crossfire put it down') and a statement that 'you guys have a better visual.' The segments do not mention a flashlight, do not identify the speaker or whether the light belongs to Deputy Calder, and do not show which device was used to illuminate the subject. The phrase 'put it down' is unclear and does not establish that the light was a flashlight. The evidence neither confirms nor contradicts that Calder used a flashlight, so the claim cannot be directly assessed from these segments.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "The subject was holding a black semi-automatic handgun in her left hand, pointed toward the ground",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.26,
+          "end_seconds": 4.54
+        },
+        {
+          "start_seconds": 5.08,
+          "end_seconds": 5.5
+        },
+        {
+          "start_seconds": 5.34,
+          "end_seconds": 5.5
+        }
+      ],
+      "evidence_observations": "The transcript contains only spoken audio: repeated commands such as \"drop the gun,\" \"hands up,\" and \"put it down,\" plus \"spotlight\" and \"watch the crossfire.\" The commands suggest officers believed the subject had a gun, which loosely fits the report's claim that she held a handgun. However, the transcript says nothing about the gun's color or type (black, semi-automatic), which hand held it (left), or its orientation (pointed toward the ground). No video frames were provided to confirm these details, so the evidence neither supports nor contradicts them.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Deputy Calder drew his department-issued sidearm",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 266,
+          "end_seconds": 294
+        }
+      ],
+      "evidence_observations": "The transcript segment [4:26-4:54] contains commands: 'hands up / drop it drop it / drop the [__] gun drop the [__] gun / drop the gun.' These commands are consistent with an officer having a weapon drawn, but the transcript does not identify the speaker, does not state that Deputy Calder drew a weapon, and does not show the weapon type or whether it was department-issued. The commands are directed at another person, and nothing in the segment addresses the act of drawing a sidearm. The evidence neither confirms nor contradicts the claim.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Deputy Calder yelled, \"Drop the weapon! Let me see your hands! Get on the ground!\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.26,
+          "end_seconds": 5.1
+        }
+      ],
+      "evidence_observations": "The transcript segment [0:04-0:05] contains \"hands up,\" \"drop it,\" \"drop the gun,\" \"watch the crossfire,\" and \"put it down.\" This partially overlaps with the claim: \"drop the gun\" is close to \"Drop the weapon,\" and \"hands up\" is close to \"Let me see your hands.\" However, the segment does not contain \"Get on the ground,\" and the words \"weapon\" and \"let me see\" do not appear. The transcript does not identify the speaker, so it cannot confirm that Deputy Calder said these words. The segment is about one second long, so the absence of \"Get on the ground\" may reflect the excerpt's length rather than the full exchange. Nothing in the segment directly contradicts the claim, but the evidence does not verify the exact wording or the speaker.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "The subject did not respond and remained motionless",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.6,
+          "end_seconds": 5.1
+        },
+        {
+          "start_seconds": 6.05,
+          "end_seconds": 6.35
+        },
+        {
+          "start_seconds": 6.5,
+          "end_seconds": 7.27
+        }
+      ],
+      "evidence_observations": "The transcript contains officer commands ('drop the gun' at 0:04-0:05; 'come over here with me man, come on, come here' at 0:06) with no recorded verbal reply from the subject. At 0:06-0:07 an officer says 'third chest compression, you', which is consistent with CPR on an unresponsive person, but the transcript does not state that the subject was motionless or identify when the compressions began. The segments contain no visual description of the subject's movement, and the short window does not address whether the subject was non-responsive or motionless before the compressions. No observation directly contradicts the claim, but the evidence does not directly confirm it.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Deputy Calder took cover behind the sedan",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.26,
+          "end_seconds": 5.5
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:04-0:05) contains only audio commands: 'hands up; drop it drop it; drop the gun; you just put your spy lights on here; spotlight watch the crossfire put it down.' No speaker identifies Deputy Calder's position, and nothing mentions a sedan or taking cover. The phrase 'watch the crossfire' suggests a dangerous situation but does not establish where any deputy was positioned. No visual frames were provided to confirm or refute the claim. The segment does not directly address whether Deputy Calder took cover behind the sedan.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "Deputy Calder broadcast over the radio that he had a subject at gunpoint",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.26,
+          "end_seconds": 54.0
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:04-0:54) contains commands directed at a subject: \"hands up,\" \"drop it,\" \"drop the [__] gun,\" repeated. These suggest an armed confrontation with a subject holding a gun, which is consistent with the deputy having a subject at gunpoint. However, the segment contains no radio transmission, dispatch traffic, or identifiable broadcast by Deputy Calder. The commands appear to be spoken face-to-face, not over the radio, and the transcript does not show whether any radio broadcast occurred. The evidence therefore neither confirms nor contradicts the claim about the radio broadcast specifically.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Deputy Vega arrived at approximately 0110 hours and parked approximately 20 feet behind Deputy Calder's position",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.0,
+          "end_seconds": 10.0
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:04-0:10) contains the line \"spotlight; you just put your spy lights on here,\" with applause noted. This suggests a unit activated its lights near the scene, but it does not state or show Deputy Vega's arrival time, a 0110 timestamp, the vehicle's parking location, or its distance (about 20 feet) behind Deputy Calder's position. The segment does not directly address any element of the claim, and no video frames or other segments were provided to confirm them.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Deputy Whitfield took a position behind Deputy Vega's vehicle",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or video content available to show whether Deputy Whitfield took a position behind Deputy Vega's vehicle, so the claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "At approximately 0111 hours, Deputy Navarro arrived and took cover position near the front of Deputy Calder's vehicle",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.4,
+          "end_seconds": 2.9
+        },
+        {
+          "start_seconds": 4.6,
+          "end_seconds": 5.1
+        }
+      ],
+      "evidence_observations": "The transcript segments do not mention Deputy Navarro, Deputy Calder's vehicle, a cover position, or the 0111 hour. The [0:02] segment is a radio transmission about a informant reporting a possible break-in and someone inside a residence, with unit and plate references. The [0:04-0:05] segment contains commands to a subject ('hands up', 'drop the gun') and a remark that officers put on spotlights and to 'watch the crossfire'. The crossfire warning suggests multiple officers were positioned nearby, but it does not identify who arrived, when, or where they took cover. The segments are too short and do not cover the arrival or positioning, so the claim is neither confirmed nor contradicted.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "Over approximately ninety seconds, Deputy Calder repeatedly ordered the subject to drop the weapon and get on the ground",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.26,
+          "end_seconds": 4.38
+        },
+        {
+          "start_seconds": 4.38,
+          "end_seconds": 4.54
+        },
+        {
+          "start_seconds": 5.08,
+          "end_seconds": 5.14
+        },
+        {
+          "start_seconds": 5.5,
+          "end_seconds": 5.52
+        }
+      ],
+      "evidence_observations": "The provided transcript segments cover only 0:04 to 0:05, about one to two seconds, so they cannot confirm or refute the ~90-second duration. Within that window, repeated commands to drop the weapon are audible: 'drop it drop it drop the [__] gun' and 'drop the gun' repeated about seven times at 0:04. Other commands include 'hands up', 'watch the crossfire put it down', and 'down' at 0:05. The 'get on the ground' element is only loosely matched by the single word 'down' and the phrase 'put it down', which may not clearly mean lying prone. The transcript does not identify the speaker, so it cannot confirm that the commands came from Deputy Calder. No segments show commands outside the 0:04-0:05 window, but the excerpt may simply be partial, so this is not a contradiction.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The subject stood still but appeared to be scanning the area, turning her head from side to side",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.26,
+          "end_seconds": 5.34
+        }
+      ],
+      "evidence_observations": "The transcript segment at [0:04-0:05] contains only officer commands ('hands up', 'drop it drop it drop the gun', 'watch the crossfire put it down', 'you guys have a better visual') and references to spotlights. It does not describe the subject's movement, stillness, head movement, or scanning behavior. The claim that the subject stood still while turning her head side to side cannot be confirmed or contradicted from the transcript text. Visual review of the bodycam frames would be needed to assess this claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "The subject made no verbal response to commands from any deputy at any point",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.26,
+          "end_seconds": 5.1
+        },
+        {
+          "start_seconds": 6.03,
+          "end_seconds": 6.08
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:04-0:06) contain only deputy commands ('hands up', 'drop the gun', 'watch the crossfire', 'come over here with me man', 'we'll be moving'). No subject speech is transcribed in these segments. The segments do not show whether the subject responded verbally, and they cover only about 6 seconds of a claim that applies 'at any point' in the incident. The absence of transcribed subject speech is consistent with the claim but does not establish it, since the transcript may omit unintelligible or non-speech sounds, and the rest of the bodycam footage is not provided.",
+      "confidence": 0.75
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "At approximately 0111 hours and 30 seconds, the subject abruptly raised the handgun to shoulder level with both hands and aimed it at Deputy Calder's position behind the sedan",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.26,
+          "end_seconds": 5.1
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:04-0:05) contains only audio commands directed at the subject: \"hands up,\" \"drop it,\" \"drop the gun\" (repeated), \"you just put your spy lights on here,\" \"spotlight,\" \"watch the crossfire,\" and \"put it down.\" These commands suggest officers believed the subject was holding a gun and wanted it dropped, which is consistent with the report's premise that a handgun was present. However, the transcript does not describe the subject raising the handgun, bringing it to shoulder level, using both hands, or aiming it at Deputy Calder or any position. No segment identifies Deputy Calder, the sedan, or the 0111:30 timestamp. The segment covers only about one second, and no video frames were provided to confirm the visual actions. The commands neither confirm nor contradict the specific movement described, so the claim is not directly supported or refuted.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Deputy Calder discharged his firearm five times at the subject",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.0,
+          "end_seconds": 10.0
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:04-0:10) contains only commands directed at a subject (\"hands up,\" \"drop it,\" \"drop the gun,\" \"you just put your spy lights on here,\" \"watch the crossfire,\" \"put it down\") and [Applause] tags. It does not identify the speaker as Deputy Calder, does not mention firearm discharge, and contains no reference to any number of shots fired. The phrase \"watch the crossfire\" suggests gunfire may have been occurring, but it does not establish that Calder fired, that he fired at the subject, or that he fired five times. The claim's specific elements (identity of the shooter, the count of five, and the target) cannot be verified from this segment. Other segments of the bodycam evidence would be needed.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Deputy Whitfield simultaneously discharged his firearm three times",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.0,
+          "end_seconds": 5.0
+        },
+        {
+          "start_seconds": 4.26,
+          "end_seconds": 5.1
+        },
+        {
+          "start_seconds": 5.06,
+          "end_seconds": 5.16
+        }
+      ],
+      "evidence_observations": "The transcript covers only 0:04-0:05 and contains repeated commands ('hands up', 'drop it', 'drop the gun'), a reference to 'spotlight', and 'watch the crossfire put it down'. It does not identify Deputy Whitfield, does not transcribe any gunshot sounds, and does not state how many shots were fired. The '[Applause]' and '[Music]' tags are not gunfire markers. 'Crossfire' implies gunfire but does not establish that Whitfield fired, how many times, or whether any discharges were simultaneous. The evidence neither supports nor contradicts the claim, and the segment is too brief to assess the count or timing.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "The subject fell to the ground and the weapon came to rest beside her",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.26,
+          "end_seconds": 4.54
+        },
+        {
+          "start_seconds": 5.1,
+          "end_seconds": 5.5
+        },
+        {
+          "start_seconds": 5.5,
+          "end_seconds": 6.2
+        }
+      ],
+      "evidence_observations": "The transcript contains only officer commands: 'hands up drop it drop it drop the gun drop the gun' [0:04], 'watch the crossfire put it down' [0:05], and 'down yeah hey come over here with me man come on come here we'll be moving moving all right secure' [0:05-0:06]. Nothing in these segments describes the subject falling, the subject's position relative to the ground, or where the weapon came to rest. The commands show that officers ordered the subject to drop a gun and that the subject was told to go down, but they do not confirm whether the subject fell or where the weapon landed. The addressee 'man' in the final segment may refer to the subject or to another person, which the transcript does not clarify. Visual frames would be needed to verify the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Deputies Vega and Whitfield approached the subject and secured the scene",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.26,
+          "end_seconds": 6.2
+        },
+        {
+          "start_seconds": 6.15,
+          "end_seconds": 6.18
+        }
+      ],
+      "evidence_observations": "The transcript is audio-only with no speaker identification, so it cannot be attributed to Deputy Vega or Deputy Whitfield by name. Commands directed at a subject ('hands up', 'drop the gun', 'come over here with me man come on come here') are consistent with officers engaging a subject, but the transcript does not show who approached or from where. The phrase 'secure i'll get back back up i got it' contains the word 'secure' and suggests a second officer providing backup, but it does not establish that the scene was secured or who secured it. The segments do not directly address whether the named deputies approached the subject or secured the scene, and nothing in them contradicts the claim.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Deputy Vega kicked the weapon away from the subject's reach",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.38,
+          "end_seconds": 6.2
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:04-0:06) contains only verbal commands and radio-style chatter: repeated 'drop it' / 'drop the gun' instructions, 'watch the crossfire,' 'put it down,' 'come over here with me,' 'we'll be moving,' and 'secure.' No segment describes or depicts a kick, Deputy Vega's leg or foot movement, or the weapon being displaced. The transcript does not establish whether the weapon was kicked, how it was moved, or whether it was moved away from the subject's reach. The claim is neither confirmed nor contradicted by the audio, and visual confirmation from video frames would be needed to assess the physical action.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Upon closer inspection, the weapon appeared to be a realistic-looking semi-automatic pistol",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.26,
+          "end_seconds": 5.1
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:04-0:05) contains only officer verbal commands: 'hands up', 'drop it', 'drop the gun', 'you just put your spy lights on here', 'spotlight', 'watch the crossfire', 'put it down'. These show officers referring to a gun and directing the subject to drop it. Nothing in the segment describes the weapon's appearance, whether it looked realistic or was a replica, its action type (semi-automatic or otherwise), or any close inspection of it. The segment is also very brief and occurs during the initial confrontation, before any closer inspection would be described. The evidence neither supports nor contradicts the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Deputies immediately began rendering first aid",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.15,
+          "end_seconds": 7.16
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:06-0:07) includes speech consistent with chest compressions being performed: \"third chest compression\" and \"yep,\" with \"secure,\" \"get back,\" and \"I got it\" also audible. This supports that deputies were rendering first aid (CPR) at that point. However, the segment begins at 0:06 and contains no information about when first aid started, so it cannot confirm that it began immediately upon arrival or contact, as the claim asserts. No earlier footage or timestamps showing the start of aid are included in the evidence provided.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Orange County Fire Authority Engine #19 arrived at approximately 0119 hours and paramedics assumed medical care",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.0,
+          "end_seconds": 7.0
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:06-0:07) contains only fragments: 'all right secure i'll get back back up i got it', 'okay', 'yep third chest compression'. It indicates that chest compressions were in progress and that responders were coordinating CPR. It does not mention Orange County Fire Authority, Engine #19, an arrival time (0119 hours), the names or agencies of the personnel performing compressions, or any handoff of medical care to paramedics. The segment does not confirm or contradict the claimed arrival time or the assumption of care. Nothing in it establishes whether the people performing compressions were from Engine #19 or from another unit, or whether paramedics took over. Timestamps in the segment are relative video times and are not linked to the 0119 clock time in the claim.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "The subject was transported to Mission Hospital by ambulance",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.51,
+          "end_seconds": 7.16
+        }
+      ],
+      "evidence_observations": "The only evidence segment is a brief utterance at [0:06-0:07] reading 'yep third chest compression'. It refers to chest compressions being performed, which indicates medical care was being rendered, but it does not mention transport, an ambulance, Mission Hospital, or any destination. The segment neither supports nor contradicts the claim that the subject was transported to Mission Hospital by ambulance; no other transcript or visual evidence of transport is provided.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "The weapon recovered at the scene was later determined to be a Daisy 340 BB Spring Repeater Pistol, a realistic-looking replica handgun",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.26,
+          "end_seconds": 4.99
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:04-0:04) contains officer commands: 'hands up / drop it drop it / drop the [__] gun drop the [__] gun / drop the gun / you just put your spy lights on here.' The segment confirms officers ordered a person to drop a gun and references police lights being activated, but it does not describe the weapon's appearance, does not mention a Daisy 340 BB Spring Repeater Pistol, and does not address whether the object was a replica or real firearm. The recovery and later determination of the weapon's make/model are not covered by this segment. The claim cannot be confirmed or contradicted from the provided evidence.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "The 911 call reporting the burglary originated from the subject's own cell phone",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no observable material to compare against the claim that the 911 call reporting the burglary originated from the subject's own cell phone. The claim cannot be evaluated without relevant evidence, such as call audio, dispatch records, or bodycam statements addressing the source of the call.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "No burglary actually occurred at 22851 Loumont Drive",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 12.0
+        },
+        {
+          "start_seconds": 35.0,
+          "end_seconds": 51.0
+        },
+        {
+          "start_seconds": 144.0,
+          "end_seconds": 159.0
+        },
+        {
+          "start_seconds": 266.0,
+          "end_seconds": 287.0
+        }
+      ],
+      "evidence_observations": "The transcript segments contain the caller's account that someone broke into the residence: she reports 'someone just emergency into my house' and 'someone's inside your house' (0:00-0:12). At 0:35-0:51 she says the person is hiding in the bathroom. At 2:24-2:39 dispatch relays that the informant 'heard what sounded like the front window break' and believes someone is inside the residence, and that the boyfriend is hiding in a closet and the informant in the bathroom. At 4:26-4:47 officers give commands to drop a gun, which suggests a confrontation at the scene. These statements directly address the claim and describe a forced entry and intruder, which contradicts 'no burglary actually occurred.' However, the evidence consists of the caller's uncorroborated statements. No segment shows the officers themselves observing a broken window, forced entry, or the intruder, and the transcript does not show the outcome of the investigation. The conflict is therefore with the reported account rather than with independently verified facts.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Eight (8) cartridge casings were recovered from the scene",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, video, or transcript content available to confirm or contradict the claim that eight (8) cartridge casings were recovered from the scene. The claim cannot be evaluated.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "One (1) black Daisy 340 BB Spring Repeater Pistol was collected as evidence",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.38,
+          "end_seconds": 4.92
+        },
+        {
+          "start_seconds": 6.03,
+          "end_seconds": 6.2
+        }
+      ],
+      "evidence_observations": "The transcript contains only audio commands at 0:04 ('drop it... drop the [__] gun... drop the gun'), with no text at 0:06. It does not mention evidence collection, the item's color, make, model, or type (BB or spring-powered), or any Daisy markings. The commands show officers referring to a 'gun' but do not identify it as a Daisy 340 BB spring repeater pistol or as a black item. The segments neither confirm nor contradict the claim, so the evidence does not directly address it.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Subject's clothing items with apparent blood were collected as evidence",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content to compare against the claim that subject's clothing items with apparent blood were collected as evidence. The claim cannot be evaluated.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Subject's cell phone was collected as evidence",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam content available to confirm or contradict the claim that the subject's cell phone was collected as evidence, so the claim cannot be evaluated.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "One California Driver's License was collected as evidence",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The bodycam evidence provided contains no content addressing whether a California Driver's License was collected as evidence, so the claim cannot be confirmed or contradicted.",
+      "confidence": 0.1
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Patrol vehicle video recordings from responding units exist",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.59,
+          "end_seconds": 5.34
+        }
+      ],
+      "evidence_observations": "The segment at [0:04-0:05] contains a radio or verbal exchange: an officer references putting on 'spy lights' ('spy' is likely a transcription of 'spot' or 'spotlight'), a remark to 'watch the crossfire,' and 'you guys have a better visual.' This implies that responding units had a view of the scene, which is consistent with patrol units being present. However, the segment does not mention a camera, recording, or video, and it does not show or confirm that any patrol vehicle video recordings exist. The claim about the existence of recordings is therefore neither directly supported nor contradicted.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "The subject was transported to Mission Hospital",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.32,
+          "end_seconds": 7.16
+        }
+      ],
+      "evidence_observations": "The only evidence segment is a brief audio utterance at 0:06-0:07 ('okay yep third chest compression'), which refers to CPR chest compressions being performed. It does not mention transport, a destination, Mission Hospital, or any ambulance or vehicle movement. Nothing in the segment addresses whether the subject was transported or where. The claim is neither supported nor contradicted by this excerpt; additional segments covering the transport and arrival would be needed.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "The scene was secured and processed by OCSD crime scene investigators",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.15,
+          "end_seconds": 6.33
+        }
+      ],
+      "evidence_observations": "At 0:06 a speaker says \"all right secure i'll get back back up i got it.\" This is a brief verbal reference to securing something and to providing backup, which loosely relates to the scene being secured. However, the segment does not identify OCSD, crime scene investigators, or any evidence processing, and it does not establish whether the scene was processed. The transcript covers only one 0:06 segment, so it does not directly address the claim, and nothing in it contradicts it.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "OCDASAU investigators responded to the scene",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.24,
+          "end_seconds": 2.59
+        }
+      ],
+      "evidence_observations": "The transcript segment is brief radio traffic. It contains no mention of OCDASAU, investigators, or any specialized unit by that name. The only responding unit identified is 'four six four four seven,' which is responding to a location ('luma') where the informant is home with her boyfriend. The phrase 'units to follow' is generic and does not identify who responded. The segment does not show who arrived at the scene, so the claim is neither confirmed nor contradicted.",
+      "confidence": 0.85
+    }
+  ]
+}

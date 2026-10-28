@@ -1,0 +1,1009 @@
+{
+  "scenario_id": "sc-005",
+  "model": "us.anthropic.claude-haiku-5-5",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 364.1,
+  "total_tokens": 391635,
+  "total_api_calls": 103,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The incident occurred on March 3-4, 2022, at approximately 0308-0400 hours at 615 South Resh Street, Anaheim, CA.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.28,
+          "end_seconds": 2.62
+        }
+      ],
+      "evidence_observations": "The only segment is a 911 call at [0:02-0:02]. The caller states the address as '615 South rash Anaheim', which closely matches the claimed '615 South Resh Street, Anaheim, CA'; 'rash' is most likely a transcription variant of 'Resh' and does not contradict the claim. The caller describes the shooting as happening 'right here at my house' in present tense, but the transcript contains no date and no clock time, so it cannot confirm or contradict March 3-4, 2022, or the 0308-0400 hours window.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Sergeant D. Navarro (TRG Tactical Commander, Badge 5839) is the reporting officer.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The evidence provided contains no statements, identifications, or on-scene footage that address who the reporting officer is, nor any reference to Sergeant D. Navarro, Badge 5839, or the TRG Tactical Commander role. The claim cannot be confirmed or contradicted from the available materials.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject is Darnell Washington, a 41-year-old Black male.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "failed",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The evidence provided contains no bodycam transcript, video frames, or other material addressing the subject's name, age, or race. The claim therefore cannot be confirmed or contradicted from the available evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Officers involved include Sgt. D. Navarro, Officer R. Vega (negotiator), Officer M. Cho, Officer T. Garrett, Officer P. Russo, Officer L. Diaz (K9 handler), and Officer N. Kapoor (less lethal).",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so no bodycam content was available to check the claimed officer names, roles (negotiator, K9 handler, less lethal), or their presence at the incident. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The witness (W-1) is the subject's ex-girlfriend.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "failed",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio or transcript content available that addresses whether W-1 is the subject's ex-girlfriend, so the claim cannot be evaluated against the evidence.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "On the evening of March 3, 2022, at approximately 2130 hours, Anaheim Police Department received a call for service from W-1.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 148,
+          "end_seconds": 230
+        }
+      ],
+      "evidence_observations": "The transcript segment (2:28-3:50) shows a 911 caller reporting an emergency: someone is shooting at 615 South Rash (as transcribed), Anaheim, and the caller says they can see and know the person. This is consistent with a call for service, but the segment does not show the date (March 3, 2022), the time (approximately 2130 hours), or that the call was received by Anaheim Police Department. It also does not confirm that the caller is W-1. No conflicting timestamp or agency detail appears in the segment, so the claim's date, time, receiving agency, and caller identity remain unverified.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "W-1 reported that while at the residence they shared at 615 South Resh Street, the subject pointed a handgun at her.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.31,
+          "end_seconds": 3.2
+        },
+        {
+          "start_seconds": 5.2,
+          "end_seconds": 5.4
+        }
+      ],
+      "evidence_observations": "At [0:02-0:03] the caller states someone is shooting at her house at '615 South rash Anaheim' (the claim says 'Resh'; likely a transcription variance) and identifies the subject as Osmond Brown. She says he is 'shooting in the air but he's got a big gun and he's threatening me... I think he's going to shoot me.' At [0:05] she first describes the weapon as 'like an AR-15,' then says 'it was a gun but it was like a toy... it's like an air pistol with a drum bag... a short barrel air pistol with a drum bag.' The segments do not state that the subject pointed any firearm at her, nor do they establish that the object was a handgun in the sense the claim uses. 'Threatening me' is not specific to pointing. The statement that he was 'shooting in the air' does not directly address whether the weapon was aimed at her, though it cuts against an aimed-at-her account. The claim's core elements (pointing, and at W-1) are not directly addressed, and the weapon description is inconsistent (AR-15 vs. air pistol). The evidence is therefore insufficient to support or conflict with the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "W-1 reported that the subject threatened to kill her and her neighbors.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.13,
+          "end_seconds": 21.0
+        }
+      ],
+      "evidence_observations": "In the segment at 0:03-0:21, W-1 says the subject is 'shooting in the air' with 'a big gun' and that 'he's threatening me.' When asked what he said, W-1 answers 'I think he's going to shoot me.' This partially aligns with a threat against W-1, since she reports being threatened and fears being shot. However, the segment does not contain the subject saying he would kill her, and it says nothing about threats toward her neighbors. The claimed 'threatened to kill her and her neighbors' is therefore not directly confirmed or contradicted. The segment also records W-1's belief ('I think') rather than the subject's exact words.",
+      "confidence": 0.75
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "W-1 reported that the subject discharged a round inside the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.1,
+          "end_seconds": 30.0
+        },
+        {
+          "start_seconds": 35.0,
+          "end_seconds": 39.0
+        }
+      ],
+      "evidence_observations": "The caller states the subject was outside shooting 'in the air' with a large gun and that she heard 'several' shots, but does not say when or where those shots occurred relative to the house. At 0:30 the caller says 'he's coming back in the house,' and at 0:35 she says no one else is in the house and the subject lives there. No segment states that a round was discharged inside the residence, and none says that no round was discharged inside. The evidence describes outdoor gunfire and does not directly address the claimed indoor discharge.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "W-1 stated that the subject possessed a single firearm, a small handgun.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.07,
+          "end_seconds": 5.11
+        },
+        {
+          "start_seconds": 5.2,
+          "end_seconds": 5.27
+        },
+        {
+          "start_seconds": 5.31,
+          "end_seconds": 5.4
+        },
+        {
+          "start_seconds": 5.4,
+          "end_seconds": 5.48
+        },
+        {
+          "start_seconds": 5.43,
+          "end_seconds": 5.51
+        },
+        {
+          "start_seconds": 6.44,
+          "end_seconds": 6.49
+        },
+        {
+          "start_seconds": 7.29,
+          "end_seconds": 7.34
+        },
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.1
+        }
+      ],
+      "evidence_observations": "W-1's descriptions of the firearm vary across the segments. At 0:05 W-1 says it 'looked like an AR-15 in his freaking hand' (a long gun, not a handgun). Other segments describe it as 'a little toy' / 'a short barrel air pistol with a drum bag', 'an AR pistol, a drum magazine type', and a 'revolver in his hand' (0:07-0:08). The claimed 'small handgun' is loosely consistent with the short-barrel air pistol and revolver descriptions, but W-1's own AR-15 and AR-pistol descriptions contradict it, and the 'toy' description conflicts with it being a real firearm. The transcript also does not clearly establish that only one firearm was present, so the 'single firearm' element is not directly addressed.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "W-1 reported that the subject had not been taking his prescribed psychiatric medication.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The record contains no bodycam audio, transcript, or other material addressing whether W-1 reported that the subject had not been taking prescribed psychiatric medication, so the claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "W-1 believed the subject would harm officers if they approached.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "failed",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam audio or transcript content against which to evaluate the claim that W-1 believed the subject would harm officers if they approached. The claim cannot be assessed, and no observations about W-1's statements, demeanor, or the subject's behavior are available.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Patrol units established a perimeter around the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.11,
+          "end_seconds": 6.21
+        },
+        {
+          "start_seconds": 6.4,
+          "end_seconds": 7.07
+        },
+        {
+          "start_seconds": 7.14,
+          "end_seconds": 7.22
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:06-0:07) contain officer radio traffic about repositioning a unit ('if we back this unit up two feet'), a spotlight hitting or not hitting, a subject at the front door with a gun at his side, 'let's get back to cover,' and 'the guys in the turrets got eyes on him.' This suggests tactical positioning around the residence with units covering the subject from multiple vantage points. However, the word 'perimeter' is never used, and the segments do not clearly establish that units formed an encircling perimeter around the residence. The transcript is also garbled and covers only a brief window, so it neither directly confirms nor contradicts the claim.",
+      "confidence": 0.35
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Multiple attempts were made to communicate with the subject by phone and public address announcements, all of which were unsuccessful.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.3,
+          "end_seconds": 3.4
+        },
+        {
+          "start_seconds": 4.43,
+          "end_seconds": 4.95
+        },
+        {
+          "start_seconds": 6.32,
+          "end_seconds": 6.4
+        },
+        {
+          "start_seconds": 7.34,
+          "end_seconds": 7.35
+        },
+        {
+          "start_seconds": 8.1,
+          "end_seconds": 8.11
+        }
+      ],
+      "evidence_observations": "At 0:03 a speaker asks, \"are you able to put him on the phone so I can talk,\" and a response says, \"no no he's too crazy.\" This suggests a phone contact with the subject was not achieved, but it does not establish how many phone attempts were made. At 0:04 a speaker says \"please step out no one needs to get hurt,\" and the subject then steps out with hands up. From 0:06 to 0:08 repeated \"step outside\" commands are heard, with a note of a revolver in the subject's hand. The transcript does not show whether these commands were delivered by public address announcement or spoken directly, and it does not show the total number of attempts. The subject's compliance at 0:04 could conflict with 'all unsuccessful' only if the commands were PA announcements, which the evidence does not establish.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "At approximately 0022 hours, the Tactical Response Group (TRG) was activated and assumed responsibility for the incident.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or video content available to confirm or contradict the claim that the Tactical Response Group was activated at approximately 0022 hours and assumed responsibility for the incident. The claim cannot be evaluated against the evidence provided.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "A Crisis Assessment Team was notified.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved or provided. There is no audio or transcript content available to determine whether a Crisis Assessment Team was notified, so the claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The situation was classified as a Negotiator Driven Incident under Penal Code section 1370.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The claim that the situation was classified as a Negotiator Driven Incident under Penal Code section 1370 cannot be verified or contradicted from the available materials. Nothing in the evidence addresses the incident classification, the cited statute, or any negotiator involvement. Because no segments were provided, the evidence is insufficient to support or conflict with the claim.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The classification was due to information that the subject had previously been found mentally incompetent.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or video content available to show whether information about the subject having previously been found mentally incompetent was relayed to or relied on by officers. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "Beginning at approximately 0308 hours, Officer Vega, the primary negotiator, began making PA announcements encouraging the subject to exit the residence peacefully.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.51,
+          "end_seconds": 4.96
+        },
+        {
+          "start_seconds": 6.32,
+          "end_seconds": 6.4
+        },
+        {
+          "start_seconds": 7.34,
+          "end_seconds": 7.41
+        },
+        {
+          "start_seconds": 8.1,
+          "end_seconds": 8.17
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:04-0:08) contain announcement-style content consistent with encouraging exit: \"Marsha loves you please step out no one needs to get hurt,\" \"step outside step out,\" and \"he stepped out hands up.\" This partially aligns with the claim's description of exit-encouraging PA announcements. However, the segments do not establish (1) the speaker's identity, so nothing ties these statements to Officer Vega; (2) that Vega was the primary negotiator; (3) that the announcements are PA announcements rather than face-to-face or radio speech; (4) the clock time of approximately 0308 hours, since the timecodes are relative (0:04-0:08) rather than wall-clock times; or (5) that these were the first announcements. The segments also do not contradict the claim. The evidence supports only the general content of exit-encouraging speech.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "At approximately 0314 hours and again at 0322 hours, the subject briefly emerged onto the rear patio of the residence.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments or bodycam frames were retrieved. Nothing in the record shows whether the subject emerged onto the rear patio at approximately 0314 or 0322 hours, so the claim cannot be evaluated against the evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "On each emergence at 0314 and 0322 hours, the subject shouted at officers and returned inside.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 30.0
+        },
+        {
+          "start_seconds": 51.0,
+          "end_seconds": 63.0
+        },
+        {
+          "start_seconds": 340.0,
+          "end_seconds": 382.0
+        },
+        {
+          "start_seconds": 394.0,
+          "end_seconds": 505.0
+        }
+      ],
+      "evidence_observations": "The transcript uses relative timestamps (0:03 to 8:25) that cannot be mapped to the 0314 and 0322 clock times in the report, so the two specific emergences cannot be matched to evidence. The segments show: officer narration that the subject was 'coming back in the house' (0:03-0:30), which partly supports returning inside; an officer command to 'step out' followed by the subject stepping out with hands up (0:51-1:03), which is an emergence with no shouting recorded; and at 5:40-8:25 the subject is down at the front door with the gun at his side and 'not moving,' with no reported shouting and no clear return inside. No segment records the subject shouting at officers. The evidence neither directly confirms nor contradicts the claim, and the transcript may be incomplete.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "At approximately 0341 hours, the subject came out onto the front porch and pointed what appeared to be a handgun directly at officers using both hands in a shooting stance.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.0,
+          "end_seconds": 11.0
+        },
+        {
+          "start_seconds": 20.0,
+          "end_seconds": 40.0
+        },
+        {
+          "start_seconds": 43.0,
+          "end_seconds": 51.0
+        },
+        {
+          "start_seconds": 44.0,
+          "end_seconds": 51.0
+        },
+        {
+          "start_seconds": 29.0,
+          "end_seconds": 34.0
+        },
+        {
+          "start_seconds": 41.0,
+          "end_seconds": 51.0
+        },
+        {
+          "start_seconds": 66.0,
+          "end_seconds": 85.0
+        }
+      ],
+      "evidence_observations": "Several transcript segments describe the subject's gun position in ways that conflict with the claim. At [0:44-0:51] and [0:41-0:51], a speaker says 'we got him gun still by his side he's not moving' and 'he's got the gun still by his side he's not moving', which contradicts pointing the weapon directly at officers. At [1:06-1:25] the same 'still by his side' description is repeated, and 'point the gun right on his right' appears, which may be a command directed at the subject rather than a description of his action. The claim's 'both hands in a shooting stance' is not mentioned in any segment. The weapon is also described inconsistently: a 'toy' or 'short barrel air pistol with a drum bag' at [0:20-0:40], an 'AR pistol' at [0:43-0:51], and a 'revolver' at [0:29-0:34] and [1:06-1:25], which undercuts the claim's characterization of a 'handgun'. The transcript is fragmentary and speakers are unidentified, so the conflict is specific but not conclusive.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "After pointing the apparent handgun at officers, the subject re-entered the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.27,
+          "end_seconds": 3.5
+        },
+        {
+          "start_seconds": 4.96,
+          "end_seconds": 5.12
+        },
+        {
+          "start_seconds": 5.07,
+          "end_seconds": 5.27
+        },
+        {
+          "start_seconds": 7.31,
+          "end_seconds": 7.42
+        },
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.25
+        },
+        {
+          "start_seconds": 8.21,
+          "end_seconds": 8.36
+        }
+      ],
+      "evidence_observations": "The transcript has a 'he's coming back in the house' remark at 0:03, before the gun appears. The subject then steps out with hands up at 0:04-0:05. Gun references occur at 0:05-0:08 ('he's got a gun', 'pulling the gun right outside', 'point the gun right on his right'). At 0:08 he is 'down at the front door' with the gun 'still by his side' and 'not moving'. The transcript does not clearly show the subject re-entering the residence after pointing the gun. The only re-entry reference precedes the pointing, and the final observed position is at the front door, not inside. The transcript is fragmentary and the timestamps are coarse, so the sequence cannot be confirmed.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "At approximately 0350 hours, in response to a recorded surrender request from W-1, the subject emerged holding a short-barreled rifle with a standard 30-round magazine.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.51,
+          "end_seconds": 4.96
+        },
+        {
+          "start_seconds": 5.07,
+          "end_seconds": 5.48
+        },
+        {
+          "start_seconds": 5.2,
+          "end_seconds": 5.51
+        },
+        {
+          "start_seconds": 5.4,
+          "end_seconds": 5.91
+        },
+        {
+          "start_seconds": 5.43,
+          "end_seconds": 5.51
+        },
+        {
+          "start_seconds": 6.44,
+          "end_seconds": 6.52
+        }
+      ],
+      "evidence_observations": "The transcript supports that the subject stepped out with hands up after a verbal request to come out ('Marsha loves you please step out no one needs to get hurt'), which is consistent with the surrender-request portion of the claim. However, the description of the firearm conflicts with the claim's specifics. The speaker first says 'it looked like an AR-15,' then says 'it was a gun but it was like a toy... like an air pistol with a drum bag' and 'a short barrel air pistol with a drum bag.' A later statement describes 'an AR pistol a drum magazine type.' The claim states a 'standard 30-round magazine,' but the evidence describes a drum-type magazine. The object is also described as an air pistol or toy rather than a short-barreled rifle. The speaker's descriptions are inconsistent with one another, and the transcript does not establish the magazine type or firearm class with certainty.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The subject stood on the porch for several seconds and then returned inside without directing the weapon toward officers.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 30.0
+        },
+        {
+          "start_seconds": 54.0,
+          "end_seconds": 63.0
+        },
+        {
+          "start_seconds": 67.0,
+          "end_seconds": 71.0
+        },
+        {
+          "start_seconds": 404.0,
+          "end_seconds": 411.0
+        },
+        {
+          "start_seconds": 421.0,
+          "end_seconds": 431.0
+        },
+        {
+          "start_seconds": 486.0,
+          "end_seconds": 505.0
+        }
+      ],
+      "evidence_observations": "The segments do not clearly establish the claimed sequence. At 0:03-0:30 an unidentified speaker says 'he's coming back in the house' and at 0:54 'he stepped out hands up still moving at the door', but neither segment confirms a porch stay of several seconds or a return inside. At 1:07 a speaker says 'he's got a gun' with no description of its direction. At 6:44, 7:01 and 8:06 speakers repeatedly say the gun is 'still by his side' and 'he's not moving' while he is 'at the door' or 'down at the front door', which tends to support the absence of aiming at officers. However, the 8:06 segment includes 'step outside step out point the gun right on his right', which is ambiguous: it could be a command to the subject or an observation, and it is not clear. The segments never show him going back inside, and the timing of the porch stay is not established, so the claim cannot be fully verified or contradicted.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "At approximately 0351 hours, Officer Vega played an additional surrender request.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.85,
+          "end_seconds": 5.0
+        },
+        {
+          "start_seconds": 6.32,
+          "end_seconds": 6.6
+        },
+        {
+          "start_seconds": 7.34,
+          "end_seconds": 7.4
+        },
+        {
+          "start_seconds": 8.1,
+          "end_seconds": 8.17
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:04-0:08) contain repeated audio of 'step outside' and 'step out,' along with 'Marsha loves you please step out no one needs to get hurt.' These could plausibly be surrender requests. However, the segments use relative timestamps (0:04-0:08) and do not map to the clock time of approximately 0351 hours, so the timing of the claim cannot be verified. The transcript also does not identify the speaker or source as Officer Vega, and it does not show whether the audio was a played recording or live speech, or whether it was an 'additional' request following an earlier one. The evidence does not directly address the claim's time, speaker, or sequence.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Approximately one minute later, the subject exited the front door holding the same rifle in his left hand.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.51,
+          "end_seconds": 5.27
+        },
+        {
+          "start_seconds": 6.44,
+          "end_seconds": 6.49
+        },
+        {
+          "start_seconds": 7.31,
+          "end_seconds": 7.34
+        },
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.25
+        }
+      ],
+      "evidence_observations": "At [0:04-0:05] the subject is described as stepping out with hands up, and the observer says 'it looked like an AR-15 in his freaking hand,' which fits a rifle. At [0:06] he is at the front door with 'gun still by his side.' At [0:07-0:08] the observer repeatedly says 'revolver in his hand' and 'revolver in his hand revolving his hand,' describing a handgun rather than a rifle. The segments do not specify which hand the weapon was in, so the 'left hand' detail is not addressed. The segments also show the subject at the door around 0:04-0:08 with no visible timestamp near one minute after an earlier event, so the 'approximately one minute later' timing cannot be verified from these segments. The main conflict is the weapon type: the report says the same rifle, while the bodycam audio describes both a rifle and a revolver.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The subject raised the rifle to shoulder level and pointed it directly at the marked K9 patrol vehicle parked in front of the residence, where several officers were positioned.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.0,
+          "end_seconds": 6.4
+        },
+        {
+          "start_seconds": 6.4,
+          "end_seconds": 6.9
+        },
+        {
+          "start_seconds": 7.1,
+          "end_seconds": 7.5
+        },
+        {
+          "start_seconds": 8.2,
+          "end_seconds": 8.6
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:06-0:08) contain officer statements that the subject's gun was 'still by his side' and that 'he's not moving,' repeated across multiple segments. This conflicts with the claim that the subject raised the rifle to shoulder level. One segment says 'he's got a gun in his hand' and another says 'point the gun right on his right,' which is unclear and does not establish a raised or aimed rifle. Officers also say 'I think you're still gonna hit the car,' which refers to the spotlight's position relative to the vehicle, not to the subject aiming at it. The segments cover only about 8 seconds and are audio transcripts without described visual frames, so they do not cover any moment before 0:06 and cannot confirm the rifle's position at other times. The conflict is therefore specific to the window shown, not a full refutation of the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "Officers Cho, Garrett, Russo, and Navarro discharged their department-issued rifles.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.9,
+          "end_seconds": 7.4
+        },
+        {
+          "start_seconds": 7.0,
+          "end_seconds": 7.4
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:06-0:07) contain two statements: \"the turrets got him got him the guys in the turrets got them\" and \"the guys in the turret got eyes on him.\" These refer to unnamed individuals in 'turrets' and to having 'got him' or 'eyes on him.' They do not name Officers Cho, Garrett, Russo, or Navarro, do not mention rifles, and do not explicitly state that any weapon was discharged. 'Got him' is ambiguous and could describe a shot, a visual acquisition, or a takedown. The segments are too brief and lack identification of speakers or actors, so they neither confirm nor contradict the claim that these four officers discharged their rifles.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The officers discharged their rifles because they feared for the lives of the officers in and around the K9 vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.07,
+          "end_seconds": 5.27
+        },
+        {
+          "start_seconds": 5.31,
+          "end_seconds": 5.4
+        },
+        {
+          "start_seconds": 6.27,
+          "end_seconds": 6.32
+        },
+        {
+          "start_seconds": 6.44,
+          "end_seconds": 6.52
+        },
+        {
+          "start_seconds": 7.26,
+          "end_seconds": 7.34
+        },
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.25
+        }
+      ],
+      "evidence_observations": "The transcript contains mixed statements about the subject's weapon. At 0:05 a speaker first identifies a gun, then says it 'was like a toy' and an 'air pistol with a drum bag,' and at 0:06 says 'it's not like a gun in hand.' At 0:06-0:08 speakers describe a 'revolver in his hand' and 'gun still by his side,' and 'he's not moving.' At 0:07 a speaker says 'I think you're still gonna hit the car,' which may reflect concern about rounds striking the vehicle, but it does not state that officers feared for their lives or that the K9 vehicle officers were the reason for firing. The segments do not state the officers' motive for discharging their rifles, and it is unclear whether the 'still by his side' and 'not moving' descriptions occurred before or after the shots. The evidence does not directly confirm or contradict the stated motive.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "The subject fell forward onto the porch in a prone position.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.44,
+          "end_seconds": 6.52
+        },
+        {
+          "start_seconds": 7.41,
+          "end_seconds": 7.51
+        },
+        {
+          "start_seconds": 8.17,
+          "end_seconds": 8.25
+        }
+      ],
+      "evidence_observations": "The transcript states the subject is 'down at the front door' and 'at the front door,' with a gun 'still by his side' and 'not moving.' It does not describe how he fell, whether he fell forward, or his body position (prone, supine, or otherwise). Nothing in the transcript contradicts a forward fall or prone position, but nothing confirms them either. Confirming the claim would require video or a description of his body orientation.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "An arrest team was formed and approached the incident location.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.8,
+          "end_seconds": 4.1
+        },
+        {
+          "start_seconds": 5.7,
+          "end_seconds": 5.9
+        },
+        {
+          "start_seconds": 6.1,
+          "end_seconds": 6.4
+        },
+        {
+          "start_seconds": 6.4,
+          "end_seconds": 7.1
+        },
+        {
+          "start_seconds": 7.1,
+          "end_seconds": 7.4
+        },
+        {
+          "start_seconds": 7.4,
+          "end_seconds": 7.7
+        },
+        {
+          "start_seconds": 8.2,
+          "end_seconds": 8.6
+        }
+      ],
+      "evidence_observations": "The transcript contains a caller asking dispatch to 'send somebody hurry' and reporting a suspect at the door with an AR pistol, and officers discussing repositioning a unit and whether a spotlight is hitting or backlighting. Officers say 'let's get back to cover,' 'the guys in the turret got eyes on him,' and 'we're back, coming back.' One speaker reports 'guys down at the front door' and that the suspect is at the door with the gun by his side and not moving. Nothing explicitly mentions forming an arrest team or a team approaching the location. The 'back'/'coming back' and 'get back to cover' statements could indicate repositioning or withdrawal rather than approach, and the request for units is not clearly an arrest team. The segments do not clearly address the claim either way.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "The subject was observed lying face-down with no weapon in his hands.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.4,
+          "end_seconds": 6.9
+        },
+        {
+          "start_seconds": 7.1,
+          "end_seconds": 7.5
+        },
+        {
+          "start_seconds": 7.4,
+          "end_seconds": 7.9
+        },
+        {
+          "start_seconds": 8.0,
+          "end_seconds": 8.3
+        }
+      ],
+      "evidence_observations": "The transcript repeatedly places a revolver in the subject's hand. At [0:07] a speaker says \"he's got a gun in his hand ... revolver in his hand\" and \"he's pulling the gun.\" At [0:08] \"revolver in his hand\" is repeated. The same segments also say the gun is \"still by his side,\" and at [0:08] an instruction to \"point the gun right on his right\" appears. The subject is described as down at the front door and not moving, but the transcript never explicitly states that he is face-down. The statements about the gun's location are internally inconsistent: 'in his hand' versus 'by his side.' Because the transcript is garbled and contradictory, the weapon-in-hand statements directly conflict with the claim of no weapon in his hands, though the 'by his side' wording leaves some room for interpretation.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Officer Kapoor deployed two 40 mm Less Lethal rounds as a precaution.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the provided material shows the number of 40 mm Less Lethal rounds deployed, the officer's stated reason for deployment, or whether deployment was precautionary. The claim cannot be evaluated without bodycam transcript or video evidence covering the deployment.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "The subject showed no response to the less lethal rounds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.4,
+          "end_seconds": 7.0
+        },
+        {
+          "start_seconds": 6.4,
+          "end_seconds": 6.9
+        },
+        {
+          "start_seconds": 7.4,
+          "end_seconds": 7.9
+        },
+        {
+          "start_seconds": 8.1,
+          "end_seconds": 8.5
+        }
+      ],
+      "evidence_observations": "The transcript states that 'the turrets got him' and that the subject is 'down at the front door,' with 'the gun still by his side' and 'he's not moving' (repeated across 0:06 to 0:08). This is consistent with the claim that the subject did not respond after being hit. However, the segments never identify the munitions as less lethal rounds, never name the device firing the 'turrets,' and do not describe the subject's immediate reaction at the moment of impact. Non-movement after the impact does not establish a lack of response to the specific rounds, so the evidence does not directly address the claim.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Officer Diaz subsequently deployed the K9, which made contact with the subject and pulled him from the porch onto the sidewalk.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the materials provided shows whether Officer Diaz deployed a K9, whether the K9 contacted the subject, or whether the subject was pulled from the porch onto the sidewalk. The claim cannot be evaluated against the available evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Officers then secured the subject and immediately initiated CPR.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.44,
+          "end_seconds": 6.52
+        },
+        {
+          "start_seconds": 7.41,
+          "end_seconds": 7.51
+        },
+        {
+          "start_seconds": 8.17,
+          "end_seconds": 8.25
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:06-0:08) cover only the moments after the subject went down at the front door. Officers say he is down, the gun is still by his side, he is not moving, and \"we're good,\" with one officer saying \"point the gun right on his right.\" No segment mentions securing the subject, handcuffing, or CPR, and none covers the period when CPR would have started. The segments neither confirm nor contradict the claim, and the 'immediately' timing cannot be assessed from these excerpts.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Anaheim Fire Department paramedics arrived at approximately 0404 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing was available to confirm or contradict the claim that Anaheim Fire Department paramedics arrived at approximately 0404 hours, so the claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "The subject was pronounced deceased at approximately 0411 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or video content available to confirm or contradict the claim that the subject was pronounced deceased at approximately 0411 hours. The claim cannot be evaluated against the evidence provided.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "A subsequent search of the residence recovered one firearm: a .38 caliber Smith and Wesson revolver.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.2,
+          "end_seconds": 5.4
+        },
+        {
+          "start_seconds": 5.4,
+          "end_seconds": 5.8
+        },
+        {
+          "start_seconds": 7.3,
+          "end_seconds": 7.4
+        },
+        {
+          "start_seconds": 8.1,
+          "end_seconds": 8.2
+        }
+      ],
+      "evidence_observations": "The transcript segments describe a firearm seen in a person's hand at the scene, not a search of the residence or any recovered item. The descriptions are inconsistent with each other: one speaker says it 'looked like an AR-15,' another says it 'was a gun but it was like a toy' and 'an air pistol with a drum bag,' and later speech says 'revolver in his hand.' The segments mention a revolver, which loosely overlaps with the claim, but none mention a .38 caliber, a Smith & Wesson make, a residence search, or the number of firearms recovered. The evidence does not directly address the claim's details and contains no description of a recovery, so it cannot confirm or contradict it.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "The .38 caliber revolver was found on the porch near the front door.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 7.29,
+          "end_seconds": 7.34
+        },
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.1
+        },
+        {
+          "start_seconds": 8.17,
+          "end_seconds": 8.25
+        }
+      ],
+      "evidence_observations": "The transcript covers only 0:07-0:08. The officer reports a revolver in the subject's hand, then says 'he's down at the front door' and 'he's got the gun still by his side.' The segments do not describe the gun being found, its final resting location, or the porch. The 'front door' reference concerns the subject's position, not the revolver's location after the incident. The evidence neither confirms nor contradicts that the revolver was found on the porch near the front door. It shows the gun by the subject's side near the front door at the time of the officer's observation, which is consistent with the claim but does not directly address it.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "No rifle was recovered from the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 3.2
+        },
+        {
+          "start_seconds": 3.27,
+          "end_seconds": 3.3
+        },
+        {
+          "start_seconds": 5.2,
+          "end_seconds": 5.27
+        },
+        {
+          "start_seconds": 5.27,
+          "end_seconds": 5.4
+        },
+        {
+          "start_seconds": 5.43,
+          "end_seconds": 5.51
+        },
+        {
+          "start_seconds": 7.29,
+          "end_seconds": 7.34
+        },
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.1
+        }
+      ],
+      "evidence_observations": "The transcript segments describe a suspect with a firearm, but none address whether any rifle was recovered from the residence. Descriptions of the object are inconsistent: 'AR-15' in one segment, 'AR pistol' with a drum magazine in another, 'a toy... like an air pistol with a drum bag' and 'a short barrel air pistol' in a third, and 'revolver' in the last two. The segments do not mention any search, recovery, or seizure of items from the residence. The inconsistent descriptions bear on what the suspect was holding, not on whether a rifle was recovered, so they neither confirm nor contradict the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Body-worn camera footage from multiple officers was collected as evidence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 44,
+          "end_seconds": 52
+        },
+        {
+          "start_seconds": 31,
+          "end_seconds": 36
+        }
+      ],
+      "evidence_observations": "The transcript segments describe an investigation in general terms: 'all relevant evidence reports photographs and videos are reviewed' and 'video footage [is] made public and published on the Orange County District Attorney's website.' These segments mention videos and footage generally but do not mention body-worn camera footage, do not identify officers whose cameras were involved, and do not state that bodycam footage was collected as evidence. The segments neither confirm nor contradict the claim, so they do not directly address it.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Audio dispatch and radio traffic recordings were collected as evidence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.28,
+          "end_seconds": 223.43
+        },
+        {
+          "start_seconds": 5.43,
+          "end_seconds": 5.51
+        },
+        {
+          "start_seconds": 6.4,
+          "end_seconds": 6.54
+        },
+        {
+          "start_seconds": 7.41,
+          "end_seconds": 7.51
+        },
+        {
+          "start_seconds": 8.17,
+          "end_seconds": 8.25
+        }
+      ],
+      "evidence_observations": "The transcript segments contain audio content that appears to be a 911 call (caller reporting a shooting at 615 South Rash, Anaheim) and officer radio traffic (e.g., 'I got the radio,' 'guys down at the front door'). This shows that dispatch and radio audio existed and were captured in the bodycam recording. However, the segments do not show that any dispatch or radio recordings were collected, logged, copied, or booked as evidence, and the transcript itself is bodycam audio rather than a separate dispatch or radio recording. The evidence establishes that such audio existed but does not directly address whether it was collected as evidence.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "A Ring video doorbell recording was collected as evidence.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam content available to confirm or contradict the claim that a Ring video doorbell recording was collected as evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "One Smith & Wesson .38 caliber revolver, Serial Number 87790, was collected as evidence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.2,
+          "end_seconds": 5.5
+        },
+        {
+          "start_seconds": 7.31,
+          "end_seconds": 7.34
+        },
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.1
+        }
+      ],
+      "evidence_observations": "The transcript segments mention a firearm at the scene. At 0:05 an officer asks about a firearm and a speaker says \"it looked like an AR-15 in his freaking hand.\" At 0:07-0:08 speakers refer to a \"revolver in his hand\" and \"revolving his hand.\" The segments do not mention a Smith & Wesson make, a .38 caliber, serial number 87790, or any collection or booking of evidence. The revolver reference is consistent with the claim's firearm type, but the segments do not address the make, caliber, serial number, or collection. The AR-15 description refers to what was seen in the subject's hand, not to the item collected, so it does not directly contradict the claim. The evidence is insufficient to confirm or refute the specific claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Multiple cartridge cases (rifle rounds) were collected as evidence.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no observable content to compare against the claim that multiple rifle cartridge cases were collected as evidence. The claim cannot be evaluated in either direction.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Three 40mm Less Lethal sponge projectiles were collected as evidence.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam footage, transcript, or other material to show whether three 40mm less-lethal sponge projectiles were collected as evidence, so the claim cannot be evaluated.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "The subject was pronounced deceased at the scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.4,
+          "end_seconds": 6.9
+        },
+        {
+          "start_seconds": 8.17,
+          "end_seconds": 8.25
+        }
+      ],
+      "evidence_observations": "Two bodycam segments (0:06 and 0:08) record an officer describing the subject as down at the front door, with a gun still by his side and 'not moving.' Neither segment contains a pronouncement of death, a medical or EMS determination, a time of death, or any reference to a pronouncement. The observations of a motionless subject are consistent with the claim but do not establish that a pronouncement occurred or who made it. The claim concerns a formal legal and medical act that the transcript does not address.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "The residence was secured and searched.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 3.9
+        },
+        {
+          "start_seconds": 27.0,
+          "end_seconds": 38.0
+        },
+        {
+          "start_seconds": 43.0,
+          "end_seconds": 51.0
+        },
+        {
+          "start_seconds": 44.0,
+          "end_seconds": 52.0
+        }
+      ],
+      "evidence_observations": "The transcript contains no explicit statement or observed action that the residence was searched. A resident is asked whether anyone else is in the house and answers 'no ma'am by yourself,' which is a verbal inquiry, not a search. Officers are heard saying 'we got him' and 'we're good,' with a suspect at the front door holding a gun, described as 'not moving.' This suggests the suspect was controlled at the door, but it does not show that the interior was cleared or that the residence was secured as a whole. The segments are fragmentary and do not cover the period after the suspect was taken into custody, so the claim cannot be confirmed or contradicted from this evidence.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "W-1 was interviewed at the APD Command Post.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no observable content addressing whether W-1 was interviewed at the APD Command Post. The claim cannot be evaluated against the available evidence.",
+      "confidence": 0.95
+    }
+  ]
+}

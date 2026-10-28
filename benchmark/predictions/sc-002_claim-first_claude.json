@@ -1,0 +1,679 @@
+{
+  "scenario_id": "sc-002",
+  "model": "us.anthropic.claude-haiku-5-5",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 268.14,
+  "total_tokens": 221590,
+  "total_api_calls": 107,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Incident occurred on November 16, 2022",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The claim that the incident occurred on November 16, 2022 cannot be checked against bodycam evidence, so there are no observations to compare with the claim.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Incident occurred at approximately 1400 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The evidence provided contains no timestamps, audio, or visual content that addresses the time of the incident, so the claim that the incident occurred at approximately 1400 hours can neither be confirmed nor contradicted.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Incident location was 100 S. McClay Street, Santa Ana, CA",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the bodycam evidence was available to confirm, contradict, or otherwise address the claimed incident location of 100 S. McClay Street, Santa Ana, CA, so the claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting officer is Officer R. Navarro, Badge Number 5831",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved. The bodycam transcript contains no content, so there is no observable information regarding the reporting officer's name or badge number. The claim cannot be evaluated against the available evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Subject is Diego Renteria, male, 41 years old, Hispanic, wearing a grey jacket and beige shorts",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record can be checked against the report's claims that the subject is Diego Renteria, male, 41 years old, Hispanic, or wearing a grey jacket and beige shorts. Identity, age, ethnicity, and clothing are all unverified.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officers involved were Officer R. Navarro and Officer K. Cho",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content against which to check the claim that the officers involved were Officer R. Navarro and Officer K. Cho. The claim could not be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Witnesses were a male driver (W-1) and a male rear-seat passenger (W-2)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.42,
+          "end_seconds": 28.0
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:02-0:28) is audio only and contains officer commands to unidentified people: 'stop reaching around,' 'put your hands on the front dash,' 'cross your legs for me.' It addresses them as 'brother,' 'boss,' and 'dude,' which weakly suggests male addressees but does not establish gender. It does not identify anyone as a driver, a rear-seat passenger, or a witness (W-1 or W-2), and it gives no seat positions or other details that would tie a speaker or addressee to either role. The segment therefore neither supports nor contradicts the claim. The 'reaching around' and 'front dash' commands may suggest occupants of a vehicle, but nothing observed links them to the claimed roles.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Navarro and Cho were conducting Directed Enforcement Patrol at First Avenue and McClay Street, Santa Ana",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or visual content available to confirm or contradict the claim that Navarro and Cho were conducting Directed Enforcement Patrol at First Avenue and McClay Street, Santa Ana. The claim cannot be evaluated against the evidence provided.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Officers were in a marked black and white SAPD patrol unit",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content to compare against the claim that officers were in a marked black and white SAPD patrol unit. Nothing in the evidence confirms, contradicts, or otherwise addresses the vehicle type, markings, or agency.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Navarro was operating the patrol vehicle and Cho was seated in the right front passenger seat",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.42,
+          "end_seconds": 4.28
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:02-0:04) contains commands directed at an unnamed individual addressed as \"brother\" and \"boss\": to stop reaching around, put hands on the front dash, stop tucking a hand into the side, and cross legs. The segment does not identify who is speaking or who is being addressed, does not name Navarro or Cho, and does not state who was driving or which seat either person occupied. The instructions are consistent with an occupant in a front seat but do not establish whether that occupant was the operator or the right front passenger. No video frames were provided to confirm seating positions.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Both officers wore SAPD polo uniform shirts with identification patches and black outer vests marked 'POLICE'",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing was available to show what the officers wore, including whether they had SAPD polo shirts, identification patches, black outer vests, or 'POLICE' markings. The claim cannot be evaluated against the available evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Both officers had body-worn cameras activated and recording",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.42,
+          "end_seconds": 4.28
+        }
+      ],
+      "evidence_observations": "The transcript contains audio of officer commands during a vehicle encounter ('put your hands on the front dash', 'stop reaching around', 'hey hold'). It shows that audio was being captured from at least one recording source at 0:02-0:04. It does not show camera activation indicators, device status, or the recording state of either officer's camera. It also does not establish that the speakers are two different officers wearing separate cameras, so it cannot confirm that both body-worn cameras were activated and recording.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Navarro initiated a traffic stop on a black Mercedes Benz with California license plate 8YQZ992 at 100 S. McClay Street at approximately 1400 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.7,
+          "end_seconds": 28.0
+        },
+        {
+          "start_seconds": 187.0,
+          "end_seconds": 268.0
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:02-0:28 and 3:07-4:28) contain only verbal commands directed at an occupant: 'stop reaching around,' 'put your hands on the front dash,' 'stop tucking your hand into the side,' and 'cross your legs for me.' None of the segments mention or display the vehicle make or color (Mercedes Benz, black), the California plate 8YQZ992, the address 100 S. McClay Street, the time (approximately 1400 hours), or the initiation of a traffic stop by Navarro. The segments show an encounter already in progress, which does not address how or when the stop began. The evidence neither confirms nor contradicts the claim's specifics, and no visual or metadata confirmation of the vehicle, plate, location, or time is provided in the transcript.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The stop was initiated after observing that the Mercedes' registration tags had expired",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or visual description available to determine whether the officer observed expired registration tags on the Mercedes or whether that was the basis for the stop. The claim cannot be evaluated against the available evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Navarro positioned the patrol unit approximately five feet behind the Mercedes",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record addresses the Navarro patrol unit's position relative to the Mercedes, including the claimed five-foot distance. The claim cannot be evaluated against any evidence.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "The driver of the Mercedes was W-1, who was alone in the vehicle with the subject in the front passenger seat",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.42,
+          "end_seconds": 3.38
+        },
+        {
+          "start_seconds": 3.53,
+          "end_seconds": 4.04
+        }
+      ],
+      "evidence_observations": "The transcript captures an officer directing an unnamed person (addressed as \"brother\" and \"dude\") to stop reaching around, put hands on the dash, stop tucking a hand into the side, and cross legs. These commands are consistent with a vehicle occupant being detained, but the segments do not identify who was driving, which seat the subject occupied, whether anyone else was in the vehicle, or whether the person addressed is W-1 or the front-seat subject. The claim about driver identity and occupant count is not addressed by the transcript excerpts.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "Navarro advised W-1 that the stop was for expired registration",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam audio or transcript content to compare against the claim that Navarro advised W-1 the stop was for expired registration. The claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "W-1 stated he was on his way to the DMV to renew the registration",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam audio or transcript content against which to check W-1's statement about traveling to the DMV to renew the registration. The claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "Navarro asked all occupants if they were on probation or parole",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no audio or transcript content available to confirm or contradict whether Navarro asked all occupants if they were on probation or parole. The claim cannot be evaluated from the available evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "W-1 responded that he was on AB109 supervision",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The record contains no bodycam audio or transcript addressing whether W-1 stated he was on AB109 supervision, so the claim can neither be confirmed nor contradicted.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Navarro asked W-1 to step out, handcuffed him for officer safety, conducted a pat-down search, and placed him in the rear of the patrol car",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.42,
+          "end_seconds": 4.28
+        }
+      ],
+      "evidence_observations": "The only segment provided (0:02-0:04) contains an officer repeatedly directing a person to stop reaching around, put hands on the front dash, stop tucking a hand into the side, and cross legs, with reassurances such as 'you good' and 'take your time.' The segment does not show or mention W-1 being asked to step out, handcuffing, a pat-down search, or placement in the rear of a patrol car. The dash and 'cross your legs' instructions suggest the subject was in or near a vehicle, but this does not confirm or contradict any element of the claim. No evidence in the provided segment addresses the sequence of actions described, and the transcript does not establish that the named officer (Navarro) or the subject (W-1) is the speaker or recipient of these commands.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Navarro approached the right rear passenger side of the Mercedes and contacted the subject",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 162,
+          "end_seconds": 165
+        },
+        {
+          "start_seconds": 187,
+          "end_seconds": 198
+        },
+        {
+          "start_seconds": 205,
+          "end_seconds": 218
+        },
+        {
+          "start_seconds": 233,
+          "end_seconds": 244
+        }
+      ],
+      "evidence_observations": "The transcript is audio-only and contains no positional or contact information. It records commands directed at the subject ('stop reaching around', 'put your hands on the front dash', 'stop tucking your hand into the side', 'cross your legs for me', 'you good, take your time'), but it does not identify which speaker is Navarro, where the speaker stood, or which side or door of the Mercedes was involved. Nothing in the segments states or shows that Navarro approached the right rear passenger side or made physical contact with the subject. The verbal commands are consistent with an officer being near the subject, but that does not establish the specific approach path, side, or contact the claim describes. Video frames would be needed to verify the position and contact.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Cho was positioned on the driver's side of the Mercedes near the front fender",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.42,
+          "end_seconds": 4.28
+        }
+      ],
+      "evidence_observations": "The segment is audio-only dialogue of officer commands directed at Cho: 'stop reaching around,' 'put your hands on the front dash,' 'stop tucking your hand into the side,' 'cross your legs for me.' These suggest Cho was near or in a vehicle and reaching around its interior, and that 'the side' was involved. However, the transcript contains no reference to the Mercedes, the driver's side, the front fender, or Cho's location relative to any part of the vehicle. The phrase 'front dash' and the 'side' cannot be confidently mapped to the driver's side exterior near the front fender, so the evidence neither confirms nor contradicts the claimed position.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "The subject had a bag of fast food in his hands and placed it on the center console",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.42,
+          "end_seconds": 2.75
+        },
+        {
+          "start_seconds": 3.07,
+          "end_seconds": 3.18
+        },
+        {
+          "start_seconds": 3.25,
+          "end_seconds": 3.31
+        }
+      ],
+      "evidence_observations": "The transcript contains only officer commands: 'stop reaching around,' 'put your hands on the front dash,' 'stop tucking your hand into the side,' and 'stop.' It does not mention a bag, fast food, food, a center console, or placing any object. No segment describes what the subject was holding or where he put anything. The reaching and tucking references are consistent with some object-related movement but do not establish the claimed bag or the console placement, and nothing in the transcript contradicts the claim. Visual frames were not provided to confirm or refute the account.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The subject picked up his cell phone and began texting",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.42,
+          "end_seconds": 3.31
+        }
+      ],
+      "evidence_observations": "The segment (0:02-0:03) contains only officer commands directing the subject to stop reaching around, put his hands on the front dash, and stop tucking his hand into the side. The transcript does not mention a cell phone, texting, or any object being picked up. The reaching and hand-tucking are consistent with the subject moving toward something, but the transcript does not identify what, so the claim is neither confirmed nor contradicted. Verifying it would require the video frames or other segments showing the subject's hands and any device.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Navarro asked the subject to put down his phone and place his hands on the dashboard",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 162,
+          "end_seconds": 178
+        },
+        {
+          "start_seconds": 187,
+          "end_seconds": 192
+        }
+      ],
+      "evidence_observations": "The transcript shows an officer telling the subject to stop reaching around and put his hands on the front dash/dashboard ([2:42-2:58] and [3:07-3:12]). This partially matches the claim's dashboard instruction. However, neither segment mentions a phone or asking the subject to put one down, so the 'put down his phone' portion of the claim is not addressed. The segments also do not identify the speaker as Navarro; the speaker is unlabeled. No segment contradicts the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The subject complied and placed both hands flat on the dashboard",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "failed",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content to compare against the claim that the subject complied and placed both hands flat on the dashboard. The claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "After a short pause, the subject's right hand dropped off the dashboard and he began reaching toward his right side near the floorboard area",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.42,
+          "end_seconds": 2.58
+        },
+        {
+          "start_seconds": 3.07,
+          "end_seconds": 3.18
+        },
+        {
+          "start_seconds": 3.25,
+          "end_seconds": 3.37
+        },
+        {
+          "start_seconds": 3.53,
+          "end_seconds": 4.04
+        }
+      ],
+      "evidence_observations": "The transcript contains only officer commands, with no description of the subject's hand positions or movements. The officer repeatedly says 'stop reaching around,' 'put your hands on the dash,' and 'stop tucking your hand into the side,' which is consistent with the subject reaching toward a side area. However, the segments do not identify the right hand, the floorboard, or a 'short pause' followed by the hand dropping off the dashboard. The timestamps are coarse (0:02-0:04) and do not establish the sequence described in the claim. Nothing in the transcript contradicts the claim, but the specific details cannot be confirmed from the transcript alone.",
+      "confidence": 0.55
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "Navarro repeated his command for the subject to put his hands on the dash",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.42,
+          "end_seconds": 2.46
+        },
+        {
+          "start_seconds": 3.07,
+          "end_seconds": 3.15
+        }
+      ],
+      "evidence_observations": "The transcript shows the command 'put your hands on the front dash' / 'put your hands on the dash' at [0:02] and repeated within [0:03] ('put your hands on the dash put your hands on the dash dude on the dash'), so the content of a repeated dash-hands command is present. However, the transcript segments do not identify the speaker by name or role, and the [0:03] line opens with garbled text ('he boss'). The evidence therefore does not confirm that Navarro, rather than another officer or speaker, issued the repeated command.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The subject abruptly reached down to his right side with his right hand and produced a black semi-automatic handgun",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.42,
+          "end_seconds": 2.46
+        },
+        {
+          "start_seconds": 3.07,
+          "end_seconds": 3.12
+        },
+        {
+          "start_seconds": 3.15,
+          "end_seconds": 3.18
+        },
+        {
+          "start_seconds": 3.25,
+          "end_seconds": 3.37
+        },
+        {
+          "start_seconds": 3.53,
+          "end_seconds": 4.04
+        }
+      ],
+      "evidence_observations": "The transcript contains repeated officer commands to stop reaching around, put hands on the dash, and stop tucking a hand into the side (e.g., 'stop tucking your hand into the side'). These partially align with the claim's description of the subject reaching toward his side. However, the transcript contains no description of a handgun, of any object being produced, or of which hand or side was used. The segments are brief (0-4 seconds), the speech is garbled in places, and no visual frames were provided to confirm the hand, side, or object involved. The evidence does not directly confirm or contradict the production of a black semi-automatic handgun.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Navarro observed the subject grip the weapon and begin to raise it in the direction of Officer Cho, who was on the driver's side",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.07,
+          "end_seconds": 37.0
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:03-0:37) contains only officer commands and fragmentary speech: 'put your hands on the dash', 'stop tucking your hand into the side', 'stop reaching around', 'hey hold'. It contains no mention of a weapon, gripping or raising a weapon, Officer Cho, the driver's side, or Officer Navarro's observations. The commands show the officer telling the subject to stop reaching and tucking a hand into the side, which is related context, but they do not establish that the subject gripped a weapon, began raising it, or aimed it toward Cho. The transcript is also partial and garbled in places, and no video frames were provided to confirm the subject's hand or weapon position. The claim is therefore not directly addressed by the evidence, and nothing in it clearly contradicts the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Navarro immediately drew his service weapon",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so no observations could be made about whether Navarro drew his service weapon or the timing of any such action. The claim cannot be evaluated against the evidence provided.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Navarro discharged his service weapon four times at the subject through the open rear passenger window",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is nothing to compare against the claim. The evidence does not show whether Navarro discharged his service weapon, how many times, at what target, or through which window. The claim cannot be verified or contradicted on this record.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Cho discharged his firearm three times from his position near the driver's side front fender",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, video, or transcript content available to evaluate the claim that Cho discharged his firearm three times from a position near the driver's side front fender. The claim cannot be verified or contradicted from the materials provided.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "After both officers ceased fire, they maintained their positions on the sidewalk with weapons drawn",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content to compare against the claim that both officers maintained their positions on the sidewalk with weapons drawn after ceasing fire. The claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Navarro radioed dispatch to report the officer-involved shooting",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no audio, transcript, or visual content available to determine whether Navarro radioed dispatch to report the officer-involved shooting. The claim cannot be evaluated against the bodycam evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Additional SAPD units arrived within approximately one minute",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam audio or content available to evaluate the claim that additional SAPD units arrived within approximately one minute. The claim cannot be verified or contradicted.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Officers maintained a perimeter around the Mercedes and gave repeated commands for the subject to exit the vehicle, which went unanswered",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.7,
+          "end_seconds": 2.97
+        },
+        {
+          "start_seconds": 3.12,
+          "end_seconds": 3.37
+        },
+        {
+          "start_seconds": 3.42,
+          "end_seconds": 3.7
+        },
+        {
+          "start_seconds": 3.85,
+          "end_seconds": 3.9
+        },
+        {
+          "start_seconds": 3.93,
+          "end_seconds": 4.05
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:02-0:04) contain repeated commands directed at a subject inside a vehicle, but none of them are commands to exit. They are commands to stop reaching around, to put hands on the front dash, to stop tucking a hand into the side, and to cross legs. The subject's response is not described, and the segments do not mention that commands went unanswered. Nothing in the segments addresses officers maintaining a perimeter around the Mercedes. The segments cover only about two seconds of the encounter and do not show the vehicle or officer positions. The evidence therefore neither confirms nor contradicts the claim's specific assertions about perimeter positioning and unanswered exit commands. The observed commands suggest the officers were focused on the occupant's hands while the occupant stayed in the vehicle, which is consistent with the claim's premise but does not establish it.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "A K9 unit arrived at approximately 1409 hours",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or video content available to confirm or contradict the claim that a K9 unit arrived at approximately 1409 hours. The claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "The K9 was deployed into the vehicle at approximately 1414 hours, and the subject was unresponsive",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or video content available to check the claim that the K9 was deployed into the vehicle at approximately 1414 hours or that the subject was unresponsive. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "Officers breached the vehicle and located the subject slumped in the front passenger seat",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.42,
+          "end_seconds": 4.28
+        }
+      ],
+      "evidence_observations": "The transcript contains only spoken dialogue from officers directing an occupant: 'stop reaching around,' 'put your hands on the front dash,' 'stop tucking your hand into the side,' 'cross your legs for me,' and 'take your time, hold on.' It does not mention a vehicle breach, the means of entry, or the subject being slumped. It also does not identify the seat the subject occupied. The dialogue suggests an occupant was inside a vehicle and was being commanded to keep hands visible on the dash, but it does not confirm or contradict the breach or the slumped front-passenger position. No visual frames or bodycam video descriptions were provided to verify the seat position or posture.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "A black semi-automatic handgun was recovered from the floorboard beneath the subject's legs",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.7,
+          "end_seconds": 25.0
+        },
+        {
+          "start_seconds": 53.0,
+          "end_seconds": 56.0
+        }
+      ],
+      "evidence_observations": "The transcript segments capture officer commands at 0:02-0:25 telling the subject to stop reaching around, put hands on the front dash, and stop tucking a hand into the side. At 0:53-0:56 the officer tells the subject to cross his legs. The segments do not mention a firearm, its color or type, or where it was found, and no recovery is shown. The 'cross your legs' command is consistent with a legs-related position but does not establish that any gun was on the floorboard beneath the legs. The reaching and tucking commands suggest possible concealment movements, but they do not address the recovery location. The claim cannot be confirmed or contradicted from these segments.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Officers removed the subject from the vehicle, handcuffed him, and began providing medical aid",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.7,
+          "end_seconds": 4.5
+        }
+      ],
+      "evidence_observations": "The segment (0:02-0:04) contains only officer verbal commands directed at a subject who is apparently still inside the vehicle: 'put your hands on the front dash,' 'stop reaching around,' 'cross your legs for me,' 'take your time,' 'hold on.' The transcript does not show or describe the subject being removed from the vehicle, being handcuffed, or officers providing medical aid. The commands suggest the subject was still in the vehicle at this point, but this segment is too brief and covers only the start of the encounter, so it neither supports nor contradicts the sequence of removal, handcuffing, and medical aid stated in the report. Later footage would be needed to assess the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "OCFA paramedics arrived and transported the subject to Orange County Global Medical Center",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or visual content available to evaluate whether OCFA paramedics arrived or whether the subject was transported to Orange County Global Medical Center. The claim cannot be assessed against the evidence.",
+      "confidence": 0
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "The subject was pronounced deceased at 1502 hours",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the provided material addresses the time of pronouncement of death, so the claim that the subject was pronounced deceased at 1502 hours cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Body-worn camera footage from both officers exists as continuous recording",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.42,
+          "end_seconds": 28.0
+        },
+        {
+          "start_seconds": 3.07,
+          "end_seconds": 37.0
+        },
+        {
+          "start_seconds": 4.0,
+          "end_seconds": 28.0
+        }
+      ],
+      "evidence_observations": "Three transcript segments are provided with timestamps 0:02-0:28, 0:03-0:37, and 0:04-0:28. The segments overlap in time and start at different points, so they cannot be read as one linear timeline. The transcript shows no source camera or officer identity, so it cannot be tied to either officer's bodycam. The content (repeated 'stop reaching around' commands) suggests a shared incident, but the segments do not show whether recording is continuous, whether there are gaps, or whether footage from both officers exists. The overlap could reflect multiple cameras or transcription timing, which the evidence does not resolve. The evidence neither confirms nor clearly contradicts the claim.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Seven (7) cartridge cases were collected",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or visual description available that addresses the claim that seven (7) cartridge cases were collected, so the claim cannot be evaluated against the evidence.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "One Polymer80 model PF940SC handgun, 9mm Luger caliber, with no serial number was collected",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record addresses the handgun's model, caliber, serial number status, or collection, so the claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Two high-capacity magazines (27 and 31 rounds) were collected",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no observable material to compare against the claim that two high-capacity magazines (27 and 31 rounds) were collected. The claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Miscellaneous personal property including cellular phone, wallet, and currency was collected",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no observable content against which to compare the claim that a cellular phone, wallet, and currency were collected as miscellaneous personal property. The claim cannot be evaluated.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Clothing items from the subject were collected",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The evidence set is empty, so there is no observable content addressing whether clothing items from the subject were collected. The claim can be neither confirmed nor contradicted by the available evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "W-1 was released on scene",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam audio or transcript content to compare against the claim that W-1 was released on scene. Nothing in the available evidence confirms or contradicts the release.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "The scene was secured for investigation",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio or transcript content available to determine whether the scene was secured for investigation, so the claim cannot be evaluated.",
+      "confidence": 0.9
+    }
+  ]
+}

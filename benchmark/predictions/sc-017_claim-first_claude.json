@@ -1,0 +1,1408 @@
+{
+  "scenario_id": "sc-017",
+  "model": "us.anthropic.claude-haiku-5-5",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 479.45,
+  "total_tokens": 368130,
+  "total_api_calls": 135,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Incident date is September 26, 2019",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content against which to verify the claimed incident date of September 26, 2019. The claim cannot be evaluated from the materials provided.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Incident occurred approximately between 0237 and 0310 hours",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the evidence addresses the claimed incident time window of approximately 0237 to 0310 hours, so the claim cannot be evaluated against the bodycam evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Incident location is 1250 East La Habra Boulevard, La Habra, CA (Metro Auto Sales / Express Auto Recon)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1.25,
+          "end_seconds": 1.34
+        },
+        {
+          "start_seconds": 4.01,
+          "end_seconds": 4.03
+        },
+        {
+          "start_seconds": 5.03,
+          "end_seconds": 5.14
+        },
+        {
+          "start_seconds": 5.31,
+          "end_seconds": 5.36
+        }
+      ],
+      "evidence_observations": "The transcript segments are radio/dispatch-style chatter from a crossfire channel. They reference a vehicle that 'blew the gate completely off,' a request to get someone 'on the west side in the parking lot,' and rollers 'to the left of your vehicle.' They do not mention a street address, the city of La Habra, La Habra Boulevard, or the business names Metro Auto Sales or Express Auto Recon. The described setting (gate, parking lot, rollers) is loosely consistent with an auto lot but does not identify the location. Nothing in the segments contradicts the claimed address. The evidence does not directly address the claim, so it can neither confirm nor refute it.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Subject is Raymond Aguilar, male, 29 years old, Hispanic, with visible tattoos on arms and neck",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the provided material addresses the subject's name, sex, age, ethnicity, or visible tattoos, so the claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Officer D. Pritchard (Badge 3894) is the reporting officer; other listed officers were K9 Officer M. Webb, Officer Trainee L. Garza, Officer S. Rowan, Sergeant V. Huerta, and Sergeant P. Daniels",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 23.0,
+          "end_seconds": 23.5
+        },
+        {
+          "start_seconds": 6.0,
+          "end_seconds": 6.5
+        }
+      ],
+      "evidence_observations": "The transcript segments contain only two short utterances: '[0:23] did you fire i did sergeant i both did' and '[0:06] i don't want travis here without you'. Neither segment mentions Officer D. Pritchard, Badge 3894, K9 Officer M. Webb, Officer Trainee L. Garza, Officer S. Rowan, Sergeant V. Huerta, or Sergeant P. Daniels as the reporting officer or as a listed officer. The first segment contains a reference to a 'sergeant' being addressed, but no name is given, so it cannot be matched to Sergeant V. Huerta or Sergeant P. Daniels. The second segment references 'travis', who is not named in the claim. No observable content in the provided segments confirms or contradicts the roster or the reporting-officer designation.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "La Habra PD dispatch received an anonymous call at approximately 0237 hours reporting multiple subjects dismantling a vehicle near 200 South Alpine Street",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the evidence addresses the claimed anonymous call to La Habra PD dispatch at approximately 0237 hours, the reported multiple subjects, the alleged vehicle dismantling, or the location at 200 South Alpine Street. The claim cannot be evaluated against the available evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "At approximately 0241 hours, Officers Pritchard, Webb, and Trainee Garza indicated they would respond",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio or transcript available to confirm or contradict the claim that Officers Pritchard, Webb, and Trainee Garza indicated they would respond at approximately 0241 hours. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Pritchard was driving a marked black and white LHPD patrol vehicle",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.17,
+          "end_seconds": 3.24
+        },
+        {
+          "start_seconds": 5.03,
+          "end_seconds": 5.14
+        },
+        {
+          "start_seconds": 6.45,
+          "end_seconds": 6.48
+        },
+        {
+          "start_seconds": 13.32,
+          "end_seconds": 13.49
+        }
+      ],
+      "evidence_observations": "The transcript segments do not identify the driver as Pritchard or describe the vehicle's markings, color, or agency. The speaker refers to 'the only car involved that I can see' and says 'he blew the gate completely off' and 'he just plowed right through the gate,' but never describes that vehicle as black and white, marked, or LHPD. A reference to 'a police department' and 'mine's right there' suggests the speaker is associated with a police vehicle, but this does not establish the make, color, or identity of the vehicle Pritchard drove. Nothing observed contradicts the claim, so the evidence neither confirms nor refutes it.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Webb and Garza were in a marked K9 police vehicle",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.21,
+          "end_seconds": 2.1
+        },
+        {
+          "start_seconds": 6.16,
+          "end_seconds": 6.27
+        },
+        {
+          "start_seconds": 6.45,
+          "end_seconds": 6.48
+        }
+      ],
+      "evidence_observations": "The segments do not name Webb or Garza or describe either of them being in a vehicle. The speaker says \"in the back of my car mine's right there\" and \"I'm staying here,\" which suggests the speaker has a vehicle nearby, but the transcript does not establish whose vehicle it is, whether it is marked, or whether it is a K9 unit. \"Watch out for the dogs\" and \"hold on to the dog\" indicate dogs are present, but they do not establish that the vehicle is a K9 vehicle or that Webb and Garza were in it. Nothing in the evidence directly contradicts the claim, but the evidence does not directly address it.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Pritchard was traveling eastbound on Alpine Street",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1.25,
+          "end_seconds": 1.34
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:01-0:01) contains dispatch-style radio traffic: 'watch crossfire watch crossfire / crossfire we're facing northbound.' The segment does not mention Pritchard, Alpine Street, or eastbound travel. The 'facing northbound' statement appears to describe the speaking unit's direction, not Pritchard's, so it does not directly contradict the claim. The evidence does not establish Pritchard's direction of travel or the street name, so the claim is neither confirmed nor refuted.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Pritchard observed a chain-link gate on the south side of the street that appeared to have been forced open",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.0,
+          "end_seconds": 5.2
+        },
+        {
+          "start_seconds": 13.3,
+          "end_seconds": 13.8
+        }
+      ],
+      "evidence_observations": "At [0:05] a speaker says the car 'obviously blew the gate completely off' and notes 'stuff on the ground.' At [0:13] the speaker says 'he just plowed right through the gate.' Together these describe a gate that was forcibly broken open by a vehicle, which is consistent with the claim that the gate 'appeared to have been forced open.' The transcript does not establish which gate is meant or confirm that it was on the south side of the street, and it does not show Pritchard making the observation. Those details are unverified rather than contradicted.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The gate was at the rear of Metro Auto Sales at 1250 East La Habra Boulevard",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 239,
+          "end_seconds": 243
+        },
+        {
+          "start_seconds": 303,
+          "end_seconds": 314
+        },
+        {
+          "start_seconds": 331,
+          "end_seconds": 336
+        },
+        {
+          "start_seconds": 812,
+          "end_seconds": 829
+        }
+      ],
+      "evidence_observations": "The transcript segments do not state the business address (1250 East La Habra Boulevard) or describe the gate as being at the rear of the premises. The closest references are: at [3:59-4:03] an officer asks whether someone can be sent to 'the west side in the parking lot,' which concerns a unit's positioning, not the gate's location; at [5:03-5:14] a speaker says the vehicle 'blew the gate completely off' and that it is 'the only car involved that I can see'; at [5:31-5:36] a speaker refers to rollers 'to the left of your vehicle,' which does not establish the gate's position relative to the building; at [13:32-13:49] a speaker says the driver 'plowed right through the gate.' None of these segments identifies the gate as being at the rear of Metro Auto Sales or confirms the address. Nothing in the segments contradicts the claim, but they do not directly address it either.",
+      "confidence": 0.35
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "A black Cadillac Escalade was parked in the driveway past the open gate with headlights on and radio playing at low volume",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.03,
+          "end_seconds": 5.14
+        },
+        {
+          "start_seconds": 13.32,
+          "end_seconds": 13.49
+        },
+        {
+          "start_seconds": 7.0,
+          "end_seconds": 7.06
+        },
+        {
+          "start_seconds": 24.13,
+          "end_seconds": 24.16
+        }
+      ],
+      "evidence_observations": "The transcript segments describe the vehicle as the only car involved, saying it 'blew the gate completely off' and 'plowed right through the gate.' This is consistent with the vehicle being past the gate's location, but it describes the gate as destroyed rather than 'open,' and it implies the vehicle was moving when it passed through, which does not establish whether it was parked afterward. Keys were in the ignition and all doors were locked, which is consistent with a parked vehicle but does not confirm the 'parked in the driveway' location. Nothing in the segments addresses the headlights being on or the radio playing at low volume. The evidence does not clearly confirm or contradict the claim's specific details.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "At approximately 0246 hours, Pritchard exited his patrol vehicle and approached the driver's side of the Escalade",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.0,
+          "end_seconds": 27.0
+        },
+        {
+          "start_seconds": 23.0,
+          "end_seconds": 41.0
+        }
+      ],
+      "evidence_observations": "The transcript segments do not identify the speaker(s) by name, so it cannot be confirmed that Pritchard is the officer speaking. The segments use relative timestamps (0:05-0:41) that cannot be mapped to the report's 0246 hours. At 0:05-0:27, a speaker says 'beside the vehicle make yourself known now exit the drivers to the passenger side,' which directs an exit toward the passenger side. The same speaker says 'I just got... I can't see the driver's door' and 'that's why I'm staying here,' suggesting that speaker stayed at a position without a view of the driver's door. At 0:23-0:41, another speaker says 'go all the way around I'm coming up with you,' which suggests movement toward the vehicle but does not specify the side or identify the speaker. The transcript is also garbled in places. Nothing explicitly states that Pritchard exited his patrol vehicle or approached the driver's side of the Escalade. The speaker who says they are staying put could conflict with the claim if that speaker is Pritchard, but the evidence does not establish this.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Raymond Aguilar was the sole occupant seated in the driver's seat of the Escalade",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.0,
+          "end_seconds": 5.1
+        },
+        {
+          "start_seconds": 5.9,
+          "end_seconds": 6.1
+        },
+        {
+          "start_seconds": 7.0,
+          "end_seconds": 7.1
+        },
+        {
+          "start_seconds": 9.4,
+          "end_seconds": 9.7
+        },
+        {
+          "start_seconds": 12.3,
+          "end_seconds": 12.6
+        },
+        {
+          "start_seconds": 13.3,
+          "end_seconds": 13.5
+        },
+        {
+          "start_seconds": 21.9,
+          "end_seconds": 22.1
+        },
+        {
+          "start_seconds": 24.1,
+          "end_seconds": 24.3
+        }
+      ],
+      "evidence_observations": "Several segments partly align with the claim. At [0:09] the speaker says \"i only saw one in the driver's seat,\" and at [0:21-0:22] \"he's down in the driver's seat head down,\" which suggests a single person seated in the driver's seat. At [0:24] the speaker says \"all the doors are locked keys in the ignition.\" However, the transcript does not name the individual, so it cannot be confirmed that the person seen is Raymond Aguilar. At [0:05-0:06] the speaker says \"now exit the drivers to the passenger side of the vehicle,\" which is unclear. It could describe a person moving from the driver's seat to the passenger side, which would bear on whether that person was seated in the driver's seat or was the sole occupant. The speaker also says at [0:12] \"i can't i can't see his hands,\" and the segments do not establish whether other occupants were present in the vehicle. The evidence does not clearly confirm or contradict the claim, so the relationship is ambiguous.",
+      "confidence": 0.45
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "The subject had visible tattoos on his arms and neck",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments or bodycam frames were retrieved, so there is no observable material to compare against the claim that the subject had visible tattoos on his arms and neck. The claim concerns visual appearance, which can only be verified from video frames or a description of them. Nothing in the available evidence confirms or contradicts it.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "Pritchard gave verbal commands for the subject to exit the vehicle",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.39,
+          "end_seconds": 2.83
+        },
+        {
+          "start_seconds": 5.54,
+          "end_seconds": 6.05
+        },
+        {
+          "start_seconds": 13.49,
+          "end_seconds": 14.0
+        },
+        {
+          "start_seconds": 15.01,
+          "end_seconds": 15.12
+        },
+        {
+          "start_seconds": 19.42,
+          "end_seconds": 19.5
+        }
+      ],
+      "evidence_observations": "The transcript contains multiple verbal commands directing the occupant to leave the vehicle: \"get out now\" [0:02], \"exit the drivers to the passenger side of the vehicle\" [0:05-0:06], \"get out of the vehicle get out with your\" [0:13-0:14], \"get out of the vehicle\" [0:15], and \"get out of the vehicle with your hands\" [0:19]. However, the transcript does not identify speakers, so there is no way to confirm from the evidence that these commands were given by Pritchard rather than another officer. The content of the commands supports the claim that exit commands were given; the attribution to Pritchard cannot be verified from the transcript alone.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The subject refused to comply with verbal commands and made incoherent statements",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.24,
+          "end_seconds": 3.27
+        },
+        {
+          "start_seconds": 4.25,
+          "end_seconds": 4.28
+        },
+        {
+          "start_seconds": 5.54,
+          "end_seconds": 6.01
+        },
+        {
+          "start_seconds": 13.49,
+          "end_seconds": 14.3
+        },
+        {
+          "start_seconds": 15.01,
+          "end_seconds": 15.09
+        },
+        {
+          "start_seconds": 17.49,
+          "end_seconds": 18.02
+        },
+        {
+          "start_seconds": 18.16,
+          "end_seconds": 18.18
+        },
+        {
+          "start_seconds": 19.42,
+          "end_seconds": 19.5
+        }
+      ],
+      "evidence_observations": "The transcript records only the officer's commands (e.g., 'make yourself known,' 'get out of the vehicle,' 'get out of the vehicle with your hands,' 'stop touching the vehicle'). It contains no subject speech or recorded subject actions, so it does not show whether the subject complied or refused. The command 'stop touching the vehicle' suggests the subject may have been touching the vehicle, but it does not establish a refusal. On incoherence, the only relevant line is the officer saying 'he's saying something but i can't understand it' at 0:18. This is a subjective report from the officer about hearing the subject, not an observation of the content of the subject's statements, and it could reflect audio quality, distance, or the subject's volume rather than incoherence. Neither part of the claim is directly confirmed or contradicted.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The initial contact was not captured on body-worn camera",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 21.0
+        },
+        {
+          "start_seconds": 5.0,
+          "end_seconds": 17.0
+        },
+        {
+          "start_seconds": 13.0,
+          "end_seconds": 14.0
+        }
+      ],
+      "evidence_observations": "The transcript contains three short audio segments: a speaker saying 'watch out for the dogs' (0:00-0:21), a speaker describing a vehicle that 'blew the gate completely off' and 'plowed right through the gate' with debris on the ground (0:05-0:17 and 0:13-0:14), and a remark that it is 'the only car involved that i can see.' None of the segments identifies the initial police contact, states whether that contact was recorded, or shows the start of an encounter. The timestamps are also inconsistent (a 0:00-0:21 range alongside a bare [0:21] marker). The transcript does not establish whether the initial contact was or was not captured on body-worn camera, so it neither supports nor contradicts the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "K9 Officer Webb and Trainee Garza arrived and parked their K9 vehicle in the driveway behind the Escalade",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 0.55
+        },
+        {
+          "start_seconds": 0.55,
+          "end_seconds": 1.25
+        },
+        {
+          "start_seconds": 1.17,
+          "end_seconds": 1.9
+        },
+        {
+          "start_seconds": 6.45,
+          "end_seconds": 6.8
+        },
+        {
+          "start_seconds": 19.0,
+          "end_seconds": 19.5
+        }
+      ],
+      "evidence_observations": "The transcript shows an officer saying 'bring your car up... pin him in there with the card' and 'pin the car up.' A speaker then says 'mine's right there' and 'it's probably six inches from his bumper... i moved it up i just didn't put it in.' This suggests a vehicle was positioned close to the bumper of another vehicle (likely the Escalade) to block it. However, the segments do not identify the speaker or any officer as Webb or Garza, do not identify the vehicle as a K9 vehicle, do not mention a driveway, and do not clearly establish that the vehicle was parked behind the Escalade rather than beside or in front of it. The positioning is consistent with the claim but does not directly confirm it.",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Officers activated their body-worn cameras when Webb and Garza arrived",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record shows when body-worn cameras were activated relative to the officers' arrival, so the claim that cameras were activated when Webb and Garza arrived cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Officer Rowan arrived at approximately 0247 hours",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content to compare against the claim that Officer Rowan arrived at approximately 0247 hours. Neither supporting nor contradicting evidence is available, and no arrival time or officer location can be verified.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Pritchard repositioned the K9 vehicle so its front bumper was nearly in contact with the rear bumper of the Escalade",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.55,
+          "end_seconds": 1.0
+        },
+        {
+          "start_seconds": 1.11,
+          "end_seconds": 1.19
+        },
+        {
+          "start_seconds": 18.54,
+          "end_seconds": 19.22
+        }
+      ],
+      "evidence_observations": "The transcript includes a statement that the K9 car was 'probably six inches from his bumper' and 'i moved it up i just didn't put it in / contact.' The six-inch distance is roughly consistent with 'nearly in contact,' and 'i moved it up' is consistent with repositioning. However, the transcript does not identify the speaker, so it cannot be confirmed that Pritchard made the statement or moved the vehicle. The phrase 'his bumper' is presumed to refer to the Escalade but is not explicitly identified. The fragment 'didn't put it in / contact' is unclear and could mean the vehicles did not make contact. The segments are fragmentary and do not show the vehicle positions directly.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "At approximately 0248 hours, the subject started the Escalade's engine and the headlights brightened",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 7.0,
+          "end_seconds": 7.1
+        },
+        {
+          "start_seconds": 21.6,
+          "end_seconds": 22.1
+        }
+      ],
+      "evidence_observations": "The transcript segments do not address the claimed engine start or headlight activation. At 0:07 an officer notes the keys are in the ignition, which is consistent with the subject having access to start the vehicle but does not show an engine start. At 0:21-0:22 an officer describes the subject moving forward, going down in the driver's seat, and coming back up, with no mention of the engine, the ignition, or the headlights. The transcript timestamps are bodycam elapsed time, not clock time, so the 0248 reference cannot be verified. No transcript segment contradicts the claim, but none confirms it.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The subject rolled down the driver's side window and extended both hands outside the vehicle momentarily",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 11.48,
+          "end_seconds": 12.11
+        },
+        {
+          "start_seconds": 12.34,
+          "end_seconds": 12.49
+        },
+        {
+          "start_seconds": 14.28,
+          "end_seconds": 14.43
+        },
+        {
+          "start_seconds": 17.49,
+          "end_seconds": 18.02
+        },
+        {
+          "start_seconds": 19.42,
+          "end_seconds": 19.5
+        }
+      ],
+      "evidence_observations": "The transcript segments do not directly show the subject rolling down the driver's side window or extending both hands outside the vehicle. At [0:11-0:12] an officer says \"open it up / put your hands in here\" and then \"i can't i can't see his hands,\" which suggests the officer could not see the subject's hands, but it does not establish whether the window was lowered or hands were extended. At [0:17-0:18] an officer says \"stop touching the vehicle,\" which may relate to hands outside the vehicle but does not confirm the claimed window action or a momentary two-handed extension. At [0:19] the officer orders the subject to get out of the vehicle with hands visible. The segments do not clearly address the window or the extended-hands detail, and the officer's inability to see the hands is not a direct contradiction of the claim.",
+      "confidence": 0.35
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Webb took a position near the driver's side door of the K9 vehicle",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.16,
+          "end_seconds": 6.27
+        },
+        {
+          "start_seconds": 12.49,
+          "end_seconds": 13.04
+        }
+      ],
+      "evidence_observations": "At 0:06 an unidentified speaker says \"but i can't see the driver's door\" and \"that's why i'm staying here,\" which suggests the speaker is positioned where the driver's door is not visible. The transcript does not identify this speaker as Webb, and it does not state Webb's location relative to the K9 vehicle. At 0:12 the segment \"the driver's side back through the back just in through the back\" references the driver's side but does not describe where anyone stands. The statement that the driver's door cannot be seen is not clearly inconsistent with standing near it, and the evidence does not directly address the claim.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Webb issued commands and K9 announcements through the PA speaker instructing the subject to exit from the driver's side with hands up",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.9,
+          "end_seconds": 6.1
+        },
+        {
+          "start_seconds": 13.8,
+          "end_seconds": 14.0
+        },
+        {
+          "start_seconds": 14.3,
+          "end_seconds": 14.5
+        },
+        {
+          "start_seconds": 15.0,
+          "end_seconds": 15.2
+        },
+        {
+          "start_seconds": 17.4,
+          "end_seconds": 17.6
+        },
+        {
+          "start_seconds": 19.4,
+          "end_seconds": 19.6
+        }
+      ],
+      "evidence_observations": "The transcript contains commands matching the claimed content. At [0:05-0:06] a command directs the subject to 'exit the drivers to the passenger side of the vehicle,' consistent with exiting from the driver's side. Hands-up instructions appear at [0:14] ('you're going to come hands up'), [0:17] ('you're not going away with your hands in the air'), and [0:19] ('get out of the vehicle with your hands'). However, the transcript does not identify the speaker of any segment, so it cannot confirm that Webb issued these commands. It also does not show that the commands were broadcast through the PA speaker or were K9 announcements rather than live verbal commands. The segments are fragmentary, and the 'K9 announcements' element is not clearly addressed. The content of the exit and hands-up commands is supported, but the attribution to Webb and the PA delivery method are not established.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The subject refused all commands",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.24,
+          "end_seconds": 3.27
+        },
+        {
+          "start_seconds": 4.25,
+          "end_seconds": 4.28
+        },
+        {
+          "start_seconds": 5.54,
+          "end_seconds": 6.05
+        },
+        {
+          "start_seconds": 9.34,
+          "end_seconds": 9.36
+        },
+        {
+          "start_seconds": 12.03,
+          "end_seconds": 12.11
+        },
+        {
+          "start_seconds": 12.34,
+          "end_seconds": 12.49
+        },
+        {
+          "start_seconds": 13.32,
+          "end_seconds": 13.49
+        },
+        {
+          "start_seconds": 13.49,
+          "end_seconds": 13.57
+        },
+        {
+          "start_seconds": 17.49,
+          "end_seconds": 17.56
+        },
+        {
+          "start_seconds": 19.42,
+          "end_seconds": 19.5
+        },
+        {
+          "start_seconds": 21.55,
+          "end_seconds": 22.05
+        }
+      ],
+      "evidence_observations": "The transcript contains only officer speech. It shows repeated commands to the subject: 'make yourself known now,' 'stop the vehicle,' 'exit the driver's to the passenger side,' 'put your hands in here,' 'get out of the vehicle with your hands,' and 'stop touching the vehicle... with your hands in the air.' Officers also state 'I can't see his hands' and 'he plowed right through the gate,' and later 'he's down in the driver's seat head down.' These statements suggest the subject may not have complied with some commands, but none records the subject's own response, and the transcript does not show whether the subject complied or refused with any specific command. The phrase 'refused all commands' is an absolute claim. The transcript cannot confirm refusal of every command, and it does not directly establish compliance or refusal with any single command. Bodycam video or audio of the subject's actions would be needed to assess the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject revved the engine, honked the horn, and flashed gang signs from the driver's side window",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.0,
+          "end_seconds": 10.0
+        },
+        {
+          "start_seconds": 1.0,
+          "end_seconds": 1.5
+        },
+        {
+          "start_seconds": 13.0,
+          "end_seconds": 14.0
+        }
+      ],
+      "evidence_observations": "The transcript segments do not mention revving the engine, honking the horn, or flashing gang signs. The closest content is an officer at 0:06-0:10 saying to watch the left side to see if the subject 'runs chevron', and at 0:01 an officer saying 'watch crossfire' (apparently gang-related terms). The 0:13-0:14 segment says the subject 'plowed right through the gate', which concerns driving, not the claimed conduct. The officer's reference to the left side is consistent with a driver's-side window but does not show any sign being flashed. Nothing in the segments directly contradicts the claim, but nothing directly confirms it. The segments are also fragmentary, and the claimed conduct may fall outside the excerpted time range.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The subject yelled profanities at officers in English",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 16.0,
+          "end_seconds": 16.34
+        },
+        {
+          "start_seconds": 18.16,
+          "end_seconds": 18.54
+        }
+      ],
+      "evidence_observations": "At 0:16, a partially redacted line reads \"that was a [__] you,\" which may contain profanity but is incomplete and does not show the language. At 0:18, an officer says \"I can't, he's saying something but I can't understand it,\" which indicates the officer could not understand the subject's speech. The segments do not establish whether the speech was in English, whether it was profane, or whether it was directed at officers. The officer's stated inability to understand the speech weakens the claim that the subject spoke English profanities, but it does not directly contradict it.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Due to distance and noise, it was difficult to understand the subject at times",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 18.16,
+          "end_seconds": 18.5
+        }
+      ],
+      "evidence_observations": "One transcript segment at 0:18 contains a speaker saying \"i can't he's saying something but i can't understand it.\" This partially corroborates the claim that the subject was difficult to understand at times. However, the segment does not indicate the cause of the difficulty. Nothing in the transcript addresses distance from the subject or ambient noise, and the speaker's position and background audio are not described. The single segment also does not show whether the difficulty was recurring, as the claim's 'at times' implies. The claim's causal attribution to distance and noise is therefore unverified.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "At approximately 0257 hours, the rear hatch of the Escalade opened",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 11.0,
+          "end_seconds": 12.1
+        },
+        {
+          "start_seconds": 12.4,
+          "end_seconds": 13.1
+        },
+        {
+          "start_seconds": 15.1,
+          "end_seconds": 15.3
+        }
+      ],
+      "evidence_observations": "The transcript segments are relative video timestamps (0:11 to 0:15) and do not show clock time, so the claimed 0257 hours cannot be confirmed or contradicted. The segments include the speaker saying \"open it up,\" \"put your hands in here,\" \"through the back,\" and \"can you hit it through the back to the front window.\" These suggest an attempt to access the vehicle from the rear, but none of them states that the rear hatch opened, and the transcript does not describe the hatch's state. The evidence neither directly supports nor contradicts the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Sergeant Daniels heard the subject reference the word 'shoot'",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The evidence does not address whether Sergeant Daniels heard the subject reference the word 'shoot,' so the claim can be neither confirmed nor contradicted. Without transcript or audio content, there is no basis to assess this claim.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Multiple officers observed the subject gesture as if simulating a firearm",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 12.0,
+          "end_seconds": 13.0
+        },
+        {
+          "start_seconds": 23.0,
+          "end_seconds": 23.5
+        }
+      ],
+      "evidence_observations": "The segment at 0:12-0:13 contains a speaker saying \"i can't i can't see his hands,\" which suggests that at that moment the speaker could not see the subject's hands. This is loosely in tension with the report's claim that officers observed a firearm-simulating gesture, but it is a single statement at one point in time, does not identify the speaker, and does not establish whether a gesture occurred earlier or later. The segment at 0:23 (\"did you fire i did sergeant i both did\") does not address gestures or the subject's movements at all. No segment directly confirms or denies that multiple officers saw the subject simulate a firearm, so the evidence is insufficient to support or contradict the claim.",
+      "confidence": 0.75
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Officers decided to deploy oleoresin capsicum rounds",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.17,
+          "end_seconds": 3.27
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:03-0:03) contains an officer announcing 'i got long rifle on your right vehicle' and directing the subject to make themselves known and stop. It contains no reference to oleoresin capsicum (OC/pepper spray), 'rounds,' or any deployment decision. The segment does not address whether officers decided to deploy OC rounds. Lethal/less-lethal weapon announcements are present (long rifle), but the claim about a deployment decision regarding OC rounds is not addressed by this evidence.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "At approximately 0301 hours, Sergeant Daniels deployed a 40mm OC round through the open rear hatch",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 11.19,
+          "end_seconds": 11.5
+        },
+        {
+          "start_seconds": 12.49,
+          "end_seconds": 13.04
+        },
+        {
+          "start_seconds": 15.09,
+          "end_seconds": 15.35
+        },
+        {
+          "start_seconds": 23.07,
+          "end_seconds": 23.4
+        }
+      ],
+      "evidence_observations": "The transcript segments contain no timestamp matching 0301 hours, and the segments are relative offsets (0:11-0:23) that cannot be mapped to the claimed time. No segment names Sergeant Daniels as the person who deployed a round. The segments reference a 40mm round only indirectly: 'am i the only one that grabbed one / no 40' (a question and a short reply, unclear who said what), and 'the driver's side back / through the back just in through the back' and 'can you hit it through the back to the front window', which discuss shooting through the back, but do not say a round was fired, that the hatch was open, or who fired it. At 0:23 a speaker says 'i'm involved... did you fire / i did sergeant i both did', which indicates that a sergeant asked whether someone fired and a reply admitted firing, but the segment does not identify the speaker as Daniels, does not identify the weapon as a 40mm OC round, and does not establish the 'open rear hatch' detail. The evidence is consistent with a rear-hatch deployment discussion but does not directly confirm or contradict the specific claim.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "The subject was unaffected by the first OC round and continued yelling",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.5,
+          "end_seconds": 5.9
+        },
+        {
+          "start_seconds": 18.0,
+          "end_seconds": 18.3
+        }
+      ],
+      "evidence_observations": "Two segments are available. At 0:05 an officer says the subject is \"all chatted out,\" which could suggest he had stopped talking or yelling, but the segment does not establish when this occurred or whether it followed the first OC deployment. At 0:18 an officer says the subject is \"saying something but I can't understand it,\" which indicates he was vocalizing but says nothing about yelling, volume, or his reaction to OC. Neither segment references the first OC round or any reaction to it, and the transcript does not establish the timing of the deployment relative to these remarks. The evidence neither clearly supports nor clearly contradicts the claim that the subject was unaffected by the first OC round and continued yelling.",
+      "confidence": 0.35
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Sergeant Daniels deployed a second OC round with no effect",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 14.28,
+          "end_seconds": 16.4
+        },
+        {
+          "start_seconds": 23.07,
+          "end_seconds": 23.14
+        }
+      ],
+      "evidence_observations": "The transcript segments do not clearly address the claim. In [0:14-0:16], an unidentified speaker says \"can you hit it... through the back through the back to the front window with your kids\" and then \"i'm not getting it,\" which may refer to a spray or aerosol, but the transcript does not identify the speaker, name Sergeant Daniels, mention OC spray, or state a second deployment. It is also unclear whether \"hit it\" refers to OC spray or another action. In [0:23], the exchange \"did you fire... i did sergeant i both did\" concerns firing a weapon, not OC deployment. No segment confirms that a second OC round was deployed or that it had no effect, and no segment confirms the first round or its effect. The evidence is too fragmentary to support or contradict the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "The subject placed the Escalade in reverse and began backing toward officers and the K9 vehicle",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 574,
+          "end_seconds": 576
+        },
+        {
+          "start_seconds": 1140,
+          "end_seconds": 1162
+        },
+        {
+          "start_seconds": 1262,
+          "end_seconds": 1297
+        },
+        {
+          "start_seconds": 1322,
+          "end_seconds": 1357
+        }
+      ],
+      "evidence_observations": "No segment explicitly states that the subject shifted the Escalade into reverse or backed toward officers or the K9 vehicle. [9:34-9:36] 'he comes back at us' and [21:02-21:37] 'he's coming back forward' suggest forward or approaching movement, not reverse. [19:00-19:22] refers to a vehicle about six inches from a bumper and an officer saying 'i moved it up i just didn't put it in ... contact', but it is unclear whose vehicle this is or whether the subject was in reverse. [22:02-22:37] 'back up guys back up back up' and 'don't get behind the car' are officer commands to themselves, so they do not establish the subject's gear or direction. Officers' concern that the vehicle could 'go mobile' is consistent with the claim but does not confirm it. The evidence neither clearly supports nor clearly contradicts the claimed reverse movement.",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Officers were forced to move out of the way",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.2,
+          "end_seconds": 2.4
+        },
+        {
+          "start_seconds": 21.0,
+          "end_seconds": 21.4
+        },
+        {
+          "start_seconds": 22.0,
+          "end_seconds": 22.1
+        }
+      ],
+      "evidence_observations": "The transcript contains commands and statements consistent with officers moving out of the way: 'get out of the way get out of the way' [0:02], 'i'm out of the way' [0:21], and 'back up back up' [0:22]. However, the segments do not identify who is speaking, what is causing the movement (for example, a vehicle or person advancing toward officers), or whether anyone was compelled against their will. The word 'forced' implies coercion that is not established in these segments, and the speaker's identity and the surrounding context are not shown. The evidence partially aligns with officers moving out of the way but does not clearly establish that they were forced to do so.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "The subject shifted to drive and accelerated forward through the open gate, colliding with several vehicles parked inside the auto body shop",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.0,
+          "end_seconds": 14.0
+        },
+        {
+          "start_seconds": 13.0,
+          "end_seconds": 14.0
+        },
+        {
+          "start_seconds": 18.5,
+          "end_seconds": 19.5
+        },
+        {
+          "start_seconds": 19.0,
+          "end_seconds": 19.5
+        },
+        {
+          "start_seconds": 21.0,
+          "end_seconds": 22.5
+        }
+      ],
+      "evidence_observations": "The transcript supports that the vehicle moved forward through the gate: the officer says 'he blew the gate completely off' and 'he just he plowed right through the gate.' This conflicts with the report's description of an 'open gate,' since the evidence describes a gate that was forcibly destroyed, not one that was open. The evidence does not confirm the collision with 'several vehicles parked inside.' The officer says 'it's the only car involved that i can see' and 'i don't know if he hit any other vehicles on the inside.' The statement about the only car involved is not clearly a contradiction, but the officer's uncertainty means the multiple-vehicle collision is unverified. The 'shifted to drive' sequence is partly consistent with 'i moved it up i just didn't put it in' and the 'six inches from his bumper' remark, but these do not directly establish the shift to drive or the sequence of impacts.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "The subject rammed a metal rollup garage door and drove into the interior garage bay",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.0,
+          "end_seconds": 17.0
+        },
+        {
+          "start_seconds": 31.0,
+          "end_seconds": 36.0
+        },
+        {
+          "start_seconds": 32.0,
+          "end_seconds": 33.0
+        },
+        {
+          "start_seconds": 18.0,
+          "end_seconds": 22.0
+        },
+        {
+          "start_seconds": 21.0,
+          "end_seconds": 21.1
+        }
+      ],
+      "evidence_observations": "Multiple segments describe the subject driving through the garage door: 'he blew the gate completely off' [0:04-0:17], 'he just he plowed right through the gate' [0:32-0:33], and 'contact' with debris falling off [0:21]. The officer's comment 'i don't know if he hit any other vehicles on the inside' [0:04-0:17] implies the vehicle entered the interior of the garage. The segments are not in chronological order and none explicitly describes the vehicle's final position inside the bay, so the interior-entry element rests on inference. No segment contradicts the claim.",
+      "confidence": 0.75
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "The subject used the Escalade to push a white Mercedes through a second rollup door on the opposite side of the building",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1.11,
+          "end_seconds": 1.19
+        },
+        {
+          "start_seconds": 5.03,
+          "end_seconds": 5.17
+        },
+        {
+          "start_seconds": 5.31,
+          "end_seconds": 5.36
+        },
+        {
+          "start_seconds": 13.32,
+          "end_seconds": 13.49
+        },
+        {
+          "start_seconds": 18.54,
+          "end_seconds": 19.22
+        },
+        {
+          "start_seconds": 20.14,
+          "end_seconds": 20.32
+        },
+        {
+          "start_seconds": 21.02,
+          "end_seconds": 21.06
+        }
+      ],
+      "evidence_observations": "The transcript describes a vehicle (implied to be the subject's, with references to 'his bumper', 'pin him in there', and 'keep pushing his back') plowing through a gate and blowing it 'completely off'. It does not mention a white Mercedes, a second rollup door, or any location on the opposite side of the building, so those specific claim elements are not addressed. A speaker says, 'it's the only car involved that i can see' and 'i don't know if he hit any other vehicles on the inside', which is in tension with the claim that a second car was pushed, but the speaker qualifies this with 'that I can see' and expresses uncertainty about other vehicles, so it does not clearly contradict the claim. The transcript also never names the Escalade explicitly. The evidence is incomplete for verifying the claim's specific details.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "The Escalade came to rest on the apron of the driveway facing South Bedford Street",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 10.16,
+          "end_seconds": 10.3
+        },
+        {
+          "start_seconds": 5.03,
+          "end_seconds": 5.14
+        },
+        {
+          "start_seconds": 13.32,
+          "end_seconds": 13.49
+        }
+      ],
+      "evidence_observations": "The transcript segments do not describe where the Escalade came to rest or its orientation. The only location reference is a single word, 'bedford' (0:10), which does not establish that the vehicle faced South Bedford Street or was on the driveway apron. The speaker states the vehicle is 'the only car involved that i can see' (0:05) and that the driver 'blew the gate completely off' (0:05) and 'plowed right through the gate' (0:13). These statements are consistent with the vehicle having traveled through a gate at the property but do not address the final rest position, whether the vehicle stopped on the apron, or which direction it faced. The evidence neither supports nor contradicts the claim.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Pritchard was positioned on the east sidewalk approximately eighteen feet south of the Escalade",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the provided material addresses Pritchard's position, the Escalade's position, the east sidewalk, or the approximately eighteen-foot distance, so the claim cannot be evaluated against the evidence.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Sergeant Huerta stood in the southbound lane of South Bedford Street approximately twenty feet from the Escalade",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1.25,
+          "end_seconds": 1.43
+        },
+        {
+          "start_seconds": 10.16,
+          "end_seconds": 10.3
+        }
+      ],
+      "evidence_observations": "The transcript segments contain only radio-style fragments: 'watch crossfire watch crossfire / crossfire we're facing northbound' at 0:01 and 'bedford' at 0:10. Neither segment mentions Sergeant Huerta, his position, the southbound lane, or a distance of about twenty feet from the Escalade. The 'facing northbound' reference concerns an unspecified unit's orientation and does not establish which lane Huerta occupied or how far he was from the vehicle. The segments neither support nor contradict the claim, and no video frames are described.",
+      "confidence": 0.2
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Officer Rowan was on the sidewalk a few feet south of Pritchard",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content against which to evaluate the claim that Officer Rowan was on the sidewalk a few feet south of Pritchard. The claim can neither be supported nor contradicted on the current record.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Pritchard directed his patrol rifle with mounted flashlight toward the Escalade and could see the subject in the passenger compartment",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.17,
+          "end_seconds": 3.27
+        },
+        {
+          "start_seconds": 9.43,
+          "end_seconds": 9.54
+        },
+        {
+          "start_seconds": 12.34,
+          "end_seconds": 12.49
+        },
+        {
+          "start_seconds": 21.02,
+          "end_seconds": 21.14
+        },
+        {
+          "start_seconds": 22.02,
+          "end_seconds": 22.05
+        },
+        {
+          "start_seconds": 23.07,
+          "end_seconds": 23.14
+        }
+      ],
+      "evidence_observations": "The transcript does not identify which officer is speaking, so it cannot be confirmed that any statement is Pritchard's. At 0:09 a speaker says \"i only saw one in the driver's seat,\" which partly supports seeing an occupant inside the vehicle, though it does not mention the rifle or flashlight. At 0:12 a speaker says \"i can't i can't see his hands,\" and at 0:21 \"i cannot see him he's out i'm out of the way,\" which cut against the claim that the subject was clearly visible. At 0:22 a speaker describes the subject as \"down in the driver's seat head down,\" and the transcript does not say whether this was seen through the rifle optic or flashlight. Nothing addresses whether the rifle was pointed at the Escalade or whether the flashlight was on. The statements are mixed and come from an unidentified speaker, so they do not clearly support or contradict the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "The subject appeared to look directly at officers and had an aggressive expression",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 9.0,
+          "end_seconds": 9.5
+        },
+        {
+          "start_seconds": 21.0,
+          "end_seconds": 21.6
+        },
+        {
+          "start_seconds": 22.0,
+          "end_seconds": 22.1
+        }
+      ],
+      "evidence_observations": "The transcript segments are officer statements, not direct visual descriptions of the subject's eyes or face. At 0:09 an officer says the subject \"comes back at us\" and at 0:21 that he is \"coming back forward,\" which suggests movement toward officers but does not address gaze direction or facial expression. At 0:22 an officer says the subject is \"down in the driver's seat head down,\" which is a specific observation that the head was lowered and could conflict with looking directly at officers at that moment. However, the timing of the report's claim is not anchored to a specific moment, and the transcript says nothing about eye contact or an aggressive expression. The evidence therefore does not clearly contradict or support the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "As the Escalade began to accelerate forward, the subject raised his left arm toward the driver's side window in what appeared to be a shooting position",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 9.34,
+          "end_seconds": 9.43
+        },
+        {
+          "start_seconds": 12.34,
+          "end_seconds": 12.49
+        },
+        {
+          "start_seconds": 13.32,
+          "end_seconds": 13.49
+        },
+        {
+          "start_seconds": 21.37,
+          "end_seconds": 22.05
+        },
+        {
+          "start_seconds": 23.07,
+          "end_seconds": 23.14
+        }
+      ],
+      "evidence_observations": "The transcript contains no description of the subject raising his left arm, of any arm position relative to the driver's side window, or of a shooting position. The closest statements are: at [0:09] an officer says 'he's not going anywhere he comes back at us / i only saw one in the driver's seat'; at [0:12] 'i can't i can't see his hands'; at [0:13] 'he just he plowed right through the gate'; and at [0:21-0:22] 'he's coming back forward / he's down / he's down in the driver's seat head down back up guys'. The statement that hands could not be seen is consistent with an obscured view but does not establish which arm moved or whether it was raised toward the window. The evidence also does not indicate whether the Escalade was accelerating at the moment of the claimed arm movement. No video frames were provided to verify the arm position directly, so the claim cannot be confirmed or contradicted from the transcript.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Pritchard believed the subject was about to fire at Sergeant Huerta, who was in the subject's direct line of travel",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 9.34,
+          "end_seconds": 9.36
+        },
+        {
+          "start_seconds": 21.21,
+          "end_seconds": 21.37
+        },
+        {
+          "start_seconds": 21.37,
+          "end_seconds": 21.55
+        },
+        {
+          "start_seconds": 22.02,
+          "end_seconds": 22.05
+        },
+        {
+          "start_seconds": 23.07,
+          "end_seconds": 23.14
+        }
+      ],
+      "evidence_observations": "The transcript contains no statement that the subject was about to fire, no mention of a firearm being pointed or drawn by the subject, and no reference to Pritchard's belief. It does not identify Sergeant Huerta by name. One speaker says 'do not get behind this vehicle your body don't step in front eddie', which shows concern about officer positioning in front of a vehicle, and 'eddie' may refer to a fellow officer, but the transcript does not confirm that this is Huerta. Other lines ('he's not going anywhere he comes back at us', 'he's coming back forward', 'he's down in the driver's seat head down back up guys') describe the subject moving back toward the officers, which is consistent with a threat but does not establish a belief about firing or that Huerta was in the subject's direct line of travel. The exchange 'did you fire / I did sergeant / I both did' is post-incident and does not address the claim. The evidence neither supports nor contradicts the specific claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "Pritchard discharged his Colt AR-15A4 patrol rifle seven rounds in approximately two seconds while advancing toward the Escalade",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1297,
+          "end_seconds": 1357
+        },
+        {
+          "start_seconds": 1387,
+          "end_seconds": 1394
+        }
+      ],
+      "evidence_observations": "The transcript segments do not state the number of rounds fired, the duration of the shooting, or Pritchard's movement relative to the Escalade. At 23:11-23:14, when asked 'did you fire,' the speaker answers 'i did sergeant i both did,' which supports that Pritchard fired but does not confirm seven rounds or a two-second window. At 22:04-22:05 and 22:35, officers are told to 'back up' and 'don't get behind the car,' which may be in tension with 'advancing toward the Escalade,' but these commands are not attributed to Pritchard and do not establish his direction of movement during the shots. At 21:37, 'he's coming back forward' refers to the suspect, not Pritchard. The round count, timing, and advancing claim cannot be verified from these segments.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "Sergeant Huerta simultaneously discharged his Glock 21C pistol ten rounds in approximately three seconds",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 23.0,
+          "end_seconds": 23.5
+        },
+        {
+          "start_seconds": 23.1,
+          "end_seconds": 23.5
+        },
+        {
+          "start_seconds": 21.4,
+          "end_seconds": 22.1
+        }
+      ],
+      "evidence_observations": "The transcript confirms that shots were fired: an exchange at [0:23] asks 'did you fire' and the reply is 'i did sergeant.' However, it does not identify the speaker or the weapon, and it says nothing about the number of rounds (no count of ten is given) or the duration (nothing supports or contradicts roughly three seconds). The claim that the rounds were fired 'simultaneously' is also not addressed; a single pistol cannot fire simultaneously, so the wording needs clarification. The segment '[0:21-0:22] he's coming back forward he's down...' describes a subject's movement but not the shots fired. The timestamps are non-sequential (the 0:21-0:22 segment appears after the 0:23 segments), and the transcript is garbled, so timing cannot be reliably established. No segment contradicts the claim, but none directly establishes it.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "Officer Rowan attempted to fire her Glock 22 pistol but experienced a malfunction and it did not discharge",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 23.07,
+          "end_seconds": 23.14
+        }
+      ],
+      "evidence_observations": "The transcript segment at 0:23 is garbled and does not name the speakers. In response to the question 'did you fire', one speaker says 'i did', and the segment also contains 'sergeant' and 'i both did'. The segment does not mention a Glock 22, a malfunction, or a failure to discharge. If the speaker who answers 'I did' is Officer Rowan, that would contradict the claim that her weapon did not discharge. The transcript does not identify the speaker, so the segment cannot be attributed to Rowan, and it does not directly address the malfunction.",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "cl-055",
+      "claim_text": "The Escalade stopped moving with the engine still running and the vehicle in drive",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 7.0,
+          "end_seconds": 7.06
+        },
+        {
+          "start_seconds": 19.0,
+          "end_seconds": 19.07
+        },
+        {
+          "start_seconds": 21.37,
+          "end_seconds": 22.05
+        },
+        {
+          "start_seconds": 24.13,
+          "end_seconds": 24.16
+        }
+      ],
+      "evidence_observations": "The transcript does not directly address whether the Escalade's engine was running or whether the vehicle was in drive when it stopped. At 0:07 the speaker says the keys are in the ignition, which does not establish engine state. At 0:19 the speaker says the object is 'probably six inches from his bumper' and 'I moved it up, I just didn't put it in', but it is unclear whether 'it' and 'put it in' refer to the officer's own vehicle or the Escalade, and which gear is meant. At 0:21-0:22 the speaker says 'he's coming back forward' and that the driver is 'down in the driver's seat, head down, back up', which suggests some movement but does not identify the gear or whether the engine was running while stopped. At 0:24 the speaker says 'all the doors are locked keys in the ignition', which again does not address engine state or gear. No segment observes the Escalade stopping, the engine running, or the selected gear.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-056",
+      "claim_text": "Another police vehicle was parked behind the Escalade to prevent further movement",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.55,
+          "end_seconds": 19.0
+        },
+        {
+          "start_seconds": 18.54,
+          "end_seconds": 19.22
+        },
+        {
+          "start_seconds": 6.45,
+          "end_seconds": 6.48
+        }
+      ],
+      "evidence_observations": "Several segments refer to positioning a police car to block a vehicle: 'bring your car up', 'pin him in there with the card', 'pin the car up hold on watch out', and 'it's probably six inches from his bumper' followed by 'i moved it up i just didn't put it in' and 'contact'. These suggest an officer vehicle was moved close to and pinning a suspect vehicle, which is consistent with blocking movement. However, no segment explicitly states the police vehicle was behind the Escalade, identifies the vehicle as an Escalade, or confirms which bumper is six inches away. The word 'contact' is unexplained and could refer to a collision rather than positioning. The transcript fragments are also disjointed, with timestamps that do not form a clear sequence, so the spatial relationship cannot be confirmed.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-057",
+      "claim_text": "Officers approached with a shield and observed the subject unresponsive",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 7.0,
+          "end_seconds": 7.6
+        },
+        {
+          "start_seconds": 21.0,
+          "end_seconds": 22.6
+        }
+      ],
+      "evidence_observations": "At [0:07] an officer says \"yes i got a shield too\" and refers to something \"underneath the shield on the right hand side,\" which partly supports the shield element of the claim. At [0:21-0:22] an officer says \"he's coming back forward / he's down / he's down in the driver's seat head down back up guys / back up guys back up,\" which describes the subject slumped with head down in the driver's seat and then moving (\"coming back forward\"). This could fit an unresponsive observation but also suggests the subject was moving at times. The segments do not show whether officers approached with a shield, or whether the subject was observed unresponsive at the moment of approach, and the movement language is inconsistent with a continuous unresponsive state. The evidence does not clearly confirm or contradict the claim.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-058",
+      "claim_text": "Los Angeles County Fire Department paramedics, who had been staging nearby, were summoned and pronounced the subject deceased at the scene",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 21.55,
+          "end_seconds": 22.05
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:21-0:22) has an officer stating 'he's down. he's down in the driver's seat head down back up guys.' This establishes that a subject was down in the driver's seat at that moment, but it does not mention fire department personnel, staging, being summoned, paramedics arriving, or a pronouncement of death. Nothing in the segment addresses whether LACoFD paramedics were nearby, called, or pronounced the subject deceased. The claim concerns events not covered by the provided evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-059",
+      "claim_text": "Body-worn camera footage was collected from Officers Pritchard, Webb, Garza, and Rowan",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The evidence provided contains no bodycam footage, metadata, or documentation that addresses whether body-worn camera footage was collected from Officers Pritchard, Webb, Garza, or Rowan. The claim cannot be confirmed or contradicted from the available evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-060",
+      "claim_text": "The collected vehicle is a 2012 black Cadillac Escalade",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.03,
+          "end_seconds": 5.11
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:05-0:05) contains a speaker stating 'it's the only car involved that i can see.' This confirms that a single vehicle is referred to as involved, but it does not mention the vehicle's year, color, or make/model. Nothing in the segment addresses whether the vehicle is a 2012 black Cadillac Escalade, so the claim is neither confirmed nor contradicted. Video frames or other segments describing the vehicle's details would be needed to assess the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-061",
+      "claim_text": "A Colt AR-15A4 rifle belonging to Officer Pritchard was collected",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 11.19,
+          "end_seconds": 11.22
+        },
+        {
+          "start_seconds": 6.45,
+          "end_seconds": 6.54
+        }
+      ],
+      "evidence_observations": "Two segments are relevant. At [0:06] a speaker says, \"in my in the back of my car mine's right there,\" which suggests a personal rifle is in a vehicle, but the segment does not name the make or model, the speaker's identity, or whether it was collected. At [0:11] a speaker asks, \"am i the only one that grabbed one no 40,\" which may refer to rifles grabbed during the incident but does not identify whose rifle or confirm any collection. Neither segment mentions Officer Pritchard, a Colt AR-15A4, or the collection of a rifle by police. The transcript does not establish whether the speaker is Pritchard, so the statement cannot be linked to the claimed rifle.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-062",
+      "claim_text": "A Glock 21C pistol belonging to Sergeant Huerta was collected",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 11.0,
+          "end_seconds": 23.0
+        },
+        {
+          "start_seconds": 23.0,
+          "end_seconds": 23.0
+        }
+      ],
+      "evidence_observations": "The transcript does not mention a Glock 21C, a pistol, Sergeant Huerta's firearm, or any collection of a weapon. The speaker says 'am i the only one that grabbed one no 40,' which is unclear. 'Grabbed one' could refer to a firearm, but the segment does not identify the weapon, its make or model, its owner, or any collection. The later segment asks whether an unnamed person was involved and whether they fired, and a responder says 'i did sergeant,' but it does not identify whose weapon was involved or who collected it. The transcript is garbled and does not directly address the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-063",
+      "claim_text": "A Glock 22 pistol belonging to Officer Rowan was collected",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 11.19,
+          "end_seconds": 11.48
+        },
+        {
+          "start_seconds": 23.07,
+          "end_seconds": 23.34
+        }
+      ],
+      "evidence_observations": "Segment [0:11]: A speaker asks whether they are the only one who 'grabbed one,' and another replies 'no 40.' The '40' likely refers to .40 caliber, which the Glock 22 fires, but the transcript does not name a Glock 22, does not name Officer Rowan, and does not mention any weapon being collected, secured, or taken into custody. Segment [0:23]: Officers discuss whether they are involved and whether they fired ('did you fire' / 'i did sergeant i both did'). This addresses firing, not weapon collection or ownership. Neither segment directly confirms or contradicts that a Glock 22 belonging to Officer Rowan was collected.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-064",
+      "claim_text": "Seven fired .223 Remington cartridge cases were collected",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 679,
+          "end_seconds": 682
+        },
+        {
+          "start_seconds": 1387,
+          "end_seconds": 1394
+        }
+      ],
+      "evidence_observations": "The transcript segments do not mention a cartridge count, the caliber .223 Remington, or the collection of any cartridge cases. At [11:19-11:22] a speaker asks 'am i the only one that grabbed one / no 40', which may refer to collecting a casing and a reply referencing a '.40' caliber, but this is unclear and does not address .223 or the number seven. At [23:07-23:14] speakers discuss who was involved and who fired ('did you fire / i did sergeant i both did'), which does not address cartridge collection, caliber, or count. The evidence neither confirms nor contradicts the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-065",
+      "claim_text": "Ten fired .45 Auto cartridge cases were collected",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 11.19,
+          "end_seconds": 11.22
+        },
+        {
+          "start_seconds": 17.36,
+          "end_seconds": 17.37
+        }
+      ],
+      "evidence_observations": "The transcript contains two brief statements. At 0:11, a speaker asks \"am i the only one that grabbed one / no 40,\" which suggests casings were being handled and that the caliber was discussed, possibly indicating non-.40 casings, but it does not name .45 Auto or confirm the caliber. At 0:17, \"these are in the engine search\" indicates casings were recovered from the engine search area. Neither segment states a count, so nothing addresses whether exactly ten fired cartridge cases were collected.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-066",
+      "claim_text": "Two 40mm OC projectiles were recovered from the vehicle",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 9.43,
+          "end_seconds": 10.0
+        },
+        {
+          "start_seconds": 11.19,
+          "end_seconds": 11.8
+        },
+        {
+          "start_seconds": 17.36,
+          "end_seconds": 17.9
+        }
+      ],
+      "evidence_observations": "At [0:09-0:10] a speaker says \"i only saw one in the driver's seat,\" which may indicate one projectile was seen in the driver's seat. At [0:11] a speaker asks \"am i the only one that grabbed one no 40,\" which is unclear and may refer to a 40mm projectile being collected by one person. At [0:17] a speaker says \"these are in the engine search,\" suggesting items were found in the engine compartment, but the segment does not state how many or what type. The segments do not establish a total count of projectiles recovered from the vehicle, do not confirm that two were recovered, and do not clearly identify the items as 40mm OC projectiles. The driver's-seat remark could relate to a single item, but the engine-search remark could account for additional items, so the evidence neither clearly supports nor clearly contradicts the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-067",
+      "claim_text": "The subject was pronounced deceased at the scene and the scene was secured for OCDA Special Assignment Unit investigation",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 21.37,
+          "end_seconds": 22.05
+        },
+        {
+          "start_seconds": 23.07,
+          "end_seconds": 23.14
+        },
+        {
+          "start_seconds": 23.34,
+          "end_seconds": 24.16
+        }
+      ],
+      "evidence_observations": "The segments show officers approaching a vehicle where a subject is seen 'down in the driver's seat head down' ([0:21-0:22]), and an officer states 'he's down.' A sergeant asks whether the officers fired and one responds 'i did sergeant i both did' ([0:23]), indicating an officer-involved shooting. At [0:23-0:24] officers say 'go all the way around,' 'i'm coming up with you,' and 'all the doors are locked keys in the ignition.' No segment contains a pronouncement of death, a medical examiner or medic declaration, or any reference to the OCDA Special Assignment Unit. The locked doors and keys in the ignition may bear on vehicle control, but they do not establish that the scene was secured for an OCDA investigation. The evidence is consistent with the subject being down and possibly deceased, but it does not directly address either part of the claim.",
+      "confidence": 0.85
+    }
+  ]
+}

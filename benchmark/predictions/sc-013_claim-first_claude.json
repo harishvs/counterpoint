@@ -1,0 +1,9 @@
+{
+  "scenario_id": "sc-013",
+  "model": "us.anthropic.claude-haiku-5-5",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 23.77,
+  "total_tokens": 11641,
+  "total_api_calls": 1,
+  "claims": []
+}

@@ -1,0 +1,1112 @@
+{
+  "scenario_id": "sc-007",
+  "model": "us.anthropic.claude-haiku-5-5",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 389.3,
+  "total_tokens": 480530,
+  "total_api_calls": 121,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The incident occurred on December 24, 2022, at approximately 0051 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or timestamp data available to confirm or contradict the stated date (December 24, 2022) or time (approximately 0051 hours). The claim cannot be evaluated against the evidence.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The incident occurred in the 9200 block of Bolsa Avenue, Westminster, CA.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.09,
+          "end_seconds": 3.21
+        },
+        {
+          "start_seconds": 3.33,
+          "end_seconds": 3.36
+        },
+        {
+          "start_seconds": 3.44,
+          "end_seconds": 3.44
+        },
+        {
+          "start_seconds": 4.02,
+          "end_seconds": 4.05
+        }
+      ],
+      "evidence_observations": "The transcript references Bolsa Avenue (\"bua\" and \"Busa\") and the number 9200 (\"approaching uh 9200 still\"), which partially overlap with the claim. However, the transcript is a garbled, speech-to-text style rendering. The 9200 reference is stated as the officers \"approaching\" that number, not as the location of the incident. The final stated position is \"Bolsa and Saigon on the South Side just the west side of T-Mobile,\" and the earlier segment mentions \"Moran\" and \"Saigon\" and \"PSA.\" The transcript never explicitly states that the incident occurred in the 9200 block of Bolsa Avenue, and it does not confirm the Westminster city name. Nothing in the segments directly contradicts the claim, but the evidence does not clearly establish the block or the city.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Officer M. Pham (Badge 5839) is the reporting officer.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The evidence does not address whether Officer M. Pham (Badge 5839) is the reporting officer, so the claim can be neither confirmed nor contradicted.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject is Vinh Tran, a male, 30 years old, Asian, wearing a gray jacket and blue jeans.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam transcript, video frame, or other material available that addresses the subject's name, sex, age, ethnicity, jacket color, or pants. The claim cannot be confirmed or contradicted from the evidence provided. Because no visual frames were supplied, this is not a case where the evidence is purely visual and unavailable for review; rather, the evidence set is empty.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Officers involved were Officer M. Pham, Officer R. Kessler, and Officer W. Blake.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The bodycam evidence provided contains no content addressing which officers were involved, so neither the names Pham, Kessler, and Blake nor the claim that these were the involved officers can be confirmed or contradicted.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "John Doe 1 is a business owner and the reporting party.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.55,
+          "end_seconds": 5.0
+        }
+      ],
+      "evidence_observations": "The only transcript segment [0:04-0:05] is a speaker saying the man is 'armed with the pipe refusing to put it down' and 'I don't I don't know this dude.' Nothing in the segment states whether John Doe 1 owns a business or reported the incident. The speaker's statement that they do not know him is not evidence of his occupation, and it does not establish whether he was the reporting party. The segment describes him as armed and noncompliant, which is not inconsistent with the claim but does not address it. The evidence is too limited to support or contradict the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer Pham was on duty wearing a Westminster Police Department long-sleeved utility uniform with WPD identification patches and a black tactical vest with 'POLICE' markings.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record shows Officer Pham's uniform, identification patches, or vest markings, so the claim cannot be evaluated against the bodycam evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer Pham had a Body Worn Camera mounted on the front of his tactical vest.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam footage, transcript, or frame data available to evaluate whether Officer Pham had a Body Worn Camera mounted on the front of his tactical vest.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "At approximately 0044 hours, Officer Pham was dispatched to Imperial - Health & Beauty, located at 9196 Bolsa Avenue, regarding a reported vandalism.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.3,
+          "end_seconds": 3.8
+        }
+      ],
+      "evidence_observations": "The only transcript segment is at [0:03-0:03], where a speaker says \"you're approaching uh 9200 still.\" It does not mention the 0044 time, the dispatch, Officer Pham, the business name (Imperial - Health & Beauty), the vandalism call, or 9196 Bolsa Avenue. The mention of 9200 is not a direct contradiction: 9200 and 9196 are adjacent addresses, and without knowing the direction of travel or the block layout, the utterance cannot be shown to conflict with a destination of 9196. The segment is too short to assess the claim's time, dispatch, or call-type details.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Pham arrived on scene at approximately 0051 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The evidence provided does not address the claim that Officer Pham arrived on scene at approximately 0051 hours, so neither support nor contradiction can be established.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Officer Pham met with reporting party John Doe 1 upon arrival.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so no bodycam content is available to confirm or contradict the claim that Officer Pham met with reporting party John Doe 1 upon arrival. The claim cannot be evaluated.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "John Doe 1 advised that a male subject wearing a gray shirt used a wooden baseball bat to repeatedly strike the front of the business and an exterior surveillance camera.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.9,
+          "end_seconds": 4.1
+        },
+        {
+          "start_seconds": 4.9,
+          "end_seconds": 5.0
+        },
+        {
+          "start_seconds": 10.6,
+          "end_seconds": 10.8
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:03-0:10) contain officer commands to 'drop the pipe' and 'put down the pipe,' and an officer states the subject is 'armed with the pipe' and refusing to comply. The segments do not mention a wooden baseball bat, a gray shirt, striking the front of a business, or striking an exterior surveillance camera. The officers' use of 'pipe' may describe a different object than the reported 'wooden baseball bat,' but the transcript does not establish what the object was, so this is not a clear contradiction. The segments also do not show the subject's clothing or any damage to the business or camera. The claim is not directly confirmed or refuted by these segments.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "John Doe 1 showed Officer Pham surveillance camera footage on his cell phone depicting the incident.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved or provided. The bodycam transcript contains no content that addresses whether John Doe 1 showed Officer Pham surveillance footage on a cell phone, so the claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The surveillance footage captured a male wearing a gray jacket and blue jeans striking the camera with a white-colored stick or pole.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.52,
+          "end_seconds": 3.58
+        },
+        {
+          "start_seconds": 4.2,
+          "end_seconds": 4.27
+        },
+        {
+          "start_seconds": 4.53,
+          "end_seconds": 4.55
+        },
+        {
+          "start_seconds": 5.35,
+          "end_seconds": 5.49
+        },
+        {
+          "start_seconds": 6.15,
+          "end_seconds": 6.23
+        }
+      ],
+      "evidence_observations": "The transcript contains only audio from officers repeatedly commanding a male to 'drop the pipe' and stating 'he's armed with the pipe' and 'refusing to put it down.' This partially corroborates that the male had a pipe. However, the transcript does not describe the pipe's color (the claim says white), the man's clothing (gray jacket and blue jeans), or any striking of the camera. It also does not reference surveillance footage, and the evidence is bodycam audio rather than the surveillance footage the claim describes. No observable evidence contradicts the claim, but the key elements (clothing, color, striking the camera, the surveillance source) are not addressed.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "John Doe 1 informed Officer Pham that the subject was likely still in the area.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam audio or transcript content to compare against the claim that John Doe 1 told Officer Pham the subject was likely still in the area. The claim cannot be evaluated. Nothing in the available evidence supports, contradicts, or otherwise addresses it.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "At approximately 0054 hours, Officer Pham began an area check.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record addresses whether Officer Pham began an area check at approximately 0054 hours, so the claim can be neither confirmed nor contradicted.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "At approximately 0056 hours, Officer Pham observed a male matching the description in the south alley of 9262 Bolsa Avenue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 28.0
+        },
+        {
+          "start_seconds": 33.0,
+          "end_seconds": 44.0
+        }
+      ],
+      "evidence_observations": "The transcript segments do not name Officer Pham, do not state a 0056 time, and do not clearly describe observing a male matching a description. One segment places activity in 'the North alley on the uh Moran just south of Busa,' which differs from the claimed 'south alley of 9262 Bolsa Avenue,' but the transcription is garbled ('Busa,' 'Saigon and PSA,' '9200') and the speaker's identity is unclear. A location discrepancy is possible but cannot be confirmed from these segments.",
+      "confidence": 0.35
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The subject, later identified as Vinh Tran, was wearing a gray jacket and blue jeans and was carrying a long pole in his left hand when observed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 234,
+          "end_seconds": 238
+        },
+        {
+          "start_seconds": 260,
+          "end_seconds": 267
+        },
+        {
+          "start_seconds": 295,
+          "end_seconds": 298
+        },
+        {
+          "start_seconds": 335,
+          "end_seconds": 337
+        },
+        {
+          "start_seconds": 375,
+          "end_seconds": 383
+        }
+      ],
+      "evidence_observations": "The transcript segments repeatedly direct the subject to 'drop the pipe' and 'put down the pipe' and state 'he's armed with the pipe,' which is broadly consistent with the subject carrying a long object. However, the segments do not specify which hand held the pipe, so the 'left hand' detail is unaddressed. They also do not mention a gray jacket, blue jeans, or any clothing, and do not reference the subject's name (Vinh Tran). Nothing in the transcript contradicts the claim, but the clothing and hand details cannot be verified from the audio segments provided.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The subject matched the individual observed in the surveillance footage.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.9,
+          "end_seconds": 5.0
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:04-0:05) contains an officer saying 'pipe sit down and he's armed with the pipe refusing to put it down I don't I don't know this dude.' The officer explicitly states 'I don't know this dude,' which indicates the officer did not recognize the subject. However, the segment does not reference the surveillance footage or any comparison between the subject and the individual depicted in it, so it neither confirms nor refutes the claim that the subject matched the surveillance footage. The statement is about the officer's personal familiarity, not a visual comparison to the footage. Additional transcript or video frames comparing the subject to the surveillance footage would be needed to assess the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Officer Pham exited his patrol vehicle and made contact with the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 12.0
+        },
+        {
+          "start_seconds": 46.0,
+          "end_seconds": 58.0
+        },
+        {
+          "start_seconds": 306.0,
+          "end_seconds": 311.0
+        }
+      ],
+      "evidence_observations": "At 0:03 the speaker says \"stop 420 I'll be out with the subject walking away from me,\" which indicates an intent to get out, but does not confirm that the officer exited the patrol vehicle. At 0:46-0:58 and 5:06-5:11 the speaker directly addresses the subject (\"you understand English,\" \"stop,\" \"drop the pipe\"), which is consistent with the officer making verbal contact. However, the transcript does not identify the speaker as Officer Pham, does not show the vehicle or a door opening, and does not establish whether the officer was in a patrol vehicle at the time of the exit. The exit component is therefore not directly confirmed, and the speaker's identity is not established.",
+      "confidence": 0.55
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Officer Pham identified himself as a police officer to the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.48,
+          "end_seconds": 3.98
+        },
+        {
+          "start_seconds": 4.6,
+          "end_seconds": 5.0
+        },
+        {
+          "start_seconds": 9.06,
+          "end_seconds": 9.11
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:03-0:09) contain commands directed at a subject ('sit down', 'drop the pipe', 'get the [__] out of here') and statements such as 'I want to talk to you' and 'you understand English.' No segment contains the words 'police,' 'officer,' or any other explicit self-identification. The speaker is not labeled, so it cannot be confirmed that these statements came from Officer Pham. The segments also do not cover the start of the encounter, where an identification would most likely occur. The evidence neither confirms nor contradicts the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Officer Pham repeatedly commanded the subject to stop, drop the pole, and sit down.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.51,
+          "end_seconds": 2.98
+        },
+        {
+          "start_seconds": 3.38,
+          "end_seconds": 3.98
+        },
+        {
+          "start_seconds": 4.2,
+          "end_seconds": 4.27
+        },
+        {
+          "start_seconds": 9.09,
+          "end_seconds": 9.4
+        },
+        {
+          "start_seconds": 9.52,
+          "end_seconds": 10.0
+        },
+        {
+          "start_seconds": 10.37,
+          "end_seconds": 10.46
+        }
+      ],
+      "evidence_observations": "The transcript contains repeated instances of all three commands. 'Stop' appears at 0:02, 0:03, 0:04, 0:09, and 0:10 (e.g., 'stop walking stop walking'). 'Sit down' appears at 0:02, 0:03, and 0:09 (e.g., 'sit down sit down sit down'). 'Drop the pipe' / 'put down the pipe' appears at 0:03, 0:04, 0:09, and 0:10. The report's 'pole' corresponds to 'pipe' in the transcript, and 'part' at 0:10 is likely a transcription variant. The transcript does not label speakers, so it cannot confirm that Officer Pham was the speaker of these commands, though the content matches the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "The subject immediately complied by stopping and placing the pole on the ground.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 40.0
+        },
+        {
+          "start_seconds": 40.0,
+          "end_seconds": 49.0
+        },
+        {
+          "start_seconds": 49.0,
+          "end_seconds": 85.0
+        },
+        {
+          "start_seconds": 112.0,
+          "end_seconds": 160.0
+        },
+        {
+          "start_seconds": 165.0,
+          "end_seconds": 200.0
+        }
+      ],
+      "evidence_observations": "The transcript shows the officer repeatedly ordering the subject to drop the pipe and stop, and the subject continuing to walk away. At [0:03-0:40] the subject is 'continuing walking South sidewalk.' At [0:40-0:49] the officer states 'he's armed with the pipe refusing to put it down.' At [0:49-1:25] the subject is 'continuing westbound approaching Cafe' while the officer says 'put down the pipe' and 'continuing put it down dude.' At [1:52-2:40] the officer repeats 'stop walking' and 'put down the pipe' with no recorded compliance. At [2:45-3:20] the officer says 'put it down stop dude I have a shot take it.' No segment records the subject stopping or placing the pole on the ground. The evidence contradicts the claim of immediate compliance, since the subject appears to keep walking with the pipe through the commands. The transcript excerpts are partial and do not show the full sequence, so the conclusion is limited to the segments provided.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "The subject then quickly picked the pole up again and began walking westbound away from Officer Pham.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.45,
+          "end_seconds": 6.2
+        },
+        {
+          "start_seconds": 9.52,
+          "end_seconds": 10.28
+        }
+      ],
+      "evidence_observations": "Segment [0:05-0:06] has an unidentified speaker saying the subject is 'continuing westbound approaching Cafe Bank Stop' and telling the subject to 'put down the pipe.' This partially supports the claim that the subject was walking westbound while holding the pole. Segment [0:09-0:10] has commands to 'put down the pipe,' 'stop walking,' and 'put the part down,' which suggest the subject was still holding the object and moving. However, the transcript does not show the subject dropping and then re-picking up the pole, which the words 'quickly' and 'again' imply. It also does not identify the speaker as Officer Pham, and it does not show the subject moving away from Officer Pham specifically rather than generally westbound.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "Officer Pham drew his TASER Electronic Control Weapon and followed the subject on foot.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.07,
+          "end_seconds": 3.21
+        },
+        {
+          "start_seconds": 4.02,
+          "end_seconds": 4.14
+        },
+        {
+          "start_seconds": 4.2,
+          "end_seconds": 4.33
+        },
+        {
+          "start_seconds": 6.52,
+          "end_seconds": 6.55
+        },
+        {
+          "start_seconds": 11.15,
+          "end_seconds": 11.2
+        }
+      ],
+      "evidence_observations": "The transcript contains a speaker who says \"I'll be out with the subject walking away from me,\" \"walking up on the,\" \"get your taser out,\" \"if you got a shot on the taser get it,\" and \"dude I have a shot take it.\" These segments partially relate to the claim: they suggest a taser-related command or readiness and a pursuit of a subject on foot. However, the transcript does not identify the speaker as Officer Pham, and it is unclear whether \"get your taser out\" is directed at the subject or another officer, or whether the speaker has drawn a taser. The phrase \"I have a shot\" may refer to a taser shot or to a clear line of sight, and no segment directly confirms that Pham drew his TASER. The segments also do not clearly establish that Pham followed the subject on foot, since the speaker's position and movement are described only ambiguously. No segment contradicts the claim, but the evidence does not directly confirm either component.",
+      "confidence": 0.35
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "At approximately 0057 hours, Officer Pham holstered his TASER and transitioned to his service weapon.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.25,
+          "end_seconds": 4.45
+        },
+        {
+          "start_seconds": 6.52,
+          "end_seconds": 6.95
+        },
+        {
+          "start_seconds": 11.15,
+          "end_seconds": 11.33
+        }
+      ],
+      "evidence_observations": "The transcript contains three audio segments (0:04, 0:06, 0:11) in which an unidentified speaker urges an officer to get out and use his TASER ('get your taser out', 'if you got a shot on the taser get it... take it', 'I have a shot take it'). The segments do not identify which officer is speaking or being addressed, do not mention holstering, do not mention a service weapon or firearm, and do not reference a clock time of approximately 0057 hours. The timestamps are relative offsets, not absolute times, so they cannot be correlated to 0057. The evidence shows the TASER being called for and discussed around the 0:04 to 0:11 window, but it does not directly address whether or when Officer Pham holstered the TASER or transitioned to his service weapon.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Officer Pham transitioned to his service weapon because the subject continued to ignore commands.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 27.0
+        },
+        {
+          "start_seconds": 45.0,
+          "end_seconds": 55.0
+        },
+        {
+          "start_seconds": 37.0,
+          "end_seconds": 20.0
+        }
+      ],
+      "evidence_observations": "The transcript shows repeated commands to the subject ('drop the pipe', 'sit down', 'put down the pipe') and a remark that he is 'refusing to put it down,' which partially supports the noncompliance element of the claim. However, the transcript does not capture the moment Officer Pham transitioned to his service weapon, its timing relative to the commands, or his stated reason. The segments are also out of sequence (a timestamp of 0:37-0:20 is reversed), and a partner is told 'get your taser out,' which points to a less-lethal option rather than the service weapon. The line 'stop dude I have a shot take it' suggests a firearm was in use at some point, but it does not establish when the transition occurred or that noncompliance caused it. The causal link in the claim is therefore not directly established.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "At approximately 0058 hours, Officer Kessler arrived on scene and joined Officer Pham.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 311,
+          "end_seconds": 317
+        }
+      ],
+      "evidence_observations": "The only evidence segment is [5:11-5:17], containing the speaker saying \"stop stop dude next unit coming in bring the uh lethal.\" The segment does not name Officer Kessler or Officer Pham, does not establish that Kessler joined Pham, and does not show a clock time, so the claimed 0058 hours cannot be verified. The phrase \"next unit coming in\" suggests a additional unit was arriving, which is loosely consistent with the report's account, but it does not identify the unit as Kessler or confirm that the arrival was a join with Pham. The timestamp 5:11 appears to be video elapsed time, not a wall-clock time, so it cannot be matched to 0058 hours. No conflicting observation is present.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The officers followed the subject westbound on the south sidewalk of Bolsa Avenue.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.09,
+          "end_seconds": 3.21
+        },
+        {
+          "start_seconds": 4.02,
+          "end_seconds": 4.14
+        },
+        {
+          "start_seconds": 4.36,
+          "end_seconds": 4.46
+        },
+        {
+          "start_seconds": 5.49,
+          "end_seconds": 5.52
+        }
+      ],
+      "evidence_observations": "At [0:04] the transcript states \"continuing walking South sidewalk BSA West,\" and at [0:05] \"continuing westbound approaching Cafe,\" which match the claimed westbound direction and south sidewalk of Bolsa (\"BSA\"). At [0:04] the speaker says \"we're at uh bua and Saigon on the South Side,\" consistent with the officers being on the south side. Two caveats: the transcript is garbled, and the [0:03] segment places the officers in an alley north of Bolsa before they moved to the south side, so the claim is accurate for the later portion of the pursuit rather than its start. The \"south sidewalk\" language refers to the subject's path, which the claim's wording ('followed the subject') reasonably covers.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Officer Kessler spoke to the subject only in English.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 46,
+          "end_seconds": 53
+        },
+        {
+          "start_seconds": 546,
+          "end_seconds": 552
+        }
+      ],
+      "evidence_observations": "Two short transcript segments (0:46-0:53 and 9:06-9:12) contain English speech. The first includes the phrase \"you understand English,\" which suggests someone was checking the subject's English comprehension. The segments do not establish who is speaking each line, and the transcript does not show whether any non-English language was used at any point. The segments cover only a small portion of the encounter, so they cannot confirm that English was used exclusively, and they do not contradict it.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "The subject continued walking and became increasingly argumentative.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.05,
+          "end_seconds": 21.0
+        },
+        {
+          "start_seconds": 48.0,
+          "end_seconds": 58.0
+        },
+        {
+          "start_seconds": 36.0,
+          "end_seconds": 53.0
+        },
+        {
+          "start_seconds": 49.0,
+          "end_seconds": 52.0
+        },
+        {
+          "start_seconds": 26.0,
+          "end_seconds": 32.0
+        },
+        {
+          "start_seconds": 6.0,
+          "end_seconds": 9.0
+        },
+        {
+          "start_seconds": 36.0,
+          "end_seconds": 40.0
+        },
+        {
+          "start_seconds": 22.0,
+          "end_seconds": 29.0
+        },
+        {
+          "start_seconds": 46.0,
+          "end_seconds": 52.0
+        }
+      ],
+      "evidence_observations": "The transcript contains only the officer's speech. Officer narration includes 'walking away from me' (0:03-0:21), 'continuing walking South sidewalk' (0:36-0:53), and 'continuing westbound' (0:49-0:52), which supports the 'continued walking' portion of the claim. Officer commands to 'stop', 'stop walking', 'sit down', and 'drop the pipe' suggest the subject did not comply, but no segment records the subject's words, tone, or volume, so the 'argumentative' portion cannot be assessed. The officer's statements ('I don't want to talk to you man', 'you understand English') reflect the officer's own speech, not the subject's escalation. The segments also overlap in time and are not in chronological order, which limits how the sequence of walking and any escalation can be established. Whether the subject became increasingly argumentative is not directly addressed.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "While walking, the subject struck a fire hydrant on the south sidewalk of 9200 Bolsa with the metal pole, producing a loud noise.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.6,
+          "end_seconds": 4.9
+        },
+        {
+          "start_seconds": 5.4,
+          "end_seconds": 5.9
+        }
+      ],
+      "evidence_observations": "The segments capture an officer-like command ('stop stop stop dude') while the subject continues walking on the south sidewalk of Bolsa (transcribed 'BSA') heading west, approaching a cafe. This partly matches the report's location and direction of travel. The word 'pipe' at 0:05 could plausibly refer to the metal pole, but the transcript does not clearly establish that. Neither segment mentions a fire hydrant, a strike, or a loud noise, so the transcript does not directly confirm or contradict the core claim. Video frames were not provided to verify the contact or sound.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "At approximately 0059 hours, the subject turned and began walking southbound across all traffic lanes of Bolsa Avenue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 276,
+          "end_seconds": 352
+        }
+      ],
+      "evidence_observations": "The only relevant segment (4:36-5:52) is bodycam narration describing the officers' own movements: walking south on the BSA sidewalk, continuing westbound toward a cafe, then 'we're walking uh North Fountain across BSA.' The segment does not identify the subject, does not mention the subject turning, and does not reference the 0059 clock time (the timestamps are video-relative). The one directional reference, a northbound crossing at Fountain, conflicts with the claim's 'southbound' direction, but it concerns the officers rather than the subject, and the crossing location is not tied to the claimed event. The evidence therefore neither directly supports nor clearly contradicts the claim.",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The subject reached the south side of Bolsa Avenue and continued westbound.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.17,
+          "end_seconds": 3.21
+        },
+        {
+          "start_seconds": 4.02,
+          "end_seconds": 4.14
+        },
+        {
+          "start_seconds": 4.36,
+          "end_seconds": 4.46
+        },
+        {
+          "start_seconds": 5.25,
+          "end_seconds": 5.52
+        }
+      ],
+      "evidence_observations": "The transcript is heavily garbled (e.g., 'Busa', 'BSA', 'Saigon', 'North Fountain', 'pipe'), and it is unclear whether the speakers are officers or the subject. Segment [0:04] places a speaker 'at uh bua and Saigon on the South Side' and says 'stop walking up on the BSA now should be coming out,' and 'continuing walking South sidewalk BSA West' is consistent with westbound travel on the south side of Bolsa. However, segment [0:05] says 'we're walking uh North Fountain across BSA ... continuing westbound approaching,' which could indicate crossing Bolsa Avenue rather than staying on the south side, and it does not clearly establish that the subject reached the south side. No segment clearly identifies the subject's position relative to Bolsa Avenue at a specific time. The evidence partially aligns with the claim but is too garbled and internally inconsistent to confirm or refute it.",
+      "confidence": 0.35
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "At approximately 0100 hours, Officer Blake arrived and joined Officer Kessler and Officer Pham.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.0,
+          "end_seconds": 17.0
+        },
+        {
+          "start_seconds": 47.0,
+          "end_seconds": 61.0
+        }
+      ],
+      "evidence_observations": "The two transcript segments do not name Officer Blake, Officer Kessler, or Officer Pham, and they do not give a clock time such as 0100 hours; the timestamps are relative clip times. At 0:05-0:17 a speaker says \"stop stop dude next unit coming in bring the uh lethal,\" which suggests an incoming unit but does not identify who it is or confirm that it was Blake. At 0:47-1:01 a speaker asks \"one of you guys go secure my unit\" and requests a unit to secure a vehicle near Moran, which says nothing about Blake's arrival or whether he joined Kessler and Pham. Nothing observed contradicts the claim, but nothing directly supports it either.",
+      "confidence": 0.15
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "The subject entered the shopping center parking lot at 9081-9113 Bolsa Avenue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.09,
+          "end_seconds": 3.21
+        },
+        {
+          "start_seconds": 3.33,
+          "end_seconds": 3.36
+        },
+        {
+          "start_seconds": 4.02,
+          "end_seconds": 4.05
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:03-0:04) are officer location statements, not observations of the subject. The officer says they are in the north alley on Moran just south of Bolsa, 'approaching 9200 still,' and later at Bolsa and Saigon on the south side, west of T-Mobile. None of the segments mention the subject, a parking lot, a shopping center, or an entry event. The only address reference, 9200, falls outside the claimed 9081-9113 range, but it describes the officer's position, not the subject's location, so it does not contradict the claim. The evidence neither confirms nor refutes that the subject entered the lot at 9081-9113 Bolsa Avenue.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Once in the parking lot, the subject's demeanor changed from non-compliant to aggressive.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 4.2
+        },
+        {
+          "start_seconds": 4.2,
+          "end_seconds": 6.5
+        },
+        {
+          "start_seconds": 6.5,
+          "end_seconds": 7.0
+        },
+        {
+          "start_seconds": 9.0,
+          "end_seconds": 10.9
+        },
+        {
+          "start_seconds": 10.9,
+          "end_seconds": 11.3
+        },
+        {
+          "start_seconds": 11.3,
+          "end_seconds": 11.5
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:03-0:11) capture officer commands ('stop', 'sit down', 'drop the pipe', 'put down the pipe', 'get your taser out', 'I have a shot take it') and subject statements ('I don't want to talk to you man', 'go away'). The subject is repeatedly described as walking away and, per the officer, 'armed with the pipe refusing to put it down.' Nothing in the segments identifies a parking lot or any location, so the transcript cannot confirm the 'once in the parking lot' timing. The segments also do not show a discrete transition from non-compliant to aggressive: the subject is non-compliant with commands throughout, and the transcript contains no explicit aggressive act such as advancing on officers, swinging, or threatening language. Whether holding a pipe while not complying equals 'aggressive' is an interpretive question the segments do not resolve. Bodycam video or location/timestamp data would be needed to assess the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "The subject partially turned toward the officers while swinging the pole loosely around his waist.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.2,
+          "end_seconds": 5.0
+        },
+        {
+          "start_seconds": 9.6,
+          "end_seconds": 10.6
+        }
+      ],
+      "evidence_observations": "The transcript segments contain officer commands ('drop the pipe', 'stop walking', 'sit down', 'put the pipe down') and a statement that the subject is 'armed with the pipe' and 'refusing to put it down.' Nothing in the audio describes the subject turning toward officers, partially or otherwise, or swinging the pole loosely around his waist. The commands to stop walking suggest the subject was moving, but the segments do not describe the direction of his body or the manner in which he held or moved the pipe. The evidence neither supports nor contradicts the specific claim, so the relationship cannot be determined from these segments.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Officer Pham instructed Officer Kessler to deploy his TASER.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.4,
+          "end_seconds": 7.5
+        },
+        {
+          "start_seconds": 6.9,
+          "end_seconds": 8.0
+        },
+        {
+          "start_seconds": 11.25,
+          "end_seconds": 12.0
+        }
+      ],
+      "evidence_observations": "The transcript contains three unattributed commands: 'get your taser out' (0:04-0:07), 'if you got a shot on the taser get it' (0:06-0:08), and 'I have a shot take it' (0:11-0:12). Speakers and addressees are not identified in the transcript, so it cannot be determined that Officer Pham spoke or that Officer Kessler was the addressee. The commands direct someone to draw or use a TASER, which partly relates to the claim, but they say 'get your taser out' and 'take it' rather than 'deploy,' and the transcript does not establish who issued them. Speaker identity must come from other sources such as audio attribution or the officers' positions in the video.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "At approximately 0100:49 hours, the subject stopped, turned fully toward the officers, grabbed the pole with both hands, and raised it above his head in an overhead striking position.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.49,
+          "end_seconds": 5.0
+        },
+        {
+          "start_seconds": 10.37,
+          "end_seconds": 10.46
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:04-0:05 and 0:10) contain officer commands such as \"drop the pipe,\" \"sit down,\" \"put down the pipe,\" and an officer statement that the subject is \"armed with the pipe refusing to put it down.\" These are consistent with the subject holding a pipe, but they do not describe whether he stopped, turned fully toward officers, grasped the pipe with both hands, or raised it overhead in a striking position. The segments also use relative timestamps (0:04, 0:10) that cannot be matched to the claimed 0100:49 time without the video's time base, so it is unclear whether these segments cover the claimed moment at all. The transcript is silent on the specific physical actions claimed, and no visual description is provided.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "The subject then charged directly toward Officer Kessler, who was closest to the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.2,
+          "end_seconds": 4.9
+        },
+        {
+          "start_seconds": 4.0,
+          "end_seconds": 5.5
+        },
+        {
+          "start_seconds": 6.1,
+          "end_seconds": 6.6
+        },
+        {
+          "start_seconds": 6.52,
+          "end_seconds": 7.0
+        },
+        {
+          "start_seconds": 10.22,
+          "end_seconds": 10.55
+        },
+        {
+          "start_seconds": 11.15,
+          "end_seconds": 11.2
+        }
+      ],
+      "evidence_observations": "The transcript contains only officer commands and no description of the subject's movement toward any officer. At 0:04-0:05 an officer says \"stop dude continuing walking South sidewalk BSA West,\" which describes the subject walking, not charging. At 0:06 and 0:10 officers say \"stop walking,\" which is consistent with the subject moving on foot. None of the segments mention a charge, a rush, or an aggressive advance toward anyone. No segment identifies Officer Kessler, his position, or which officer was closest to the subject. The walking references do not directly contradict a charge at some other point, and the claim's sequence (\"then charged\") is not addressed.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Officer Pham feared for the safety of Officer Kessler and Officer Blake.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.2,
+          "end_seconds": 4.5
+        },
+        {
+          "start_seconds": 4.9,
+          "end_seconds": 5.0
+        },
+        {
+          "start_seconds": 5.1,
+          "end_seconds": 5.3
+        },
+        {
+          "start_seconds": 6.9,
+          "end_seconds": 7.0
+        },
+        {
+          "start_seconds": 11.5,
+          "end_seconds": 11.9
+        }
+      ],
+      "evidence_observations": "The transcript segments contain unattributed speech with no speaker identification, so it cannot be confirmed that any segment is Officer Pham. The segments show a suspect armed with a pipe, commands to drop it, a taser being readied, \"I don't know this dude,\" and \"dude next unit coming in bring the uh lethal.\" The statements suggest a perceived threat, but none names Officer Kessler or Officer Blake, and none expresses fear for their safety specifically. The segments do not directly address whether Pham feared for the safety of Kessler and Blake.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Officer Pham discharged his firearm three times at the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 11.0,
+          "end_seconds": 11.5
+        },
+        {
+          "start_seconds": 11.5,
+          "end_seconds": 36.0
+        },
+        {
+          "start_seconds": 22.0,
+          "end_seconds": 31.0
+        }
+      ],
+      "evidence_observations": "The transcript segments do not state that Officer Pham fired, do not identify who fired, and do not give a shot count. At 0:11, a speaker says \"stop dude I have a shot take it,\" which indicates an officer was considering or ready to shoot but does not confirm a discharge. At 0:22-0:31, a speaker asks \"where's he shot,\" which suggests someone may have been shot, but it does not establish the shooter or the number of rounds. No segment mentions three shots, and the speakers are not identified by name. The evidence neither supports nor contradicts the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Officer Kessler simultaneously deployed his TASER.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.25,
+          "end_seconds": 4.55
+        },
+        {
+          "start_seconds": 6.52,
+          "end_seconds": 6.95
+        },
+        {
+          "start_seconds": 11.15,
+          "end_seconds": 11.33
+        }
+      ],
+      "evidence_observations": "The transcript contains three verbal commands about a taser: at 0:04 'drop the pipe get your taser out get your taser out', at 0:06 'if you got a shot on the taser get it', and at 0:11 'dude I have a shot take it'. These show that someone was directing or prompting the use of a taser and that a taser was in play around 0:04-0:11. However, the segments do not identify which speaker is Officer Kessler, do not show the taser being drawn or fired, and do not establish when or whether a deployment occurred. Nothing in the transcript addresses whether any deployment was simultaneous with another action. The commands at 0:04 and 0:06 suggest the taser was not yet out at those moments, but this is not clear enough to contradict the claim without video confirmation of the draw and discharge timing.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "The subject immediately dropped the pole and fell to the ground.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.45,
+          "end_seconds": 7.19
+        },
+        {
+          "start_seconds": 11.15,
+          "end_seconds": 11.38
+        }
+      ],
+      "evidence_observations": "The transcript contains only officer commands, not direct observations of the subject's actions. At [0:06-0:07] the officer is still saying \"continuing put it down dude\" and \"stop,\" which indicates the subject had not yet put the pole down at that point. At [0:11] the officer is saying \"get on your belly,\" which suggests the subject had not yet gone to the ground about five seconds in. The segments do not show the moment the subject dropped the pole or fell, so the timing of the drop and fall is not directly captured. The repeated commands are inconsistent with an immediate drop and fall, but they are inferred from speech rather than documented actions.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Officers moved in and handcuffed the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 7.0,
+          "end_seconds": 44.0
+        },
+        {
+          "start_seconds": 11.0,
+          "end_seconds": 36.0
+        },
+        {
+          "start_seconds": 11.0,
+          "end_seconds": 36.0
+        },
+        {
+          "start_seconds": 12.0,
+          "end_seconds": 36.0
+        }
+      ],
+      "evidence_observations": "The transcript shows officers issuing commands ('stop stop stop', 'get on your belly', 'roll roll roll') and officers calling 'I got it' and 'you guys good' / 'everybody good', which suggests officers moved in and gained control. It also includes 'where's he shot' and 'check check', indicating a shooting victim was being assessed. However, no segment mentions handcuffs, handcuffing, cuffing, or restraint, and the audio does not show whether any officer handcuffed the subject. The evidence is consistent with officers moving in but does not directly address the handcuffing claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "The subject remained conscious after being handcuffed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 12.22,
+          "end_seconds": 12.36
+        },
+        {
+          "start_seconds": 12.54,
+          "end_seconds": 13.33
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:12-0:13) contain only officer commands and fragments: 'where's he shot at you guys', 'get on the ground', 'get on the ground... stop'. They are recorded before any handcuffing and contain no statements, sounds, or descriptions of the subject's responsiveness, breathing, or consciousness, either during or after handcuffing. The evidence neither confirms nor contradicts whether the subject remained conscious after being handcuffed, and no later segments are provided.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Officers immediately began rendering medical aid to the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 11.2,
+          "end_seconds": 12.6
+        },
+        {
+          "start_seconds": 12.6,
+          "end_seconds": 14.1
+        },
+        {
+          "start_seconds": 13.8,
+          "end_seconds": 14.1
+        }
+      ],
+      "evidence_observations": "The excerpts cover roughly 0:11 to 0:14 and contain verbal commands and scene control, not medical aid. Officers say \"stop dude I have a shot take it,\" \"stop,\" \"you guys good,\" \"get on your belly,\" \"give me where's he shot,\" \"check check,\" and \"belly roll roll roll so we can help you.\" The phrase \"so we can help you\" at 0:13-0:14 suggests the subject had not yet been helped at that point, and the subject was still being ordered onto his belly. However, the segments show no medical treatment at any time, and they do not cover the period after 0:14, so they cannot establish whether aid began 'immediately' or later. \"Check check\" and \"you guys good\" may refer to officers checking on each other or the scene rather than the subject. The evidence does not clearly confirm or contradict the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Orange County Fire Authority paramedics arrived at approximately 0107 hours and assumed patient care.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or video content available to confirm or contradict the claim that Orange County Fire Authority paramedics arrived at approximately 0107 hours and assumed patient care. The claim cannot be evaluated against the evidence provided.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "The subject was transported to the University of California, Irvine Medical Center for treatment of his injuries.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content to compare against the claim that the subject was transported to UC Irvine Medical Center for treatment of injuries. The claim can be neither supported nor contradicted on the current record.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "The subject survived.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 12.2,
+          "end_seconds": 36.0
+        },
+        {
+          "start_seconds": 45.0,
+          "end_seconds": 58.0
+        }
+      ],
+      "evidence_observations": "At [0:12-0:36] an officer asks where 'he' was shot, indicating a shooting and a possible injury, but the transcript does not clearly identify the shot person as the subject. At [0:45-0:58] officers order a person to get on their belly and roll over 'so we can help you,' which suggests that person was conscious and responsive and was being offered aid at that moment. Neither segment addresses the subject's condition after that point, so the transcript shows the subject was alive and responsive at 0:45-0:58 but does not establish that the subject survived the incident.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "Evidence collected includes body-worn camera footage from Officers Pham, Kessler, and Blake.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 58,
+          "end_seconds": 65
+        }
+      ],
+      "evidence_observations": "The only transcript segment [0:58-1:05] is a general statement that during the investigation officers, deputies, and witnesses are interviewed and relevant evidence, reports, photographs, and videos are reviewed. It does not mention body-worn camera footage, nor does it name Officers Pham, Kessler, or Blake, nor identify any specific footage as collected. The segment neither confirms nor contradicts the claim that bodycam footage from these three officers was collected; the transcript provided is insufficient to verify the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "Five (5) WIN 9MM LUGER cartridge cases were collected.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content against which to evaluate the claim that five (5) WIN 9MM LUGER cartridge cases were collected. The claim can be neither supported nor contradicted on the current record.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "One (1) Staccato C2 9mm semi-automatic handgun was collected.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the evidence addresses the claim that one Staccato C2 9mm semi-automatic handgun was collected, so the claim cannot be evaluated.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-055",
+      "claim_text": "One (1) Axon TASER Model X26P was collected.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.25,
+          "end_seconds": 4.5
+        },
+        {
+          "start_seconds": 6.52,
+          "end_seconds": 6.92
+        },
+        {
+          "start_seconds": 11.15,
+          "end_seconds": 11.33
+        }
+      ],
+      "evidence_observations": "The transcript segments contain verbal commands and statements about a taser: 'get your taser out' [0:04], 'if you got a shot on the taser get it' [0:06], and 'stop dude I have a shot take it' [0:11]. These indicate that a taser was present and that a cartridge ('shot') was involved, but they do not show any evidence collection, the device being collected, or its model. Nothing in the segments mentions an 'Axon TASER Model X26P' or a count of one device. The evidence neither confirms nor contradicts the claim, so it cannot be evaluated from these segments alone.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-056",
+      "claim_text": "One (1) metal ground spike flagpole holder, approximately 29.5 inches, was collected.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or description available to confirm or contradict the report's claim that a metal ground spike flagpole holder of approximately 29.5 inches was collected. The claim cannot be evaluated against the evidence provided.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-057",
+      "claim_text": "Clothing items from the subject were collected.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam content available to determine whether clothing items from the subject were collected, so the claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-058",
+      "claim_text": "Surveillance camera footage from John Doe 1 was collected.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content available that addresses whether surveillance camera footage from John Doe 1 was collected. The claim can neither be confirmed nor contradicted from the available evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-059",
+      "claim_text": "The subject was transported to UCI Medical Center and survived surgery.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 12.2,
+          "end_seconds": 36.0
+        }
+      ],
+      "evidence_observations": "The only evidence segment (0:12-0:36) is brief radio/verbal chatter: 'up hey I got a I got a give me where's he shot at you guys good yeah check check.' It references a shooting and asks where the subject was shot, but it does not mention UCI Medical Center, transport, surgery, or the subject's survival. The segment neither confirms nor contradicts the claim, and the claim's outcome (survived surgery) is not addressed in the provided transcript.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-060",
+      "claim_text": "The scene was secured for an OCDA investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 39,
+          "end_seconds": 58
+        },
+        {
+          "start_seconds": 47,
+          "end_seconds": 51
+        }
+      ],
+      "evidence_observations": "Segment [0:39-0:58] is a general statement that the Orange County District Attorney's Office conducts independent investigations of officer-involved shootings and custodial deaths, carried out by the OCDA Bureau of Investigation special assignment unit. It describes OCDA procedure but does not mention this incident or any scene being secured. Segment [0:47-0:51] is an officer asking someone to 'go secure my unit' off Moran. The request concerns a unit (likely a vehicle), not explicitly a scene, and it does not reference the OCDA or any investigation. Neither segment confirms or contradicts that the scene was secured for an OCDA investigation.",
+      "confidence": 0.8
+    }
+  ]
+}

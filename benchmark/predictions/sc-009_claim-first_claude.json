@@ -1,0 +1,784 @@
+{
+  "scenario_id": "sc-009",
+  "model": "us.anthropic.claude-haiku-5-5",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 321.06,
+  "total_tokens": 163557,
+  "total_api_calls": 133,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The incident occurred on March 11, 2021, at approximately 1818 to 1839 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or timestamp data available to confirm or contradict the claimed date (March 11, 2021) or the time window (approximately 1818 to 1839 hours).",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The incident occurred on Pacific Coast Highway, Laguna Beach, CA.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or visual content available to confirm or contradict the claimed location (Pacific Coast Highway, Laguna Beach, CA). The claim cannot be evaluated against the evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The reporting officer is Officer D. Kessler, Badge Number 3891.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.11,
+          "end_seconds": 3.17
+        },
+        {
+          "start_seconds": 3.3,
+          "end_seconds": 3.41
+        }
+      ],
+      "evidence_observations": "The transcript segment at [0:03-0:03] is short and garbled. It contains no spoken name 'Kessler' and no spoken badge number '3891'. It includes fragments such as '45 I got his hands', '4573 custody start', 'medic Ryan you good', and 'I'm going to search'. The number '4573' differs from the claimed badge number, but the fragment does not establish that it is an officer's badge number rather than a unit or radio identifier, so it cannot be treated as a conflict. Nothing in the segment identifies who the reporting officer is. The evidence therefore neither confirms nor contradicts the claim, and the full transcript or other segments would be needed to verify it.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject is Tyler Brandt, a male, approximately 30 years old, White.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 183,
+          "end_seconds": 191
+        }
+      ],
+      "evidence_observations": "The only transcript segment [3:03-3:11] reads: \"okay we go hands up we got Leal covered.\" It does not mention 'Tyler Brandt,' and it contains no information about the subject's age or race. The segment names 'Leal,' which differs from the claimed subject name, but it does not establish whether Leal is the subject, a different person, or a companion, so it cannot be treated as a contradiction. No visual or other evidence in the provided material addresses the subject's identity, age, or race.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject was wearing a black sweatshirt with a light blue t-shirt underneath.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.28,
+          "end_seconds": 41.0
+        }
+      ],
+      "evidence_observations": "The only evidence provided is a transcript segment covering 0:02-0:41 with no text. No audio content, video frames, or visual descriptions of the subject's clothing are included. The claim concerns clothing color and layering, which is visual and cannot be verified from the transcript alone.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officers involved were Officer D. Kessler, Corporal A. Novak (PIT maneuver), Officer M. Trujillo, and Sergeant R. Holt.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the bodycam evidence was available to confirm or contradict the claim that the officers involved were Officer D. Kessler, Corporal A. Novak (PIT maneuver), Officer M. Trujillo, and Sergeant R. Holt, or the attribution of the PIT maneuver to Corporal Novak. The claim cannot be evaluated against the evidence provided.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "There were no witnesses at the scene of the shooting.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments or bodycam footage were retrieved, so there is no observable material to compare against the claim that there were no witnesses at the scene of the shooting. The claim cannot be evaluated in either direction.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "At approximately 1818 hours, Officer Kessler was driving southbound on Pacific Coast Highway in a marked Laguna Beach Police Department patrol vehicle.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam transcript, video frames, or other material available to verify the time (approximately 1818 hours), the officer's identity, direction of travel (southbound), roadway (Pacific Coast Highway), or vehicle type (marked Laguna Beach Police Department patrol vehicle). The claim cannot be evaluated against the evidence provided.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Officer Kessler observed a white Mercedes sedan traveling southbound at a high rate of speed.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or description available to confirm or contradict Officer Kessler's observation of a white Mercedes sedan traveling southbound at a high rate of speed. The claim cannot be evaluated against the evidence provided.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Kessler attempted to pace the Mercedes.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content against which to evaluate the claim that Officer Kessler attempted to pace the Mercedes. The claim cannot be verified or contradicted.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Officer Kessler observed the Mercedes veering on and off the shoulder, which he described as erratic driving behavior.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam footage, transcript, or other material available to show Officer Kessler's observations of the Mercedes, its position relative to the shoulder, or its driving pattern. The claim that the vehicle was veering on and off the shoulder cannot be evaluated against the evidence provided.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officer Kessler believed the driver was potentially impaired.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio or transcript content from which to evaluate Officer Kessler's belief about whether the driver was potentially impaired. The claim cannot be compared against any observed evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Officer Kessler broadcast over the radio his intent to conduct a traffic stop and requested immediate backup at approximately 1819 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no radio transcript, bodycam audio, or timestamp data available to confirm or contradict the claim that Officer Kessler broadcast intent to conduct a traffic stop, requested immediate backup, or did so at approximately 1819 hours. The evidence does not directly address the claim.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The driver of the Mercedes initially appeared to comply by pulling the vehicle onto the northbound shoulder of Pacific Coast Highway.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam transcript, video frame, or other material describing the Mercedes driver's movements, the vehicle's pull-over to the northbound shoulder of Pacific Coast Highway, or the driver's demeanor. The claim cannot be evaluated against the available evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officer Kessler exited his patrol vehicle and began approaching the Mercedes on the passenger side.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.28,
+          "end_seconds": 11.0
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:02-0:11) contains commands to a driver to get on the ground, a statement 'okay we go hands up we got Leal covered,' and '45 I got his hands I'm getting.' It does not name Officer Kessler, does not describe any officer exiting a patrol vehicle, does not mention the Mercedes or its passenger side, and does not indicate any officer's approach path. The segment does not directly address the claim, and the speaker identities and positions are not established in the excerpt. No conflicting observation is present, but the excerpt provides no support for the claim either.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "When Officer Kessler reached the rear quarter panel of the Mercedes, the driver abruptly accelerated away from the stop.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.28,
+          "end_seconds": 2.58
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:02-0:02) contains repeated verbal commands ('driver get down on the ground'). It contains no information about the vehicle's movement, whether it accelerated, the position of Officer Kessler relative to the Mercedes' rear quarter panel, or the timing of any vehicle movement relative to the officer's approach. The segment is too brief and content-limited to confirm or contradict the claim. Visual evidence of the vehicle's movement, if any exists, is not described in the transcript.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The Mercedes made a hard-right turn across oncoming traffic as it fled.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam audio, transcript, or description available to evaluate the claim that the Mercedes made a hard-right turn across oncoming traffic as it fled. The claim cannot be checked against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "A vehicle pursuit ensued after the Mercedes fled the traffic stop.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam content available to confirm or contradict the claim that a vehicle pursuit followed the Mercedes fleeing a traffic stop, so the claim cannot be evaluated.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "During the pursuit, the subject collided with two civilian vehicles.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content to compare against the claim that the subject collided with two civilian vehicles during the pursuit. The claim can be neither confirmed nor contradicted.",
+      "confidence": 0
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "One of the civilian vehicles overturned after the collision.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam content available to determine whether a civilian vehicle overturned after the collision, so the claim cannot be evaluated against the evidence.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Officer Kessler continued the pursuit with emergency lights and sirens activated.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or description available to confirm or contradict whether Officer Kessler continued a pursuit or whether emergency lights and sirens were activated. The claim cannot be evaluated against the evidence provided.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Additional Laguna Beach Police units joined the pursuit.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no observable material addressing whether additional Laguna Beach Police units joined the pursuit. The claim can neither be confirmed nor contradicted on the current record.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "An Orange County Sheriff helicopter provided aerial support during the pursuit.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record addresses whether an Orange County Sheriff helicopter provided aerial support during the pursuit, so the claim cannot be evaluated against evidence.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "The subject reached speeds of approximately 90 miles per hour.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam audio, transcript, or visual content available to evaluate the claim that the subject reached speeds of approximately 90 miles per hour. Nothing in the available record confirms, contradicts, or addresses the claimed speed.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The subject was observed driving on the wrong side of the road and swerving into oncoming traffic.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved or provided. No bodycam audio, transcript, or video frames are available to show the subject's driving position, lane, or any swerving into oncoming traffic. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Laguna Beach Police officers successfully deployed a spike strip.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The bodycam evidence provided contains no observations addressing whether Laguna Beach officers deployed a spike strip or whether any deployment was successful. The claim cannot be confirmed or contradicted from the available evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The spike strip caused all four tires of the Mercedes to deflate.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or description available that addresses the spike strip, the Mercedes, or the condition of its tires. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The subject continued to flee after the tires were damaged.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.28,
+          "end_seconds": 3.03
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:02-0:03) contains repeated officer commands to the driver to 'get down on the ground.' It does not show the subject fleeing, any movement by the subject, or the tires being damaged. The segment does not show whether the subject continued to flee after any tire damage, so it neither supports nor contradicts the claim. Establishing the sequence of flight and tire damage would require additional segments or video frames.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject drove on deflated tires for approximately two additional miles.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or video content available to compare against the claim that the subject drove on deflated tires for approximately two additional miles, so the claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Corporal Novak successfully executed a PIT maneuver that brought the Mercedes to a stop in the southbound lane of Pacific Coast Highway.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.28,
+          "end_seconds": 3.11
+        }
+      ],
+      "evidence_observations": "The only transcript segment provided (0:02-0:03) contains repeated commands to a driver to get on the ground, followed by an officer saying 'we got Leal covered' and 'I got his hands.' It does not mention a PIT maneuver, Corporal Novak, the Mercedes, the vehicle's stopping, or the southbound lane of Pacific Coast Highway. The segment shows only the post-stop arrest phase, not how the vehicle came to rest. Verifying the claim would require transcript or video covering the pursuit and stop.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "The Mercedes came to rest facing north.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record describes the Mercedes' final rest orientation, so the claim that it came to rest facing north cannot be evaluated against the bodycam evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Officer Kessler's patrol unit, Officer Trujillo's unit, and Sergeant Holt's unit took positions approximately 15 feet from the stopped Mercedes.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam transcript or audio content available to compare against the claim that the Kessler, Trujillo, and Holt units took positions approximately 15 feet from the stopped Mercedes. The claim cannot be evaluated, and no conflict or support can be determined from the materials provided.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "All units had their takedown lights and spotlights illuminated and directed at the subject.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content available to compare against the claim that all units had takedown lights and spotlights illuminated and directed at the subject. The claim cannot be evaluated in either direction.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Officer Kessler was positioned in the center, with Officer Trujillo to his left and Sergeant Holt to his right.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.28,
+          "end_seconds": 11.0
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:02-0:11) contains commands to a driver to get down and show hands, plus fragments such as 'we got Leal covered,' '45 I got his hands,' and 'okay we go.' It does not mention Officer Kessler, Officer Trujillo, or Sergeant Holt by name, does not identify which speaker is which, and contains no spatial or positional language (left, right, center) describing officer placement. The segment is audio-only text, so it does not show where anyone stood. Nothing in it contradicts the claim, but nothing in it confirms the claimed arrangement either.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "After the vehicle stopped, the subject remained seated in the driver's seat for approximately 30 seconds while appearing to look around the interior.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.28,
+          "end_seconds": 3.03
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:02-0:03) contains repeated verbal commands from an officer to the driver to \"get down on the ground,\" followed by \"hands up.\" The segment does not describe the subject's posture, movements, or gaze inside the vehicle, and it does not indicate whether the subject remained seated for any period after the stop. It also does not show when the vehicle stopped, so the 30-second interval cannot be timed against the audio. The commands suggest the officer was ordering the driver out of the vehicle at that point, but nothing in the segment confirms or refutes the claim that the subject stayed seated for about 30 seconds or was looking around the interior. Assessing the claim would require the footage from the stop itself, not only the 0:02-0:03 segment.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "The subject exited the vehicle and immediately turned to face the officers.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.28,
+          "end_seconds": 11.0
+        }
+      ],
+      "evidence_observations": "The transcript contains only officer commands. Officers repeatedly order the 'driver' to 'get down on the ground' (0:02-0:11), then say 'okay we go hands up we got Leal covered' and 'I got his hands I'm getting'. No segment describes the subject exiting the vehicle, turning, or facing the officers, and no subject speech or sounds of movement are transcribed. The commands and the 'hands up' and 'got his hands' remarks do not address whether the subject turned to face officers immediately after exiting. The timing of the exit and turn is not covered by these segments.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "The subject placed his left hand behind his back and made a distinct reaching motion toward his left hip area.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 17.0
+        }
+      ],
+      "evidence_observations": "The only evidence provided is a short audio transcript (0:03-0:17) containing officer verbalizations: \"okay we go hands up we got Leal covered; 45 I got his hands I'm getting.\" The transcript does not describe the subject placing his left hand behind his back, any reaching motion, or any movement toward the left hip. The phrase \"I got his hands\" indicates an officer controlling the subject's hands, but it does not establish the subject's hand position or direction of movement before or during that control, and the segment is cut off mid-sentence. No video frames were provided to confirm or refute the described motion. The evidence neither supports nor contradicts the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Officer Kessler interpreted the subject's movement as consistent with someone reaching for a concealed firearm.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.28,
+          "end_seconds": 2.49
+        },
+        {
+          "start_seconds": 3.03,
+          "end_seconds": 3.11
+        }
+      ],
+      "evidence_observations": "The transcript contains only two short segments. At 0:02 an officer orders the driver to get down on the ground, repeated twice. At 0:03 an officer says 'okay we go hands up we got Leal covered 45 I got his hands.' Neither segment describes the subject's movements, mentions reaching, or references a concealed firearm. The phrase 'covered 45' most likely refers to an officer's own .45 caliber weapon providing cover, which does not address the subject's movement or the officer's perception of it. The segments show commands and a hands-up/control sequence, but nothing about what Officer Kessler interpreted or why. Whether the subject reached for anything cannot be determined from these segments, and no video frames or fuller transcript were provided.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Officer Kessler commanded the subject to get on the ground.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 33,
+          "end_seconds": 58
+        }
+      ],
+      "evidence_observations": "The transcript segment from 0:33 to 0:58 contains repeated commands in the form 'driver get down on the ground get down.' This directly matches the content of the claim that a get-down command was given. However, the transcript has no speaker labels, so it does not show who issued the commands. Nothing in the segment identifies Officer Kessler as the speaker. The claim's attribution to Kessler therefore cannot be verified from this evidence.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "The subject did not comply and instead began advancing toward the officers in a rapid, deliberate manner.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.33,
+          "end_seconds": 2.58
+        },
+        {
+          "start_seconds": 3.03,
+          "end_seconds": 3.11
+        }
+      ],
+      "evidence_observations": "The audio transcript contains repeated commands at [0:02-0:02] to 'get down on the ground' (driver), which may indicate the subject was not complying with verbal commands at that moment. However, nothing in the transcript describes the subject advancing toward officers, or the speed or manner of any movement. At [0:03-0:03] an officer says 'okay we go hands up we got Leal covered' and another says '45 I got his hands I'm getting,' which suggests officers were taking physical control of the subject's hands, but does not show whether the subject moved toward them beforehand. The transcript does not address the claimed advancing movement, so the claim can be neither confirmed nor refuted from these segments. Video frames would be needed to assess the movement.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "As the subject closed the distance, he extended both arms forward at chest height with his hands together.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.28,
+          "end_seconds": 11.0
+        }
+      ],
+      "evidence_observations": "The transcript (0:02-0:11) contains only audio of officer commands ('get down on the ground', 'hands up') and radio-style statements ('we got Leal covered', '45 I got his hands'). It does not describe the subject's arm position, hand position, height, or whether the subject was closing distance. The officer's statement 'I got his hands' is ambiguous: it could refer to physically controlling the subject's hands after contact, but it does not establish that the subject extended both arms forward at chest height with hands together while approaching. No video frames were provided to assess the physical posture directly, so the claim is neither supported nor contradicted by the available evidence.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "The subject's hand position simulated pointing a firearm directly at Officer Kessler.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 17.0
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:03-0:17) contains a command to put hands up ('okay we go hands up'), a cover notification ('we got Leal covered 45'), and a statement that an officer has the subject's hands ('I got his hands I'm getting'). It does not describe the subject's hand position or shape, does not mention a firearm or pointing, does not reference Officer Kessler, and does not describe any gesture resembling a firearm. The segment neither supports nor contradicts the claim that the subject's hand position simulated pointing a firearm at Officer Kessler. Verifying the claim would require video frames or transcript content showing the subject's hand configuration and direction during the relevant period.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Officer Kessler believed he was about to be shot.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.28,
+          "end_seconds": 2.33
+        },
+        {
+          "start_seconds": 2.33,
+          "end_seconds": 2.58
+        },
+        {
+          "start_seconds": 3.03,
+          "end_seconds": 3.11
+        }
+      ],
+      "evidence_observations": "The transcript contains only brief audio segments at 0:02-0:03: repeated commands to 'driver get down on the ground', a call to 'get down on the ground now', and 'okay we go hands up we got Leal covered; 45 I got his hands.' The '45' reference may indicate a firearm (possibly a .45 caliber handgun) and the 'covered' call suggests a tactical threat response, which is consistent with the claim. However, the transcript does not include any statement of the officer's belief about being shot, does not show a weapon being pointed at or aimed toward the officer, and does not establish whether a firearm was present or who held it. The evidence does not directly address the officer's subjective belief.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Officer Kessler discharged his department-issued Glock 17 firearm, firing four rounds at the subject at approximately 1839 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing was available to confirm or contradict the claim that Officer Kessler discharged a Glock 17, fired four rounds, or did so at approximately 1839 hours. The claim cannot be evaluated against the available evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "After being struck, the subject remained on his feet and continued advancing toward the officers.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.28,
+          "end_seconds": 2.33
+        },
+        {
+          "start_seconds": 2.33,
+          "end_seconds": 2.58
+        },
+        {
+          "start_seconds": 3.03,
+          "end_seconds": 3.11
+        },
+        {
+          "start_seconds": 3.11,
+          "end_seconds": 3.17
+        }
+      ],
+      "evidence_observations": "The transcript contains only audio: repeated commands to 'get down on the ground' directed at the driver (0:02), a call of 'hands up' and 'we got Leal covered' (0:03), and 'I got his hands' (0:03). No segment describes the subject being struck, remaining on his feet, or advancing toward officers. The commands could indicate the subject was standing and not yet compliant, but they do not establish the claimed sequence of being struck, staying upright, and advancing. The transcript also does not clearly identify the subject, and 'driver' and 'Leal' may or may not refer to the same person. Visual evidence would be needed to assess the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "The subject yelled profanities at the officers.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.28,
+          "end_seconds": 2.33
+        },
+        {
+          "start_seconds": 3.58,
+          "end_seconds": 3.58
+        }
+      ],
+      "evidence_observations": "The transcript contains two brief utterances: \"oh\" at 0:02 and \"bro\" at 0:03. Neither word is a profanity, and the transcript gives no indication of volume, so it neither confirms nor contradicts yelling. It also does not show who the words were directed at. The segments are too short and too few to address whether the subject yelled profanities at the officers.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "The subject continued making threatening gestures consistent with pointing a weapon.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.33,
+          "end_seconds": 3.17
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:02-0:03) contains only officer verbal commands: 'driver get down on the ground,' 'now get down on the ground,' 'okay we go hands up we got Leal covered,' and '45 I got his hands I'm getting.' It contains no description of the subject's gestures, any pointing motion, or any weapon. The 'hands up' command and 'I got his hands' statement suggest officers directing and controlling the subject's hands, but they do not show whether the subject made threatening gestures or pointed anything. The segment is also very short and covers only a few seconds, so it does not address the claim's timeframe ('continued'). No video frames are described, so visual gestures cannot be assessed.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Officer Trujillo deployed his department-issued Taser, which struck the subject and caused him to fall to the ground.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 148,
+          "end_seconds": 183
+        }
+      ],
+      "evidence_observations": "The only transcript segment (2:28-3:03) contains verbal commands: \"oh driver get down on the ground get down; now get down on the ground; grounding.\" The segment does not mention a Taser, a deployment, an electrical discharge, a strike, or the subject falling. It also does not identify the speaker as Officer Trujillo. The commands are consistent with an officer directing a subject to the ground, but they do not show whether a Taser was deployed, whether it struck the subject, or whether the subject fell as a result. Corroborating visual or audio evidence for the deployment and its effect is needed to assess the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Sergeant Holt broadcast over the radio that shots had been fired and a Taser had been deployed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no audio or transcript content to confirm or contradict the report's claim that Sergeant Holt broadcast over the radio that shots had been fired and a Taser had been deployed. The claim cannot be verified or refuted from the available materials.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Officer Kessler and Officer Trujillo approached the subject and placed him in handcuffs.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 16.0
+        },
+        {
+          "start_seconds": 30.0,
+          "end_seconds": 41.0
+        }
+      ],
+      "evidence_observations": "The transcript contains a speaker saying \"45 I got his hands I'm getting\" at 0:03-0:16, which suggests a hands-on restraint step, possibly handcuffing, and another voice says \"okay we go hands up we got Leal covered,\" which suggests a cover officer. Neither segment names Officer Kessler or Officer Trujillo, and neither explicitly mentions handcuffs or approaching the subject. Unit numbers (\"45\", \"4573\") are not mapped to the named officers in the excerpt. The later segment at 0:30-0:41 (\"4573 custody start\") relates to custody processing, not to the initial approach or cuffing. The claim's specific attribution of the actions to Kessler and Trujillo, and the claim that they approached and cuffed the subject, cannot be confirmed or contradicted from these excerpts.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Officers immediately began rendering first aid to the subject.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "failed",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments or bodycam footage were provided. The claim that officers immediately began rendering first aid to the subject cannot be checked against any observed content, so no observations can be made about timing, actions, or the subject's condition.",
+      "confidence": 1.0
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "Officer Kessler searched the subject's person and recovered a small black semi-automatic pistol from the subject's right front waistband area.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 39,
+          "end_seconds": 41
+        }
+      ],
+      "evidence_observations": "The only transcript segment [0:39-0:41] contains the officer stating 'medical go ahead and glove I'm I'm going to search Ryan you're good you're good to get off.' This shows the officer announcing an intent to search the subject and gloving up, and a clearance to get off, but does not show the search being performed, nor any recovery of a firearm, nor its color, type, or location (right front waistband). The segment does not address whether a pistol was recovered or where. No video frames or additional segments were provided to confirm the search outcome. The claim's core details (recovery of a black semi-automatic pistol from the right front waistband) are not addressed by the evidence provided, and the statement of intent is not a conflict.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "Laguna Beach Fire Department paramedics arrived at approximately 1848 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 210,
+          "end_seconds": 221
+        }
+      ],
+      "evidence_observations": "The segment (video time 3:30-3:41) contains dialogue referencing a medic named Ryan (\"medic Ryan you good\", \"Ryan you're good to get off\") and a custody start, with an officer saying \"let's start uh medical go ahead and glove\" and \"I'm I'm going to search.\" The segment does not name the Laguna Beach Fire Department or any agency, does not state a clock time or arrival time, and does not show paramedics arriving. The timestamps are relative video times, not 1848 hours. The segment is consistent with a medic being present but does not address the claimed agency or the 1848 arrival time.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "The subject was transported to Mission Hospital in Mission Viejo, where he underwent surgery.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the provided evidence addresses the claim that the subject was transported to Mission Hospital in Mission Viejo or that he underwent surgery there. The claim cannot be verified or contradicted with the available material.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-055",
+      "claim_text": "The subject survived his injuries.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.5,
+          "end_seconds": 41
+        }
+      ],
+      "evidence_observations": "The segment (0:03-0:41) begins with 'custody start' and a medic named Ryan being asked 'you good'. The officer says 'let's start uh medical, go ahead and glove', then 'I'm going to search', and tells Ryan 'you're good, you're good to get off'. Nothing in the segment describes the subject's condition, vital signs, injuries, or whether he survived. The 'you're good' exchange appears to refer to the medic, not the subject. The segment does not directly address the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-056",
+      "claim_text": "The subject's injuries included two gunshot wounds to the upper torso and one gunshot wound to the left forearm.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 41.0
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:03-0:41) covers a custody start, a medic being told 'you good' and 'you're good to get off,' a request to 'glove' up for medical, and an officer stating he is going to search. No speech or visible reference addresses gunshot wounds, the number of wounds, their locations (upper torso or left forearm), or the subject's injuries. The segment neither confirms nor contradicts the claim, so it cannot be assessed from this excerpt. Additional segments covering the medical treatment or injury examination would be needed.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-057",
+      "claim_text": "Evidence collected includes body-worn camera footage from Officer Kessler, Officer Trujillo, and Sergeant Holt.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the provided material confirms or denies that body-worn camera footage exists from Officer Kessler, Officer Trujillo, or Sergeant Holt, so the claim cannot be verified or contradicted.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-058",
+      "claim_text": "Evidence collected includes patrol vehicle video recordings.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no observable content against which to check the claim that patrol vehicle video recordings were collected. The claim can neither be confirmed nor contradicted from the material provided.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-059",
+      "claim_text": "Evidence collected includes one black Taser X26 and one black Taser cartridge.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no observable content to compare against the claim that one black Taser X26 and one black Taser cartridge were collected. The claim cannot be verified or contradicted from the available materials.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-060",
+      "claim_text": "Evidence collected includes one black sweatshirt and one light blue t-shirt.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content against which to check the claim that one black sweatshirt and one light blue t-shirt were collected. The claim could not be evaluated.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-061",
+      "claim_text": "Evidence collected includes one blue RBX tennis shoe.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the bodycam record was available to confirm or contradict the claim that one blue RBX tennis shoe was collected, so the claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-062",
+      "claim_text": "Evidence collected includes six 9mm cartridge casings.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no observable content to compare against the claim that six 9mm cartridge casings were collected. The claim cannot be evaluated from the materials provided.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-063",
+      "claim_text": "Evidence collected includes 172 scene photographs.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content available to verify or contradict the claim that 172 scene photographs were collected. The claim cannot be evaluated from the materials provided.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-064",
+      "claim_text": "The subject was transported to Mission Hospital Mission Viejo for emergency surgery.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio or transcript content available to confirm or contradict the claim that the subject was transported to Mission Hospital Mission Viejo for emergency surgery. The claim cannot be evaluated against the evidence provided.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-065",
+      "claim_text": "Criminal charges were filed against the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 41.0
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:03-0:41) contains officers securing a subject ('we got Leal covered', 'I got his hands', 'custody start'), placing him in custody, and a medic being directed to glove up. The officer then says 'I'm going to search' and 'you're good to get off.' The segment does not mention charges, booking, citations, arrest paperwork, or any charging decision. Custody initiation is consistent with a possible later charge but does not directly address whether criminal charges were filed.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-066",
+      "claim_text": "The scene was secured for an OCDA investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 41.0
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:03-0:41) contains officers covering a subject named Leal, taking his hands, a custody start by unit 4573, a medic clearance ('Ryan you good yeah'), an instruction to glove up, and a search. It contains no reference to the OCDA (Orange County District Attorney's Office), no reference to an investigation, and no statement or observable action about securing, perimeter control, or preserving the scene. The segment shows a custody and medical sequence, which does not directly address whether the scene was secured for an OCDA investigation. The claim may be true, but this excerpt neither confirms nor contradicts it.",
+      "confidence": 0.85
+    }
+  ]
+}

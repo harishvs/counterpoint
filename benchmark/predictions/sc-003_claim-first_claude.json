@@ -1,0 +1,948 @@
+{
+  "scenario_id": "sc-003",
+  "model": "us.anthropic.claude-haiku-5-5",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 377.69,
+  "total_tokens": 542097,
+  "total_api_calls": 107,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Dispatch received a 9-1-1 call at approximately 2136 hours on January 16, 2023.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.38,
+          "end_seconds": 3.34
+        }
+      ],
+      "evidence_observations": "The transcript segment at [0:02-0:03] contains a 9-1-1 call exchange: a caller reports 'somebody banging on my door' and is asked where they live, and a responder says 'officers are on their way.' This supports that a 9-1-1 call was handled. However, the segment shows only video-relative timestamps (0:02-0:03), not clock time or date. It contains no 2136 hour reference, no January 16, 2023 date, and no on-screen timestamp overlay or dispatch log time. The time and date components of the claim are therefore not addressed. The address fragment ('120 or Branch Road') is also partially garbled and is not relevant to the claim.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The 9-1-1 caller was a female resident (W-1) who reported an unknown male kicking her front door and demanding entry.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.38,
+          "end_seconds": 3.02
+        },
+        {
+          "start_seconds": 3.16,
+          "end_seconds": 3.34
+        },
+        {
+          "start_seconds": 4.07,
+          "end_seconds": 4.13
+        }
+      ],
+      "evidence_observations": "The caller is addressed as 'ma'am' by the dispatcher and refers to 'my front door,' 'my door,' and 'my two kids,' indicating a female resident. She gives a residence location (120 or Branch Road). She reports someone 'banging on my door,' 'kicking my door,' and 'he's kicking the door right now.' Asked whether the person was saying anything, she relays 'open up open up it's a mail,' which indicates demanding entry. The transcript does not explicitly state the person's sex as male, but she repeatedly uses 'he,' and the person is not identified as known to her. The W-1 designation cannot be verified from the transcript. The transcript is garbled in places (e.g., 'screening' likely means 'screaming').",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The incident occurred at the Old Ranch Condominium development in Seal Beach.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.7,
+          "end_seconds": 3.0
+        },
+        {
+          "start_seconds": 6.6,
+          "end_seconds": 8.0
+        }
+      ],
+      "evidence_observations": "The transcript segments are garbled and do not clearly state a location. The first segment ('where do you live 120 or Branch Road') may refer to a street address on 'Old Ranch' or 'Branch' Road, which partially overlaps with the claimed 'Old Ranch' name but is not clearly the same. The second segment ('an officer's pulling up right now off of a please 120 the police are here') references an address ('120') but does not name a city, a condominium development, or Seal Beach. Neither segment explicitly confirms or contradicts that the incident occurred at the Old Ranch Condominium development in Seal Beach, and no segment identifies a condominium development or city name.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "W-1 described the male as wearing a jacket, mask, beanie, and dark brown work boots.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.2,
+          "end_seconds": 4.9
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:04-0:04) is fragmentary and internally inconsistent. W-1 first says she 'couldn't tell any clothing description' after a brief look at the male. She then appears to repeat 'like a jacket mask beanie,' which may be an officer's prompt she is echoing rather than her own spontaneous description. She later says 'yeah,' which may be assent to that prompt. She separately and spontaneously states the male is 'wearing dark brown like w boots with laces.' The segment does not mention 'work' boots, so that detail is unsupported, though 'dark brown boots' is consistent. Because W-1's statements conflict with each other and the jacket, mask, and beanie items may have been suggested, the evidence neither clearly supports nor clearly contradicts the claim that W-1 described these items.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Corporal Fuentes and Officer Harmon were dispatched to the location.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.2,
+          "end_seconds": 3.7
+        },
+        {
+          "start_seconds": 6.36,
+          "end_seconds": 6.75
+        }
+      ],
+      "evidence_observations": "At 0:03 a speaker says \"yeah officers are on their way ma'am,\" which indicates officers were sent but does not name them or confirm dispatch of Corporal Fuentes or Officer Harmon. At 0:06 a speaker says \"okay an officer's pulling up right now,\" which refers to a single arriving officer and does not identify who it is. Neither segment names Fuentes or Harmon, confirms the number of officers dispatched, or refers to a dispatch record. The singular reference at 0:06 does not contradict a two-officer dispatch, since the other officer may have been en route or not yet arrived. The evidence is consistent with officers being dispatched but does not directly address the specific claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officer Harmon arrived at the residence at approximately 2140 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.2,
+          "end_seconds": 5.4
+        },
+        {
+          "start_seconds": 6.36,
+          "end_seconds": 6.48
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:05 and 0:06, relative video timestamps) contain a speaker stating that an officer is nearby on Lamson, and that 'an officer's pulling up right now off of a please 120' and 'the police are here.' The segments show an officer arriving or about to arrive, which is consistent with an arrival at the residence. However, neither segment names the officer as Harmon, and neither gives a wall-clock time (no 2140 hours or any other clock reference). The segments use only video-relative timestamps, and the spoken address ('please 120') is garbled and cannot be confirmed as the residence in the report. The evidence therefore neither confirms nor contradicts the officer's identity or the approximately 2140 arrival time.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The residence is a two-story condominium with an enclosed rear courtyard surrounded by an approximately eight-foot-high brick perimeter wall.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.0,
+          "end_seconds": 4.1
+        },
+        {
+          "start_seconds": 5.0,
+          "end_seconds": 5.1
+        },
+        {
+          "start_seconds": 6.2,
+          "end_seconds": 6.4
+        }
+      ],
+      "evidence_observations": "The transcript segments mention the speaker's children being 'on the second floor,' which is consistent with a two-story residence. The speaker also refers to a 'patio,' 'different patio to different patio,' and 'my front door,' which may fit a courtyard-style layout, but this is not explicit. Nothing in the segments addresses an enclosed rear courtyard, a surrounding perimeter wall, brick construction, or the approximately eight-foot wall height. The evidence neither confirms nor contradicts those specific details.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The courtyard has an entry gate facing Aster Street.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record addresses the courtyard entry gate or its orientation relative to Aster Street, so the claim cannot be evaluated.",
+      "confidence": 0
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "At approximately 2141 hours, Officer Harmon observed a male subject, later identified as Thomas Weller, standing on the concrete walkway outside the courtyard gate.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 439,
+          "end_seconds": 456
+        },
+        {
+          "start_seconds": 470,
+          "end_seconds": 509
+        }
+      ],
+      "evidence_observations": "The transcript segments do not name Officer Harmon, do not give a clock time (2141 hours) that can be matched to the video timestamps (7:19 and 7:50), and do not mention the concrete walkway or courtyard gate. The only location reference is a speaker saying 'someone's on my porch right now' at 7:19, with police shining a light on him. A porch is not necessarily the same as a walkway outside a courtyard gate, but the speaker's description is too general to confirm or refute the claimed location. At 7:50 the speaker says 'I'm pretty sure it's mik' and later 'I don't know who this guy is.' This does not establish that the man was Thomas Weller, and the speaker is not identified as the officer. The officer's own statements are not clearly transcribed, so it is unclear whether the officer identified the subject. The evidence neither directly supports nor clearly contradicts the claim.",
+      "confidence": 0.75
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject was in full view and matched the description provided by dispatch.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 13.0
+        },
+        {
+          "start_seconds": 20.0,
+          "end_seconds": 50.0
+        },
+        {
+          "start_seconds": 6.0,
+          "end_seconds": 19.0
+        },
+        {
+          "start_seconds": 19.0,
+          "end_seconds": 36.0
+        },
+        {
+          "start_seconds": 50.0,
+          "end_seconds": 82.0
+        }
+      ],
+      "evidence_observations": "The caller initially could not see the person, only 'Shadows going back and forth to the house' ([0:03-0:13]). Her description was uncertain: she 'took a peek,' 'couldn't tell' ethnicity ('white black Hispanic Asian'), and gave partial clothing details (jacket, mask, beanie, dark brown boots with laces) ([0:20-0:50]). Later she reports 'a hat on backwards' and says 'I see him,' with police lighting him ([0:19-0:36]), but she also says 'I'm pretty sure it's mik...', 'no it doesn't look like a little', and 'I don't know I haven't seen him' ([0:50-1:22]). The transcript does not establish that the subject was in 'full view,' and it does not clearly compare his appearance to the dispatch description. The hat-backwards detail neither clearly matches nor contradicts the earlier 'beanie' description, and the identification is uncertain.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Officer Harmon stood approximately 40 feet east of the subject.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or description available that addresses Officer Harmon's position or the approximately 40-foot distance east of the subject. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officer Harmon used a flashlight to illuminate the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 7.5,
+          "end_seconds": 7.7
+        },
+        {
+          "start_seconds": 9.5,
+          "end_seconds": 9.9
+        }
+      ],
+      "evidence_observations": "At [0:07] a speaker says 'the cops are shining a light on him right now,' which supports that officers were illuminating the subject. However, the segment does not identify the officer as Harmon, does not specify a flashlight (the light could be a vehicle spotlight or another source), and does not identify which officer was holding the light. At [0:09] the subject says 'I can't see your hands' and 'I can shine my eye,' which does not clarify the light source or the officer's identity. The evidence partially aligns with the illumination part of the claim but does not confirm the officer's identity or the tool used.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Officer Harmon identified himself as a police officer.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 9.0,
+          "end_seconds": 12.0
+        },
+        {
+          "start_seconds": 30.0,
+          "end_seconds": 41.0
+        }
+      ],
+      "evidence_observations": "The excerpts do not clearly show Officer Harmon stating that he is a police officer. In segment [0:09-0:12], when asked 'who are you,' the speaker responds 'I'm Mike' and then 'I'm here to see'; no reference to police or an officer title appears. The name 'Mike' does not contradict the claim, since the officer may have identified himself by name and role elsewhere. Segment [0:30-0:41] contains commands ('put your hands up,' 'sit down,' 'get your hands out of your pocket') but no self-identification. The transcript covers only about 40 seconds of fragments, so an identification may have occurred outside the excerpted portions. The evidence neither supports nor contradicts the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Officer Harmon ordered the subject to approach him with his hands visible.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 9.0,
+          "end_seconds": 10.0
+        },
+        {
+          "start_seconds": 10.3,
+          "end_seconds": 10.6
+        },
+        {
+          "start_seconds": 10.7,
+          "end_seconds": 10.9
+        }
+      ],
+      "evidence_observations": "The transcript shows commands to show hands, including 'put your hands up,' 'I can't see your hands,' and 'get your hands out of your pocket now,' which partly relates to the 'hands visible' element. However, no segment contains an order to approach. The commands that do appear are 'have a seat' and 'sit down,' and the subject replies 'I'll go the other way' and 'I don't need to show you my hands.' Speaker attribution is unclear in the garbled transcript, so it cannot be confirmed that these commands came from Officer Harmon. The 'approach' element is not addressed, and the segments do not clearly establish the full claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject stated he was there to visit a friend.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 9.0,
+          "end_seconds": 18.0
+        }
+      ],
+      "evidence_observations": "The subject first says \"I'm here to see\" (the object is cut off). When asked what his relationship is to the person, he answers \"I am here to get my money from her,\" which describes a financial purpose, not a friendship or a visit to a friend. The woman is also described as not wanting him there (\"she doesn't want you here\"). The transcript is fragmentary, speaker attribution is unclear, and the word \"friend\" never appears, so the contradiction rests on his stated purpose and his answer about the relationship rather than an explicit denial.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "The subject asked the officer to call his supervisor.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "failed",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam audio or transcript content to compare against the claim that the subject asked the officer to call his supervisor. The claim cannot be evaluated.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The subject held a beverage can in his left hand throughout the encounter.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 10.28,
+          "end_seconds": 10.49
+        },
+        {
+          "start_seconds": 12.38,
+          "end_seconds": 13.37
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:10-0:13) contain only spoken commands and responses from officers and the subject. They do not mention a beverage can or identify which hand held any object. The officer repeatedly directs the subject to put his hands up and to get his hands out of his pocket, which suggests the subject's hands were in his pocket at those points. That is not direct evidence about a can in the left hand, and it does not establish whether a can was held at any time. The segments cover only about three seconds of the encounter, so they cannot confirm or refute the claim 'throughout the encounter.' Visual bodycam frames would be needed to assess the claim.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The subject was wearing a baggy black jacket, blue jeans, and clear glasses.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.2,
+          "end_seconds": 4.9
+        },
+        {
+          "start_seconds": 7.2,
+          "end_seconds": 7.5
+        }
+      ],
+      "evidence_observations": "The speaker states they could not clearly see the subject's clothing ('I couldn't tell any clothing description'). They mention a jacket, a mask, and a beanie, and later a hat worn backwards, plus dark brown boots with laces. No segment mentions a baggy black jacket, blue jeans, or clear glasses. The jacket is referenced without color or style, so it cannot confirm or refute those details. Jeans and glasses are not mentioned at all. The footwear and headwear described do not directly contradict the claim, since the claim does not address them.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "Corporal Fuentes arrived at approximately 2142 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 396,
+          "end_seconds": 399
+        }
+      ],
+      "evidence_observations": "At [6:36-6:39] a speaker says an officer is pulling up right now and that the police are here. This indicates an officer's arrival at that point in the recording. However, the segment does not identify the officer as Corporal Fuentes, and it gives no clock time. The timestamp is elapsed recording time (6:36), not a 2142-hour wall-clock time, so the evidence can neither confirm nor contradict the 2142 figure. The arrival event is consistent with the claim, but the name and time elements are not addressed.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Corporal Fuentes parked his patrol vehicle approximately 200 to 300 feet south of the condominium.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.2,
+          "end_seconds": 5.8
+        },
+        {
+          "start_seconds": 36.0,
+          "end_seconds": 39.0
+        }
+      ],
+      "evidence_observations": "The transcript contains two audio segments. At [0:05] a speaker says an officer is 'on Lamson' and 'not too far away at all.' At [0:36-0:39] a speaker says an officer is 'pulling up right now off of a please 120' and that 'the police are here.' Neither segment gives a distance in feet, identifies the vehicle as Corporal Fuentes's, or states that the vehicle was parked south of the condominium. The 'not too far away' remark is vague and does not establish 200-300 feet. The partially garbled reference to 'please 120' is not clearly tied to a parking location relative to the condo. No visual or positional evidence is provided. The evidence does not directly confirm or contradict the claimed parking position and distance.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "As Corporal Fuentes approached on foot, the subject became increasingly noncompliant.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 9.41,
+          "end_seconds": 10.41
+        },
+        {
+          "start_seconds": 10.28,
+          "end_seconds": 10.98
+        },
+        {
+          "start_seconds": 10.98,
+          "end_seconds": 11.07
+        },
+        {
+          "start_seconds": 12.38,
+          "end_seconds": 13.36
+        }
+      ],
+      "evidence_observations": "The transcript (0:09-0:13) shows the subject repeatedly refusing or not complying with commands: 'I don't need you, I don't need to show you my hands,' declining to raise hands ('put your hands up' / 'I can't see your hands'), refusing to sit ('have a seat' / 'nope'), saying 'I'll go the other way then' and 'no you won't,' and not removing hands from pockets despite repeated orders ('get your hands out your pocket now'). Noncompliance is clearly present in this window. However, the claim contains two elements the evidence does not establish: (1) an escalating trend ('increasingly'), since the four short segments show noncompliance from the first exchange with no measurable change in intensity over time; and (2) that the noncompliance is tied to Corporal Fuentes's approach on foot, since the transcript does not identify speakers, shows no approach, and the commands could come from different officers. The segments also begin at 0:09, so the period before Fuentes's approach is not captured.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The subject placed his left hand in his front jacket pocket.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 10.43,
+          "end_seconds": 10.92
+        },
+        {
+          "start_seconds": 12.38,
+          "end_seconds": 12.8
+        },
+        {
+          "start_seconds": 13.3,
+          "end_seconds": 13.6
+        }
+      ],
+      "evidence_observations": "The transcript contains repeated commands from an officer ('get your hands out of your pocket', 'get your hands out your pocket') at 0:10, 0:12, and 0:13. These commands indicate the officer believed the subject had a hand in a pocket, which is consistent with the claim's general assertion. However, the transcript does not identify which hand was in the pocket (left or right), which pocket was used (front jacket pocket or another), or whether the subject complied. The officer's speech is not an observation of the subject's hand position, and no video frames or visual description were provided to confirm the specific hand or pocket. The evidence therefore neither directly confirms nor contradicts the specific details of the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "The subject turned his back to Officer Harmon and began walking toward the enclosed patio area in the direction of W-1's residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.19,
+          "end_seconds": 6.36
+        },
+        {
+          "start_seconds": 10.28,
+          "end_seconds": 10.41
+        }
+      ],
+      "evidence_observations": "The 0:06 segment has a narrator describing the subject walking onto the patio ('he's walking on the patio he's on the patio now') and then returning to the front door ('he's back at the front door'). This partially corroborates movement toward the patio. However, the transcript does not establish that the subject turned his back to Officer Harmon, does not identify Harmon's position, and does not state the direction of W-1's residence relative to the patio. The 0:10 segment has commands to put hands up and sit, and the subject saying 'I'll go the other way then' and 'no you won't,' which suggests a disputed direction of movement but does not confirm or refute the specific claim. No evidence directly contradicts the claim, but key elements are unaddressed or unclear.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Officer Harmon gave repeated commands for the subject to stop and show his hands, which the subject ignored.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 9.7,
+          "end_seconds": 10.8
+        },
+        {
+          "start_seconds": 10.3,
+          "end_seconds": 12.0
+        },
+        {
+          "start_seconds": 12.6,
+          "end_seconds": 13.6
+        },
+        {
+          "start_seconds": 38.0,
+          "end_seconds": 36.0
+        }
+      ],
+      "evidence_observations": "Across the segments, the officer repeatedly directs the subject to show or move his hands: 'put your hands up' (0:10-0:12), 'get your hands out of your pocket now' repeated three times (0:12-0:13), and 'get your hands out your pocket now' repeated twice (0:38 segment). The subject responds verbally with 'I don't need to show you my hands' and 'nope' (0:09-0:12), and the officer re-issues the same hand commands, which suggests the hands were not shown or removed from the pocket. Caveats: the word 'stop' does not appear in these segments, the subject's noncompliance is inferred from repeated commands rather than directly shown, the speaker of 'I can't see your hands' is not clearly attributed, and the timestamp '[0:38-0:36]' is reversed and may be a transcription error.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The subject stated, \"I will not sit down; I will not sit down.\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 10.5,
+          "end_seconds": 10.8
+        },
+        {
+          "start_seconds": 13.4,
+          "end_seconds": 13.6
+        }
+      ],
+      "evidence_observations": "The transcript has no speaker labels, so it is unclear who says each line. The claimed exact words, \"I will not sit down; I will not sit down,\" do not appear. The closest matches are the fragment \"I won sit down\" at [0:10], which may be a garbled \"I won't sit down\" and may be attributed to either party, and \"nope I'll go the other way\" at [0:10] and [0:13], which signals refusal but is a different statement. Commands such as \"have a seat\" and \"sit the [__] down\" appear, and a refusal is implied by \"nope,\" but the transcript does not clearly establish the subject's exact words or their repetition. The evidence neither clearly confirms nor contradicts the quoted statement.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "As the subject walked back into the enclosed patio area with his back to the officers, Corporal Fuentes warned the subject that he would deploy his Taser.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 12.38,
+          "end_seconds": 12.53
+        }
+      ],
+      "evidence_observations": "The transcript segment at [0:12] contains the statements \"I'm going to tase you\" and \"Taser Taser Taser,\" which are consistent with a Taser warning. However, the transcript does not identify the speaker (it does not confirm Corporal Fuentes made them), and it does not show or describe the subject walking back into the enclosed patio area, his orientation (back to officers), or the surrounding positions. The segment also includes commands such as \"get your hands out your pocket\" and \"get on the ground,\" which do not address the claim. The claim's warning element is partially consistent with the audio, but the speaker attribution and the spatial and positional context are not addressed by the evidence provided.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The subject continued to ignore commands.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 10.28,
+          "end_seconds": 10.41
+        },
+        {
+          "start_seconds": 10.43,
+          "end_seconds": 10.58
+        },
+        {
+          "start_seconds": 11.29,
+          "end_seconds": 11.48
+        },
+        {
+          "start_seconds": 12.38,
+          "end_seconds": 12.57
+        },
+        {
+          "start_seconds": 13.24,
+          "end_seconds": 13.36
+        }
+      ],
+      "evidence_observations": "The transcript is almost entirely officer commands: 'put your hands up', 'have a seat', 'sit down', 'get your hands out of your pocket now', 'get on the ground right now', 'put your hands on your head and roll over', and 'Taser'. The commands are repeated across segments 0:10 to 0:13, which suggests they were not immediately followed, but the transcript does not show whether the subject's hands stayed in a pocket or whether the subject moved or complied. Speaker attribution is unclear. Lines such as 'nope I'll go the other way then no you won't' may be subject speech showing verbal refusal, and 'I'll put my hands up' may be subject speech indicating partial intent to comply, but neither is reliably attributed. No subject actions are described. The evidence is consistent with the claim of repeated non-compliance but does not directly establish that the subject ignored commands, since the subject's responses and physical compliance are not documented.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "At approximately 2142 hours, Corporal Fuentes deployed his Taser, striking the subject in the chest.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 762,
+          "end_seconds": 789
+        }
+      ],
+      "evidence_observations": "The transcript segment (12:42-13:09) contains verbal commands and a warning from an unidentified officer: \"I'm going to tase you\" followed by \"Taser Taser Taser.\" It then contains a subject-directed exchange (\"what let me...\", \"hands hands hands\") and \"don't reach to that gun.\" The audio does not identify which officer spoke or who deployed the Taser. It does not show a Taser deployment, a probe or cartridge discharge, or the point of impact, so it cannot confirm that a strike occurred or that it hit the chest. The 2142-hour timestamp is not stated in the transcript, and the segment is timestamped 12:42-13:09 relative to the recording, so it cannot be mapped to the claimed clock time. The warning and the repeated 'Taser' calls are consistent with a Taser being present or threatened, but they do not directly address the claim's specific elements: the deploying officer's identity, the fact of deployment, or the strike location.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject fell forward onto his stomach within the enclosed patio area.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 10.9,
+          "end_seconds": 11.8
+        },
+        {
+          "start_seconds": 12.6,
+          "end_seconds": 13.2
+        }
+      ],
+      "evidence_observations": "The transcript segments contain only audio commands from officers: 'get on the ground,' 'put your hands on your head and roll over,' 'get your hands out your pocket,' 'Taser,' 'hands... don't reach to that gun,' and 'shots fired.' None of the segments describe the subject falling, his body position (forward, stomach, or otherwise), or the location (enclosed patio area). The commands to get on the ground and roll over are consistent with a prone position but do not confirm that the subject fell forward or ended on his stomach within the patio. The evidence does not directly address the claim, and no visual frames were provided to verify it.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Officer Harmon approached the threshold of the patio and observed the subject lying face down.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 10.55,
+          "end_seconds": 11.57
+        },
+        {
+          "start_seconds": 12.38,
+          "end_seconds": 12.53
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:10-0:12) contain commands directed at a subject to get on the ground, put hands on chest and head, 'roll over,' and get hands out of pocket, followed by 'Taser' commands. They do not identify the speaker's location, do not mention Officer Harmon or a patio threshold, and do not describe the subject's body position in a way that confirms or refutes lying face down. The 'roll over' instruction suggests the subject's position was changing during this window, but the segments do not establish whether Harmon was at the threshold or what he observed. The claim is not directly addressed by the evidence provided.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Corporal Fuentes was approximately ten feet to Officer Harmon's right.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 9.0,
+          "end_seconds": 13.6
+        }
+      ],
+      "evidence_observations": "The only evidence segment provided covers 0:09-0:13 and contains no text (no transcript content). Nothing in the provided material describes the positions of Corporal Fuentes or Officer Harmon, their relative distance, or their orientation. The segment does not directly address whether Fuentes was approximately ten feet to Harmon's right, so the claim can be neither confirmed nor contradicted from the available evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "The subject reached toward his left waistband with his right hand and produced what appeared to be a black semi-automatic handgun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 10.4,
+          "end_seconds": 11.9
+        },
+        {
+          "start_seconds": 11.3,
+          "end_seconds": 11.9
+        },
+        {
+          "start_seconds": 11.9,
+          "end_seconds": 12.4
+        },
+        {
+          "start_seconds": 12.6,
+          "end_seconds": 13.2
+        },
+        {
+          "start_seconds": 13.0,
+          "end_seconds": 13.2
+        }
+      ],
+      "evidence_observations": "The transcript is audio only, with no visual description of the subject's movements. Officers repeatedly command the subject to get his hands out of his pocket and not reach for the gun. One officer says \"what don't that gun cop\" and \"you reach for that gun you're going to get shot,\" and another says \"his gun still right there I see\" and \"hands don't reach to that gun.\" These statements suggest officers perceived a gun and a reach toward it, which partially aligns with the claim. However, nothing in the transcript identifies which hand moved, which side of the waistband was involved, or the gun's color and action type. The commands reference a pocket, not a waistband. The evidence therefore does not directly confirm or contradict the specific details (right hand, left waistband, black semi-automatic handgun), and the officers' statements are their own characterizations rather than independently verifiable observations.",
+      "confidence": 0.75
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "The subject raised the weapon and pointed it in the direction of Officer Harmon.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 11.0,
+          "end_seconds": 14.0
+        },
+        {
+          "start_seconds": 11.0,
+          "end_seconds": 48.0
+        },
+        {
+          "start_seconds": 38.0,
+          "end_seconds": 50.0
+        }
+      ],
+      "evidence_observations": "The transcript contains audio only and no description of visual frames. Officers repeatedly reference a gun: 'what don't that gun cop' (0:11), 'his gun still right there' (~0:11-0:48), and 'hands don't reach to that gun' (0:38-0:50). These indicate a firearm was present and officers directed the subject not to reach for it. However, no segment states or shows the subject raising the weapon or pointing it toward Officer Harmon, and no segment identifies Officer Harmon as a target. The phrase 'shots shots fired cop' (0:38-0:50) is unattributed and does not specify who fired or in what direction. The evidence neither confirms nor contradicts the specific claim of raising and pointing the weapon at Harmon.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Officer Harmon feared for his life and the life of Corporal Fuentes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 10.3,
+          "end_seconds": 11.5
+        },
+        {
+          "start_seconds": 11.5,
+          "end_seconds": 13.1
+        },
+        {
+          "start_seconds": 13.1,
+          "end_seconds": 13.6
+        }
+      ],
+      "evidence_observations": "The transcript contains verbal commands and statements suggesting a perceived threat: 'you reach for that gun you're going to get shot', 'his gun still right there', 'don't reach to that gun', and 'shots fired cop'. These are consistent with a perceived lethal threat but do not directly address the claim. No speaker states fear for his own life or for anyone else's. The speakers are not identified, so it is unclear which voice is Officer Harmon. Corporal Fuentes is not named or identified anywhere in the segments, so nothing shows that the speaker was concerned for Fuentes's safety. The segments also do not show whether Fuentes was present or near the subject. The evidence neither clearly supports nor contradicts the claim, and the officer's subjective state cannot be confirmed from the audio alone.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Officer Harmon discharged his duty weapon, firing approximately twelve rounds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 13.0,
+          "end_seconds": 13.2
+        }
+      ],
+      "evidence_observations": "The only segment (0:13) contains the phrases \"hands hands don't reach to that gun,\" \"241 shots shots fired,\" \"cop shot you good,\" and \"yeah I'm good dude are you good.\" The segment does not identify who fired, does not attribute the shots to Officer Harmon, and does not establish a round count for any officer. The \"241 shots\" phrase cannot be reconciled with the claim of roughly twelve rounds. It could refer to a radio code, a number from another source, or a transcription error, and the segment does not show which. The segment also does not establish that Harmon discharged his weapon at all, though \"cop shot you\" suggests firearm activity. Verifying the claim would require the full transcript, the bodycam audio around 0:13, and any round-count evidence for Harmon's weapon.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Corporal Fuentes simultaneously drew his duty weapon and fired approximately nine rounds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 12.5,
+          "end_seconds": 13.2
+        },
+        {
+          "start_seconds": 11.4,
+          "end_seconds": 11.8
+        }
+      ],
+      "evidence_observations": "The transcript segments do not establish the number of rounds fired or whether the duty weapon was drawn simultaneously with firing. The [0:12-0:13] segment contains 'Taser Taser Taser', verbal commands ('let me see hands', 'don't reach to that gun'), and 'shots shots fired', which indicates shots were fired and that a Taser was referenced during the encounter, but it gives no round count and does not attribute the shots to Corporal Fuentes. The [0:11-0:11] segment says 'we're waiting his gun still right there I see', which refers to a gun in the subject's possession, not the officer drawing his weapon. The Taser references and verbal commands could suggest a sequence of events before firing, but they do not directly contradict a simultaneous draw-and-fire. The transcript is fragmentary and garbled, and the '241' token is unexplained, so the evidence does not clearly address the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "The subject released the weapon and ceased movement.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 11.0,
+          "end_seconds": 11.9
+        },
+        {
+          "start_seconds": 11.0,
+          "end_seconds": 48.0
+        },
+        {
+          "start_seconds": 38.0,
+          "end_seconds": 49.0
+        },
+        {
+          "start_seconds": 48.0,
+          "end_seconds": 53.0
+        },
+        {
+          "start_seconds": 69.0,
+          "end_seconds": 73.0
+        },
+        {
+          "start_seconds": 73.0,
+          "end_seconds": 96.0
+        }
+      ],
+      "evidence_observations": "The transcript records the officer stating 'his gun still right there I see' (0:11-0:48) and 'don't reach to that gun' (0:48-0:53), indicating the weapon was still present and the subject was reaching toward it during the encounter. Commands to 'get your hands out your pocket' recur through 0:38-0:49 and again at 1:13-1:36, after 'shots fired' at 1:09, which suggests the subject had not complied and was not stationary. No segment documents the subject releasing the weapon or ceasing movement. The evidence is based on officer dialogue rather than direct visual confirmation, so the conflict rests on contemporaneous verbal observations.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "After confirming the subject was no longer an active threat, Corporal Fuentes and Officer Harmon maintained their positions and held the subject at gunpoint.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 11.09,
+          "end_seconds": 48.0
+        },
+        {
+          "start_seconds": 38.0,
+          "end_seconds": 36.0
+        }
+      ],
+      "evidence_observations": "The transcript contains an exchange where an officer asks 'you good' and the subject replies 'I'm good,' which could bear on whether the subject was deemed no longer a threat, but the timing relative to any threat assessment is unclear. Other segments show officers still treating the subject as a threat: 'his gun still right there I see,' 'we're waiting,' 'don't reach to that gun,' 'get your hands out your pocket,' and 'Taser Taser Taser.' The transcript does not identify which officer speaks, does not say whether Corporal Fuentes or Officer Harmon held the subject at gunpoint, and does not show the officers' weapons pointed at the subject or their positions. The segments are partial and do not clearly establish the sequence the claim describes.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "At approximately 2148 hours, Officer Pistilli arrived on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 396,
+          "end_seconds": 408
+        }
+      ],
+      "evidence_observations": "The segment at 6:36-6:48 contains a speaker saying \"an officer's pulling up right now\" and \"the police are here.\" This is consistent with an officer arriving, but the segment does not name the officer (no reference to Pistilli), and it gives only a relative media timestamp (6:36-6:48), not the 2148 hours clock time in the claim. Nothing in the segment contradicts the claim, but it does not confirm the officer's identity or the stated time.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Officer Pistilli secured the weapon from the subject's immediate reach.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "failed",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam footage, transcript, or other record in the provided materials that addresses whether Officer Pistilli secured the weapon or where the weapon was relative to the subject. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "Officer Pistilli handcuffed the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 10.28,
+          "end_seconds": 13.36
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:10-0:13) contains verbal commands ('put your hands up', 'get on the ground', 'get your hands out of your pocket'), a Taser warning, a request to 'let me see hands', a warning 'don't reach to that gun', and an exchange of 'shots fired, cop shot you good' and 'are you good yeah I'm good'. It does not mention handcuffs, handcuffing, restraint, or any action by an officer named Pistilli, and the transcript is audio-only with no visual description. The segment does not show whether or when the subject was handcuffed, or by whom, so the claim is neither confirmed nor contradicted.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Officer Pistilli applied a tourniquet to the subject's upper left thigh.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 11.0,
+          "end_seconds": 26.0
+        },
+        {
+          "start_seconds": 13.0,
+          "end_seconds": 41.0
+        }
+      ],
+      "evidence_observations": "The transcript segments contain no reference to a tourniquet, to Officer Pistilli by name, to the subject's upper left thigh, or to any medical treatment being applied. The audible content is limited to exchanges such as 'you good,' 'yeah I'm good,' 'start medics in the supervisor,' and 'shots fired cop shot.' The segments do not show who applied any treatment or where on the body it was applied. The provided segments do not directly address the claim, and no video frames were provided to assess visually.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "The weapon was a Glock 22, .40-caliber handgun, registered to the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.5,
+          "end_seconds": 4.0
+        },
+        {
+          "start_seconds": 11.5,
+          "end_seconds": 11.8
+        },
+        {
+          "start_seconds": 11.8,
+          "end_seconds": 12.0
+        },
+        {
+          "start_seconds": 13.0,
+          "end_seconds": 13.2
+        }
+      ],
+      "evidence_observations": "The transcript does not identify the make, model, or caliber of any firearm, and says nothing about registration. The subject says at [0:03-0:04], \"I have a gun but it's locked up I was a sleep okay can't get it now,\" which confirms he has a gun but not that it is a Glock 22 or .40-caliber, or that it is registered to him. At [0:11-0:12] an officer says \"his gun still right there,\" which may refer to the same weapon or a different one, and does not identify it. The segments also do not establish whether the gun referenced in the transcript is the weapon the report describes. No segment directly confirms or contradicts the model, caliber, or registration claims.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Orange County Fire Authority paramedics arrived on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 11.23,
+          "end_seconds": 11.26
+        }
+      ],
+      "evidence_observations": "The only transcript segment provided is [0:11-0:11] containing the fragment 'start medics in the'. This is a truncated phrase that does not mention Orange County Fire Authority, paramedics, arrival on scene, or any specific agency. It neither supports nor contradicts the claim that OCFA paramedics arrived on scene. Additional transcript segments or video frames covering the arrival period would be needed to assess the claim.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Paramedics transported the subject to UCI Medical Center.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 11.2,
+          "end_seconds": 11.5
+        }
+      ],
+      "evidence_observations": "The only transcript segment is a fragment at [0:11-0:11] reading \"start medics in the.\" It does not mention paramedics transporting anyone, a destination, or UCI Medical Center. The fragment is too short to confirm or contradict the claim, and it does not show who was transported or where.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "The subject was pronounced deceased at approximately 2232 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or other evidence available to confirm or contradict the claim that the subject was pronounced deceased at approximately 2232 hours. The claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Body-worn camera footage from Officer Harmon and Corporal Fuentes was collected as evidence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 45.0,
+          "end_seconds": 52.0
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:45-0:52) is a generic narration stating that officers, deputies, and witnesses are interviewed and that relevant evidence, reports, photographs, and videos are reviewed. It does not mention body-worn camera footage, Officer Harmon, Corporal Fuentes, or any collection of bodycam footage as evidence. The segment is consistent with a general review of videos but does not directly address whether Harmon's or Fuentes's body-worn camera footage was collected.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "One Glock 22, .40-caliber handgun was collected as evidence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.73,
+          "end_seconds": 3.88
+        },
+        {
+          "start_seconds": 11.5,
+          "end_seconds": 11.8
+        },
+        {
+          "start_seconds": 13.0,
+          "end_seconds": 13.12
+        }
+      ],
+      "evidence_observations": "The transcript shows a man saying he has a gun that is 'locked up' and an officer saying 'his gun still right there' and 'don't reach to that gun.' This confirms a firearm was present at the scene. However, the segments do not mention a Glock, a model number (Glock 22), a .40-caliber, or the collection of any weapon as evidence. The segments also do not show who collected the firearm or when. The '241 shots fired cop' line is unclear and does not address the claim. The evidence neither confirms nor contradicts the specific make, model, caliber, or evidence collection.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Multiple cartridge cases (WIN 9MM LUGER and FEDERAL 40 S&W) were collected as evidence.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content to compare against the claim that multiple cartridge cases (WIN 9MM LUGER and FEDERAL 40 S&W) were collected as evidence. The claim cannot be evaluated.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Clothing items from the subject were collected as evidence.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no observable content to compare against the claim that clothing items from the subject were collected as evidence. The evaluation cannot determine whether clothing collection occurred, was not recorded, or is contradicted.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "One beverage can was collected as evidence.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content to compare against the claim that one beverage can was collected as evidence. The claim cannot be evaluated in either direction.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "W-1 and her children were confirmed unharmed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.16,
+          "end_seconds": 4.07
+        },
+        {
+          "start_seconds": 6.45,
+          "end_seconds": 6.54
+        }
+      ],
+      "evidence_observations": "At [0:03-0:04] W-1 says \"I'm okay okay\" and states her kids are on the second floor. She does not say whether the children are unharmed, and the officer's question \"how old are your kids\" is not followed by any check on their condition. At [0:06] an officer says \"you guys you're safe I promise\" and \"the police are here,\" which is reassurance, not a documented confirmation of physical condition. The segments show no injury, but they also do not show anyone confirming that W-1 or the children were unharmed, and the children's condition is never addressed directly.",
+      "confidence": 0.75
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "The scene was secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.26,
+          "end_seconds": 8.31
+        },
+        {
+          "start_seconds": 10.28,
+          "end_seconds": 11.48
+        },
+        {
+          "start_seconds": 12.38,
+          "end_seconds": 13.36
+        }
+      ],
+      "evidence_observations": "The 13-second transcript shows an active, unresolved confrontation. Officers repeatedly order a subject to show hands and get on the ground ('put your hands up', 'get on the ground right now', 'get your hands out your pocket now'). One officer says 'his gun still right there' and another warns 'don't reach to that gun'. Medics are being requested and officers say 'we're waiting'. A radio call references 'shots fired', and the segment ends with 'you good yeah I'm good'. Nothing in the segment addresses perimeter control, evidence preservation, restricted access, or a scene being secured for investigation. The gun being within the subject's reach at 0:10-0:13 shows the scene was not yet controlled at that moment, but the claim concerns a later investigative state the transcript does not cover, so this is not a direct contradiction.",
+      "confidence": 0.7
+    }
+  ]
+}

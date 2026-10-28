@@ -1,0 +1,843 @@
+{
+  "scenario_id": "sc-014",
+  "model": "us.anthropic.claude-haiku-5-5",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 341.32,
+  "total_tokens": 385052,
+  "total_api_calls": 117,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Incident occurred on August 6, 2021 at approximately 1908 hours",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or timestamp data available to confirm or contradict the stated date (August 6, 2021) or time (approximately 1908 hours) of the incident. The claim cannot be evaluated against the evidence provided.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Incident location was the front entrance of Ridgemont Police Department, 150 North Euclid Street, La Habra, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.3,
+          "end_seconds": 4.39
+        },
+        {
+          "start_seconds": 4.43,
+          "end_seconds": 4.46
+        },
+        {
+          "start_seconds": 8.28,
+          "end_seconds": 8.3
+        }
+      ],
+      "evidence_observations": "The transcript refers to a police station on Euclid Street. A speaker asks whether to go to 'the front on euclids' and is told to 'pull right in front of the station' and to pull over 'where you see the doors,' which is consistent with a front entrance. Another speaker says 'I'm outside,' and a later segment says 'the gun's facing into the PD.' However, no segment names Ridgemont Police Department, gives the street number 150, or mentions La Habra. The garbled reference 'on new fridge' is unclear. The evidence is consistent with a PD front entrance on Euclid but does not directly confirm the name, the address, or the city.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Case number is SC-014",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no observable material to compare against the claim that the case number is SC-014. The claim cannot be evaluated.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting officer is Officer L. Castillo, Badge Number 3592",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content against which to compare the claim that the reporting officer is Officer L. Castillo, Badge Number 3592. Neither the officer's name nor the badge number can be confirmed or contradicted from the available evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Subject is Daniel Kwon, male, 22 years old, Asian, wearing a black T-shirt, black pants, and black Converse shoes",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.37
+        }
+      ],
+      "evidence_observations": "The only evidence segment provided is at timestamp 0:08-0:08 and contains no text. No transcript content, dialogue, or description addresses the subject's name, age, race/ethnicity, or clothing. The provided segment does not establish whether the subject is Daniel Kwon, his age, his apparent ethnicity, or the colors and types of clothing he is wearing. The claim cannot be confirmed or contradicted from the material provided.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officers involved were Officer L. Castillo and Officer R. Webb",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The bodycam evidence provided contains no statements, audio, or visual references identifying the officers involved (Officer L. Castillo or Officer R. Webb). The evidence neither confirms nor contradicts the claim that these were the involved officers, so it cannot be assessed against the report.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Witness W-1 is the female victim/complainant and reporting party for a tailgating complaint",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.52,
+          "end_seconds": 5.11
+        }
+      ],
+      "evidence_observations": "The 9-1-1 caller reports being followed by a black Toyota and says 'he's just been tailgating.' She is the one placing the call, so she is the reporting party and complainant. The dispatcher addresses her as 'ma'am,' which is consistent with the claimed female gender. The transcript does not name her or label her 'W-1,' so linking this caller to the W-1 designation is an inference from the content of the call.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer was dispatched at approximately 1905 hours to the front of the Ridgemont Police Department in response to a report of an aggressive driver who followed a female motorist (W-1) from the freeway to the station",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.52,
+          "end_seconds": 3.4
+        },
+        {
+          "start_seconds": 4.3,
+          "end_seconds": 4.9
+        },
+        {
+          "start_seconds": 4.9,
+          "end_seconds": 5.0
+        }
+      ],
+      "evidence_observations": "The transcript segments support part of the claim: the caller (W-1) states she is being followed 'since the freeway' by a black Toyota and is driving to the police station, and she is told to pull in front of the station by the doors on Euclid. Someone then confirms she is outside and asks 'did he pull up,' which she answers 'yeah.' Nothing in these segments addresses the claimed dispatch time of approximately 1905 hours, the officer being dispatched, or the driver's behavior being described as 'aggressive.' The segments show no timestamps for the dispatch itself and do not show the officer's response, so those parts of the claim cannot be verified or contradicted.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Officer Webb was dispatched simultaneously with the reporting officer",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content to compare against the claim that Officer Webb was dispatched simultaneously with the reporting officer. The claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Each officer drove a separate marked black and white police vehicle",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record addresses whether each officer drove a separate marked black-and-white police vehicle, so the claim can be neither confirmed nor contradicted.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Each officer wore department-issued navy-blue uniforms with badges and body-worn cameras",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so no bodycam footage, transcript, or other material was available to check the claim that each officer wore department-issued navy-blue uniforms with badges and body-worn cameras. The claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officer Webb and the reporting officer arrived at approximately 1908 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.25,
+          "end_seconds": 6.45
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:06) contains urgent speech: \"10 33 suspect is down I've got an officer down we need help\" and \"you're okay\". It does not mention Officer Webb, the reporting officer, an arrival, or the time 1908 hours. The timestamp shown is a clip-relative time (0:06), not a clock time, so it cannot confirm or refute the 1908 arrival time. The segment does not directly address who arrived or when.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Reporting officer parked behind a dark blue 1998 Toyota Camry, which was parked behind W-1's vehicle on the pedestrian sidewalk in front of the station",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.06,
+          "end_seconds": 3.13
+        },
+        {
+          "start_seconds": 4.2,
+          "end_seconds": 4.3
+        },
+        {
+          "start_seconds": 4.2,
+          "end_seconds": 4.3
+        },
+        {
+          "start_seconds": 4.9,
+          "end_seconds": 5.0
+        }
+      ],
+      "evidence_observations": "The speaker describes the Toyota as 'all black' and 'an older model black Toyota' (0:03-0:04), while the claim describes it as a dark blue 1998 Toyota Camry. The speaker identifies their own vehicle as 'the Volkswagen the blue one,' so the blue vehicle is the speaker's, not the Toyota's. The speaker then says the Toyota is 'behind me' and asks whether the other driver is 'reversing' into a space (0:04-0:05), which places the Toyota behind the speaker's vehicle. The claim says the reporting officer parked behind the Toyota, which is the opposite orientation if the speaker is the reporting officer. The 1998 model year and the Toyota's position relative to W-1's vehicle on the sidewalk are not addressed in the segments.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Officer Webb parked his unit behind the reporting officer's unit",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The evidence does not address the claim that Officer Webb parked his unit behind the reporting officer's unit, so the claim can neither be confirmed nor contradicted.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The station lobby was open and staffed at the time of arrival",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.3,
+          "end_seconds": 4.9
+        },
+        {
+          "start_seconds": 4.3,
+          "end_seconds": 4.9
+        },
+        {
+          "start_seconds": 5.0,
+          "end_seconds": 5.2
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:04-0:05) contain a caller asking where to go at the station ('do I just go to the front on Euclid... just pull right in front of the station'), saying they are outside ('I'm outside'), and asking 'can anyone come outside like I'm really scared.' Nothing in these segments describes whether the station lobby was open or whether staff were present inside. The request for someone to come outside could hint that no one was readily available at the entrance, but it does not establish the lobby's status or staffing, so it neither supports nor contradicts the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "W-1 remained seated in her vehicle when the reporting officer approached",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.43,
+          "end_seconds": 5.11
+        },
+        {
+          "start_seconds": 6.06,
+          "end_seconds": 6.32
+        }
+      ],
+      "evidence_observations": "The segments do not clearly establish W-1's physical position when the officer approached. At [0:04-0:05] W-1 says \"I'm outside\" and mentions \"I have my headlights on,\" which could suggest she was in or near her vehicle, but \"outside\" does not specify whether she was seated in the vehicle or standing outside it. She also asks \"can anyone come outside,\" which refers to someone else, and says \"I'm calling someone right now.\" At [0:06] the speaker asks \"how are you here,\" and \"you're okay\" is said, but the segments do not show the officer's approach, W-1's seated or standing posture, or whether she exited the vehicle. The transcript therefore neither supports nor contradicts the claim that she remained seated.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "W-1 stated a male driving the Toyota had been following her since she exited the northbound 57 freeway at Lambert Road",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "failed",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record addresses whether W-1 stated that a male driving the Toyota had been following her since she exited the northbound 57 freeway at Lambert Road, so the claim cannot be evaluated against the bodycam evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "W-1 stated she recognized the individual as someone she had seen in her neighborhood before",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.9,
+          "end_seconds": 3.8
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:02-0:03) has W-1 saying she is being followed, that she is driving to the police station, that the follower's vehicle is a black Toyota, and 'I don't know like I I didn't follow me since the freeway.' The segment does not mention recognizing the driver or having seen them in her neighborhood. The 'I don't know' is ambiguous: it may refer to who is following her or to when the following began, and it does not clearly contradict or support a claim of prior recognition. The segment is too brief to address the claim, and the recognition statement may appear in portions of the recording not provided.",
+      "confidence": 0.75
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "W-1 appeared frightened",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.9,
+          "end_seconds": 5.0
+        },
+        {
+          "start_seconds": 5.04,
+          "end_seconds": 5.11
+        }
+      ],
+      "evidence_observations": "The transcript contains W-1's statements: \"I'm currently getting followed,\" \"I'm really scared,\" and \"can anyone come outside.\" These are verbal expressions of fear, and they are consistent with the claim that W-1 was frightened. However, the claim concerns how W-1 appeared, which is an observable demeanor. The transcript is audio-only text with no description of W-1's facial expression, body language, tone, or other visual indicators, and it does not show how others perceived W-1. The evidence therefore does not directly address the claim's appearance-based wording, and W-1's self-reported fear is not the same as an observed appearance.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "W-1 was still on the phone with dispatch",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.0,
+          "end_seconds": 5.11
+        },
+        {
+          "start_seconds": 6.06,
+          "end_seconds": 6.1
+        }
+      ],
+      "evidence_observations": "The segments cover only 0:05-0:06. At 0:05 a speaker says \"can anyone come outside like I'm really scared I'm calling someone right now I'll just keep you on the line okay,\" indicating an active phone call, but the segment does not identify the other party as dispatch, and the speaker's identity is not labeled. At 0:06 another speaker says \"well they'll get you in a sec okay,\" which could be a dispatcher but does not clearly establish that. The phrase \"I'm calling someone right now\" could refer to a call to someone other than dispatch. Nothing in these segments shows the phone call's status before or after this window, so the word \"still\" in the claim, which implies continuity over time, cannot be verified from this evidence.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Subject was standing at the front entrance of the station near the intercom when Officer Webb approached him",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.3,
+          "end_seconds": 5.1
+        }
+      ],
+      "evidence_observations": "The segment (0:04-0:05) contains a speaker saying they are going to the front of the station and to pull over where the doors are, followed by 'yeah ma'am' and 'I'm outside.' It does not establish the subject's position relative to the front entrance or the intercom, nor whether he was standing when approached. The speaker's identity is not clear from the transcript, so 'I'm outside' cannot be reliably attributed to the subject. The segment is consistent with being outside the station near the doors but does not directly confirm or contradict the claim. No segment addresses Officer Webb's approach.",
+      "confidence": 0.75
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Officer Webb asked the subject what was going on",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.17,
+          "end_seconds": 3.21
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:03) contains a question, 'was there some type of road rage incident or what happened I don't know,' which resembles a question about what was going on. However, the transcript does not identify the speaker or the addressee, so it cannot be confirmed that Officer Webb spoke it or that it was directed at the subject. The segment does not contradict the claim, but it does not clearly establish it either.",
+      "confidence": 0.35
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Subject stated he was \"just waiting for a friend\"",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio or transcript content available to compare against the report's claim that the subject stated he was 'just waiting for a friend.' The claim cannot be verified or contradicted with the materials provided.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Officer Webb asked the subject whether he was involved with the vehicles parked in front of the station",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio or transcript content available to confirm or contradict whether Officer Webb asked the subject about involvement with the vehicles parked in front of the station. The claim cannot be directly evaluated from the provided materials.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "Subject said he was not involved with the vehicles parked in front of the station",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4,
+          "end_seconds": 5
+        }
+      ],
+      "evidence_observations": "The segment (0:04-0:05) contains an officer asking whether 'he' pulled up behind them, whether 'he' is reversing and parking, and a note that the officer has headlights on. It does not include any statement by the subject denying involvement with vehicles, and it does not establish that the vehicle being discussed is one parked in front of the station or that the person described is the subject. The segment neither supports nor contradicts the claim, so the relationship cannot be determined from this excerpt.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Officer Webb remained facing the subject and continued to question him",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.24
+        },
+        {
+          "start_seconds": 8.45,
+          "end_seconds": 8.5
+        }
+      ],
+      "evidence_observations": "The transcript covers only a single timestamp (0:08-0:08) and contains no speaker labels. It includes commands such as 'drop the gun now' and 'drop the gun or I will shoot you again', a statement 'suspect dropped the gun', and a garbled question 'where are you shot at'. The question could be a question to the subject, which partially aligns with 'continued to question him', but the transcript does not identify who spoke it. Nothing in the transcript indicates Officer Webb's body orientation, so the 'remained facing the subject' portion cannot be assessed from audio alone. No contrary evidence appears in the transcript.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Subject produced a firearm from his right jacket pocket without warning",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.24
+        }
+      ],
+      "evidence_observations": "The transcript segment at 0:08 contains officer commands ('drop the gun now', 'drop the gun or I'll shoot you again', 'drop the gun') and statements that the suspect dropped a gun ('suspect dropped the gun'). It confirms a firearm was present and that officers were giving commands at that moment. It does not address where the firearm was carried or retrieved (the claimed right jacket pocket), how it was produced, or whether any warning preceded the subject producing it. The segment starts at 0:08, so events before that point are not covered. The transcript is also internally inconsistent: it contains both 'suspect dropped the gun' and repeated 'drop the gun' commands, which may be overlapping or misattributed audio. Nothing in the segment directly supports or contradicts the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "Subject racked the slide of the firearm",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.28
+        }
+      ],
+      "evidence_observations": "The transcript segment at 0:08 contains officer commands to drop the gun ('drop the gun now', 'drop the gun or I will shoot you again'), a statement that the suspect dropped the gun, and a note that the gun was facing into the PD. None of the segments mention racking, chambering, or manipulating the slide, and no audio or visual description of slide movement is provided. The transcript neither supports nor contradicts the claim. Evidence from other timestamps or video frames would be needed to assess it.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "Subject pointed the firearm at Officer Webb from a distance of approximately 15 feet",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.37
+        }
+      ],
+      "evidence_observations": "The transcript segment at [0:08] includes 'the gun's facing into the PD,' which suggests the firearm was oriented toward police, partially consistent with the claim that the subject pointed the firearm. However, the segment does not identify the officer as Officer Webb, and it contains no information about distance. The approximately 15-foot distance cannot be verified from the transcript, and the segment does not establish which officer, if any, was targeted. Other lines ('drop the gun now,' 'drop the gun or I will shoot you again,' 'he's got a gun in his house') do not address the distance or the officer's identity.",
+      "confidence": 0.35
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Reporting officer saw the subject raise the weapon",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.37
+        }
+      ],
+      "evidence_observations": "The transcript segment at 0:08 contains radio and verbal statements: 'drop the gun now,' 'suspect dropped the gun,' 'drop the gun or I'll shoot you again,' 'suspect drop the guy,' 'the gun's facing into the PD,' and 'he's got a gun in his house.' None of these lines describes the subject raising a weapon, and no observation of the subject's arm or weapon movement is recorded. 'The gun's facing into the PD' suggests a direction of the weapon, but it does not establish that the subject raised it, and it is an unverified statement in the transcript. 'Suspect dropped the gun' indicates the subject had a gun and later released it, which is consistent with but does not confirm the claim. The segment is too brief and does not include the sequence of movements needed to assess whether the weapon was raised or whom the officer observed.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Reporting officer immediately shouted \"Drop the weapon! Drop it now!\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 486,
+          "end_seconds": 489
+        },
+        {
+          "start_seconds": 492,
+          "end_seconds": 496
+        },
+        {
+          "start_seconds": 496,
+          "end_seconds": 500
+        },
+        {
+          "start_seconds": 360,
+          "end_seconds": 402
+        }
+      ],
+      "evidence_observations": "The transcript at [8:06-8:09] contains 'drop the gun now,' which closely resembles the claimed 'Drop it now!' but uses 'gun' rather than 'weapon.' The segments do not attribute this utterance to the reporting officer, so the speaker is unconfirmed. The claim that the officer 'immediately' shouted the command cannot be evaluated because the transcript does not show what event preceded the command or how much time elapsed before it. The segments at [8:12-8:20] show repeated commands ('drop the gun or I will shoot you again'), which are consistent with the claim but do not address its timing or speaker. The [6:00-6:42] segment is unrelated to the command. No segment contradicts the claim, but the speaker attribution and the 'immediately' qualifier are not established.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Subject fired three rounds at Officer Webb",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.38,
+          "end_seconds": 6.45
+        },
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.24
+        }
+      ],
+      "evidence_observations": "The transcript contains no reference to the subject firing any rounds, to a count of shots, or to Officer Webb by name. The segment at [0:06] has an officer radioing '10-33' (officer needs help), 'suspect is down', and 'I've got an officer down'. The segment at [0:08] has an officer commanding 'drop the gun' and saying 'suspect dropped the gun' and 'or I'll shoot you again', which implies an earlier shooting by someone but does not identify who fired or how many times. The 'officer down' statement is consistent with an officer being injured, but the transcript does not establish that the subject fired at Webb or that three rounds were fired. No audible gunfire is noted in the transcript. The evidence neither confirms nor contradicts the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "One round struck Officer Webb's ballistic vest in the left upper chest area",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.38,
+          "end_seconds": 6.45
+        }
+      ],
+      "evidence_observations": "The only evidence segment is a single radio transmission at 0:06 in which an officer states '10 33 suspect is down I've got an officer down we need help.' The transmission reports an officer down and requests help but says nothing about a round striking Officer Webb's ballistic vest, the location of any impact (left upper chest or otherwise), or the vest's condition. The evidence does not directly address the claim, and no other segments were provided to confirm or refute it.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Officer Webb stumbled backward but remained standing after being struck",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.21,
+          "end_seconds": 6.45
+        }
+      ],
+      "evidence_observations": "The segment at 0:06 is audio only. A speaker says \"suspect is down,\" \"I've got an officer down,\" and \"we need help, officer down,\" and says \"you're okay\" twice. The segment does not describe Officer Webb's body position, whether he stumbled backward, or whether he stayed on his feet after being struck. It also does not identify who is the 'officer down' or confirm that Webb was struck. The 'officer down' call could loosely conflict with 'remained standing,' but the transcript does not establish that Webb is the officer referred to or that he fell, so it is insufficient to contradict the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Reporting officer drew his department-issued firearm",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 486,
+          "end_seconds": 510
+        }
+      ],
+      "evidence_observations": "The transcript segment [8:06-8:30] contains commands such as \"drop the gun now\" and \"drop the gun or I will shoot you again,\" and a line stating \"the gun's facing into the PD.\" These indicate that a firearm was present and that a speaker threatened lethal force. However, the transcript does not identify the speaker of these lines, does not state that the reporting officer drew a firearm, and does not name the reporting officer. The \"facing into the PD\" line refers to a gun's orientation and does not establish who drew a weapon or when. The evidence is consistent with the claim but does not directly confirm that the reporting officer drew his department-issued firearm.",
+      "confidence": 0.35
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Reporting officer fired three rounds at the subject",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.2,
+          "end_seconds": 6.5
+        },
+        {
+          "start_seconds": 6.38,
+          "end_seconds": 6.45
+        },
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.2
+        },
+        {
+          "start_seconds": 8.15,
+          "end_seconds": 8.2
+        },
+        {
+          "start_seconds": 8.16,
+          "end_seconds": 8.24
+        }
+      ],
+      "evidence_observations": "The transcript contains only speech and no gunshot audio markers, so it does not record how many rounds were fired or by whom. The segments show a speaker stating '10-33 suspect is down I've got an officer down we need help' at 0:06, then commands at 0:08 to 'drop the gun now' and 'drop the gun or I will shoot you again.' The phrase 'suspect is down' and the threat 'I'll shoot you again' imply that shots were fired earlier, which is consistent with the claim that the officer fired, but they do not establish the number of rounds. The transcript also does not identify the speaker as the reporting officer. The three-round count cannot be confirmed or refuted from the transcript alone and would require audio gunshot analysis, a shot-count from the weapon, or the full recording.",
+      "confidence": 0.2
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "One round struck the subject in the torso, causing him to fall to the ground",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.0,
+          "end_seconds": 6.7
+        },
+        {
+          "start_seconds": 8.0,
+          "end_seconds": 8.3
+        }
+      ],
+      "evidence_observations": "At 0:06 an officer states 'suspect is down' and 'I've got an officer down,' which is consistent with the subject falling after a shot but does not identify the location of any wound or the cause of the fall. At 0:08 the officer says 'drop the gun or I will shoot you again,' which implies a prior shot was fired at the subject but does not state how many rounds struck him or where. No transcript segment mentions the torso, a single round, or the mechanism of the fall. The segments do not directly confirm or contradict the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "After the subject fell, the reporting officer maintained his position and continued to issue commands for the subject to drop the firearm and show his hands",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 24.0
+        }
+      ],
+      "evidence_observations": "The transcript contains repeated commands to drop the gun ('drop the gun now', 'drop the gun or I'll shoot you again', 'drop the gun or I will shoot you again', 'drop the gun'), which partially supports the claim that the officer continued issuing gun-drop commands. However, the transcript contains no command to 'show hands,' so that component is unsupported. It also contains no positional or visual information about whether the officer maintained his position after the subject fell. The segments include 'suspect dropped the gun' and 'suspect dropped the gun or I'll shoot you again,' which do not contradict the claim, since commands can continue after a gun is dropped, but they do not establish the sequence relative to the fall. The line 'suspect drop the guy' appears to be a transcription error. The fall itself is not referenced in the transcript, so timing relative to the fall cannot be determined.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "At approximately 1910 hours, the reporting officer radioed that a suspect was down and that Officer Webb had been struck",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 398,
+          "end_seconds": 405
+        }
+      ],
+      "evidence_observations": "The transcript segment at [6:38-6:45] contains a radio transmission: \"10 33 suspect is down I've got an officer down we need help.\" This partially overlaps with the claim: it includes a statement that a suspect is down and an officer is down, and \"10 33\" is an emergency traffic code. However, the segment does not name the injured officer as Officer Webb, does not state that any officer was struck or injured by a suspect, and does not identify the speaker as the reporting officer. The timestamp [6:38-6:45] is a video-relative elapsed time, and the segment does not show a clock time, so it cannot be confirmed that the transmission occurred at approximately 1910 hours. \"Officer down\" also does not necessarily mean an officer was struck. Nothing in the evidence directly confirms or contradicts the specific elements of the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Additional officers arrived at approximately 1911 hours to render aid to Officer Webb",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.25,
+          "end_seconds": 6.5
+        },
+        {
+          "start_seconds": 6.3,
+          "end_seconds": 6.45
+        },
+        {
+          "start_seconds": 6.38,
+          "end_seconds": 6.5
+        },
+        {
+          "start_seconds": 6.45,
+          "end_seconds": 6.6
+        }
+      ],
+      "evidence_observations": "The transcript segments, all timestamped at [0:06], contain a radio-style call ('10 33 suspect is down I've got an officer down we need help', 'officer down we need help') and a brief exchange ('okay you're okay'). The segments show a request for help for a downed officer, which is consistent with the claim's premise. However, they do not show any additional officers arriving, do not reference the 1911 hours time, do not name Officer Webb, and do not establish who 'okay you're okay' is directed at. The segments are also all at the same timestamp, so they do not cover the arrival event itself. Nothing in the evidence contradicts the claim, but nothing confirms the arrival time or purpose.",
+      "confidence": 0.2
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "Officers formulated a plan to approach the subject",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.37
+        }
+      ],
+      "evidence_observations": "The single transcript segment [0:08-0:08] contains fragments of officer and scene audio: 'drop the gun now', 'suspect dropped the gun', 'the gun's facing into the PD', 'anybody standing in the inside', and 'hey he's right here he's got a gun in his house'. None of these fragments mentions a plan, a planning discussion, or an approach strategy. The segment shows the subject had a gun and dropped it, and that officers were giving commands, but it does not show whether officers formulated a plan before approaching. The claim concerns events before or during the approach that are not covered by this segment.",
+      "confidence": 0.2
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "At approximately 1916 hours, the subject was disarmed, moved to the sidewalk, and handcuffed",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.28
+        },
+        {
+          "start_seconds": 8.37,
+          "end_seconds": 8.39
+        },
+        {
+          "start_seconds": 9.04,
+          "end_seconds": 9.12
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:08-0:09) include repeated commands to 'drop the gun,' statements that 'suspect dropped the gun,' a remark that 'he's got a gun,' and later 'you're good,' 'get him out,' and 'drag him out.' These partially align with the claim that the subject was disarmed and then moved, since a gun drop is referenced and a removal from the position is requested. However, the segments do not show or state the clock time (1916 hours), do not establish the location as a sidewalk, and do not mention or depict handcuffing. The 'drag him out' remark is an instruction, not confirmation that the movement occurred or where it ended. The transcript also doesn't establish that the gun was secured or that the subject was the one who dropped it in a way that confirms full disarmament. The claim cannot be fully verified or contradicted from these segments.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "At approximately 1920 hours, Los Angeles County Fire Department paramedics arrived",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The evidence provided contains no statements, timestamps, or visual descriptions addressing the arrival time of Los Angeles County Fire Department paramedics at approximately 1920 hours, so the claim can be neither confirmed nor contradicted.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Paramedics determined the subject had no pulse or respiration",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or video content available to show whether paramedics assessed or determined the subject's pulse or respiration status, so the claim cannot be evaluated against the evidence.",
+      "confidence": 0
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Subject was pronounced deceased at approximately 1926 hours",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the provided material addresses the subject's pronouncement, the time of death, or the hour of 1926. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "A subsequent search recovered two firearms from the subject's person",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.4
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:08) contains verbal commands to 'drop the gun' directed at a suspect, a warning that the officer will 'shoot you again,' and an officer reporting 'he's got a gun' (transcribed as 'in his house,' likely a transcription error for 'hand'). The segment does not show or describe a search, any recovery of items from the subject's person, or the number of firearms recovered. The claim about a post-incident search and two recovered firearms is not addressed by this evidence. Nothing in the segment contradicts it either. Evidence covering the search itself, such as later bodycam segments or recovery documentation, would be needed.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "One recovered firearm was a Glock-style 9mm semi-automatic pistol with no serial number",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.39
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:08) contains officer commands ('drop the gun now'), a note that the suspect dropped a gun, a remark that the gun is facing toward the officers, and a statement that the suspect 'has a gun in his house.' None of these lines describe the firearm's make, model, caliber, or whether it had a serial number. The claim's specifics (Glock-style, 9mm semi-automatic, no serial number) are not addressed in the transcript. Any confirmation would require the recovery documentation, property/evidence records, or visual inspection of the firearm or its frames at a time when those details are shown. The transcript also does not contradict the claim, so no conflict can be identified.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "The second recovered firearm was a .40 caliber Glock semi-automatic pistol with a mounted flashlight",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.37
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:08) contains only verbal commands ('drop the gun,' 'suspect dropped the gun,' 'he's got a gun in his house'). It does not mention a firearm's caliber, manufacturer (Glock), type (semi-automatic pistol), or a mounted flashlight. The segment also does not establish which firearm is referenced or whether it is the 'second recovered firearm.' The claim's specific details are neither confirmed nor contradicted by this evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Body-worn camera footage of approximately 35 minutes was collected",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The evidence provided does not address the claim that approximately 35 minutes of body-worn camera footage was collected. Neither the duration of any footage nor its collection status can be verified from the available materials.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Five .40 caliber cartridge cases headstamped \"FEDERAL 40 S&W\" were collected",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam content available that addresses the number of cartridge cases collected, their caliber, or their headstamp markings. The claim cannot be confirmed or contradicted from the evidence provided.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Two 9mm cartridge cases headstamped \"WIN 9mm LUGER\" were collected",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved. The bodycam transcript contains no content addressing the collection of cartridge cases, their headstamp markings (\"WIN 9mm LUGER\"), or their count (two), so the claim cannot be evaluated against the evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "One Glock-style 9mm pistol with no serial number was collected",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.3
+        },
+        {
+          "start_seconds": 8.37,
+          "end_seconds": 8.4
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:08) contain officers commanding the suspect to drop the gun, an announcement that the suspect dropped the gun, and a statement that the suspect 'has a gun.' These segments show a firearm was present and that the suspect reportedly dropped it. However, they do not describe the firearm's make, model, caliber, or serial number, and do not show or mention the gun being collected or recovered by officers. The transcript is also partly garbled. Nothing in the segments contradicts the claim, but nothing directly confirms its specific details.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "One Glock .40 caliber semi-automatic pistol with flashlight was collected",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.06,
+          "end_seconds": 8.39
+        }
+      ],
+      "evidence_observations": "The transcript segment at [0:08-0:08] contains officer commands to drop a gun and statements that the suspect dropped the gun, and a reference to 'a gun in his house.' It does not mention a Glock, a .40 caliber pistol, a flashlight, or the collection or booking of any firearm. The segment is very short and the transcript is fragmentary and possibly inaccurate, so it does not directly address the make, caliber, accessories, or collection of the weapon. Nothing in it contradicts the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "One iPhone was collected",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no basis to evaluate whether one iPhone was collected. The claim cannot be verified, contradicted, or assessed for ambiguity against the bodycam evidence.",
+      "confidence": 0
+    },
+    {
+      "claim_id": "cl-055",
+      "claim_text": "Officer Webb's uniform with apparent blood was collected",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content to compare against the claim that Officer Webb's uniform with apparent blood was collected. Whether the uniform was collected cannot be determined from the available materials.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-056",
+      "claim_text": "Subject was pronounced deceased on scene",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.38,
+          "end_seconds": 6.45
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:06) contains an officer radioing '10 33 suspect is down, I've got an officer down we need help.' '10-33' is a radio code for an emergency requiring immediate assistance. The segment indicates the suspect is 'down' and requests help, but it does not mention a pronouncement, a death, a medical determination, or the suspect's condition beyond being down. The segment covers only 0:06, so any later pronouncement would fall outside the provided evidence. The claim is neither confirmed nor contradicted by the transcript.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-057",
+      "claim_text": "Officer Webb was transported for medical treatment of a gunshot wound to the chest",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.38,
+          "end_seconds": 6.5
+        },
+        {
+          "start_seconds": 8.45,
+          "end_seconds": 8.9
+        }
+      ],
+      "evidence_observations": "At 0:06 an officer radios '10-33 suspect is down, I've got an officer down, we need help.' At 0:08 a voice asks 'where are you shot at' (repeated), which implies an officer was shot but does not identify the wound location. The segments do not mention a chest wound, do not confirm that Officer Webb is the injured officer, and show no transport or medical treatment. The claim's specifics (gunshot wound, chest, transport for medical treatment) are not confirmed or contradicted by these segments. Later footage would be needed to verify them.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-058",
+      "claim_text": "Scene was secured for investigation",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.24,
+          "end_seconds": 9.12
+        }
+      ],
+      "evidence_observations": "The only segment (0:08-0:09) captures an active, unresolved armed confrontation: officers shout \"suspect drop the guy,\" \"the gun's facing into the PD,\" \"anybody standing in the inside,\" \"he's got a gun in his house,\" and then \"get him out... drag him out.\" This shows a live threat at that moment, which is inconsistent with a secured scene at 0:08. However, the segment does not show the scene's status at the time the report describes or at any later point, and the claim does not specify a time. Because the evidence describes only an 8-second window, it cannot confirm or refute the claim as written.",
+      "confidence": 0.6
+    }
+  ]
+}

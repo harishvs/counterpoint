@@ -1,0 +1,840 @@
+{
+  "scenario_id": "sc-011",
+  "model": "us.anthropic.claude-haiku-5-5",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 305.23,
+  "total_tokens": 157984,
+  "total_api_calls": 117,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The incident occurred on September 23, 2020, at approximately 1332 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no observable material to compare against the claim that the incident occurred on September 23, 2020, at approximately 1332 hours. The claim can neither be confirmed nor contradicted on the current record.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The incident occurred on El Camino Real, near the Miramar Hotel, in San Clemente, CA.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so no statement or observation in the bodycam evidence can be compared against the claim that the incident occurred on El Camino Real near the Miramar Hotel in San Clemente, CA. The claim cannot be evaluated.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject is Brian Ashford, a 42-year-old White male wearing casual clothing with a backpack.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1.0,
+          "end_seconds": 1.1
+        },
+        {
+          "start_seconds": 3.2,
+          "end_seconds": 3.4
+        }
+      ],
+      "evidence_observations": "The transcript contains two short audio segments: \"don't make case well gabriel\" [0:01] and \"for what who are you who are you really\" [0:03]. Neither segment mentions Brian Ashford, and nothing in the transcript describes the subject's age, race, clothing, or backpack. The only name present is \"gabriel,\" which is addressed to someone, but the transcript does not establish whether that person is the subject or who is speaking. The name mismatch is not enough to show a conflict, so the evidence neither confirms nor contradicts the claim. No video frames are provided, so the visual details cannot be checked.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Deputy A. Navarro and Deputy R. Galvan were the officers involved.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 24.0
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:03-0:24) contains a single speaker's words: \"why are you touching down for what who are you who are you really.\" The segment does not contain any officer names, badge numbers, or introductions, and it does not identify who was present or involved. The speaker is asking the other party who they are, which suggests the speaker did not know the identity of the person(s) touching them, but this neither confirms nor contradicts that Deputy A. Navarro and Deputy R. Galvan were the officers involved. Resolving the claim would require additional transcript segments, officer self-identification, or visual confirmation of the officers' identities.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "A civilian witness (W-1) was on El Camino Real, and a U.S. Marine (W-2) was observing from the north side of the street.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no observable content from which to determine whether W-1 was on El Camino Real or whether W-2, a U.S. Marine, was observing from the north side of the street. The claim cannot be evaluated against the available evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Deputies Galvan and Navarro were on patrol in a marked black and white Orange County Sheriff's Department Ford Explorer.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 28,
+          "end_seconds": 36
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:28-0:36) contains a speaker saying \"okey dokey he's seen you he's seen you copper.\" This indicates that someone was seen and addressed as a police officer (\"copper\"), which loosely suggests police presence. However, the segment does not mention the vehicle, its make or model (Ford Explorer), its color scheme, its markings, or the Orange County Sheriff's Department. It also does not identify the deputies by name (Galvan or Navarro). No video frames were provided to verify the vehicle directly.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The deputies were assigned to the Homeless Liaison Officer unit.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content to compare against the claim that the deputies were assigned to the Homeless Liaison Officer unit. Nothing in the evidence confirms, contradicts, or otherwise addresses the claim.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The deputies were wearing standard blue OCSD patrol uniforms with department-issued badges and equipment.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 28,
+          "end_seconds": 36
+        },
+        {
+          "start_seconds": 59,
+          "end_seconds": 66
+        }
+      ],
+      "evidence_observations": "The provided evidence is limited to two audio transcript segments ([0:28-0:36] and [0:59-1:06]). Neither segment mentions uniform color, the OCSD agency name, badges, or equipment. The words 'copper' and 'control' are slang that suggests police presence, but they do not describe appearance. The claim concerns visual attributes, and no video frames are provided, so it cannot be evaluated from this evidence.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Deputy Galvan was driving and Deputy Navarro was in the front passenger seat completing paperwork from a prior service call.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 1.0
+        },
+        {
+          "start_seconds": 59.0,
+          "end_seconds": 62.0
+        },
+        {
+          "start_seconds": 109.0,
+          "end_seconds": 122.0
+        },
+        {
+          "start_seconds": 182.0,
+          "end_seconds": 185.0
+        },
+        {
+          "start_seconds": 182.0,
+          "end_seconds": 204.0
+        }
+      ],
+      "evidence_observations": "The transcript segments do not identify who was driving or who sat in the front passenger seat, and they make no reference to paperwork or a prior service call. Lines such as 'you stop in the middle', 'hey you need to stop', and 'why are you stopping' suggest a vehicle stop with commands directed at an occupant, but the speakers are not identified by name or role. The line 'i'm eating' and the later 'stop touching me' / 'what is your foot' exchange involve physical contact and an unidentified speaker, but nothing in them states or contradicts the driver and passenger roles or Navarro's activity. The claim cannot be confirmed or refuted from these segments.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The Explorer was traveling southbound on El Camino Real.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam transcript, audio, or visual content available to determine the Explorer's direction of travel or whether it was traveling southbound on El Camino Real. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Deputy Navarro observed the subject jaywalking across El Camino Real against a solid red hand pedestrian signal.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.28,
+          "end_seconds": 0.36
+        },
+        {
+          "start_seconds": 0.59,
+          "end_seconds": 1.06
+        },
+        {
+          "start_seconds": 1.49,
+          "end_seconds": 2.02
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:00-0:02) are fragmentary and partially garbled. Speech includes 'he's seen you copper,' 'you didn't need control,' 'look down you stop in the middle,' 'well gabriel,' and 'hey you need to stop you're gonna stop.' Nothing references El Camino Real, a pedestrian signal, a red hand or 'Don't Walk' indication, jaywalking, or the deputy's observations of the subject's crossing. The phrase 'you stop in the middle' loosely suggests a person stopping mid-roadway, but it does not establish the location, the signal phase, or that a violation occurred. The segments neither support nor contradict the claim that the subject crossed against a solid red hand signal.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Deputy Navarro alerted Deputy Galvan to the violation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 28,
+          "end_seconds": 36
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:28-0:36) contains the speech 'okey dokey he's seen you he's seen you copper.' The segment does not identify the speaker or the listener, does not name Deputy Navarro or Deputy Galvan, and does not show who notified whom. The phrase 'he's seen you' and the word 'copper' suggest someone was alerted that a police officer had noticed them, but the transcript does not establish that Navarro gave an alert to Galvan, or that the 'violation' was involved. Speaker identity and context, such as bodycam audio or visual frames showing the speakers, are needed to assess the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Deputy Galvan activated the vehicle's forward emergency lights and drove to make contact with the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 28,
+          "end_seconds": 36
+        }
+      ],
+      "evidence_observations": "The only transcript segment provided ([0:28-0:36]) contains the speech 'okey dokey he's seen you he's seen you copper.' This is a verbal remark suggesting the subject has noticed the officer. The segment does not mention emergency lights, vehicle movement, or the officer driving toward the subject, so it neither confirms nor contradicts the claim that the deputy activated forward emergency lights and drove to make contact. Video frames or additional transcript covering the vehicle's lights and movement would be needed to assess the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Deputy Galvan parked the Explorer on El Camino Real and both deputies exited the vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 36.0
+        },
+        {
+          "start_seconds": 66.0,
+          "end_seconds": 66.0
+        }
+      ],
+      "evidence_observations": "The transcript segments contain only brief speech: 'okey dokey he's seen you he's seen you he's seen you copper' (0:00-0:36) and 'well gabriel' (1:06). Neither segment mentions the Explorer, El Camino Real, parking, or the deputies exiting a vehicle. The first segment suggests someone is being observed and addressed as 'copper,' which is consistent with a police encounter but does not establish the vehicle's location or the exit sequence. No video frames were provided to confirm the parking location or whether both deputies exited. The evidence does not directly address the claim.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Deputy Navarro took the lead in contacting the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1.32,
+          "end_seconds": 1.5
+        },
+        {
+          "start_seconds": 3.02,
+          "end_seconds": 3.24
+        }
+      ],
+      "evidence_observations": "The transcript begins at 0:01 with 'how you doing / hey / hey you need to stop,' which may be an initial verbal approach, but the transcript does not identify the speaker, so it cannot be attributed to Deputy Navarro. At 0:03 the subject says 'don't touch it stop touching it stop touching me / who are you really,' which indicates some physical contact or touching was occurring, but the transcript does not identify who was touching the subject or whether Navarro was involved. The segments do not establish who initiated contact, who was the first to speak, or Navarro's role relative to any other deputies. The evidence neither clearly supports nor contradicts the claim.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "Deputy Navarro informed the subject that he was being detained for jaywalking.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 59.0,
+          "end_seconds": 66.0
+        }
+      ],
+      "evidence_observations": "The segment (0:59-1:06) contains no explicit statement that the subject was being detained, and does not use the word 'jaywalking.' The closest content is 'look down you stop in the middle,' which could refer to crossing outside a crosswalk or stopping in the roadway, consistent with jaywalking, but it does not establish the offense. 'You didn't need control' and 'don't make case' refer to compliance and possibly to charging, but do not clearly state a detention or its basis. The speaker is not identified in the transcript, so attribution to Deputy Navarro cannot be confirmed. The segment starts at 0:59, so any earlier statement of the detention reason is not covered.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The subject asked, \"For what?\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 21,
+          "end_seconds": 24
+        }
+      ],
+      "evidence_observations": "The transcript segment [0:21-0:24] contains the words \"for what\" three times in succession (\"for what / for what / for what\"), in a line that also includes \"why are you touching down\" and \"who are you.\" This matches the claimed utterance \"For what?\" in wording and in context as a response to contact. The transcript has no speaker labels, so attribution of these words to the subject is inferred from context rather than explicitly confirmed. The evidence also shows the phrase repeated, which the claim does not mention, but this does not contradict it.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "Deputy Navarro repeated that it was for the pedestrian violation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.59,
+          "end_seconds": 1.06
+        },
+        {
+          "start_seconds": 1.49,
+          "end_seconds": 2.02
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:00-0:02) do not contain the word 'pedestrian' or any reference to a pedestrian violation. The audible speech includes 'you stop in the middle' and 'hey you need to stop... you're gonna stop,' which may relate to a stopping or traffic issue, but the segments are fragmentary and garbled, and speaker identity is not labeled. Nothing in these segments shows whether Deputy Navarro stated a reason for the stop, repeated it, or what that reason was. The claim cannot be confirmed or contradicted from this excerpt.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The subject stated, \"I didn't do anything wrong.\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 56,
+          "end_seconds": 66
+        },
+        {
+          "start_seconds": 182,
+          "end_seconds": 204
+        }
+      ],
+      "evidence_observations": "The provided transcript segments do not contain the phrase \"I didn't do anything wrong\" or any close equivalent. At 0:56-1:06, the line \"you didn't need control man\" appears, but the speaker is not identified and it is not clearly the subject's statement, so it cannot be attributed to the subject. At 3:02-3:24, the apparent subject speech is \"it stop touching it i'm eating why are you stopping don't touch it stop touching it stop touching me what is your foot why you touch me why are you touching down for what who are you really.\" These statements address being touched and questioned, not wrongdoing, and neither confirms nor contradicts the claim. The segments are excerpts, so the claimed statement may occur elsewhere in the recording. No observable evidence contradicts the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "The subject immediately began walking away from the deputies in the direction of oncoming traffic.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1.44,
+          "end_seconds": 2.14
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:01-0:02) contains only brief audio fragments: \"hey,\" \"hey you need to stop,\" \"you're gonna stop forget to make,\" and \"yep.\" The deputy's commands to \"stop\" imply the subject may have been moving, which is loosely consistent with the claim. However, the segment does not indicate whether the subject walked away, how quickly they began moving, which direction they moved, or whether oncoming traffic was present. The transcript is also too short and fragmentary to establish the claimed sequence or direction. No visual or contextual information about the subject's movement is included.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "The deputies followed the subject on foot and repeatedly instructed him to stop.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.28,
+          "end_seconds": 0.36
+        },
+        {
+          "start_seconds": 1.49,
+          "end_seconds": 2.02
+        },
+        {
+          "start_seconds": 3.02,
+          "end_seconds": 3.24
+        }
+      ],
+      "evidence_observations": "The transcript contains several uses of 'stop' ('hey you need to stop / you're gonna stop', 'stop touching it', 'stop touching me'), which could reflect commands given by deputies. However, speakers are not labeled, so it cannot be confirmed that these were deputy instructions. Some lines ('stop touching me', 'why are you touching', 'who are you really') read as the subject speaking to an officer, and 'copper' suggests the subject is addressing police. The segments contain no information about whether deputies followed the subject on foot, and the 'stop' statements are not clearly shown to be repeated instructions to stop movement rather than to stop touching. The evidence neither clearly supports nor contradicts the claim.",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The deputies did not raise their voices aggressively or use profane language at any point.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1.49,
+          "end_seconds": 2.02
+        },
+        {
+          "start_seconds": 3.02,
+          "end_seconds": 3.24
+        }
+      ],
+      "evidence_observations": "The transcript covers only 0:01-0:03 and contains no profanity. It has no speaker labels, so it cannot be determined which lines, if any, came from deputies. Lines such as 'hey you need to stop,' 'stop touching me,' 'what is your foot why you touch me,' and 'who are you really' could be from either the deputies or the other party. The transcript gives no information on volume or tone, so it cannot show whether anyone raised their voice aggressively. The claim covers 'at any point,' but the segment is about 3 seconds long and does not cover the full interaction. The evidence neither clearly supports nor clearly contradicts the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "The subject refused to comply with the deputies' commands and continued walking into the roadway.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 59.0,
+          "end_seconds": 66.0
+        },
+        {
+          "start_seconds": 109.0,
+          "end_seconds": 125.0
+        },
+        {
+          "start_seconds": 182.0,
+          "end_seconds": 195.0
+        }
+      ],
+      "evidence_observations": "The transcript segments are fragmentary and partly garbled. Deputy voices give stop-type commands ('hey you need to stop', 'you're gonna stop', 'look down you stop in the middle'), which partly corresponds to the claim that commands were given. However, no segment mentions a roadway, and none shows the subject walking into a roadway or continuing after a command. At [3:02-3:15] the subject says 'why are you stopping' and 'stop touching me', and the deputies' lines are not clear enough to establish who was touching whom or what preceded it. The segments do not establish whether the subject refused commands or moved into the road. The evidence neither clearly supports nor clearly contradicts the claim, so it cannot be resolved from these excerpts alone.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Deputy Navarro entered the roadway to direct traffic while Deputy Galvan attempted to verbally engage the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 31.0
+        },
+        {
+          "start_seconds": 56.0,
+          "end_seconds": 62.0
+        },
+        {
+          "start_seconds": 62.0,
+          "end_seconds": 66.0
+        },
+        {
+          "start_seconds": 109.0,
+          "end_seconds": 112.0
+        },
+        {
+          "start_seconds": 182.0,
+          "end_seconds": 194.0
+        }
+      ],
+      "evidence_observations": "The transcript contains verbal commands directed at a subject, including \"hey you need to stop\" [1:49-1:52], \"don't touch it stop touching it\" [3:02-3:14], and \"look down\" / \"you didn't need control\" [0:56-1:06]. These show that someone was verbally engaging the subject. However, the transcript does not identify which speaker is Deputy Galvan or Deputy Navarro, so it cannot be confirmed that Galvan was the one speaking. No segment mentions traffic direction, a roadway, or anyone entering a roadway, and no segment shows Navarro's position or movements. The claim's specific assertions about Navarro's roadway entry and traffic direction are therefore not addressed by the evidence.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "During an attempt to direct the subject back to the sidewalk, the subject became physically combative.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 6.0
+        },
+        {
+          "start_seconds": 1.0,
+          "end_seconds": 3.0
+        },
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 24.0
+        }
+      ],
+      "evidence_observations": "The transcript is audio-only and records no described physical actions by the subject (no striking, pushing, pulling away, or fleeing is noted). It contains no reference to a sidewalk or to directing the subject back to it. The subject's statements include 'stop touching me,' 'why are you touching me,' 'what is your foot,' and 'why are you touching down,' while the officer says 'you need to stop' and 'you stop in the middle.' These show verbal objection and confusion about the officer's physical contact, which could be read as resistance, but they do not show physical combativeness. Whether the subject physically resisted cannot be determined from the audio, and the transcript does not establish the sequence of events the claim describes. Bodycam video would be needed to assess the physical conduct.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "The subject punched Deputy Navarro in the face with a closed fist, causing him to stagger backward.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.02,
+          "end_seconds": 3.24
+        }
+      ],
+      "evidence_observations": "The only evidence provided is a single audio transcript segment (0:03-0:03). It contains the subject saying 'stop touching it,' 'stop touching me,' 'why you touch me,' 'why are you touching down for what,' and 'who are you really.' The transcript contains no description of a punch, a closed fist, contact with the deputy's face, or the deputy staggering backward. No visual frames were provided, and the transcript does not describe any impact sound. The segment shows the subject objecting to being touched but does not directly address whether a punch occurred or how the deputy reacted, so the claim can be neither supported nor contradicted from this evidence.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The subject shoved Deputy Galvan, who nearly fell into the traffic lane.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.0,
+          "end_seconds": 24.0
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:03-0:24) contains the subject saying things like \"stop touching me,\" \"what is your foot,\" \"why you touch me,\" and \"don't touch it.\" These statements suggest the subject was objecting to being touched or having a foot contacted, but the transcript does not depict or describe a shove, any push by the subject, or the deputy stumbling. It also contains no reference to a traffic lane or to the deputy nearly falling. The segment is audio-only text with no visual or physical description, so it cannot confirm or refute the shove or the near-fall. Nothing in the transcript directly contradicts the claim, but the evidence does not directly address either element.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "Over approximately three minutes, the subject struck both deputies multiple times.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 2.14
+        },
+        {
+          "start_seconds": 3.02,
+          "end_seconds": 3.24
+        }
+      ],
+      "evidence_observations": "The transcript covers only 0:00 to 0:03, about three seconds, so it cannot address the claimed three-minute duration. No segment describes or depicts the subject striking either deputy, and no strikes are identified or counted. The speech is fragmentary and partly unintelligible, and the words are the subject's: 'stop touching me,' 'why are you touching down,' 'what is your foot.' These suggest the subject was objecting to being touched, possibly by deputies, but they do not establish who made physical contact with whom or whether any blows occurred. The claim is neither supported nor contradicted by the available segments.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The deputies traveled approximately 300 yards on foot.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content to compare against the claim that the deputies traveled approximately 300 yards on foot. Nothing in the record confirms, contradicts, or addresses the distance.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The deputies directed the subject to the westbound sidewalk near the Miramar Hotel.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam audio or transcript content available to compare against the claim that deputies directed the subject to the westbound sidewalk near the Miramar Hotel. The claim can be neither supported nor contradicted on the current record.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "The subject attempted to flee back into the street.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 59,
+          "end_seconds": 62
+        },
+        {
+          "start_seconds": 109,
+          "end_seconds": 122
+        }
+      ],
+      "evidence_observations": "The transcript segments contain officer speech directing the subject to stop: 'control man i don't know it is look down you stop in the middle' [0:59-1:02] and 'hey you need to stop / you're gonna stop' [1:49-2:02]. The phrase 'you stop in the middle' may refer to the subject's location in a roadway, but the fragment is unclear. Neither segment describes the subject moving, attempting to flee, or moving back into the street. The segments are fragmentary and do not directly address whether the subject attempted to flee or in which direction, so they neither clearly support nor contradict the claim.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Deputy Navarro blocked the subject's path.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1.0,
+          "end_seconds": 1.06
+        },
+        {
+          "start_seconds": 1.49,
+          "end_seconds": 2.06
+        },
+        {
+          "start_seconds": 3.05,
+          "end_seconds": 3.21
+        }
+      ],
+      "evidence_observations": "The transcript segments are fragmentary and do not clearly show the deputy positioning himself in the subject's path. At [0:01] a speaker says \"you stop in the middle,\" and at [0:01-0:02] \"hey you need to stop; you're gonna stop forget to make.\" At [0:03] the subject says \"why are you stopping\" and \"don't touch it stop touching it stop touching me.\" The phrase \"why are you stopping\" suggests the subject was halted, which is loosely consistent with an obstruction, but it does not establish that Deputy Navarro was the one who stopped the subject, that he physically or positionally blocked the path, or where either party was located. The speakers are not identified, and the \"stop touching me\" remarks point to physical contact rather than blocking. The segments do not directly address the claim, so the evidence is insufficient to support or contradict it.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Deputy Galvan secured the subject by his backpack and took him to the ground.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.02,
+          "end_seconds": 3.24
+        },
+        {
+          "start_seconds": 0.56,
+          "end_seconds": 1.06
+        }
+      ],
+      "evidence_observations": "The transcript contains no explicit reference to a backpack, and nothing clearly describes Deputy Galvan grabbing the subject by a backpack. The subject says 'stop touching me,' 'what is your foot,' 'why you touch me,' and 'why are you touching down why are you touching down for what.' 'Touching down' could be a garbled reference to a takedown, but it is not clear. The line 'you didn't need control man' and the 'look down' remark are also ambiguous and do not establish a takedown or the means of control. The segments are out of chronological order (0:03 appears before 0:00) and appear garbled, and the transcript gives no speaker identification. The audio does not directly confirm or contradict the claim, so the evidence is insufficient to determine whether the claimed sequence occurred.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "All three landed on a grassy area between the sidewalk and the roadway.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.15,
+          "end_seconds": 3.38
+        }
+      ],
+      "evidence_observations": "The only transcript segment is [0:03-0:03] with the utterance 'why are you touching down for what'. It contains no description of where anyone landed, no reference to a grassy area, sidewalk, or roadway, and no mention of the number of people involved. The segment is too brief and does not address the claim's location of landing. No video frames were provided to verify the physical landing location.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Deputy Navarro was positioned on top of the subject's lower body while Deputy Galvan was beneath the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.02,
+          "end_seconds": 3.24
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:03-0:03) contains the subject saying \"stop touching it,\" \"don't touch it,\" \"what is your foot why you touch me why are you touching down,\" and \"who are you.\" The subject refers to a foot touching them and to being touched, but the segment does not identify which deputy is where, does not indicate that any deputy is on top of the subject's lower body, and does not indicate that any deputy is beneath the subject. The speaker's reference to a foot is consistent with some deputy being in contact with the subject's lower body, but it does not establish the claimed positions of Navarro or Galvan. No other evidence was provided to address the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "While on the ground, Deputy Galvan felt the subject pulling on his duty belt.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.02,
+          "end_seconds": 3.24
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:03) contains only the speaker's words, which are a series of complaints about being touched: \"don't touch it stop touching it,\" \"stop touching me,\" \"what is your foot why you touch me,\" \"are you touching down why are you touching down.\" No segment mentions a duty belt, and no segment describes the subject pulling on anything. \"Touching it\" is ambiguous because its referent is not identified. The speech suggests the subject was being touched and was reacting to it, which is consistent with a physical struggle but does not directly confirm or contradict the deputy feeling the subject pull on his duty belt. The transcript also contains no deputy speech or physical description, so the claim cannot be tested against the evidence provided.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Deputy Galvan felt the subject grasp the handle of his department-issued SIG Sauer P226 service weapon, which was holstered on his right hip.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.02,
+          "end_seconds": 3.24
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:03-0:03) is audio-only text. It records the subject saying \"stop touching it,\" \"stop touching me,\" \"what is your foot why you touch me,\" and \"why are you touching down.\" It contains no reference to a weapon, holster, handle, or grasping, and no description of the subject's hands contacting the holster or sidearm. It does not confirm or contradict that the subject grasped the SIG Sauer P226 handle, nor that the deputy felt such a grasp. The segment is also only three seconds long, so it cannot establish the sequence of events. Bodycam video frames would be needed to verify the hand-to-holster contact.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Deputy Galvan shouted, \"He's got my gun!\"",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no audio or visual record available to confirm or contradict the claim that Deputy Galvan shouted, \"He's got my gun!\" The claim cannot be evaluated.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Deputy Navarro heard Deputy Galvan repeat the warning several times.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.02,
+          "end_seconds": 3.24
+        },
+        {
+          "start_seconds": 0.28,
+          "end_seconds": 0.36
+        }
+      ],
+      "evidence_observations": "The transcript contains repeated phrases resembling a warning, such as \"don't touch it stop touching it\" and \"stop touching me,\" which appear several times in the 0:03 segment. However, the transcript has no speaker labels, so it cannot be determined who said these phrases, including whether Deputy Galvan repeated a warning. Nothing in the segments identifies Deputy Navarro, shows his position or proximity, or indicates that he heard any statement. The second segment (\"okey dokey he's seen you...\") is unrelated to the claimed warning. The segment timestamps are also out of sequence (0:03 precedes 0:00), which further limits reliable attribution. The evidence neither clearly confirms nor contradicts the claim.",
+      "confidence": 0.2
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Deputy Navarro drew his department-issued Glock 17 and placed it against the subject's torso.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.02,
+          "end_seconds": 3.24
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:03-0:03) contains the subject saying 'stop touching it / stop touching me,' 'what is your foot,' 'why you touch me,' 'why are you touching down for what,' and 'who are you.' The segment does not mention a firearm, a Glock 17, holstering or drawing a weapon, or placing anything against the subject's torso. The subject's complaints concern being touched and a foot, which neither confirms nor contradicts the claim. The segment is also a single one-second excerpt and does not describe the deputy's actions or the subject's position. Whether the deputy drew a weapon or contacted the torso with it cannot be determined from this transcript. Bodycam video frames for the relevant interval would be needed to assess the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "Deputy Navarro commanded the subject to release the weapon, stating, \"Drop it or I'll shoot.\"",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no audio or transcript content against which to compare the claim that Deputy Navarro said 'Drop it or I'll shoot.' Whether the quoted command was given, its wording, and its timing relative to the subject's actions cannot be determined from the materials provided.",
+      "confidence": 0.1
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "The subject did not comply and Deputy Navarro could see him continuing to pull at Deputy Galvan's holstered firearm.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.02,
+          "end_seconds": 3.24
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:03-0:03) contains only the subject's speech. It does not mention a holstered firearm, pulling at a firearm, or any action by the subject toward Deputy Galvan's holster. The repeated phrases ('stop touching it', 'don't touch it', 'stop touching me', 'why you touch me', 'why are you touching down') appear to be the subject objecting to being touched by the deputies, which is consistent with either party handling the subject or the subject's hands. The segment does not reveal what Deputy Navarro could see, so the report's claim that Navarro observed the subject pulling at the firearm is not addressed. The 'did not comply' portion is also not clearly assessable: the subject's questions ('why', 'for what', 'who are you') show he was responding verbally, but the segment does not show whether he was following commands. The transcript is audio-only in this excerpt, and no video frames or Navarro's position/line of sight are provided to corroborate or contradict the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Deputy Galvan screamed, \"He's still got my gun, shoot him again!\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The bodycam transcript contains no audio or dialogue records addressing the quoted statement attributed to Deputy Galvan, so neither the words 'He's still got my gun, shoot him again!' nor any related statements can be confirmed or contradicted. The claim cannot be evaluated against the available evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Deputy Navarro discharged his firearm three times into the subject's chest.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 3.02,
+          "end_seconds": 3.24
+        },
+        {
+          "start_seconds": 4.33,
+          "end_seconds": 5.04
+        }
+      ],
+      "evidence_observations": "The transcript covers only 0:03-0:05. In that window a person says 'stop touching me,' 'what is your foot,' 'why are you touching down,' and 'who are you.' The transcript notes '[Applause]' and a speaker saying 'damn' at 0:04-0:05. No gunfire is transcribed, and no segment mentions a firearm, a deputy by name, a number of shots, or the chest. The segments cover only five seconds and say nothing about the shooting itself, so they neither confirm nor contradict the claim. Verifying it would require the segments containing the discharge, plus any visual evidence of the shots and their placement.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "The subject's body went limp and Deputy Navarro immediately ceased firing.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved. No bodycam transcript or video frames were available to show whether the subject's body went limp or when Deputy Navarro ceased firing, so the claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Deputies Navarro and Galvan rolled the subject onto his back and began administering chest compressions.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved or provided. There is no transcript, audio, or video description from which to confirm or contradict the report's claim that Deputies Navarro and Galvan rolled the subject onto his back and began chest compressions. The claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Deputy Galvan broadcast \"shots fired\" over the radio.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no audio or transcript content available to determine whether Deputy Galvan broadcast 'shots fired' over the radio. The claim cannot be evaluated against the evidence provided.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "The deputies continued life-saving measures until Orange County Fire Authority paramedics arrived on scene.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content against which to evaluate the claim that deputies continued life-saving measures until Orange County Fire Authority paramedics arrived. Whether life-saving measures were continued, and when paramedics arrived, cannot be determined from the materials provided.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "The subject was transported to a local hospital and was later pronounced deceased.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content to compare against the claim that the subject was transported to a local hospital and later pronounced deceased. The claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Body-worn camera footage exists for Deputy A. Navarro and Deputy R. Galvan.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The evidence provided does not address whether body-worn camera footage exists for Deputy A. Navarro or Deputy R. Galvan, so the claim can neither be confirmed nor contradicted.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Miramar Hotel exterior surveillance video was collected.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 282,
+          "end_seconds": 297
+        }
+      ],
+      "evidence_observations": "The only evidence segment is [4:42-4:57], in which a speaker says \"i gotta get this video.\" This shows an intention or need to obtain video but does not confirm that any video was collected. It does not mention the Miramar Hotel, does not identify the video as exterior surveillance footage, and does not show the video being retrieved or secured. The statement is consistent with the claim having occurred later but does not establish it, and it does not contradict it.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "Deputy R. Galvan's SIG Sauer P226 (9mm, serial #47A201063) was collected as evidence.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing was available to confirm or contradict the claim that Deputy R. Galvan's SIG Sauer P226 (9mm, serial #47A201063) was collected as evidence, including the make, model, caliber, serial number, and collection event.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "Deputy A. Navarro's Glock 17 Gen5 (9mm, serial #BMB) was collected as evidence.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The record contains no bodycam audio, transcript, or description addressing the Glock 17 Gen5 (9mm, serial #BMB), its collection, or Deputy A. Navarro's firearm. The claim cannot be evaluated against the evidence provided.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "Three cartridge cases were recovered from the scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The evidence provided contains no statements or observations addressing the number of cartridge cases recovered from the scene, so the claim can be neither confirmed nor contradicted.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-055",
+      "claim_text": "Buccal swabs were collected from Deputy R. Galvan.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam content available to confirm or contradict the claim that buccal swabs were collected from Deputy R. Galvan. The claim cannot be evaluated.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-056",
+      "claim_text": "The subject was transported to hospital and pronounced deceased.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record addresses whether the subject was transported to a hospital or pronounced deceased, so the claim cannot be evaluated against the bodycam evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-057",
+      "claim_text": "The scene was secured.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1.49,
+          "end_seconds": 2.02
+        },
+        {
+          "start_seconds": 3.02,
+          "end_seconds": 3.24
+        },
+        {
+          "start_seconds": 4.42,
+          "end_seconds": 4.57
+        }
+      ],
+      "evidence_observations": "The transcript contains a short segment (0:01-0:04) of an unidentified speaker saying 'hey you need to stop,' 'stop touching me,' 'what is your foot,' 'why are you touching down for what,' 'who are you,' and 'i gotta get this video.' The speaker appears to be a person being physically contacted by someone's foot, questioning an unidentified person's presence, and a separate speaker says they need to record video. These lines suggest an unidentified person and a recording bystander were present during the interaction, which could bear on scene control. However, the transcript does not describe the number of people present, whether a perimeter existed, who was authorized to be there, or whether the area was cordoned off. It does not directly address whether the scene was secured, so the claim cannot be confirmed or contradicted from this evidence.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-058",
+      "claim_text": "OCDA Special Assignment Unit responded for investigation.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content against which to evaluate the claim that the OCDA Special Assignment Unit responded for investigation. Nothing in the available evidence confirms, contradicts, or addresses the claim.",
+      "confidence": 0.95
+    }
+  ]
+}

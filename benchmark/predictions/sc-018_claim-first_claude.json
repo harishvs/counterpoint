@@ -1,0 +1,887 @@
+{
+  "scenario_id": "sc-018",
+  "model": "us.anthropic.claude-haiku-5-5",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 348.14,
+  "total_tokens": 360207,
+  "total_api_calls": 97,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The incident occurred on Sunday, January 8, 2023.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so nothing in the bodycam evidence could be compared against the claim that the incident occurred on Sunday, January 8, 2023. The evidence neither supports nor contradicts the date. Separately, the claim's weekday and date are internally consistent, since January 8, 2023 was a Sunday, but that is a calendar check and not evidence from the recording.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The incident occurred at approximately 0846 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.8,
+          "end_seconds": 12.0
+        },
+        {
+          "start_seconds": 2.3,
+          "end_seconds": 3.5
+        }
+      ],
+      "evidence_observations": "The transcript segments carry only relative recording timestamps (0:02-0:03 and 0:05-0:12), not wall-clock times, so they cannot confirm or refute an incident time of approximately 0846 hours. Neither segment mentions a clock time, dispatch time, or timestamp. The first segment is a caller reporting something seen while walking, and the second describes shots fired, a subject down, and a knife in the subject's hand, with radio codes (10-10, 222, 998, 98). The content is consistent with an incident occurring in the period covered, but it does not establish the time of day. Verifying the claim would require the recording's start time, CAD/dispatch logs, or the bodycam's embedded time metadata.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The incident occurred at Warner Avenue at Red Hill Avenue, Tustin, CA.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.5,
+          "end_seconds": 3.4
+        },
+        {
+          "start_seconds": 3.28,
+          "end_seconds": 3.9
+        }
+      ],
+      "evidence_observations": "At [0:03], the speaker says the person was 'all the way into Tustin at the Red Hill and Warner area when you left saw them,' and the speaker describes traveling on Warner toward Red Hill. This places the Warner/Red Hill area in Tustin and is consistent with the claimed location. However, the segments describe where a person was sighted while walking, not explicitly where the incident occurred. The transcript is fragmented and does not clearly establish that the incident itself took place at that intersection, so it does not directly confirm the claim. No contradicting location is observed.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject is Ricardo Flores, a 52-year-old Hispanic male.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "failed",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or video frame available to verify the subject's name, age, or ethnicity stated in the report. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject was wearing a grey jacket and black jeans.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 257,
+          "end_seconds": 265
+        }
+      ],
+      "evidence_observations": "The bodycam segment at [4:17-4:25] describes the subject as wearing 'a gray sweatshirt' and 'a black hat.' The gray color partially matches the claimed grey jacket, but the garment type differs: sweatshirt rather than jacket. The segment does not mention pants, so the claimed black jeans are neither confirmed nor contradicted. The black hat is not addressed by the claim. Whether a sweatshirt and a jacket are the same garment is unclear from this transcript alone.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officer D. Brandt was the handling officer, Officer M. Torres was backup, and Officer K. Vega was assigned less-lethal.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 7.13,
+          "end_seconds": 7.28
+        },
+        {
+          "start_seconds": 8.05,
+          "end_seconds": 8.28
+        },
+        {
+          "start_seconds": 8.49,
+          "end_seconds": 9.04
+        }
+      ],
+      "evidence_observations": "The transcript segments contain no officer names (Brandt, Torres, or Vega), so no speaker can be tied to any named officer. The speakers are unidentified and the audio is fragmentary and partly garbled. The only role-related fragments are 'I got Le...' and 'lethal lethal' (0:08-0:09), which may be a partial 'less lethal' callout, but the speaker is unknown and the fragment does not name Vega. Other lines ('I'm going to holster', 'Pat them down', 'hold on move', 'step on him', 'I'll grab the knife') do not indicate who was the handling officer or backup. Nothing in the transcript directly confirms or contradicts the claimed role assignments.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "At approximately 0837 hours, the Tustin Police Department received a 9-1-1 call from RP-3.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.26,
+          "end_seconds": 5.28
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:02-0:05) shows a caller speaking to a dispatcher ('please dispat[ch]'), which suggests a call was received by dispatch. However, the segment does not establish: (1) the clock time of the call, since the timestamps given are relative video timestamps (0:02-0:05) rather than wall-clock time, so 0837 hours cannot be verified; (2) that the call was made to 9-1-1 rather than a non-emergency line, as no emergency number or call-type identifier is stated; (3) that the caller is designated 'RP-3' in the report, as no reporting-party designation appears in the segment; (4) that the receiving agency was the Tustin Police Department, though the caller's description of the location (Warner, Red Hill, the 55 freeway) is consistent with Tustin.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "RP-3 reported a male Hispanic walking westbound on Warner Avenue at Red Hill Avenue carrying a large knife in his bloody hands.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.3,
+          "end_seconds": 2.5
+        },
+        {
+          "start_seconds": 2.5,
+          "end_seconds": 3.6
+        },
+        {
+          "start_seconds": 3.8,
+          "end_seconds": 4.1
+        },
+        {
+          "start_seconds": 4.1,
+          "end_seconds": 4.8
+        }
+      ],
+      "evidence_observations": "The witness describes a 'Mexican man' walking down Warner carrying a chef knife, roughly 8-9 inches, which is consistent with the claim's male Hispanic description and large knife. The witness also says there was 'what looked like could have been blood on his hands' and 'on his sleeves too,' but hedges heavily: 'I don't know if it was pain or what.' The claim states the hands were bloody as fact, and the witness does not confirm that. Direction is not stated as westbound. The witness was traveling from the 55 freeway toward Red Hill, and the man was 'walking in that direction,' which only loosely suggests westbound. The location of Warner at Red Hill is consistent. Nothing contradicts the claim, but the blood and direction elements are not clearly established.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Officer Brandt was designated as the handling officer and responded to the location.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.26,
+          "end_seconds": 4.98
+        },
+        {
+          "start_seconds": 5.5,
+          "end_seconds": 9.47
+        }
+      ],
+      "evidence_observations": "The transcript contains a caller reporting a man with a chef knife and possible blood on his hands, followed by radio traffic ('10 10 three green', 'shot copy', 'shot fire 222 998 subject down knife is in his hand') and an unidentified speaker giving commands ('hey man have a seat', 'drop the knife', 'I'll grab the knife okay don't move'). The transcript shows an officer engaging the subject on scene, which is consistent with a response, but no speaker or unit is named as Officer Brandt. Nothing in the segments shows a handling-officer designation or identifies which unit was assigned to the call. The claim cannot be confirmed or contradicted from these segments.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Torres was dispatched as backup.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved or provided. There is no dispatch audio, radio traffic, CAD record, or bodycam transcript available to determine whether Officer Torres was dispatched as backup. The claim cannot be evaluated against the evidence.",
+      "confidence": 0
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Upon arrival at approximately 0846 hours, Officer Brandt parked his patrol vehicle along the east curb of Warner Avenue north of Compass Avenue.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved. No bodycam transcript or video frames were available to verify the claimed arrival time (approximately 0846 hours), the officer's identity (Officer Brandt), the vehicle's parking location (east curb of Warner Avenue north of Compass Avenue), or any related observations. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officer Torres parked directly in front of Officer Brandt's vehicle.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no observable material to compare against the claim that Officer Torres parked directly in front of Officer Brandt's vehicle. The claim can neither be supported nor contradicted on this record.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Officer Brandt exited his vehicle and drew his service weapon.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.9,
+          "end_seconds": 12.0
+        },
+        {
+          "start_seconds": 28.0,
+          "end_seconds": 54.0
+        },
+        {
+          "start_seconds": 73.0,
+          "end_seconds": 75.0
+        },
+        {
+          "start_seconds": 28.0,
+          "end_seconds": 44.0
+        }
+      ],
+      "evidence_observations": "The transcript contains no direct reference to Officer Brandt by name, and no segment shows or describes him exiting a vehicle. The audio does suggest a weapon was drawn: '2 shot fired' and 'shot copy shot fire' are heard at 0:05-0:12 and 0:28-0:44, and the speaker says 'I'm going to holster' at 1:13-1:15, which implies a weapon was out. However, the speakers are not identified, so it is unclear whether the drawing speaker is Brandt. Nothing in the segments addresses whether he exited a vehicle, so that part of the claim is unverified. No segment contradicts the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Officer Torres exited his vehicle and drew his weapon.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.5,
+          "end_seconds": 12.0
+        },
+        {
+          "start_seconds": 28.0,
+          "end_seconds": 54.0
+        },
+        {
+          "start_seconds": 34.0,
+          "end_seconds": 60.0
+        },
+        {
+          "start_seconds": 28.0,
+          "end_seconds": 44.0
+        }
+      ],
+      "evidence_observations": "The transcript is audio-only, garbled, and has overlapping timestamps. It contains commands ('drop the knife', 'don't come towards us', 'back up') and radio-style fragments ('shot fire', '2 shot fired', 'subject down', 'knife is in his hand'). These indirectly suggest a firearm was discharged, which is consistent with a weapon being drawn, but nothing explicitly states that a weapon was drawn. Nothing in the transcript addresses whether the officer exited a vehicle. The speaker is not identified as Officer Torres, and the segments do not establish which officer gave the commands or fired. No conflicting evidence was found.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officer Brandt observed the subject walking southbound on the west sidewalk of Warner Avenue.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.34,
+          "end_seconds": 3.4
+        },
+        {
+          "start_seconds": 3.33,
+          "end_seconds": 3.9
+        },
+        {
+          "start_seconds": 4.08,
+          "end_seconds": 4.19
+        }
+      ],
+      "evidence_observations": "The officer says the subject was walking 'down Warner towards Red Hill... coming from the 55 freeway,' and that he was 'on the north side of the street' and 'on the opposite side of Red Hill.' Two details conflict with the report. First, the transcript places the subject on the north side of Warner, not the west sidewalk. Second, the stated direction (from the 55 toward Red Hill) indicates travel along Warner, not southbound. Warner Avenue is generally an east-west street in this area, so 'southbound' and 'west sidewalk' also do not fit its orientation, though this depends on local street geography not stated in the transcript. The segment at [0:03] says only 'walking that direction' without naming a compass direction, and no segment mentions 'southbound' or 'west sidewalk' explicitly.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "The subject was carrying a large knife with a white handle in his right hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.7,
+          "end_seconds": 4.8
+        },
+        {
+          "start_seconds": 3.9,
+          "end_seconds": 4.1
+        },
+        {
+          "start_seconds": 6.1,
+          "end_seconds": 6.2
+        },
+        {
+          "start_seconds": 7.9,
+          "end_seconds": 8.0
+        }
+      ],
+      "evidence_observations": "The transcript supports part of the claim: a speaker describes a 'chef knife' that is 'probably eight nine inches' (large size), and says 'subject down knife is in his hand' at 0:06 and 0:07-0:08. However, the transcript does not mention the knife's handle color (the white handle is not addressed), and it does not specify which hand holds the knife (the 'right hand' detail is not addressed; 'his hand' is ambiguous). The segments also do not contradict the claim. Without video frames or a clearer description, the handle color and hand side cannot be confirmed or refuted.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The subject had apparent blood on his hands and clothing.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 42.0,
+          "end_seconds": 48.5
+        },
+        {
+          "start_seconds": 52.0,
+          "end_seconds": 54.5
+        },
+        {
+          "start_seconds": 40.0,
+          "end_seconds": 47.5
+        }
+      ],
+      "evidence_observations": "Three transcript segments describe apparent blood on the subject's hands. Segment [0:42-0:48] says 'what looked like could have been blood on his hands but I don't know if it was pain or what.' Segment [0:52-0:54] says 'what looked like blood on his hands.' Segment [0:40-0:47] says 'what you thought appeared to be blood it was on his hands yeah on his hands and I think he was a little bit on his sleeves too.' The hand observations match the claim's 'apparent blood on his hands,' and the 'apparent' framing matches the speakers' hedged wording. The mention of blood on the sleeves partially supports 'clothing.' The statements are hedged and unverified, the segments are out of chronological order, and speakers are not identified, so support for the clothing portion is weaker than for the hands.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "Officer Brandt called out to the subject, saying \"Hey, man. Have a seat. Have a seat, Dude.\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.38,
+          "end_seconds": 5.5
+        },
+        {
+          "start_seconds": 6.28,
+          "end_seconds": 6.4
+        }
+      ],
+      "evidence_observations": "The bodycam transcript contains the phrases \"hey man have a seat have a seat\" at [0:05] and \"hey man have a seat have a seat dude a seat dude\" at [0:06], which closely match the quoted words in the claim (\"Hey, man. Have a seat. Have a seat, Dude.\"). The transcript also includes \"drop the knife\" at [0:06], which the claim does not mention. That omission is not a contradiction. The transcript does not label speakers, so attribution of the words to Officer Brandt is assumed from the bodycam source rather than confirmed by the transcript itself. The start of the 0:06 segment includes an unclear token (\"St\").",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "Officers Torres and Brandt walked into the northbound lanes of Warner Avenue with their handguns drawn.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.7,
+          "end_seconds": 18.0
+        },
+        {
+          "start_seconds": 28.0,
+          "end_seconds": 71.0
+        },
+        {
+          "start_seconds": 71.0,
+          "end_seconds": 124.0
+        },
+        {
+          "start_seconds": 128.0,
+          "end_seconds": 184.0
+        }
+      ],
+      "evidence_observations": "The transcript contains audio only and does not mention Warner Avenue, northbound lanes, or the officers' position on the roadway. It also never states that handguns were drawn. Officer commands such as 'drop the knife,' 'back up,' 'don't come towards us,' and 'shot fired' indicate an armed confrontation with a subject who had a knife, and the 'shot fired' calls suggest weapons were in use. However, these statements do not establish the officers' movement into the roadway, the direction of travel, or the status of their firearms. The segments also do not establish whether the officers were on foot, the sequence of their movements, or where the subject was located. The claim cannot be confirmed or contradicted from the audio alone and would require video frames or location data.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Officer Brandt continued to give verbal commands directing the subject to drop the knife and sit down.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.28,
+          "end_seconds": 6.54
+        },
+        {
+          "start_seconds": 7.34,
+          "end_seconds": 7.51
+        },
+        {
+          "start_seconds": 8.3,
+          "end_seconds": 8.39
+        }
+      ],
+      "evidence_observations": "The transcript shows repeated verbal commands to drop the knife across segments 0:06 to 0:08 (e.g., 'drop the knife drop the knife right now', 'drop it', 'Drop The Knife Man'). Seated-directed commands appear at 0:06 ('hey man have a seat dude') and 0:07 ('take a seat dude'), which match 'sit down'. The commands recur across all three consecutive segments, consistent with 'continued'. The transcript does not label speakers, so attribution to Officer Brandt is not directly confirmed by the transcript itself and would need the bodycam audio metadata or speaker identification to verify.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "The subject did not comply with any commands and continued walking in a southwest direction into the northbound traffic lanes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.28,
+          "end_seconds": 6.54
+        },
+        {
+          "start_seconds": 7.34,
+          "end_seconds": 7.51
+        },
+        {
+          "start_seconds": 8.28,
+          "end_seconds": 8.44
+        }
+      ],
+      "evidence_observations": "The transcript records repeated officer commands ('drop the knife,' 'back up,' 'don't come towards us') across segments 0:06 to 0:08, followed by a shot at 0:08. It contains no subject speech or other audible response, so it does not show whether the subject complied with any command. The officer's repeated 'don't come towards us' suggests the subject was moving toward officers, but the transcript does not establish the subject's direction of travel. It contains no reference to southwest movement or to northbound traffic lanes, so those specific claim elements are not addressed. The evidence neither clearly supports nor contradicts the claim.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "At approximately 0847 hours, Officer Vega arrived on scene and was assigned less-lethal coverage.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 7.13,
+          "end_seconds": 7.5
+        },
+        {
+          "start_seconds": 8.08,
+          "end_seconds": 8.5
+        }
+      ],
+      "evidence_observations": "The transcript covers only two short segments (0:07-0:08). They contain an officer saying 'I'm going to holster,' 'we're Pat them down,' 'open I got Leal still,' and 'hster down yep I got Le.' Nothing in these segments refers to Officer Vega, an arrival time, the 0847 timestamp, or a less-lethal coverage assignment. The timestamps are relative to the clip and cannot be matched to the 0847 clock time. The segments also do not establish who is speaking or whether any named officer is present. The evidence does not directly address either part of the claim.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Officer Vega parked in the southbound number one lane and drew his service handgun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.0,
+          "end_seconds": 6.2
+        },
+        {
+          "start_seconds": 6.28,
+          "end_seconds": 7.5
+        },
+        {
+          "start_seconds": 7.13,
+          "end_seconds": 7.5
+        },
+        {
+          "start_seconds": 8.28,
+          "end_seconds": 8.58
+        }
+      ],
+      "evidence_observations": "The transcript does not mention a vehicle, parking, or the southbound number one lane, so the parking portion of the claim is not addressed. The transcript does contain indirect references consistent with a drawn weapon: at [0:06] a speaker reports 'shot fire' and 'subject down,' and at [0:07] a speaker says 'I'm going to holster,' which implies a firearm was out. However, speakers are not identified by name in the transcript, so there is no evidence tying these statements to Officer Vega specifically. The '22 here' reference may be a unit designation, but it is not clearly linked to Vega. The evidence is therefore consistent with the handgun-drawing portion but does not directly confirm it for this officer, and it does not address the parking claim.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Officer Vega holstered his handgun and deployed his Taser.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 7.0,
+          "end_seconds": 15.0
+        },
+        {
+          "start_seconds": 8.0,
+          "end_seconds": 12.0
+        }
+      ],
+      "evidence_observations": "The transcript contains 'I'm going to holster' and a garbled 'hster down yep', which may indicate a holstering action, but it is a verbal statement of intent or a partial word and does not confirm the handgun was holstered. The word 'holster' is not clearly tied to Officer Vega or to a handgun. Nothing in the transcript mentions a Taser, a deployment, or any Taser-related action, so the second part of the claim is unaddressed. The segments also contain no visual confirmation of either action, and the speech is partially garbled ('Pat them down', 'Le', 'step on him'). The evidence does not contradict the claim, but it does not clearly establish either part.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "Officer Vega began walking parallel to the subject at a distance of approximately 30 feet.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.38,
+          "end_seconds": 7.0
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:05-0:07) contains only verbal commands directed at a subject with a knife: 'have a seat,' 'drop the knife,' 'don't come toward,' 'back up,' and 'put it out.' It does not mention Officer Vega, walking, movement parallel to the subject, or any distance such as 30 feet. The segment also does not establish the officer's position or direction of travel, and no video frames were provided to confirm either. The claim is therefore not directly supported or contradicted by this evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "At approximately 0847:10 hours, Officers Torres and Brandt continued issuing commands including \"Drop the knife,\" \"Don't come towards us,\" and \"Back up, back up.\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.38,
+          "end_seconds": 6.54
+        },
+        {
+          "start_seconds": 7.34,
+          "end_seconds": 7.51
+        }
+      ],
+      "evidence_observations": "The transcript segments at [0:06-0:07] contain the phrases 'drop the knife,' 'don't come toward(s) us,' and 'back up, back up,' which match the command content in the claim. However, the segments use video-relative timestamps (0:06-0:07), not clock time, so they cannot be aligned to the claimed 0847:10 hours without a bodycam time-sync reference. The transcript also does not identify speakers, so it cannot confirm that Officers Torres and Brandt issued these commands. The segments cover only about one second and do not show whether the commands continued beyond this window.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The subject stopped walking and appeared to look directly at Officer Torres.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.28,
+          "end_seconds": 6.54
+        },
+        {
+          "start_seconds": 7.34,
+          "end_seconds": 7.51
+        }
+      ],
+      "evidence_observations": "The evidence consists only of audio transcript segments from 0:06 to 0:07. The segments contain repeated officer commands ('drop the knife', 'have a seat', 'don't come toward/towards us', 'back up'). They do not describe the subject's gait, whether the subject stopped walking, or the subject's gaze or head orientation. Officer Torres is not named in the transcript; the speakers refer to 'them' and 'us'. The commands imply the officers were directing the subject not to approach, which is loosely consistent with the subject moving toward officers, but this does not establish whether the subject stopped or where the subject looked. No visual frames or visual description are provided to confirm the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The subject turned and sprinted directly toward Officer Brandt from a distance of approximately 32 feet.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.38,
+          "end_seconds": 6.54
+        },
+        {
+          "start_seconds": 7.38,
+          "end_seconds": 7.51
+        }
+      ],
+      "evidence_observations": "The transcript covers 0:06 to 0:07 and consists only of officer commands: 'drop the knife,' 'don't come toward(s) us,' and 'back up.' These commands indicate that officers perceived the subject as moving toward them with a knife, which is loosely consistent with an approach. However, the transcript does not establish a turn, a sprint, a direction of travel relative to Officer Brandt, or a distance of approximately 32 feet. No speed of movement is described, and no distance measurement or visual reference appears in the segments. The claim's specific elements (turning, sprinting, directness, 32-foot distance) are therefore not addressed by the audio, and the evidence neither confirms nor contradicts them. Bodycam video frames showing the subject's movement and a distance reference would be needed to assess the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject raised the knife above his head in an overhead stabbing motion while charging.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.98,
+          "end_seconds": 6.12
+        },
+        {
+          "start_seconds": 6.38,
+          "end_seconds": 6.54
+        },
+        {
+          "start_seconds": 7.38,
+          "end_seconds": 7.51
+        },
+        {
+          "start_seconds": 7.57,
+          "end_seconds": 7.59
+        },
+        {
+          "start_seconds": 8.28,
+          "end_seconds": 8.44
+        }
+      ],
+      "evidence_observations": "The transcript contains repeated commands to 'drop the knife' and 'don't come toward us / don't come towards them / back up', which suggest the subject was moving toward officers, partially consistent with 'charging.' One segment reads 'he put it up' at [0:07], which could plausibly refer to raising the knife but is unclear and does not specify an overhead stabbing motion. Shouted statements at [0:05] and [0:07] note 'knife is in his hand' and 'subject's down.' Nothing in the transcript describes the arm trajectory, an overhead raise, or a stabbing motion. The transcript is fragmentary and garbled, and no video frames were provided to confirm the motion. Nothing directly contradicts the claim, but the evidence does not clearly establish the overhead stabbing motion.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Officer Vega attempted to deploy his Taser but was unable to get a clear shot due to the subject's sudden movement.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.4,
+          "end_seconds": 6.9
+        },
+        {
+          "start_seconds": 7.34,
+          "end_seconds": 7.51
+        },
+        {
+          "start_seconds": 8.28,
+          "end_seconds": 8.39
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:06 to 0:08) contain only verbal commands from an officer ('drop the knife', 'back up', 'don't come towards us', 'take a seat') and a closing '2 shot fired' announcement. No segment mentions a Taser, its deployment, an attempted deployment, or 'Officer Vega' by name, and no segment describes the subject making a sudden movement. The transcript does not show whether a Taser was drawn, aimed, or fired, or whether a clear shot was blocked. The 'don't come towards us' commands suggest the subject was moving toward officers, but this does not establish a sudden movement or a failed Taser attempt. The claim is neither confirmed nor contradicted by the available transcript, and no video frames were provided to verify the Taser action visually.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Officer Brandt discharged his firearm five times at the subject.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.9,
+          "end_seconds": 12.0
+        },
+        {
+          "start_seconds": 51.0,
+          "end_seconds": 59.0
+        },
+        {
+          "start_seconds": 28.0,
+          "end_seconds": 44.0
+        }
+      ],
+      "evidence_observations": "The transcript is heavily garbled. The clearest count-related content is in segment [0:28-0:44], where a speaker says \"2 shot fired I got,\" and in segment [0:05-0:12], which includes \"one / shot ... shot / fire.\" Neither segment mentions five shots. The segments with \"222 998\" and \"222 9998\" are unintelligible as shot counts. The transcript does not show five discharges. The spoken \"2 shot fired\" statement conflicts with the report's five-shot count, though the garbled text and the possibility that the statement refers to only part of the sequence limit how strongly it contradicts the claim.",
+      "confidence": 0.55
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Officer Torres simultaneously discharged his firearm five times.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.8,
+          "end_seconds": 6.2
+        },
+        {
+          "start_seconds": 7.5,
+          "end_seconds": 8.0
+        },
+        {
+          "start_seconds": 8.3,
+          "end_seconds": 8.8
+        }
+      ],
+      "evidence_observations": "The transcript attributes shots to distinct moments rather than a single instant. At [0:05-0:06] the audio includes 'one shot... fire', and at [0:08] it includes '2 shot fired'. The shot count is incremented across separate timestamps, which indicates sequential discharges over roughly three seconds, not simultaneous ones. The segments are garbled and do not clearly establish a total of five shots, so the count is unverified. The evidence conflicts with the word 'simultaneously' but does not fully verify or refute the five-shot count.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "The subject fell to the asphalt in the number one lane of northbound Warner Avenue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.52,
+          "end_seconds": 3.9
+        },
+        {
+          "start_seconds": 6.06,
+          "end_seconds": 6.2
+        },
+        {
+          "start_seconds": 7.57,
+          "end_seconds": 7.59
+        }
+      ],
+      "evidence_observations": "The transcript places the officer on Warner Avenue, traveling from the 55 freeway toward Red Hill, on the north side of the street. At [0:06-0:07] the officer states 'subject down, knife is in his hand,' which indicates the subject was down but does not say where or how he fell. Nothing in the segments identifies the lane (number one lane), the direction of travel of Warner Avenue at the subject's location, or the surface (asphalt). The officer's own direction of travel is not stated as northbound, and the segments do not establish that the subject was on the northbound side. The 'subject down' statement is consistent with the claim but does not directly address its specific lane or direction details.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The entire sequence from the subject's charge to the final shot lasted approximately four seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.58,
+          "end_seconds": 6.12
+        },
+        {
+          "start_seconds": 6.38,
+          "end_seconds": 6.54
+        },
+        {
+          "start_seconds": 7.34,
+          "end_seconds": 7.51
+        },
+        {
+          "start_seconds": 8.28,
+          "end_seconds": 8.44
+        }
+      ],
+      "evidence_observations": "The transcript shows the first shot at approximately 0:05-0:06 ('shot copy shot') and the second shot at approximately 0:08 ('2 shot fired'). Officer commands ('don't come toward us', 'back up') run from 0:06 through 0:08, which indicates the subject was approaching during that window. The transcript begins at 0:05 and never identifies when the subject's charge started, so the start point of the claimed four-second sequence is not captured. The final shot falls around 0:08, which is consistent with a four-second sequence only if the charge began around 0:04 or earlier. Timestamps are at one-second granularity and the transcript does not establish the charge onset, so the claimed duration cannot be confirmed or refuted.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "After the subject fell, the knife was still in his right hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.06,
+          "end_seconds": 6.12
+        },
+        {
+          "start_seconds": 7.51,
+          "end_seconds": 7.59
+        }
+      ],
+      "evidence_observations": "Two transcript segments (0:06 and 0:07) contain an officer's statement that the subject is down and the knife is in his hand (\"subject down knife is in his hand\"). This broadly matches the claim that the knife remained in the subject's hand after he fell. However, the transcript does not specify the right hand, so that detail of the claim is not addressed. The segments also contain garbled radio-style text (e.g., \"222 998\", \"9998\", \"stage fire\"), and the transcript gives no independent visual confirmation of which hand held the knife or of the sequence relative to the fall. No observable evidence contradicts the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Officer Vega approached and secured the knife at approximately 0847:44 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 7.0,
+          "end_seconds": 15.0
+        },
+        {
+          "start_seconds": 61.0,
+          "end_seconds": 68.0
+        },
+        {
+          "start_seconds": 529.0,
+          "end_seconds": 544.0
+        }
+      ],
+      "evidence_observations": "The transcript segments contain speech such as \"I'll grab the knife,\" \"don't move,\" and a later \"I got...\" that may indicate someone secured the knife. However, the evidence does not clearly support the claim. (1) No speaker is identified, so nothing shows the speaker is Officer Vega. (2) The timestamps are elapsed video times (0:07, 1:01, 8:49), not the wall-clock time 0847:44 in the claim, and the transcript provides no way to map them to 08:47:44. (3) The transcript is garbled (\"Lethal,\" \"Leal,\" \"Pat them down,\" \"step on him\"), so it is unclear whether the phrase \"I got...\" refers to the knife, a person, or something else. (4) Nothing in the segments shows Vega approaching. The segments do not directly confirm or contradict the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Officers Torres and Brandt holstered their weapons, approached the subject, and began rendering medical aid at approximately 0847:50 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 7.04,
+          "end_seconds": 7.28
+        },
+        {
+          "start_seconds": 8.01,
+          "end_seconds": 8.28
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:07-0:08, relative timestamps) contain an officer saying \"I'm going to holster\" and a later fragment that may be \"holster down yep,\" which loosely suggests holstering occurred. However, the segments do not show completed holstering, the officers approaching the subject, or the start of medical aid. The speech is dominated by commands (\"don't move,\" \"hold on\"), a pat-down (\"Pat them down\"), and a knife being secured (\"I'll grab the knife\"), with no mention of medical aid or injury treatment. The transcript uses relative timestamps (0:07, 0:08), which cannot be matched to the claimed clock time of 0847:50. The transcript is also garbled in places, and the speakers are not clearly identified as Torres or Brandt. Nothing observed directly contradicts the claim, but the evidence does not confirm the sequence or the timing.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Officer Brandt initiated CPR at approximately 0848:39 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or video content available to confirm or contradict the claim that Officer Brandt initiated CPR at approximately 0848:39 hours. The claim cannot be evaluated against the evidence provided.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Orange County Fire Authority paramedics arrived at approximately 0853 hours and assumed patient care.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record shows the arrival time of Orange County Fire Authority paramedics, their arrival at the scene, or whether they assumed patient care. The claim cannot be evaluated against the available evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Life-saving measures were discontinued at approximately 0916 hours due to obvious signs of death.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam footage, transcript, or other record available to evaluate the claim that life-saving measures were discontinued at approximately 0916 hours due to obvious signs of death. Nothing in the available evidence confirms, contradicts, or addresses the claim's timing, the decision to stop, or the stated basis for it.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "A welfare check was conducted at the subject's last known residence and no injured parties were found.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam content available to confirm or contradict the claim that a welfare check was conducted at the subject's last known residence and that no injured parties were found. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "The subject was pronounced deceased on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 6.03,
+          "end_seconds": 6.12
+        },
+        {
+          "start_seconds": 7.51,
+          "end_seconds": 7.59
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:06-0:07) contain an officer's radio-style call stating 'subject down' and 'knife is in his hand,' along with a fire/shot-related call. No segment mentions a pronouncement of death, medical personnel, a time of death, or any check of vital signs. 'Subject down' indicates the person is on the ground but does not establish that they were deceased, and nothing in these segments addresses whether or where a pronouncement occurred. The claim cannot be confirmed or contradicted from this excerpt.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "The scene was secured for OCDA investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.38,
+          "end_seconds": 1.58
+        },
+        {
+          "start_seconds": 6.28,
+          "end_seconds": 8.11
+        }
+      ],
+      "evidence_observations": "The first segment [0:00-0:01] is a standard statement that the Orange County District Attorney's Office conducts independent investigations of officer-involved shootings using its Bureau of Investigation special assignment unit. It does not describe any scene being secured. The second segment [0:06-0:08] includes officer commands ('drop the knife', 'don't move'), an officer saying 'I'll grab the knife,' a pat-down, and 'subject's down knife is in his hand.' This shows the subject was controlled and a knife was being handled, but it says nothing about perimeter control, evidence preservation, or securing the scene for OCDA. The transcript is too brief and does not address the claim directly.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Body-worn camera footage exists for Officers Brandt, Torres, and Vega.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 56.0,
+          "end_seconds": 61.0
+        },
+        {
+          "start_seconds": 103.0,
+          "end_seconds": 107.0
+        },
+        {
+          "start_seconds": 343.0,
+          "end_seconds": 350.0
+        }
+      ],
+      "evidence_observations": "The transcript segments do not directly address whether body-worn camera footage exists for Officers Brandt, Torres, or Vega. [0:56-1:01] and [1:43-1:47] refer generically to reviewing 'relevant evidence reports photographs and videos' and to publishing 'relevant video footage' on the Orange County District Attorney's website, without naming any officer or identifying any body-worn camera recording. [5:43-5:50] contains a verbal command ('hey man have a seat drop the knife drop the knife right now') that suggests an officer-civilian encounter, but the transcript does not identify the speaker, does not name any officer, and does not state that the speaker was wearing or recording on a body-worn camera. No segment confirms or contradicts the existence of footage for any of the three named officers.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Ten (10) WIN 9MM LUGER cartridge cases were collected.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The claim that ten (10) WIN 9MM LUGER cartridge cases were collected cannot be compared against any bodycam audio or visual record, so neither support nor conflict can be determined.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "One (1) large kitchen knife with a white handle was collected.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 2.7,
+          "end_seconds": 2.8
+        },
+        {
+          "start_seconds": 3.9,
+          "end_seconds": 4.1
+        },
+        {
+          "start_seconds": 6.1,
+          "end_seconds": 6.2
+        },
+        {
+          "start_seconds": 7.0,
+          "end_seconds": 7.1
+        },
+        {
+          "start_seconds": 8.0,
+          "end_seconds": 8.1
+        },
+        {
+          "start_seconds": 8.5,
+          "end_seconds": 8.9
+        }
+      ],
+      "evidence_observations": "The transcript repeatedly describes a chef knife, about eight to nine inches long, in the subject's hand (0:02-0:06), which is consistent with a 'large kitchen knife.' At 0:07-0:08 an officer says 'let's grab the knife' and 'I'll grab the knife,' which indicates an intent to collect it but does not confirm that collection occurred. The transcript never mentions the handle color, so the 'white handle' detail is unverified. No segment shows the knife being secured, bagged, or logged as evidence, and the 0:08 lines are garbled, so the collection itself is not clearly captured.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "One (1) black baseball cap containing a bullet was collected.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.22,
+          "end_seconds": 4.27
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:04-0:04) describes a person wearing a gray sweatshirt and a black hat. It mentions a black hat but does not mention a baseball cap, a bullet, or any collection of evidence. The segment does not address whether a black baseball cap containing a bullet was collected by officers, so the claim is neither confirmed nor contradicted. The hat in the segment is also not clearly linked to the item described in the report.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Clothing items from the subject were collected.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content against which to evaluate the claim that clothing items from the subject were collected. The claim cannot be confirmed or contradicted.",
+      "confidence": 0.9
+    }
+  ]
+}

@@ -1,0 +1,542 @@
+{
+  "scenario_id": "sc-015",
+  "model": "us.anthropic.claude-haiku-5-5",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 209.25,
+  "total_tokens": 200773,
+  "total_api_calls": 109,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The incident occurred on September 3, 2021.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There are no observations available that address the date of the incident, so the claim that the incident occurred on September 3, 2021 can neither be confirmed nor contradicted by the evidence provided.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The incident occurred approximately between 1350 and 1408 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so no bodycam audio, timestamps, or visual content is available to verify whether the incident occurred between 1350 and 1408 hours. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The incident occurred on Orangethorpe Avenue to the Buena Park Unified School District parking lot in Buena Park, CA.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.5,
+          "end_seconds": 8.6
+        },
+        {
+          "start_seconds": 46.0,
+          "end_seconds": 46.5
+        }
+      ],
+      "evidence_observations": "Two transcript segments were provided. At 0:08, the speaker says \"we got people back here in the school,\" which loosely suggests a school setting but does not name a street, district, or parking lot. At 0:46, the speaker says \"you needed to block that other driveway,\" which suggests a driveway and possibly a parking area but does not identify its location. Neither segment mentions Orangethorpe Avenue, the Buena Park Unified School District, or Buena Park. Nothing in the excerpts contradicts the claim, but the segments do not directly confirm the street or the specific location.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Detective M. Castellano, Badge Number 5839, is the reporting officer.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the bodycam evidence was available to check whether Detective M. Castellano, Badge Number 5839, is the reporting officer, so the claim could not be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject is Raymond Givens, a 61-year-old Black male.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or visual content available to verify the subject's name, age, or race as stated in the report. The claim cannot be evaluated against evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officers involved were Detective M. Castellano, Officer K. Nakamura, and Officer E. Fuentes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The bodycam evidence provided contains no statements, identifications, or visual references that address which officers were involved (Detective M. Castellano, Officer K. Nakamura, Officer E. Fuentes). The claim can be neither confirmed nor contradicted from the available evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The victim W-1 is Linda Torres, a school bus driver, and there was one 6-year-old child passenger.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The evidence provided contains no statements, visual observations, or other content addressing the victim's identity (Linda Torres), her occupation (school bus driver), or the number and age of child passengers (one 6-year-old). The claim cannot be verified or contradicted from the available evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "On September 3, 2021, Detective Castellano was working a special assignment as a detective with the Community Impact Team.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The evidence provided contains no statements, audio, or visual content addressing Detective Castellano's assignment, the Community Impact Team, or the date September 3, 2021. The claim cannot be confirmed or contradicted from the available evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "At approximately 1359 hours, Detective Castellano monitored a radio broadcast that an armed individual had discharged a firearm at a school bus on Orangethorpe Avenue.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Without bodycam audio or transcript covering approximately 1359 hours, there is no basis to determine whether Detective Castellano monitored a radio broadcast about an armed individual discharging a firearm at a school bus on Orangethorpe Avenue. The claim cannot be evaluated against the available evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Detective Castellano was on the far north side of the city at the time of the broadcast.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 7.25,
+          "end_seconds": 7.31
+        }
+      ],
+      "evidence_observations": "The only transcript segment is a fragment at 0:07 reading \"away with the north side.\" It does not name Detective Castellano, does not identify who is speaking, and does not state a unit's location at the time of the broadcast. The phrase is consistent with a unit being dispatched or located toward the north side, but it cannot be tied to Castellano or confirmed as a location claim. Without the surrounding context, speaker identification, or unit designations, the segment neither supports nor contradicts the claim.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Detective Castellano activated his emergency lights and responded to the area.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or video content available to confirm or contradict whether Detective Castellano activated emergency lights or responded to the area, so the claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Upon arrival, Detective Castellano observed a grey Chevrolet Suburban being pursued southbound by Officer Fuentes.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record shows Detective Castellano's arrival, a grey Chevrolet Suburban, or Officer Fuentes pursuing a vehicle southbound, so the claim cannot be evaluated against the bodycam evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Officer Fuentes's marked unit had emergency lights and sirens activated during the pursuit.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content to compare against the claim that Officer Fuentes's marked unit had emergency lights and sirens activated during the pursuit. Nothing in the available evidence confirms, contradicts, or addresses the claim.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Detective Castellano joined the pursuit.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or visual content available to determine whether Detective Castellano joined the pursuit. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officer Fuentes's vehicle was damaged from a prior attempted vehicle stop.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record addresses whether Officer Fuentes's vehicle was damaged, or whether any damage resulted from a prior attempted vehicle stop, so the claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "Detective Castellano assumed the lead position in the pursuit.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The record contains no bodycam audio, transcript, or video content addressing whether Detective Castellano assumed the lead position in the pursuit, so the claim can be neither supported nor contradicted.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "When Detective Castellano became lead vehicle, the subject had been pursued with continuously activated lights and sirens for over seven minutes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The claim that Detective Castellano became lead vehicle after the subject had been pursued with continuously activated lights and sirens for over seven minutes cannot be checked against any bodycam audio, transcript, or timestamped record. Nothing in the provided material confirms or contradicts the timing of the lead-vehicle handoff, the duration of the pursuit, or the continuous activation of lights and sirens.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "At approximately 1407 hours, the subject turned into the Buena Park Unified School District Office parking lot.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.5,
+          "end_seconds": 46
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:08-0:46) is a radio or verbal exchange: \"we got people back here in the school you guys got a chance it's cool you needed to block that other driveway.\" It refers to a school and to blocking a driveway, which is loosely consistent with a vehicle being near school property. However, it does not mention a subject, a vehicle turning, the Buena Park Unified School District Office, a parking lot, or the 1407 timestamp. No segment shows the subject's vehicle entering the lot, and no contradicting observation appears. The evidence does not directly address the claim.",
+      "confidence": 0.2
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The subject drove through the closed entry gate, dislodging it from its hinges.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or video description to compare against the claim that the subject drove through the closed entry gate and dislodged it from its hinges. The claim can be neither supported nor contradicted on this record.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Detective Castellano followed the subject into the parking lot.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved or provided. Nothing in the record shows whether Detective Castellano followed the subject into the parking lot, so the claim cannot be evaluated against the bodycam evidence.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Detective Castellano was aware from radio traffic that the subject had fired at a school bus carrying children.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no radio traffic, bodycam audio, or video frames available to show what Detective Castellano heard or knew, or whether any radio transmission described the subject firing at a school bus carrying children. The claim cannot be evaluated against the available evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Detective Castellano was aware from radio traffic that the subject was armed with a handgun.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no radio traffic, bodycam audio, or video content to compare against the claim that Detective Castellano was aware from radio traffic that the subject was armed with a handgun. The claim cannot be verified or contradicted. Relevant evidence would include radio transmissions mentioning a handgun, timestamps showing when they were broadcast, and any bodycam audio or video showing Castellano receiving or acknowledging that information.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "An Anaheim PD helicopter overhead confirmed the subject's location in the parking lot.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content against which to evaluate the claim that an Anaheim PD helicopter overhead confirmed the subject's location in the parking lot. Whether a helicopter was present, whether it made any observation, and whether the subject was in a parking lot cannot be determined from the materials provided.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "The subject's vehicle collided with a parked vehicle at low speed in the parking lot.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam audio, transcript text, or description of video content available to evaluate the claim that the subject's vehicle collided with a parked vehicle at low speed in the parking lot. The claim cannot be checked against the evidence in its current form.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The subject's vehicle came to a complete stop after the collision.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the bodycam evidence can be compared against the claim that the subject's vehicle came to a complete stop after the collision, so the claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Detective Castellano exited his vehicle and took a position of cover behind the engine block.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no observable record to compare against the claim that Detective Castellano exited his vehicle and took cover behind the engine block. The claim cannot be evaluated against the available evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The subject remained seated inside the vehicle for approximately thirty seconds before exiting.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so no bodycam audio or video content was available to compare against the claim that the subject remained seated inside the vehicle for approximately thirty seconds before exiting. The claim cannot be evaluated without this evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "When the subject exited the vehicle, he was holding a handgun in his left hand.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam material available to confirm or contradict the claim that the subject exited the vehicle holding a handgun in his left hand. The claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject turned toward Detective Castellano and raised the weapon in his direction.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam footage, transcript, or other record against which to check the claim that the subject turned toward Detective Castellano and raised the weapon in his direction. The claim can be neither supported nor contradicted. Relevant evidence would include video showing the subject's body orientation and weapon position relative to Detective Castellano at the time in question, along with any audio or transcript of commands and movements.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Detective Castellano discharged his firearm thirteen times at the subject.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, video frames, or transcript content available to observe Detective Castellano's firearm discharges or count them. The claim that he discharged his firearm thirteen times cannot be verified or contradicted from the materials provided.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Officer Nakamura arrived on scene almost immediately after the shooting began, in a marked patrol vehicle.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam footage, transcript, or other record to show when Officer Nakamura arrived, how quickly that arrival followed the start of the shooting, or what vehicle the officer used. The claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Officer Nakamura was wearing a full police uniform with badge and shoulder patches.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The claim concerns Officer Nakamura's visual appearance (full uniform, badge, shoulder patches), which can only be verified from bodycam video frames or a visual description. No frames or descriptions were provided, so the claim cannot be evaluated.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Officer Nakamura discharged his firearm at the subject.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or description available that addresses whether Officer Nakamura discharged a firearm at the subject, so the claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The subject walked toward the officers for several seconds while pointing his weapon before falling to the ground.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record shows whether the subject walked toward the officers, for how long, whether he was pointing a weapon, or how he came to be on the ground. The claim cannot be compared against any observed evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "The total duration of gunfire was no more than approximately ten seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no audio or bodycam content available to establish when gunfire started or stopped, so the claimed duration of approximately ten seconds or less cannot be verified or contradicted.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Officer Nakamura and Detective Castellano ceased fire once the subject fell to the ground and was no longer pointing the weapon.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved. The transcript is empty, so there is no bodycam audio or description available to determine whether Officer Nakamura and Detective Castellano ceased fire once the subject fell and was no longer pointing the weapon. The claim cannot be evaluated against the record as provided.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Detective Castellano requested medical assistance via radio at 1408 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record addresses whether Detective Castellano requested medical assistance via radio, or whether such a request occurred at 1408 hours. The claim cannot be evaluated against the available evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "The officers formulated a plan to safely approach the subject and executed it at approximately 1413 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 5.6,
+          "end_seconds": 5.7
+        },
+        {
+          "start_seconds": 8.5,
+          "end_seconds": 8.8
+        },
+        {
+          "start_seconds": 9.0,
+          "end_seconds": 9.4
+        }
+      ],
+      "evidence_observations": "The transcript segments (0:05-0:09) contain fragmentary radio-style speech: officers mention being stuck in traffic, a subject 'going on the curve off-roading', people 'back here in the school', a request to 'block that other driveway', and repeated 'standby' commands. These suggest some coordination and positioning, but nothing explicitly describes a plan to safely approach the subject or an approach being carried out. The segments contain no timestamp or clock reference that maps to 1413 hours, and the transcript covers only about nine seconds, so it cannot confirm when any execution occurred. The evidence neither confirms nor contradicts the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "The officers handcuffed the subject, removed the weapon, and began rendering first aid.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam footage, transcript, or description available to evaluate whether the subject was handcuffed, whether the weapon was removed, or whether first aid was rendered. The claim cannot be compared against any evidence.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Orange County Fire Authority paramedics arrived at 1420 hours and took over medical treatment.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so no bodycam content was available to compare against the claim that Orange County Fire Authority paramedics arrived at 1420 hours and took over medical treatment. Neither the arrival time, the agency identity, nor the handoff of medical care can be confirmed or contradicted.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "The subject was pronounced deceased on scene at approximately 1445 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so no bodycam content addressing the claimed pronouncement of death or its approximate time (1445 hours) could be reviewed. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "The child passenger had been removed from the bus prior to the shooting at the school district parking lot.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam footage, transcript, or other observable material to compare against the claim that the child passenger was removed from the bus before the shooting at the school district parking lot. The claim cannot be evaluated from the available record.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "W-1 dropped the child off at a school earlier on her route.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam audio, transcript, or visual content available to evaluate whether W-1 dropped the child off at a school earlier on the route. The claim cannot be checked against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "The bus was empty at the time the subject fired his weapon at it on Orangethorpe Avenue.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved or provided. There is no bodycam audio, transcript, or description available to show whether the bus was occupied or empty when the subject allegedly fired at it on Orangethorpe Avenue. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Body-worn camera footage from Detective Castellano and Officer Nakamura was collected as evidence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the provided evidence confirms or contradicts that bodycam footage from Detective Castellano or Officer Nakamura was collected. The claim cannot be verified or refuted from the available material.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "An Anaheim PD aerial recording was collected as evidence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The evidence provided contains no content addressing whether an Anaheim PD aerial recording was collected as evidence, so the claim can neither be confirmed nor contradicted.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "A Buena Park School District bus surveillance recording was collected as evidence.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the evidence addresses whether a Buena Park School District bus surveillance recording was collected, so the claim cannot be evaluated against the bodycam evidence.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "One black pistol was recovered from the subject.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no testimony, transcript text, or description from bodycam footage addressing whether a black pistol was recovered from the subject, so the claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Twenty-eight cartridge cases were recovered from the scene.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, video, or transcript content available to confirm or contradict the claim that twenty-eight cartridge cases were recovered from the scene. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Multiple bullet fragments were collected.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam content available to confirm or contradict the claim that multiple bullet fragments were collected, so the claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Vehicle debris and miscellaneous items were collected.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no observable material to compare against the claim that vehicle debris and miscellaneous items were collected. The claim cannot be evaluated, and no conclusion about its accuracy can be drawn from the available record.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "The subject was pronounced deceased on scene.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content to compare against the claim that the subject was pronounced deceased on scene. No observations about the subject's condition, any medical assessment, or any pronouncement can be made from the available materials.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "W-1 was transported to Buena Park Middle School for safety.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 8.5,
+          "end_seconds": 8.6
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:08) is a speaker saying \"we got people back here in the school.\" It indicates that people were at a school location, which is loosely consistent with the claim's destination. However, it does not identify W-1 or any individual, does not mention transport or a vehicle, does not establish that the destination was Buena Park Middle School specifically, and says nothing about the reason (safety). The segment does not directly address whether W-1 was transported or why, so it cannot confirm or contradict the claim.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "The scene was secured for OCDASAU investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.38,
+          "end_seconds": 53.0
+        },
+        {
+          "start_seconds": 8.46,
+          "end_seconds": 8.5
+        }
+      ],
+      "evidence_observations": "The segment at [0:00-0:53] is a general statement that the Orange County District Attorney's Office conducts independent investigations of officer-involved shootings and custodial deaths, with interviews and evidence review. It does not mention the scene, its security, or preservation. The segment at [0:08-0:08] is a single instruction, 'you needed to block that other driveway,' which may relate to perimeter control but does not state that the scene was secured or that this was done for OCDA investigators. The two segments also overlap in time, which suggests a transcript alignment issue. Neither segment directly addresses whether the scene was secured for the OCDA investigation.",
+      "confidence": 0.8
+    }
+  ]
+}

@@ -1,0 +1,606 @@
+{
+  "scenario_id": "sc-006",
+  "model": "us.anthropic.claude-haiku-5-5",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 276.25,
+  "total_tokens": 205219,
+  "total_api_calls": 107,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The incident occurred on November 13, 2020, at approximately 1615\u20131740 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no observable material to compare against the claim that the incident occurred on November 13, 2020, at approximately 1615-1740 hours. The claim cannot be evaluated.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The incident occurred in the 7900 block of Adams Way, Anaheim, CA.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or visual content available to confirm or contradict the claimed location (7900 block of Adams Way, Anaheim, CA). The claim cannot be evaluated against the evidence.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject is Diego Renteria, a male, 22 years old, Hispanic, with a shaved head, wearing a black jacket with white stripes and black shorts.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.22,
+          "end_seconds": 7.2
+        }
+      ],
+      "evidence_observations": "The only evidence segment provided is [0:04-0:07] with no text. No transcript content, dialogue, or identifying statements are available to confirm or contradict the subject's name, sex, age, ethnicity, hair, or clothing. No visual description of the subject is provided in the segment, so the claim cannot be verified or contradicted from the material given.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The officers involved were Officer K. Nassiri and Officer D. Montoya.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or visual content available to confirm or contradict the names of the officers involved (Officer K. Nassiri and Officer D. Montoya). The claim cannot be evaluated against any evidence.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The assisting units were the APD helicopter 'Angel' and multiple APD and BPPD patrol units.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no observable content to compare against the claim that the assisting units were the APD helicopter 'Angel' and multiple APD and BPPD patrol units. The claim cannot be evaluated in either direction.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "At approximately 1615 hours, APD dispatch received a 911 call reporting a male subject brandishing a firearm at a reporting party in a vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record addresses the claim, including the 1615 hour timing, the 911 call, the dispatch receipt, the male subject, the firearm, or the reporting party in a vehicle. The claim cannot be confirmed or contradicted.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Dispatch advised the suspect was traveling in a gray Toyota sedan.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio or transcript content available to confirm or contradict the claim that dispatch advised the suspect was traveling in a gray Toyota sedan.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The suspect was last seen pulling into the 7-Eleven parking lot at Beach Boulevard and Lincoln Avenue.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record shows the suspect's location, vehicle movement, or the 7-Eleven at Beach Boulevard and Lincoln Avenue, so the claim cannot be evaluated against bodycam evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Multiple APD units responded to the call.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 7.06,
+          "end_seconds": 7.17
+        },
+        {
+          "start_seconds": 4.22,
+          "end_seconds": 5.17
+        }
+      ],
+      "evidence_observations": "The transcript segments contain commands and remarks from an officer, including 'I see just two hands on top of his head guys,' 'let's do it let's do it,' and 'don't move towards me please move left move left move left.' The plural address 'guys' suggests more than one officer was present at that moment, but the segments do not identify any unit, agency, or vehicle, and do not state how many units responded to the call. The evidence does not directly address whether multiple APD units responded.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "At approximately 1619 hours, APD Officer Dahl arrived at the 7-Eleven.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no transcript, bodycam audio, or video content available to confirm or contradict the claim that Officer Dahl arrived at the 7-Eleven at approximately 1619 hours. The claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Officer Dahl observed a male matching the suspect description walking on Lincoln Avenue just north of the parking lot.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved or provided. Nothing in the record addresses Officer Dahl's observations, the suspect description, the location on Lincoln Avenue, or the parking lot, so the claim cannot be compared against any evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The subject, later identified as Diego Renteria, immediately fled southbound on foot upon seeing Officer Dahl.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The bodycam record provided contains no audio or visual content addressing the subject's identification, his flight, its direction (southbound), its timing relative to seeing Officer Dahl, or whether he was on foot. The claim cannot be evaluated against the evidence provided.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The subject was observed entering the Walmart parking lot.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam content available to confirm, contradict, or otherwise address whether the subject was observed entering the Walmart parking lot. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Officer Dahl broadcast a description of the subject as a Hispanic male with a shaved head, wearing a black jacket with white stripes on the sleeves and black shorts.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved, so no bodycam transcript or audio was available to check whether Officer Dahl broadcast the described subject description (Hispanic male, shaved head, black jacket with white sleeve stripes, black shorts). The claim cannot be evaluated against the evidence. Because the description concerns visual details that would need to be confirmed from video or audio, the claim remains unverified.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "At approximately 1629 hours, Officer T. Ross and Officer A. Gutierrez observed the subject walking eastbound on Adams Way near Grand Avenue.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the bodycam record was available to confirm or contradict the claim that Officers T. Ross and A. Gutierrez observed the subject walking eastbound on Adams Way near Grand Avenue at approximately 1629 hours. The claim cannot be evaluated against the evidence provided.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "Upon seeing the officers, the subject fled on foot and jumped a wall into the yard of a residence at 7944 Adams Way.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 432,
+          "end_seconds": 437
+        }
+      ],
+      "evidence_observations": "The only segment [7:12-7:17] contains the words 'before when he jumped over his waistband okay let's do it let's do it don't move her.' It does not mention a foot pursuit, a wall, a yard, a residence, or 7944 Adams Way, and it does not show when or how the subject first saw the officers. The word 'jumped' is unclear in context ('jumped over his waistband' is not a clear description of climbing a wall), and 'don't move' suggests a physical encounter but does not establish the sequence of events in the claim. The segment neither confirms nor contradicts the claim, so no conflict can be identified from this excerpt.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The APD helicopter 'Angel' responded and began establishing an aerial perimeter.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or video content available to confirm or contradict the claim that the APD helicopter 'Angel' responded and began establishing an aerial perimeter. The claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "Additional units set up a ground perimeter.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content to compare against the claim that additional units set up a ground perimeter. The claim cannot be evaluated in either direction. No observations about perimeter setup, unit arrival, or positioning are available.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "At approximately 1656 hours, APD Sgt. J. Harmon distributed a wanted flyer identifying the subject as Renteria.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio, transcript, or video content available to check whether Sgt. J. Harmon distributed a wanted flyer identifying the subject as Renteria at approximately 1656 hours. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Renteria was wanted by the Buena Park Police Department in connection with a residential burglary in which a firearm was stolen.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so no bodycam audio or dialogue was available to check the claim that Renteria was wanted by the Buena Park Police Department for a residential burglary involving a stolen firearm. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "The flyer cautioned that the subject should be considered armed and dangerous.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. The claim that the flyer cautioned the subject should be considered armed and dangerous cannot be checked against any bodycam audio, transcript, or video content, so no observations were made.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Officer Montoya and Officer Nassiri were assigned to maintain a perimeter position in the backyard of 7914 Adams.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam content available to confirm or contradict the claim that Officer Montoya and Officer Nassiri were assigned to maintain a perimeter position in the backyard of 7914 Adams. The claim cannot be evaluated against the evidence provided.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "7914 Adams was approximately three houses east of 7896 Adams, where the subject had been seen entering.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so no bodycam content was available to compare against the report's claim that 7914 Adams was approximately three houses east of 7896 Adams, where the subject had been seen entering. The claim cannot be evaluated against the record.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Beginning at approximately 1700 hours, officers within the helicopter made repeated public address announcements in English and Spanish.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record shows whether helicopter-based public address announcements were made, when they began, or whether they were in English and Spanish. The claim cannot be confirmed or contradicted.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The public address announcements directed the subject to exit the residence at 7896 Adams with his hands raised.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.22,
+          "end_seconds": 5.17
+        },
+        {
+          "start_seconds": 7.06,
+          "end_seconds": 7.17
+        }
+      ],
+      "evidence_observations": "The transcript segments contain officer commands ('don't move / towards me please / move left move left / you understand me') and an officer's observation that the subject has 'just two hands on top of his head' at 0:07. Neither segment contains a public address announcement, and the commands are not attributed to a PA system, so the transcript does not establish that any PA announcement was made or what it said. The commands do not mention exiting the residence at 7896 Adams. The observation of hands on top of the head is consistent with hands being raised, but 'hands on top of head' is not identical to 'hands raised,' and the segments do not show the subject exiting the residence. The evidence neither confirms nor contradicts the specific claim that PA announcements directed exit with hands raised.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "The subject was observed through the windows walking up and down the stairs.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam audio, video, or transcript content to compare against the claim that the subject was observed through the windows walking up and down the stairs. The claim cannot be evaluated from the materials provided.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The subject made no effort to comply with the public address announcements.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.07,
+          "end_seconds": 5.3
+        },
+        {
+          "start_seconds": 7.06,
+          "end_seconds": 7.2
+        }
+      ],
+      "evidence_observations": "The transcript contains no public address announcements, so it does not directly address whether the subject complied with them. The segments capture officer verbal commands ('don't move', 'towards me please', 'move left', 'you understand me', 'don't move') and an officer observation at [0:07] of 'just two hands on top of his head,' which may indicate response to some commands. The same segment also references the subject having 'jumped over his waistband' before this point, which could indicate prior non-compliance or flight, but the context is unclear. Whether the subject responded to the PA announcements specifically cannot be determined from these segments.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "At approximately 1737 hours, Officer Nassiri observed the subject exit from the front door of 7896 Adams.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam footage, transcript, timestamp, or description available to confirm or contradict the claim that Officer Nassiri observed the subject exit the front door of 7896 Adams at approximately 1737 hours. The claim cannot be evaluated against the evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject walked directly toward the officers' position in the backyard of 7914 Adams.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.43,
+          "end_seconds": 5.04
+        },
+        {
+          "start_seconds": 7.06,
+          "end_seconds": 7.2
+        }
+      ],
+      "evidence_observations": "The transcript contains officer commands ('towards me, towards me please', 'move left move left', 'let's do it', 'don't move') and an officer's remark that the subject 'jumped over his waistband' and that the officer sees 'just two hands on top of his head'. The commands to come 'towards me' suggest officers were directing the subject toward them, but they do not establish that the subject walked directly toward the officers' position, nor do they describe the subject's path or the backyard location (7914 Adams). The 'move left' commands could indicate a non-direct path, but this is inferential. No segment directly describes the subject's movement direction, so the claim is neither confirmed nor contradicted by the transcript.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "There was adequate ambient lighting from nearby streetlights.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam audio, video, or transcript content available to evaluate the claim that there was adequate ambient lighting from nearby streetlights. The claim cannot be checked against any evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Officer Nassiri was able to clearly see the subject's hands and movements as he approached.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 426.0,
+          "end_seconds": 437.0
+        }
+      ],
+      "evidence_observations": "The only segment [7:06-7:17] is an officer's verbal statement: \"I see just two hands on top of his head guys before when he jumped over his waistband.\" This partially supports the claim that the officer could see the subject's hands during the approach, since it says he saw two hands on the subject's head before the jump. However, it does not establish that he saw the subject's movements, and it does not establish that his view was clear. The phrase \"before when he jumped over his waistband\" suggests the officer's observation was limited to the period before the jump, and the segment says nothing about what he could see during the jump or the rest of the approach. The statement also does not show the officer's line of sight or visibility conditions. The evidence neither clearly confirms nor contradicts the claim, so it is insufficient to classify it as supported or in conflict.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "The subject was carrying an object in his right hand that Officer Nassiri believed to be a dark-colored handgun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 426,
+          "end_seconds": 440
+        }
+      ],
+      "evidence_observations": "The segment (7:06-7:20) contains an officer stating, \"I see just two hands on top of his head guys before when he jumped over his waistband.\" This does not mention a handgun, a dark color, or the right hand specifically. It suggests that at the time of the statement the subject's two hands were on his head, which is in tension with an object being held in the right hand during that moment. However, the phrase \"before when he jumped over his waistband\" implies the relevant observation may refer to an earlier or different moment, and the audio is fragmentary. The segment also suggests a possible waistband-related movement, but does not establish what the subject was holding or what the officer believed it to be. The evidence does not clearly confirm or contradict the claim.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Upon the subject entering the backyard, Officer Montoya and Officer Nassiri immediately ordered the subject to stop and show his hands.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.07,
+          "end_seconds": 4.31
+        },
+        {
+          "start_seconds": 7.06,
+          "end_seconds": 7.08
+        }
+      ],
+      "evidence_observations": "At 0:04 an unidentified officer says \"Show Me Your Eyes ... don't move,\" which partially resembles a stop command but does not include an order to show hands. At 0:07 an unidentified officer says \"I see just two hands on top of his head guys,\" which indicates the subject's hands were visible and raised. The segments do not show the subject entering the backyard, do not establish that these commands were the first given or came immediately after entry, and do not identify which officer (Montoya or Nassiri) spoke. The evidence is consistent with the claim but does not directly confirm the timing or the specific officers and commands described.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The subject stopped approximately 20 feet from the officers' position.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.22,
+          "end_seconds": 5.17
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:04-0:05) contains only verbal commands: \"don't move,\" \"towards me please,\" \"move left move left,\" and \"you understand me.\" No speech or audio in this segment states a distance, and no visual distance reference is provided. The commands imply the officer was directing the subject's movement, including a request to come toward the officer, but they do not indicate whether the subject stopped, or at what distance. The claim of a stop approximately 20 feet away is neither confirmed nor contradicted by this segment.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "The subject raised both hands above his head.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 7.06,
+          "end_seconds": 7.12
+        }
+      ],
+      "evidence_observations": "At 0:07 an officer states, \"I see just two hands on top of his head guys.\" This is a contemporaneous verbal description of the subject's hand position and directly corresponds to the claim that both hands were above his head. The statement addresses both hands and their position. It is an officer's verbal description rather than an independent visual frame, and \"on top of his head\" is a near-synonym for \"above his head,\" so confidence is moderate.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "The subject then suddenly lowered his right hand toward his waistband.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 426,
+          "end_seconds": 437
+        }
+      ],
+      "evidence_observations": "The only transcript segment [7:06-7:17] is an officer's garbled verbal narration: \"I see just two hands on top of his head guys before when he jumped over his waistband okay let's do it let's do it don't move her.\" It describes both of the subject's hands on top of his head before a jump over the waistband. It does not describe any movement of the right hand toward the waistband, nor the sequence or timing of such a movement relative to the jump. The narration arguably suggests the hands were on the head before the jump, but the claim concerns a later, sudden lowering, which the segment does not address. No video frames or visual descriptions are provided to confirm or refute the claimed movement.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Officer Nassiri discharged his firearm four times at the subject's center mass.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record addresses whether Officer Nassiri discharged his firearm, how many times, or where the shots struck the subject. The claim cannot be evaluated against the available evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "The subject fell to the ground.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 7.06,
+          "end_seconds": 7.2
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:07) contains officer commands and a remark that the subject 'jumped over his waistband' while hands were on his head. It does not describe the subject falling or reaching the ground. It also does not describe the subject's position after the jump, so it neither confirms nor contradicts the claim. No video frames were provided to show whether the subject fell.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Officer Montoya and Officer Nassiri approached and handcuffed the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 4.46,
+          "end_seconds": 5.17
+        },
+        {
+          "start_seconds": 7.06,
+          "end_seconds": 7.2
+        }
+      ],
+      "evidence_observations": "The transcript segments contain commands and status calls ('move left move left', 'I see just two hands on top of his head guys', 'let's do it let's do it', 'don't move') but do not identify any speaker or name Officer Montoya or Officer Nassiri. Nothing explicitly describes handcuffing. The 'two hands on top of his head' call suggests the subject's hands were on his head, which is consistent with a restraint attempt but does not show that handcuffs were applied. 'Let's do it' may indicate a coordinated action but does not specify what action or who performed it. The segments also do not show who approached the subject. The evidence neither confirms nor contradicts the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Officer Nassiri observed the subject had sustained gunshot wounds to his upper torso and right arm.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam content available to confirm or contradict the report's claim that Officer Nassiri observed gunshot wounds to the subject's upper torso and right arm, so the claim cannot be evaluated.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "A tourniquet and medical bandages were applied to the subject.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved or provided. There is no bodycam content available to determine whether a tourniquet or medical bandages were applied to the subject, so the claim cannot be evaluated against the evidence.",
+      "confidence": 0
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "At approximately 1743 hours, paramedics arrived and transported the subject to UCI Medical Center.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam audio or transcript content to compare against the claim that paramedics arrived at approximately 1743 hours and transported the subject to UCI Medical Center. The claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "The subject underwent surgery at UCI Medical Center and survived.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam audio or visual content to compare against the claim that the subject underwent surgery at UCI Medical Center and survived. The claim cannot be evaluated from the available material.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "A search of the immediate area revealed a black semi-automatic handgun on the ground approximately three feet from where the subject fell.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 7.06,
+          "end_seconds": 7.2
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:07) contains an officer's radio or verbal narration: 'I see just two hands on top of his head guys before when he jumped over his waistband okay let's do it let's do it don't move.' It does not mention a search of the area, a handgun, its color or type, its location on the ground, or its distance from the subject. The reference to the subject 'jumped over his waistband' may relate to a concealed item but does not establish what was found or where. The segment does not confirm or contradict the claim, and no video frames were provided to verify the handgun's position or the search.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "The handgun's location was consistent with the subject having dropped the weapon when he was shot.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 7.06,
+          "end_seconds": 20.0
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:07-0:20) contains officer commands and remarks: 'I see just two hands on top of his head,' 'when he jumped over his waistband,' 'let's do it,' 'don't move.' It does not mention the handgun, its location, the subject dropping a weapon, or the timing of any shooting relative to the weapon's position. The reference to the subject jumping over his waistband may relate to a possible weapon-retrieval motion, but the segment does not establish where the handgun was found or whether it was dropped when he was shot. The claim cannot be confirmed or contradicted from this segment alone.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Body-worn camera footage exists for Officer Nassiri and Officer Montoya.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1.46,
+          "end_seconds": 1.48
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:01-0:01) states that 'conclusions as well as any relevant video footage are made public and published on the Orange County District Attorney's website.' It refers to video footage generically and conditionally ('any relevant video footage'). It does not mention body-worn camera footage, does not name Officer Nassiri or Officer Montoya, and does not confirm that footage exists for either officer. It neither supports nor contradicts the claim.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Four (4) Winchester 45 Auto cartridge cases were collected.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. Nothing in the record addresses the number of Winchester 45 Auto cartridge cases collected, so the claim of four (4) cases could not be checked against any evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "One (1) Adidas tennis shoe was collected.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 7.15,
+          "end_seconds": 7.2
+        }
+      ],
+      "evidence_observations": "The only transcript segment (0:07) contains speech including 'for my shoes,' with no mention of an Adidas shoe, a count of shoes, or any collection of evidence. The phrase suggests footwear was discussed, but the segment does not show whether a shoe was collected, its brand, or how many were collected. It neither supports nor contradicts the claim, and the transcript is too fragmentary to resolve it.",
+      "confidence": 0.2
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "One (1) pair of black shorts was collected.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio or transcript content available to confirm or contradict the claim that one pair of black shorts was collected. The claim cannot be evaluated.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "One (1) cellphone was collected.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content available to confirm or contradict the report's statement that one (1) cellphone was collected. The claim cannot be evaluated.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "191 crime scene photographs were collected.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved. There is no bodycam audio or transcript content addressing the number of crime scene photographs collected, so the claim of 191 photographs can neither be confirmed nor contradicted.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "The scene was secured for investigation by OCDASAU.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 38,
+          "end_seconds": 57
+        }
+      ],
+      "evidence_observations": "The transcript segment (0:38-0:57) is a generic narration describing the Orange County District Attorney's Office's policy of conducting independent investigations of officer-involved shootings and custodial deaths, and states these investigations are conducted by the OCDA Bureau of Investigation Special Assignment Unit (OCDASAU). It does not mention any specific incident, scene, or scene security. Nothing in the segment addresses whether the scene at issue was secured, by whom, or when. The evidence confirms only that OCDASAU is the unit that conducts such investigations, not that it secured this scene.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "The report was signed by Officer K. Nassiri and dated November 14, 2020.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence transcript segments were retrieved, so there is no bodycam content to compare against the claim that the report was signed by Officer K. Nassiri and dated November 14, 2020. Neither the signature nor the date can be verified or contradicted from the available materials.",
+      "confidence": 0.9
+    }
+  ]
+}
