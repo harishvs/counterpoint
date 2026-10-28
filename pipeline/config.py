@@ -17,7 +17,7 @@ def default_config() -> PipelineConfig:
 def make_adapter(config: PipelineConfig):
     if config.model_adapter == "claude":
         from .adapters.claude import ClaudeAdapter
-        return ClaudeAdapter(model_name=config.model_id)
+        return ClaudeAdapter(model_name=config.model_id, use_bedrock=config.use_bedrock)
     elif config.model_adapter == "nemotron":
         from .adapters.nemotron import NemotronAdapter
         return NemotronAdapter()

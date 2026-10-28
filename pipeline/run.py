@@ -13,7 +13,7 @@ import time
 from pathlib import Path
 
 from .config import default_config, make_adapter
-from .schemas import PipelineConfig, ScenarioPrediction
+from .schemas import PipelineConfig, ScenarioPrediction, RetrievedSegment
 from .stages.extract import extract_claims
 from .stages.retrieve import retrieve_segments
 from .stages.verify import verify_claim
@@ -56,8 +56,11 @@ def run_claim_first(scenario_id: str, config: PipelineConfig) -> ScenarioPredict
 
     verified = []
     for claim in claims:
-        print(f"  [{scenario_id}] {claim.claim_id}: retrieving evidence...")
-        segment = retrieve_segments(claim, transcript_path, adapter)
+        if transcript_path and transcript_path.exists():
+            print(f"  [{scenario_id}] {claim.claim_id}: retrieving evidence...")
+            segment = retrieve_segments(claim, transcript_path, adapter)
+        else:
+            segment = RetrievedSegment(claim_id=claim.claim_id, retrieval_status="not_retrieved")
 
         print(f"  [{scenario_id}] {claim.claim_id}: verifying ({segment.retrieval_status})...")
         result = verify_claim(claim, segment, adapter)
@@ -164,7 +167,9 @@ def main():
     parser.add_argument("--scenario", help="Scenario ID (e.g. sc-001)")
     parser.add_argument("--all", action="store_true", help="Run all scenarios")
     parser.add_argument("--adapter", default="claude", choices=["claude", "nemotron"])
-    parser.add_argument("--model", default="claude-sonnet-5-5", help="Model ID")
+    parser.add_argument("--model", default="claude-haiku-5-5", help="Model ID")
+    parser.add_argument("--bedrock", action="store_true", default=True, help="Use AWS Bedrock")
+    parser.add_argument("--no-bedrock", dest="bedrock", action="store_false")
     parser.add_argument("--pipeline", default="claim-first",
                         choices=["claim-first", "single-pass", "transcript-only"])
     parser.add_argument("--out", type=Path, default=PREDICTIONS_DIR)
@@ -177,6 +182,7 @@ def main():
     config = default_config()
     config.model_adapter = args.adapter
     config.model_id = args.model
+    config.use_bedrock = args.bedrock
 
     args.out.mkdir(parents=True, exist_ok=True)
 

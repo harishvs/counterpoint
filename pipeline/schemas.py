@@ -39,7 +39,8 @@ class VerifiedClaim:
 @dataclass
 class PipelineConfig:
     model_adapter: str = "claude"
-    model_id: str = "claude-sonnet-5-5"
+    model_id: str = "claude-haiku-5-5"
+    use_bedrock: bool = True
     evidence_dir: Path = Path("benchmark/evidence")
     reports_dir: Path = Path("benchmark/reports")
     max_frames: int = 50
