@@ -6,3 +6,5 @@ public_defense_evidence_review_poster_brief.md
 benchmark/scripts/_*.json
 __pycache__/
 .env
+poster/poster.html
+.gitignore
