@@ -1,0 +1,617 @@
+{
+  "scenario_id": "sc-009",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 139.19,
+  "total_tokens": 53097,
+  "total_api_calls": 64,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-009",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Case Number: SC-009'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: March 11, 2021",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Date of Incident: March 11, 2021'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 1818 hours to 1839 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the reported time of incident (1818 to 1839 hours).",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: Pacific Coast Highway, Laguna Beach, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Location: Pacific Coast Highway, Laguna Beach, CA'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer D. Kessler",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the reporting officer is Officer D. Kessler.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 3891",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Badge Number 3891.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Tyler Brandt, Male, approximately 30 years old, White, black sweatshirt, light blue t-shirt underneath",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Officer D. Kessler, Corporal A. Novak (PIT maneuver), Officer M. Trujillo, Sergeant R. Holt",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witness(es): None at scene of shooting",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that there were no witnesses at the scene of the shooting.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "On March 11, 2021, at approximately 1818 hours, I was driving southbound on Pacific Coast Highway in my marked Laguna Beach Police Department patrol vehicle",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the officer's presence on Pacific Coast Highway at 1818 hours on March 11, 2021.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I observed a white Mercedes sedan traveling southbound at a high rate of speed",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess the claim about a white Mercedes sedan traveling southbound at a high rate of speed.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I attempted to pace the Mercedes and observed erratic driving behavior, including veering on and off the shoulder",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess the claim about pacing the Mercedes or observing erratic driving behavior.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I believed the driver was potentially impaired",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 148.8,
+          "end_seconds": 178.8
+        }
+      ],
+      "evidence_observations": "The bodycam audio contains repeated commands for the driver to get down on the ground, indicating the officer believed the driver was a threat, which aligns with the claim that the officer believed the driver was potentially impaired.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I broadcast over the radio my intent to conduct a traffic stop and requested immediate backup at approximately 1819 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about broadcasting intent to conduct a traffic stop and requesting backup at 1819 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The driver of the Mercedes initially appeared to comply, pulling the vehicle onto the northbound shoulder of Pacific Coast Highway",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 148.8,
+          "end_seconds": 178.8
+        }
+      ],
+      "evidence_observations": "The video shows the white Mercedes stopped in the middle of the road with smoke coming from it, not pulled onto a shoulder. The driver exits the vehicle and walks around it before being confronted by police. The claim states the driver pulled onto the northbound shoulder, but the footage shows the car stopped in the travel lane.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I exited my patrol vehicle and began approaching the vehicle on the passenger side",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "As I reached the rear quarter panel of the Mercedes, the driver abruptly accelerated away from the traffic stop",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 148.8,
+          "end_seconds": 178.8
+        }
+      ],
+      "evidence_observations": "The video shows a white Mercedes stopped in the road with smoke coming from it. A man exits the vehicle and walks around the front of the car. The bodycam footage then shows a chaotic scene with multiple people on the ground and officers present, but there is no clear visual evidence of the driver accelerating away from the rear quarter panel of the Mercedes as described in the claim. The audio contains commands for the driver to get on the ground, suggesting the driver was stopped, not accelerating away.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "the driver made a hard-right turn across oncoming traffic",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 148.8,
+          "end_seconds": 178.8
+        }
+      ],
+      "evidence_observations": "The video shows a white car stopped in the middle of the road with smoke coming from it, and a man exiting the vehicle. The bodycam footage shows police officers approaching and ordering the driver to get on the ground. There is no visual evidence of the car making a hard-right turn across oncoming traffic; instead, the car appears to be stationary in its lane or the shoulder.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "A vehicle pursuit ensued",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether a vehicle pursuit occurred.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "During the pursuit, the subject collided with two civilian vehicles, causing one vehicle to overturn",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject colliding with two civilian vehicles and causing one to overturn during the pursuit.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "I continued the pursuit with emergency lights and sirens activated",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about continuing a pursuit with emergency lights and sirens activated.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Additional Laguna Beach Police units joined the pursuit",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about additional Laguna Beach Police units joining the pursuit.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "an Orange County Sheriff helicopter provided aerial support",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the Orange County Sheriff helicopter providing aerial support.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "The subject reached speeds of approximately 90 miles per hour",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject's speed.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "the subject was observed driving on the wrong side of the road and swerving into oncoming traffic",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess the claim about the subject driving on the wrong side of the road and swerving into oncoming traffic.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Laguna Beach Police officers successfully deployed a spike strip, which caused all four tires of the Mercedes to deflate",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the spike strip deployment and tire deflation.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Despite the tire damage, the subject continued to flee",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject continuing to flee despite tire damage.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The subject continued driving on deflated tires for approximately two additional miles",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject driving on deflated tires for two additional miles.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "Corporal Novak successfully executed a pursuit intervention technique (PIT) maneuver, bringing the Mercedes to a stop in the southbound lane of Pacific Coast Highway",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Corporal Novak executing a PIT maneuver on a Mercedes in the southbound lane of Pacific Coast Highway.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The vehicle came to rest facing north",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the vehicle's orientation.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "My patrol unit, Officer Trujillo's unit, and Sergeant Holt's unit took positions approximately 15 feet from the stopped Mercedes",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about officer positions relative to the stopped Mercedes.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "All units had their takedown lights and spotlights illuminated and directed at the subject",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether takedown lights and spotlights were illuminated and directed at the subject.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "I was positioned in the center, with Officer Trujillo to my left and Sergeant Holt to my right",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Upon the vehicle coming to a stop, I observed the subject remain seated in the driver's seat for approximately 30 seconds, appearing to look around the interior of the vehicle",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 148.8,
+          "end_seconds": 178.8
+        }
+      ],
+      "evidence_observations": "The video shows the driver exiting the vehicle and being immediately ordered to get on the ground by the officer. The driver complies and is seen lying on the ground, contradicting the claim that the subject remained seated in the driver's seat for 30 seconds.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "The subject then exited the vehicle and immediately turned to face the officers",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether the subject exited the vehicle and turned to face officers.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "The subject placed his left hand behind his back and made a distinct reaching motion toward his left hip area",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "I interpreted this movement as consistent with someone reaching for a concealed firearm",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to evaluate whether the observed movement was consistent with someone reaching for a concealed firearm.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "I commanded the subject to get on the ground",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 148.8,
+          "end_seconds": 178.8
+        }
+      ],
+      "evidence_observations": "The bodycam audio clearly shows the officer repeatedly commanding the driver to get on the ground, matching the claim exactly.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "The subject did not comply and instead began advancing toward me and the other officers in a rapid, deliberate manner",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject's behavior toward officers.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "the subject suddenly extended both arms forward at chest height with his hands together in a manner that simulated pointing a firearm directly at me",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess the claim about the subject extending both arms forward at chest height with hands together simulating a firearm.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "I discharged my department-issued Glock 17 firearm, firing four rounds at the subject at approximately 1839 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about discharging a Glock 17 firearm at 1839 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Despite being struck, the subject remained on his feet and continued advancing toward the officers",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject's ability to remain on his feet and continue advancing after being struck.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "the subject yelled profanities at the officers while continuing to make threatening gestures consistent with pointing a weapon",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject yelling profanities and making threatening gestures consistent with pointing a weapon.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Officer Trujillo deployed his department-issued Taser, which struck the subject and caused him to fall to the ground",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 148.8,
+          "end_seconds": 178.8
+        }
+      ],
+      "evidence_observations": "The video shows a man in a blue shirt exiting the white car and walking away from the vehicle. He is not struck by a Taser and does not fall to the ground. Instead, he is seen walking and gesturing with his hands. Later, another individual is seen on the ground, but this person is wearing dark clothing and is not the man who exited the car. The audio contains commands for the driver to get down on the ground, but no Taser deployment sound is heard, and the visual evidence does not show a Taser being used on the man in the blue shirt.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Sergeant Holt broadcast over the radio that shots had been fired and a Taser had been deployed",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Sergeant Holt broadcasting shots fired and a Taser deployment.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "I approached the subject with Officer Trujillo, and we placed the subject in handcuffs",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about approaching the subject with Officer Trujillo and placing the subject in handcuffs.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "We immediately began rendering first aid",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that 'We immediately began rendering first aid'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "I conducted a search of the subject's person and recovered a small black semi-automatic pistol from the subject's right front waistband area",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 213.6,
+          "end_seconds": 241.7
+        }
+      ],
+      "evidence_observations": "The video shows a person being restrained on the ground by multiple individuals, including police officers, in a dark environment with flashing lights. The camera angle is low and obstructed, making it difficult to clearly see the subject's waistband area or any search being conducted. While there is audio of a medic speaking, there is no clear audio or visual confirmation of a search being performed or a pistol being recovered from the subject's waistband.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Laguna Beach Fire Department paramedics arrived at approximately 1848 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Laguna Beach Fire Department paramedics arriving at approximately 1848 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "and transported the subject to Mission Hospital in Mission Viejo, where he underwent surgery",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about transporting the subject to Mission Hospital in Mission Viejo for surgery.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "The subject survived his injuries, which included two gunshot wounds to the upper torso and one to the left forearm",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject's survival or the specific gunshot wound locations.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "Body-worn camera footage (Officer Kessler, Officer Trujillo, Sergeant Holt)",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of body-worn camera footage featuring Officer Kessler, Officer Trujillo, and Sergeant Holt.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "Patrol vehicle video recordings",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Patrol vehicle video recordings'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "One (1) Black Taser X26 and one (1) black Taser cartridge",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the presence of one Black Taser X26 and one black Taser cartridge.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-055",
+      "claim_text": "One (1) black sweatshirt",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'One (1) black sweatshirt'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-056",
+      "claim_text": "One (1) light blue t-shirt",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess the claim of 'One (1) light blue t-shirt'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-057",
+      "claim_text": "One (1) blue RBX tennis shoe",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'One (1) blue RBX tennis shoe'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-058",
+      "claim_text": "Six (6) cartridge casings, 9mm",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Six (6) cartridge casings, 9mm' in the police incident report.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-059",
+      "claim_text": "172 scene photographs",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of '172 scene photographs'. The absence of any evidence prevents verification or contradiction of the claim.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-060",
+      "claim_text": "Subject transported to Mission Hospital Mission Viejo for emergency surgery",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about subject transportation to Mission Hospital Mission Viejo for emergency surgery.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-061",
+      "claim_text": "Subject survived",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the subject survived.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-062",
+      "claim_text": "Criminal charges filed",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Criminal charges filed'.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-063",
+      "claim_text": "Scene secured for OCDA investigation",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim 'Scene secured for OCDA investigation'. The absence of evidence prevents any assessment of whether the scene was secured or contradicts this statement.",
+      "confidence": 0.95
+    }
+  ]
+}

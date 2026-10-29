@@ -1,0 +1,645 @@
+{
+  "scenario_id": "sc-016",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 234.61,
+  "total_tokens": 80735,
+  "total_api_calls": 61,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: June 24, 2020",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of the incident date being June 24, 2020.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 0103 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claimed time of incident (approximately 0103 hours).",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: 22800 block of Loumont Drive, Lake Forest, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 31.0,
+          "end_seconds": 54.5
+        }
+      ],
+      "evidence_observations": "The transcript indicates the address is 22851 Loumont, but the claim states 22800 block of Loumont Drive. The transcript also states the city is Lake Forest, which matches the claim, but the specific address number discrepancy suggests a potential conflict.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Deputy M. Calder",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the reporting officer is Deputy M. Calder.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 7831",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Badge Number 7831.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Female, approximately 25-30 years old, dressed in dark clothing",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Deputy M. Calder, Badge Number: 7831",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Deputy M. Calder's badge number.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Deputy R. Vega",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Deputy R. Vega'. The absence of any transcript content prevents verification of the claim's validity.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Deputy S. Whitfield",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Deputy S. Whitfield'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Deputy A. Navarro",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Deputy A. Navarro'. The absence of evidence prevents any assessment of support, conflict, or insufficiency.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "No witnesses were present at the scene",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that no witnesses were present at the scene.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "On June 24, 2020, at approximately 0103 hours, Orange County Communications Center received a 911 call reporting a residential burglary at 22851 Loumont Drive, Lake Forest",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 31.0,
+          "end_seconds": 54.5
+        }
+      ],
+      "evidence_observations": "The video displays text indicating a 911 call was received at 1:03 A.M. on June 24, 2020, from a cell phone reporting a break-in at 22851 Loumont, with the caller stating 'someone just broke into my house' and providing the address and street name 'Loumont' in Lake Forest.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The reporting party stated that someone had broken a rear window and entered the residence",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 157.9,
+          "end_seconds": 166.0
+        }
+      ],
+      "evidence_observations": "The transcript states the informant heard what sounded like the front window break, while the claim states someone broke a rear window and entered the residence. The audio and visual evidence points to a front window break, contradicting the claim of a rear window break.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The reporting party was a male caller who believed the intruder was still inside the home",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 59.0,
+          "end_seconds": 72.8
+        }
+      ],
+      "evidence_observations": "The transcript shows the officer repeatedly asking 'did someone come in?' and 'someone's inside your house', but the audio also contains the caller saying 'I'm not sure' when asked where the person is now. The video shows no visual confirmation of anyone inside the house.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Deputy Vega was dispatched to the call",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that Deputy Vega was dispatched to the call.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "Deputies Calder, Whitfield, and Navarro also responded",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that 'Deputies Calder, Whitfield, and Navarro also responded'.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "While en route, dispatch advised that the reporting party stated he was hiding in a bedroom closet",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 171.3,
+          "end_seconds": 177.8
+        }
+      ],
+      "evidence_observations": "The transcript states the informant's boyfriend is hiding in a closet, but the bodycam footage shows a street view at night with no visible closets or bedrooms. The footage is from a patrol vehicle driving down a residential street, showing parked cars and streetlights, which does not visually confirm or deny someone hiding in a closet.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The call was subsequently disconnected",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 176.2,
+          "end_seconds": 254.6
+        }
+      ],
+      "evidence_observations": "The video shows a patrol vehicle driving down a dark street at night. At approximately 00:48, the officer's flashlight illuminates a person standing near a tree on the side of the road. The officer then shines the light on a house. The audio transcript indicates the informant is hiding in the bathroom and the boyfriend is hiding in the closet, and states 'the line disconnected'. The video shows the officer approaching a residence, but does not show the informant in the bathroom or the boyfriend in the closet. The claim that 'the call was subsequently disconnected' is not directly contradicted by the visible content, but the audio transcript suggests the call ended while the officer was still approaching the residence, which could imply the disconnection happened before the officer arrived at the scene shown in the video.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The dispatcher's attempts to reestablish contact were unsuccessful",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether the dispatcher's attempts to reestablish contact were successful or unsuccessful.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "At approximately 0109 hours, I arrived on Loumont Drive and turned off my emergency lights",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 27.0,
+          "end_seconds": 39.6
+        }
+      ],
+      "evidence_observations": "The video shows a text-based transcript of a 911 call where the caller reports a break-in and provides an address (22851 Loumont), but there is no visual or audio evidence of a police officer arriving on Loumont Drive, turning off emergency lights, or being present at the scene during the timeframe mentioned in the claim.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "I parked directly in front of 22851 Loumont Drive and exited my vehicle",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about parking at 22851 Loumont Drive and exiting the vehicle.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Using my flashlight, I began walking eastbound along the north sidewalk toward the residence",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 157.9,
+          "end_seconds": 166.0
+        }
+      ],
+      "evidence_observations": "The video shows a person walking on a sidewalk at night, but the audio is heavily garbled and unintelligible, making it impossible to confirm or deny the specific claim about walking eastbound along the north sidewalk toward the residence.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "I heard a noise to my left and observed a female subject standing on the north sidewalk approximately 40 feet from my position",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about hearing a noise and observing a female subject on the north sidewalk.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "The subject was dressed entirely in black, including a black hooded sweatshirt with the hood pulled up",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess the claim about the subject's clothing.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "I illuminated the subject with my flashlight and immediately observed that she was holding a black semi-automatic handgun in her left hand, pointed toward the ground",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 224.8,
+          "end_seconds": 287.2
+        }
+      ],
+      "evidence_observations": "The video shows a nighttime scene with a police vehicle's flashlight illuminating a person in the distance. The person is circled and appears to be holding an object, but the low resolution and distance make it impossible to definitively identify the object as a black semi-automatic handgun. The audio contains repeated commands to 'drop the gun,' but the visual evidence is too unclear to confirm the specific details of the claim.",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "I drew my department-issued sidearm and began issuing commands",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about drawing a sidearm and issuing commands.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "I yelled, \"Drop the weapon! Let me see your hands! Get on the ground!\"",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 285.7,
+          "end_seconds": 310.9
+        }
+      ],
+      "evidence_observations": "The video shows a person standing on a sidewalk at night, illuminated by a police vehicle's spotlight. The person is holding an object, but it is not clearly identifiable as a weapon. The audio contains repeated commands to 'drop the gun' and 'drop the weapon', but also includes the phrase 'you just put your spy lights on here', suggesting the officer may have been using lights to identify the person rather than seeing a weapon. The visual evidence does not clearly confirm the presence of a weapon, creating a potential conflict with the claim that the officer yelled commands about a weapon.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The subject did not respond and remained motionless",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 162.2,
+          "end_seconds": 174.6
+        }
+      ],
+      "evidence_observations": "The video segment consists of text-based communication logs and status updates regarding a police incident, including unit numbers, informant details, and location information. There is no visible footage of a subject, nor any audio of a subject's behavior or response. The content is purely informational text screens with no visual or auditory evidence of a person being motionless or unresponsive.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "I took cover behind the sedan",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether the claim 'I took cover behind the sedan' is supported or contradicted.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "I broadcast over the radio that I had a subject at gunpoint",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 224.8,
+          "end_seconds": 287.2
+        }
+      ],
+      "evidence_observations": "The video shows a nighttime scene with a police vehicle's spotlight illuminating a person in the distance. The person appears to be standing still or moving slowly, but there is no clear visual evidence of a gun being held or pointed. The audio contains repeated commands to 'drop it' and 'drop the gun', but without clear visual confirmation of the subject holding a weapon, the claim of a 'subject at gunpoint' cannot be definitively verified or contradicted from this clip alone.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Deputy Vega arrived at approximately 0110 hours and parked approximately 20 feet behind my position",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Deputy Vega's arrival time and parking distance.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Deputy Whitfield took a position behind Deputy Vega's vehicle",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Deputy Whitfield's position relative to Deputy Vega's vehicle.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "At approximately 0111 hours, Deputy Navarro arrived and took cover position near the front of my vehicle",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Deputy Navarro's arrival time and position.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Over the following approximately ninety seconds, I repeatedly ordered the subject to drop the weapon and get on the ground",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 150.2,
+          "end_seconds": 159.4
+        }
+      ],
+      "evidence_observations": "The video shows a person standing outside a residence with their hands raised, but there is no audio of commands being given to drop a weapon or get on the ground. The audio consists of radio traffic with unit numbers and location information, not direct orders to the subject.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "The subject stood still but appeared to be scanning the area, turning her head from side to side",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess the claim about the subject's behavior.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "At no point did the subject make any verbal response to my commands or those of the other deputies",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about verbal responses.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "At approximately 0111 hours and 30 seconds, the subject abruptly raised the handgun to shoulder level with both hands and aimed it directly at my position behind the sedan",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 224.8,
+          "end_seconds": 287.2
+        }
+      ],
+      "evidence_observations": "The video shows a nighttime scene with a police vehicle's headlights illuminating a street. A person is visible in the distance, circled in red, but the footage is grainy and distant. The person appears to be standing near a vehicle, but the specific action of raising a handgun to shoulder level with both hands and aiming it directly at the officer is not clearly visible due to the low resolution and distance. The audio contains repeated commands to drop a gun, but the visual evidence does not clearly confirm the subject's actions as described in the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "I discharged my firearm five times at the subject",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 294.7,
+          "end_seconds": 365.5
+        }
+      ],
+      "evidence_observations": "The video shows a person standing near a fence at night, illuminated by a police spotlight. At 01:13, the person appears to drop an object (labeled 'Gun' with an arrow) onto the ground. The audio transcript mentions 'drop the gun' and 'put your spy lights on here', which aligns with the visual of the person dropping an object. However, the claim states 'I discharged my firearm five times', and the video/audio does not clearly show or confirm five distinct gunshots being fired. The audio contains applause and speech about 'spotlight' and 'crossfire', but no clear evidence of five separate gunshots being discharged by the officer.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Deputy Whitfield simultaneously discharged his firearm three times",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 294.7,
+          "end_seconds": 365.5
+        }
+      ],
+      "evidence_observations": "The video shows a person standing near a fence at night, illuminated by a flashlight. At 01:03, a red arrow labeled 'Gun' points to the person's hand, suggesting they are holding a firearm. However, the audio transcript indicates commands like 'drop the gun' and 'put your spy lights on here,' implying the person may not have been actively discharging the firearm at that moment. The visual evidence does not clearly show three distinct discharges of a firearm, and the audio context suggests a verbal confrontation rather than active gunfire.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "The subject fell to the ground and the weapon came to rest beside her",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject falling and the weapon's location.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "Deputies Vega and Whitfield approached the subject and secured the scene",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that Deputies Vega and Whitfield approached the subject and secured the scene.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Deputy Vega kicked the weapon away from the subject's reach",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that Deputy Vega kicked the weapon away from the subject's reach.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Upon closer inspection, the weapon appeared to be a realistic-looking semi-automatic pistol",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the weapon appearing to be a realistic-looking semi-automatic pistol.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Deputies immediately began rendering first aid",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether deputies began rendering first aid or not.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Orange County Fire Authority Engine #19 arrived at approximately 0119 hours and paramedics assumed medical care",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 294.7,
+          "end_seconds": 365.5
+        }
+      ],
+      "evidence_observations": "The video shows police officers at night with flashlights and a person on the ground. The audio contains commands like 'drop the gun' and 'put your spy lights on here', indicating a tense situation where a suspect is being ordered to surrender a weapon. The claim states that paramedics arrived and assumed medical care, but the video shows police activity with no visible paramedics or medical equipment, and the audio focuses on police commands rather than medical assistance.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "The subject was transported to Mission Hospital by ambulance",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject being transported to Mission Hospital by ambulance.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "The weapon recovered at the scene was later determined to be a Daisy 340 BB Spring Repeater Pistol, a realistic-looking replica handgun",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 224.8,
+          "end_seconds": 287.2
+        }
+      ],
+      "evidence_observations": "The video shows a nighttime scene with a police vehicle's spotlight illuminating a person in the distance. A red circle highlights the individual, and the word 'Salac' appears. The audio contains repeated commands to 'drop the gun'. However, the video quality is low, the person is distant and partially obscured by darkness and light glare, and no clear view of a weapon is visible. The audio commands suggest a weapon is present, but the visual evidence is too unclear to confirm the specific type of weapon mentioned in the claim.",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "The 911 call reporting the burglary had originated from the subject's own cell phone",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the 911 call origin.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "No burglary had actually occurred at 22851 Loumont Drive",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about whether a burglary occurred at 22851 Loumont Drive.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Patrol vehicle video recordings from responding units",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 162.2,
+          "end_seconds": 174.6
+        }
+      ],
+      "evidence_observations": "The video segment consists of text-based communication logs and status updates, not visual bodycam footage. There is no visible patrol vehicle video recording present in the provided clip.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Eight (8) cartridge casings recovered from scene",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of eight cartridge casings recovered from the scene.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "One (1) Daisy 340 BB Spring Repeater Pistol, black",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about a Daisy 340 BB Spring Repeater Pistol.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "Subject's clothing items with apparent blood",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess the claim about the subject's clothing items having apparent blood.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "Subject's cell phone",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess the claim about the subject's cell phone.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-055",
+      "claim_text": "One California Driver's License",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'One California Driver's License'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-056",
+      "claim_text": "Subject transported to Mission Hospital",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the subject was transported to Mission Hospital.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-057",
+      "claim_text": "Scene secured and processed by OCSD crime scene investigators",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the scene was secured and processed by OCSD crime scene investigators.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-058",
+      "claim_text": "OCDASAU investigators responded",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim 'OCDASAU investigators responded'. The absence of evidence means no assessment can be made.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-059",
+      "claim_text": "Deputy Signature: M. Calder",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Deputy Signature: M. Calder'. The absence of any transcript content prevents verification of the deputy's name or signature details.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-060",
+      "claim_text": "Date of Report: June 24, 2020",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of the report date being June 24, 2020.",
+      "confidence": 0.9
+    }
+  ]
+}

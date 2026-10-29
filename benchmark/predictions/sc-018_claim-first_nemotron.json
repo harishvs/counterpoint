@@ -1,0 +1,613 @@
+{
+  "scenario_id": "sc-018",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 327.76,
+  "total_tokens": 95191,
+  "total_api_calls": 53,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: January 8, 2023",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Date of Incident: January 8, 2023'. The absence of any transcript content means there is no observable data to verify or contradict the date claim.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 0846 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claimed time of incident (approximately 0846 hours).",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Warner Avenue at Red Hill Avenue, Tustin, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 204.9,
+          "end_seconds": 216.0
+        }
+      ],
+      "evidence_observations": "The transcript indicates the location is 'all the way into Tustin at the Red Hill and Warner area', which contradicts the report's claim of 'Warner Avenue at Red Hill Avenue'. The video shows a conversation about being 'right over the bridge' on the '55 freeway', suggesting the location is on a freeway, not at a specific street intersection like Warner Avenue and Red Hill Avenue.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer D. Brandt",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the reporting officer is Officer D. Brandt.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 5391",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Badge Number 5391.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Ricardo Flores, Male, 52 years old, Hispanic, grey jacket, black jeans",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Ricardo Flores' appearance (grey jacket, black jeans).",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer D. Brandt (handling officer), Officer M. Torres (backup), Officer K. Vega (less-lethal)",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Reporting Party 3 (RP-3, anonymous 9-1-1 caller)",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 52.9,
+          "end_seconds": 61.4
+        }
+      ],
+      "evidence_observations": "The video segment provided is a text slide describing the investigative process conducted by the Orange County District Attorney's Office (OCDA) Bureau of Investigation, Special Assignments Unit. It details the impartial investigation procedures, including interviewing officers, deputies, and witnesses, and reviewing evidence such as reports, photographs, and videos. There is no visual or audio content from bodycam footage or any witness testimony visible or audible in this clip.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On Sunday, January 8, 2023, at approximately 0837 hours, the Tustin Police Department received a 9-1-1 call from RP-3 regarding a male Hispanic walking westbound on Warner Avenue at Red Hill Avenue carrying a large knife in his bloody hands.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 208.3,
+          "end_seconds": 220.0
+        }
+      ],
+      "evidence_observations": "The transcript fragment discusses location details (bridge, Red Hill, Warner area) but contains no information about the time (0837 hours), date (January 8, 2023), 9-1-1 call, RP-3 caller, male Hispanic subject, walking westbound direction, or a large knife in bloody hands. It only references being 'all the way into Tustin at the Red Hill' and 'Warner area' without confirming or denying any elements of the specific claim.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I was designated as the handling officer and responded to the location.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the officer was designated as the handling officer and responded to the location.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Officer Torres was dispatched as backup.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that Officer Torres was dispatched as backup.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Upon arrival at approximately 0846 hours, I parked my patrol vehicle along the east curb of Warner Avenue north of Compass Avenue.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 150.6,
+          "end_seconds": 159.7
+        }
+      ],
+      "evidence_observations": "The video clip consists entirely of black screens with white text captions transcribing a 9-1-1 call. There is no visible footage of a police officer, a patrol vehicle, Warner Avenue, Compass Avenue, or any street scene. The audio is a transcript of a caller reporting a person walking down Warner Avenue, with no audible confirmation of the officer's arrival time, location, or actions described in the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Officer Torres parked directly in front of my vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether Officer Torres parked directly in front of the vehicle.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I exited my vehicle and drew my service weapon.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the officer exited their vehicle and drew their service weapon.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officer Torres exited his vehicle and also drew his weapon.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether Officer Torres exited his vehicle or drew his weapon.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I immediately observed the subject, later identified as Ricardo Flores, walking southbound on the west sidewalk of Warner Avenue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 150.6,
+          "end_seconds": 159.7
+        }
+      ],
+      "evidence_observations": "The video shows a black screen with white text transcribing a 9-1-1 call. The audio is a person speaking hesitantly, reporting seeing someone walking down Warner towards Red Hill from the 55 freeway. The text does not specify the direction of walking (southbound), the location (west sidewalk), or confirm the identity of the subject as Ricardo Flores. The visual content is purely text on a black background, providing no visual evidence of the subject, sidewalk, or street.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The subject was carrying a large knife with a white handle in his right hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 159.7,
+          "end_seconds": 168.2
+        }
+      ],
+      "evidence_observations": "The video consists entirely of black screens with white text captions transcribing a conversation. There is no visual footage of a person, a knife, a white handle, or any hands visible. The audio is also not provided in the transcript, only text describing speech about seeing a man with a knife.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The subject had apparent blood on his hands and clothing.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess the claim about blood on the subject's hands or clothing.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "I called out to the subject, saying \"Hey, man. Have a seat. Have a seat, Dude.\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 370.5,
+          "end_seconds": 402.8
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the officer exiting the vehicle and saying 'Hey man' followed by 'Have a seat' and 'Have a seat dude' as seen in the subtitles and audio. The officer is clearly addressing the subject in the manner described in the claim.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Officer Torres and I then walked into the northbound lanes of Warner Avenue with our handguns drawn.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 150.6,
+          "end_seconds": 159.7
+        }
+      ],
+      "evidence_observations": "The provided video clip consists solely of black screens with white text captions transcribing a 9-1-1 call. There is no visible bodycam footage, no audio of an officer speaking, and no visual evidence of Officer Torres, handguns, Warner Avenue, or northbound lanes. The text only shows the caller (Abby) describing seeing someone walking down Warner towards Red Hill from the 55 freeway.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "I continued to give verbal commands directing the subject to drop the knife and sit down.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 159.7,
+          "end_seconds": 168.2
+        }
+      ],
+      "evidence_observations": "The video consists entirely of black screens with white text captions transcribing a conversation. There is no visible footage of a police officer, a subject, a knife, or any physical interaction. The audio is not provided in the transcript, but the visual component alone shows no evidence of verbal commands being given or a subject holding a knife.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The subject did not comply with any commands and continued walking in a southwest direction into the northbound traffic lanes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 210.4,
+          "end_seconds": 223.4
+        }
+      ],
+      "evidence_observations": "The video clip provided is a black screen with white text transcript of a conversation. There is no visible footage of a subject, location, or traffic lanes. The audio consists of fragmented, unclear speech about someone walking and driving, with no clear description of compliance with commands or direction of movement.",
+      "confidence": 0.2
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "At approximately 0847 hours, Officer Vega arrived on scene and was assigned less-lethal coverage.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer Vega's arrival time and assignment.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Officer Vega parked in the southbound number one lane and drew his service handgun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether Officer Vega parked in the southbound number one lane or drew his service handgun.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "He then holstered his handgun and deployed his Taser.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about holstering a handgun and deploying a Taser.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Officer Vega began walking parallel to the subject at a distance of approximately 30 feet.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 146.8,
+          "end_seconds": 157.0
+        }
+      ],
+      "evidence_observations": "The provided video segment consists entirely of black screens with white text captions transcribing a 9-1-1 call. There is no visible bodycam footage showing Officer Vega, a subject, or any physical scene. The audio is not provided, only the text of the caller's speech which describes seeing someone walking down Warner towards Red Hill from the 55 freeway. The claim about Officer Vega walking parallel to a subject at 30 feet cannot be verified as the relevant visual evidence is absent.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "At approximately 0847:10 hours, Officer Torres and I continued issuing commands including \"Drop the knife,\" \"Don't come towards us,\" and \"Back up, back up.\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 402.8,
+          "end_seconds": 424.4
+        }
+      ],
+      "evidence_observations": "The bodycam video shows Officer Torres issuing the command 'Drop the knife' multiple times between 00:02 and 00:06, and issuing 'Don't come towards us' and 'Back up, back up' commands between 00:09 and 00:12, which directly matches the claim.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The subject stopped walking and appeared to look directly at Officer Torres.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 146.8,
+          "end_seconds": 157.0
+        }
+      ],
+      "evidence_observations": "The video clip provided is a black screen with white text transcribing a 9-1-1 call. The audio is a person speaking hesitantly, reporting that they saw someone walking down Warner towards Red Hill from the 55 freeway. The transcript does not mention Officer Torres, nor does it describe the subject stopping walking or looking directly at an officer. The visual component of the clip is non-existent as it is a text-only transcript on a black background.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "Without warning, the subject turned and sprinted directly toward me from a distance of approximately 32 feet, raising the knife above his head in an overhead stabbing motion.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.1,
+          "end_seconds": 420.2
+        }
+      ],
+      "evidence_observations": "The video shows the subject initially standing at a distance, then running away from the officers before turning and falling to the ground. The subject does not sprint directly toward the officer from 32 feet away in an overhead stabbing motion as claimed. Instead, the subject runs away, stops, and then falls while the officers shout commands to drop the knife.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Officer Vega attempted to deploy his Taser but was unable to get a clear shot due to the subject's sudden movement.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 464.9,
+          "end_seconds": 482.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject running towards the officer and then falling to the ground. The officer is seen drawing his gun and pointing it at the subject, not attempting to deploy a Taser. The audio indicates the officer is shouting commands to drop the knife and not come towards them, which contradicts the claim that the officer attempted to deploy a Taser.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Fearing for my life and the life of Officer Torres, I discharged my firearm five times at the subject.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 350.9,
+          "end_seconds": 372.4
+        }
+      ],
+      "evidence_observations": "The video shows a subject running down a road, then falling to the ground. The audio transcript indicates '220 shots fired' and '222. 998 subject down', suggesting multiple shots were fired after the subject was down. The claim states the officer discharged his firearm five times, which contradicts the audio evidence of over 200 shots being fired.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Officer Torres simultaneously discharged his firearm five times.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 350.9,
+          "end_seconds": 372.4
+        }
+      ],
+      "evidence_observations": "The video shows a single officer (Officer Newman) firing multiple shots at a subject who is already down on the road. The audio transcript indicates '220 shots fired' and '222. 998 subject down', suggesting a prolonged exchange of fire rather than a simultaneous discharge of five rounds by one officer. The claim states Officer Torres discharged his firearm five times simultaneously, which contradicts the observed continuous firing sequence and the presence of only one officer actively engaging the subject in the visible footage.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "The subject fell to the asphalt in the number one lane of northbound Warner Avenue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 150.6,
+          "end_seconds": 159.7
+        }
+      ],
+      "evidence_observations": "The video clip provided is a black screen with white text transcript of a 9-1-1 call. There is no visual footage of the street, the number one lane of northbound Warner Avenue, or any subject falling to the asphalt. The audio consists only of the caller's voice describing what they saw, with no corresponding visual evidence shown in this specific segment.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The entire sequence from the subject's charge to the final shot lasted approximately four seconds.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 68.9,
+          "end_seconds": 77.3
+        }
+      ],
+      "evidence_observations": "The video segment provided is a static text slide with no visual or audio content depicting a police incident, bodycam footage, or any sequence of events. Therefore, it is impossible to assess the duration of any sequence from a subject's charge to a final shot.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "After the subject fell, I observed the knife was still in his right hand.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 159.7,
+          "end_seconds": 168.2
+        }
+      ],
+      "evidence_observations": "The video segment consists entirely of black screens with white text captions transcribing a conversation. There is no visible bodycam footage, no subject, no knife, and no fall depicted in the visual component. The audio is not provided in the transcript, only text.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Officer Vega approached and secured the knife at approximately 0847:44 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 159.7,
+          "end_seconds": 168.2
+        }
+      ],
+      "evidence_observations": "The video clip consists entirely of black screens with white text captions transcribing a conversation. There is no visible bodycam footage, no officer, no knife, and no timestamp of 0847:44 hours visible or audible in this segment.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Officer Torres and I holstered our weapons, approached the subject, and began rendering medical aid at approximately 0847:50 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer Torres and the subject holstering weapons, approaching, and rendering medical aid at 0847:50 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "I initiated Cardiopulmonary Resuscitation (CPR) at approximately 0848:39 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of initiating CPR at 0848:39 hours.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Orange County Fire Authority paramedics arrived at approximately 0853 hours and assumed patient care.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 38.7,
+          "end_seconds": 46.1
+        }
+      ],
+      "evidence_observations": "The video segment provided contains only text describing the Orange County District Attorney's Office conducting an independent investigation. There is no visual or audio evidence of paramedics, fire authority personnel, patient care, or the specific time of 0853 hours mentioned in the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Life-saving measures were discontinued at approximately 0916 hours due to obvious signs of death.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about life-saving measures being discontinued at 0916 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "A welfare check was subsequently conducted at the subject's last known residence.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 47.8,
+          "end_seconds": 55.7
+        }
+      ],
+      "evidence_observations": "The video segment shows a black screen with white text describing the Orange County District Attorney's Office (OCDA) conducting investigations into officer-involved shootings and custodial deaths. The text details that these investigations are conducted by the OCDA Bureau of Investigation, Special Assignments Unit, involving interviews with officers, deputies, and witnesses, and review of evidence, reports, photographs, and videos. There is no visual or audio content showing a welfare check being conducted at a residence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "No injured parties were found at the location.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that no injured parties were found at the location.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Subject pronounced deceased on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the subject was pronounced deceased on scene.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Scene secured for OCDA investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 38.7,
+          "end_seconds": 46.2
+        }
+      ],
+      "evidence_observations": "The video shows a black screen with white text describing the Orange County District Attorney's Office conducting an independent investigation, followed by a black and white image of a crime scene with police tape and officers. There is no visual or audio evidence of the scene being secured.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Welfare check conducted at subject's residence with negative results.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 47.8,
+          "end_seconds": 55.7
+        }
+      ],
+      "evidence_observations": "The video segment shows a black screen with white text describing the Orange County District Attorney's Office (OCDA) conducting investigations into officer-involved shootings and custodial deaths. There is no visible bodycam footage, audio, or scene depicting a welfare check at a residence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Body-worn camera footage (Officers Brandt, Torres, and Vega)",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 96.4,
+          "end_seconds": 109.0
+        }
+      ],
+      "evidence_observations": "The video clip provided is a static slide with text about the legal review process and does not contain any bodycam footage or audio to verify the claim about officers Brandt, Torres, and Vega.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Ten (10) cartridge cases, WIN 9MM LUGER",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Ten (10) cartridge cases, WIN 9MM LUGER'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "One (1) large kitchen knife with white handle",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 159.7,
+          "end_seconds": 168.2
+        }
+      ],
+      "evidence_observations": "The video consists entirely of black screens with white text captions transcribing a conversation. There is no visual footage of a person, a street, a knife, or any physical evidence. The audio is also not provided in the transcript, only text, so the visual and auditory evidence described in the claim cannot be verified.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "One (1) black baseball cap containing a bullet",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'One (1) black baseball cap containing a bullet'. The absence of evidence prevents verification or contradiction of the claim.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Clothing items from the subject",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about 'Clothing items from the subject'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Officer Signature: D. Brandt",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Officer Signature: D. Brandt.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "Date of Report: January 8, 2023",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of the report date being January 8, 2023.",
+      "confidence": 0.95
+    }
+  ]
+}

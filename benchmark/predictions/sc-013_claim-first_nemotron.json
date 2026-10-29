@@ -1,0 +1,9 @@
+{
+  "scenario_id": "sc-013",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 49.33,
+  "total_tokens": 10399,
+  "total_api_calls": 1,
+  "claims": []
+}

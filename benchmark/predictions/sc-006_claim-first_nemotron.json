@@ -1,0 +1,478 @@
+{
+  "scenario_id": "sc-006",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 366.58,
+  "total_tokens": 35378,
+  "total_api_calls": 48,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-006",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 301.0,
+          "end_seconds": 432.9
+        }
+      ],
+      "evidence_observations": "The evidence transcript contains fragmented audio including 'move left', 'Music', 'you understand me', 'can you take Monon', 'the numbers I see', 'just two hands on top of his head', and 'guys before'. There is no observable content related to 'Case Number: SC-006'. The claim is a case identifier while the evidence is audio fragments with no visible or audible reference to this specific case number.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: November 13, 2020",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of the incident date being November 13, 2020.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 1615\u20131740 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claimed time of incident (1615\u20131740 hours).",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: 7900 block of Adams Way, Anaheim, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Location: 7900 block of Adams Way, Anaheim, CA'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer K. Nassiri",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the reporting officer is Officer K. Nassiri.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 3841",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 301.0,
+          "end_seconds": 432.9
+        }
+      ],
+      "evidence_observations": "The evidence transcript contains fragmented audio about 'two hands on top of his head' and movement instructions, with no clear reference to badge numbers or numerical identifiers like '3841'. The content appears to describe physical positioning rather than specific identification details.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Diego Renteria, Male, 22 years old, Hispanic, shaved head, black jacket with white stripes, black shorts",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Officer K. Nassiri, Officer D. Montoya",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer(s) in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "APD helicopter \"Angel\" responded",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that APD helicopter \"Angel\" responded.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Multiple APD units responded",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim 'Multiple APD units responded'. The absence of evidence means no assessment can be made regarding the presence or absence of multiple units.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "At approximately 1619 hours, APD Officer Dahl arrived at the 7-Eleven",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer Dahl's arrival time at the 7-Eleven.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "A male matching the suspect description walking on Lincoln Avenue just north of the parking lot",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about a male matching the suspect description walking on Lincoln Avenue just north of the parking lot.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The subject, later identified as Diego Renteria, immediately fled southbound on foot upon seeing Officer Dahl",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Diego Renteria fleeing southbound upon seeing Officer Dahl.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The subject was observed entering the Walmart parking lot",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether the subject entered the Walmart parking lot.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officer Dahl broadcast a description of the subject: a Hispanic male with a shaved head, wearing a black jacket with white stripes on the sleeves and black shorts",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "At approximately 1629 hours, Officer T. Ross and Officer A. Gutierrez observed the subject walking eastbound on Adams Way near Grand Avenue",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer T. Ross and Officer A. Gutierrez observing the subject walking eastbound on Adams Way near Grand Avenue at approximately 1629 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "Upon seeing the officers, the subject fled on foot and jumped a wall into the yard of a residence at 7944 Adams Way",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 345.2,
+          "end_seconds": 437.2
+        }
+      ],
+      "evidence_observations": "The evidence transcript contains fragmented audio about a person having 'two hands on top of his head' and 'jumped over his waistband,' but provides no observable details about the subject fleeing on foot, jumping a wall, or entering a residence at 7944 Adams Way. The described actions (hands on head, waistband jump) do not directly confirm or deny the specific claim about fleeing and jumping a wall into a yard.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The APD helicopter \"Angel\" responded and began establishing an aerial perimeter",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the APD helicopter \"Angel\" responding and establishing an aerial perimeter.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "Additional units set up a ground perimeter",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about additional units setting up a ground perimeter.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "At approximately 1656 hours, APD Sgt. J. Harmon distributed a wanted flyer identifying the subject as Renteria, who was wanted by the Buena Park Police Department in connection with a residential burglary in which a firearm was stolen",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police report.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "The flyer cautioned that the subject should be considered armed and dangerous",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the flyer cautioning that the subject should be considered armed and dangerous.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Officer Montoya and I were assigned to maintain a perimeter position in the backyard of 7914 Adams, approximately three houses east of 7896 Adams, where the subject had been seen entering",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer Montoya and the perimeter position at 7914 Adams.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Beginning at approximately 1700 hours, officers within the helicopter made repeated public address announcements in English and Spanish, directing the subject to exit the residence at 7896 Adams with his hands raised",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 44.5,
+          "end_seconds": 52.2
+        }
+      ],
+      "evidence_observations": "The video segment provided contains only text describing the Orange County District Attorney's Office conducting investigations into officer-involved shootings and custodial deaths. There is no visible footage of a helicopter, officers making public address announcements, a subject exiting a residence, or any audio of such announcements. The content is purely textual and does not depict the scene described in the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "The subject was observed through the windows walking up and down the stairs but made no effort to comply",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "At approximately 1737 hours, I observed the subject exit from the front door of 7896 Adams",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject exiting from the front door of 7896 Adams at approximately 1737 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "The subject walked directly toward our position in the backyard of 7914 Adams",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 234.2,
+          "end_seconds": 317.2
+        }
+      ],
+      "evidence_observations": "The evidence contains audio of commands to move left and music, but no observable description of the subject's direction of movement or location relative to the officers' position in the backyard.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "There was adequate ambient lighting from nearby streetlights, and I was able to clearly see the subject's hands and movements as he approached",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to evaluate the claim about ambient lighting or visibility of the subject's hands and movements.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The subject was carrying an object in his right hand that I believed to be a dark-colored handgun",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject carrying a dark-colored handgun in his right hand.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "Upon the subject entering the backyard, Officer Montoya and I immediately ordered the subject to stop and show us his hands",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer Montoya and the narrator ordering the subject to stop and show his hands upon entering the backyard.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The subject stopped approximately 20 feet from our position, raised both hands above his head, and then suddenly lowered his right hand toward his waistband",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 234.2,
+          "end_seconds": 317.2
+        }
+      ],
+      "evidence_observations": "The evidence consists of audio commands ('move left') and music/applause with no visual description of the subject's position, hand movements, or distance from the officers. There is no observable content confirming or contradicting the subject stopping 20 feet away, raising hands, or lowering a hand toward his waistband.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Believing the subject was reaching for a weapon, I discharged my firearm four times at the subject's center mass",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "The subject fell to the ground",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Officer Montoya and I approached and handcuffed the subject",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that Officer Montoya and the reporting officer approached and handcuffed the subject.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "I observed the subject had sustained gunshot wounds to his upper torso and right arm",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about gunshot wounds to the upper torso and right arm.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "A tourniquet and medical bandages were applied",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether a tourniquet or medical bandages were applied.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "At approximately 1743 hours, paramedics arrived and transported the subject to UCI Medical Center where he underwent surgery and survived",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about paramedics arriving at 1743 hours, transporting the subject to UCI Medical Center, and the subject undergoing surgery and surviving.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "A search of the immediate area revealed a black semi-automatic handgun on the ground approximately three feet from where the subject fell, consistent with the subject having dropped the weapon when he was shot",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about a black semi-automatic handgun found on the ground near where the subject fell.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Body-worn camera footage (Officer Nassiri, Officer Montoya)",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 99.2,
+          "end_seconds": 109.7
+        }
+      ],
+      "evidence_observations": "The video segment provided is a static slide with text about legal review processes and website links. It does not contain any bodycam footage, audio, or visual evidence of Officer Nassiri or Officer Montoya, nor does it show any police incident. The text mentions 'relevant video footage' but the clip itself is a presentation slide, not the footage referenced.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Four (4) cartridge cases, Winchester 45 Auto",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Four (4) cartridge cases, Winchester 45 Auto'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "One (1) Adidas tennis shoe",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'One (1) Adidas tennis shoe'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "One (1) pair black shorts",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'One (1) pair black shorts'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "One (1) cellphone",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'One (1) cellphone'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Crime scene photographs (191)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 57.8,
+          "end_seconds": 65.8
+        }
+      ],
+      "evidence_observations": "The video shows a black screen with white text describing the investigation process by the Orange County District Attorney's Office. There is no visible crime scene, no photographs being taken, and no indication of 191 crime scene photographs being present or referenced in the visual content.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Subject transported to UCIMC, underwent surgery, survived",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the subject was transported to UCIMC, underwent surgery, and survived.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Scene secured for investigation by OCDASAU",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 38.6,
+          "end_seconds": 46.7
+        }
+      ],
+      "evidence_observations": "The video segment shows a black screen with white text describing the Orange County District Attorney's Office conducting an independent investigation. There is no visible scene being secured, no police tape, no officers, and no indication of an active investigation scene in the provided clip.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Officer Signature: K. Nassiri",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Officer Signature: K. Nassiri'. The absence of evidence prevents any assessment of whether the claim is supported, contradicted, or ambiguous.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Date of Report: November 14, 2020",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of the report date being November 14, 2020.",
+      "confidence": 0.95
+    }
+  ]
+}
