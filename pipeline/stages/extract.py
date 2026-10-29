@@ -54,12 +54,16 @@ def extract_claims(report_path: Path, adapter: ModelAdapter) -> list[ExtractedCl
     prompt = EXTRACT_PROMPT.format(report_text=report_text)
     result = adapter.complete_structured(prompt, EXTRACT_SCHEMA)
 
+    if "error" in result:
+        print(f"    WARNING: extract parse failed, returning empty claims")
+        return []
+
     claims = []
     for i, raw in enumerate(result.get("claims", []), start=1):
         claims.append(ExtractedClaim(
             claim_id=f"cl-{i:03d}",
-            claim_text=raw["claim_text"],
-            report_location=raw["report_location"],
+            claim_text=raw.get("claim_text", ""),
+            report_location=raw.get("report_location", ""),
             claim_type=raw.get("claim_type"),
         ))
     return claims

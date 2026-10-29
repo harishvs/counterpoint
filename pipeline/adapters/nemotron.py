@@ -39,7 +39,7 @@ class NemotronAdapter(ModelAdapter):
         response = self._client.chat.completions.create(
             model=self._model_name,
             messages=[{"role": "user", "content": content}],
-            max_tokens=4096,
+            max_tokens=8192,
             temperature=1.0,
             extra_body={
                 "top_k": 1,
@@ -68,12 +68,24 @@ class NemotronAdapter(ModelAdapter):
     @staticmethod
     def _parse_json(text: str) -> dict:
         text = text.strip()
+        if "<think>" in text:
+            text = text.split("</think>")[-1].strip()
         if text.startswith("```"):
             text = text.split("\n", 1)[1] if "\n" in text else text[3:]
         if text.endswith("```"):
             text = text[:-3].strip()
         text = re.sub(r",\s*([}\]])", r"\1", text)
-        return json.loads(text)
+        try:
+            return json.loads(text)
+        except json.JSONDecodeError:
+            match = re.search(r"\{[\s\S]*\}", text)
+            if match:
+                try:
+                    cleaned = re.sub(r",\s*([}\]])", r"\1", match.group())
+                    return json.loads(cleaned)
+                except json.JSONDecodeError:
+                    pass
+            return {"error": "json_parse_failed", "raw": text[:200]}
 
     def _build_content(self, prompt: str, media: list[Path] | None) -> list[dict]:
         content = []
