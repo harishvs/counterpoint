@@ -392,7 +392,7 @@ def main():
 
     if args.out:
         args.out.mkdir(parents=True, exist_ok=True)
-        model = scenario_results[0].get("model", "unknown")
+        model = scenario_results[0].get("model", "unknown").replace("/", "_")
         pipeline = scenario_results[0].get("pipeline", "unknown")
         ts = datetime.now().strftime("%Y%m%d_%H%M%S")
         out_path = args.out / f"{model}_{pipeline}_{ts}.json"
