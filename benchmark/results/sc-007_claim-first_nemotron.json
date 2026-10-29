@@ -1,0 +1,593 @@
+{
+  "scenario_id": "sc-007",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 431.05,
+  "total_tokens": 84717,
+  "total_api_calls": 53,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: December 24, 2022",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of the incident date being December 24, 2022.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 0051 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claimed time of incident (approximately 0051 hours).",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: 9200 block of Bolsa Avenue, Westminster, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Location: 9200 block of Bolsa Avenue, Westminster, CA'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer M. Pham",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the reporting officer is Officer M. Pham.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 5839",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Badge Number 5839.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Vinh Tran, Male, 30 years old, Asian, gray jacket, blue jeans",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Vinh Tran's appearance (gray jacket, blue jeans).",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer M. Pham, Officer R. Kessler, Officer W. Blake",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Officer(s): Officer M. Pham, Officer R. Kessler, Officer W. Blake.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): John Doe 1 (business owner / reporting party)",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 53.4,
+          "end_seconds": 61.9
+        }
+      ],
+      "evidence_observations": "The video segment provided is a text slide describing the investigative process conducted by the Orange County District Attorney's Office (OCDA) Bureau of Investigation, Special Assignments Unit. It details the steps taken during an impartial investigation, including interviewing officers, deputies, and witnesses, and reviewing evidence such as reports, photographs, and videos. The clip does not contain any visual or audio evidence of a witness named John Doe, nor does it show a business owner or any reporting party. The content is purely informational text and does not depict the actual scene or individuals involved in the incident.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On December 24, 2022, I was on duty wearing a Westminster Police Department long-sleeved utility uniform with WPD identification patches and a black tactical vest with \"POLICE\" markings.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the officer's uniform, patches, or tactical vest on December 24, 2022.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I had a Body Worn Camera mounted on the front of my tactical vest.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess the claim about the Body Worn Camera being mounted on the front of the tactical vest.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "At approximately 0044 hours, I was dispatched to Imperial - Health & Beauty, a business located at 9196 Bolsa Avenue, regarding a reported vandalism.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 84.0,
+          "end_seconds": 92.2
+        }
+      ],
+      "evidence_observations": "The video segment provided is a static text slide with no visual or audio content related to a police incident report, bodycam footage, or the location mentioned in the claim. It contains only text describing a legal review process.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I arrived on scene at approximately 0051 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of arrival time.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Upon arrival, I met with the reporting party, John Doe 1, who advised me that a male subject wearing a gray shirt had used a wooden baseball bat to repeatedly strike the front of the business and an exterior surveillance camera.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police report.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "John Doe 1 showed me surveillance camera footage on his cell phone depicting the incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 98.1,
+          "end_seconds": 109.4
+        }
+      ],
+      "evidence_observations": "The video shows a black screen with white text describing the legal review process and a URL. There is no visible surveillance camera footage on a cell phone, nor is there any audio of a person speaking about showing such footage.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The footage captured a male wearing a gray jacket and blue jeans striking the camera with a white-colored stick or pole.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 98.1,
+          "end_seconds": 109.4
+        }
+      ],
+      "evidence_observations": "The video segment provided is a static slide with text about legal review processes and website links. There is no bodycam footage visible in this clip to assess the claim about a male in a gray jacket and blue jeans striking a camera with a white stick or pole.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "John Doe 1 informed me that the subject was likely still in the area.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that 'John Doe 1 informed me that the subject was likely still in the area.'",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "At approximately 0054 hours, I began an area check.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about beginning an area check at 0054 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "At approximately 0056 hours, I observed a male matching the description in the south alley of 9262 Bolsa Avenue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about observing a male in the south alley of 9262 Bolsa Avenue at 0056 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The subject, later identified as Vinh Tran, was wearing a gray jacket and blue jeans and was carrying a long pole in his left hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to verify or contradict the claim about Vinh Tran's clothing or the long pole.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "The subject matched the individual observed in the surveillance footage.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 98.1,
+          "end_seconds": 109.4
+        }
+      ],
+      "evidence_observations": "The video clip provided is a static slide with text about legal review processes and website links. There is no bodycam footage or audio content visible or audible in the provided segment to evaluate the claim about surveillance footage matching a subject.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "I exited my patrol vehicle and made contact with the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether the officer exited their patrol vehicle or made contact with the subject.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "I identified myself as a police officer and repeatedly commanded the subject to stop, drop the pole, and sit down.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 113.2,
+          "end_seconds": 187.1
+        }
+      ],
+      "evidence_observations": "The video shows the officer shouting 'Stop' and 'Sit down' multiple times, but the subject is seen walking away and refusing to comply. The officer states 'I'll be out with a subject, walking away from me,' indicating the subject was not stopped immediately. The subject is holding a long object (pole) and does not drop it as commanded.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "The subject immediately complied by stopping and placing the pole on the ground, but then quickly picked it up again and began walking westbound away from me.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 178.8,
+          "end_seconds": 194.8
+        }
+      ],
+      "evidence_observations": "The video shows the subject walking away from the officer while holding a pole, but there is no clear visual evidence that the subject stopped, placed the pole on the ground, and then picked it up again. The audio indicates the officer is speaking about the subject walking away, but does not confirm the specific actions described in the claim.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "I drew my TASER Electronic Control Weapon and followed the subject on foot.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 254.5,
+          "end_seconds": 276.7
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the officer holding a TASER device (visible in the first frame with the red dot sight) and following the subject on foot through a foggy parking lot and onto the sidewalk, while audio commands the subject to stop and drop a pipe.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "At approximately 0057 hours, I holstered my TASER and transitioned to my service weapon as the subject continued to ignore my commands.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 254.5,
+          "end_seconds": 276.7
+        }
+      ],
+      "evidence_observations": "The video shows the officer holding a firearm with a red dot sight, not holstering a TASER. The officer is shouting commands to drop a pipe and get their taser out, indicating the subject is still in possession of the pipe and the officer is escalating, not transitioning to a service weapon after holstering a TASER.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "At approximately 0058 hours, Officer Kessler arrived on scene and joined me.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer Kessler's arrival time at 0058 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Together we followed the subject westbound on the south sidewalk of Bolsa Avenue.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 265.4,
+          "end_seconds": 289.6
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the officer following a subject on the south sidewalk. The officer states 'Continuing walking, south sidewalk' and 'Bolsa, westbound', which directly aligns with the claim that they followed the subject westbound on the south sidewalk of Bolsa Avenue.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "Officer Kessler spoke to the subject only in English.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 273.3,
+          "end_seconds": 293.8
+        }
+      ],
+      "evidence_observations": "The bodycam audio shows Officer Doan speaking to the subject in English ('Stop!', 'Do you understand English?', 'I don't want to talk to you man'), while the transcript indicates Officer Kessler spoke to the subject only in English. The video shows Officer Doan as the primary speaker interacting with the subject, not Officer Kessler, suggesting a potential conflict between the report's claim about Officer Kessler and the actual speaker in the video.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject continued walking and became increasingly argumentative.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 178.8,
+          "end_seconds": 194.8
+        }
+      ],
+      "evidence_observations": "The video shows the subject walking away from the officer while holding a white cane, and the officer's audio states 'I'll be out with a subject, walking away from me.' The claim states the subject 'continued walking and became increasingly argumentative,' but the audio transcript shows the officer repeatedly saying 'stop' and 'sit down,' indicating the subject was not argumentative but rather being instructed to stop and sit. The visual evidence of walking away contradicts the claim of argumentative behavior.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "While walking, the subject struck a fire hydrant on the south sidewalk of 9200 Bolsa with the metal pole, producing a loud noise.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 265.4,
+          "end_seconds": 289.6
+        }
+      ],
+      "evidence_observations": "The video shows a person walking on the sidewalk in foggy conditions, but there is no visible fire hydrant or metal pole being struck. The audio contains commands to 'drop the pipe' and 'get your taser out', but no description of striking a hydrant or producing a loud noise is evident in the clip.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "At approximately 0059 hours, the subject turned and began walking southbound across all traffic lanes of Bolsa Avenue.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 311.5,
+          "end_seconds": 332.8
+        }
+      ],
+      "evidence_observations": "The video shows the subject walking northbound across the street, as stated by Officer Doan in the transcript ('we're walking uh North Fountain across BSA'). The claim states the subject turned and began walking southbound, which directly contradicts the audio evidence of walking northbound.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "The subject reached the south side of Bolsa Avenue and continued westbound.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 337.2,
+          "end_seconds": 358.6
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the officer moving along a street at night in foggy conditions. The officer states 'Continuing westbound' and 'Approaching Cathay Bank', indicating movement along the street. The visual shows the officer moving forward on the sidewalk/street area, consistent with continuing westbound.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "At approximately 0100 hours, Officer Blake arrived and joined Officer Kessler and me.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer Blake's arrival time and presence with Officers Kessler and the reporting officer.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The subject entered the shopping center parking lot at 9081-9113 Bolsa Avenue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject entering the shopping center parking lot at 9081-9113 Bolsa Avenue.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Once in the parking lot, the subject's demeanor changed from non-compliant to aggressive.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject's demeanor changing from non-compliant to aggressive in the parking lot.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "The subject partially turned toward us while swinging the pole loosely around his waist.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 61.9,
+          "end_seconds": 71.0
+        }
+      ],
+      "evidence_observations": "The video segment provided is a text slide describing the investigative process and does not contain any bodycam footage or audio to assess the claim about a subject turning and swinging a pole.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "I instructed Officer Kessler to deploy his TASER.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 254.5,
+          "end_seconds": 276.7
+        }
+      ],
+      "evidence_observations": "The video shows Officer Doan instructing the individual to 'drop the pipe' and 'get your taser out', but there is no audio or visual evidence of Officer Kessler being instructed to deploy his TASER. The claim states 'I instructed Officer Kessler to deploy his TASER', which is not supported by the visible commands given by Officer Doan.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "At approximately 0100:49 hours, the subject stopped, turned fully toward us, grabbed the pole with both hands, and raised it above his head in an overhead striking position.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 61.9,
+          "end_seconds": 71.0
+        }
+      ],
+      "evidence_observations": "The video segment provided is a text slide describing the investigative process conducted by the Orange County District Attorney's Office. It contains no visual or audio content from bodycam footage, making it impossible to verify the specific actions described in the claim (subject stopping, turning, grabbing a pole, raising it overhead).",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "The subject then charged directly toward Officer Kessler, who was closest to the subject.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Fearing for the safety of Officer Kessler and Officer Blake, I discharged my firearm three times at the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "Simultaneously, Officer Kessler deployed his TASER.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 254.5,
+          "end_seconds": 276.7
+        }
+      ],
+      "evidence_observations": "The video shows an officer (Officer Doan) approaching a person on a sidewalk in foggy conditions. The officer repeatedly commands the person to stop and drop a pipe. At 00:19, Officer Doan says 'Get your taser out,' but there is no visual confirmation of a TASER being deployed by Officer Kessler or anyone else in the clip. The audio transcript mentions 'get your taser' multiple times, but the visual evidence does not show a TASER deployment by Officer Kessler.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "The subject immediately dropped the pole and fell to the ground.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 742.4,
+          "end_seconds": 808.1
+        }
+      ],
+      "evidence_observations": "The transcript segment contains fragmented audio with phrases like 'get on the ground' but no clear description of the subject dropping a pole or falling. The timestamps (12:22-13:28) suggest a continuous audio clip without visual confirmation of the alleged action.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Officers moved in and handcuffed the subject, who remained conscious.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "We immediately began rendering medical aid.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that medical aid was immediately rendered.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Orange County Fire Authority paramedics arrived at approximately 0107 hours and assumed patient care.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 29.0,
+          "end_seconds": 44.2
+        }
+      ],
+      "evidence_observations": "The video segment provided only contains introductory text about the Orange County District Attorney's Office conducting investigations. There is no bodycam footage, audio, or visual evidence of paramedics, patient care, or any incident scene visible or audible in this clip.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "The subject was transported to the University of California, Irvine Medical Center for treatment of his injuries.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject being transported to University of California, Irvine Medical Center.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "The subject survived.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that 'The subject survived.'",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Orange County Fire Authority paramedics arrived at approximately 0107 hours and assumed patient care.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 29.0,
+          "end_seconds": 44.2
+        }
+      ],
+      "evidence_observations": "The video segment provided only contains introductory text about the Orange County District Attorney's Office conducting investigations. It does not show any bodycam footage, paramedics, or the incident scene described in the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "The subject was transported to the University of California, Irvine Medical Center for treatment of his injuries.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject being transported to UC Irvine Medical Center.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "The subject survived.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that 'The subject survived.'",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Subject transported to UCI Medical Center, survived surgery.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the subject was transported to UCI Medical Center and survived surgery.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "Scene secured for OCDA investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 29.0,
+          "end_seconds": 46.6
+        }
+      ],
+      "evidence_observations": "The video shows a black screen with white text describing the OCDA investigation process, but no visual evidence of a scene being secured, police tape, or any physical indication that the incident location is secured for investigation.",
+      "confidence": 0.8
+    }
+  ]
+}

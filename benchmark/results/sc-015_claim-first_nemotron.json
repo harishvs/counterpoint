@@ -1,0 +1,526 @@
+{
+  "scenario_id": "sc-015",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 438.02,
+  "total_tokens": 49197,
+  "total_api_calls": 50,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: September 3, 2021",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of the incident date being September 3, 2021.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 1350\u20131408 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claimed time of incident (1350\u20131408 hours).",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Orangethorpe Avenue to Buena Park Unified School District parking lot, Buena Park, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 38.6,
+          "end_seconds": 46.3
+        }
+      ],
+      "evidence_observations": "The video segment provided is a text slide explaining the investigative process of the Orange County District Attorney's Office. It does not contain any visual or audio evidence of the location mentioned in the claim (Orangethorpe Avenue to Buena Park Unified School District parking lot). The text describes the investigation process but does not confirm or deny the specific location details.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Detective M. Castellano",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the reporting officer is Detective M. Castellano.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 5839",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Badge Number 5839.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Raymond Givens, Male, 61 years old, Black",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Raymond Givens' age, gender, or race.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Detective M. Castellano, Officer K. Nakamura, Officer E. Fuentes",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Victim(s): Linda Torres (W-1), school bus driver; one 6-year-old child passenger",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 482.0,
+          "end_seconds": 585.4
+        }
+      ],
+      "evidence_observations": "The evidence transcript contains repeated phrases about people being back in the school and instructions to stand by, but provides no information about victims, their identities, ages, or roles such as school bus driver. There is no mention of Linda Torres or a 6-year-old child passenger.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On September 3, 2021, I was working a special assignment as a detective with the Community Impact Team.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 49.9,
+          "end_seconds": 57.4
+        }
+      ],
+      "evidence_observations": "The video shows a black screen with white text describing the Orange County District Attorney's Office (OCDA) investigation process. There is no audio or visual evidence of a person speaking, a detective, a Community Impact Team, or any details about a date (September 3, 2021) or assignment. The text on screen is unrelated to the specific claim about a detective's assignment on a specific date.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "At approximately 1359 hours, I monitored a radio broadcast that an armed individual had discharged a firearm at a school bus on Orangethorpe Avenue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 388.3,
+          "end_seconds": 526.6
+        }
+      ],
+      "evidence_observations": "The evidence transcript contains audio of people speaking about returning to the school area and mentions 'we got people back here in the school', but provides no information about a firearm discharge, an armed individual, a school bus, Orangethorpe Avenue, or any radio broadcast at 1359 hours. The content is unrelated to the specific claim in the report.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I was on the far north side of the city at the time of the broadcast.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the speaker's location during the broadcast.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I activated my emergency lights and responded to the area.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about activating emergency lights and responding to the area.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Upon arrival in the area, I observed a grey Chevrolet Suburban being pursued southbound by Officer Fuentes, who had his marked unit's emergency lights and sirens activated.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I joined the pursuit and, due to damage to Officer Fuentes's vehicle from a prior attempted vehicle stop, I assumed the lead position.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about joining the pursuit and assuming the lead position due to vehicle damage.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "At the time I became lead vehicle, the subject had been pursued with continuously activated lights and sirens for over seven minutes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the duration of pursuit with activated lights and sirens.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "At approximately 1407 hours, the subject turned into the Buena Park Unified School District Office parking lot, driving through the closed entry gate and dislodging it from its hinges.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 38.6,
+          "end_seconds": 46.3
+        }
+      ],
+      "evidence_observations": "The video clip provided is a static text slide explaining the investigative process of the Orange County District Attorney's Office. It contains no visual or audio content showing a vehicle, a parking lot, a school district office, a gate, or any incident occurring at 1407 hours. Therefore, the video does not show or describe the events claimed in the report.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "I followed the subject into the parking lot.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether the claim 'I followed the subject into the parking lot' is supported or contradicted.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "I was aware from radio traffic that the subject had fired at a school bus carrying children and that the subject was armed with a handgun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 256.7,
+          "end_seconds": 340.6
+        }
+      ],
+      "evidence_observations": "The evidence transcript contains only fragmented speech about traffic congestion and being stuck, with no mention of radio traffic, school buses, children, firearms, or any awareness of a shooting incident. The content is unrelated to the claim's specific details.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "An Anaheim PD helicopter overhead confirmed the subject's location in the parking lot.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to verify or contradict the claim about the Anaheim PD helicopter confirming the subject's location in the parking lot.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Once in the parking lot, the subject's vehicle collided with a parked vehicle at low speed before coming to a complete stop.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the vehicle collision in the parking lot.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "I exited my vehicle and took a position of cover behind the engine block.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about exiting the vehicle and taking cover behind the engine block.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The subject remained seated inside the vehicle for approximately thirty seconds before exiting.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "When the subject exited the vehicle, I observed him holding a handgun in his left hand.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "The subject turned toward me and raised the weapon in my direction.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 63.4,
+          "end_seconds": 71.2
+        }
+      ],
+      "evidence_observations": "The video segment provided is a text slide describing the investigative process of the Orange County District Attorney's Office. It contains no visual or audio content from bodycam footage, making it impossible to verify the claim about the subject turning and raising a weapon.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "I discharged my firearm thirteen times at the subject.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of discharging the firearm thirteen times.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Almost immediately, Officer Nakamura arrived on scene in a marked patrol vehicle wearing a full police uniform with badge and shoulder patches.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer Nakamura's arrival, uniform, vehicle, badge, or shoulder patches.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Officer Nakamura also discharged his firearm at the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that Officer Nakamura discharged his firearm at the subject.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The subject walked toward us for several seconds while pointing his weapon before falling to the ground.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 203.8,
+          "end_seconds": 338.6
+        }
+      ],
+      "evidence_observations": "The evidence transcript contains only audio of foreign language speech and music, with no description of a subject walking, pointing a weapon, or falling to the ground. The content discusses being stuck in traffic, which is unrelated to the claim about a subject's actions.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The total duration of gunfire was no more than approximately ten seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the duration of gunfire.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Officer Nakamura and I ceased fire once the subject fell to the ground and was no longer pointing the weapon.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer Nakamura and the subject falling to the ground and ceasing fire.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "I immediately requested medical assistance via radio at 1408 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about requesting medical assistance at 1408 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Due to the subject still holding the firearm, we formulated a plan to safely approach, which we executed at approximately 1413 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about formulating and executing a plan to safely approach the subject at 1413 hours while the subject was still holding the firearm.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "We handcuffed the subject, removed the weapon, and began rendering first aid.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Orange County Fire Authority paramedics arrived at 1420 hours and took over medical treatment.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 38.6,
+          "end_seconds": 46.3
+        }
+      ],
+      "evidence_observations": "The video segment provided shows text describing the Orange County District Attorney's Office conducting an independent investigation of officer-involved shootings and custodial deaths. It does not show any paramedics, medical treatment, or the arrival of Orange County Fire Authority personnel at 1420 hours. The visual content is limited to text on a black background with a partial image of a crime scene on the left side, which does not confirm or deny the claim about paramedics arriving.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "The subject was pronounced deceased on scene at approximately 1445 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the subject was pronounced deceased on scene at approximately 1445 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "The child passenger had already been removed from the bus prior to the shooting at the school district parking lot.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 91.6,
+          "end_seconds": 98.8
+        }
+      ],
+      "evidence_observations": "The video segment provided is a static text slide with no visual or audio content related to a bus, a child passenger, a shooting, or a school district parking lot. The text discusses the legal review process by the District Attorney and does not contain any information about the specific claim regarding the child passenger's removal from the bus.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "W-1 had dropped the child at a school earlier on her route, and the bus was empty at the time the subject fired his weapon at it on Orangethorpe Avenue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 388.3,
+          "end_seconds": 526.6
+        }
+      ],
+      "evidence_observations": "The evidence transcript contains repeated statements about people being back in the school and mentions returning to the north side, but provides no information about when the child was dropped off, whether the bus was empty, or any details about a weapon being fired on Orangethorpe Avenue. The content is unrelated to the specific claim about the bus being empty at the time of the shooting.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Body-worn camera footage (Detective Castellano, Officer Nakamura)",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 98.8,
+          "end_seconds": 109.3
+        }
+      ],
+      "evidence_observations": "The video segment provided is a text slide with a URL and does not contain any bodycam footage or audio to verify the claim about Detective Castellano and Officer Nakamura.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Anaheim PD aerial recording",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Anaheim PD aerial recording'. The absence of any transcript or visual evidence prevents assessment of whether the claim is supported, contradicted, or ambiguous.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Buena Park School District bus surveillance recording",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 38.6,
+          "end_seconds": 46.3
+        }
+      ],
+      "evidence_observations": "The video shows a black screen with white text detailing an incident report, including date, time, location, and involved parties. There is no visible bus surveillance footage or any indication of a school bus in the provided clip.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "One (1) black pistol recovered from subject",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of a black pistol being recovered from the subject.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Twenty-eight (28) cartridge cases from scene",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Twenty-eight (28) cartridge cases from scene'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Multiple bullet fragments",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Multiple bullet fragments'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Vehicle debris and miscellaneous items",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Vehicle debris and miscellaneous items'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Subject pronounced deceased on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the subject was pronounced deceased on scene.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "W-1 transported to Buena Park Middle School for safety.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 388.3,
+          "end_seconds": 526.6
+        }
+      ],
+      "evidence_observations": "The transcript segments show repeated statements about people being 'back here in the school' and mention of returning to the 'north side,' but provide no information about a person named W-1 being transported to Buena Park Middle School for safety. The audio contains no mention of transportation, a specific individual (W-1), or the stated purpose (safety at the school). The context appears to be a general situation inside a school with people present, but lacks any direct reference to the claim's key elements.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Scene secured for OCDASAU investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 38.6,
+          "end_seconds": 46.3
+        }
+      ],
+      "evidence_observations": "The video shows a black screen with white text describing the Orange County District Attorney's Office conducting an investigation, followed by a black and white image of a person crouching near yellow police tape. There is no visual evidence of a scene being secured, nor is there audio to confirm or deny the claim.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Officer Signature: M. Castellano",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Officer Signature: M. Castellano.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Date of Report: September 3, 2021",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of the report date being September 3, 2021.",
+      "confidence": 0.95
+    }
+  ]
+}

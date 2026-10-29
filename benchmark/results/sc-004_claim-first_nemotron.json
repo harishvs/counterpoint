@@ -1,0 +1,647 @@
+{
+  "scenario_id": "sc-004",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 398.92,
+  "total_tokens": 111842,
+  "total_api_calls": 54,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: July 13, 2022",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of the incident date being July 13, 2022.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 0515 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claimed time of incident (approximately 0515 hours).",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Advanced Marine Service, 2211 Newport Boulevard, Costa Mesa, CA",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 111.4,
+          "end_seconds": 176.7
+        }
+      ],
+      "evidence_observations": "The video shows a view of a building exterior with a glass door and window, and the audio contains a dispatch mentioning 'Newport Blvd.' and 'Advanced Marine Service'. The location mentioned in the claim, 'Advanced Marine Service, 2211 Newport Boulevard', is directly referenced in the audio transcript provided in the video segment.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Sgt. M. Park",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the reporting officer is Sgt. M. Park.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 3851",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Badge Number 3851.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Rene Castellano, Male, 35 years old, Hispanic",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 222.2,
+          "end_seconds": 249.4
+        }
+      ],
+      "evidence_observations": "The video shows multiple police officers and a suspect in a boat storage area at night. The audio transcript mentions 'Sam 7 suspect is erratic' and 'we've only got him by himself male Hispanic about 5'9'. While the suspect is male and appears to be Hispanic based on visual observation, the video does not provide clear enough evidence to confirm the specific age of 35 years old. The visual evidence is insufficient to verify the age claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Sgt. M. Park, Officer D. Tran, Officer C. Webb, Officer K. Ruiz, Officer A. Mateo",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the officers present in the incident report.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Area resident (W-1), business owner (contacted later)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 52.9,
+          "end_seconds": 61.4
+        }
+      ],
+      "evidence_observations": "The video shows a black screen with white text describing the Orange County District Attorney's Office investigation process. There is no visible witness, no audio of a witness speaking, and no indication of an area resident or business owner being present or contacted in the visible content.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On July 13, 2022, at approximately 0515 hours, CMPD dispatch received a phone call from ADT Security regarding a commercial burglary alarm activation at Advanced Marine Service, 2211 Newport Boulevard, Costa Mesa.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 111.4,
+          "end_seconds": 176.7
+        }
+      ],
+      "evidence_observations": "The video shows a bodycam view of a dark exterior with a glass door/window looking into a lit interior. The timestamp in the top right corner reads '07/13/2022 05:29:13', which is 14 minutes after the claimed time of 05:15 hours. The audio contains radio dispatch chatter mentioning 'Newport Blvd.' and 'Advanced Marine Service' and 'backdoor and entry motion', but the specific time of the initial alarm activation is not clearly stated in the provided transcript snippet, and the visual evidence (dark exterior, timestamp) contradicts the 'approximately 0515 hours' claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officers D. Tran and C. Webb were dispatched to the location, arriving at approximately 0518 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about officers' arrival time.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Both officers were in marked CMPD patrol vehicles and wearing navy-blue department-issued uniforms.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to verify whether the officers were in marked CMPD patrol vehicles or wearing navy-blue department-issued uniforms.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Both officers were equipped with body-worn cameras which were activated prior to arrival.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to verify whether the officers' body-worn cameras were activated prior to arrival.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Upon arrival, Officer Tran contacted an area resident (W-1) who reported observing a male individual using a hammer to break into the business through a rear window.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer Tran contacting resident W-1 regarding a male individual using a hammer to break into a business through a rear window.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Officer Tran walked the business perimeter and discovered a broken front door window with glass scattered on the ground.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 235.2,
+          "end_seconds": 253.6
+        }
+      ],
+      "evidence_observations": "The video shows officers outside a business at night, but the specific claim about Officer Tran discovering a broken front door window with glass on the ground is not directly visible or confirmed in this segment. The footage shows officers standing near the building and a boat, but no clear view of a broken window or glass on the ground is evident.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officer Tran scaled a locked security gate to obtain a vantage point approximately 15 to 20 feet from the front door.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to verify or contradict Officer Tran's claim about scaling a locked security gate to obtain a vantage point 15 to 20 feet from the front door.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "From this position, Officer Tran observed the subject, later identified as Rene Castellano, inside the business.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 354.5,
+          "end_seconds": 400.5
+        }
+      ],
+      "evidence_observations": "The video shows a police scene at dusk/night with officers outside a business called 'Admiral Marina Services'. While officers are visible near the entrance, the camera angle is obstructed by a fence and the view is limited. The audio contains radio chatter about positioning and surveillance ('position 104', 'pop on the 40 m Sam 72 lsar'), but there is no clear audio confirmation that Officer Tran observed Rene Castellano inside the business from the specific position mentioned in the claim. The visual evidence does not clearly show Officer Tran's position relative to the business entrance or confirm he was observing someone inside.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The subject was going through cabinets and drawers while holding a large knife, approximately eight to ten inches in length, in his left hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 146.8,
+          "end_seconds": 184.7
+        }
+      ],
+      "evidence_observations": "The video shows a person inside a building through a glass door, but the view is obstructed by the door frame and glass. The person is not clearly visible, and no knife is visible in their hand. The audio contains fragmented speech mentioning 'drop your knife' but does not confirm the subject is holding a large knife or going through cabinets and drawers.",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "Within approximately three minutes of Officer Tran's radio broadcast, I arrived on scene along with Officers K. Ruiz and A. Mateo.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 43.8,
+          "end_seconds": 51.0
+        }
+      ],
+      "evidence_observations": "The video segment provided contains only text describing the Orange County District Attorney's Office investigation procedures and does not show any bodycam footage or audio of an officer arriving on scene.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "Each of us was equipped with a body-worn camera.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that 'Each of us was equipped with a body-worn camera.'",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "At approximately 0528 hours, Officer Ruiz and I approached the front doors with our handguns drawn and pointed in the low-ready position.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 354.5,
+          "end_seconds": 400.5
+        }
+      ],
+      "evidence_observations": "The video shows officers approaching the front doors of a building with handguns drawn, but the audio transcript provided does not match the visible actions. The claim states 'at approximately 0528 hours' and describes a specific tactical approach, but the video timestamp is 05:32:01 and the audio is fragmented, discussing positioning ('position 104') rather than the initial approach with handguns drawn. The video does not clearly show the exact moment of drawing handguns or the specific time mentioned in the claim.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "We called out, \"Costa Mesa Police Department!\" and ordered the subject to drop the knife and exit the business.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 146.8,
+          "end_seconds": 184.7
+        }
+      ],
+      "evidence_observations": "The video shows a person inside a lit building through glass doors, but no one is seen exiting or dropping a knife. The audio transcript mentions 'drop your kni' but is cut off and unclear. The visible scene does not confirm anyone exiting the business or complying with a knife-drop order.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The subject looked in our direction but did not comply.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether the subject looked in the direction of the officers or whether they complied with any commands.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "He turned away from the officers and began pacing through different rooms of the business.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 61.4,
+          "end_seconds": 70.5
+        }
+      ],
+      "evidence_observations": "The video segment provided is a text slide describing the investigative process conducted by the Orange County District Attorney's Office. It contains no visual or audio content showing a person turning away from officers or pacing through rooms. The text discusses investigations, interviews, evidence review, and legal conclusions, but does not depict the specific actions described in the claim.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "At approximately 0530 hours, Officer Webb obtained a 40mm less-lethal rubber-bullet launcher and took up a position behind me.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 354.5,
+          "end_seconds": 400.5
+        }
+      ],
+      "evidence_observations": "The video shows a police scene with flashing lights and officers near a building, but the camera is obstructed by a fence and speaker for much of the clip. The audio contains fragmented speech about positioning and a '40 m Sam 72 lsar' (likely referring to a 40mm less-lethal launcher), but there is no clear visual confirmation that Officer Webb obtained the launcher or took up a position behind the speaker as claimed. The timing (0530 hours) is not verifiable from the video alone.",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "I developed a tactical plan and briefed the officers: Officer Ruiz and Officer Mateo would provide lethal cover with their handguns, while Officer Tran would deploy his Taser as the less-lethal option.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 199.1,
+          "end_seconds": 214.6
+        }
+      ],
+      "evidence_observations": "The video shows officers standing outside a building at night with a police vehicle nearby, but there is no clear visual evidence of a formal tactical plan being developed or briefed. The audio contains fragmented, repetitive speech about 'setting things up' and 'getting on over here,' which does not clearly indicate a structured briefing assigning specific roles like 'lethal cover with handguns' or 'Taser deployment' to named officers (Ruiz, Mateo, Tran). The lack of visible coordination or explicit verbal confirmation of the described plan creates a potential conflict with the claim.",
+      "confidence": 0.75
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "If the subject exited with the knife, we would give verbal commands to surrender, then deploy less-lethal if he advanced, and use deadly force only as a last resort.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 146.8,
+          "end_seconds": 184.7
+        }
+      ],
+      "evidence_observations": "The video shows a person exiting a building through a glass door at night. The person is holding a knife and appears to be advancing toward the officer. The officer does not give verbal commands to surrender before the person exits with the knife. Instead, the officer immediately deploys a less-lethal device (likely a taser) as the person advances with the knife. The officer then uses deadly force, which contradicts the claim that verbal commands and less-lethal options would be used first.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The subject continued to move erratically through the business, entering and exiting rooms, occasionally disappearing from our line of sight.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject's erratic movement and disappearance from line of sight.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "At approximately 0533 hours, the subject emerged from a room on the southeast side of the building carrying what appeared to be a shotgun in his right hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 271.3,
+          "end_seconds": 294.6
+        }
+      ],
+      "evidence_observations": "The video shows police officers outside a building at night, with a police vehicle nearby. Officers are seen standing near the entrance and walking around the exterior. The footage does not clearly show anyone emerging from a room on the southeast side of the building, nor does it provide a clear view of a person carrying a shotgun in their right hand. The audio contains fragmented radio communication but no clear confirmation of the described action.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "Officers Ruiz, Webb, Tran, and I simultaneously yelled, \"Gun, gun, gun!\" and ordered the subject to drop the weapon.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 416.6,
+          "end_seconds": 451.3
+        }
+      ],
+      "evidence_observations": "The video shows officers approaching a building at night. At 00:23, a man is visible inside through a window, but there is no audio of officers yelling 'Gun, gun, gun!' or ordering the subject to drop a weapon. The audio consists of officers discussing perimeter and joining others, with no mention of a gun or a command to drop a weapon. The claim states officers simultaneously yelled 'Gun, gun, gun!' and ordered the subject to drop the weapon, which is not supported by the audio or visual evidence in this segment.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The subject walked directly toward the front doors and the officers, raised the firearm, and pointed it through the broken window directly at us.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 253.6,
+          "end_seconds": 268.6
+        }
+      ],
+      "evidence_observations": "The video shows officers standing outside a building with a firearm drawn, but the subject is not seen walking toward the front doors. The firearm is pointed generally forward, not specifically through a broken window at the officers. The audio transcript discusses coordination and K9 units, not the subject's actions or the specific pointing described in the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Believing the subject was about to fire at us, Officers Ruiz, Webb, and I simultaneously discharged our service weapons.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 111.4,
+          "end_seconds": 176.7
+        }
+      ],
+      "evidence_observations": "The provided video clip is only 10 seconds long and shows a view through a glass door into a lit interior space. It does not show the officers mentioned in the claim (Ruiz, Webb, or the speaker), nor does it show any discharge of weapons or any firearm activity. The audio is not transcribed in the provided context, so no assessment of statements about discharging weapons can be made from the visual content alone.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Officer Ruiz fired approximately seven rounds, Officer Webb fired approximately eleven rounds, and I fired approximately eleven rounds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 253.6,
+          "end_seconds": 268.6
+        }
+      ],
+      "evidence_observations": "The video shows officers with weapons drawn outside a building at night, but no gunfire is heard or visible. The audio transcript discusses coordination for a K9 unit and 'Crossfire' but contains no mention of specific officers firing rounds or round counts. The visual scene does not confirm any shots were fired, making it impossible to verify the claim about the number of rounds fired by each officer.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "The subject fell forward onto his back inside the business.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that 'the subject fell forward onto his back inside the business.'",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Officers maintained their positions and continued to issue commands for approximately four minutes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about officers maintaining positions and issuing commands for approximately four minutes.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "At approximately 0537 hours, officers forced entry into the business through the front doors, handcuffed the subject, and began rendering medical aid.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the timing of forced entry, handcuffing, and medical aid rendering at 0537 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "The subject was conscious and breathing.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess the claim about the subject's consciousness or breathing.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Costa Mesa Fire Department arrived at approximately 0540 hours and paramedics assessed the subject, who was conscious, alert, and screaming profanities.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 253.6,
+          "end_seconds": 268.6
+        }
+      ],
+      "evidence_observations": "The video shows police officers with weapons drawn outside a building at dawn, with a police vehicle nearby. There is no visible fire department personnel, paramedics, or a subject being assessed. The audio contains fragmented police radio communication about K9 units and crossfire, but no clear statement about a fire department arrival, subject assessment, or the subject's condition (conscious, alert, screaming).",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "The subject was transported Code 3 to UC Irvine Medical Center, where he was treated for multiple gunshot wounds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 416.6,
+          "end_seconds": 451.3
+        }
+      ],
+      "evidence_observations": "The video shows police officers at a scene with a rifle, but does not show anyone being transported to a medical center or receiving treatment for gunshot wounds. The audio contains fragmented speech about perimeter and joining others, with no mention of medical transport or treatment.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "The subject survived his injuries.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that 'The subject survived his injuries.'",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "The firearm recovered from the scene was later determined to be a loaded semi-automatic rifle, .223 caliber, which did not belong to the business.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 253.6,
+          "end_seconds": 268.6
+        }
+      ],
+      "evidence_observations": "The video shows police officers with firearms drawn outside a business at night, but does not show any firearm being recovered, examined, or identified as a loaded semi-automatic rifle, .223 caliber. The audio contains fragmented radio communication about K9 units and Crossfire, but no clear statement about the firearm's type, caliber, or ownership. The claim about the firearm's characteristics and ownership is not directly supported or contradicted by the visible content.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "Body-worn camera footage from multiple officers was collected as evidence.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 55.7,
+          "end_seconds": 64.6
+        }
+      ],
+      "evidence_observations": "The video segment consists of text slides describing the investigative process conducted by the Orange County District Attorney's Office. There is no visible body-worn camera footage, no audio of officers speaking, and no visual evidence of camera collection. The content is purely informational text about procedures, not actual footage from a bodycam.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Multiple cartridge cases were collected as evidence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 55.7,
+          "end_seconds": 64.6
+        }
+      ],
+      "evidence_observations": "The video shows a person in a dark uniform crouching near the ground, possibly examining something, but no cartridge cases are clearly visible being collected as evidence. The audio consists of fragmented, repetitive speech about the investigation process, with no mention of evidence collection.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "One (1) rifle recovered from inside the business was collected as evidence.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 55.7,
+          "end_seconds": 64.6
+        }
+      ],
+      "evidence_observations": "The video segment provided contains only text describing the investigative process conducted by the Orange County District Attorney's Office and does not show any bodycam footage, a business, a rifle, or evidence collection. Therefore, it is impossible to verify the claim about a rifle being recovered from inside a business.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Knife was collected as evidence.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 55.7,
+          "end_seconds": 64.6
+        }
+      ],
+      "evidence_observations": "The video segment shows text describing the investigative process conducted by the Orange County District Attorney's Office, specifically mentioning interviews with officers, deputies, and witnesses, and review of evidence. However, there is no visual or audio evidence of a knife being collected as evidence.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Multiple bullet cores and jacket fragments were collected as evidence.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 55.7,
+          "end_seconds": 64.6
+        }
+      ],
+      "evidence_observations": "The video segment shows a black screen with white text describing the investigative process conducted by the Orange County District Attorney's Office. There is no visual evidence of bullet cores, jacket fragments, or any physical evidence collection. The audio consists of a voiceover repeating phrases about the 'investigation special assignment unit' and 'impartial investigation,' with no mention or sound of evidence collection.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Glass window panes were collected as evidence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 55.7,
+          "end_seconds": 64.6
+        }
+      ],
+      "evidence_observations": "The video shows a person crouching near a taped-off area with a police officer standing nearby, but no glass window panes are visible or mentioned in the audio transcript.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Rubber mallet was collected as evidence.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 55.7,
+          "end_seconds": 64.6
+        }
+      ],
+      "evidence_observations": "The video segment shows text describing the investigation process by the Orange County District Attorney's Office, specifically mentioning interviews with officers, deputies, and witnesses, and review of evidence. There is no visual or audio evidence of a rubber mallet being collected as evidence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Miscellaneous personal items were collected as evidence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 55.7,
+          "end_seconds": 64.6
+        }
+      ],
+      "evidence_observations": "The video shows a person crouching near a crime scene tape, but no specific collection of miscellaneous personal items is visible or mentioned in the audio transcript.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Subject transported Code 3 to UC Irvine Medical Center.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the subject was transported Code 3 to UC Irvine Medical Center.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 38.7,
+          "end_seconds": 46.2
+        }
+      ],
+      "evidence_observations": "The video shows a black screen with white text describing the Orange County District Attorney's Office conducting an investigation, but no visual evidence of a scene being secured is visible.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Business owner contacted regarding damage and recovered property.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 83.4,
+          "end_seconds": 92.6
+        }
+      ],
+      "evidence_observations": "The video shows a person walking through a doorway into a room with a desk and computer, but no clear evidence of a business owner being contacted, damage, or recovered property is visible or audible.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "Officer Signature: Sgt. M. Park",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Officer Signature: Sgt. M. Park'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "Date of Report: July 13, 2022",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of the report date being July 13, 2022.",
+      "confidence": 0.9
+    }
+  ]
+}

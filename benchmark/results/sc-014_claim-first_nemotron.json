@@ -1,0 +1,601 @@
+{
+  "scenario_id": "sc-014",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 418.79,
+  "total_tokens": 99302,
+  "total_api_calls": 50,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: August 6, 2021",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 188.8,
+          "end_seconds": 203.4
+        }
+      ],
+      "evidence_observations": "The provided transcript is a text-based dialogue between a dispatcher and a caller, not a description of visual content from bodycam footage. The claim refers to a date (August 6, 2021) which is not mentioned in the transcript. The transcript describes a car being followed, but does not provide visual evidence to confirm or deny the date of the incident.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 1908 hours",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 188.8,
+          "end_seconds": 203.4
+        }
+      ],
+      "evidence_observations": "The provided segment is a text transcript of a 911 call, not bodycam video footage. There is no visual evidence to assess the time of incident (1908 hours) or any other details related to the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Front entrance, Ridgemont Police Department, 150 North Euclid Street, La Habra, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 266.6,
+          "end_seconds": 276.3
+        }
+      ],
+      "evidence_observations": "The transcript indicates the caller is asking for directions to the 'front on Euclid' and mentions 'the police station'. The claim states the location is the 'Front entrance, Ridgemont Police Department, 150 North Euclid Street'. While the location name and street name match, the video/audio does not visually confirm the specific address '150 North Euclid Street' or definitively show the 'Front entrance' of the Ridgemont Police Department. The audio only contains the caller asking for directions, not a confirmation of the specific address or entrance.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer L. Castillo",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the reporting officer is Officer L. Castillo.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 3592",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 186.9,
+          "end_seconds": 201.6
+        }
+      ],
+      "evidence_observations": "The provided transcript is a text-based dialogue from a 911 call and does not contain any visual information from bodycam footage. The claim 'Badge Number: 3592' refers to a police officer's identification number, which cannot be verified or contradicted by the audio transcript alone. No visual evidence of a badge or officer identification is described in the transcript.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Daniel Kwon, Male, 22 years old, Asian, black T-shirt, black pants, black Converse shoes",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer L. Castillo, Officer R. Webb",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Officer(s): Officer L. Castillo, Officer R. Webb.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Female victim/complainant (W-1, reporting party for tailgating complaint)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 54.2,
+          "end_seconds": 61.3
+        }
+      ],
+      "evidence_observations": "The video shows a black screen with white text describing the OCADA investigation process. There is no visible female victim/complainant (W-1) or any witness being interviewed. The audio consists of a voice reading the text on the screen, which mentions 'officers, deputies, and Witnesses are interviewed' but does not identify any specific witness or confirm the existence of a female victim/complainant.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On August 6, 2021, at approximately 1905 hours, I was dispatched to the front of the Ridgemont Police Department in response to a report of an aggressive driver who had followed a female motorist (W-1) from the freeway to the station.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 113.6,
+          "end_seconds": 179.8
+        }
+      ],
+      "evidence_observations": "The video shows a female caller reporting she is being followed and is driving to the police station, but the audio transcript indicates she is on La Habra Boulevard near Wing Stop, not at the Ridgemont Police Department. The claim states she was at the Ridgemont Police Department, while the audio states she is three minutes away from the station and on a different street.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Webb was dispatched simultaneously.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that Officer Webb was dispatched simultaneously.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Each of us drove a separate marked black and white police vehicle and wore department-issued navy-blue uniforms with badges and body-worn cameras.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 113.6,
+          "end_seconds": 179.8
+        }
+      ],
+      "evidence_observations": "The video clip provided is a static text slide displaying a transcript of a 911 emergency call. It contains no visual footage of police officers, their vehicles, uniforms, badges, or body-worn cameras. The audio consists solely of the transcript text being read, with no visual context to verify the appearance of the officers or their equipment.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officer Webb and I arrived at approximately 1908 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer Webb and the other officer's arrival time of approximately 1908 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I parked behind a dark blue 1998 Toyota Camry that was parked behind W-1's vehicle on the pedestrian sidewalk in front of the station.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 113.6,
+          "end_seconds": 179.8
+        }
+      ],
+      "evidence_observations": "The video clip provided is a static text slide displaying a transcript of a 911 emergency call. It contains no visual footage of a vehicle, a police station, a sidewalk, or any physical scene. The audio is a recording of a female caller speaking, with no visual context to verify the location, vehicle color, model year, or parking position described in the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Officer Webb parked his unit behind mine.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 240.0,
+          "end_seconds": 247.8
+        }
+      ],
+      "evidence_observations": "The video clip shows a transcript of a phone conversation between a female caller and an LAPD dispatcher. The audio and text describe a traffic situation where a male driver is following the caller, but there is no visual evidence of Officer Webb parking his unit behind the caller's vehicle. The clip is audio-only (transcribed) and does not show the physical positioning of police vehicles.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The station lobby was open and staffed at the time of our arrival.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 113.6,
+          "end_seconds": 179.8
+        }
+      ],
+      "evidence_observations": "The video shows a black screen with text and a waveform graphic. There is no visual evidence of a station lobby, nor any indication of whether it was open or staffed at the time of arrival.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I approached W-1, who remained seated in her vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 218.4,
+          "end_seconds": 241.9
+        }
+      ],
+      "evidence_observations": "The video segment provided is a transcript of a 911 call conversation between a dispatcher and a female caller. The transcript details the caller's description of being followed by a black Toyota sedan driven by a male. There is no visual evidence in the transcript that shows the caller's vehicle, the suspect's vehicle, or the caller's position relative to the suspect's vehicle. The claim states the caller approached 'W-1' and remained seated in her vehicle, but the transcript does not confirm or deny this action or state of being. The audio and text focus on the caller's location on Cypress and her description of the suspect's behavior, not on the physical interaction or positioning described in the claim.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "W-1 stated that a male driving the Toyota had been following her since she exited the northbound 57 freeway at Lambert Road.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 184.3,
+          "end_seconds": 199.1
+        }
+      ],
+      "evidence_observations": "The transcript shows the caller stating she is on 'Harbor Boulevard near Wingstop' and that the car is following her 'since the freeway'. The claim specifies the location as 'Lambert Road' and states the male driver began following her 'since she exited the northbound 57 freeway'. The video/audio evidence does not confirm the specific location of Lambert Road or the exact point of exit from the 57 freeway, creating a potential conflict with the claim's specific details.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "W-1 stated she recognized the individual as someone she had seen in her neighborhood before.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 220.2,
+          "end_seconds": 241.9
+        }
+      ],
+      "evidence_observations": "The transcript shows a conversation about a black Toyota being followed, but there is no mention of the caller recognizing the individual from her neighborhood. The audio and visual content do not provide evidence to confirm or deny the claim about prior recognition.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "W-1 appeared frightened and was still on the phone with dispatch.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether W-1 appeared frightened or was on the phone with dispatch.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Officer Webb approached the subject, later identified as Daniel Kwon, who was standing at the front entrance of the station near the intercom.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 113.6,
+          "end_seconds": 179.8
+        }
+      ],
+      "evidence_observations": "The provided video clip is a static text slide displaying a transcript of a 911 emergency call. It contains no visual footage of a police station, an officer, or a subject named Daniel Kwon. The audio is a recording of a female caller stating she is being followed and will drive to the police station, with no mention of Officer Webb or Daniel Kwon.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Officer Webb asked the subject what was going on.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that Officer Webb asked the subject what was going on.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The subject stated he was \"just waiting for a friend.\"",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 65.5,
+          "end_seconds": 73.1
+        }
+      ],
+      "evidence_observations": "The video segment provided is a text slide describing the investigative and legal review process conducted by the Orange County District Attorney's Office. It contains no visual or audio content showing a subject, a friend, or any statement made by a subject. The text discusses case turnover to a deputy district attorney and legal review, which is unrelated to the claim about a subject stating he was 'just waiting for a friend.'",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Officer Webb asked the subject whether he was involved with the vehicles parked in front of the station, and the subject said he was not.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 38.6,
+          "end_seconds": 47.9
+        }
+      ],
+      "evidence_observations": "The provided video clip is a static text slide describing the Orange County District Attorney's Office's investigative procedures and does not contain any bodycam footage, audio, or visual evidence of Officer Webb, a subject, or vehicles parked in front of a station.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Officer Webb remained facing the subject and continued to question him.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 496.9,
+          "end_seconds": 522.4
+        }
+      ],
+      "evidence_observations": "The video shows the officer's shadow on the sidewalk, indicating the officer is facing away from the building and towards the street/camera. The audio contains the officer repeatedly shouting 'drop the gun' and threatening to shoot, which implies the officer is facing the subject. However, the visual evidence shows the officer is facing away from the building where the subject would likely be standing, creating a conflict between the visual orientation and the audio commands.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "Without warning, the subject produced a firearm from his right jacket pocket, racked the slide, and pointed it at Officer Webb from a distance of approximately 15 feet.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 544.0,
+          "end_seconds": 555.4
+        }
+      ],
+      "evidence_observations": "The video shows an officer lying on the ground with another officer standing nearby. There is no visible firearm being produced from a jacket pocket, no racking of a slide, and no pointing of a weapon at Officer Webb from 15 feet away. The audio consists of officers speaking calmly and instructing someone to relax and get out, which contradicts the claim of a sudden, threatening action without warning.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "I saw the subject raise the weapon and immediately shouted, \"Drop the weapon! Drop it now!\"",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 188.8,
+          "end_seconds": 203.4
+        }
+      ],
+      "evidence_observations": "The provided transcript only contains a 911 emergency call discussing a vehicle following the caller. There is no mention of a weapon being raised, nor any audio or visual description of a weapon or shouting commands to drop a weapon. The clip is purely a phone conversation about a car.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The subject then fired three rounds at Officer Webb.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that 'the subject then fired three rounds at Officer Webb'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "One round struck Officer Webb's ballistic vest in the left upper chest area, causing him to stumble backward but remain standing.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 496.9,
+          "end_seconds": 527.3
+        }
+      ],
+      "evidence_observations": "The video shows a person standing on the sidewalk with their shadow cast on the wall, but no gun is visible in their hands or being dropped. The audio contains repeated commands to 'drop the gun,' but the visual evidence does not confirm a gun was present or struck the officer's vest. The officer does not visibly stumble backward in the clip.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "I drew my department-issued firearm and fired three rounds at the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "One round struck the subject in the torso, causing him to fall to the ground.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police report.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "After the subject fell, I maintained my position and continued to issue commands for the subject to drop the firearm and show his hands.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "At approximately 1910 hours, I radioed that a suspect was down and that Officer Webb had been struck.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 370.8,
+          "end_seconds": 486.9
+        }
+      ],
+      "evidence_observations": "The evidence transcript shows the speaker stating 'I've got an officer down' at approximately 1910 hours, which aligns with the claim that Officer Webb was struck. However, the claim specifies the suspect was down first, while the evidence indicates the officer was reported down immediately after the suspect was down, suggesting the officer's condition may have been the initial concern rather than a subsequent event. This creates a potential conflict in the sequence of events described.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Additional officers arrived at approximately 1911 hours to render aid to Officer Webb.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about additional officers arriving at 1911 hours to render aid to Officer Webb.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Officers formulated a plan to approach the subject, and at approximately 1916 hours, the subject was disarmed, moved to the sidewalk, and handcuffed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 218.4,
+          "end_seconds": 241.9
+        }
+      ],
+      "evidence_observations": "The video segment shows a transcript of a phone conversation between a female caller and an LAPD dispatcher. The conversation details a vehicle being followed but does not show any officers formulating a plan, disarming a subject, moving the subject to a sidewalk, or handcuffing anyone. The audio and visual content are limited to the dialogue and do not depict the actions described in the claim.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "At approximately 1920 hours, paramedics from the Los Angeles County Fire Department arrived and determined the subject had no pulse or respiration.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 38.6,
+          "end_seconds": 46.3
+        }
+      ],
+      "evidence_observations": "The video segment provided only shows text describing the Orange County District Attorney's Office conducting an independent investigation. It does not show any paramedics, medical personnel, or bodycam footage of a subject's condition, nor does it contain audio that confirms or denies the arrival of paramedics or the determination of pulse or respiration.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "The subject was pronounced deceased at approximately 1926 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the time of death.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "A subsequent search recovered two firearms from the subject's person: a Glock-style 9mm semi-automatic pistol with no serial number and a .40 caliber Glock semi-automatic pistol with a mounted flashlight.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 88.5,
+          "end_seconds": 95.4
+        }
+      ],
+      "evidence_observations": "The video segment provided is a static text slide with no visible bodycam footage or audio content. The text describes a legal review process and does not contain any visual or auditory evidence of firearms, a search, or a subject's person.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Body-worn camera footage (approximately 35 minutes)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 98.8,
+          "end_seconds": 109.3
+        }
+      ],
+      "evidence_observations": "The video segment provided is a static text slide with no visible bodycam footage. The text mentions 'relevant video footage' being made public, but the actual video content is not shown in this clip.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Five (5) .40 caliber cartridge cases, headstamped \"FEDERAL 40 S&W\"",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 182.4,
+          "end_seconds": 193.3
+        }
+      ],
+      "evidence_observations": "The provided video segment is a transcript of a 911 call and does not contain any visual or auditory evidence of cartridge cases, their caliber, headstamps, or any physical evidence related to firearms. The audio consists solely of a conversation between a dispatcher and a caller describing a pursuit.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Two (2) 9mm cartridge cases, headstamped \"WIN 9mm LUGER\"",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 182.4,
+          "end_seconds": 193.3
+        }
+      ],
+      "evidence_observations": "The video clip shows a transcript of a 911 call between a female caller and an LAPD dispatcher. The audio and text describe a person being followed by a car, but there is no visual or auditory evidence of any gunfire, cartridge cases, or police officers present in the scene. The claim about 'two (2) 9mm cartridge cases' is not mentioned or observable in this segment.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "One (1) Glock-style 9mm pistol, no serial number",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 186.9,
+          "end_seconds": 201.6
+        }
+      ],
+      "evidence_observations": "The provided transcript segment only contains a portion of the 911 call dialogue discussing the description of a black Toyota vehicle. There is no mention of a firearm, let alone a Glock-style 9mm pistol with no serial number. The audio waveform is visible but no visual evidence of a weapon or firearm is shown in the described segment.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "One (1) Glock .40 caliber semi-automatic pistol with flashlight",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of a Glock .40 caliber semi-automatic pistol with flashlight.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "One (1) iPhone",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'One (1) iPhone'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Officer Webb's uniform with apparent blood",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to verify the presence or absence of blood on Officer Webb's uniform.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Subject pronounced deceased on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the subject was pronounced deceased on scene.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Officer Webb transported for medical treatment of gunshot wound to chest.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 392.8,
+          "end_seconds": 495.2
+        }
+      ],
+      "evidence_observations": "The evidence transcript shows 'officer down' calls and a suspect being down after dropping a gun, but contains no mention of a gunshot wound to the chest or medical transport for such an injury. The claim specifies a chest gunshot wound requiring medical treatment, which is not reflected in the observed audio events.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 38.6,
+          "end_seconds": 46.3
+        }
+      ],
+      "evidence_observations": "The video shows a person kneeling on the ground with their hands behind their back, suggesting they are being detained or are already in custody. There is no clear visual evidence of a scene being actively secured, such as police tape being erected, officers forming a perimeter, or a clear indication that the area is cordoned off for investigation. The audio is unclear and fragmented, making it difficult to determine if verbal confirmation of scene security is present.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Officer Signature: L. Castillo",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Officer Signature: L. Castillo.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Date of Report: August 6, 2021",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of the report date being August 6, 2021.",
+      "confidence": 0.95
+    }
+  ]
+}

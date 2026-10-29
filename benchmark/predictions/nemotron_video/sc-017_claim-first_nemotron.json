@@ -1,0 +1,815 @@
+{
+  "scenario_id": "sc-017",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 1413.6,
+  "total_tokens": 89012,
+  "total_api_calls": 71,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-017",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Case Number: SC-017.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: September 26, 2019",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of the incident date being September 26, 2019.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 0237\u20130310 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the reported time of incident (0237\u20130310 hours).",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: 1250 East La Habra Boulevard, La Habra, CA (Metro Auto Sales / Express Auto Recon)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the location claim in the report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer D. Pritchard",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the reporting officer is Officer D. Pritchard.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 3894",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Badge Number 3894.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Raymond Aguilar, Male, 29 years old, Hispanic, visible tattoos on arms and neck",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Raymond Aguilar's physical description.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Officer D. Pritchard, K9 Officer M. Webb, Officer Trainee L. Garza, Officer S. Rowan, Sergeant V. Huerta, Sergeant P. Daniels",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1357.3,
+          "end_seconds": 1418.7
+        }
+      ],
+      "evidence_observations": "The video shows officers including Officer C. Robles and Officer T. Nelson with a K9 unit, but no Officer D. Pritchard, K9 Officer M. Webb, Officer Trainee L. Garza, Officer S. Rowan, Sergeant V. Huerta, or Sergeant P. Daniels are visible or clearly identifiable in the footage. The audio contains fragmented dialogue about getting behind a car and involvement, but does not confirm the presence of the named officers in the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witness(es): Auto body shop owner (W-1)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that a witness was the auto body shop owner (W-1).",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "On September 26, 2019, at approximately 0237 hours, La Habra Police Department dispatch received an anonymous call reporting multiple subjects dismantling a vehicle near 200 South Alpine Street.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 141.0,
+          "end_seconds": 239.0
+        }
+      ],
+      "evidence_observations": "The evidence transcript contains fragmented audio of commands like 'get out of the way', 'get out now', and mentions of a 'long rifle' and 'police department', but provides no information about an anonymous call, the date (September 26, 2019), time (0237 hours), location (200 South Alpine Street), or vehicle dismantling activity. The content appears to relate to an active confrontation involving a vehicle and armed individuals, but lacks any details confirming or denying the specific claim about the dispatch receiving an anonymous report.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "At approximately 0241 hours, Officers Pritchard, K9 Officer Webb, and Officer Trainee Garza indicated they would respond.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officers Pritchard, K9 Officer Webb, and Officer Trainee Garza indicating they would respond at approximately 0241 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I was driving a marked black and white LHPD patrol vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about driving a marked black and white LHPD patrol vehicle.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "K9 Officer Webb and Trainee Garza were in a marked K9 police vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 141.0,
+          "end_seconds": 239.0
+        }
+      ],
+      "evidence_observations": "The transcript segments provided do not contain any observable details about the presence or absence of a marked K9 police vehicle. The audio describes commands related to a 'long rifle' and positioning ('on your right vehicle'), but contains no information about the vehicle type, markings, or whether officers were inside a vehicle at all. The claim about being in a 'marked K9 police vehicle' cannot be verified or contradicted by the given text.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "While traveling eastbound on Alpine Street, I observed a chain-link gate on the south side of the street that appeared to have been forced open.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about a chain-link gate on the south side of Alpine Street appearing forced open.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The gate was at the rear of Metro Auto Sales, located at 1250 East La Habra Boulevard.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to verify the location of the gate relative to Metro Auto Sales at 1250 East La Habra Boulevard.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I observed a black Cadillac Escalade parked in the driveway past the open gate with its headlights on and the radio playing at low volume.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 334.6,
+          "end_seconds": 361.5
+        }
+      ],
+      "evidence_observations": "The video shows a large, cylindrical metal structure (possibly a silo or tank) behind a chain-link fence, not a black Cadillac Escalade. The footage is dark and shows officers with flashlights and a K-9 unit near a vehicle, but no clear view of a Cadillac Escalade with headlights on in a driveway. The audio transcript mentions 'vehicle' and 'exit the drivers' but does not confirm the specific vehicle type or location described in the claim.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "At approximately 0246 hours, I exited my patrol vehicle and approached the driver's side of the Escalade.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 334.6,
+          "end_seconds": 361.5
+        }
+      ],
+      "evidence_observations": "The video shows officers approaching a chain-link fence structure at night, not an Escalade. The audio transcript mentions 'exit the drivers' and 'beside the vehicle', but the visual evidence shows officers near a fenced area with a dog, not a vehicle. The timestamp 0246 hours is not visible in the clip, and the audio does not confirm the specific vehicle type mentioned in the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "I observed the subject, later identified as Raymond Aguilar, as the sole occupant seated in the driver's seat.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 334.6,
+          "end_seconds": 361.5
+        }
+      ],
+      "evidence_observations": "The video shows multiple officers and a police dog outside the vehicle, with one officer approaching the driver's side door. The audio indicates commands for the subject to exit the vehicle, suggesting there may be more than one person or that the subject was not initially observed as the sole occupant. The claim states the subject was the sole occupant, but the presence of multiple officers and commands to exit imply a different situation.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The subject had visible tattoos on his arms and neck.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether the subject had visible tattoos on his arms and neck.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "I gave verbal commands for the subject to exit the vehicle, but the subject refused to comply and made incoherent statements.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about verbal commands, subject refusal to exit the vehicle, or incoherent statements.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "This initial contact was not captured on body-worn camera.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1134.8,
+          "end_seconds": 1232.8
+        }
+      ],
+      "evidence_observations": "The evidence transcript shows audio of a person speaking and applause during the interaction, with phrases like 'contact get out of the vehicle' and 'keep pushing his back' occurring between 18:54-20:32. This indicates active physical engagement and verbal commands were captured, directly contradicting the claim that 'this initial contact was not captured on body-worn camera' since the audio documents the contact itself.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Shortly after, K9 Officer Webb and Trainee Garza arrived and parked their K9 vehicle in the driveway behind the Escalade.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1262.1,
+          "end_seconds": 1315.1
+        }
+      ],
+      "evidence_observations": "The video shows officers, including a K9 unit, in a parking lot at night. However, there is no clear visual evidence of a K9 vehicle parking behind an Escalade in a driveway. The audio contains fragmented speech mentioning 'K9' and 'out', but does not confirm the arrival of 'K9 Officer Webb and Trainee Garza' or their specific actions described in the claim. The scene is dark and chaotic, making precise identification of vehicles and personnel difficult.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Officers activated their body-worn cameras at this time.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that officers activated their body-worn cameras.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Officer Rowan arrived at approximately 0247 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer Rowan's arrival time.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "I repositioned the K9 vehicle so that its front bumper was nearly in contact with the rear bumper of the Escalade to prevent it from reversing.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1076.8,
+          "end_seconds": 1159.0
+        }
+      ],
+      "evidence_observations": "The evidence states 'i moved it up' and references 'six inches from his bumper', indicating the K9 vehicle was positioned very close to the Escalade's rear bumper. This contradicts the claim that the front bumper was 'nearly in contact' with the rear bumper, as 'six inches' suggests a significant gap rather than near-contact. The phrase 'i moved it up' implies the vehicle was repositioned but not necessarily to create near-contact with the rear bumper.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "At approximately 0248 hours, the subject started the Escalade's engine and the headlights brightened.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 960.9,
+          "end_seconds": 1073.2
+        }
+      ],
+      "evidence_observations": "The transcript segment contains audio of people discussing engine search and commands to stop touching the vehicle, but no observable evidence of the Escalade's engine starting, headlights brightening, or specific timing at 0248 hours is present in the provided text.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The subject rolled down the driver's side window and extended both hands outside the vehicle momentarily.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 334.6,
+          "end_seconds": 361.5
+        }
+      ],
+      "evidence_observations": "The video shows officers approaching a vehicle at night. The audio transcript indicates commands for the subject to exit the driver's seat, but the visual evidence does not show the subject rolling down the window or extending both hands outside the vehicle. The footage is dark and partially obstructed, making it difficult to confirm specific actions like window movement or hand extension.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "K9 Officer Webb took a position near the driver's side door of the K9 vehicle and began issuing commands and K9 announcements through the PA speaker, instructing the subject to exit from the driver's side with his hands up.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 708.6,
+          "end_seconds": 837.8
+        }
+      ],
+      "evidence_observations": "The evidence transcript shows the officer instructing the subject to exit through the back ('driver's side back', 'through the back') and mentions the subject 'plowed right through the gate', which directly contradicts the claim that the officer instructed the subject to exit from the driver's side. The evidence describes a rear exit path, not the driver's side door as stated in the claim.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject refused all commands and began revving the engine, honking the horn, and flashing gang signs from the driver's side window.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 334.6,
+          "end_seconds": 361.5
+        }
+      ],
+      "evidence_observations": "The video shows officers approaching a vehicle with a dog, but the subject is not visible in the driver's seat. The audio contains commands for the subject to exit the vehicle, but there is no clear evidence of the subject refusing commands, revving the engine, honking the horn, or flashing gang signs from the driver's side window.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "He yelled profanities at officers in English.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about yelling profanities in English.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Due to distance and noise, it was difficult to understand the subject at times.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1069.9,
+          "end_seconds": 1147.5
+        }
+      ],
+      "evidence_observations": "The evidence explicitly states 'i can't understand it' and 'i can't he's saying something', directly contradicting the claim that distance and noise made it difficult to understand the subject. The phrase 'six inches from his bumper' indicates the subject was very close to the officer, making distance an unlikely factor, and the repeated inability to understand suggests the issue was not primarily noise or distance but possibly the subject's speech or the officer's perception.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "At approximately 0257 hours, the rear hatch of the Escalade opened and Sergeant Daniels heard the subject reference the word \"shoot.\"",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1357.3,
+          "end_seconds": 1418.7
+        }
+      ],
+      "evidence_observations": "The video shows officers with flashlights and a dog approaching a vehicle at night. The audio contains a conversation where a subject states 'I'm involved' and 'I did', but there is no clear audio evidence of the word 'shoot' being referenced. The rear hatch of the vehicle does not visibly open during the clip, and the timestamp 0257 hours is not visually confirmed.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Multiple officers observed the subject gesture as if simulating a firearm.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 71.3,
+          "end_seconds": 133.0
+        }
+      ],
+      "evidence_observations": "The video shows multiple officers in a dark, nighttime environment with flashing lights. While officers are seen moving and interacting near vehicles and a gated area, the footage is often obstructed, shaky, and at times shows only partial views of the scene. The audio contains fragmented commands and mentions of 'crossfire' and 'pin the car up,' but no clear audio or visual evidence of a subject gesturing as if simulating a firearm is directly observable in this segment.",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Officers decided to deploy oleoresin capsicum rounds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about officers deciding to deploy oleoresin capsicum rounds.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "At approximately 0301 hours, Sergeant Daniels deployed a 40mm OC round through the open rear hatch.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 708.6,
+          "end_seconds": 837.8
+        }
+      ],
+      "evidence_observations": "The evidence transcript describes a suspect plowing through a gate and being told to get out of the vehicle, with no mention of Sergeant Daniels, a 40mm OC round, or deployment through a rear hatch. The timing (0301 hours) and specific action of deploying a 40mm OC round are not addressed in the provided audio segment.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "The subject was unaffected and continued yelling.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that 'the subject was unaffected and continued yelling.'",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Sergeant Daniels deployed a second OC round with no effect.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1357.3,
+          "end_seconds": 1418.7
+        }
+      ],
+      "evidence_observations": "The video shows multiple officers, including Sergeant E. Torres, with a dog. The audio transcript indicates a conversation where someone states 'I did sergeant i both did i did sergeant i both did i did', suggesting they fired their weapon. However, the claim states 'Sergeant Daniels deployed a second OC round with no effect.' The video does not show Sergeant Daniels deploying an OC round, nor does it show any OC rounds being deployed or their effects. The presence of a dog and multiple officers suggests a different scenario than a single officer deploying OC rounds.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "The subject then placed the Escalade in reverse and began backing toward officers and the K9 vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject placing the Escalade in reverse and backing toward officers and the K9 vehicle.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Officers were forced to move out of the way.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that officers were forced to move out of the way.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "The subject shifted to drive and accelerated forward through the open gate, colliding with several vehicles parked inside the auto body shop.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 268.0,
+          "end_seconds": 314.3
+        }
+      ],
+      "evidence_observations": "The video shows a police officer approaching a large, cylindrical, chain-link fenced object (possibly a tank or large container) at night. The officer is holding a flashlight and a leash attached to a dog. The officer moves around the object, shining the light on it and the surrounding area. There is no clear view of a vehicle accelerating through a gate or colliding with multiple parked vehicles inside an auto body shop. The audio transcript is fragmented and unclear, mentioning 'the vehicle now for the passenger' and 'it's the only car involved,' but does not provide a clear description of the events described in the claim. The visual evidence does not support the claim of a vehicle accelerating through a gate and colliding with several vehicles.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "The subject rammed a metal rollup garage door, drove into the interior garage bay, then used the Escalade to push a white Mercedes through a second rollup door on the opposite side of the building.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 708.6,
+          "end_seconds": 837.8
+        }
+      ],
+      "evidence_observations": "The evidence states the subject 'plowed right through the gate' on the driver's side back, indicating a single vehicle (the Escalade) breaching one rollup door. The claim describes two distinct actions: ramming a metal rollup door (first gate) and then using the Escalade to push a white Mercedes through a second rollup door on the opposite side. The transcript does not mention a white Mercedes, a second rollup door, or the Escalade pushing another vehicle\u2014only that the subject drove through a gate and plowed through it. This contradicts the claim's second part about pushing a white Mercedes through a second door.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "The Escalade came to rest on the apron of the driveway facing South Bedford Street.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 545.3,
+          "end_seconds": 659.3
+        }
+      ],
+      "evidence_observations": "The transcript contains fragmented speech about a person ('he') not going anywhere and being in the driver's seat, with a possible reference to 'bedford' but no clear description of a vehicle's position, direction, or an 'Escalade' on a driveway apron.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "I was positioned on the east sidewalk approximately eighteen feet south of the Escalade.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the officer's position on the east sidewalk.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Sergeant Huerta stood in the southbound lane of South Bedford Street approximately twenty feet from the Escalade.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 545.3,
+          "end_seconds": 659.3
+        }
+      ],
+      "evidence_observations": "The transcript segment contains fragmented speech about a person not going anywhere and being in the driver's seat of a vehicle, with unclear references to 'bedford' and 'hold that side'. No observable details confirm Sergeant Huerta's position in the southbound lane of South Bedford Street or his distance of twenty feet from the Escalade.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Officer Rowan was on the sidewalk a few feet south of me.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that Officer Rowan was on the sidewalk a few feet south of the speaker.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "I directed my patrol rifle with its mounted flashlight toward the Escalade and could see the subject in the passenger compartment.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 224.8,
+          "end_seconds": 305.7
+        }
+      ],
+      "evidence_observations": "The video shows officers approaching a chain-link fence at night with flashlights. While a police vehicle (labeled 'POLICE') is visible and officers are moving around it, the footage is fragmented across multiple camera angles. The claim states the officer directed a patrol rifle with a flashlight toward an Escalade and saw a subject in the passenger compartment. However, the video does not clearly show an Escalade, nor does it provide a clear view of a passenger compartment where a subject could be seen. The footage is dark, obstructed by fences and vehicle parts, and the audio transcript is incoherent, making it impossible to confirm the specific details of the claim.",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "The subject appeared to look directly at officers and had what I described as an aggressive expression.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether the subject looked directly at officers or displayed an aggressive expression.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "As the Escalade began to accelerate forward, I observed the subject raise his left arm toward the driver's side window in what appeared to be a shooting position.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1283.6,
+          "end_seconds": 1352.4
+        }
+      ],
+      "evidence_observations": "The evidence transcript describes the subject as 'down in the driver's seat' with 'head down' during the vehicle's movement, which contradicts the claim that the subject was 'raising his left arm toward the driver's side window in what appeared to be a shooting position' as the vehicle accelerated. No visual details of arm movement are provided in the transcript.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Believing the subject was about to fire at Sergeant Huerta, who was in the subject's direct line of travel, I discharged my Colt AR-15A4 patrol rifle seven rounds in approximately two seconds as I advanced toward the Escalade.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1357.3,
+          "end_seconds": 1418.7
+        }
+      ],
+      "evidence_observations": "The video shows officers advancing toward a vehicle with a dog, but there is no visual confirmation of a subject firing a weapon or being in a position to fire at Sergeant Huerta. The audio contains repeated questions about whether the subject fired, but no clear evidence of gunfire discharge or a subject actively shooting is visible in the footage.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Sergeant Huerta simultaneously discharged his Glock 21C pistol ten rounds in approximately three seconds.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1357.3,
+          "end_seconds": 1418.7
+        }
+      ],
+      "evidence_observations": "The video shows multiple officers with flashlights and a dog, but no officer is seen firing a pistol. The audio contains repeated questions about firing ('did you fire') and responses ('i did'), but the visual evidence does not show any discharge of a weapon, let alone ten rounds in three seconds.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Officer Rowan attempted to fire her Glock 22 pistol but experienced a malfunction and her weapon did not discharge.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 71.3,
+          "end_seconds": 133.0
+        }
+      ],
+      "evidence_observations": "The video shows multiple officers, including Officer Nelson and Officer Robles, with flashlights drawn and moving tactically around a vehicle and gate at night. There is no visual evidence of Officer Rowan attempting to fire a Glock 22 pistol, nor is there any audible indication of a weapon malfunction. The audio contains commands like 'pin him in there' and 'watch out,' but no mention of a weapon being drawn, fired, or malfunctioning. The claim about Officer Rowan's weapon malfunction is not supported by the visible or audible content.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "The Escalade stopped moving.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 142.2,
+          "end_seconds": 241.9
+        }
+      ],
+      "evidence_observations": "The audio transcript shows continuous commands for the subject to 'get out of the way', 'get out now', and 'make yourself known now', indicating the vehicle was actively being approached or surrounded by police. The phrase 'we'll have a police department make yourself known now' suggests the vehicle was still in motion or at least not fully stopped, as officers were demanding identification while issuing commands to exit. This contradicts the claim that 'The Escalade stopped moving', as the urgency in the commands implies the vehicle was likely still in motion or in a dynamic state requiring immediate compliance.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "The engine was still running and the vehicle was in drive.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 960.9,
+          "end_seconds": 1073.2
+        }
+      ],
+      "evidence_observations": "The transcript segment contains fragmented speech about engine search and instructions not to touch the vehicle, but provides no clear indication of whether the engine was running or if the vehicle was in drive. The phrase 'that was a [&nbsp;__&nbsp;] you i'm not getting it' suggests confusion or unclear observation, and 'if he goes out that way' implies movement but does not confirm engine status or gear position. No direct auditory or contextual evidence confirms the engine was running or the vehicle was in drive.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "Another police vehicle was parked behind the Escalade to prevent further movement.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 141.0,
+          "end_seconds": 239.0
+        }
+      ],
+      "evidence_observations": "The transcript contains audio of commands like 'get out of the way' and mentions a 'long rifle' and 'police department,' but provides no information about any police vehicle being parked behind the Escalade. The claim concerns vehicle positioning, which is not addressed in the provided audio transcript.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-055",
+      "claim_text": "Officers approached with a shield and observed the subject unresponsive.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 408.6,
+          "end_seconds": 468.0
+        }
+      ],
+      "evidence_observations": "The video shows officers approaching a chain-link fence with a dog, not a shield. The audio mentions a shield and keys in the ignition, but no shield is visible in the footage. The subject is not clearly unresponsive as the officers are actively engaging with the fence and dog.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-056",
+      "claim_text": "Los Angeles County Fire Department paramedics, who had been staging nearby, were summoned and pronounced the subject deceased at the scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 141.0,
+          "end_seconds": 239.0
+        }
+      ],
+      "evidence_observations": "The evidence transcript contains fragmented commands about clearing the area, positioning a vehicle, and a police officer with a long rifle. There is no mention of paramedics, fire department personnel, or any declaration of death at the scene. The audio focuses on tactical police actions and does not address medical personnel or the subject's condition.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-057",
+      "claim_text": "Subject pronounced deceased at scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the subject was pronounced deceased at the scene.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-058",
+      "claim_text": "Scene secured for OCDA Special Assignment Unit investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the scene was secured for OCDA Special Assignment Unit investigation.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-059",
+      "claim_text": "Body-worn camera footage from Officers Pritchard, Webb, Garza, and Rowan",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about body-worn camera footage from Officers Pritchard, Webb, Garza, and Rowan.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-060",
+      "claim_text": "One (1) 2012 Black Cadillac Escalade",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'One (1) 2012 Black Cadillac Escalade'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-061",
+      "claim_text": "One (1) Colt AR-15A4 rifle (Officer Pritchard)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of a Colt AR-15A4 rifle being present or used by Officer Pritchard.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-062",
+      "claim_text": "One (1) Glock 21C pistol (Sergeant Huerta)",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1357.3,
+          "end_seconds": 1418.7
+        }
+      ],
+      "evidence_observations": "The audio transcript indicates a conversation about firing a weapon ('did you fire did you fire did you fire i did sergeant i both did i did sergeant i both did i did'), suggesting at least one person fired a weapon. However, the visual evidence shows multiple officers (Ofc. J. Coleman, Sgt. E. Torres, Ofc. C. Robles, Ofc. T. Nelson) with no clear visual confirmation of a Glock 21C pistol being drawn, fired, or held by Sergeant Huerta (who is not even visible in the provided frames). The claim specifies a particular firearm and officer not clearly depicted in the visible footage.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-063",
+      "claim_text": "One (1) Glock 22 pistol (Officer Rowan)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'One (1) Glock 22 pistol (Officer Rowan)'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-064",
+      "claim_text": "Seven (7) fired cartridge cases, .223 Remington caliber",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 71.3,
+          "end_seconds": 133.0
+        }
+      ],
+      "evidence_observations": "The video shows officers moving around a vehicle and a fenced area at night with flashlights, but no clear visual evidence of fired cartridge cases is visible. The audio contains fragmented commands about 'pinning' a car and 'crossfire,' but no explicit mention of .223 Remington caliber ammunition or a count of seven cartridge cases.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-065",
+      "claim_text": "Ten (10) fired cartridge cases, .45 Auto caliber",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 71.3,
+          "end_seconds": 133.0
+        }
+      ],
+      "evidence_observations": "The video shows officers moving around a vehicle and a fenced area at night with flashlights, but no clear visual evidence of fired cartridge cases is visible. The audio contains fragmented commands about 'pinning' a person and a car, and mentions 'crossfire,' but does not audibly confirm the discharge of a weapon or the presence of 10 .45 Auto cartridge cases.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-066",
+      "claim_text": "Two (2) 40mm OC projectiles recovered from the vehicle",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about two 40mm OC projectiles being recovered from the vehicle.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-067",
+      "claim_text": "Subject pronounced deceased at scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the subject was pronounced deceased at the scene.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-068",
+      "claim_text": "Scene secured for OCDA Special Assignment Unit investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the scene was secured for OCDA Special Assignment Unit investigation.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-069",
+      "claim_text": "Officer Signature: D. Pritchard",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Officer Signature: D. Pritchard.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-070",
+      "claim_text": "Date of Report: September 26, 2019",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of the report date being September 26, 2019.",
+      "confidence": 0.95
+    }
+  ]
+}

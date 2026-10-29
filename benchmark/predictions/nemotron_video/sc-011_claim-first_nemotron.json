@@ -1,0 +1,508 @@
+{
+  "scenario_id": "sc-011",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 189.02,
+  "total_tokens": 42600,
+  "total_api_calls": 53,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-011",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Case Number: SC-011'. The absence of any evidence prevents verification or contradiction of the claim.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: September 23, 2020",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of the incident date being September 23, 2020.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 1332 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claimed time of incident (approximately 1332 hours).",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: El Camino Real, near the Miramar Hotel, San Clemente, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the location being El Camino Real near the Miramar Hotel in San Clemente, CA.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Deputy A. Navarro",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Reporting Officer: Deputy A. Navarro'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 5839",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Badge Number 5839.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Brian Ashford, Male, 42 years old, White, casual clothing with backpack",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Brian Ashford's description (male, 42 years old, White, casual clothing with backpack).",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Deputy A. Navarro, Deputy R. Galvan",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witness(es): Civilian witness on El Camino Real (W-1), U.S. Marine observing from north side of street (W-2)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about witness locations on El Camino Real.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "On September 23, 2020, at approximately 1332 hours, Deputy Galvan and I were on patrol in a marked black and white Orange County Sheriff's Department Ford Explorer.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Deputy Galvan and the patrol in a marked black and white Orange County Sheriff's Department Ford Explorer on September 23, 2020.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "We were assigned to the Homeless Liaison Officer unit and were in standard blue OCSD patrol uniforms with department-issued badges and equipment.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about uniform color, badge issuance, or equipment assignment.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Deputy Galvan was driving and I was in the front passenger seat completing paperwork from a prior service call.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Deputy Galvan's location and activity.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "While traveling southbound on El Camino Real, I observed the subject, later identified as Brian Ashford, jaywalking across El Camino Real against a solid red hand pedestrian signal.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Brian Ashford jaywalking against a solid red hand pedestrian signal while traveling southbound on El Camino Real.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I alerted Deputy Galvan to the violation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that 'I alerted Deputy Galvan to the violation.'",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Deputy Galvan activated the vehicle's forward emergency lights and drove to make contact with the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether Deputy Galvan activated the vehicle's forward emergency lights or drove to make contact with the subject.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "Deputy Galvan parked the Explorer on El Camino Real and we both exited the vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that Deputy Galvan parked the Explorer on El Camino Real and that both individuals exited the vehicle.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "I took the lead in contacting the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that 'I took the lead in contacting the subject.'",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "I informed the subject that he was being detained for jaywalking.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police report.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The subject asked, \"For what?\"",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 198.3,
+          "end_seconds": 204.8
+        }
+      ],
+      "evidence_observations": "The video shows a confrontation where a man (Reinhold) is being touched by a police officer. The subtitles indicate Reinhold asks 'Why you touching me?' and 'For what?'. The claim states the subject asked 'For what?'. While the exact phrase 'For what?' is not explicitly transcribed in the provided segment, the repeated question 'why are you touching down' and the context of the interaction strongly suggest the subject is questioning the reason for the physical contact, which aligns with the meaning of 'For what?'. However, the specific phrase 'For what?' is not clearly heard as a direct question in this specific clip, making the support potentially conflicting or ambiguous.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "I repeated that it was for the pedestrian violation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "The subject stated, \"I didn't do anything wrong,\"",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 28.2,
+          "end_seconds": 66.3
+        }
+      ],
+      "evidence_observations": "The video shows a person crossing the street (jaywalking) while the audio transcript indicates the subject is denying wrongdoing ('I didn't do anything wrong'). The visual evidence of jaywalking directly contradicts the claim of innocence, as jaywalking is a traffic violation.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The subject immediately began walking away from us in the direction of oncoming traffic.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess the claim about the subject's direction of movement relative to oncoming traffic.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Deputy Galvan and I followed the subject on foot, repeatedly instructing him to stop.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 31.5,
+          "end_seconds": 105.0
+        }
+      ],
+      "evidence_observations": "The video shows the vehicle driving through an intersection and continuing down the road. The audio contains Deputy Israel saying 'Hey, you need to stop' at 1:45, but there is no visual evidence of the subject being on foot or being followed on foot by Deputy Galvan. The claim states they followed the subject on foot, which is not visible in the footage.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "At no point did we raise our voices aggressively or use profane language.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about raising voices or using profane language.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The subject refused to comply with our lawful commands and continued walking into the roadway.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject's refusal to comply and movement into the roadway.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "I entered the roadway to direct traffic around the situation while Deputy Galvan attempted to verbally engage the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about entering the roadway to direct traffic or Deputy Galvan's actions.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "During our attempt to direct the subject back to the sidewalk, the subject became physically combative.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject becoming physically combative during an attempt to direct them back to the sidewalk.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The subject punched me in the face with a closed fist, causing me to stagger backward.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject then shoved Deputy Galvan, who nearly fell into the traffic lane.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Deputy Galvan being shoved and nearly falling into traffic.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Over the course of approximately three minutes, the subject struck both of us multiple times as we attempted de-escalation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject striking both officers multiple times over three minutes during de-escalation attempts.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "After traveling approximately 300 yards on foot, we were able to direct the subject to the westbound sidewalk near the Miramar Hotel.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about traveling 300 yards on foot and directing the subject to the westbound sidewalk near the Miramar Hotel.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "At this point, the subject attempted to flee back into the street.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether the subject attempted to flee back into the street.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "I blocked the subject's path.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether the subject's path was blocked.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Deputy Galvan then secured the subject by his backpack and took him to the ground.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Deputy Galvan securing the subject by his backpack and taking him to the ground.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "All three of us landed on a grassy area between the sidewalk and the roadway.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about landing on a grassy area between the sidewalk and roadway.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "I was positioned on top of the subject's lower body while Deputy Galvan was beneath the subject.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Deputy Galvan felt the subject pulling on his duty belt.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether Deputy Galvan felt the subject pulling on his duty belt.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Deputy Galvan then felt the subject grasp the handle of his department-issued SIG Sauer P226 service weapon, which was holstered on Deputy Galvan's right hip.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Deputy Galvan's weapon being grasped by the subject.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Deputy Galvan shouted to me, \"He's got my gun!\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 28.2,
+          "end_seconds": 62.0
+        }
+      ],
+      "evidence_observations": "The video shows a street intersection with cars passing by. A yellow circle highlights a person in the distance, but the footage is distant and lacks clear detail of the person's actions or any interaction with a deputy. Audio includes fragmented dialogue about 'control man' and 'look down', but no clear statement matching 'He's got my gun!' is heard.",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "I heard Deputy Galvan repeat this warning several times.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Deputy Galvan repeating a warning.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "I drew my department-issued Glock 17 and placed it against the subject's torso.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "I commanded the subject to release the weapon, stating, \"Drop it or I'll shoot.\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 28.2,
+          "end_seconds": 74.5
+        }
+      ],
+      "evidence_observations": "The video shows a traffic stop at an intersection with multiple vehicles passing by. The audio contains fragmented dialogue between deputies discussing a 'jaywalker' and a 'controlled man' who 'just stop[s] in the middle,' but there is no clear audio or visual evidence of a weapon being present, commanded to be released, or the phrase 'Drop it or I'll shoot' being spoken.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "The subject did not comply and I could see him continuing to pull at Deputy Galvan's holstered firearm.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Deputy Galvan screamed, \"He's still got my gun, shoot him again!\"",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 28.2,
+          "end_seconds": 62.0
+        }
+      ],
+      "evidence_observations": "The video shows a traffic stop at an intersection with multiple vehicles passing by. The audio contains dialogue between deputies discussing a person who has 'gone back behind the alley' and needs to be controlled, but there is no mention of Deputy Galvan, a gun, or the command to 'shoot him again'. The clip ends with the vehicle driving past a 7-Eleven.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "I discharged my firearm three times into the subject's chest.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of discharging a firearm three times into the subject's chest.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "The subject's body went limp and I immediately ceased firing.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject's body going limp and the officer ceasing fire.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Deputy Galvan and I rolled the subject onto his back and began administering chest compressions.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Deputy Galvan broadcast \"shots fired\" over the radio.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that Deputy Galvan broadcast \"shots fired\" over the radio.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "We continued life-saving measures until Orange County Fire Authority paramedics arrived on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about life-saving measures continuing until paramedics arrived.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "The subject was transported to a local hospital and was later pronounced deceased.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject being transported to a hospital and pronounced deceased.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Scene secured.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim 'Scene secured.'",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "OCDA Special Assignment Unit responded for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that 'OCDA Special Assignment Unit responded for investigation.'",
+      "confidence": 0.95
+    }
+  ]
+}

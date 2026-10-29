@@ -1,0 +1,5263 @@
+{
+  "evaluated_at": "2026-10-29T04:51:40.870651",
+  "iou_threshold": 0.3,
+  "aggregate": {
+    "aggregate": {
+      "total_claims": 454,
+      "total_scenarios": 31,
+      "precision": 0.4,
+      "recall": 0.0137,
+      "f1": 0.0265,
+      "temporal_iou_mean": null,
+      "abstention_rate": 0.2621
+    },
+    "by_difficulty": {
+      "easy": {
+        "count": 240,
+        "precision": 0.4,
+        "recall": 0.0202,
+        "f1": 0.0385
+      },
+      "hard": {
+        "count": 76,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "medium": {
+        "count": 138,
+        "precision": 1.0,
+        "recall": 0.0145,
+        "f1": 0.0286
+      }
+    },
+    "by_discrepancy_type": {
+      "ambiguous_language": {
+        "count": 27,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "direct_contradiction": {
+        "count": 173,
+        "precision": 1.0,
+        "recall": 0.0173,
+        "f1": 0.0341
+      },
+      "exaggeration": {
+        "count": 24,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "fabrication": {
+        "count": 23,
+        "precision": 1.0,
+        "recall": 0.0435,
+        "f1": 0.0833
+      },
+      "minimization": {
+        "count": 27,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "none": {
+        "count": 151,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "omission": {
+        "count": 23,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "sequence_mismatch": {
+        "count": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "temporal_mismatch": {
+        "count": 4,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "by_claim_type": {
+      "action_description": {
+        "count": 244,
+        "precision": 0.2857,
+        "recall": 0.0124,
+        "f1": 0.0238
+      },
+      "identity_description": {
+        "count": 11,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "location_description": {
+        "count": 26,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "object_description": {
+        "count": 74,
+        "precision": 1.0,
+        "recall": 0.0161,
+        "f1": 0.0317
+      },
+      "spoken_statement": {
+        "count": 60,
+        "precision": 1.0,
+        "recall": 0.0385,
+        "f1": 0.0741
+      },
+      "subjective_characterization": {
+        "count": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "temporal_sequence": {
+        "count": 37,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "conflict": {
+        "not_assessed": 82,
+        "ambiguous_or_insufficient": 195,
+        "potential_conflict": 4,
+        "supported": 3,
+        "missing": 8
+      },
+      "supported": {
+        "ambiguous_or_insufficient": 98,
+        "supported": 2,
+        "not_assessed": 32,
+        "missing": 6,
+        "potential_conflict": 3
+      },
+      "ambiguous": {
+        "potential_conflict": 3,
+        "not_assessed": 5,
+        "ambiguous_or_insufficient": 12,
+        "missing": 1
+      }
+    }
+  },
+  "scenarios": [
+    {
+      "scenario_id": "sc-001",
+      "model": "us.anthropic.claude-haiku-5-5",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 9,
+        "total": 14
+      },
+      "claims_matched": 14,
+      "claims_gt": 14,
+      "claims_predicted": 46,
+      "precision": 0.5,
+      "recall": 0.1,
+      "f1": 0.1667,
+      "retrieval_recall": 1.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.1429,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "identity_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "potential_conflict",
+          "correct": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "supported",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "potential_conflict",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 276.51,
+        "total_tokens": 309057,
+        "total_api_calls": 93
+      }
+    },
+    {
+      "scenario_id": "sc-001",
+      "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 10,
+        "total": 14
+      },
+      "claims_matched": 14,
+      "claims_gt": 14,
+      "claims_predicted": 45,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.2,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.2857,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "identity_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "omission",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "supported",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 2256.38,
+        "total_tokens": 310484,
+        "total_api_calls": 111
+      }
+    },
+    {
+      "scenario_id": "sc-001",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 10,
+        "total": 14
+      },
+      "claims_matched": 14,
+      "claims_gt": 14,
+      "claims_predicted": 46,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.0714,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "identity_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 33.53,
+        "total_tokens": 23947,
+        "total_api_calls": 47
+      }
+    },
+    {
+      "scenario_id": "sc-002",
+      "model": "us.anthropic.claude-haiku-5-5",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 8,
+        "total": 14
+      },
+      "claims_matched": 14,
+      "claims_gt": 14,
+      "claims_predicted": 53,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 1.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.5714,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "omission",
+          "difficulty": "easy",
+          "claim_type": "identity_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "sequence_mismatch",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 268.14,
+        "total_tokens": 221590,
+        "total_api_calls": 107
+      }
+    },
+    {
+      "scenario_id": "sc-002",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 8,
+        "total": 14
+      },
+      "claims_matched": 14,
+      "claims_gt": 14,
+      "claims_predicted": 50,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.2857,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "easy",
+          "claim_type": "identity_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "sequence_mismatch",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 36.59,
+        "total_tokens": 26058,
+        "total_api_calls": 51
+      }
+    },
+    {
+      "scenario_id": "sc-003",
+      "model": "us.anthropic.claude-haiku-5-5",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 11,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 53,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 1.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.1333,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "supported",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "hard",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "potential_conflict",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "identity_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 377.69,
+        "total_tokens": 542097,
+        "total_api_calls": 107
+      }
+    },
+    {
+      "scenario_id": "sc-003",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 11,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 44,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.2667,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "hard",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "identity_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 32.21,
+        "total_tokens": 23113,
+        "total_api_calls": 45
+      }
+    },
+    {
+      "scenario_id": "sc-004",
+      "model": "us.anthropic.claude-haiku-5-5",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 9,
+        "total": 14
+      },
+      "claims_matched": 14,
+      "claims_gt": 14,
+      "claims_predicted": 62,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 1.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.3571,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "omission",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 379.92,
+        "total_tokens": 377051,
+        "total_api_calls": 125
+      }
+    },
+    {
+      "scenario_id": "sc-004",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 9,
+        "total": 14
+      },
+      "claims_matched": 14,
+      "claims_gt": 14,
+      "claims_predicted": 53,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.2143,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "omission",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 38.83,
+        "total_tokens": 27623,
+        "total_api_calls": 54
+      }
+    },
+    {
+      "scenario_id": "sc-005",
+      "model": "us.anthropic.claude-haiku-5-5",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 9,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 51,
+      "precision": 1.0,
+      "recall": 0.1,
+      "f1": 0.1818,
+      "retrieval_recall": 0.9,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.3333,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "temporal_mismatch",
+          "difficulty": "hard",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "potential_conflict",
+          "correct": true,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 364.1,
+        "total_tokens": 391635,
+        "total_api_calls": 103
+      }
+    },
+    {
+      "scenario_id": "sc-005",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 10,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 48,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.0667,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "temporal_mismatch",
+          "difficulty": "hard",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 35.71,
+        "total_tokens": 25174,
+        "total_api_calls": 49
+      }
+    },
+    {
+      "scenario_id": "sc-006",
+      "model": "us.anthropic.claude-haiku-5-5",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 11,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 53,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 1.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.7333,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "omission",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 276.25,
+        "total_tokens": 205219,
+        "total_api_calls": 107
+      }
+    },
+    {
+      "scenario_id": "sc-006",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 11,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 47,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.1333,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "omission",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 34.33,
+        "total_tokens": 24552,
+        "total_api_calls": 48
+      }
+    },
+    {
+      "scenario_id": "sc-007",
+      "model": "us.anthropic.claude-haiku-5-5",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 9,
+        "total": 14
+      },
+      "claims_matched": 14,
+      "claims_gt": 14,
+      "claims_predicted": 60,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 1.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.3571,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "medium",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "minimization",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 389.3,
+        "total_tokens": 480530,
+        "total_api_calls": 121
+      }
+    },
+    {
+      "scenario_id": "sc-007",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 9,
+        "total": 14
+      },
+      "claims_matched": 14,
+      "claims_gt": 14,
+      "claims_predicted": 52,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.1429,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "medium",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 37.98,
+        "total_tokens": 27089,
+        "total_api_calls": 53
+      }
+    },
+    {
+      "scenario_id": "sc-009",
+      "model": "us.anthropic.claude-haiku-5-5",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 10,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 66,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 1.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.7333,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "temporal_mismatch",
+          "difficulty": "medium",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 321.06,
+        "total_tokens": 163557,
+        "total_api_calls": 133
+      }
+    },
+    {
+      "scenario_id": "sc-009",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 10,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 71,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.2,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "temporal_mismatch",
+          "difficulty": "medium",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 49.92,
+        "total_tokens": 35863,
+        "total_api_calls": 72
+      }
+    },
+    {
+      "scenario_id": "sc-011",
+      "model": "us.anthropic.claude-haiku-5-5",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 9,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 58,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 1.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.4,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "fabrication",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "hard",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "spoken_statement"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 305.23,
+        "total_tokens": 157984,
+        "total_api_calls": 117
+      }
+    },
+    {
+      "scenario_id": "sc-011",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 9,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 52,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.0667,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "hard",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "spoken_statement"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 37.73,
+        "total_tokens": 26933,
+        "total_api_calls": 53
+      }
+    },
+    {
+      "scenario_id": "sc-013",
+      "model": "us.anthropic.claude-haiku-5-5",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 8,
+        "total": 15
+      },
+      "claims_matched": 0,
+      "claims_gt": 15,
+      "claims_predicted": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.0,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "supported",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "supported",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "supported",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "supported",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "conflict",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "conflict",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "spoken_statement"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 23.77,
+        "total_tokens": 11641,
+        "total_api_calls": 1
+      }
+    },
+    {
+      "scenario_id": "sc-013",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 8,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 88,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.2,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "spoken_statement"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 65.32,
+        "total_tokens": 45795,
+        "total_api_calls": 89
+      }
+    },
+    {
+      "scenario_id": "sc-014",
+      "model": "us.anthropic.claude-haiku-5-5",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 10,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 58,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 1.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.3333,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "supported",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "omission",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "potential_conflict",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 341.32,
+        "total_tokens": 385052,
+        "total_api_calls": 117
+      }
+    },
+    {
+      "scenario_id": "sc-014",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 10,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 49,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.2,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 36.18,
+        "total_tokens": 25584,
+        "total_api_calls": 50
+      }
+    },
+    {
+      "scenario_id": "sc-015",
+      "model": "us.anthropic.claude-haiku-5-5",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 7,
+        "total": 14
+      },
+      "claims_matched": 14,
+      "claims_gt": 14,
+      "claims_predicted": 54,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 1.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.5714,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "hard",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "identity_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 209.25,
+        "total_tokens": 200773,
+        "total_api_calls": 109
+      }
+    },
+    {
+      "scenario_id": "sc-015",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 7,
+        "total": 14
+      },
+      "claims_matched": 14,
+      "claims_gt": 14,
+      "claims_predicted": 49,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.2857,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "fabrication",
+          "difficulty": "hard",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "identity_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 35.43,
+        "total_tokens": 25280,
+        "total_api_calls": 50
+      }
+    },
+    {
+      "scenario_id": "sc-016",
+      "model": "us.anthropic.claude-haiku-5-5",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 8,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 53,
+      "precision": 0.5,
+      "recall": 0.2,
+      "f1": 0.2857,
+      "retrieval_recall": 1.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.0667,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "identity_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "potential_conflict",
+          "correct": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "supported",
+          "pred_relationship": "potential_conflict",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "potential_conflict",
+          "correct": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "potential_conflict",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 346.61,
+        "total_tokens": 233329,
+        "total_api_calls": 107
+      }
+    },
+    {
+      "scenario_id": "sc-016",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 10,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 58,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.0667,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "identity_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 40.35,
+        "total_tokens": 29443,
+        "total_api_calls": 59
+      }
+    },
+    {
+      "scenario_id": "sc-017",
+      "model": "us.anthropic.claude-haiku-5-5",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 9,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 67,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 1.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.3333,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "minimization",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "medium",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "supported",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "subjective_characterization"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 479.45,
+        "total_tokens": 368130,
+        "total_api_calls": 135
+      }
+    },
+    {
+      "scenario_id": "sc-017",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 9,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 68,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.1333,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "omission",
+          "difficulty": "medium",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "subjective_characterization"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 50.82,
+        "total_tokens": 35524,
+        "total_api_calls": 69
+      }
+    },
+    {
+      "scenario_id": "sc-018",
+      "model": "us.anthropic.claude-haiku-5-5",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 10,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 48,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 1.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.3333,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "potential_conflict",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 348.14,
+        "total_tokens": 360207,
+        "total_api_calls": 97
+      }
+    },
+    {
+      "scenario_id": "sc-018",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 10,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 53,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.1333,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 37.95,
+        "total_tokens": 27242,
+        "total_api_calls": 54
+      }
+    }
+  ]
+}

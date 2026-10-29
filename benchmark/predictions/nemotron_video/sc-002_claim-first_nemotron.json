@@ -1,0 +1,530 @@
+{
+  "scenario_id": "sc-002",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 188.54,
+  "total_tokens": 62583,
+  "total_api_calls": 51,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: November 16, 2022",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of the incident date being November 16, 2022.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 1400 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claimed time of incident (approximately 1400 hours).",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: 100 S. McClay Street, Santa Ana, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claimed location of 100 S. McClay Street, Santa Ana, CA.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer R. Navarro",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the reporting officer is Officer R. Navarro.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 5831",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Badge Number 5831.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Diego Renteria, Male, 41 years old, Hispanic, grey jacket, beige shorts",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer R. Navarro, Officer K. Cho",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Officer(s) being Officer R. Navarro and Officer K. Cho.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Male driver (W-1), Male rear-seat passenger (W-2)",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 52.9,
+          "end_seconds": 61.4
+        }
+      ],
+      "evidence_observations": "The video segment provided is a text slide describing the investigative process of the Orange County District Attorney's Office. It contains no visual or audio content showing a police incident, bodycam footage, or any witnesses. Therefore, it is impossible to verify the presence or identity of any witnesses (W-1, W-2) as described in the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On November 16, 2022, at approximately 1400 hours, Officer Cho and I were conducting Directed Enforcement Patrol in a marked black and white SAPD patrol unit in the area of First Avenue and McClay Street, Santa Ana.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I was operating the patrol vehicle and Officer Cho was seated in the right front passenger seat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to verify or contradict the claim about the patrol vehicle's occupants.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Both officers were wearing SAPD polo uniform shirts with identification patches and black outer vests clearly marked \"POLICE.\"",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about officer uniforms and vests.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Both officers had body-worn cameras activated and recording.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to verify whether the officers' body-worn cameras were activated and recording.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "At approximately 1400 hours, I initiated a traffic stop on a black Mercedes Benz, California license plate 8YQZ992, at 100 S. McClay Street, after observing that the vehicle's registration tags had expired.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 111.3,
+          "end_seconds": 178.8
+        }
+      ],
+      "evidence_observations": "The video shows a black sedan with the driver's door open, but the license plate is not visible. The officer states 'Just put your hands on the front dash' and the driver is seen with a white plastic bag on their lap, not reaching around. The timestamp on the video is 14:03:35, which is 3 minutes and 35 seconds after the claimed 1400 hours (2:00 PM), indicating a significant time discrepancy.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I positioned the patrol unit approximately five feet behind the Mercedes.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the patrol unit's position relative to the Mercedes.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The driver of the Mercedes was subsequently identified as W-1, who was alone in the vehicle with the subject, Diego Renteria, in the front passenger seat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the Mercedes driver being W-1 and the presence of Diego Renteria in the front passenger seat.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I advised W-1 the stop was for expired registration.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 111.3,
+          "end_seconds": 178.8
+        }
+      ],
+      "evidence_observations": "The video segment provided does not contain the relevant audio or visual information to verify the claim that the officer advised W-1 the stop was for expired registration. The clip shows the officer approaching the vehicle and making a request to the driver, but the specific reason for the stop is not stated in the visible transcript or audio.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "W-1 stated he was on his way to the DMV to renew the registration.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about W-1's stated destination and purpose.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "I asked all occupants if they were on probation or parole, and W-1 responded that he was on AB109 supervision.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about W-1's response regarding AB109 supervision.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "I asked W-1 to step out, handcuffed him for officer safety, conducted a pat-down search, and placed him in the rear of the patrol car.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 47.8,
+          "end_seconds": 55.7
+        }
+      ],
+      "evidence_observations": "The video segment provided is a static text slide describing the investigative procedures of the Orange County District Attorney's Office (OCDA) regarding officer-involved shootings and custodial deaths. It contains no visual or audio content from a bodycam footage showing an interaction with a person named W-1, nor does it depict any handcuffing, pat-down search, or placement in a patrol car.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "I then approached the right rear passenger side of the Mercedes and contacted the subject, Renteria.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about approaching the right rear passenger side of the Mercedes and contacting Renteria.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Officer Cho was positioned on the driver's side of the Mercedes near the front fender.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer Cho's position relative to the Mercedes.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The subject had a bag of fast food in his hands which he placed on the center console.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to verify or contradict the claim about the subject having a bag of fast food in his hands and placing it on the center console.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "The subject then picked up his cell phone and began texting.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether the subject picked up his cell phone or began texting.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "I asked the subject to put down his phone and place his hands on the dashboard.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the subject was asked to put down his phone and place his hands on the dashboard.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The subject complied and placed both hands flat on the dashboard.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject's hand placement on the dashboard.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "After a short pause, the subject's right hand dropped off the dashboard and he began reaching toward his right side near the floorboard area.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 111.4,
+          "end_seconds": 180.6
+        }
+      ],
+      "evidence_observations": "The video shows the officer instructing the subject to stop reaching around and put his hands down. The subject is seen with his hands on the dashboard and then moving them, but there is no clear visual evidence of his right hand dropping off the dashboard and reaching toward the floorboard area as described in the claim. The audio contains the officer's commands but does not confirm the specific hand movement described.",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "I repeated my command for the subject to put his hands on the dash.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The subject then abruptly reached down to his right side with his right hand and produced a black semi-automatic handgun.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 111.4,
+          "end_seconds": 180.6
+        }
+      ],
+      "evidence_observations": "The video shows the officer instructing the subject to stop reaching around and put his hands down. The subject is seen with his hands down or near his lap, and no handgun is visible in his right hand or anywhere else in the vehicle or on his person during this segment. The officer's commands suggest he is attempting to prevent the subject from reaching for something, which contradicts the claim that the subject produced a handgun.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "I observed the subject grip the weapon and begin to raise it in the direction of Officer Cho, who was standing on the driver's side.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "I immediately drew my service weapon and discharged it four times at the subject through the open rear passenger window.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Simultaneously, Officer Cho discharged his firearm three times from his position near the driver's side front fender.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer Cho discharging his firearm three times from his position near the driver's side front fender.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "After both officers ceased fire, we maintained our positions on the sidewalk with our weapons drawn.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about officers maintaining positions on the sidewalk with weapons drawn after ceasing fire.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "I radioed dispatch to report the officer-involved shooting.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 38.7,
+          "end_seconds": 47.8
+        }
+      ],
+      "evidence_observations": "The provided video segment consists of static informational slides with text about the Orange County District Attorney's Office conducting investigations. There is no visible bodycam footage, audio of a radio transmission, or any scene depicting an officer reporting a shooting to dispatch. The content shown is unrelated to the specific claim of radioing dispatch.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Additional SAPD units arrived within approximately one minute.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 43.8,
+          "end_seconds": 51.0
+        }
+      ],
+      "evidence_observations": "The video segment provided contains only text describing the Orange County District Attorney's Office investigation process and does not show any police incident scene, SAPD units, or time-based events that would allow verification of the claim about additional units arriving within one minute.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Officers maintained a perimeter around the Mercedes and gave repeated commands for the subject to exit the vehicle, which went unanswered.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 111.4,
+          "end_seconds": 180.6
+        }
+      ],
+      "evidence_observations": "The video shows the officer approaching the vehicle with the door open and speaking to the occupant. The audio contains the officer saying 'Hey Brother, can you do me a favor and stop reaching around' and 'just put your hands', indicating a command to stop a specific action rather than a repeated command to exit the vehicle. The occupant remains inside the vehicle throughout the clip, and there is no visual evidence of officers maintaining a perimeter around the car or the subject failing to respond to exit commands.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "At approximately 1409 hours, a K9 unit arrived.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the K9 unit arrival time.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "The K9 was deployed into the vehicle at approximately 1414 hours but the subject was unresponsive.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the K9 deployment time and subject responsiveness.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Officers then breached the vehicle and located the subject slumped in the front passenger seat.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 111.4,
+          "end_seconds": 180.6
+        }
+      ],
+      "evidence_observations": "The video shows the officer approaching the vehicle with the door already open. The officer asks the person inside to stop reaching around and put their hands down. The person inside is visible in the front passenger seat, but there is no visual evidence of officers breaching the vehicle or the subject being slumped. The audio indicates the officer is speaking to the subject, not that a breach has occurred.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "A black semi-automatic handgun was recovered from the floorboard beneath the subject's legs.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about a black semi-automatic handgun being recovered from the floorboard beneath the subject's legs.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Officers removed the subject from the vehicle, handcuffed him, and began providing medical aid.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about officers removing the subject from the vehicle, handcuffing him, and providing medical aid.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "OCFA paramedics arrived and transported the subject to Orange County Global Medical Center, where the subject was pronounced deceased at 1502 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 38.7,
+          "end_seconds": 46.1
+        }
+      ],
+      "evidence_observations": "The video segment provided only shows text describing the Orange County District Attorney's Office conducting an independent investigation. It does not show any paramedics, transportation, or a medical center, nor does it provide any audio or visual information about the time of death or medical procedures.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Subject transported to OCGMC, pronounced deceased at 1502 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the subject was transported to OCGMC and pronounced deceased at 1502 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "W-1 released on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim 'W-1 released on scene.'",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 38.7,
+          "end_seconds": 46.2
+        }
+      ],
+      "evidence_observations": "The video shows a person crouching near a shoe on the ground, with police tape visible in the background, but no clear visual evidence of the scene being actively secured or any specific actions confirming the claim.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Body-worn camera footage from both officers (continuous recording)",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 96.4,
+          "end_seconds": 109.0
+        }
+      ],
+      "evidence_observations": "The video segment provided is a static slide with text about the legal review process and does not contain any bodycam footage or audio to assess the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Seven (7) cartridge cases",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Seven (7) cartridge cases'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "One (1) Polymer80 model PF940SC handgun, 9mm Luger caliber, no serial number",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the handgun model, caliber, and serial number status.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Two (2) high-capacity magazines (27 and 31 rounds)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Two (2) high-capacity magazines (27 and 31 rounds)' in the police incident report.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Miscellaneous personal property including cellular phone, wallet, currency",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 88.0,
+          "end_seconds": 96.4
+        }
+      ],
+      "evidence_observations": "The video segment provided is a static slide with text describing a legal review process and does not contain any bodycam footage or audio related to a police incident report. Therefore, it is impossible to compare the claim about miscellaneous personal property against any visual or auditory evidence from a bodycam video.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Clothing items from the subject",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess the claim about 'Clothing items from the subject'. The absence of any transcript content prevents verification of whether clothing items were observed, contradicted, or remain unaddressed.",
+      "confidence": 0.95
+    }
+  ]
+}

@@ -1,0 +1,608 @@
+{
+  "scenario_id": "sc-003",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 375.75,
+  "total_tokens": 92897,
+  "total_api_calls": 53,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-003",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 215.8,
+          "end_seconds": 230.1
+        }
+      ],
+      "evidence_observations": "The provided transcript fragment is incomplete and does not contain sufficient information to verify the claim about Case Number SC-003. The audio waveform is present but no visual content from bodycam footage is described or visible in the provided context.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: January 16, 2023",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Date of Incident: January 16, 2023'.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 2136 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claimed time of incident (2136 hours).",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: Old Ranch Condominium development, Seal Beach, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of the location being Old Ranch Condominium development, Seal Beach, CA.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer D. Harmon",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the reporting officer is Officer D. Harmon.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 3851",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 215.8,
+          "end_seconds": 230.1
+        }
+      ],
+      "evidence_observations": "The provided transcript segment [3:35-3:50] is a partial and repetitive excerpt of dispatcher dialogue that does not contain any visible badge number or reference to 'Badge Number: 3851'. The bodycam footage content is not described in the transcript, so no visual evidence of a badge number can be confirmed.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Thomas Weller, Male, 47 years old, White, baggy black jacket, blue jeans, black hat",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 270.1,
+          "end_seconds": 283.9
+        }
+      ],
+      "evidence_observations": "The transcript indicates the caller could not determine the subject's race ('I couldn't tell') and described clothing as 'like a jacket, mask, beanie'. The claim specifies Thomas Weller as White with a 'baggy black jacket'. The audio transcript shows the dispatcher asking about race (White, Black, Hispanic or Asian) and the caller being unable to specify, which contradicts the definitive racial description in the claim. The clothing description in the transcript ('jacket, mask, beanie') is vague and does not match the specific 'baggy black jacket' detail in the claim.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Officer D. Harmon, Corporal R. Fuentes",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Officer(s): Officer D. Harmon, Corporal R. Fuentes.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witness(es): Female resident (W-1), reported domestic violence restraining order against subject",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 460.6,
+          "end_seconds": 483.3
+        }
+      ],
+      "evidence_observations": "The transcript shows the caller stating 'I have a restraining order against him', but the audio is largely unintelligible with frequent interruptions and unclear speech. The dispatcher asks 'Is the officer talking to him?' and the caller responds 'No, he doesn't look like him at all he's yelling at the cop I don't know, I haven't seen him.' This directly contradicts the claim that the witness reported a domestic violence restraining order against the subject, as the caller indicates she has not seen the subject and is unsure of his identity.",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "On January 16, 2023, at approximately 2136 hours, dispatch received a 9-1-1 call from a female resident (W-1) reporting that an unknown male was kicking her front door and demanding entry at her residence within the Old Ranch Condominium development in Seal Beach.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 31.3,
+          "end_seconds": 38.6
+        }
+      ],
+      "evidence_observations": "The video clip shows a black screen with white text describing the Orange County District Attorney's Office conducting investigations into officer-involved shootings and custodial deaths. There is no visible bodycam footage, audio, or scene depicting a 9-1-1 call, a female resident, a male kicking a door, or any events at the Old Ranch Condominium development in Seal Beach.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "W-1 described the male as wearing a jacket, mask, beanie, and dark brown work boots.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 277.0,
+          "end_seconds": 293.3
+        }
+      ],
+      "evidence_observations": "The caller explicitly states 'Like a jacket, mask, beanie' and 'Yeah and he's wearing dark brown like work boots with laces but I couldn't see his face.' The dispatcher confirms 'A jacket, mask and a beanie?' indicating agreement with the description.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Corporal Fuentes and I were dispatched to the location.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that Corporal Fuentes and the reporting officer were dispatched to the location.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I arrived at the residence at approximately 2140 hours and observed the property.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about arrival time and observation of the property.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The residence is a two-story condominium with an enclosed rear courtyard surrounded by an approximately eight-foot-high brick perimeter wall with an entry gate facing Aster Street.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "At approximately 2141 hours, I observed a male subject, later identified as Thomas Weller, standing on the concrete walkway outside the courtyard gate.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Thomas Weller standing on the concrete walkway outside the courtyard gate at 2141 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "The subject was in full view and matched the description provided by dispatch.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 249.4,
+          "end_seconds": 270.1
+        }
+      ],
+      "evidence_observations": "The transcript indicates the subject was 'walking around' and 'back at the door', but the bodycam footage shows a person standing still near a door, not walking around or actively kicking. The claim states the subject was 'in full view', but the footage is dark and the subject is partially obscured by shadows and the door frame, making it difficult to see details or confirm a full view.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "I stood approximately 40 feet east of the subject and used my flashlight to illuminate him.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about distance and flashlight use.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "I identified myself as a police officer and ordered the subject to approach me with his hands visible.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 98.9,
+          "end_seconds": 167.9
+        }
+      ],
+      "evidence_observations": "The evidence transcript segment is incoherent and fragmented, containing repeated phrases like 'District Attorney's website copies' and 'police can help police can help you', followed by 'somebody banging on my door you t'. It does not contain any clear audio or contextual evidence about the officer identifying themselves, ordering the subject to approach, or the subject's hands being visible. The content appears unrelated to the specific claim about officer identification and commands.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The subject stated he was there to visit a friend and asked me to call my supervisor.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 669.2,
+          "end_seconds": 691.2
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows an officer pointing a gun at a person lying on the floor. The officer asks 'You good? You alright?', and the person responds 'Yeah, I'm good. You good?'. The officer then says 'Start medics and a supervisor'. The person then says 'Finish me off', 'Shut up', and 'Put your hand on your chest'. The officer then says 'Put your hands on your head and roll over' and 'You reach for that gun, you're going to get shot'. The person does not state they were there to visit a friend or ask the officer to call their supervisor.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "The subject held a beverage can in his left hand throughout the encounter.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess the claim about the subject holding a beverage can in his left hand throughout the encounter.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "I noted the subject was wearing a baggy black jacket, blue jeans, and clear glasses.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 277.0,
+          "end_seconds": 293.3
+        }
+      ],
+      "evidence_observations": "The transcript indicates the caller described the subject as wearing a 'jacket, mask and a beanie' and 'dark brown' clothing, which directly contradicts the report's claim of a 'baggy black jacket, blue jeans, and clear glasses'. The video/audio segment provided is insufficient to confirm or deny the specific clothing items (jacket color, jeans, glasses) due to the obscured view and unclear audio, but the described clothing in the transcript conflicts with the report's description.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Corporal Fuentes arrived at approximately 2142 hours, parking his patrol vehicle approximately 200 to 300 feet south of the condominium.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Corporal Fuentes' arrival time and parking location.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "As Corporal Fuentes approached on foot, the subject became increasingly noncompliant.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject's compliance level as Corporal Fuentes approached on foot.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "The subject placed his left hand in his front jacket pocket, turned his back to me, and began walking toward the enclosed patio area in the direction of W-1's residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 49.0,
+          "end_seconds": 58.0
+        }
+      ],
+      "evidence_observations": "The video segment provided is a text slide describing the investigative process conducted by the Orange County District Attorney's Office. It contains no visual or audio content from a bodycam video showing a subject, their actions, or an enclosed patio area. Therefore, it is impossible to verify or contradict the claim about the subject's hand placement, body orientation, or direction of movement.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "I gave repeated commands for the subject to stop and show his hands, which the subject ignored.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about repeated commands for the subject to stop and show his hands.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "The subject stated, \"I will not sit down; I will not sit down.\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 758.2,
+          "end_seconds": 770.5
+        }
+      ],
+      "evidence_observations": "The subject is seen standing on the porch and then being tased by the officer. The audio transcript shows the subject saying 'I will not sit down' which matches the claim.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "As the subject walked back into the enclosed patio area with his back to the officers, Corporal Fuentes warned the subject that he would deploy his Taser.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 765.7,
+          "end_seconds": 781.4
+        }
+      ],
+      "evidence_observations": "The video shows the subject walking towards the door with his back to the officers, but he is not in an enclosed patio area. He is on a sidewalk and steps leading to a door. The officer says 'I'm going to tase you' before the subject is on the ground, indicating the warning came after the subject had already moved away from the initial position and was not in the enclosed patio area described in the claim.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The subject continued to ignore commands.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that 'the subject continued to ignore commands.'",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "At approximately 2142 hours, Corporal Fuentes deployed his Taser, striking the subject in the chest.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 765.7,
+          "end_seconds": 781.4
+        }
+      ],
+      "evidence_observations": "The video shows the subject standing on the porch initially, then being struck by a Taser and falling to the ground. The audio indicates the officer states 'I'm going to tase you' multiple times before the Taser is deployed. However, the video does not clearly show the Taser striking the subject in the chest specifically at 2142 hours; the Taser is deployed after the subject is already on the ground or in the process of falling, and the exact moment of impact and location (chest) are not clearly visible or confirmed in the provided clip.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The subject fell forward onto his stomach within the enclosed patio area.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 31.3,
+          "end_seconds": 38.6
+        }
+      ],
+      "evidence_observations": "The video shows a person in a dark uniform crouching down near a person lying on the ground, but the specific action of falling forward onto the stomach within an enclosed patio area is not clearly visible or confirmed in this short clip.",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "I approached the threshold of the patio and observed the subject lying face down.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Corporal Fuentes was approximately ten feet to my right.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that Corporal Fuentes was approximately ten feet to the speaker's right.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "The subject then reached toward his left waistband with his right hand and produced what appeared to be a black semi-automatic handgun.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 691.2,
+          "end_seconds": 699.4
+        }
+      ],
+      "evidence_observations": "The video shows a person lying on the floor with their hands on their head, as instructed by the officer. The officer states, 'You reach for that gun, you're going to get shot,' implying the subject was reaching for a weapon. However, the subject's hands are clearly on their head, not reaching toward their waistband. The subject does not produce a gun from their waistband in this clip.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The subject raised the weapon and pointed it in my direction.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether the subject raised a weapon or pointed it in the officer's direction.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Fearing for my life and the life of Corporal Fuentes, I discharged my duty weapon, firing approximately twelve rounds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Corporal Fuentes simultaneously drew his duty weapon and fired approximately nine rounds.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 781.4,
+          "end_seconds": 806.9
+        }
+      ],
+      "evidence_observations": "The video shows a suspect on the ground with hands up, and an officer stating 'Don't reach for that gun' while the transcript indicates '241 shots fired'. The audio also includes '241, shots fired' and 'cop shot you good', suggesting the officer was shot at, not that he fired 9 rounds. The claim states Corporal Fuentes fired 9 rounds, but the video shows a chaotic scene with multiple officers and a suspect on the ground, with no clear visual of Corporal Fuentes drawing his weapon and firing 9 rounds.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "The subject released the weapon and ceased movement.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that 'the subject released the weapon and ceased movement.'",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "After confirming the subject was no longer an active threat, Corporal Fuentes and I maintained our positions and held the subject at gunpoint.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 219.5,
+          "end_seconds": 238.7
+        }
+      ],
+      "evidence_observations": "The transcript shows the dispatcher asking if the person is still banging or trying to kick the door, and the caller stating they have a gun but it's locked up and they were asleep. This indicates the subject was actively threatening the door (an active threat) when the call was made, contradicting the claim that the subject was 'no longer an active threat' when the officers maintained their positions and held the subject at gunpoint.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "At approximately 2148 hours, Officer Pistilli arrived on scene and secured the weapon from the subject's immediate reach.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 689.8,
+          "end_seconds": 696.7
+        }
+      ],
+      "evidence_observations": "The video shows the officer holding a gun pointed at a person lying on the floor. The officer's hand is extended towards the person on the floor, and the audio indicates commands like 'Put your hands on your head and roll over' and 'You reach for that gun, you're going to get shot.' This suggests the officer is still in the process of securing the situation and the weapon, contradicting the claim that the weapon was already secured from the subject's immediate reach at 2148 hours.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Officer Pistilli handcuffed the subject and applied a tourniquet to the subject's upper left thigh.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer Pistilli handcuffing the subject and applying a tourniquet to the subject's upper left thigh.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "The weapon was later identified as a Glock 22, .40-caliber handgun, registered to the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 219.5,
+          "end_seconds": 238.7
+        }
+      ],
+      "evidence_observations": "The transcript shows the caller mentions having a gun, but the audio is heavily redacted and unintelligible, making it impossible to confirm the type of weapon or its registration status. The bodycam footage is not visible in the provided frames, so no visual evidence of the weapon can be assessed.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Orange County Fire Authority paramedics arrived on scene and transported the subject to UCI Medical Center, where the subject was pronounced deceased at approximately 2232 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 26.2,
+          "end_seconds": 33.7
+        }
+      ],
+      "evidence_observations": "The video segment provided only shows text describing the Orange County District Attorney's Office conducting an independent investigation of officer-involved shootings and custodial deaths. There is no visual or audio evidence of paramedics arriving, transporting a subject, or a medical determination of death at 2232 hours.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "W-1 and her children confirmed unharmed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that 'W-1 and her children confirmed unharmed.'",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 33.7,
+          "end_seconds": 40.4
+        }
+      ],
+      "evidence_observations": "The video shows a black screen with white text describing the Orange County District Attorney's Office investigation procedures. There is no visible scene, no police activity, and no indication of a scene being secured. The audio consists of scrolling text narration that does not mention scene security.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Body-worn camera footage from Officer Harmon and Corporal Fuentes",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 84.0,
+          "end_seconds": 96.5
+        }
+      ],
+      "evidence_observations": "The video segment provided is a static slide with text about legal review processes and does not contain any bodycam footage or audio to assess the claim about Officer Harmon and Corporal Fuentes.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "One (1) Glock 22, .40-caliber handgun",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 219.5,
+          "end_seconds": 238.7
+        }
+      ],
+      "evidence_observations": "The audio transcript indicates the caller mentions having a gun, but the audio is heavily redacted and unintelligible, making it impossible to confirm the specific type of firearm (Glock 22, .40-caliber) or even definitively confirm the presence of a gun from this segment alone.",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Multiple cartridge cases (WIN 9MM LUGER and FEDERAL 40 S&W)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about multiple cartridge cases (WIN 9MM LUGER and FEDERAL 40 S&W).",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Clothing items from the subject",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 266.8,
+          "end_seconds": 280.4
+        }
+      ],
+      "evidence_observations": "The bodycam footage is not visible in the provided frames; only the audio transcript is shown. The transcript indicates the caller is describing a person they saw, mentioning clothing items like a jacket, mask, and beanie, but the audio is largely unintelligible and does not clearly confirm or deny specific clothing details as stated in the claim.",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "One (1) beverage can",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'One (1) beverage can'.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Subject transported to UCI Medical Center, pronounced deceased.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the subject was transported to UCI Medical Center and pronounced deceased.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "W-1 and her children confirmed unharmed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that 'W-1 and her children confirmed unharmed.'",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 33.7,
+          "end_seconds": 40.4
+        }
+      ],
+      "evidence_observations": "The video shows a black screen with white text describing the Orange County District Attorney's Office investigation procedures. There is no visible scene, no police activity, and no indication of a scene being secured. The audio consists of a voice reading the text on screen, which does not describe any physical scene or actions related to securing a location.",
+      "confidence": 0.9
+    }
+  ]
+}

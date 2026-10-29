@@ -1,0 +1,2620 @@
+{
+  "evaluated_at": "2026-10-29T07:11:09.329704",
+  "iou_threshold": 0.3,
+  "aggregate": {
+    "aggregate": {
+      "total_claims": 220,
+      "total_scenarios": 15,
+      "precision": 0.625,
+      "recall": 0.0709,
+      "f1": 0.1274,
+      "temporal_iou_mean": null,
+      "abstention_rate": 0.2136
+    },
+    "by_difficulty": {
+      "easy": {
+        "count": 116,
+        "precision": 0.4545,
+        "recall": 0.1064,
+        "f1": 0.1724
+      },
+      "hard": {
+        "count": 37,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "medium": {
+        "count": 67,
+        "precision": 1.0,
+        "recall": 0.0746,
+        "f1": 0.1389
+      }
+    },
+    "by_discrepancy_type": {
+      "ambiguous_language": {
+        "count": 13,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "direct_contradiction": {
+        "count": 83,
+        "precision": 1.0,
+        "recall": 0.0602,
+        "f1": 0.1136
+      },
+      "exaggeration": {
+        "count": 12,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "fabrication": {
+        "count": 11,
+        "precision": 1.0,
+        "recall": 0.1818,
+        "f1": 0.3077
+      },
+      "minimization": {
+        "count": 13,
+        "precision": 1.0,
+        "recall": 0.0769,
+        "f1": 0.1429
+      },
+      "none": {
+        "count": 74,
+        "precision": 0.1429,
+        "recall": 0.2,
+        "f1": 0.1667
+      },
+      "omission": {
+        "count": 11,
+        "precision": 1.0,
+        "recall": 0.0909,
+        "f1": 0.1667
+      },
+      "sequence_mismatch": {
+        "count": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "temporal_mismatch": {
+        "count": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "by_claim_type": {
+      "action_description": {
+        "count": 118,
+        "precision": 0.6667,
+        "recall": 0.0769,
+        "f1": 0.1379
+      },
+      "identity_description": {
+        "count": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "location_description": {
+        "count": 13,
+        "precision": 1.0,
+        "recall": 0.0833,
+        "f1": 0.1538
+      },
+      "object_description": {
+        "count": 36,
+        "precision": 0.5,
+        "recall": 0.0333,
+        "f1": 0.0625
+      },
+      "spoken_statement": {
+        "count": 29,
+        "precision": 0.6667,
+        "recall": 0.1667,
+        "f1": 0.2667
+      },
+      "subjective_characterization": {
+        "count": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "temporal_sequence": {
+        "count": 18,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "conflict": {
+        "ambiguous_or_insufficient": 88,
+        "not_assessed": 32,
+        "potential_conflict": 10,
+        "supported": 3,
+        "missing": 8
+      },
+      "supported": {
+        "ambiguous_or_insufficient": 43,
+        "not_assessed": 12,
+        "potential_conflict": 6,
+        "supported": 2,
+        "missing": 6
+      },
+      "ambiguous": {
+        "not_assessed": 3,
+        "ambiguous_or_insufficient": 6,
+        "missing": 1
+      }
+    }
+  },
+  "scenarios": [
+    {
+      "scenario_id": "sc-001",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 10,
+        "total": 14
+      },
+      "claims_matched": 14,
+      "claims_gt": 14,
+      "claims_predicted": 46,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.1,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.2857,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "identity_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 177.67,
+        "total_tokens": 60431,
+        "total_api_calls": 47
+      }
+    },
+    {
+      "scenario_id": "sc-002",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 8,
+        "total": 14
+      },
+      "claims_matched": 14,
+      "claims_gt": 14,
+      "claims_predicted": 50,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.1111,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.3571,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "easy",
+          "claim_type": "identity_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "sequence_mismatch",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "potential_conflict",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 188.54,
+        "total_tokens": 62583,
+        "total_api_calls": 51
+      }
+    },
+    {
+      "scenario_id": "sc-003",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 9,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 52,
+      "precision": 1.0,
+      "recall": 0.1818,
+      "f1": 0.3077,
+      "retrieval_recall": 0.3,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.3333,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "hard",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "potential_conflict",
+          "correct": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "potential_conflict",
+          "correct": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "minimization",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "supported",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "identity_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 375.75,
+        "total_tokens": 92897,
+        "total_api_calls": 53
+      }
+    },
+    {
+      "scenario_id": "sc-004",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 8,
+        "total": 14
+      },
+      "claims_matched": 14,
+      "claims_gt": 14,
+      "claims_predicted": 53,
+      "precision": 1.0,
+      "recall": 0.1111,
+      "f1": 0.2,
+      "retrieval_recall": 0.3846,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.0714,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "supported",
+          "correct": false,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "potential_conflict",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 398.92,
+        "total_tokens": 111842,
+        "total_api_calls": 54
+      }
+    },
+    {
+      "scenario_id": "sc-005",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 8,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 50,
+      "precision": 0.5,
+      "recall": 0.2,
+      "f1": 0.2857,
+      "retrieval_recall": 0.4286,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.0667,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "temporal_mismatch",
+          "difficulty": "hard",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "supported",
+          "pred_relationship": "supported",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "potential_conflict",
+          "correct": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "potential_conflict",
+          "correct": true,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "supported",
+          "pred_relationship": "potential_conflict",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "potential_conflict",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 201.06,
+        "total_tokens": 73366,
+        "total_api_calls": 51
+      }
+    },
+    {
+      "scenario_id": "sc-006",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 11,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 47,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.2,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.3333,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "omission",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 366.58,
+        "total_tokens": 35378,
+        "total_api_calls": 48
+      }
+    },
+    {
+      "scenario_id": "sc-007",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 9,
+        "total": 14
+      },
+      "claims_matched": 14,
+      "claims_gt": 14,
+      "claims_predicted": 52,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.1,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.2857,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "medium",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "minimization",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 431.05,
+        "total_tokens": 84717,
+        "total_api_calls": 53
+      }
+    },
+    {
+      "scenario_id": "sc-009",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 10,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 63,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.1538,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.1333,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "temporal_mismatch",
+          "difficulty": "medium",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "conflict",
+          "pred_relationship": "supported",
+          "correct": false,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "supported",
+          "pred_relationship": "potential_conflict",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 139.19,
+        "total_tokens": 53097,
+        "total_api_calls": 64
+      }
+    },
+    {
+      "scenario_id": "sc-011",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 9,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 52,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.2,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "hard",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "spoken_statement"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 189.02,
+        "total_tokens": 42600,
+        "total_api_calls": 53
+      }
+    },
+    {
+      "scenario_id": "sc-013",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 8,
+        "total": 15
+      },
+      "claims_matched": 0,
+      "claims_gt": 15,
+      "claims_predicted": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.0,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.0,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "supported",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "supported",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "supported",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "supported",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "conflict",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "conflict",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "missing",
+          "correct": false,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "spoken_statement"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 49.33,
+        "total_tokens": 10399,
+        "total_api_calls": 1
+      }
+    },
+    {
+      "scenario_id": "sc-014",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 8,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 49,
+      "precision": 1.0,
+      "recall": 0.2,
+      "f1": 0.3333,
+      "retrieval_recall": 0.5556,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.4,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "potential_conflict",
+          "correct": true,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "potential_conflict",
+          "correct": true,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "omission",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 418.79,
+        "total_tokens": 99302,
+        "total_api_calls": 50
+      }
+    },
+    {
+      "scenario_id": "sc-015",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 7,
+        "total": 14
+      },
+      "claims_matched": 14,
+      "claims_gt": 14,
+      "claims_predicted": 49,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_recall": 0.3,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.2857,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "fabrication",
+          "difficulty": "hard",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "fabrication",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "identity_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 438.02,
+        "total_tokens": 49197,
+        "total_api_calls": 50
+      }
+    },
+    {
+      "scenario_id": "sc-016",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 9,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 60,
+      "precision": 0.3333,
+      "recall": 0.1,
+      "f1": 0.1538,
+      "retrieval_recall": 0.2857,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.0667,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "identity_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "potential_conflict",
+          "correct": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "supported",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "potential_conflict",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "potential_conflict",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "omission",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 234.61,
+        "total_tokens": 80735,
+        "total_api_calls": 61
+      }
+    },
+    {
+      "scenario_id": "sc-017",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 8,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 70,
+      "precision": 1.0,
+      "recall": 0.1111,
+      "f1": 0.2,
+      "retrieval_recall": 0.2143,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.0667,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "minimization",
+          "difficulty": "hard",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "potential_conflict",
+          "correct": true,
+          "discrepancy_type": "omission",
+          "difficulty": "medium",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "subjective_characterization"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 1413.6,
+        "total_tokens": 89012,
+        "total_api_calls": 71
+      }
+    },
+    {
+      "scenario_id": "sc-018",
+      "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "pipeline": "claim-first",
+      "counts": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 9,
+        "total": 15
+      },
+      "claims_matched": 15,
+      "claims_gt": 15,
+      "claims_predicted": 52,
+      "precision": 1.0,
+      "recall": 0.1,
+      "f1": 0.1818,
+      "retrieval_recall": 0.2,
+      "temporal_iou_mean": null,
+      "source_ref_accuracy": null,
+      "abstention_rate": 0.3333,
+      "iou_scores_count": 0,
+      "per_claim": [
+        {
+          "claim_id": "cl-001",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-002",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-003",
+          "gt_relationship": "conflict",
+          "pred_relationship": "potential_conflict",
+          "correct": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-004",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "location_description"
+        },
+        {
+          "claim_id": "cl-005",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "spoken_statement"
+        },
+        {
+          "claim_id": "cl-006",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-007",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-008",
+          "gt_relationship": "conflict",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-009",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-010",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "exaggeration",
+          "difficulty": "medium",
+          "claim_type": "temporal_sequence"
+        },
+        {
+          "claim_id": "cl-011",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "easy",
+          "claim_type": "object_description"
+        },
+        {
+          "claim_id": "cl-012",
+          "gt_relationship": "supported",
+          "pred_relationship": "not_assessed",
+          "correct": false,
+          "abstention": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-013",
+          "gt_relationship": "conflict",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": false,
+          "discrepancy_type": "direct_contradiction",
+          "difficulty": "medium",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-014",
+          "gt_relationship": "supported",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "none",
+          "difficulty": "easy",
+          "claim_type": "action_description"
+        },
+        {
+          "claim_id": "cl-015",
+          "gt_relationship": "ambiguous",
+          "pred_relationship": "ambiguous_or_insufficient",
+          "correct": true,
+          "discrepancy_type": "ambiguous_language",
+          "difficulty": "hard",
+          "claim_type": "action_description"
+        }
+      ],
+      "systems": {
+        "processing_time_seconds": 327.76,
+        "total_tokens": 95191,
+        "total_api_calls": 53
+      }
+    }
+  ]
+}

@@ -1,0 +1,550 @@
+{
+  "scenario_id": "sc-005",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 201.06,
+  "total_tokens": 73366,
+  "total_api_calls": 51,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: March 3-4, 2022",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Date of Incident: March 3-4, 2022'.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 0308-0400 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claimed time of incident (approximately 0308-0400 hours).",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: 615 South Resh Street, Anaheim, CA",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 101.2,
+          "end_seconds": 158.8
+        }
+      ],
+      "evidence_observations": "The caller explicitly states '615 South Resh, Anaheim' as the location of the emergency, which directly matches the claim of '615 South Resh Street, Anaheim, CA'.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Sergeant D. Navarro (TRG Tactical Commander)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Sergeant D. Navarro's role as TRG Tactical Commander.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 5839",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Badge Number 5839.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Darnell Washington, Male, 41 years old, Black",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Sgt. D. Navarro, Officer R. Vega (negotiator), Officer M. Cho, Officer T. Garrett, Officer P. Russo, Officer L. Diaz (K9 handler), Officer N. Kapoor (less lethal)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police incident report.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Subject's ex-girlfriend (W-1)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 41.6,
+          "end_seconds": 48.8
+        }
+      ],
+      "evidence_observations": "The video shows a black screen with white text describing the Orange County District Attorney's Office investigation process. There is no visible person identified as a witness, nor is there any audio mentioning an ex-girlfriend or witness W-1. The text on screen discusses the Bureau of Investigation and Special Assignments Unit but does not reference any specific witness details.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On the evening of March 3, 2022, at approximately 2130 hours, Anaheim Police Department received a call for service from W-1, the subject's ex-girlfriend.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 101.2,
+          "end_seconds": 158.8
+        }
+      ],
+      "evidence_observations": "The transcript shows the caller stating 'I have an emergency. M-, someone is shooting right here at my house. 615 South Resh, Anaheim.' The claim states the call was from 'W-1, the subject's ex-girlfriend.' The transcript does not identify the caller as the ex-girlfriend, only as 'M-', which contradicts the specific claim of the caller's identity.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "W-1 reported that while at the residence they shared at 615 South Resh Street, the subject had pointed a handgun at her.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 187.1,
+          "end_seconds": 197.6
+        }
+      ],
+      "evidence_observations": "The transcript indicates the subject is 'shooting in the air' with a 'big gun' and is 'outside'. The claim states the subject pointed a 'handgun' at the caller at the residence. The video/audio evidence suggests the subject was not pointing a handgun at the caller at the residence, but rather shooting a larger gun into the air from outside, which contradicts the specific details of the claim.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "W-1 reported that the subject had pointed a handgun at her, threatened to kill her and her neighbors, and had discharged a round inside the residence.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 187.1,
+          "end_seconds": 197.6
+        }
+      ],
+      "evidence_observations": "The transcript indicates the caller states the subject is 'shooting in the air' with a 'big gun' and is 'threatening' them, but the claim states the subject 'discharged a round inside the residence.' The video/audio evidence shows the subject is outside and shooting into the air, not inside the residence, directly contradicting the 'discharged a round inside the residence' portion of the claim.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "W-1 stated that the subject possessed a single firearm, a small handgun.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 309.3,
+          "end_seconds": 327.7
+        }
+      ],
+      "evidence_observations": "The video shows a person holding a large, long-barreled firearm (appearing to be a rifle or shotgun) rather than a small handgun. The audio transcript indicates discussion about a 'Hellfire' firearm, which is a type of rifle, contradicting the claim that the subject possessed a 'small handgun'.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "W-1 reported that the subject had not been taking his prescribed psychiatric medication.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject's psychiatric medication adherence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "W-1 stated that she believed the subject would harm officers if they approached.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about W-1's belief regarding the subject's potential to harm officers.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Patrol units established a perimeter around the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that patrol units established a perimeter around the residence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "Multiple attempts were made to communicate with the subject by phone and public address announcements, all of which were unsuccessful.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 86.3,
+          "end_seconds": 96.8
+        }
+      ],
+      "evidence_observations": "The video clip shows a person standing in a doorway with their back to the camera, wearing a dark shirt and light-colored pants. The person is holding a phone to their ear. There is no audio indicating phone calls or public address announcements. The scene is static and does not show any attempts at communication via phone or PA system.",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "At approximately 0022 hours, the Tactical Response Group (TRG) was activated and assumed responsibility for the incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about TRG activation at 0022 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "A Crisis Assessment Team was notified.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that a Crisis Assessment Team was notified.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The situation was classified as a Negotiator Driven Incident under Penal Code section 1370 due to information that the subject had previously been found mentally incompetent.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 161.2,
+          "end_seconds": 170.2
+        }
+      ],
+      "evidence_observations": "The transcript shows the dispatcher repeatedly asking 'Who is he?' and the caller responding 'Uh, he's my friend' and 'Uh, he's my friend. Osman Brown.' The dispatcher then asks 'Okay, where does he live? Does he live with you?' and the caller says 'Yes, he does.' This dialogue indicates the caller knows the person and his name, contradicting the claim that the subject was previously found mentally incompetent, which would typically imply a lack of clear identification or knowledge of the individual's identity.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Beginning at approximately 0308 hours, Officer Vega, the primary negotiator, began making PA announcements encouraging the subject to exit the residence peacefully.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer Vega's PA announcements beginning at 0308 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "At approximately 0314 hours and again at 0322 hours, the subject briefly emerged onto the rear patio of the residence, shouted at officers, and returned inside each time.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject emerging onto the rear patio at 0314 and 0322 hours, shouting at officers, and returning inside.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "At approximately 0341 hours, the subject came out onto the front porch and pointed what appeared to be a handgun directly at officers using both hands in a shooting stance.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 187.1,
+          "end_seconds": 197.6
+        }
+      ],
+      "evidence_observations": "The transcript indicates the subject is 'shooting in the air' with a 'big gun' and is 'outside right now', contradicting the claim that he was on the front porch pointing a handgun directly at officers in a shooting stance. The audio confirms he is not actively shooting at anyone, only into the air.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "He then re-entered the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that 'He then re-entered the residence.'",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "At approximately 0350 hours, in response to a recorded surrender request from W-1, the subject emerged holding a short-barreled rifle with a standard 30-round magazine.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 343.2,
+          "end_seconds": 373.9
+        }
+      ],
+      "evidence_observations": "The video shows a suspect at a door with an AR pistol and a drum magazine, contradicting the claim of a short-barreled rifle with a standard 30-round magazine.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The subject stood on the porch for several seconds, then returned inside without directing the weapon toward officers.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 203.8,
+          "end_seconds": 212.3
+        }
+      ],
+      "evidence_observations": "The audio transcript indicates the caller heard 'several' shots and stated 'He's coming back in the house,' implying the subject was outside and returned inside. The claim states the subject stood on the porch and returned inside without directing the weapon toward officers. The audio suggests the subject was actively shooting (threatening the caller), which contradicts the claim that he did not direct the weapon toward officers. The video content is not visible in the provided frames, so the observation is based solely on the audio transcript which indicates the subject was shooting and returning to the house.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "At approximately 0351 hours, Officer Vega played an additional surrender request.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer Vega playing a surrender request at 0351 hours.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Approximately one minute later, the subject exited the front door holding the same rifle in his left hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject exiting the front door one minute later holding a rifle in his left hand.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The subject raised the rifle to shoulder level and pointed it directly at the marked K9 patrol vehicle parked in front of the residence where several officers were positioned.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 203.8,
+          "end_seconds": 212.3
+        }
+      ],
+      "evidence_observations": "The video segment provided is a text transcript of a 911 call between a dispatcher and a caller. It contains no visual information from bodycam footage and only audio of the caller asking for help and the dispatcher asking questions about shots heard and the caller's location. There is no visual evidence of a subject, a rifle, shoulder level, a K9 patrol vehicle, or officers positioned at a residence.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "Fearing for the lives of the officers in and around the K9 vehicle, Officers Cho, Garrett, Russo, and I discharged our department-issued rifles.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about officers discharging rifles due to fear for their lives near the K9 vehicle.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The subject fell forward onto the porch in a prone position.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about the subject falling forward onto the porch in a prone position.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "An arrest team was formed and approached the incident location.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to assess whether an arrest team was formed or approached the incident location.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "The subject was observed lying face-down with no weapon in his hands.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Officer Kapoor deployed two 40 mm Less Lethal rounds as a precaution but the subject showed no response.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim in the police report.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Officer Diaz subsequently deployed the K9, which made contact with the subject and pulled him from the porch onto the sidewalk.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about Officer Diaz deploying the K9 and the dog making contact with the subject to pull him from the porch onto the sidewalk.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Officers then secured the subject and immediately initiated CPR.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that officers secured the subject and immediately initiated CPR.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Anaheim Fire Department paramedics arrived at approximately 0404 hours.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 101.2,
+          "end_seconds": 158.8
+        }
+      ],
+      "evidence_observations": "The provided video segment contains only text-based information about a 9-1-1 call and a link to a district attorney website. There is no visible bodycam footage or audio of paramedics arriving at any time, making it impossible to verify the claim about Anaheim Fire Department paramedics arriving at 0404 hours.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "The subject was pronounced deceased at approximately 0411 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the subject was pronounced deceased at approximately 0411 hours.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "A subsequent search of the residence recovered one firearm: a .38 caliber revolver, Smith and Wesson, found on the porch near the front door.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 309.3,
+          "end_seconds": 327.7
+        }
+      ],
+      "evidence_observations": "The video shows a white sedan parked at night with officers present, but no clear view of a porch, front door, or a firearm being recovered. Audio is fragmented and unclear, mentioning 'gun' and 'Hellfire' without confirming a .38 caliber revolver was found on the porch.",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "No rifle was recovered from the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about whether a rifle was recovered from the residence.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Body-worn camera footage from multiple officers",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 86.3,
+          "end_seconds": 96.8
+        }
+      ],
+      "evidence_observations": "The transcript explicitly states that 'relevant video footage' is made public and is part of the investigative findings and legal conclusions, directly confirming the claim of 'Body-worn camera footage from multiple officers'.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "Audio dispatch and radio traffic recordings",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim about 'Audio dispatch and radio traffic recordings'. The evidence field is empty, providing no observable content to assess support or conflict.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Ring video doorbell recording",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of a 'Ring video doorbell recording'. The absence of evidence prevents any assessment of whether the claim is supported, contradicted, or ambiguous.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "One (1) Smith & Wesson .38 caliber revolver, Serial Number 87790",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 442.8,
+          "end_seconds": 454.7
+        }
+      ],
+      "evidence_observations": "The video shows a police officer with a gun drawn, but the specific type of firearm (Smith & Wesson .38 caliber revolver) is not clearly visible or identifiable in the footage. The audio contains a statement about a gun being in someone's hand, but does not specify the make, model, or caliber of the weapon.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Multiple cartridge cases (rifle rounds)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 218.2,
+          "end_seconds": 230.3
+        }
+      ],
+      "evidence_observations": "The video clip shows a text-based transcript of a 911 call between a dispatcher and a caller. There is no visual evidence of a rifle, cartridge cases, or any physical evidence being shown or discussed in the visible portion of the video. The audio consists solely of dialogue about the number of shots heard, the location of the caller, and the presence of a person in the house, with no mention or visual confirmation of rifle rounds or cartridge cases.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Three (3) 40mm Less Lethal sponge projectiles",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of 'Three (3) 40mm Less Lethal sponge projectiles'.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Subject pronounced deceased at scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim that the subject was pronounced deceased at the scene.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Residence secured and searched.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim 'Residence secured and searched.'",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "W-1 interviewed at APD Command Post.",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 43.2,
+          "end_seconds": 50.9
+        }
+      ],
+      "evidence_observations": "The video segment shows text describing the investigation process by the Orange County District Attorney's Office, including interviews with officers, deputies, and witnesses, but does not visually confirm or deny the specific claim that 'W-1 interviewed at APD Command Post'. The audio is a transcription of text describing the investigation process, not a direct statement about W-1's interview location.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Officer Signature: D. Navarro",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of Officer Signature: D. Navarro.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Date of Report: March 4, 2022",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved to compare against the claim of the report date being March 4, 2022.",
+      "confidence": 0.9
+    }
+  ]
+}
