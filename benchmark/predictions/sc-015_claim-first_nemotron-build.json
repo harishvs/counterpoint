@@ -1,0 +1,9 @@
+{
+  "scenario_id": "sc-015",
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+  "pipeline": "claim-first",
+  "processing_time_seconds": 102.64,
+  "total_tokens": 5907,
+  "total_api_calls": 2,
+  "claims": []
+}

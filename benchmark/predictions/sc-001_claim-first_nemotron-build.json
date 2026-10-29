@@ -2,194 +2,91 @@
   "scenario_id": "sc-001",
   "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
   "pipeline": "claim-first",
-  "processing_time_seconds": 2256.38,
-  "total_tokens": 310484,
-  "total_api_calls": 111,
+  "processing_time_seconds": 3197.82,
+  "total_tokens": 314150,
+  "total_api_calls": 159,
   "claims": [
     {
       "claim_id": "cl-001",
-      "claim_text": "The case number is SC-001.",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so there is no information to verify or contradict the claim that the case number is SC-001.",
-      "confidence": 0.5
-    },
-    {
-      "claim_id": "cl-002",
-      "claim_text": "The date of incident is February 19, 2021.",
-      "evidence_relationship": "not_assessed",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so the claim about the incident date cannot be verified.",
-      "confidence": 0.0
-    },
-    {
-      "claim_id": "cl-003",
-      "claim_text": "The time of incident was approximately 1015 hours.",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so there is no information to verify or contradict the claim about the incident time.",
-      "confidence": 0.1
-    },
-    {
-      "claim_id": "cl-004",
-      "claim_text": "The incident location was the parking lot of the La Quinta Inn at 1515 South Coast Drive, Costa Mesa, CA.",
+      "claim_text": "Case Number SC-001",
       "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 6.19,
-          "end_seconds": 6.22
+          "start_seconds": 367,
+          "end_seconds": 372
+        },
+        {
+          "start_seconds": 372,
+          "end_seconds": 378
+        },
+        {
+          "start_seconds": 378,
+          "end_seconds": 389
+        },
+        {
+          "start_seconds": 389,
+          "end_seconds": 394
+        },
+        {
+          "start_seconds": 394,
+          "end_seconds": 410
+        },
+        {
+          "start_seconds": 410,
+          "end_seconds": 432
         }
       ],
-      "evidence_observations": "The transcript only states \"the beautiful city of Costa Mesa\" and contains no mention of the La Quinta Inn, its parking lot, or the address 1515 South Coast Drive, so it does not address the claim.",
+      "evidence_observations": "The transcript consists of a conversation about the person's name, origin, reason for being there, when they became stranded, and a street address, but it never mentions a case number SC-001.",
+      "confidence": 0.96
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of incident February 19, 2021",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved, so the claim about the incident date cannot be verified.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of incident approximately 1015 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved, so there is no observable information to confirm or refute the claim about the incident time being approximately 1015 hours.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location is parking lot of La Quinta Inn, 1515 South Coast Drive, Costa Mesa, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved, so the claim about the location cannot be verified or contradicted.",
       "confidence": 0.9
     },
     {
       "claim_id": "cl-005",
-      "claim_text": "The reporting officer is Officer J. Reyes.",
+      "claim_text": "Reporting officer is Officer J. Reyes",
       "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "not_retrieved",
       "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so there is no information to confirm or contradict the claim that the reporting officer is Officer J. Reyes.",
-      "confidence": 0.1
+      "evidence_observations": "No evidence segments were retrieved, so there is no information to verify the reporting officer's identity.",
+      "confidence": 0.5
     },
     {
       "claim_id": "cl-006",
-      "claim_text": "The reporting officer's badge number is 4217.",
-      "evidence_relationship": "ambiguous_or_insufficient",
+      "claim_text": "Badge number 4217",
+      "evidence_relationship": "not_assessed",
       "retrieval_status": "not_retrieved",
       "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so there is no observable content to verify the badge number claim.",
-      "confidence": 0.5
+      "evidence_observations": "Error: NVIDIA Build API failed after 3 retries (503)"
     },
     {
       "claim_id": "cl-007",
-      "claim_text": "Subject Marcus Deleon is a 34-year-old male, Hispanic, wearing a black jacket and gray plaid shorts.",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved; therefore no visual or auditory information is available to assess the claim.",
-      "confidence": 0.1
-    },
-    {
-      "claim_id": "cl-008",
-      "claim_text": "The involved officers are Officer J. Reyes and Officer T. Sandoval.",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so there is no information to verify or contradict the claim about which officers were involved.",
-      "confidence": 0.5
-    },
-    {
-      "claim_id": "cl-009",
-      "claim_text": "The witnesses are a female front-seat passenger (W-1) and a male rear-seat passenger (W-2).",
-      "evidence_relationship": "not_assessed",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so there is no content to evaluate the claim about the witnesses' genders and seating positions.",
-      "confidence": 0
-    },
-    {
-      "claim_id": "cl-010",
-      "claim_text": "On February 19, 2021, at approximately 1015 hours, Officer Sandoval and I were assigned to the Community Policing Unit and were patrolling in a marked police vehicle.",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so the claim cannot be verified or contradicted by the provided evidence.",
-      "confidence": 0.5
-    },
-    {
-      "claim_id": "cl-011",
-      "claim_text": "I was driving the patrol vehicle with Officer Sandoval in the front passenger seat.",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so there is no observable content to confirm or contradict the claim about who was driving and who was in the passenger seat.",
-      "confidence": 0.5
-    },
-    {
-      "claim_id": "cl-012",
-      "claim_text": "While patrolling the parking lot of the La Quinta Inn at 1515 South Coast Drive, I observed an occupied gray 2006 Ford Focus parked in a marked stall facing north.",
-      "evidence_relationship": "not_assessed",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so the claim cannot be evaluated against any observed content.",
-      "confidence": 0.0
-    },
-    {
-      "claim_id": "cl-013",
-      "claim_text": "I observed the subject, later identified as Marcus Deleon, seated in the front passenger seat with his head slumped forward against the dashboard.",
-      "evidence_relationship": "not_assessed",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so no observation can be made to confirm or contradict the claim.",
-      "confidence": 0.0
-    },
-    {
-      "claim_id": "cl-014",
-      "claim_text": "Based on my training and experience, I believed the subject may have been under the influence of narcotics or possibly experiencing a medical emergency.",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 149,
-          "end_seconds": 154
-        }
-      ],
-      "evidence_observations": "The audio states that observers noted someone in the car appeared to have overdosed and was doing drugs, indicating possible narcotic influence or medical emergency.",
-      "confidence": 0.95
-    },
-    {
-      "claim_id": "cl-015",
-      "claim_text": "I observed two additional occupants: a female in the driver's seat (W-1) and a male in the left rear seat (W-2).",
-      "evidence_relationship": "not_assessed",
-      "retrieval_status": "retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so no observations can be made to compare with the claim.",
-      "confidence": 0.0
-    },
-    {
-      "claim_id": "cl-016",
-      "claim_text": "I approached the passenger side of the vehicle and made contact with the subject.",
-      "evidence_relationship": "not_assessed",
-      "retrieval_status": "retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so the claim cannot be evaluated against the video.",
-      "confidence": 1.0
-    },
-    {
-      "claim_id": "cl-017",
-      "claim_text": "I instructed the subject to step out of the vehicle and place his hands where I could see them.",
-      "evidence_relationship": "not_assessed",
-      "retrieval_status": "failed",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so no observations can be made to assess the claim.",
-      "confidence": 0.0
-    },
-    {
-      "claim_id": "cl-018",
-      "claim_text": "The subject appeared disoriented and was slow to respond to my commands.",
-      "evidence_relationship": "not_assessed",
-      "retrieval_status": "failed",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so the claim about the subject's disorientation and slow response cannot be evaluated.",
-      "confidence": 0.0
-    },
-    {
-      "claim_id": "cl-019",
-      "claim_text": "I observed that the subject's right hand was bandaged.",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so no observations can be made to assess the claim.",
-      "confidence": 0.1
-    },
-    {
-      "claim_id": "cl-020",
-      "claim_text": "During our conversation, the subject became increasingly agitated and stated, \"You're not taking me in, I'll kill you before that happens.\"",
+      "claim_text": "Subject is Marcus Deleon, male, 34 years old, Hispanic, wearing a black jacket and gray plaid shorts",
       "evidence_relationship": "not_assessed",
       "retrieval_status": "not_retrieved",
       "evidence_references": [],
@@ -197,89 +94,88 @@
       "confidence": 0.0
     },
     {
-      "claim_id": "cl-021",
-      "claim_text": "While I engaged the subject, Officer Sandoval approached the driver's side and made contact with W-1.",
+      "claim_id": "cl-008",
+      "claim_text": "Officers involved are Officer J. Reyes and Officer T. Sandoval",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved, so there is no observable content to verify or contradict the claim about the officers involved.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witnesses are female front-seat passenger (W-1) and male rear-seat passenger (W-2)",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved, so there is no observable content to verify the claim about the gender and seating positions of the witnesses.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Sandoval and I were assigned to the Community Policing Unit and patrolling in a marked police vehicle at approx 1015 hours on Feb 19, 2021",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved, so there is no observable content to confirm or contradict the claim about Officer Sandoval's assignment and patrol details.",
+      "confidence": 1.0
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I was driving the patrol vehicle with Officer Sandoval in the front passenger seat",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "Error: NVIDIA Build API failed after 3 retries (503)"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I observed an occupied gray 2006 Ford Focus parked in a marked stall facing north in the parking lot of the La Quinta Inn at 1515 South Coast Drive",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved; therefore no observable content to compare with the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Subject was seated in the front passenger seat with his head slumped forward against the dashboard",
       "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
           "start_seconds": 145,
-          "end_seconds": 150
+          "end_seconds": 169
         },
         {
-          "start_seconds": 429,
-          "end_seconds": 432
+          "start_seconds": 319,
+          "end_seconds": 320
         }
       ],
-      "evidence_observations": "The provided transcript segments do not mention Officer Sandoval approaching the driver's side or making contact with W-1. They only contain a statement about the reason for detention and a command to keep a hand on the steering wheel, which do not directly address the claim.",
-      "confidence": 0.2
+      "evidence_observations": "The transcript notes that the subject's head was down while the vehicle was moving, but it does not specify that the subject was in the front passenger seat, nor does it confirm that the head was slumped against the dashboard. The mention of 'seat' is vague and does not clarify the seating position.",
+      "confidence": 0.6
     },
     {
-      "claim_id": "cl-022",
-      "claim_text": "Officer Sandoval recognized W-2 from prior narcotics investigations and removed W-2 from the vehicle to conduct a search.",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved; the transcript is empty, providing no information to assess the claim.",
-      "confidence": 0.5
-    },
-    {
-      "claim_id": "cl-023",
-      "claim_text": "Officer Sandoval located drug paraphernalia on W-2's person and placed W-2 in handcuffs.",
-      "evidence_relationship": "not_assessed",
-      "retrieval_status": "failed",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so there is no observable content to assess the claim about Officer Sandoval locating drug paraphernalia on W-2's person and placing W-2 in handcuffs.",
-      "confidence": 0.0
-    },
-    {
-      "claim_id": "cl-024",
-      "claim_text": "W-2 was seated on the pavement behind the rear bumper of the Ford Focus.",
-      "evidence_relationship": "not_assessed",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were provided, so the claim cannot be verified.",
-      "confidence": 0.0
-    },
-    {
-      "claim_id": "cl-025",
-      "claim_text": "Without warning, the subject reached across to the driver's side, started the vehicle, and slowly began to roll the vehicle backward.",
-      "evidence_relationship": "ambiguous_or_insufficient",
+      "claim_id": "cl-014",
+      "claim_text": "I believed the subject may have been under the influence of narcotics or possibly experiencing a medical emergency",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 343,
-          "end_seconds": 346
+          "start_seconds": 149,
+          "end_seconds": 153
         },
         {
-          "start_seconds": 429,
-          "end_seconds": 431
+          "start_seconds": 231,
+          "end_seconds": 241
         }
       ],
-      "evidence_observations": "The transcript shows the officer saying 'all right let's uh back up a little bit so I have some more room equal that' and later instructing 'keep your hand on the steering wheel David', with no indication of the subject reaching across to the driver's side, starting the vehicle, or the vehicle rolling backward.",
-      "confidence": 0.8
+      "evidence_observations": "The bodycam transcript indicates the officers observed a person in the car who appeared to have overdosed and was using drugs, with explicit mention of 'meth' and 'run the nod', suggesting narcotic influence and a possible medical emergency.",
+      "confidence": 0.95
     },
     {
-      "claim_id": "cl-026",
-      "claim_text": "I immediately gave loud verbal commands for the subject to stop the vehicle and put it in park.",
-      "evidence_relationship": "potential_conflict",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 429,
-          "end_seconds": 432
-        },
-        {
-          "start_seconds": 468,
-          "end_seconds": 469
-        }
-      ],
-      "evidence_observations": "The transcript shows a command to 'keep your hand on the steering wheel' at 7:09-7:12 and a later command 'stop the car' at 7:48-7:49. There is no evidence of an immediate verbal command to stop the vehicle and put it in park, nor any mention of putting the vehicle in park, indicating a conflict with the claim.",
-      "confidence": 0.7
-    },
-    {
-      "claim_id": "cl-027",
-      "claim_text": "As the vehicle continued to reverse, I observed W-2 move clear of the vehicle's path.",
+      "claim_id": "cl-015",
+      "claim_text": "I observed two additional occupants: a female in the driver's seat (W-1) and a male in the left rear seat (W-2)",
       "evidence_relationship": "not_assessed",
       "retrieval_status": "not_retrieved",
       "evidence_references": [],
@@ -287,8 +183,85 @@
       "confidence": 0.0
     },
     {
-      "claim_id": "cl-028",
-      "claim_text": "The rear bumper of the Ford Focus made contact with the front bumper of our patrol vehicle.",
+      "claim_id": "cl-016",
+      "claim_text": "I approached the passenger side of the vehicle and made contact with the subject",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "Error: NVIDIA Build API failed after 3 retries (503)"
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "I instructed the subject to step out of the vehicle and place his hands where I could see them",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 340,
+          "end_seconds": 341
+        }
+      ],
+      "evidence_observations": "The transcript shows the officer saying \"I'm okay all right hands on your back,\" which addresses hand placement but does not mention the subject stepping out of the vehicle. No clear indication whether the subject complied with stepping out or whether the hands were placed where the officer could see them.",
+      "confidence": 0.55
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The subject appeared disoriented and was slow to respond to my commands",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 148.0,
+          "end_seconds": 150.0
+        }
+      ],
+      "evidence_observations": "The subject's head was down, possibly nodding, but there is no observable indication of disorientation or a slow response to commands.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "I observed that the subject's right hand was bandaged",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved; therefore no observation of the subject's hand is available.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "The subject became increasingly agitated",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 432.0,
+          "end_seconds": 433.0
+        }
+      ],
+      "evidence_observations": "The transcript contains only a single utterance 'David you're trying my patience dude' indicating frustration at that moment, but provides no temporal sequence or comparative behavior to demonstrate that the subject's agitation was increasing over time.",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Subject said, \"You're not taking me in, I'll kill you before that happens.\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved, so there is no transcript or observable content to compare against the claim.",
+      "confidence": 0.2
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Officer Sandoval approached the driver's side and made contact with W-1 while I engaged the subject",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "failed",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved, so the claim cannot be evaluated against the available data.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Officer Sandoval recognized W-2 from prior narcotics investigations and removed W-2 from the vehicle to conduct a search",
       "evidence_relationship": "not_assessed",
       "retrieval_status": "not_retrieved",
       "evidence_references": [],
@@ -296,185 +269,303 @@
       "confidence": 0.0
     },
     {
-      "claim_id": "cl-029",
-      "claim_text": "The subject shifted the vehicle into drive and accelerated forward in the direction of Officer Sandoval, who was standing directly in the vehicle's path.",
-      "evidence_relationship": "not_assessed",
+      "claim_id": "cl-024",
+      "claim_text": "Officer Sandoval located drug paraphernalia on W-2's person and placed W-2 in handcuffs",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so no observations can be made to assess the claim.",
-      "confidence": 0.0
+      "evidence_references": [
+        {
+          "start_seconds": 188,
+          "end_seconds": 190
+        },
+        {
+          "start_seconds": 338,
+          "end_seconds": 341
+        }
+      ],
+      "evidence_observations": "The transcript shows the officer stating 'he's got a paraphernalia on him' and referencing a straw, indicating drug paraphernalia was found on the person, and later instructs 'all right hands on your back and release your fingers', which aligns with placing the individual in handcuffs.",
+      "confidence": 0.95
     },
     {
-      "claim_id": "cl-030",
-      "claim_text": "Fearing for the safety of Officer Sandoval and the remaining witnesses, I discharged my firearm three times toward the vehicle.",
+      "claim_id": "cl-025",
+      "claim_text": "W-2 was seated on the pavement behind the rear bumper of the Ford Focus",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "Error: NVIDIA Build API failed after 3 retries (503)"
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Subject reached across to the driver's side, started the vehicle, and began to roll it backward",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved, so there is no observable content to confirm or contradict the claim about the subject reaching across, starting the vehicle, and rolling it backward.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "I immediately gave loud verbal commands for the subject to stop the vehicle and put it in park",
       "evidence_relationship": "potential_conflict",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
+          "start_seconds": 429,
+          "end_seconds": 430
+        },
+        {
           "start_seconds": 448,
-          "end_seconds": 450
+          "end_seconds": 449
         }
       ],
-      "evidence_observations": "The transcript notes '44 802 office shots fired stop the car', indicating a large number of shots were fired, which contradicts the claim of discharging the firearm only three times toward the vehicle.",
-      "confidence": 0.95
+      "evidence_observations": "The transcript shows a verbal command 'stop the car' at 7:28-7:29, which occurs after the initial 7:09 timestamp and does not include any instruction to put the vehicle in park. The earlier command 'keep your hand on the steering wheel' does not address stopping or parking. Thus the evidence contradicts the claim of immediate commands to both stop and put the vehicle in park.",
+      "confidence": 0.9
     },
     {
-      "claim_id": "cl-031",
-      "claim_text": "Officer Sandoval simultaneously discharged his firearm twice through the front windshield.",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so the claim cannot be evaluated against the available evidence.",
-      "confidence": 0.0
-    },
-    {
-      "claim_id": "cl-032",
-      "claim_text": "The vehicle came to a stop after traveling approximately 15 feet forward.",
+      "claim_id": "cl-028",
+      "claim_text": "W-2 moved clear of the vehicle's path as the vehicle continued to reverse",
       "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 143,
-          "end_seconds": 148
+          "start_seconds": 5.43,
+          "end_seconds": 5.46
+        }
+      ],
+      "evidence_observations": "The transcript only contains the speaker saying \"back up a little bit so I have some more room,\" indicating the vehicle is reversing, but it does not mention W-2 moving clear of the vehicle's path or provide any visual details about W-2's movement.",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The rear bumper of the Ford Focus made contact with the front bumper of our patrol vehicle",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "failed",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved, so there is no observable content to compare with the claim.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Subject shifted the vehicle into drive and accelerated forward toward Officer Sandoval, who was standing directly in the vehicle's path",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 429,
+          "end_seconds": 432
         },
         {
           "start_seconds": 448,
           "end_seconds": 450
         }
       ],
-      "evidence_observations": "The transcript snippets mention that the vehicle was driven up and that shots were fired, but they provide no information about the distance the vehicle traveled before stopping. There is no observable evidence confirming or contradicting the claim of traveling approximately 15 feet.",
-      "confidence": 0.2
+      "evidence_observations": "The transcript segments mention a command to keep a hand on the steering wheel and a reference to shots being fired to stop the car, but they provide no observable details about the subject shifting into drive, accelerating forward, or Officer Sandoval standing directly in the vehicle's path.",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "I discharged my firearm three times toward the vehicle, fearing for Officer Sandoval and the remaining witnesses",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 448.0,
+          "end_seconds": 450.0
+        }
+      ],
+      "evidence_observations": "The transcript indicates '44 802 office shots fired stop the car', implying a large number of shots were discharged, which directly contradicts the claim of only three discharges toward the vehicle.",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Officer Sandoval simultaneously discharged his firearm twice through the front windshield",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 429,
+          "end_seconds": 450
+        }
+      ],
+      "evidence_observations": "The transcript mentions 'office shots fired' and 'stop the car' but does not specify that Officer Sandoval discharged his firearm, let alone that he simultaneously fired twice through the front windshield. No clear details about the location of shots (windshield) or the number of simultaneous discharges are provided.",
+      "confidence": 0.7
     },
     {
       "claim_id": "cl-033",
-      "claim_text": "I approached the vehicle and observed the subject was unresponsive.",
+      "claim_text": "The vehicle came to a stop after traveling approximately 15 feet forward",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved, so no observation can be made to evaluate the claim.",
+      "confidence": 1.0
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "I approached the vehicle",
       "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
           "start_seconds": 145,
-          "end_seconds": 150
+          "end_seconds": 180
         }
       ],
-      "evidence_observations": "The officer noted that the subject's head was down when they approached the vehicle, but did not explicitly state that the subject was unresponsive; the comment about probable overdose is speculative and not a direct observation of unresponsiveness.",
-      "confidence": 0.5
-    },
-    {
-      "claim_id": "cl-034",
-      "claim_text": "Officer Sandoval and I removed the subject from the vehicle and immediately began administering CPR.",
-      "evidence_relationship": "not_assessed",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so there is no observable content to compare with the claim about removing the subject and administering CPR.",
-      "confidence": 0.0
+      "evidence_observations": "The transcript states that the officers were in a vehicle and 'drove up' to the scene, but it gives no indication that the officer exited the vehicle and walked toward the suspect's car, so it does not directly confirm or deny the claim of approaching the vehicle.",
+      "confidence": 0.75
     },
     {
       "claim_id": "cl-035",
-      "claim_text": "Costa Mesa Fire Department paramedics arrived on scene and transported the subject to Orange County Global Medical Center, where the subject was later pronounced deceased.",
-      "evidence_relationship": "not_assessed",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so there is nothing to compare against the claim.",
-      "confidence": 0.0
+      "claim_text": "Subject was unresponsive",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 146,
+          "end_seconds": 150
+        }
+      ],
+      "evidence_observations": "The transcript notes that the subject's head was down when the vehicle arrived, with the speaker speculating about overdose or drug use and mentioning a 'nod'. No explicit statement indicates the subject was unresponsive; the observation is indirect and interpretive rather than a direct confirmation of unresponsiveness.",
+      "confidence": 0.6
     },
     {
       "claim_id": "cl-036",
-      "claim_text": "A search of the subject's person revealed a loaded Hellcat .380 semi-automatic handgun in the right pocket of his jacket.",
+      "claim_text": "Officer Sandoval and I removed the subject from the vehicle and began administering CPR",
       "evidence_relationship": "not_assessed",
       "retrieval_status": "not_retrieved",
       "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved; therefore no observations can be made to assess the claim.",
+      "evidence_observations": "No evidence segments were retrieved, so there is no observable content to assess the claim about removing the subject and administering CPR.",
       "confidence": 0.0
     },
     {
       "claim_id": "cl-037",
-      "claim_text": "The weapon had a loaded magazine but no round in the chamber.",
-      "evidence_relationship": "not_assessed",
-      "retrieval_status": "not_retrieved",
+      "claim_text": "Costa Mesa Fire Department paramedics arrived on scene and transported the subject to Orange County Global Medical Center",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
       "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so there is no observable content to verify or contradict the claim about the weapon's magazine and chamber status.",
-      "confidence": 0.0
+      "evidence_observations": "No evidence segments were retrieved; the transcript contains no information about the arrival of paramedics or transport to the medical center.",
+      "confidence": 1.0
     },
     {
       "claim_id": "cl-038",
-      "claim_text": "Body-worn camera footage of approximately 25 minutes was collected.",
+      "claim_text": "The subject was later pronounced deceased",
       "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "not_retrieved",
       "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so there is no body-worn camera footage to verify the duration of 25 minutes.",
-      "confidence": 0.5
+      "evidence_observations": "No evidence segments were retrieved, so there is no observable content to evaluate the claim that the subject was later pronounced deceased.",
+      "confidence": 0.99
     },
     {
       "claim_id": "cl-039",
-      "claim_text": "Ten (10) cartridge cases of WIN 9MM LUGER were collected.",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
+      "claim_text": "Search of the subject's person revealed a loaded Hellcat .380 semi-automatic handgun in the right pocket of his jacket",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "failed",
       "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so there is no observable content to verify or contradict the claim about ten 9mm Luger cartridge cases.",
-      "confidence": 0.5
+      "evidence_observations": "No evidence segments were retrieved; there is no observable content to compare with the claim.",
+      "confidence": 1.0
     },
     {
       "claim_id": "cl-040",
-      "claim_text": "One (1) Hellcat .380 ACP handgun with serial number 03886 was collected.",
-      "evidence_relationship": "ambiguous_or_insufficient",
+      "claim_text": "The weapon had a loaded magazine but no round in the chamber",
+      "evidence_relationship": "not_assessed",
       "retrieval_status": "not_retrieved",
       "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so the claim cannot be verified.",
+      "evidence_observations": "No evidence segments were retrieved, so the claim cannot be evaluated against the transcript.",
       "confidence": 0.0
     },
     {
       "claim_id": "cl-041",
-      "claim_text": "Clothing items from the subject were collected.",
-      "evidence_relationship": "not_assessed",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so there is no observable content to confirm or contradict the claim that clothing items from the subject were collected.",
-      "confidence": 0.0
+      "claim_text": "Body-worn camera footage lasting approximately 25 minutes was collected",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 47.0,
+          "end_seconds": 51.0
+        }
+      ],
+      "evidence_observations": "The transcript only contains a brief statement that photographs and videos are reviewed, with no mention of the length of the body-worn camera footage, thus providing no direct evidence to confirm or deny a 25\u2011minute duration.",
+      "confidence": 0.7
     },
     {
       "claim_id": "cl-042",
-      "claim_text": "Passenger side rearview mirror housing was collected.",
-      "evidence_relationship": "ambiguous_or_insufficient",
+      "claim_text": "Ten 9MM LUGER cartridge cases were collected",
+      "evidence_relationship": "not_assessed",
       "retrieval_status": "not_retrieved",
       "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so no observations can be made to assess the claim.",
+      "evidence_observations": "No evidence segments were retrieved, so the claim cannot be verified or contradicted.",
       "confidence": 0.0
     },
     {
       "claim_id": "cl-043",
-      "claim_text": "The subject was transported to Orange County Global Medical Center and pronounced deceased.",
-      "evidence_relationship": "not_assessed",
+      "claim_text": "One Hellcat .380 ACP handgun with serial number 03886 was collected",
+      "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "not_retrieved",
       "evidence_references": [],
-      "evidence_observations": "No evidence segments were retrieved, so no observable content to compare with the claim.",
-      "confidence": 0.0
+      "evidence_observations": "No evidence segments were retrieved, so there is no observable content to confirm or contradict the claim about a Hellcat .380 ACP handgun with serial number 03886 being collected.",
+      "confidence": 0.9
     },
     {
       "claim_id": "cl-044",
-      "claim_text": "W-2 was treated for non-life-threatening injuries.",
-      "evidence_relationship": "not_assessed",
+      "claim_text": "Clothing items from the subject were collected",
+      "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "not_retrieved",
       "evidence_references": [],
-      "evidence_observations": "No evidence segments were provided, so the claim cannot be evaluated against the report.",
-      "confidence": 0.0
+      "evidence_observations": "No evidence segments were retrieved, so there is no observable information about clothing items being collected.",
+      "confidence": 0.1
     },
     {
       "claim_id": "cl-045",
-      "claim_text": "The scene was secured for investigation.",
-      "evidence_relationship": "potential_conflict",
+      "claim_text": "Passenger side rearview mirror housing was collected",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved, so the claim about the passenger side rearview mirror housing being collected cannot be evaluated.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Subject was transported to OCGMC",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved, so the claim cannot be evaluated against the provided evidence.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Subject was pronounced deceased",
+      "evidence_relationship": "not_assessed",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved; the transcript is empty, providing no information about the subject's status.",
+      "confidence": 0.0
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "W-2 was treated for non-life-threatening injuries",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "failed",
+      "evidence_references": [],
+      "evidence_observations": "No evidence segments were retrieved, so the claim cannot be verified against the available evidence.",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Scene was secured for investigation",
+      "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 217,
-          "end_seconds": 218
+          "start_seconds": 5.38,
+          "end_seconds": 5.46
         },
         {
-          "start_seconds": 343,
-          "end_seconds": 346
+          "start_seconds": 5.49,
+          "end_seconds": 5.56
         }
       ],
-      "evidence_observations": "The speaker says 'I just want to make sure we do this safely' and later 'let's back up a little bit so I have some more room', indicating they are still arranging space and ensuring safety rather than confirming that the scene is already secured for investigation.",
-      "confidence": 0.8
+      "evidence_observations": "The transcript shows an officer instructing a subject to position themselves and checking for weapons or drugs, but it does not explicitly state or confirm that the scene was secured for investigation.",
+      "confidence": 0.6
     }
   ]
 }
