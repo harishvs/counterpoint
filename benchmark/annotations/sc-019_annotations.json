@@ -1,0 +1,250 @@
+{
+  "scenario_id": "sc-019",
+  "evidence_id": "afpd-019-trespass-video",
+  "report_id": "sc-019_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Officers respond to a trespass complaint involving a suspicious package delivery (rubber ducks). One suspect is in the victim's driveway filming, two others flee in a dark sedan. Traffic stop conducted. All three suspects trespassed from the property. Based on American Fork PD case 26AF01974.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The reporting party stated that a male had arrived at the residence dressed as a FedEx driver and left a box containing rubber ducks on the porch.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "The individual impersonated a UPS driver, not a FedEx driver."
+        }
+      ],
+      "explanation": "The real report and doorbell footage show the suspect impersonated a UPS driver, not FedEx. The delivery service is changed in the fictional report.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I observed a white SUV parked on the street in front of the residence.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Adams' vehicle was parked in the driveway, not on the street. The vehicle type is not described as a white SUV in the original report."
+        }
+      ],
+      "explanation": "The real report states the vehicle was 'oddly parked on [the street] blocking a residence's driveway' — in the driveway area, not on the street. The vehicle description is fabricated as a 'white SUV' when the original report doesn't specify make/model/color in this way.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Webb stated he was waiting for his girlfriend, who lived two houses down, and denied any knowledge of the package delivery.",
+      "report_location": "Narrative, paragraph 2, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Adams initially stated he was there to pick up his friend for a date, not waiting for a girlfriend two houses down."
+        }
+      ],
+      "explanation": "The real Adams stated he was there to 'pick up his friend for a date,' not waiting for a girlfriend. The cover story is altered in the fictional report.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I asked Webb if I could view his phone's camera roll, and he refused, stating that he did not consent to any searches.",
+      "report_location": "Narrative, paragraph 2, sentence 4",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Adams consented to the officer viewing his camera roll. He presented his phone voluntarily."
+        }
+      ],
+      "explanation": "The real Adams consented to having his camera roll viewed. The fictional report fabricates a refusal. This is a significant discrepancy — consent vs. refusal changes the nature of the encounter.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "RP-1 believed the vehicle was a Toyota Camry.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "The victim described a dark Hyundai Elantra, not a Toyota Camry."
+        }
+      ],
+      "explanation": "The real report identifies the vehicle as a dark Hyundai Elantra. The fictional report changes it to a Toyota Camry.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officer Mercer initiated a traffic stop after observing the vehicle run a red light.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Richardson's supplement states the vehicle failed to stop before the stop line at a stop sign and failed to come to a complete stop — not a red light."
+        }
+      ],
+      "explanation": "The real traffic violation was failing to stop at a stop sign, not running a red light. The type of traffic violation is changed.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Derek Hartley was seated in the front passenger seat.",
+      "report_location": "Narrative, paragraph 4, sentence 3",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Schneider (the Hartley equivalent) was in the rear passenger seat, not the front passenger seat."
+        }
+      ],
+      "explanation": "The real report states 'Schneider was located in the rear passenger seat.' The fictional report moves him to the front passenger seat.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Both males had cell phones in their hands but were not actively recording.",
+      "report_location": "Narrative, paragraph 4, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Both males had recording devices that were running during the entirety of the interaction."
+        }
+      ],
+      "explanation": "The real report explicitly states 'Both males had recording devices that were running during the entirety of the interaction.' The fictional report claims they were not actively recording — a direct contradiction.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Hartley stated that he was in town visiting friends and had no connection to the Maplewood Drive address.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Schneider explained he was in Utah filming a YouTube series regarding civil proceedings out of Oregon. He did not claim to be visiting friends."
+        }
+      ],
+      "explanation": "The real Schneider admitted he was filming a YouTube series about civil proceedings. The fictional Hartley claims to be visiting friends — a different and less incriminating cover story.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "He became visibly nervous and stated, 'I don't know anything about any package or any ducks.'",
+      "report_location": "Narrative, paragraph 5, sentence 3",
+      "claim_type": "subjective_characterization",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Bodycam may show the subject's demeanor during questioning. Whether he appeared 'visibly nervous' is a subjective characterization that may or may not be supported by the footage."
+        }
+      ],
+      "explanation": "The quote about ducks may be close to what was actually said, but 'visibly nervous' is a subjective characterization. The bodycam footage would show the subject's demeanor but 'nervousness' is an interpretation.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Hartley explained he was involved in a dispute over a business matter in Nevada and was in Utah to 'sort things out peacefully.'",
+      "report_location": "Narrative, paragraph 5, sentence 4",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Schneider referenced civil proceedings out of Oregon, not Nevada. He described it as a YouTube series, not simply 'sorting things out peacefully.'"
+        }
+      ],
+      "explanation": "The real dispute was about a civil case in Oregon, not Nevada. The state is changed and the characterization is softened.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Neither male made any statements admitting they knew each other prior to today.",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Adams recanted and admitted Schneider had flown into Utah the day prior and reached out to him for help filming. Adams stated Schneider was paying him."
+        }
+      ],
+      "explanation": "Adams explicitly admitted knowing Schneider and being paid by him. The fictional report omits this recantation entirely, claiming neither suspect acknowledged knowing each other.",
+      "discrepancy_type": "omission",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Both males were issued trespass notices for the Maplewood Drive property and were released on scene. Webb was also trespassed and released.",
+      "report_location": "Narrative, paragraph 6, sentence 3-4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "All three suspects were indeed trespassed from the property and released on scene."
+        }
+      ],
+      "explanation": "The real report confirms all three individuals (Schneider, Adams, Shaw) were notified of trespass and released. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I later reviewed digital footage provided by RP-1, which showed a male matching Webb's description approaching the front door with a package.",
+      "report_location": "Narrative, paragraph 7, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The digital footage showed Tyler Shaw (the driver, equivalent to Novak) was the one who impersonated the UPS driver and delivered the package, not Adams (equivalent to Webb)."
+        }
+      ],
+      "explanation": "The real investigation determined that Tyler Shaw was the individual who impersonated the UPS driver and delivered the package. The fictional report attributes the delivery to Webb (the Adams equivalent) instead of Novak (the Shaw equivalent).",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "On March 8, 2026, at approximately 1248 hours, I was dispatched to a residence on Maplewood Drive in American Fork for a report of a suspicious individual who had delivered an unsolicited package to the front door.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "The date, approximate time, location (American Fork), and nature of the call (suspicious package delivery) are consistent with the real report."
+        }
+      ],
+      "explanation": "The date (March 8, 2026), time (~1248), location (American Fork residence), and nature of the call (suspicious package delivery) are all accurate. The street name is fictionalized but the scenario details match.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}

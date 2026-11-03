@@ -1,0 +1,250 @@
+{
+  "scenario_id": "sc-021",
+  "evidence_id": "afpd-021-stalking-video",
+  "report_id": "sc-021_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Officers respond to a residential stalking complaint. The subject has been repeatedly visiting the victim's property with associates, photographing the residence, and placing defamatory signs. Based on American Fork PD case 26AF02033, March 10 2026.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The caller reported that an unknown male was standing near his front door and had begun knocking aggressively on the residence.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Victim reported a female, not a male, was near the door taking photos — not knocking."
+        }
+      ],
+      "explanation": "The actual 911 call reported a female taking photos of the front of the residence, not a male knocking aggressively. The report changes both the gender of the person at the door and the nature of the activity (photographing vs knocking).",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I observed a male in the driver's seat, later identified as Nathan Parker. A female, later identified as Megan Holt, was seated in the front passenger seat.",
+      "report_location": "Narrative, paragraph 2, sentence 2-3",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Bodycam shows a female driver and a male passenger in the vehicle. The suspect (Schneider/Parker) was in the passenger seat, not the driver's seat."
+        }
+      ],
+      "explanation": "The officer's own supplemental narrative and the probable cause statement both confirm: female (Sierra Lauts) was driving, male (Benjamin Schneider) was in the passenger seat. The report swaps their positions.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Parker stated, \"Yeah, we need to talk to him about what he owes us.\"",
+      "report_location": "Narrative, paragraph 2, sentence 4",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Benjamin told the officer 'no' when asked if they had been knocking, and said he was there because he was in a court case and needed to serve legal papers."
+        }
+      ],
+      "explanation": "The actual report states Schneider denied knocking and said he was there to serve legal papers in a court case. The fabricated quote implies an aggressive, debt-collection motive that doesn't match the bodycam audio.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Parker stated he was a licensed private investigator working on behalf of a client involved in a civil dispute over a retail franchise.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Benjamin told officers he worked for himself ('Uh, myself') and later said he was an attorney, not a private investigator."
+        }
+      ],
+      "explanation": "Schneider identified himself as working for himself and later claimed to be an attorney. He never claimed to be a private investigator. However, the civil dispute over a franchise is broadly accurate.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Parker said the homeowner had stolen approximately $500,000 worth of merchandise from his client.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Benjamin said they had $200,000 worth of Legos in the store, and later the probable cause statement says $250,000 worth of products."
+        }
+      ],
+      "explanation": "The dollar amount is exaggerated. The actual report records $200,000 worth of Legos, and the probable cause statement says $250,000. The fictional report inflates this to $500,000.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Parker replied that his client preferred to remain anonymous and that the matter was confidential.",
+      "report_location": "Narrative, paragraph 4, sentence 1",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Benjamin openly discussed the case, named the company (Bricks & Minifigs), and explained the franchise dispute in detail to the officer."
+        }
+      ],
+      "explanation": "Schneider was not evasive about his client. He openly discussed the dispute, the company, the Lego collection, and the lawsuit. The report fabricates a refusal to identify the client.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Holt did not speak during the initial contact and appeared to be recording the interaction on her cell phone.",
+      "report_location": "Narrative, paragraph 4, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Sierra Lauts is visible in the vehicle but her exact activities and whether she spoke are difficult to confirm from bodycam angle and audio."
+        }
+      ],
+      "explanation": "The real report mentions Sierra provided an Arizona driver's license and confirmed she was the process server. Whether she spoke during the very first contact or slightly later is ambiguous from the available evidence.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The homeowner stated that Parker and his associates had been coming to the property every day for the past week.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "The victim said people had been coming for the past three days. Prior incidents were on 03/08, 03/09, and 03/10."
+        }
+      ],
+      "explanation": "The prior incidents span three days (March 8, 9, and 10), not a full week. The report exaggerates the duration of the pattern.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I observed a sign that had been placed on the sidewalk directly in front of the victim's residence.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The sign was located in a park strip across the street from the residence, not on the sidewalk directly in front."
+        }
+      ],
+      "explanation": "The actual report says the sign was 'in a park strip directly across from [victim's] residence' and the probable cause statement confirms 'across the street from the victim's residence.' The fictional report places it directly in front on the sidewalk.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The sign displayed a photograph of the homeowner standing next to stacks of cash with the text \"I ROBBED A FAMILY BUSINESS.\"",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The sign showed the victim holding US currency in both hands, standing in front of an old man in a hospital bed, with the text 'I stole a dying man's life savings.'"
+        }
+      ],
+      "explanation": "Two discrepancies: (1) The actual sign text was 'I stole a dying man's life savings' not 'I ROBBED A FAMILY BUSINESS.' (2) The sign showed the victim holding currency in front of a man in a hospital bed, not standing next to stacks of cash.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Parker denied placing it and stated it must have been left by someone else.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "When asked if he put the sign up, Benjamin replied 'Yeah.' He admitted placing it and said it was placed on public property."
+        }
+      ],
+      "explanation": "Schneider openly admitted placing the sign. The report fabricates a denial that contradicts the bodycam audio.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "During the search, I located a folding knife in Parker's front right pants pocket.",
+      "report_location": "Narrative, paragraph 7, sentence 3",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer searched Schneider's person and found nothing of evidentiary value."
+        }
+      ],
+      "explanation": "The actual report explicitly states: 'I placed Benjamin into handcuffs and performed a search of his person, nothing of evidentiary value was found on Benjamin's person.' The knife is fabricated.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I performed a criminal history check on Parker and found two prior misdemeanor convictions for trespassing and harassment.",
+      "report_location": "Narrative, paragraph 8",
+      "claim_type": "identity_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Officer performed a Utah Criminal History and Triple III check and found no previous arrests or convictions."
+        }
+      ],
+      "explanation": "The real report and probable cause statement both confirm Schneider had no previous arrests or convictions. The fictional report fabricates a criminal history.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Parker was transported by Officer Nguyen to the Pleasant Grove Police Department and subsequently by Officer Morales to the county jail.",
+      "report_location": "Narrative, paragraph 7, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "The subject was transported first to the local police department, then to the county jail by a different officer."
+        }
+      ],
+      "explanation": "This matches the actual sequence: Schneider was transported by Officer Pitt to AFPD, then by Officer Valadez to Utah County Jail. The two-stage transport is accurately described, with only the fictional officer names changed.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Parker arrested for Stalking (Class A Misdemeanor) and Targeted Residential Picketing (Class B Misdemeanor).",
+      "report_location": "Actions Taken",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Charges filed: 76-5-106.5(2)+(3AI) Stalking (MA) and 76-9-109 Targeted Residential Picketing (MB)."
+        }
+      ],
+      "explanation": "The charges match exactly: Stalking as a Class A Misdemeanor and Targeted Residential Picketing as a Class B Misdemeanor.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}

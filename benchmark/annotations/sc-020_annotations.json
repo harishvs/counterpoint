@@ -1,0 +1,250 @@
+{
+  "scenario_id": "sc-020",
+  "evidence_id": "afpd-020-harassment-video",
+  "report_id": "sc-020_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Officer responds to a harassment call at a residence. Suspect posed as a church member but report claims he said he was a realtor. Traffic stop of associates follows. K9 sniff, field sobriety tests, and vehicle search details are altered. Based on American Fork PD case 26AF02007, March 9 2026.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Winters was standing in the driveway approximately 20 feet from the front door.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The suspect (Morgan) was on the front steps of the residence, not in the driveway 20 feet away."
+        }
+      ],
+      "explanation": "The real report states Hawkins made contact with Christian Morgan 'on the front steps of [the] residence.' The fictional report moves him to the driveway 20 feet away.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "He stated he was a representative from a local real estate company conducting a neighborhood survey. He was cooperative and produced a business card identifying him as a realtor.",
+      "report_location": "Narrative, paragraph 2, sentences 3-4",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Christian stated he was helping his friend Benjamin Schneider contact the homeowner about a business called Bricks and Minifigs."
+        }
+      ],
+      "explanation": "Christian Morgan never claimed to be a realtor. He told Officer Hawkins he was helping his friend Ben Schneider make contact regarding a Bricks and Minifigs franchise dispute. The 'realtor with a business card' is entirely fabricated.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The homeowner stated that Winters had identified himself through the Ring doorbell camera as a member of a local church congregation, not a realtor.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Christian was portraying an LDS church member from the '2nd Harbor ward' which did not exist, telling the homeowner through the ring doorbell that he was sent to his house by Bishop Johnson."
+        }
+      ],
+      "explanation": "This accurately reflects the real report: Morgan did pose as a church member through the Ring doorbell. The discrepancy planted in cl-002 (claiming he said 'realtor' to the officer) is separate from what the homeowner reported.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I observed him walk south on Maple Ridge Drive and enter the passenger side of a white Toyota Camry parked approximately one block away.",
+      "report_location": "Narrative, paragraph 4, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The vehicle was a black Hyundai Elantra (2022, plate 9BEE8), not a white Toyota Camry."
+        }
+      ],
+      "explanation": "The real vehicle was a 2022 black Hyundai Elantra owned by Tyler Shaw. The report changes both the color (black to white) and the make/model (Hyundai Elantra to Toyota Camry).",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I identified the driver as Derek Lane and observed a second male, Patrick Ellis, seated in the front passenger seat.",
+      "report_location": "Narrative, paragraph 4, sentence 3",
+      "claim_type": "identity_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Benjamin Schneider was in the back of the vehicle, not the front passenger seat. Tyler Shaw was the driver."
+        }
+      ],
+      "explanation": "The real report states Hawkins asked 'if that was Ben in the back of the vehicle and he said yes.' Schneider (fictionalized as Ellis) was in the rear, not the front passenger seat.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "He stated he had never met the man before and was simply giving a stranger a ride. Ellis corroborated Lane's statement, saying they had picked Winters up from a bus stop.",
+      "report_location": "Narrative, paragraph 5, sentences 1-2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Tyler acted like he did not know what I was talking about and stated that he had just met the guy a few hours ago."
+        }
+      ],
+      "explanation": "While Shaw (Lane) did initially deny involvement, the specific claim about 'giving a stranger a ride' and 'picking up from a bus stop' is fabricated. Shaw said he had 'just met the guy a few hours ago,' not that he picked up a stranger from a bus stop. The bus stop detail is invented.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "I informed both occupants that I knew they were associated with Winters from the previous day's incident.",
+      "report_location": "Narrative, paragraph 5, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "I then told him that they were both involved in the incident yesterday and then they attempted to lie and say that the church sent the Christian."
+        }
+      ],
+      "explanation": "This accurately reflects the real report. Hawkins did confront Shaw and Schneider about their involvement in the previous day's trespass incident (case 26AF01974).",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "I observed that his eyes appeared clear and normal.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer noted Tyler's eyes were glossy with a red layer of tint. Officer Fraughton confirmed the same observation."
+        }
+      ],
+      "explanation": "The real report states the officer noticed Tyler's eyes 'were glossy and seemed to have a red layer of tint.' Officer Fraughton independently confirmed the same. Describing the eyes as 'clear and normal' directly contradicts both officers' observations.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I administered the Horizontal Gaze Nystagmus test and observed four clues, including distinct nystagmus at maximum deviation in both eyes.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "During the HGN test, the officer did not observe any clues. The report states 'I did not observe any clues' for the eye test."
+        }
+      ],
+      "explanation": "The real report states: 'As for this test, I did not observe any clues.' The fictional report fabricates four clues including nystagmus at maximum deviation, entirely inverting the actual finding.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "During the Walk-and-Turn test, Lane maintained perfect balance and executed all components correctly with no clues observed.",
+      "report_location": "Narrative, paragraph 6, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "During the walk-and-turn test, Tyler raised his arms once on the first run and made an improper turn. Three clues were observed."
+        }
+      ],
+      "explanation": "The real report states the officer observed Tyler 'raise his arms once on the first run and then stop at the turn and make an improper turn' with three clues. The fictional report claims perfect performance with zero clues — the HGN and walk-and-turn results are swapped.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Lane then submitted to a portable breath test, which returned a result of .000 BrAC.",
+      "report_location": "Narrative, paragraph 6, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "He consented and blew a .000 BrAc."
+        }
+      ],
+      "explanation": "The PBT result of .000 BrAC is accurately reported. Tyler did consent to and blow .000.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "K9 Rex conducted an open air sniff around the exterior of the vehicle and did not alert to any odor of narcotics. Based on this, no search of the vehicle was conducted.",
+      "report_location": "Narrative, paragraph 7, sentences 2-3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "K9 Bane conducted the open air sniff and DID alert to the vehicle. A search WAS conducted by Officer Fraughton and Hawkins, but nothing of note or substance was found."
+        }
+      ],
+      "explanation": "Two contradictions: (1) K9 Bane actually alerted to the vehicle, but the report says the K9 did not alert. (2) A search was conducted and found nothing, but the report claims no search was done at all. This omits both the K9 alert and the resulting search.",
+      "discrepancy_type": "omission",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Ellis acknowledged sending Winters to the door but denied any intent to harass.",
+      "report_location": "Narrative, paragraph 8, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Ben admitted that he had sent Christian and someone else in an attempt to at least get in contact with [the homeowner]."
+        }
+      ],
+      "explanation": "Schneider (Ellis) did eventually admit to sending Morgan (Winters) to make contact. This claim is substantially accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Dispatch advised the caller stated the male was knocking aggressively on the door and refusing to leave.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "The homeowner initially reported a male at his door, ringing the doorbell and knocking on his door."
+        }
+      ],
+      "explanation": "The real report says the caller reported someone 'ringing the doorbell and knocking on his door.' The fictional report adds 'aggressively' and 'refusing to leave,' which may or may not have been communicated to dispatch. The characterization of knocking as 'aggressive' is subjective and unverifiable from the bodycam alone.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I smelled no odor of alcohol on Christian's breath during our conversation.",
+      "report_location": "Narrative, paragraph 2 (implicit — absence of any alcohol mention during initial contact)",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "I did smell alcohol on Christian's breath and his behavior showed possible intoxication."
+        }
+      ],
+      "explanation": "The report omits any mention of alcohol on the suspect's breath during the initial contact. The real report specifically states Officer Hawkins smelled alcohol on Christian's breath and observed behavior showing possible intoxication. Christian also declined a PBT. The omission of this observation is significant.",
+      "discrepancy_type": "omission",
+      "difficulty": "hard"
+    }
+  ]
+}
