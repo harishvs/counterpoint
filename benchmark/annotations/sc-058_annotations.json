@@ -1,0 +1,235 @@
+{
+  "scenario_id": "sc-058",
+  "evidence_id": "ocda-002-montes-video",
+  "report_id": "sc-058_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Traffic stop shooting of front passenger. Officers in polo shirts with POLICE vests pull over black Mercedes for expired tags. Based on Montes OIS.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "I was operating the vehicle and Officer Vega was in the passenger seat.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Consistent with DA letter: Buan driving, Park in passenger seat.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Our unit was not equipped with a dashboard camera system.",
+      "report_location": "Narrative, paragraph 1, sentence 4",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "DA letter confirms the police unit was not equipped with a video recording system.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Both Officer Vega and I were wearing department-issued polo uniform shirts with SAPD identification patches.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Consistent with DA letter describing SAPD polo uniform shirts.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "At approximately 1400 hours, I initiated a traffic stop on a black Mercedes Benz.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "DA letter states the stop occurred at 2:00:29 PM. The report says 1400 which matches, but the actual stop was at 2:00 PM, not earlier.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject was seated in the right front passenger seat.",
+      "report_location": "Narrative, paragraph 4, sentence 4",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Consistent with DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "A third occupant, John Doe 2, was in the right rear seat.",
+      "report_location": "Narrative, paragraph 4, sentence 5",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "DA letter confirms John Doe 2 was the right rear passenger.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "John Doe 1 stated he was on AB109 supervision.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Consistent with DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject had a bag of food on his lap and was using a cell phone.",
+      "report_location": "Narrative, paragraph 7, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "DA letter states Montes lifted a bag of food from his lap and placed it on the center console, then started texting. The report implies the food stayed on his lap.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I asked the subject to place his hands on the dashboard.",
+      "report_location": "Narrative, paragraph 7, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "DA letter quotes Buan saying 'Hey, brother, can you do me a favor, stop reaching around; just put your hands on the front dash.' The report omits the casual language and the reaching behavior that prompted the command.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject initially complied, then placed his hands on his thighs instead.",
+      "report_location": "Narrative, paragraph 7, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "DA letter states Montes did not place his hands on the dash; he put them on his thighs. He never initially complied.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject reached down on his right side and retrieved a black semi-automatic handgun with his right hand, transferring it quickly to his left hand.",
+      "report_location": "Narrative, paragraph 8, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Consistent with DA letter describing Montes reaching down on his right side, lifting the handgun with right hand, transitioning to left hand.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I discharged my firearm six times at the subject.",
+      "report_location": "Narrative, paragraph 8, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Consistent with DA letter: Buan fired six shots.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Officer Vega simultaneously discharged his weapon once from the sidewalk position.",
+      "report_location": "Narrative, paragraph 8, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Park was not on the sidewalk at the time of firing. DA letter states Park had just seated John Doe 2 on the curb behind the car. Also, the shots were not exactly simultaneous.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "A K9 unit was deployed at approximately 1414 hours.",
+      "report_location": "Narrative, paragraph 9, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "DA letter states K9 was deployed at 2:14:09 PM which is actually 1414 hours. However the K9 arrived at approximately 2:09 PM, not at 2:14. The report conflates arrival and deployment times.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "A second extended magazine containing 31 rounds was found during his removal from the vehicle.",
+      "report_location": "Narrative, paragraph 9, sentence 5",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "DA letter confirms a second extended magazine with 31 rounds was found during removal from vehicle.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}
