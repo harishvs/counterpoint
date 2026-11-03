@@ -17,6 +17,7 @@ from .schemas import PipelineConfig, ScenarioPrediction, RetrievedSegment
 from .stages.clip import extract_clip
 from .stages.extract import extract_claims
 from .stages.retrieve import retrieve_segments
+from .stages.scan import scan_video
 from .stages.verify import verify_claim
 
 BENCHMARK_DIR = Path(__file__).resolve().parent.parent / "benchmark"
@@ -179,6 +180,45 @@ def run_single_pass(scenario_id: str, config: PipelineConfig) -> ScenarioPredict
     )
 
 
+def run_video_scan(scenario_id: str, config: PipelineConfig) -> ScenarioPrediction:
+    """Scan video in 2-min chunks, evaluate all claims against each chunk."""
+    case_id = SCENARIO_TO_CASE[scenario_id]
+    report_path = config.reports_dir / f"{scenario_id}_report.txt"
+    transcript_path = config.transcript_dir / f"{case_id}.json" if config.transcript_dir else None
+    video_path = config.evidence_dir / f"{case_id}-video.mp4"
+    chunk_dir = config.evidence_dir / "chunks"
+
+    if not video_path.exists():
+        print(f"  [{scenario_id}] No video found at {video_path}")
+        return ScenarioPrediction(scenario_id=scenario_id, model="none", pipeline="scan")
+
+    adapter = make_adapter(config)
+    start = time.time()
+
+    print(f"  [{scenario_id}] Video: {video_path.name}")
+    print(f"  [{scenario_id}] Extracting claims from report...")
+    claims = extract_claims(report_path, adapter)
+    print(f"  [{scenario_id}] Extracted {len(claims)} claims")
+    print(f"  [{scenario_id}] Scanning video in chunks...")
+
+    verified = scan_video(claims, video_path, transcript_path, adapter, chunk_dir)
+
+    elapsed = time.time() - start
+    conflicts = sum(1 for v in verified if v.evidence_relationship == "potential_conflict")
+    supported = sum(1 for v in verified if v.evidence_relationship == "supported")
+    print(f"  [{scenario_id}] Done: {conflicts} conflicts, {supported} supported, {len(verified)} total")
+
+    return ScenarioPrediction(
+        scenario_id=scenario_id,
+        model=adapter.model_id,
+        pipeline="scan",
+        claims=verified,
+        processing_time_seconds=round(elapsed, 2),
+        total_tokens=adapter.tokens_used,
+        total_api_calls=adapter.api_calls,
+    )
+
+
 def get_scenarios(args) -> list[str]:
     if args.scenario:
         return [args.scenario]
@@ -198,7 +238,7 @@ def main():
     parser.add_argument("--endpoint", default="http://localhost:8000/v1",
                         help="Model endpoint URL (for Nemotron/vLLM)")
     parser.add_argument("--pipeline", default="claim-first",
-                        choices=["claim-first", "single-pass", "transcript-only"])
+                        choices=["claim-first", "single-pass", "scan"])
     parser.add_argument("--out", type=Path, default=PREDICTIONS_DIR)
     args = parser.parse_args()
 
@@ -223,6 +263,8 @@ def main():
             prediction = run_claim_first(sid, config)
         elif args.pipeline == "single-pass":
             prediction = run_single_pass(sid, config)
+        elif args.pipeline == "scan":
+            prediction = run_video_scan(sid, config)
         else:
             print(f"  Pipeline '{args.pipeline}' not yet implemented")
             continue
