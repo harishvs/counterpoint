@@ -1,0 +1,175 @@
+{
+  "scenario_id": "sc-047",
+  "evidence_id": "ocda-014-tran-video",
+  "report_id": "sc-047_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Officer responds to a tailgating report at a police station. Subject draws a firearm and shoots an officer before being shot. Focus on ambiguous and subjective language in the report.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The female appeared extremely frightened and in a state of near-panic.",
+      "report_location": "Narrative, paragraph 1, sentence 3",
+      "claim_type": "subjective_characterization",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter says W-1 told officers she was scared and pointed out the Toyota. Whether she appeared in 'near-panic' versus simply 'scared' is a subjective characterization not definitively verifiable from bodycam footage.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "His demeanor was calm and casual, suggesting he was unconcerned about the police presence.",
+      "report_location": "Narrative, paragraph 2, sentence 4",
+      "claim_type": "subjective_characterization",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Whether Tran appeared 'calm and casual' versus nervous or agitated is a subjective judgment. The DA letter notes Tran told Milward he was there to see someone and denied involvement with the cars — but characterizing his overall demeanor is inherently subjective.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Officer Milward described the subject as cooperative and forthcoming.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "subjective_characterization",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter indicates Tran responded 'he was not involved' when asked about the cars and initially denied connection. This is evasive, not 'forthcoming.' Characterizing a suspect who denies involvement as 'cooperative and forthcoming' is a misleading subjective characterization.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject stated he was at the station to visit a friend and appeared genuinely confused about why officers were present.",
+      "report_location": "Narrative, paragraph 3, sentence 4",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter says Tran told Milward 'he was there to see someone' — not 'a friend.' More importantly, dispatch had already told officers the tailgater was now at the station doors. Tran knew why he was there — characterizing him as 'genuinely confused' misrepresents the interaction.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject retrieved what appeared to be a semi-automatic pistol from his waistband, racked the slide in what could be interpreted as a threatening manner.",
+      "report_location": "Narrative, paragraph 4, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter says Tran 'removed a firearm from his waist belt, cocked it, and aimed it directly at Officer Milward's back.' This was unambiguously threatening, not something that 'could be interpreted as threatening.' The hedging language minimizes a clear act of aggression.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The action seemed deliberate but the subject's facial expression was difficult to read — it could have been interpreted as angry, determined, or possibly confused.",
+      "report_location": "Narrative, paragraph 4, sentence 2",
+      "claim_type": "subjective_characterization",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Facial expression interpretation is inherently subjective. Whether Tran looked angry versus confused cannot be definitively established from bodycam footage, especially given distance and angle. However, the equivocation ('possibly confused') introduces unwarranted doubt about what was clearly aggressive behavior.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "It was unclear from my vantage point whether the rounds were aimed directly at Officer Milward or fired in a more general direction.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter states Tran 'aimed it directly at Officer Milward's back' and 'fired two rounds at Officer Milward. One round pierced Officer Milward's bulletproof vest striking him in the right upper chest.' The rounds were unambiguously aimed at Milward. Claiming it was 'unclear' minimizes a direct shooting.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "One round appeared to strike Officer Milward somewhere in the torso area.",
+      "report_location": "Narrative, paragraph 5, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter confirms one round pierced Milward's bulletproof vest in the right upper chest, causing him to fall. 'Somewhere in the torso area' is vague but technically accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I immediately drew my service weapon and discharged what I believe was approximately five rounds toward the subject.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter confirms Officer Fox fired five rounds in rapid succession. The claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The rapidity of events made it difficult to distinguish the exact sequence — it felt nearly simultaneous.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "subjective_characterization",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter establishes a clear sequence with precise timestamps: Tran fired at 7:10:07, Fox fired at 7:10:08 — a one-second gap. The events were rapid but clearly sequential, not 'nearly simultaneous.' This language obscures who shot first.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject appeared to still be holding a firearm after falling, though visibility was limited due to the fading daylight.",
+      "report_location": "Narrative, paragraph 6, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter confirms 'Tran's firearm remained in his hand' and Fox continued giving commands to drop the gun. The claim about holding the firearm is accurate; the daylight qualifier is an added hedge but the incident was at ~7:10 PM in August — fading but not dark.",
+      "discrepancy_type": "none",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officers used a K-9 to approach and secure the subject at approximately 1916 hours.",
+      "report_location": "Narrative, paragraph 7, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter states officers 'approached Tran with a K-9, disarmed him, moved him away from the station's front doors' at approximately 7:16:35 PM. The report says '1916 hours' (7:16 PM) which is close but the actual method was a tactical approach — not simply using a K-9 'to approach and secure.' The K-9 was part of a larger operation.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Dispatch informed us that a female motorist had reported being aggressively pursued by a dark-colored sedan from the freeway to the station.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter says Doe called dispatch to report being 'tailgated' — not 'aggressively pursued.' The word 'aggressively' is an editorialized escalation of the actual complaint. The report also says 'from the freeway' when W-1 first noticed the tailgating on the northbound 5 freeway but the pursuit continued onto surface streets.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Officer Milward informed the subject he would be with him shortly and walked away.",
+      "report_location": "Narrative, paragraph 3, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter confirms Milward told Tran he would be with him in a second, then 'turned his back to Tran and walked away.' This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "She stated she felt terrorized during the drive from the freeway and feared for her life.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter says Doe 'informed Officer Fox about the situation and told her that she was scared.' Whether 'scared' equates to 'terrorized' and 'feared for her life' is an escalation in language, but W-1's subjective emotional state during the drive cannot be definitively verified from bodycam footage of the aftermath.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    }
+  ]
+}

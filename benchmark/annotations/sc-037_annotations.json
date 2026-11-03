@@ -1,0 +1,131 @@
+{
+  "scenario_id": "sc-037",
+  "evidence_id": "ocda-001-valdez-video",
+  "report_id": "sc-037_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Negative example: accurate report of the Valdez incident. All claims faithfully reflect the DA investigation findings and bodycam footage.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "I observed the subject in the driver's seat with his head slumped forward on the steering wheel.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual", "visual_description": "Subject visible in driver's seat, head on steering wheel."}],
+      "explanation": "Accurately describes Valdez's position as documented in the DA letter and visible on bodycam.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I observed two additional occupants: a female in the front passenger seat (W-1) and a male in the left rear passenger seat (W-2).",
+      "report_location": "Narrative, paragraph 2, sentence 3",
+      "claim_type": "identity_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual", "visual_description": "Two additional occupants visible in described positions."}],
+      "explanation": "Correctly identifies W-1 as front passenger and W-2 in left rear, matching the investigation.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "I approached the driver's side of the vehicle and made contact with the subject. Officer Fuentes approached the passenger side.",
+      "report_location": "Narrative, paragraph 3, sentences 1-2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual", "visual_description": "Officers approach from correct sides of the vehicle."}],
+      "explanation": "Correctly describes Lopez approaching driver's side and Molina approaching passenger side.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I instructed the subject to keep his hands on the steering wheel.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio", "transcript_excerpt": "Officer instructs subject to keep hands on steering wheel."}],
+      "explanation": "Accurately reflects the command given, as documented in the DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject's left hand was bandaged.",
+      "report_location": "Narrative, paragraph 3, sentence 4",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual", "visual_description": "Subject's left hand visibly bandaged."}],
+      "explanation": "Correctly identifies the left hand as bandaged, matching the DA investigation.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officer Fuentes located drug paraphernalia on W-2 and placed W-2 in handcuffs behind his back.",
+      "report_location": "Narrative, paragraph 4, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual", "visual_description": "Officer searches W-2, finds paraphernalia, handcuffs behind back."}],
+      "explanation": "Accurately describes the search and handcuffing of Witness 2.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The left rear tire of the Ford Focus ran over W-2's handcuffed hands. W-2 was also struck by the open passenger door and the front right tire.",
+      "report_location": "Narrative, paragraph 5, sentences 3-4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "both", "transcript_excerpt": "W-2 screaming, officers yelling stop."}],
+      "explanation": "Accurately describes the injuries to W-2 as documented in the DA investigation and witness statements.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "I fired two rounds and Officer Fuentes fired three rounds during the initial exchange.",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio", "transcript_excerpt": "Multiple gunshots audible."}],
+      "explanation": "Correctly states Lopez fired 2 and Molina fired 3 in the initial exchange, matching forensic analysis.",
+      "discrepancy_type": "none",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Officer Fuentes fired four additional rounds through the windshield and I fired one additional round from the driver's side.",
+      "report_location": "Narrative, paragraph 6, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Correctly describes the second volley: Molina fired 4 more, Lopez fired 1 more. Total: Lopez 3, Molina 7.",
+      "discrepancy_type": "none",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Fuentes and I removed the subject from the vehicle and began administering CPR.",
+      "report_location": "Narrative, paragraph 7, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual", "visual_description": "Officers remove subject and begin CPR."}],
+      "explanation": "Accurately describes the post-shooting medical aid, confirmed by the DA investigation.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The vehicle came to a stop after the subject succumbed to his injuries.",
+      "report_location": "Narrative, paragraph 6, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [{"modality": "visual", "visual_description": "Vehicle advances forward slowly and stops."}],
+      "explanation": "The DA letter says the car 'advanced forward slowly' after Valdez succumbed. The exact mechanism of the stop is not entirely clear from bodycam — it could have been gravity, obstruction, or the engine stalling.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    }
+  ]
+}

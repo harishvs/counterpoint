@@ -1,0 +1,145 @@
+{
+  "scenario_id": "sc-041",
+  "evidence_id": "ocda-005-brown-video",
+  "report_id": "sc-041_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Negative example: accurate report of the Brown/Anaheim PD standoff.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "W-1 called 911 to report that the subject was inside her residence with firearms and had threatened to shoot her.",
+      "report_location": "Narrative",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Matches DA letter: W-1 reported subject with guns who threatened her.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "W-1 described two firearms: a revolver and an AR-15 style rifle with a double drum magazine.",
+      "report_location": "Narrative",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Two firearms described match the DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject was observed on the front porch holding a revolver in his left hand.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Subject on front porch with revolver in left hand. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "At approximately 0235 hours, Tactical Response Group personnel arrived.",
+      "report_location": "Narrative",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "TRG arrival time matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject eventually exited the residence carrying the revolver and walked off the porch toward officers.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Subject exited with revolver and advanced. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "An officer deployed a 40mm less-lethal launcher round, which did not appear to have an effect.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Less-lethal round deployed without effect. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The K9 pulled the subject from the porch area onto the sidewalk.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "K9 pulled Brown east from porch onto sidewalk. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "An AR-15 style rifle with a double drum magazine was later found inside the residence.",
+      "report_location": "Narrative",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "AR-15 with double drum found on living room sofa. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "He aimed a finger gun gesture at officers and then retreated inside.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "DA letter mentions finger gun gesture but exact nature may be hard to confirm from BWC at distance in low light.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    }
+  ]
+}

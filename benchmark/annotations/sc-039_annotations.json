@@ -1,0 +1,190 @@
+{
+  "scenario_id": "sc-039",
+  "evidence_id": "ocda-003-emch-video",
+  "report_id": "sc-039_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Negative example: accurate report of the Emch/Seal Beach PD incident.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "I observed a male subject peering over the brick perimeter wall of the enclosed rear patio area.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Subject visible peering over wall.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I stood in the walkway approximately 40 feet east and used my flashlight.",
+      "report_location": "Narrative",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Officer's position and flashlight use match DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject stated he was there to see the reporting party.",
+      "report_location": "Narrative",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Emch replied he was there to see the reporting party.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "He refused to show his hands and told me to stop shining the flashlight.",
+      "report_location": "Narrative",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Emch refused and told Knight to stop shining the flashlight.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject exited the patio area wearing a baggy black jacket, blue jeans, a black hat, and clear glasses with a beverage can in his right hand.",
+      "report_location": "Narrative",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Clothing and beverage can description match DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "He moved the beverage can from his right hand to his left hand.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Emch moved the can to his left hand.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "He placed his right hand into his right front jacket pocket.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "DA letter confirms right hand in right front jacket pocket.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Corporal Estrada deployed his Taser, striking the subject in the back. The subject fell onto his left side and then flat on his back.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Taser struck back, fell to left side then back. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The subject reached toward his right-side waistband and drew what appeared to be a black Glock handgun.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Emch reached for right-side waistband and drew Glock. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I fired my duty weapon 21 rounds. Corporal Estrada fired nine rounds.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Knight fired 21, Balderrama fired 9. Matches forensic analysis.",
+      "discrepancy_type": "none",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The weapon was a Glock 22, .40-caliber, registered to the subject's father.",
+      "report_location": "Narrative",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Gun was Glock 22, registered to father. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "He pointed the weapon in the direction of Corporal Estrada.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "DA letter says gun pointed at Balderrama's direction, but exact aim may be hard to determine from bodycam angle.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    }
+  ]
+}

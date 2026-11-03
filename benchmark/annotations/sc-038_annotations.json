@@ -1,0 +1,120 @@
+{
+  "scenario_id": "sc-038",
+  "evidence_id": "ocda-002-montes-video",
+  "report_id": "sc-038_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Negative example: accurate report of the Montes traffic stop incident. All claims faithfully reflect the DA investigation.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "I conducted a traffic stop on a black Mercedes Benz, California plate 8YQZ992, at 100 S. McClay Street due to expired registration tags.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "Vehicle description, plate, location, and reason for stop all match the DA investigation.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The vehicle had three occupants: W-1 driving, the subject in the right front passenger seat, and W-2 in the right rear.",
+      "report_location": "Narrative, paragraph 2, sentence 2",
+      "claim_type": "identity_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Correctly identifies all three occupants and their positions.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "W-1 also disclosed he was on AB109 supervision.",
+      "report_location": "Narrative, paragraph 2, sentence 4",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio", "transcript_excerpt": "I'm on AB109."}],
+      "explanation": "The DA letter confirms John Doe 1 stated he was on AB109.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject lifted a bag of food with his left hand from his lap and placed it on the center console, then began texting on his cell phone.",
+      "report_location": "Narrative, paragraph 4, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Matches the DA letter's description of Montes lifting food and texting.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject reached over his body with his left hand and locked the door.",
+      "report_location": "Narrative, paragraph 4, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual", "visual_description": "Subject reaches across and pushes door lock down."}],
+      "explanation": "Accurately describes the door-locking action documented in the DA investigation at 2:04:20 PM.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject then reached down on his right side with his right hand, lifted a black semi-automatic handgun, and transitioned it to his left hand.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Matches the DA letter's description of Montes reaching down, lifting the handgun with his right hand, and transitioning to his left.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "I fired six rounds from my duty weapon. Officer Yoon, positioned behind the car at the curb, fired one round while backing away.",
+      "report_location": "Narrative, paragraph 5, sentences 3-4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Correctly states Buan fired 6 and Park fired 1, matching the forensic analysis in the DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "A K9 unit responded at approximately 1409 hours. The K9 was released into the vehicle but the subject was unresponsive.",
+      "report_location": "Narrative, paragraph 6, sentences 3-4",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "K9 arrival at ~2:09 PM and deployment at ~2:14 PM are documented in the DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Officers breached the car and found the subject in the right front passenger seat with a loaded handgun on his left thigh.",
+      "report_location": "Narrative, paragraph 6, sentence 5",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "DA letter confirms the handgun was on Montes' left thigh when officers breached the vehicle.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject was pronounced deceased at 1430 hours.",
+      "report_location": "Narrative, paragraph 6, last sentence",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter states the subject was transported and pronounced deceased, but the exact time of pronouncement at 2:30 PM is stated in the investigation. Whether this precise time is audible on bodycam is uncertain.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    }
+  ]
+}

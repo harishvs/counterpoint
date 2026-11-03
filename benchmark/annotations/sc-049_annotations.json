@@ -1,0 +1,175 @@
+{
+  "scenario_id": "sc-049",
+  "evidence_id": "ocda-016-salac-video",
+  "report_id": "sc-049_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Deputies respond to a 911 burglary call and encounter a woman with a BB gun on the sidewalk. Focus on close-but-wrong timestamps throughout the report.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 0110 hours, I was dispatched to 22851 Loumont Drive regarding a residential burglary in progress.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter says the 911 call was received at 1:03 AM, and dispatch occurred at 1:04 AM. The report says 0110 — 6-7 minutes later than actual.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The reporting party stated she was hiding in the bathroom and her boyfriend was in a closet.",
+      "report_location": "Narrative, paragraph 1, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter confirms dispatch advised deputies that 'the reporting party had stated that she was hiding in the bathroom and her boyfriend was hiding in a closet.'",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "At approximately 0115 hours, I arrived on Loumont Drive, parking three houses east of the target address.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter says Arvizo arrived at 1:09:00 AM. The report says 0115 — 6 minutes later. Also, the DA letter says he parked 'four houses west' of 22851, not three houses east. Both the time and parking description are wrong.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I observed a gray sedan parked on the north side of the street directly in front of 22855 Loumont Drive.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter describes Arvizo approaching a 'gray sedan parked on the street in front of 22855 Loumont Drive.' The claim says 'north side' but the DA letter does not specify north/south — this may be verifiable from video. The address is correct.",
+      "discrepancy_type": "none",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject was standing on the north sidewalk, under a street light, approximately 15 feet south of my position.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter says Salac was 'standing on the south sidewalk, under a tree, approximately 25-30 feet south.' The report says north sidewalk (wrong), under a street light (wrong — it was a tree), and 15 feet (wrong — it was 25-30 feet).",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "I immediately identified the object as a black handgun.",
+      "report_location": "Narrative, paragraph 4, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter confirms Arvizo 'saw Salac holding a black handgun in her right hand.' The object was later identified as a BB gun that looked like a real firearm. The initial identification as a black handgun is consistent.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "At approximately 0117 hours, Deputies Vega and Chen arrived on scene.",
+      "report_location": "Narrative, paragraph 4, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter says Deputies Ruelas and Richards arrived at approximately 1:10:49 AM. The report says 0117 — approximately 6 minutes later than actual. The systematic time shift continues throughout the report.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "At 0118 hours, I observed the subject suddenly lower the weapon, turn away from me, and walk back toward the tree line.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter describes Salac at 1:10:31 AM walking 'back to her original position under the tree' after walking toward Arvizo. The report's timestamp 0118 is ~8 minutes late. Also, Salac 'suddenly turned around' — the report's characterization of 'lowering the weapon' before turning is not in the DA letter.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "At approximately 0119 hours, the subject once again raised the handgun with both hands, pointed it directly at Deputy Vega.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The actual shooting occurred at approximately 1:11:39-1:11:44 AM per the DA letter. The report says 0119 — approximately 7 minutes late. Also, the DA letter says Salac pointed the handgun 'directly at Deputy Ruelas' (not Vega), and the weapon was raised 'back up with her right hand' — not both hands the entire time.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Deputies Vega, Chen, and I opened fire simultaneously.",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter describes a precise sequence: first 'a volley of rounds were fired by the other three deputies' when Salac pointed at Ruelas, then Salac bent forward but raised the gun again, and 'Deputies continued firing.' The shooting was not simultaneous — it occurred in two distinct phases with a pause in between.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "A total of eight rounds were fired by the three deputies within approximately two seconds.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter says 'A combined ten shots were fired by the three deputies within approximately four seconds.' The report undercounts by 2 rounds (8 vs 10) and halves the duration (2 seconds vs 4 seconds).",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "At 0120 hours, I approached the subject with Deputies Chen and Vega.",
+      "report_location": "Narrative, paragraph 7, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter says deputies approached and kicked the weapon at 1:11:53 AM. The report says 0120 — approximately 8 minutes late. The systematic time inflation continues.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "At approximately 0125 hours, OCFA Engine #19 arrived on scene.",
+      "report_location": "Narrative, paragraph 8, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter says OCFA Engine #19 arrived at 1:19 AM. The report says 0125 — 6 minutes late.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "At approximately 0131 hours, I made contact with a resident at 22851 Loumont Drive. The resident stated that no one in the household had called 911.",
+      "report_location": "Narrative, paragraph 9",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter confirms that at 1:14:25 AM, Arvizo contacted a resident who stated 'they had not called 911.' The content is accurate though the report's time (0131) is inflated by ~17 minutes.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Deputy Vega determined the weapon appeared to be a replica or BB gun.",
+      "report_location": "Narrative, paragraph 7, sentence 3",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter confirms that upon kicking the handgun, 'Deputy Ruelas immediately realized that it didn't feel like a real gun' and Deputy Peterson confirmed 'it sounded like plastic.' The weapon was identified as a BB gun. The report's attribution to the wrong deputy (Vega vs Ruelas) is a minor identity error, but the core finding is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}

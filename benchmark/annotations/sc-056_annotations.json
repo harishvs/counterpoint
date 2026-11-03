@@ -1,0 +1,175 @@
+{
+  "scenario_id": "sc-056",
+  "evidence_id": "ocda-011-reinhold-video",
+  "report_id": "sc-056_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Adversarial 'wrong causal framing' scenario. Facts are largely correct but cause-and-effect relationships are misrepresented — the report frames events to make officer actions appear more justified and the subject's behavior more threatening than the evidence shows. Based on OCDA OIS Kurt Reinhold, OC Sheriff.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Deputy Israel observed the subject traveling northbound on the sidewalk. Deputy Israel recognized the subject from a prior trespassing contact the previous night.",
+      "report_location": "Narrative, paragraph 2, sentences 1-2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "It was Deputy Israel who observed Reinhold, but from the passenger seat — Deputy Duran was driving. The contact reason is misframed: the DA letter says Israel believed Reinhold was homeless based on his appearance and decided to make a U-turn to contact him. The prior night encounter at Ole Hanson was real but the 'aggressive' and 'threatening' characterization is the report's framing, not documented in the DA letter's description of that event.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Because the subject had been aggressive during the previous encounter and had made threatening statements toward deputies, we decided to make contact to check on his welfare and offer services.",
+      "report_location": "Narrative, paragraph 2, sentence 3",
+      "claim_type": "subjective_characterization",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter describes the prior night encounter as lasting approximately five minutes, during which Reinhold would not respond to questions and his only statement was 'God told me I can be here.' No aggressive or threatening behavior is documented. The causal framing — that the stop was motivated by prior aggression — is fabricated justification.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Deputy Israel exited the vehicle first and told the subject to stop.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Both deputies exited. The DA letter says Duran drove past, parked, and both exited. Duran told Reinhold 'Hey stop.' The report makes Israel the initiator when it was actually Duran.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Deputy Israel took the lead in attempting to contact the subject while I acted as backup.",
+      "report_location": "Narrative, paragraph 4, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter explicitly states 'Deputy Israel took the lead in attempting to contact Reinhold and Deputy Duran was acted as his back up.' This is actually correct — but the report then attributes Israel's later actions to create a framing where Israel provoked the situation, which shifts blame.",
+      "discrepancy_type": "none",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "At no point did either deputy raise their voice, use profanity, or attempt to escalate the situation.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter confirms: 'At no point did either of the deputies raise their voice, swear or attempt to instigate Reinhold.' This is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject slapped Deputy Israel's hand and arm three additional times during a period of approximately one minute and thirty seconds.",
+      "report_location": "Narrative, paragraph 6, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Accurate — Reinhold hit Deputy Israel's hand and arm three additional times during approximately 1:30.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Because the subject had become physically assaultive, we increased our use of force to gain compliance.",
+      "report_location": "Narrative, paragraph 7, sentence 1",
+      "claim_type": "subjective_characterization",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The causal framing is misleading. The DA letter describes the deputies continuing de-escalation attempts while walking 300 yards. The phrase 'increased our use of force' implies a deliberate force escalation, when the actual sequence was Reinhold trying to re-enter the street and Duran grabbing his backpack — a reactive response, not a planned escalation.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "After traveling approximately 300 yards, we were able to direct the subject back to the westbound sidewalk on El Camino Real.",
+      "report_location": "Narrative, paragraph 7, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Accurate — they traveled approximately 300 yards to the westbound sidewalk near the Miramar Hotel.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I then grabbed the subject by his backpack and took him to the ground.",
+      "report_location": "Narrative, paragraph 7, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Accurate — Duran grabbed Reinhold by his backpack and took him to the ground.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Because the subject had been continuously resisting and had physically struck Deputy Israel multiple times, I believed he posed a significant threat.",
+      "report_location": "Narrative, paragraph 9, sentence 1",
+      "claim_type": "subjective_characterization",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The causal framing misrepresents the threat level. The slapping incidents were open-hand strikes during a walking encounter, described by witness John Doe #1 as the officers 'trying to be nice' and the man 'pulled away then hit and pushed.' The report frames minor resistance as 'significant threat' to justify subsequent force.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Because the subject had already assaulted Deputy Israel and was now attempting to disarm him, and because I feared the subject would use the gun against us, I fired one round.",
+      "report_location": "Narrative, paragraph 10, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The causal chain is compressed and misframed. The report links the earlier slapping ('already assaulted') directly to the gun-grab situation as a single escalating narrative. The DA letter presents these as distinct phases. The gun-grab itself is documented as real — Reinhold did reach for the gun. But framing the earlier slaps as an 'assault' in the same sentence as the shooting creates a false equivalence that overstates the escalation pattern.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Deputy Israel immediately put out on the radio that shots had been fired.",
+      "report_location": "Narrative, paragraph 11, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Correct — Deputy Israel put 'shots fired' on the radio.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I rolled the subject onto his back and both of us began chest compressions until paramedics arrived.",
+      "report_location": "Narrative, paragraph 11, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Correct — Duran rolled Reinhold onto his back and both began chest compressions.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I told the subject twice to drop it or I would shoot.",
+      "report_location": "Narrative, paragraph 10, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Correct — the DA letter states: 'Two separate times Deputy Duran told Reinhold \"Drop it or I'll shoot.\"'",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Deputy Israel felt his gun belt being pulled and heard the rattling of his gun in its holster.",
+      "report_location": "Narrative, paragraph 9, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Correct — the DA letter documents Israel feeling the gun belt being pulled and hearing the holster rattling.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}

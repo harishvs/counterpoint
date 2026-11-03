@@ -1,0 +1,130 @@
+{
+  "scenario_id": "sc-042",
+  "evidence_id": "ocda-006-sanchez-video",
+  "report_id": "sc-042_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Negative example: accurate report of the Sanchez/Anaheim PD pursuit.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Officers responded to a 911 call reporting a person with a firearm.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "911 call about armed person. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Officers used a public address system to broadcast announcements in both English and Spanish.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "PA announcements in English and Spanish. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject was located fleeing on foot northbound.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Subject fled northbound on foot. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject scaled a wall and ran through adjacent properties.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Subject scaled wall during flight. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Officers maintained verbal commands for the subject to stop and show his hands.",
+      "report_location": "Narrative",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Verbal commands documented. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "An officer fired three rounds when the subject made a threatening movement.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Three rounds fired. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officers approached and began rendering medical aid.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Medical aid rendered after shooting. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "No firearm was recovered from the subject's immediate possession.",
+      "report_location": "Narrative",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Whether a firearm was on the subject's person at the moment of the shooting is a contested point in OIS investigations. The DA letter discusses stolen firearms in the broader context.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    }
+  ]
+}

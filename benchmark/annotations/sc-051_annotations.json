@@ -1,0 +1,175 @@
+{
+  "scenario_id": "sc-051",
+  "evidence_id": "ocda-018-mejia-video",
+  "report_id": "sc-051_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Officers confront a man walking with a knife who suddenly charges. Focus on exaggeration/minimization pairs where the same event is described with inflated or deflated language.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The caller described the subject as a significant threat to public safety and stated the subject appeared to be in a highly agitated and volatile state, gesticulating wildly and shouting at passing vehicles.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter says the caller reported 'a male Hispanic walking down the street with a large butcher knife in his hand' who 'was bleeding from his hand.' The report dramatically escalates this to 'significant threat,' 'highly agitated and volatile,' 'gesticulating wildly,' and 'shouting at passing vehicles' — none of which appear in the actual 911 call description.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The SAPD officers made a brief attempt at a welfare check but the subject was uncooperative and refused medical treatment.",
+      "report_location": "Narrative, paragraph 2, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter says SAPD officers 'contacted Mejia through the driver's side window' and 'Mejia was asked if he wanted medical assistance and if he would drop the knife. He refused both.' The report minimizes this to a 'brief attempt at a welfare check' — in reality the SAPD officers made direct contact and had a conversation through the car window.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject walked away and the SAPD officers, having determined there was no immediate crime, cleared the call without further action.",
+      "report_location": "Narrative, paragraph 2, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter says the SAPD officers 'cleared the call' broadcasting 'Subject refused ambulance, and refused to put knife down. No crime at this time.' The report minimizes by saying 'determined there was no immediate crime' — omitting that the officers explicitly noted the subject REFUSED to put the knife down, which is a significantly different characterization than simply 'no crime.'",
+      "discrepancy_type": "minimization",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject had a large knife in his right hand.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter says 'Mejia had a large knife in his left hand' — not right hand. A left/right swap.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Officers immediately drew their service handguns and began issuing commands from approximately 50 feet.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter describes the first verbal commands starting at 8:47:01 AM from officers who parked and exited. The distance is not specified as 50 feet initially. The exaggeration of distance creates an impression of greater caution than may have been exercised.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Torres drew his service handgun, then holstered it and deployed his department-issued Taser.",
+      "report_location": "Narrative, paragraph 4, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter says Diaz 'initially drew his service handgun as Mejia,' but then 'holstered his weapon and drew his Taser.' However, the report omits that Diaz later RE-holstered the Taser and drew his handgun again when Mejia began walking toward him, then switched BACK to Taser. The report presents a simple handgun→Taser transition when the actual sequence was more complex.",
+      "discrepancy_type": "minimization",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "For the next several minutes, Officers Park, Crawford, and Torres engaged the subject in extended verbal dialogue.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter shows the first commands at 8:47:01 and the shooting at 8:47:21 — a total of 20 SECONDS, not 'several minutes.' This is a massive exaggeration of the de-escalation period, making it appear officers spent far more time on verbal dialogue than they actually did.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject continued walking but at a slow, nonthreatening pace, keeping distance from the officers.",
+      "report_location": "Narrative, paragraph 5, sentence 3",
+      "claim_type": "subjective_characterization",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter describes Mejia walking 'in a southwest direction onto the northbound lanes of Warner Avenue' — directly into traffic lanes toward officers. The characterization as 'nonthreatening' and 'keeping distance' minimizes the fact that the subject was walking with a knife toward the officers' general position in a roadway.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The subject suddenly looked over his left shoulder toward Officer Torres, then pivoted and charged directly at Officer Park from a distance of approximately 32 feet.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter says 'Mejia looked over his right shoulder toward Officer Diaz and then began to run toward Officer Sanchez from approximately 32 feet away.' The shoulder is wrong (left vs right) but the core action — looking at one officer then charging the other from 32 feet — is accurately described.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Park fired five rounds and Officer Crawford fired five rounds, for a total of ten gunshots within approximately 1.57 seconds.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter says 'Officer Newman fired three gunshots and Officer Sanchez fired seven gunshots in approximately 1.57 seconds.' Total is 10 rounds in 1.57 seconds (correct), but the split is 3/7 not 5/5. The report redistributes shots to make the firing appear more evenly shared.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Officers immediately holstered their weapons, approached the subject, and began chest compressions within 30 seconds.",
+      "report_location": "Narrative, paragraph 7, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter says the knife was secured at 8:48:39 AM (78 seconds after shooting at 8:47:21). CPR timing is not precisely specified but the knife had to be secured first. '30 seconds' significantly minimizes the actual time to begin medical aid.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Paramedics were requested immediately and arrived within three minutes, at approximately 0850 hours.",
+      "report_location": "Narrative, paragraph 7, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter does not specify the exact paramedic arrival time but the shooting occurred at 8:47:21 AM. If paramedics arrived at 0850, that would be less than 3 minutes — which is faster than typical EMS response. The claim exaggerates the speed of medical response.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The subject collapsed in the northbound lane of Warner Avenue, the knife still in his right hand.",
+      "report_location": "Narrative, paragraph 6, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter says 'Mejia fell to the asphalt in the #1 lane of northbound Warner Avenue with the knife still held in his left hand.' The report says right hand — maintaining the earlier left/right error consistently.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The commands included: 'Drop the knife,' 'Have a seat,' 'Don't come towards us,' and 'Back up.'",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter includes a detailed transcript of commands: 'Hey, man. Have a seat,' 'Drop the knife,' 'Don't come towards us,' 'Back up, back up, back up.' The report's quoted commands match the actual commands given.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officer Torres attempted to deploy his Taser but was unable to due to the subject's sudden change of direction.",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter says Officer Diaz 'attempted to deploy his Taser against Mejia; however, he was unable to do so due to Mejia suddenly charging at Officers Newman and Sanchez.' The reason was the sudden charge, but the report omits that Diaz was actually moving toward Mejia to deploy the Taser and had to abort. The 'sudden change of direction' is a minimization of the actual situation — Mejia was actively charging at the other officers.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    }
+  ]
+}

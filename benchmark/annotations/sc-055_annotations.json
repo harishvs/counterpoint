@@ -1,0 +1,175 @@
+{
+  "scenario_id": "sc-055",
+  "evidence_id": "ocda-009-steinmetz-video",
+  "report_id": "sc-055_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Adversarial 'temporal displacement' scenario. All events happened but times are shifted earlier by 30-60 minutes. The sequence is correct but the clock is wrong. Based on OCDA OIS Tobiah Paul Steinmetz, Laguna Beach PD.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 1718 hours, the subject was observed on video surveillance entering the parking garage of the Balboa Bay Resort.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter says 5:54 PM (1754 hours), not 1718. The time is shifted 36 minutes earlier. The event itself is accurate.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "At approximately 1745 hours, the owner of the Mercedes called Newport Beach police to report the vehicle stolen.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The owner called at approximately 6:15 PM (1815 hours), not 1745. Shifted 30 minutes earlier. Event is accurate.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "At approximately 1748 hours, I was driving my marked Laguna Beach Police Department unit southbound on Pacific Coast Highway when I observed the Mercedes.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Radel observed the Mercedes at approximately 6:18 PM (1818 hours), not 1748. Shifted 30 minutes earlier.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "At approximately 1749 hours, I broadcast over the radio my intent to stop the vehicle and requested backup.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The broadcast was at approximately 6:19 PM (1819 hours), not 1749. Shifted 30 minutes. The action described is accurate.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "As I approached, the subject made a sudden hard-left turn and accelerated away from me.",
+      "report_location": "Narrative, paragraph 3, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Correct — Steinmetz made a hard-left turn and accelerated away when Radel approached on foot.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Three of the four tires fell off the rims.",
+      "report_location": "Narrative, paragraph 5, sentence 4",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Correct — three of four tires fell off the rims after the spike strip deployment.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "At approximately 1839 hours, Corporal Gramer performed a pursuit intervention technique (PIT) maneuver.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The PIT was performed later in the sequence. The DA letter describes the PIT happening after an extended pursuit. The report's 1839 timestamp is plausible but shifted to be 30 min early relative to the actual timeline.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Less than 15 seconds after the Mercedes came to a stop, the subject quickly exited his vehicle.",
+      "report_location": "Narrative, paragraph 7, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Correct — the DA letter states at 6:38:54, less than 15 seconds after the stop, Steinmetz exited.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I fired six rounds at the subject at approximately 1839 hours, within approximately 1.6 seconds.",
+      "report_location": "Narrative, paragraph 8, sentence 6",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The shot count (six) and duration (1.6 seconds) are correct, but the time is wrong. Radel fired at approximately 6:38:59 PM (1838:59), not 1839. The time is close but consistently shifted from the actual timeline.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Meyer announced 'Taser!' and discharged his Taser.",
+      "report_location": "Narrative, paragraph 10, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Correct — Officer Meyer announced Taser and deployed it, successfully incapacitating Steinmetz.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "At approximately 1908 hours, Laguna Beach Fire Department arrived and assumed care of the subject.",
+      "report_location": "Narrative, paragraph 12, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "LBFD arrived at approximately 6:48 PM (1848 hours), not 1908. The report adds 20 minutes, making the medical response appear slower than it was.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The subject was transported to Mission Hospital Mission Viejo at approximately 1924 hours.",
+      "report_location": "Narrative, paragraph 12, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Transport was at approximately 6:54 PM (1854 hours), not 1924. Shifted 30 minutes later.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The subject had sustained three gunshot wounds: one to his upper left chest, one to his lower right abdomen, and one to his lower left forearm.",
+      "report_location": "Narrative, paragraph 12, sentence 4",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Correct — Steinmetz sustained three wounds in those locations.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The subject ultimately survived his injuries.",
+      "report_location": "Narrative, paragraph 12, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Correct — Steinmetz survived.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I placed the subject in handcuffs. I retrieved a first aid kit and immediately began rendering aid.",
+      "report_location": "Narrative, paragraph 11, sentences 3-4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Correct — Radel and Meyer placed Steinmetz in handcuffs and Radel began rendering aid.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}

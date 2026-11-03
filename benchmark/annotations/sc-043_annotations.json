@@ -1,0 +1,145 @@
+{
+  "scenario_id": "sc-043",
+  "evidence_id": "ocda-007-to-video",
+  "report_id": "sc-043_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Negative example: accurate report of the To/Westminster PD incident.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Surveillance footage showed the subject striking vehicles and a fire hydrant with the pole.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Surveillance footage of pole strikes matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The subject was holding a metal pole in his right hand.",
+      "report_location": "Narrative",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Pole in right hand confirmed by DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Officers identified themselves and commanded the subject to drop the pole.",
+      "report_location": "Narrative",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Verbal identification and commands match DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject advanced toward officers in an aggressive posture with the pole raised.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Subject advanced with pole raised. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I deployed my TASER, which did not have the desired effect.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "TASER deployed without effect. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "I then transitioned to my duty firearm.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "TASER-to-handgun transition documented in DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "I fired five rounds from my duty weapon.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Five rounds fired. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officers handcuffed the subject and began administering medical aid.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Handcuff and medical aid. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The subject communicated in Vietnamese during portions of the encounter.",
+      "report_location": "Narrative",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Vietnamese communication documented in DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "medium"
+    }
+  ]
+}

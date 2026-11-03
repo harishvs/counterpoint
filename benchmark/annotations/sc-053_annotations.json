@@ -1,0 +1,175 @@
+{
+  "scenario_id": "sc-053",
+  "evidence_id": "ocda-003-emch-video",
+  "report_id": "sc-053_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Adversarial 'wrong actor' scenario. Actions are described correctly but attributed to the wrong officer throughout. Knight's actions given to Albrecht and Balderrama's to Rios. Based on OCDA OIS Michael Emch Jr, Seal Beach PD.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Corporal Rios arrived at the residence first.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Officer Knight arrived first at 9:40:47 PM. Corporal Balderrama arrived second at 9:42:01 PM. The report swaps who arrived first.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I arrived approximately one minute later and parked approximately 200 to 300 feet south of the condominium.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "It was Balderrama who parked 200-300 feet south, not Knight. The reporting officer (mapped to Knight) arrived first and was on scene. Actor swap.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Corporal Rios stood in the walkway approximately 40 feet east of the subject, using his flashlight to illuminate the subject.",
+      "report_location": "Narrative, paragraph 4, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "It was Officer Knight who stood 40 feet east using his flashlight. The report attributes this to the corporal (Balderrama/Rios).",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Corporal Rios asked the subject who he was and commanded him to come out of the enclosed area.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Officer Knight made these commands, not Corporal Balderrama. Consistent actor swap throughout.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I was concerned for the reporting party and her two young children and decided to deploy my Taser.",
+      "report_location": "Narrative, paragraph 12, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "It was Corporal Balderrama who deployed the Taser, not Officer Knight. The report has the reporting officer (Knight analog) deploying the Taser when it was actually the corporal.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "I deployed my Taser toward the subject, striking him in the back.",
+      "report_location": "Narrative, paragraph 12, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Balderrama deployed the Taser, not Knight. The Taser did strike the back — only the actor is wrong.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "I saw the subject point the gun directly in Corporal Rios's direction. Believing Corporal Rios was about to be shot in the head, I pointed my gun at the subject and fired.",
+      "report_location": "Narrative, paragraph 14, sentences 2-3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Knight saw Emch point the gun at Balderrama's direction and fired to protect Balderrama — this part is correct in substance. But the report attributes the 21-round firing to the reporting officer (Knight analog), which IS correct. However, it says the gun was pointed at Rios (Balderrama analog). The actual DA letter says Emch pointed toward Balderrama, and Knight fired. So this claim's action attribution is actually correct — it's one of the few accurate claims.",
+      "discrepancy_type": "none",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "In total, I fired 21 rounds.",
+      "report_location": "Narrative, paragraph 14, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Correct — Officer Knight fired 21 rounds. The shot count is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Corporal Rios then dropped his Taser, drew his duty handgun, and fired nine rounds at the subject.",
+      "report_location": "Narrative, paragraph 15, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Correct — Balderrama dropped his Taser, drew his handgun, and fired nine rounds. Actor and count both accurate here.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Pistilli removed the gun from the subject's immediate reach and handcuffed the subject.",
+      "report_location": "Narrative, paragraph 16, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Correct — Pistilli removed the gun and handcuffed Emch.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Corporal Rios then placed a tourniquet on the subject's left upper thigh area.",
+      "report_location": "Narrative, paragraph 16, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "It was Corporal Balderrama who placed the tourniquet, but the report maps him to Rios, which is correct within its own naming. However, in reality the action is correct — Balderrama did place the tourniquet. This is actually supported if we accept the name mapping.",
+      "discrepancy_type": "none",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The gun was registered to the subject's father.",
+      "report_location": "Narrative, paragraph 17, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Correct — the Glock 22 was registered to Emch's father.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The subject fell into the enclosed area onto his left side and then flat on his back.",
+      "report_location": "Narrative, paragraph 12, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Correct — Emch fell onto his left side and then flat on his back after the Taser deployment.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Corporal Rios was about three feet behind and to the left of me.",
+      "report_location": "Narrative, paragraph 13, sentence 3",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Balderrama was about three feet behind and to the left of Knight. Since the report maps Balderrama to Rios and Knight to Albrecht, this is actually correct within the naming convention. However, given the arrival swap in cl-001/cl-002, the overall actor mapping is inconsistent, making this ambiguous.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "He had a beverage can in his right hand.",
+      "report_location": "Narrative, paragraph 6, sentence 4",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Correct — Emch had a beverage can in his right hand when he exited the patio.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}

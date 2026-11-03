@@ -1,0 +1,175 @@
+{
+  "scenario_id": "sc-054",
+  "evidence_id": "ocda-005-brown-video",
+  "report_id": "sc-054_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Adversarial 'mixed quotes' scenario. Some quotes are real, others are fabricated but sound plausible. Tests whether the pipeline can distinguish genuine from invented statements. Based on OCDA OIS Osman Brown, Anaheim PD.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "W-1 stated that while inside the residence they shared, the subject had pointed a handgun at her in the living room and threatened to kill her and their neighbors.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Accurate — the DA letter confirms W-1 reported the subject pointed a handgun at her and threatened to kill her and neighbors.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "W-1 stated the subject had exited the house at one point, aimed the gun upwards into the air, and fired a shot.",
+      "report_location": "Narrative, paragraph 1, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Accurate — the DA letter confirms W-1 reported the subject exited, aimed upward, and fired.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "W-1 told officers, \"He's been off his meds for weeks and he keeps saying he wants to go out in a blaze of glory.\"",
+      "report_location": "Narrative, paragraph 2, sentence 4",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Fabricated quote. The DA letter says W-1 stated the subject had not been taking his medication, but the specific phrase 'go out in a blaze of glory' is not documented anywhere in the investigation.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject walked out onto the front porch and simulated a handgun with his fingers, pointed it at a police vehicle, and then returned inside.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Accurate — at approximately 3:41 AM, Brown walked out, simulated a handgun with his fingers, pointed at a police vehicle, and returned inside.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject looked at the officers and said, \"You want to do this? Let's do this.\"",
+      "report_location": "Narrative, paragraph 7, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Fabricated quote. The DA letter says the subject 'yelled unintelligibly' during his porch appearances. No intelligible statements by Brown are documented in the investigation. This fabricated quote makes the subject appear more threatening than the evidence shows.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject walked out onto the front porch with a revolver in his right hand.",
+      "report_location": "Narrative, paragraph 8, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Accurate — Brown exited with a revolver in his right hand during the final exit.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject pointed the handgun up in the air and then in a northeast direction toward a marked APD police K9 patrol vehicle.",
+      "report_location": "Narrative, paragraph 8, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Accurate — the DA letter confirms Brown pointed the handgun up and then in a northeast direction toward the K9 vehicle.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject immediately fell to a seated position facing north on the front porch with the revolver still held in his right hand.",
+      "report_location": "Narrative, paragraph 10, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Accurate — Brown fell to a seated position facing north, still holding the revolver.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The K9 pulled the subject east from the porch onto the sidewalk in front of the residence.",
+      "report_location": "Narrative, paragraph 11, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Accurate — the K9 pulled Brown east from the porch onto the sidewalk.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "W-1 later told investigators, \"I knew this was going to happen. I tried to get him help but nobody listened to me.\"",
+      "report_location": "Narrative, paragraph 13",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Fabricated quote. No such statement from W-1 is documented in the DA investigation. This invented quote adds an emotional dimension not present in the evidence.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "He did not point the weapon at any officers and shortly thereafter returned inside.",
+      "report_location": "Narrative, paragraph 7, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Accurate — when Brown appeared with the AR-15, he did not point it at officers and returned inside.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Anaheim Fire Department paramedics who had been staged nearby were summoned at approximately 0404 hours.",
+      "report_location": "Narrative, paragraph 12, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Accurate — paramedics were summoned at approximately 4:04 AM.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "She stated that the subject was currently alone inside the residence.",
+      "report_location": "Narrative, paragraph 2, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Accurate — W-1 told officers Brown was alone inside.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "W-1 told Sergeant Lehman that the handgun was one of two firearms the subject possessed.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Accurate — W-1 stated the subject had two firearms.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject was pronounced deceased by paramedics at approximately 0411 hours.",
+      "report_location": "Narrative, paragraph 12, sentence 5",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Accurate — Brown was pronounced deceased at approximately 4:11 AM.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}

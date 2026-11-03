@@ -1,0 +1,175 @@
+{
+  "scenario_id": "sc-050",
+  "evidence_id": "ocda-017-aguirre-video",
+  "report_id": "sc-050_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Officers respond to a vehicle in an auto body shop at night. Subject rams vehicles and the Escalade exits onto the street before being shot. Focus on sequence errors — events presented in wrong order.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "I activated my body-worn camera, identified myself as La Habra Police, and ordered the subject to exit the vehicle.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter says the initial contact was NOT captured on BWC because Coleman had not yet activated it. BWC activation happened later when other officers arrived. The report falsely claims BWC was activated during the initial contact.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "K9 Officer Murray arrived and deployed the K9 from the vehicle. Murray positioned himself on the east edge of the gate and began issuing K9 warnings through the PA system.",
+      "report_location": "Narrative, paragraph 3, sentences 3-4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter describes a different sequence: K9 Nelson and Trainee Antonio arrived first and parked behind the Escalade. Nelson positioned southeast of the Escalade with the K9. Coleman THEN backed away. The PA announcements started after all officers were positioned, not immediately upon K9 arrival.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Sergeant Lowe arrived on scene and assumed command. Lowe directed officers to deploy OC rounds.",
+      "report_location": "Narrative, paragraph 4, sentences 1-2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter says Sergeant Hurst arrived and began 'instructing and coordinating the positions of the responding units.' It was Hurst who decided to use OC, not Lowe. Additionally, the decision to deploy OC came AFTER the subject began revving the engine and making threatening gestures — the report implies the OC decision came before the subject's escalation.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Prior to deploying OC, the subject revved the engine, turned up the radio, and began yelling obscenities in English from the sunroof.",
+      "report_location": "Narrative, paragraph 4, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter says Aguirre yelled 'profanities at the officers, yell inaudibly in English and Spanish' — both English AND Spanish, not just English. Also, he was 'flashing gang signs out of the driver side window and sunroof' and the gestures came throughout the standoff, not as a single sequence before OC deployment.",
+      "discrepancy_type": "omission",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject then placed the vehicle in reverse and accelerated toward the K9 vehicle and officers positioned behind it.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter describes TWO separate reversing incidents: first 'Aguirre put the Escalade into reverse and began backing up toward the K9 vehicle,' then later a second reversal where 'Aguirre reversed the Escalade and collided with the K9 vehicle.' The report collapses these into one event.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "After crashing into the garage bay, the subject drove the Escalade through the metal rollup door and exited onto the street.",
+      "report_location": "Narrative, paragraph 5, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter describes a much more complex sequence: Aguirre drove forward, collided with vehicles, maneuvered between vans, rammed the rollup door, drove INTO the garage, then reversed back, then drove forward AGAIN through the garage and out the back. The report presents this as a simple linear exit when it was actually a multi-stage rampage with direction changes.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officers Hartman and Ramos moved to the northwest corner of Alpine and Bedford.",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter says Coleman stood 'on the west sidewalk approximately eighteen feet south of the Escalade' and Robles 'stood on the sidewalk a few feet south of Officer Coleman.' The northwest corner placement contradicts the documented southwest/west sidewalk positions.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject raised his right arm toward the passenger-side window.",
+      "report_location": "Narrative, paragraph 7, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter says Coleman 'saw Aguirre raise his right arm toward the passenger front window' from his position at the B pillar. This matches the claim.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Officer Murray fired seven rounds from his Colt AR-15A4 rifle. Sergeant Lowe then fired ten rounds from his Glock 21C.",
+      "report_location": "Narrative, paragraph 7, sentences 3-4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The sequence is reversed. The DA letter says Coleman fired the rifle FIRST (seven rounds in 1.77 seconds), then Torres fired his Glock (ten rounds in 3.2 seconds). The report attributes the shots to wrong officers AND implies the rifle came first then the pistol — but it reverses who held which weapon.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Ramos attempted to fire but her weapon malfunctioned.",
+      "report_location": "Narrative, paragraph 7, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter confirms Officer Robles 'attempted to fire her gun, but the weapon did not discharge' due to a malfunction evidenced by a cartridge with a light primer strike.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I approached the vehicle on foot from the driver's side and observed the subject seated in the driver's seat.",
+      "report_location": "Narrative, paragraph 2, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter says Coleman 'approached the passenger side of the Escalade.' The report says driver's side — opposite of what actually happened.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "He briefly raised one hand and then closed the window.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter says 'Aguirre lowered the front passenger window and briefly held one hand up in the window before closing it again.' One hand up in the window, then closing — but the report omits that this was the PASSENGER window, not the driver's window. The side matters because the officer's approach side determines what this gesture meant.",
+      "discrepancy_type": "omission",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Officers then observed the Escalade emerge from the garage at high speed and accelerate eastbound on South Bedford Street.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter describes the Escalade accelerating 'eastbound through the garage toward South Bedford Street' — meaning it went through the garage FROM the back lot, not that officers simply observed it emerge. The report skips the entire back-lot maneuver sequence where Aguirre reversed west, then accelerated east through the building.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Officers discovered the business owner, W-1, who had been asleep inside the shop during the entire incident.",
+      "report_location": "Narrative, paragraph 8",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter confirms the shop owner 'had fallen asleep at his desk and was inside the building' and 'was awakened by the loud crashing noises.'",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "At approximately 0301 hours, Sergeant Lowe deployed the first OC round into the vehicle.",
+      "report_location": "Narrative, paragraph 4, sentence 5",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter says 'At approximately 3:01 a.m., Sergeant Hurst deployed a 40mm oleoresin capsicum (OC) round.' The time matches even though the officer name is fictionalized.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}

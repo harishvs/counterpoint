@@ -1,0 +1,145 @@
+{
+  "scenario_id": "sc-046",
+  "evidence_id": "ocda-013-wong-video",
+  "report_id": "sc-046_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Negative example: accurate report of the Wong/Placentia PD incident.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Officers responded to reports of a subject behaving erratically who may have been armed.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Call described erratic subject potentially armed. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The subject was seated in the driver's seat of a vehicle.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Subject in driver's seat. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject started the engine as officers approached.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Engine start during approach. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Officers gave verbal commands in both English and Spanish.",
+      "report_location": "Narrative",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Bilingual commands documented in DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject produced a firearm and fired two rounds toward officers.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Subject fired 2 rounds. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "I fired multiple rounds from my duty rifle.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Rifle rounds fired by officer. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officers found two firearms: a handgun and a rifle.",
+      "report_location": "Narrative",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Two firearms recovered. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject was pronounced deceased.",
+      "report_location": "Narrative",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Subject deceased. Matches DA letter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Officers gave commands in both English and Spanish for the subject to turn off the vehicle and show his hands.",
+      "report_location": "Narrative",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "both"
+        }
+      ],
+      "explanation": "Bilingual commands are documented, but the exact attribution to specific officers may be hard to determine from BWC audio.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    }
+  ]
+}

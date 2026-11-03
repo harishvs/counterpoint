@@ -1,0 +1,175 @@
+{
+  "scenario_id": "sc-048",
+  "evidence_id": "ocda-015-baxter-video",
+  "report_id": "sc-048_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Detective arrives at a parking lot where a DV suspect has crashed after a pursuit and school bus shooting. Focus on claims about events not visible on the bodycam (prior assault, pursuit, bus incident).",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "On August 22, 2021, the subject had assaulted his wife, W-1, and their six-year-old son at the family residence.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "no_evidence",
+      "evidence_references": [],
+      "explanation": "The prior assault occurred on August 22 — 12 days before this incident. There is no bodycam footage of the prior event. The bodycam only covers the September 3 parking lot encounter.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I had been briefed that the subject had broken W-1's wrist during the altercation.",
+      "report_location": "Narrative, paragraph 2, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "no_evidence",
+      "evidence_references": [],
+      "explanation": "The DA letter confirms the prior assault broke Doe's nose, not her wrist. However, the injury details are from a prior incident with no bodycam evidence. The wrist vs nose error cannot be verified from the September 3 video.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "An anonymous tipster had warned that the subject was armed.",
+      "report_location": "Narrative, paragraph 2, sentence 4",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "no_evidence",
+      "evidence_references": [],
+      "explanation": "This claim about intelligence from an anonymous tipster cannot be verified from bodycam footage. The DA letter does not mention an anonymous tipster — it only mentions the restraining order and parole status.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "W-1 reported that while driving the school bus on Orangethorpe Avenue with students aboard, she observed the subject following her in a grey Chevrolet Tahoe.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter confirms W-1 was driving a Buena Park School District bus, noticed a Grey Chevrolet Tahoe pull up, and recognized her husband Baxter as the driver. The vehicle description matches.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject blocked the bus's path, exited his vehicle holding a chrome revolver, and aimed it at the bus.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter describes a 'handgun' that Baxter held in his right hand throughout. Forensic evidence collected was 'EM#24 - Black pistol.' The report says 'chrome revolver' — wrong color, wrong type. The weapon was a black pistol, not a chrome revolver.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "W-1 stated the subject screamed verbal threats including death threats directed at her.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "no_evidence",
+      "evidence_references": [],
+      "explanation": "This claim is about what W-1 reported the subject said during the bus encounter. The bodycam does not cover the bus encounter — it only starts at the parking lot. The bus surveillance footage mentioned in the DA letter (8 minutes of screaming) may capture this, but the bodycam cannot verify it.",
+      "discrepancy_type": "none",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject fired at least one round in the direction of the bus.",
+      "report_location": "Narrative, paragraph 3, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter says Officer Rubalcava 'heard Baxter fire two shots' and 'saw Baxter shoot at the school bus.' The report says 'at least one round' — minimizing the documented two shots.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The civilian vehicle was a white Honda Accord, and its driver sustained minor injuries.",
+      "report_location": "Narrative, paragraph 5, sentence 3",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "no_evidence",
+      "evidence_references": [],
+      "explanation": "The collision with a civilian vehicle occurred during the pursuit, not at the parking lot. The bodycam would not show the pursuit collision. The DA letter mentions Baxter 'collided with another civilian vehicle' but does not specify the make/model or injuries.",
+      "discrepancy_type": "none",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I immediately observed the subject seated in the driver's seat with a black semi-automatic pistol visible in his left hand.",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter consistently describes the handgun in Baxter's RIGHT hand: 'still holding a handgun in his right hand.' The report says 'left hand' — a left/right swap.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "He walked slowly toward the officers with what I would describe as a resigned expression.",
+      "report_location": "Narrative, paragraph 7, sentence 2",
+      "claim_type": "subjective_characterization",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter says Baxter 'continued to walk towards the police officers with his gun pointed at Officer Bernal and then Choi.' Whether his expression was 'resigned' is a subjective interpretation. The behavior described (walking toward officers pointing a gun) could equally suggest aggression or intent to provoke.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Total rounds fired: approximately eight by myself and six by Officer Cho.",
+      "report_location": "Narrative, paragraph 7, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "The DA letter provides no exact individual shot counts for Bernal vs Choi in the parking lot portion. However, the total combined fire from all officers throughout the incident was much higher. Without exact forensic attribution, 'approximately eight and six' may be a fabricated precision that appears authoritative but cannot be verified.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officers rendered first aid at 1413 hours.",
+      "report_location": "Narrative, paragraph 8, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter states officers 'began rendering aid to him at 14:13.' The time matches.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "OCFA paramedics arrived at 1420 hours.",
+      "report_location": "Narrative, paragraph 8, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "both"}],
+      "explanation": "The DA letter says 'At 14:20, Orange County Fire Authority (OCFA) arrived on scene.' The time matches.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I arrived in the parking lot approximately 90 seconds after the subject stopped.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "no_evidence",
+      "evidence_references": [],
+      "explanation": "The exact arrival time relative to Baxter's crash cannot be precisely verified from the bodycam alone without synchronized timestamps. The DA letter does not specify the exact gap between Baxter's stop and Bernal's arrival.",
+      "discrepancy_type": "none",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I was operating in an undercover capacity in a personal vehicle near the intersection of Orangethorpe Avenue and Beach Boulevard.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter says Bernal 'was working a special assignment as a detective for the Department's Community Impact team' and was on the 'far South side of Buena Park City.' He was not 'near the intersection of Orangethorpe and Beach' — he was significantly further south and responded to the radio call. His starting location is misrepresented.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    }
+  ]
+}

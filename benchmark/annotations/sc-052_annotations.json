@@ -1,0 +1,175 @@
+{
+  "scenario_id": "sc-052",
+  "evidence_id": "ocda-001-valdez-video",
+  "report_id": "sc-052_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Adversarial 'almost correct' scenario. Every claim is nearly accurate but wrong in one small detail: left/right swaps, off-by-one counts, who drove vs rode, facing direction, which tire, which bumper. Based on OCDA OIS Jose David Valdez.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Officer Pham was driving the patrol vehicle and I was seated in the front passenger seat.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Lopez drove and Molina rode passenger. The report swaps who drove and who rode — a subtle role reversal.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I located an occupied gray 2006 Ford Focus parked in a marked parking stall facing south.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The DA letter states the vehicle was facing north, not south. Every other detail is correct.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "I observed three additional occupants: W-1 in the front passenger seat and W-2 in the left rear seat.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "identity_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "There were two additional occupants, not three. The report changes the count by one while getting the seating positions correct.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I observed the subject's right hand was bandaged.",
+      "report_location": "Narrative, paragraph 4, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Valdez's left hand was bandaged, not the right. A left/right swap — the rest of the sentence is accurate.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject repeatedly moved his left hand toward the center console, his waistband, and the area of his left leg.",
+      "report_location": "Narrative, paragraph 4, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Valdez moved his RIGHT hand toward the console, waistband, and right leg. The report mirrors the correct movements to the wrong side.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "W-2 was seated on the asphalt behind the right rear bumper of the Ford Focus.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "W-2 was seated behind the LEFT rear bumper, not the right. A left/right swap.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The right rear tire ran over W-2's handcuffed hands.",
+      "report_location": "Narrative, paragraph 6, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The LEFT rear tire ran over W-2's hands, not the right. The report correctly describes the event but attributes it to the wrong tire.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "W-2 was then struck by the open passenger door and front left tire.",
+      "report_location": "Narrative, paragraph 6, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "W-2 was struck by the open passenger door and front RIGHT tire. The report swaps left for right on the second tire.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I fired three times and Officer Pham fired twice.",
+      "report_location": "Narrative, paragraph 7, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "In the first volley, Lopez fired twice and Molina fired three times. The report swaps the shot counts between the two officers.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The left rear bumper of the Ford Focus struck the right front bumper of our parked police vehicle.",
+      "report_location": "Narrative, paragraph 7, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The left rear bumper struck the LEFT front bumper of the police vehicle, not the right. Off by one side.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Officer Pham fired three additional times through the windshield. I fired once toward the subject from the driver side.",
+      "report_location": "Narrative, paragraph 7, sentences 5-6",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "audio"}],
+      "explanation": "Molina fired four additional times (not three) and Lopez fired once — the second volley count is off by one for Pham/Molina.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "A Hellcat .380 semi-automatic handgun was located in the right pocket of the subject's jacket.",
+      "report_location": "Narrative, paragraph 9, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "The handgun was in the LEFT pocket. Another left/right swap — weapon type and model are correct.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The handgun contained a loaded magazine with one round in the chamber.",
+      "report_location": "Narrative, paragraph 9, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "There was NO round in the chamber. The magazine was loaded but the chamber was empty. Off by one — the most dangerous kind of small error in a firearms context.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I observed the subject seated in the driver seat with his head slumped forward on the steering wheel.",
+      "report_location": "Narrative, paragraph 2, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Correct — Valdez was in the driver's seat with head slumped on the steering wheel.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officers provided CPR until Costa Mesa Fire Department paramedics arrived.",
+      "report_location": "Narrative, paragraph 8, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [{"modality": "visual"}],
+      "explanation": "Correct — officers administered CPR until CMFD paramedics arrived.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}
