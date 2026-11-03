@@ -1,0 +1,252 @@
+{
+  "scenario_id": "sc-025",
+  "evidence_id": "ocda-004-vargas-video",
+  "report_id": "sc-025_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Second scenario for Vargas case focusing on temporal, sequence, exaggeration, and minimization discrepancies. Officers respond to a commercial burglary and confront an armed subject. Based on OCDA OIS investigation of Hugo Vargas, Costa Mesa PD, July 13, 2022.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 0520 hours, Officer C. Webb and I responded to an ADT commercial burglary alarm activation.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Dispatch call received at approximately 5:15 AM, officers dispatched at 5:18 AM."
+        }
+      ],
+      "explanation": "The DA investigation states the ADT call came in at approximately 5:15 AM and officers were dispatched at 5:18 AM. The report claims 0520 hours — a 5-minute shift in the initial response time.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "We arrived on scene within approximately two minutes of the dispatch call.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officers arrive at the business. Dispatch was at 5:15 AM, arrival at 5:18 AM — approximately 3 minutes."
+        }
+      ],
+      "explanation": "The actual timeline is dispatch at 5:15 AM, arrival at 5:18 AM — 3 minutes, not 2. Minor temporal inaccuracy but measurable from BWC timestamps.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "I walked the exterior perimeter of the building alone while Officer Webb remained at the front entrance to secure it.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Bruno walked the perimeter. The reporting officer (mapped to Tran, but here the narrator is Tran) did not walk alone — the sequence of arrival and perimeter actions differs."
+        }
+      ],
+      "explanation": "The DA investigation describes Officer Bruno as the one who walked the perimeter, contacted the resident, and scaled the gate. The report reverses which officer performed the perimeter check versus stayed at the front. This is a sequence/attribution swap.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Within approximately ten minutes, Sgt. Park, Officer Ruiz, and Officer Mateo arrived on scene.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Additional officers arrive on scene within approximately three minutes of the radio broadcast."
+        }
+      ],
+      "explanation": "The DA investigation states additional officers arrived 'within three minutes of Officer Bruno's radio broadcast.' The report exaggerates this to 'approximately ten minutes' — more than triple the actual response time.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "He appeared calm and did not exhibit threatening behavior during this period.",
+      "report_location": "Narrative, paragraph 3, sentence 5",
+      "claim_type": "subjective_characterization",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Subject is seen repeatedly stabbing the front reception desk with the knife after looking at officers.",
+          "transcript_excerpt": "Officer describes subject's actions as 'increasingly aggressive' and 'not normal behavior.'"
+        }
+      ],
+      "explanation": "The DA investigation describes the subject as repeatedly stabbing a desk, acting 'increasingly aggressive,' and being described as 'irrational.' The report minimizes this as 'calm' and 'not threatening' — the opposite of what officers actually reported and what the video shows.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officer Mateo was designated to deploy a Taser as the less-lethal option.",
+      "report_location": "Narrative, paragraph 4, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Bruno (first arriving officer) is designated as less-lethal cover with Taser."
+        }
+      ],
+      "explanation": "The DA investigation states Officer Bruno was designated for Taser deployment. The report attributes the Taser role to the wrong officer.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Sgt. Park obtained a 40mm less-lethal launcher and positioned himself near the security gate.",
+      "report_location": "Narrative, paragraph 4, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Jacobi obtains the 40mm launcher and positions behind Officer Nicolas, not near the security gate."
+        }
+      ],
+      "explanation": "Two errors: (1) It was Officer Jacobi who obtained the launcher, not the sergeant. (2) Jacobi positioned himself behind Officer Nicolas, not near the security gate. Both the person and position are wrong.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "I discharged my firearm approximately four times.",
+      "report_location": "Narrative, paragraph 5, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Multiple rapid gunshots audible. Forensic analysis determined specific shot counts."
+        }
+      ],
+      "explanation": "The DA investigation identifies the three officers who fired as Nicolas (7 rounds), Jacobi (11 rounds), and Le (11 rounds). The report narrator, mapped to the first arriving officer (Bruno/Tran), did not fire at all — Bruno had holstered his handgun and was designated as Taser cover. Claiming 4 shots is a fabrication.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "In total, officers fired approximately fifteen rounds.",
+      "report_location": "Narrative, paragraph 5, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Multiple rapid gunshots."
+        }
+      ],
+      "explanation": "The actual total was 29 rounds (7 + 11 + 11). The report states 15 — roughly half the actual count. This significantly minimizes the volume of fire.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "We forced entry within approximately thirty seconds of the last shot.",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officers maintain positions for approximately four minutes before forcing entry at 5:37 AM."
+        }
+      ],
+      "explanation": "The DA investigation states officers maintained positions for approximately four minutes after the shooting, with forced entry at approximately 5:37 AM (shooting at ~5:33). The report claims 30 seconds — an 8x reduction in the actual delay before rendering aid.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject was barely conscious and unresponsive during transport.",
+      "report_location": "Narrative, paragraph 6, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Subject is conscious, screaming profanities and threats at officers.",
+          "transcript_excerpt": "Subject yelling curse words, threatening to return and kill officers, accusing officers of shooting his wife."
+        }
+      ],
+      "explanation": "The DA investigation and BWC recordings show Vargas was conscious, screaming profanities, making threats, and remained verbal throughout transport. The paramedic confirmed Vargas was 'conscious, screaming curse words, and unable to answer questions.' The report minimizes this to 'barely conscious and unresponsive.'",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The rifle recovered from the scene was later identified as belonging to the subject.",
+      "report_location": "Narrative, paragraph 7, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Rifle visible through broken windowpane."
+        }
+      ],
+      "explanation": "The DA investigation states the rifle 'was found to be unloaded and later determined to belong to the owner of the business.' The report claims it belonged to the subject — the opposite.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The subject emerged from a room on the southwest side of the building carrying a rifle in his right hand.",
+      "report_location": "Narrative, paragraph 4, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject emerges from southwest room holding rifle in right hand."
+        }
+      ],
+      "explanation": "The DA investigation confirms Vargas emerged from a southwest room holding a rifle in his right hand. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Officers immediately ordered the subject to drop the weapon.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Officers yell 'Gun, gun, gun!' and order the subject to drop the weapon."
+        }
+      ],
+      "explanation": "The DA investigation confirms officers yelled 'gun, gun, gun!' and ordered Vargas to drop the weapon. This is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "It was a semi-automatic weapon chambered in .22 caliber with a full magazine.",
+      "report_location": "Narrative, paragraph 7, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Rifle recovered and examined by crime lab."
+        }
+      ],
+      "explanation": "The rifle was a bolt-action Remington Model 34 (not semi-automatic) and was found to be unloaded (not with a full magazine). The .22 caliber is correct, but the action type and loaded status are wrong. This exaggerates the threat the weapon posed.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    }
+  ]
+}

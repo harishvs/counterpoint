@@ -1,0 +1,234 @@
+{
+  "scenario_id": "sc-023",
+  "evidence_id": "ocda-002-montes-video",
+  "report_id": "sc-023_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Second scenario for Montes video. Traffic stop leads to shooting after front passenger produces a firearm. Focus on temporal compression, event reordering, evidence minimization, and omissions. Based on OCDA OIS investigation of Alejandro Sanchez Montes, Santa Ana PD, Nov 16 2022.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "This entire process took approximately ninety seconds.",
+      "report_location": "Narrative, paragraph 3, sentence 5",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Timestamped BWC shows officer contacting driver at approximately 2:00, not completing the process until approximately 2:02:57 when he approached Montes — nearly 3 minutes."
+        }
+      ],
+      "explanation": "The DA letter shows the stop began at 2:00 p.m. and Buan didn't approach Montes until 2:02:57 — about 3 minutes, not 90 seconds. The report compresses the timeline to minimize how long the process took.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The subject was holding his cell phone and appeared to be texting. I asked the subject to put his phone down, and he placed it on the center console. The subject then reached into a bag of food on his lap and began eating.",
+      "report_location": "Narrative, paragraph 4, sentences 2-4",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "BWC shows Montes lifted the food bag from his lap to the console first (at 2:03:07), THEN started texting on his phone. The report reverses this order."
+        }
+      ],
+      "explanation": "The DA letter states Montes first lifted the food bag from his lap to the console (2:03:07), then started texting. The report reverses this sequence — texting first, then food — a sequence mismatch.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "At approximately 1403 hours, the subject suddenly removed both hands from the dashboard and began reaching rapidly toward the floorboard area on his right side.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "BWC timestamps show Montes never fully complied — he put hands on thighs, not dash. Multiple commands given at 2:03:39 and 2:04:04 before the reach at 2:04:24."
+        }
+      ],
+      "explanation": "The report compresses multiple minutes of non-compliance (2:03:39 to 2:04:24) into a single 'sudden' action at '1403 hours.' In reality, there were repeated commands over nearly a minute because Montes never fully placed his hands on the dashboard — he placed them on his thighs instead.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I immediately gave one verbal command for the subject to show his hands.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "BWC audio captures multiple commands: 'Hey, brother, can you do me a favor, stop reaching around; just put your hands on the front dash, thank you' at 2:03:39, then 'Hey, boss, can you stop reaching around, just put your hands on the dash, put your hands on the dash, dude' at 2:04:04, then 'Hey, stop reaching around, dude!' at 2:04:23."
+        }
+      ],
+      "explanation": "The officer gave at least three separate verbal commands over approximately 44 seconds, not 'one.' The report minimizes the repeated warnings to make the subject's non-compliance seem more sudden.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Within two to three seconds of the subject's initial reaching motion, the subject produced a black semi-automatic handgun and began raising it toward me.",
+      "report_location": "Narrative, paragraph 5, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "BWC shows Montes reached down at 2:04:24, gun visible by 2:04:24-26, shots at 2:04:27 — approximately 3 seconds. However, the subject transferred the gun from right hand to left hand before gripping it."
+        }
+      ],
+      "explanation": "The report omits that Montes first reached with his right hand, lifted the gun, then transferred it to his left hand. This transfer step took additional time and is significant — it means the weapon was being manipulated, not simply 'raised toward' the officer. The report simplifies the sequence.",
+      "discrepancy_type": "omission",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officer Yoon, who was positioned behind the patrol vehicle, discharged his firearm two times nearly simultaneously.",
+      "report_location": "Narrative, paragraph 5, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Park had just seated John Doe 2 on the curb behind the car. He fired one shot from his duty weapon, not two."
+        }
+      ],
+      "explanation": "The DA letter states Park (Yoon) fired one shot from his duty weapon, not two. The report exaggerates the second officer's fire. Additionally, Park was not 'behind the patrol vehicle' — he had just seated John Doe 2 on the curb behind the Mercedes Benz.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "A standard semi-automatic pistol with a factory serial number was recovered from the subject's lap. One standard-capacity magazine was found in the weapon.",
+      "report_location": "Narrative, paragraph 6, sentence 4",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The gun was a Polymer80 ghost gun with no serial number. An extended 27-round magazine was in the weapon, and a second 31-round extended magazine was found later."
+        }
+      ],
+      "explanation": "Three errors: (1) The weapon was a Polymer80 ghost gun with no serial number, not a factory-serialized pistol. (2) The magazine was a 27-round extended magazine, not standard capacity. (3) A second 31-round magazine was found but omitted entirely. The report minimizes the nature of the weapon.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Paramedics arrived shortly after and treated the subject for gunshot wounds to his upper torso.",
+      "report_location": "Narrative, paragraph 7, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "OCFA Engine 75 arrived at 2:18:30 — over 13 minutes after the shooting. Montes had wounds to posterior neck, right elbow, right bicep, right shoulder, right side of chest, left lateral chest, mid back, and three K9 bite wounds to neck. Also had a fractured right arm."
+        }
+      ],
+      "explanation": "Two issues: (1) 'Shortly after' understates the 13+ minute delay from shooting (2:04:27) to paramedic arrival (2:18:30). (2) Wounds were far more extensive than 'upper torso' — including neck, back, elbow, bicep, shoulder, chest (both sides), plus K9 bites and a fractured arm. The report minimizes both the response time and injury severity.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "After approximately five minutes, K9 Officer Esquerra arrived with his K9 and entered the vehicle.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "K9 arrived at approximately 2:09 (5 minutes after shooting) but was not deployed until 2:14:09 — 10 minutes after the shooting. The K9 was released into the Mercedes Benz, not 'entered the vehicle' with the officer."
+        }
+      ],
+      "explanation": "The report compresses two distinct events: K9 arrival (~2:09) and K9 deployment (2:14:09). Five minutes elapsed between arrival and deployment. The report makes it sound like the K9 was immediately deployed upon arrival, collapsing a 10-minute process into 'five minutes.'",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I observed a black Mercedes Benz with California license plate 8YQZ992 traveling on McClay Street and noted that the registration tags appeared expired.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "BWC shows the Mercedes Benz being stopped, consistent with vehicle and license description."
+        }
+      ],
+      "explanation": "The vehicle description, license plate, and reason for stop are consistent with the DA investigation.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "When asked about supervision status, W-1 disclosed he was on AB109.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "John Doe 1 replied, 'I'm on AB109.'"
+        }
+      ],
+      "explanation": "The DA letter confirms John Doe 1 stated he was on AB109 supervision. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The subject was transported to Orange County Global Medical Center and was pronounced deceased at 1502 hours.",
+      "report_location": "Narrative, paragraph 7, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Montes was pronounced deceased at 3:02 p.m."
+        }
+      ],
+      "explanation": "The hospital and time of death match the DA investigation.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Both officers were wearing standard SAPD polo uniforms with black outer vests marked \"POLICE\" and had body-worn cameras activated.",
+      "report_location": "Narrative, paragraph 1, sentence 4",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "DA letter confirms SAPD polo uniform shirts with patches and black outer vests with 'POLICE' patches. BWC was activated and recording."
+        }
+      ],
+      "explanation": "Uniform description and BWC activation match the DA investigation.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I radioed dispatch at approximately 1404 hours to report the shooting.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Buan notified dispatch at 2:04:44 p.m."
+        }
+      ],
+      "explanation": "The DA letter gives the exact time as 2:04:44 p.m. The report says 'approximately 1404 hours' which is technically correct (2:04 p.m. = 1404 hours), but the 17-second gap after the last shot (2:04:27) is compressed into the same minute designation. Ambiguous whether this is a meaningful discrepancy.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    }
+  ]
+}

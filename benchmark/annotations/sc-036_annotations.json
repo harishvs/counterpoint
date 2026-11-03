@@ -1,0 +1,240 @@
+{
+  "scenario_id": "sc-036",
+  "evidence_id": "ocda-018-mejia-video",
+  "report_id": "sc-036_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Second scenario for the Mejia/Tustin PD case. Officers respond to a man walking with a large bloody knife. After commands are ignored, the subject charges and is fatally shot. This report focuses on temporal, sequence, and omission discrepancies rather than the direct contradictions in SC-018.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Tustin Police Department dispatch received a call from a citizen reporting a male Hispanic walking eastbound on Warner Avenue near Red Hill Avenue.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Dispatch describes subject walking westbound on Warner Avenue."
+        }
+      ],
+      "explanation": "The RP3 call described the subject walking westbound, not eastbound. The report reverses the direction of travel.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Officer Navarro was dispatched as backup approximately five minutes later.",
+      "report_location": "Narrative, paragraph 1, sentence 4",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Both officers dispatched together to the location. Sanchez arrived immediately behind Newman."
+        }
+      ],
+      "explanation": "The DA investigation states both Newman and Sanchez were dispatched to the location together. Sanchez parked behind Newman's vehicle at the same time. The report fabricates a 5-minute delay to create the impression the handling officer was alone initially.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Santa Ana Police Department officers had encountered the subject approximately two hours earlier near St. Andrew Place. SAPD officers reported that they had approached the subject on foot, conducted a brief pat-down search, and determined no crime had been committed.",
+      "report_location": "Narrative, paragraph 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "SAPD officers contacted Mejia through the driver's side window of their patrol car. They never exited their vehicle."
+        }
+      ],
+      "explanation": "Two errors: (1) SAPD contacted Mejia approximately one hour earlier (7:37-7:44 vs 8:46), not two hours. (2) SAPD officers never approached on foot or conducted a pat-down — they contacted Mejia through the driver's side window of their patrol car and he refused both medical assistance and to drop the knife. The report fabricates a pat-down and minimizes the prior refusal.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Officer Navarro and I both exited our patrol vehicles simultaneously and drew our service weapons.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Newman exits first at 8:47:00, Sanchez exits his own vehicle shortly after. They did not exit simultaneously from the same vehicle."
+        }
+      ],
+      "explanation": "The DA letter describes a specific sequence: Newman parked on the east curb, Sanchez parked behind, then both exited. The report's 'simultaneously' collapses the sequence and implies a more coordinated approach than documented.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "We observed the subject walking southbound on the east sidewalk of Warner Avenue carrying a knife in his left hand.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject is walking southbound on the east sidewalk of Warner Avenue with a knife in his left hand."
+        }
+      ],
+      "explanation": "This matches the DA investigation: officers located Mejia 'walking southbound on the east sidewalk of Warner Avenue' with 'a large knife in his left hand.' Both direction, location, and hand are correct.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Over the next several minutes, I issued approximately twenty verbal commands to the subject.",
+      "report_location": "Narrative, paragraph 4, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Commands documented from approximately 8:47:01 to 8:47:20 — a span of about 20 seconds, with approximately 12 documented commands from three officers."
+        }
+      ],
+      "explanation": "The entire verbal command sequence lasted approximately 20 seconds (8:47:01 to 8:47:20), not 'several minutes.' The report also claims about twenty commands from one officer, when the investigation documents approximately 12 commands total spread across three officers. Both the duration and count are exaggerated.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject gradually slowed his pace and appeared to be considering compliance.",
+      "report_location": "Narrative, paragraph 4, sentence 3",
+      "claim_type": "subjective_characterization",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject continued walking without slowing. He stopped only briefly before looking over his shoulder and charging."
+        }
+      ],
+      "explanation": "The DA investigation describes Mejia continuing to walk in a southwest direction into the northbound lanes, stopping briefly, then charging. There is no indication of gradual slowing or considering compliance. The report fabricates a narrative suggesting the subject was nearly compliant before suddenly attacking.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer Huang deployed his Taser, which struck the subject but failed to achieve neuromuscular incapacitation.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Diaz attempted to deploy his Taser but was unable to do so due to the subject suddenly charging."
+        }
+      ],
+      "explanation": "The DA investigation states Diaz 'attempted to deploy his Taser against Mejia; however, he was unable to do so due to Mejia suddenly charging at Officers Newman and Sanchez.' The Taser was never actually deployed — the report fabricates a Taser strike to justify the lethal force as a last resort after less-lethal failed.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Officer Navarro discharged his firearm three times and I discharged my firearm seven times.",
+      "report_location": "Narrative, paragraph 5, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Multiple gunshots audible on bodycam audio."
+        }
+      ],
+      "explanation": "The shot counts are swapped. Newman (the handling officer/narrator) fired 3 rounds, Sanchez fired 7. The report reverses the attribution, claiming the narrator fired the majority. The total (10) is correct but individual counts are wrong.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The knife fell from his hand upon impact with the pavement.",
+      "report_location": "Narrative, paragraph 5, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject fell to the asphalt with the knife still held in his left hand. The knife was later removed by Officer Diaz at 8:47:44."
+        }
+      ],
+      "explanation": "The DA investigation explicitly states 'Mejia fell to the asphalt in the #1 lane of northbound Warner Avenue with the knife still held in his left hand.' The knife did not fall — it had to be removed from his hand by Officer Diaz 23 seconds later. The report omits this detail and implies the threat ended immediately.",
+      "discrepancy_type": "omission",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Officer Navarro immediately secured the knife while I began providing first aid to the subject.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Diaz (the third officer, not Sanchez/Navarro) removed the knife. Medical aid assessment began at 8:47:50, approximately 6 seconds after knife removal."
+        }
+      ],
+      "explanation": "The wrong officer is credited with securing the knife. The DA investigation states Officer Diaz removed the knife at 8:47:44, then officers searched and assessed Mejia at approximately 8:47:50. The report attributes this to the backup officer instead of the less-lethal officer.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I initiated CPR within approximately thirty seconds of the shooting.",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Shooting at 8:47:21, CPR initiated at 8:48:39 — approximately 78 seconds later."
+        }
+      ],
+      "explanation": "The shooting occurred at approximately 8:47:21 and CPR was initiated at approximately 8:48:39 — a gap of about 78 seconds, not 30. Additionally, Officer Diaz initiated CPR, not the reporting officer. The report minimizes the response time and misattributes the action.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Orange County Fire Authority paramedics arrived within three minutes and assumed patient care.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "OCFA arrived at approximately 8:53:28 — about six minutes after the shooting."
+        }
+      ],
+      "explanation": "OCFA arrived at approximately 8:53:28, which is about 6 minutes after the shooting (8:47:21), not 3 minutes. The report minimizes the paramedic response time by half.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Seven (7) cartridge cases, WIN 9MM LUGER",
+      "report_location": "Evidence Collected section",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [],
+      "explanation": "Ten cartridge cases were collected (Newman fired 3 + Sanchez fired 7 = 10). The report lists only 7, omitting 3 casings. This is consistent with the report's inflated shot count for the narrator (7) — it only accounts for the narrator's claimed rounds.",
+      "discrepancy_type": "omission",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "A subsequent investigation revealed that the subject had no prior contacts with law enforcement in the Tustin area.",
+      "report_location": "Narrative, paragraph 7, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [],
+      "explanation": "This is accurate — the prior contacts were with SAPD in Santa Ana, not with Tustin PD. The welfare check at the residence also found no additional issues.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}

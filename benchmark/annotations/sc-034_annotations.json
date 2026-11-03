@@ -1,0 +1,250 @@
+{
+  "scenario_id": "sc-034",
+  "evidence_id": "ocda-016-salac-video",
+  "report_id": "sc-034_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Second scenario for the Salac case, focusing on temporal, sequence, and severity discrepancies. Deputies respond to a false 911 burglary call and encounter a female subject with a replica handgun. Based on OCDA OIS investigation of Sunshine Kamille Salac, June 24 2020.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 0115 hours, Orange County Communications Center received a 911 call from a cell phone reporting a residential burglary in progress.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "911 call received at 1:03 AM per DA investigation timeline."
+        }
+      ],
+      "explanation": "The DA investigation states the 911 call was received at 1:03 AM. The report states 0115 hours — a 12-minute shift forward that compresses the entire timeline.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The caller reported hearing glass breaking and stated that an intruder had entered the home through a front window.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Salac reported someone had broken a window to the front of the house and entered the residence."
+        }
+      ],
+      "explanation": "Consistent with the DA investigation. The caller did report a break-in through a front window.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "I was the first unit to arrive at approximately 0105 hours.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "transcript_excerpt": "Deputy Arvizo arrived at 1:09:00 AM per DA investigation."
+        }
+      ],
+      "explanation": "Arvizo arrived at 1:09 AM. The report says 0105, which is 4 minutes before the arrival time in the investigation and paradoxically 10 minutes before the report's own stated time of the 911 call (0115). This creates an impossible timeline.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Within approximately thirty seconds of beginning my approach, I observed the subject standing under a tree on the sidewalk south of the residence.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Nearly one minute elapsed between Arvizo exiting his vehicle (1:09:00) and hearing noise/seeing Salac (1:09:58)."
+        }
+      ],
+      "explanation": "The DA timeline shows 58 seconds between Arvizo's arrival and seeing Salac. The report says 'approximately thirty seconds,' minimizing the actual approach time by nearly half.",
+      "discrepancy_type": "minimization",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I observed that she was holding what appeared to be a black handgun at her side in her right hand, pointed toward the ground.",
+      "report_location": "Narrative, paragraph 3, sentence 5",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Salac was holding the handgun in the high-ready position — both hands on the weapon, at shoulder height, muzzle pointed upward."
+        }
+      ],
+      "explanation": "The DA letter states Salac held the gun in 'the high-ready position — both hands on the weapon, handgun at shoulder height, and the muzzle pointed upward.' The report minimizes this to 'at her side in her right hand, pointed toward the ground,' which drastically understates the threat posture.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Deputies Orozco and Yoon arrived approximately five minutes after my initial contact with the subject.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Deputies Ruelas and Richards arrived at 1:10:49 AM, approximately 51 seconds after Arvizo's first verbal commands at 1:09:58."
+        }
+      ],
+      "explanation": "The backup deputies arrived about 51 seconds after initial contact, not five minutes. The report exaggerates the time the reporting officer was alone with the subject by roughly 5x.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The three of us continued issuing verbal commands over the following several minutes.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Verbal commands continued from approximately 1:10:49 to 1:11:37, a span of about 48 seconds."
+        }
+      ],
+      "explanation": "The command period after backup arrival was under one minute (1:10:49 to 1:11:37). 'Several minutes' exaggerates the duration by at least 3x.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject slowly began walking in my direction, holding the weapon at shoulder height with both hands. She then reversed course and walked back toward the tree.",
+      "report_location": "Narrative, paragraph 5, sentences 3-4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Salac walked toward Arvizo at 1:10:22 while in the high-ready position. At 1:10:31 she turned around and walked back. This happened BEFORE backup arrived (1:10:49), not after."
+        }
+      ],
+      "explanation": "The report places Salac's approach-and-retreat after backup deputies arrived. In the actual timeline, this movement occurred between 1:10:22 and 1:10:31 — before Ruelas and Richards arrived at 1:10:49. The sequence of events is reordered.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Deputy Faulkner arrived last and retrieved a rifle from his vehicle before joining our position.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Peterson arrived at 1:11:04, ran to Arvizo's position at 1:11:08, then ran BACK to his trunk to get the rifle — he did not retrieve it before joining."
+        }
+      ],
+      "explanation": "Peterson first ran to Arvizo's position, then realized he needed the rifle and ran back to his unit to get it. The report reverses this sequence — stating he got the rifle first then joined, when he actually joined then retrieved the rifle.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject had been standing under the tree for approximately ten minutes since my initial contact.",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "From Arvizo's initial contact at 1:09:58 to the shooting at approximately 1:11:39, the total elapsed time was about 1 minute and 41 seconds."
+        }
+      ],
+      "explanation": "The entire encounter from first contact to shots fired lasted under 2 minutes. 'Approximately ten minutes' exaggerates the standoff duration by roughly 6x, creating a false impression of extended negotiation.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject immediately collapsed and the weapon dropped from her hands.",
+      "report_location": "Narrative, paragraph 6, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "After the first volley, Salac briefly bent forward but then raised the handgun again with her right hand, pointing it at Deputy Ruelas. Deputies fired again. She fell to the ground and dropped the gun at approximately 1:11:44."
+        }
+      ],
+      "explanation": "The report omits a critical event: Salac did not immediately collapse. After the initial shots she briefly recovered and raised the weapon again, prompting a second volley. Omitting this second threat gesture misrepresents the sequence.",
+      "discrepancy_type": "omission",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Paramedics arrived at approximately 0125 hours, approximately ten minutes after the shooting.",
+      "report_location": "Narrative, paragraph 7, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Orange County Fire Authority Engine #19 arrived at 1:19 AM per DA investigation."
+        }
+      ],
+      "explanation": "Fire Authority arrived at 1:19 AM. With shots fired at approximately 1:11:39-44, the actual wait was about 7.5 minutes. The report says 0125 (1:25 AM) and 'approximately ten minutes,' overstating both the arrival time and the wait duration.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Dispatch noted the caller was a female and that she and her boyfriend were sheltering inside the residence.",
+      "report_location": "Narrative, paragraph 1, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Dispatch advised the reporting party was hiding in the bathroom and her boyfriend was in a closet."
+        }
+      ],
+      "explanation": "The DA investigation confirms the caller was female (Salac) and reported herself and her boyfriend sheltering. Accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The weapon was determined to be a Daisy 340 BB Spring Repeater Pistol, a realistic replica.",
+      "report_location": "Narrative, paragraph 8, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Evidence collection confirmed Daisy 340 BB gun, described by deputies as resembling a Beretta."
+        }
+      ],
+      "explanation": "Confirmed by the DA investigation. The weapon was a Daisy 340 BB Spring Repeater Pistol.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Ten (10) cartridge casings recovered from the scene.",
+      "report_location": "Evidence Collected section, item 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Evidence list documents 2 x .223 + 3 x .40 + 5 x .40 = 10 total casings."
+        }
+      ],
+      "explanation": "The total casing count of 10 matches the DA investigation's evidence list (2 Speer .223 + 8 .40 cal). Accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}

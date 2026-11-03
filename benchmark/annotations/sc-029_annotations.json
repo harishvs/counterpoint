@@ -1,0 +1,250 @@
+{
+  "scenario_id": "sc-029",
+  "evidence_id": "ocda-009-steinmetz-video",
+  "report_id": "sc-029_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Second scenario for the Steinmetz/Laguna Beach pursuit. Focuses on temporal mismatches, sequence errors, omissions, exaggerations, and minimizations rather than direct contradictions. Same bodycam evidence as SC-009.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 1730 hours, I was patrolling Pacific Coast Highway when I received a dispatch advisory regarding a stolen white Mercedes sedan.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Officer Radel observed the Mercedes at approximately 6:18 PM (1818 hours), not 5:30 PM."
+        }
+      ],
+      "explanation": "The DA letter places the initial observation at approximately 6:18 PM (1818 hours). The report shifts the entire timeline 48 minutes earlier to 1730 hours, compressing and relocating the incident in time.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The vehicle had been reported stolen approximately 30 minutes earlier.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "The owner called Newport Beach police to report the stolen Mercedes around 6:15 PM, only about 3 minutes before Officer Radel spotted it."
+        }
+      ],
+      "explanation": "The Mercedes was stolen at approximately 5:54-5:55 PM per surveillance footage, and the owner called police around 6:15 PM. Officer Radel spotted it at 6:18 PM — only about 3 minutes after the stolen vehicle report, not 30 minutes. The report exaggerates the gap to suggest a longer-standing BOLO.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "I located the Mercedes at approximately 1735 hours and initiated a traffic stop.",
+      "report_location": "Narrative, paragraph 1, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Radio broadcast of intent to stop at approximately 6:19 PM."
+        }
+      ],
+      "explanation": "The officer broadcast his intent to conduct a traffic stop at approximately 6:19 PM (1819 hours). The report states 1735 — a 44-minute discrepancy consistent with the shifted timeline in cl-001.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Shortly after the pursuit began, Laguna Beach officers deployed a spike strip, which deflated the Mercedes' tires.",
+      "report_location": "Narrative, paragraph 2, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The spike strip was deployed well into the pursuit, after Steinmetz had been fleeing for an extended period, driven on the wrong side of the road, and caused a multi-car collision. It was not 'shortly after' the pursuit began."
+        }
+      ],
+      "explanation": "The spike strip deployment came after an extended pursuit including high-speed driving, wrong-way driving, and a multi-car collision. Describing it as 'shortly after the pursuit began' minimizes the duration and danger of the chase before the strip was deployed.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "During the pursuit, which lasted approximately 45 minutes, the subject drove at speeds exceeding 90 miles per hour.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "The pursuit lasted approximately 20 minutes (from ~6:18 PM to ~6:38 PM), not 45 minutes."
+        }
+      ],
+      "explanation": "The Mercedes was first spotted at approximately 6:18 PM and the PIT maneuver brought it to a stop at approximately 6:38 PM — roughly 20 minutes. The report more than doubles the pursuit duration to 45 minutes.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject drove erratically but did not collide with any other vehicles.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Steinmetz collided with multiple civilian vehicles during the pursuit, causing one to veer off the road and another to flip on its side."
+        }
+      ],
+      "explanation": "The DA investigation documents a multi-car collision during the pursuit that caused one vehicle to veer off the road and another to flip. The report completely omits these collisions, stating no collisions occurred.",
+      "discrepancy_type": "omission",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject remained in the vehicle for roughly two minutes before exiting from the driver's side door.",
+      "report_location": "Narrative, paragraph 4, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Steinmetz exited less than 15 seconds after the Mercedes came to a stop, at 6:38:54 PM."
+        }
+      ],
+      "explanation": "The DA letter states Steinmetz exited less than 15 seconds after stopping. The report inflates this to 'roughly two minutes,' exaggerating the time the officer had to assess the situation before the confrontation.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The entire engagement from the subject exiting the vehicle to my firing lasted approximately 15 seconds.",
+      "report_location": "Narrative, paragraph 4, sentence 6",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "BWC timestamps show approximately 5 seconds elapsed between Steinmetz exiting at 6:38:54 PM and shots fired at 6:38:59 PM."
+        }
+      ],
+      "explanation": "The DA letter provides precise timestamps: Steinmetz exited at 6:38:54 PM and Officer Radel fired at 6:38:59 PM — approximately 5 seconds, not 15. The report triples the actual engagement duration.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "After the shots were fired, the subject dropped to the ground immediately.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Despite being shot, Steinmetz remained on his feet, appeared unfazed, and continued advancing toward the officers. He did not fall until the Taser was deployed at 6:39:23 PM, approximately 24 seconds after the shots."
+        }
+      ],
+      "explanation": "The DA letter explicitly states Steinmetz 'appeared unfazed,' 'never fell to the ground from the shots,' and 'continued to move forward towards the officers.' He only went down after Officer Meyer deployed a Taser. The report omits the entire continued confrontation between the shooting and the Taser.",
+      "discrepancy_type": "omission",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Laguna Beach Fire Department paramedics arrived within approximately five minutes and transported the subject to a nearby hospital.",
+      "report_location": "Narrative, paragraph 5, sentence 4",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Fire department arrived at approximately 6:48 PM, about 9 minutes after the shooting at 6:38:59 PM."
+        }
+      ],
+      "explanation": "The DA letter states the Laguna Beach Fire Department arrived at approximately 6:48 PM. The shooting occurred at approximately 6:38:59 PM — roughly 9 minutes later, not 5 minutes. The report minimizes the wait time for medical care.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject was treated for two gunshot wounds to the torso.",
+      "report_location": "Narrative, paragraph 5, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Medical records show three gunshot wounds: upper left chest, lower right abdomen, and lower left forearm."
+        }
+      ],
+      "explanation": "Steinmetz sustained three gunshot wounds, not two, and one was to the forearm, not the torso. The report undercounts the wounds and omits the forearm injury.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I discharged my firearm, firing six rounds at the subject at approximately 1812 hours.",
+      "report_location": "Narrative, paragraph 4, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Six gunshots audible on BWC audio. Forensic analysis confirmed six rounds fired and six cartridge cases recovered."
+        }
+      ],
+      "explanation": "The round count of six is accurate per forensic analysis. The time is wrong (should be ~1838, not 1812) but the round count claim itself is correct. Evaluating only the shot count claim.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "An Orange County Sheriff helicopter joined the pursuit and provided aerial tracking.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "The DA investigation confirms an Orange County Sheriff helicopter joined the chase and provided location and driving pattern information to ground units."
+        }
+      ],
+      "explanation": "The helicopter involvement is confirmed in the DA letter. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Three patrol units converged on the stopped vehicle, positioning approximately 15 feet away with takedown lights illuminated.",
+      "report_location": "Narrative, paragraph 3, sentence 5",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Three police units positioned approximately 15 feet from the Mercedes with takedown lights and spotlights illuminated."
+        }
+      ],
+      "explanation": "The DA letter confirms three units were approximately 15 feet away with all takedown lights and spotlights activated. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Upon exiting, the subject initially stood still with his arms at his sides.",
+      "report_location": "Narrative, paragraph 4, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Upon exiting, Steinmetz immediately stepped backward and put both hands to his right hip. Whether there was a brief moment of standing still with arms at sides before this movement may be ambiguous on bodycam footage given the rapid sequence of events."
+        }
+      ],
+      "explanation": "The DA letter describes Steinmetz immediately stepping backward and moving hands to his right hip upon exiting. Whether he briefly stood still first is difficult to determine from the ~5-second sequence between exit and shots fired. The description of 'arms at sides' does not match the described immediate right-hip movement, but the brevity of the interval makes this ambiguous on video.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    }
+  ]
+}

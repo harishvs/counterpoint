@@ -1,0 +1,250 @@
+{
+  "scenario_id": "sc-033",
+  "evidence_id": "ocda-015-baxter-video",
+  "report_id": "sc-033_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Second scenario for Baxter/Buena Park PD case. Focuses on temporal, sequence, and omission discrepancies rather than the direct contradictions in SC-015. A parolee pursues his estranged wife in a school bus, fires at the bus, leads police on a pursuit, crashes in a school district parking lot, and is fatally shot.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 1345 hours, I received a dispatch call regarding a domestic disturbance involving an armed individual near a school bus.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Radio traffic and timeline references from bodycam."
+        }
+      ],
+      "explanation": "The incident began shortly after 13:50, and the radio broadcast from Officer Rubalcava occurred at approximately 13:59. Stating 1345 shifts the timeline five to fifteen minutes earlier than events actually began.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I was assigned as the primary responding unit and departed from the station within ninety seconds of receiving the call, arriving in the vicinity of the pursuit approximately three minutes later.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Officer Bernal was already on the far south side of Buena Park City on a Community Impact Team assignment. He was not at a station and was not dispatched as primary; he self-initiated after hearing radio traffic."
+        }
+      ],
+      "explanation": "The DA letter states Bernal was working a special assignment as a detective for the Community Impact Team and was on the far south side of the city when he heard the radio call. He was not at a station and was not the primary responding unit. This fabricates a station departure and a dispatch assignment that didn't occur.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject had displayed a firearm near a school bus.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Radio broadcast reports subject fired at a school bus, not merely displayed."
+        }
+      ],
+      "explanation": "The DA letter and radio traffic indicate Baxter actually FIRED his weapon at the school bus at approximately 13:58, not merely 'displayed a firearm near' it. This minimizes an active shooting to a passive display.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I observed the subject's grey Chevrolet Tahoe traveling southbound on Western Avenue, pursued by a single marked patrol unit.",
+      "report_location": "Narrative, paragraph 2, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Multiple marked BPPD vehicles and the APD helicopter were already in pursuit when Bernal joined. The pursuit involved multiple units, not a single one."
+        }
+      ],
+      "explanation": "The DA letter states Officer Rubalcava called for backup, and other marked BPPD vehicles and the APD helicopter joined the pursuit with lights and sirens activated. There were multiple pursuing units, not just one. This omits the multi-unit nature of the pursuit.",
+      "discrepancy_type": "omission",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "From the time I took the lead, the pursuit continued for approximately two minutes before the subject entered the school district parking lot.",
+      "report_location": "Narrative, paragraph 2, sentence 4",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Timeline shows the pursuit lasted over 7 minutes with continuously activated lights and sirens before the subject entered the parking lot at approximately 14:07. From Bernal taking the lead to parking lot entry was several minutes."
+        }
+      ],
+      "explanation": "The DA letter states that by the time Bernal became lead vehicle, the subject had been pursued for over 7 minutes. The report compresses the timeline from Bernal's lead to only 2 minutes, understating the duration of the dangerous pursuit.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject drove through an open gate into the Buena Park Unified School District Office parking lot.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Baxter drove through the CLOSED gate, blowing it open and off its hinges."
+        }
+      ],
+      "explanation": "The DA letter states the gate was closed and Baxter drove through it, blowing it open and off its hinges. Describing it as an 'open gate' omits the forcible entry and property damage.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject's vehicle struck a parked vehicle at moderate speed, causing minor displacement of approximately two feet.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The parked car was pushed back approximately 10 yards (30 feet) by the force of the collision."
+        }
+      ],
+      "explanation": "The DA letter states the parked car was moved back approximately 10 yards. The report says 'approximately two feet' — a 15x minimization of the actual displacement, downplaying the violent nature of the collision.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject immediately exited his vehicle and began walking eastbound across the parking lot. I did not observe a weapon in the subject's hands as he exited.",
+      "report_location": "Narrative, paragraph 3, sentences 4-5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Bernal stated he could see the driver producing a firearm 'immediately upon opening my door.' Baxter was holding the handgun in his right hand as he exited."
+        }
+      ],
+      "explanation": "The DA letter and Bernal's own statement confirm Baxter was holding the handgun as he exited the vehicle. The report claims the officer did not see a weapon during the exit, then claims first observation was 15 yards away. This reverses the sequence — the weapon was visible from the start.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I discharged my firearm eight times.",
+      "report_location": "Narrative, paragraph 4, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Multiple gunshots audible in rapid succession on bodycam."
+        }
+      ],
+      "explanation": "Forensic analysis determined Bernal fired 15 cartridge cases. The report states 8, minimizing the officer's shot count by nearly half.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Langston discharged his firearm twelve times from a position approximately forty yards to my left.",
+      "report_location": "Narrative, paragraph 4, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Choi arrived almost immediately after Bernal began firing and fired 13 rounds. The exact distance is uncertain but the sequence is nearly simultaneous."
+        }
+      ],
+      "explanation": "Choi fired 13 rounds, not 12. The report slightly undercounts while also exaggerating the distance to 40 yards, which is not established in the DA letter. The slight undercount combined with the distance exaggeration creates a misleading picture.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject continued advancing for approximately twenty seconds before collapsing.",
+      "report_location": "Narrative, paragraph 4, sentence 6",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The DA letter states the total duration of gunfire was no more than approximately ten seconds. The subject walked toward officers and fell within that window."
+        }
+      ],
+      "explanation": "The DA letter states the total firing duration was no more than approximately 10 seconds. The report doubles this to 20 seconds, exaggerating the perceived threat duration.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "We approached the subject within approximately two minutes, secured the weapon, and applied handcuffs.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Officers formulated a tactical plan and gathered equipment before approaching at 14:13 — approximately 5 minutes after the shooting ended at 14:08."
+        }
+      ],
+      "explanation": "The DA letter states officers requested medics at 14:08 and approached the subject at approximately 14:13, a gap of about 5 minutes. The report says 'approximately two minutes,' compressing the delay by more than half.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Orange County Fire Authority paramedics arrived approximately eight minutes later at 1418 hours.",
+      "report_location": "Narrative, paragraph 5, sentence 4",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Timeline from DA letter establishes OCFA arrival at 14:20."
+        }
+      ],
+      "explanation": "The DA letter states OCFA arrived at 14:20, not 14:18. The report shaves two minutes off the paramedic response time. Additionally, from the request at 14:08 to arrival at 14:20 is 12 minutes, not 8.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The subject was pronounced deceased on scene at approximately 1430 hours.",
+      "report_location": "Narrative, paragraph 5, sentence 5",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "DA letter states death pronounced at approximately 14:45."
+        }
+      ],
+      "explanation": "The DA letter states death was pronounced at approximately 14:45, not 14:30. The report moves the time of death 15 minutes earlier, compressing the resuscitation timeline.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Twenty (20) cartridge cases recovered from scene.",
+      "report_location": "Evidence Collected, bullet 5",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Evidence list in the DA letter documents 28 cartridge cases and casings across evidence markers EM#4 through EM#21 and EM#38."
+        }
+      ],
+      "explanation": "The DA letter's evidence list accounts for 28 cartridge cases/casings (Bernal fired 15, Choi fired 13). The report claims only 20 were recovered, undercounting by 8.",
+      "discrepancy_type": "omission",
+      "difficulty": "easy"
+    }
+  ]
+}

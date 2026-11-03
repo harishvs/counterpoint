@@ -1,0 +1,253 @@
+{
+  "scenario_id": "sc-028",
+  "evidence_id": "ocda-007-to-video",
+  "report_id": "sc-028_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Second scenario for the Westminster PD To case, focusing on temporal/sequence mismatches, omissions, exaggerations, and minimizations. Same bodycam video as SC-007 but a different fictional report with different discrepancy types.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 0045 hours, I was dispatched to a business at 9196 Bolsa Avenue in the City of Westminster regarding an incident of vandalism.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Officer self-assigned to the call at approximately 12:44 a.m. after it had been pending due to other priority calls."
+        }
+      ],
+      "explanation": "The officer was not dispatched — he self-assigned to the pending vandalism call at approximately 12:44 a.m. The report changes 'self-assigned' to 'dispatched,' implying he was sent rather than volunteering. Also the time is slightly off (0045 vs 0044).",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I arrived on scene at approximately 0055 hours, approximately ten minutes after receiving the dispatch.",
+      "report_location": "Narrative, paragraph 1, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Officer arrived at approximately 12:51:13 a.m."
+        }
+      ],
+      "explanation": "The officer arrived at approximately 12:51 a.m., not 12:55 a.m. The report inflates the arrival time by four minutes, and the stated 'ten minutes after dispatch' is also wrong since it was roughly seven minutes. This is a temporal exaggeration that could affect perception of response urgency.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "He stated the subject had left the area roughly twenty minutes before my arrival.",
+      "report_location": "Narrative, paragraph 2, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "John Doe 1 advised that the male subject was likely still in the area, having been seen a few minutes earlier."
+        }
+      ],
+      "explanation": "The reporting party told the officer the subject was 'likely still in the area' and 'had just seen him a few minutes earlier.' The report changes this to 'twenty minutes before my arrival,' which contradicts the urgency of the information and minimizes the immediacy of the threat. This is a temporal exaggeration of the gap.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "He was wearing a gray jacket and blue jeans and carrying a metal pole approximately 30 inches long in his right hand.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject wearing gray jacket and blue jeans, carrying metal pole in right hand. Pole measured at approximately 29.5 inches."
+        }
+      ],
+      "explanation": "The description matches the DA investigation: gray jacket, blue jeans, pole in right hand. The pole was measured at approximately 29.5 inches; '30 inches' is close enough to be accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I drew my service weapon and followed the subject on foot westbound through the alley toward Bolsa Avenue.",
+      "report_location": "Narrative, paragraph 4, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer first drew his TASER, not his service weapon. He transitioned from TASER to handgun approximately 28 seconds later."
+        }
+      ],
+      "explanation": "The DA investigation states Officer Doan drew his TASER at 12:57:19 and transitioned to his handgun at 12:57:47. The report skips the TASER entirely and claims the officer immediately drew his service weapon, omitting the less-lethal step and misrepresenting the use-of-force escalation sequence.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Approximately ninety seconds later, Officer Trang arrived at the scene and joined me on foot.",
+      "report_location": "Narrative, paragraph 4, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Officer Dam arrived at approximately 12:58:06 a.m., roughly one minute ten seconds after initial contact."
+        }
+      ],
+      "explanation": "Officer Dam arrived approximately 72 seconds after the initial contact at 12:56:57, not ninety seconds. The report inflates the time the reporting officer was alone with the subject by roughly 18 seconds, exaggerating the solo encounter duration.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer Trang and I gave commands in English only throughout the encounter.",
+      "report_location": "Narrative, paragraph 4, sentence 4",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Officer Dam spoke to the subject in Vietnamese while Officer Doan spoke in English, to ensure the subject understood commands in both languages."
+        }
+      ],
+      "explanation": "The DA investigation explicitly states Officer Dam spoke to To in Vietnamese while Doan spoke English. The report's claim that commands were in 'English only' omits the Vietnamese communication entirely, which is significant because it conceals the officers' effort to ensure comprehension and the subject's demonstrated understanding of commands.",
+      "discrepancy_type": "omission",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject remained non-compliant but walked at a slow, steady pace without any aggressive gestures.",
+      "report_location": "Narrative, paragraph 4, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Subject strikes a traffic signal pole at the Bolsa/Saigon intersection and a fire hydrant at 9200 Bolsa with the metal pole, producing loud noises. Subject was argumentative throughout.",
+          "transcript_excerpt": "Subject argumentative. Loud metallic strikes audible on bodycam."
+        }
+      ],
+      "explanation": "The DA investigation documents that To struck a traffic signal pole (12:58:25) and a fire hydrant (12:58:58) with the metal pole during the walk, and remained argumentative. The report's characterization of 'no aggressive gestures' and a 'slow, steady pace' minimizes the subject's behavior and omits two significant aggressive acts with the weapon.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The foot pursuit continued westbound on Bolsa Avenue for approximately two blocks over a period of roughly eight minutes.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Foot pursuit from initial contact at 12:56:57 to the parking lot at 1:00:34, approximately three and a half minutes."
+        }
+      ],
+      "explanation": "The entire foot pursuit from initial contact to the parking lot was approximately 3.5 minutes (12:56:57 to 1:00:34). The report exaggerates this to 'roughly eight minutes,' more than doubling the actual duration. This exaggeration could suggest officers showed more patience than they actually did.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "He held the pole loosely at waist level. I again commanded the subject to drop the weapon. After a brief pause of approximately fifteen seconds, the subject raised the pole to roughly chest height.",
+      "report_location": "Narrative, paragraph 6, sentences 2-4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject grabbed the pole with both hands and raised it to shoulder level and behind his head in a baseball batter stance within seconds, not after a fifteen-second pause."
+        }
+      ],
+      "explanation": "Multiple errors: (1) The DA investigation describes To raising the pole to 'shoulder level and behind his head similar to a baseball batter,' not merely 'chest height' — minimization. (2) There was no fifteen-second pause; the escalation from turning to raising the pole happened within seconds. (3) The report omits the batter stance entirely. This both minimizes the actual threat posture and fabricates a deliberation period.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I discharged my firearm two times.",
+      "report_location": "Narrative, paragraph 6, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Five gunshots audible on bodycam audio. Five 9mm cartridge cases recovered at the scene."
+        }
+      ],
+      "explanation": "The DA investigation states Officer Doan fired five rounds, and five cartridge cases were recovered. The report claims only two shots — a minimization of the actual force used by 60%.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officer DeSilva immediately moved in and handcuffed the subject, who was conscious but did not speak.",
+      "report_location": "Narrative, paragraph 7, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Subject was handcuffed while conscious and alert. Paramedics noted the subject was 'awake and speaking incomprehensible words.'",
+          "transcript_excerpt": "Subject speaking on bodycam audio after being handcuffed."
+        }
+      ],
+      "explanation": "The DA investigation states To was 'conscious and alert' and paramedics observed him 'speaking incomprehensible words.' The report's claim that the subject 'did not speak' contradicts the evidence. This omission could be significant if the subject's statements were exculpatory or relevant.",
+      "discrepancy_type": "omission",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "We requested paramedics, who arrived within approximately three minutes.",
+      "report_location": "Narrative, paragraph 7, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "911 requested at approximately 1:01:43 a.m. Paramedics arrived at approximately 1:07 a.m."
+        }
+      ],
+      "explanation": "The 911 request was made at approximately 1:01:43 and paramedics arrived at approximately 1:07 — a gap of roughly five minutes, not three. The report minimizes the wait time for medical aid.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The subject survived his injuries, which I understand were limited to a wound to his right arm.",
+      "report_location": "Narrative, paragraph 7, sentence 4",
+      "claim_type": "identity_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject sustained gunshot wounds to the face, chest, abdomen, and right arm. A chest seal was applied by officers."
+        }
+      ],
+      "explanation": "To sustained wounds to the face, chest, abdomen, and right arm — four wound sites. The report claims injuries were 'limited to a wound to his right arm,' dramatically minimizing the severity. Officers applied a chest seal, indicating they were aware of chest wounds. This is a serious minimization of force consequences.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I exited my vehicle and ordered the subject to stop, drop the weapon, and sit down. The subject refused all commands and walked westbound away from me.",
+      "report_location": "Narrative, paragraph 3, sentences 3-4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Officer exits vehicle, gives verbal commands. Subject ignores commands and walks westbound.",
+          "transcript_excerpt": "Officer repeatedly commands subject to stop, drop the pole, and sit down."
+        }
+      ],
+      "explanation": "The DA investigation confirms Officer Doan exited his vehicle, contacted To, and repeatedly commanded him to stop, drop the pole, and sit down. To was argumentative and continued walking westbound away from the officer. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}

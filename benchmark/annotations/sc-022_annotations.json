@@ -1,0 +1,253 @@
+{
+  "scenario_id": "sc-022",
+  "evidence_id": "ocda-001-valdez-video",
+  "report_id": "sc-022_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Second scenario against Valdez bodycam. Emphasizes temporal errors, sequence reversals, omissions, exaggeration, and minimization rather than direct contradictions. Same video as SC-001.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 1045 hours, while conducting a routine patrol of the La Quinta Inn parking lot at 1515 South Coast Drive, I observed an occupied gray 2006 Ford Focus in a marked stall facing north.",
+      "report_location": "Narrative, paragraph 1, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Bodycam metadata and DA investigation establish the time as approximately 10:15 a.m., not 10:45 a.m."
+        }
+      ],
+      "explanation": "The DA letter states 'approximately 10:15 a.m.' The report says 1045 hours — a 30-minute discrepancy in the reported time of initial contact.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The subject appeared to be slumped over the steering wheel.",
+      "report_location": "Narrative, paragraph 1, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject visible slumped over the steering wheel in the driver's seat."
+        }
+      ],
+      "explanation": "This is accurate. The DA letter confirms Valdez had his head slumped forward on the steering wheel.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "I engaged the subject in conversation for approximately five minutes, during which time Officer Fuentes contacted the passengers.",
+      "report_location": "Narrative, paragraph 2, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Conversation between officer and subject, interspersed with the second officer's passenger contact."
+        }
+      ],
+      "explanation": "The report implies a calm five-minute conversation before passenger contact. In reality, both officers approached simultaneously — Lopez on the driver's side and Molina on the passenger side. The conversations overlapped, they were not sequential.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "During this conversation, the subject was cooperative and kept his hands visible on the steering wheel as instructed.",
+      "report_location": "Narrative, paragraph 2, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject repeatedly moved his right hand toward the center console, his waistband, and the area of his right leg despite commands to keep hands on the wheel."
+        }
+      ],
+      "explanation": "The DA letter explicitly states Valdez 'repeatedly moved his right hand toward the center console, his waistband, and the area of his right leg.' The report minimizes this noncompliance into full cooperation.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I noted that his left hand appeared to have a bandage on it.",
+      "report_location": "Narrative, paragraph 2, sentence 5",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Valdez's left hand was bandaged."
+        }
+      ],
+      "explanation": "Accurate. The DA letter confirms Valdez's left hand was bandaged.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Immediately after W-1 was removed from the vehicle, the subject started the engine and placed the vehicle in reverse.",
+      "report_location": "Narrative, paragraph 3, sentence 4",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "The vehicle reversal occurred while Molina was still in the process of moving W-1 away from the vehicle — Molina had not yet completed the search of W-1.",
+          "transcript_excerpt": "Sounds of vehicle starting, officers shouting stop commands."
+        }
+      ],
+      "explanation": "The report says W-1 was fully removed before the vehicle moved. The DA letter indicates Molina had W-1 step out and 'move behind a vehicle parked east' where he searched her — the vehicle reversal interrupted this process. The sequence is compressed to make the reversal seem more sudden.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The vehicle reversed at a moderate speed, and the rear bumper made brief contact with the front of our patrol vehicle.",
+      "report_location": "Narrative, paragraph 4, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Vehicle suddenly accelerated in reverse. Tires screeching audible. Impact with patrol vehicle visible.",
+          "transcript_excerpt": "Tire screech, impact sound, officers yelling 'Stop!'"
+        }
+      ],
+      "explanation": "The DA letter says Valdez 'suddenly started the vehicle, placed it in reverse, and accelerated.' Witness 2 heard 'tires screech.' The report minimizes this to 'moderate speed' and 'brief contact.'",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "W-2, who was positioned approximately ten feet from the vehicle's path, was not struck during this movement.",
+      "report_location": "Narrative, paragraph 4, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "W-2 was seated on the asphalt directly behind the left rear bumper. The left rear tire ran over W-2's handcuffed hands. W-2 was struck by the open passenger door and front right tire.",
+          "transcript_excerpt": "W-2 screaming. Officers shouting."
+        }
+      ],
+      "explanation": "This is a critical omission. W-2 was run over by the vehicle — handcuffed hands crushed by the left rear tire, and body struck by the door and front tire. The report fabricates that W-2 was ten feet away and uninjured.",
+      "discrepancy_type": "omission",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I fired a total of five rounds toward the vehicle. Officer Fuentes fired approximately five rounds as well.",
+      "report_location": "Narrative, paragraph 5, sentence 2-3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Multiple gunshots audible — forensic analysis determined 10 total rounds: Lopez 3, Molina 7."
+        }
+      ],
+      "explanation": "Forensic analysis determined Lopez fired 3 rounds and Molina fired 7 rounds (10 total). The report claims 5 each (10 total), inflating the reporting officer's count and deflating the partner's. The total is correct but the attribution is wrong.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The encounter from the time the subject started the vehicle until shots were fired lasted approximately forty-five seconds.",
+      "report_location": "Narrative, paragraph 5, sentence 4",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "The sequence from vehicle start to initial shots was rapid — seconds, not 45 seconds."
+        }
+      ],
+      "explanation": "The DA letter describes the events as happening in rapid succession: 'suddenly started,' 'accelerated,' officers 'shouted commands,' then fired. Witness accounts describe hearing the vehicle start and 'almost immediately' hearing tires screech. 45 seconds is a gross exaggeration of the actual timeline.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The vehicle traveled forward an estimated thirty feet before coming to rest.",
+      "report_location": "Narrative, paragraph 5, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Vehicle moves forward slowly after subject is hit. Exact distance difficult to determine from bodycam angle."
+        }
+      ],
+      "explanation": "The DA letter says the car 'advanced forward slowly' after Valdez succumbed. The exact distance is not specified and is difficult to verify from bodycam footage alone. Thirty feet may be an exaggeration but cannot be definitively confirmed or denied.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Paramedics from Costa Mesa Fire Department arrived approximately twenty minutes later and transported the subject to Orange County Global Medical Center.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Paramedic sirens and arrival audible on bodycam."
+        }
+      ],
+      "explanation": "The report claims a 20-minute wait for paramedics. Bodycam footage shows the timeline from shooting to paramedic arrival. The DA letter notes officers provided CPR 'until Costa Mesa Fire Department paramedics arrived' — the actual wait time should be verifiable from the footage and would likely be shorter than 20 minutes given proximity to fire station.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "A subsequent search of the subject's person did not locate any weapons. The vehicle was processed and no firearms were recovered from inside.",
+      "report_location": "Narrative, paragraph 7, sentences 1-2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "A Hellcat .380 semi-automatic handgun was located in the left pocket of the subject's jacket."
+        }
+      ],
+      "explanation": "The DA letter confirms a Hellcat .380 was found in Valdez's left jacket pocket with a loaded magazine. The report completely omits the recovered firearm — a significant omission that changes the narrative about whether the subject was armed.",
+      "discrepancy_type": "omission",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "We removed the subject from the vehicle and began CPR.",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officers pull subject from vehicle and begin CPR."
+        }
+      ],
+      "explanation": "Accurate. The DA investigation confirms officers removed Valdez and administered CPR.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "W-2 released at scene without injury.",
+      "report_location": "Actions Taken section",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "W-2 was struck by the vehicle and sustained injuries to left shoulder, left side of back, and hip. W-2 was transported to OCGMC for non-life-threatening injuries."
+        }
+      ],
+      "explanation": "W-2 was run over and required hospital transport for non-life-threatening injuries. The report claims W-2 was released without injury — a direct minimization of the harm caused during the incident.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    }
+  ]
+}

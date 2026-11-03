@@ -1,0 +1,250 @@
+{
+  "scenario_id": "sc-032",
+  "evidence_id": "ocda-014-tran-video",
+  "report_id": "sc-032_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Second scenario for the Tran case, focusing on temporal, sequence, omission, and minimization discrepancies. A man follows a woman to a police station. Officers respond, and the subject opens fire. Based on OCDA OIS investigation of Matthew-Tuan Anh Tran, La Habra PD, Aug 6 2021.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 1920 hours, Officer Corbin and I were dispatched to the front of the Ridgemont Police Department following a 9-1-1 call from a female motorist.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Dispatch records show officers dispatched at approximately 7:05 p.m. (1905 hours)."
+        }
+      ],
+      "explanation": "Officers were dispatched at approximately 7:05 p.m. The report states 1920 hours — a 15-minute temporal shift that delays the entire timeline and compresses the gap between dispatch and the shooting.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Communications advised that the caller had been followed for approximately five minutes from the 57 freeway.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "The tailgating began at approximately 6:25 p.m. on the I-5, continued onto the 57, and Doe called dispatch at 7:03 p.m."
+        }
+      ],
+      "explanation": "The tailgating lasted approximately 38 minutes (6:25pm to 7:03pm) across two freeways and surface streets, not five minutes from the 57. The report minimizes both the duration and the starting point of the pursuit.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Officer Corbin and I responded in a single marked patrol vehicle, with Officer Corbin driving and myself in the passenger seat.",
+      "report_location": "Narrative, paragraph 1, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Each officer drove a separate marked black and white LHPD police vehicle to the scene."
+        }
+      ],
+      "explanation": "The DA investigation confirms each officer drove a separate marked vehicle. The report claims they were in a single vehicle — a direct contradiction that also changes the tactical positioning of officers on arrival.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject was already inside the station lobby speaking with the front desk clerk when we made entry.",
+      "report_location": "Narrative, paragraph 2, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The station lobby was closed. Tran walked to the front doors, found them closed, tried to open them, then pushed the intercom button. He never entered the lobby."
+        }
+      ],
+      "explanation": "The lobby was closed and Tran never entered it. The report fabricates a scene where the subject was inside the lobby. This also changes the sequence — in reality, Tran was standing outside at the entrance when officers arrived.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I contacted the subject first and asked him to step outside.",
+      "report_location": "Narrative, paragraph 2, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Milward (the male officer, mapped to Corbin) approached Tran at the station entrance. Officer Fox (the female officer, mapped to Navarro) approached W-1 in her vehicle."
+        }
+      ],
+      "explanation": "The DA investigation shows that Officer Milward contacted the subject while Officer Fox contacted W-1. The report reverses which officer contacted whom — a sequence/role swap.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject was cooperative and calmly walked outside with me.",
+      "report_location": "Narrative, paragraph 2, sentence 4",
+      "claim_type": "subjective_characterization",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Tran did not respond when dispatch attempted to contact him via intercom. He tried to open the doors a second time."
+        }
+      ],
+      "explanation": "Tran was not cooperative — he did not respond to the intercom and attempted to force the doors open a second time. The characterization of calm cooperation is inconsistent with the video showing a non-communicative subject persisting at a closed entrance.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject identified himself and stated that he had followed W-1 because she had cut him off on the freeway and he wanted to exchange insurance information.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Tran told Officer Milward that he was 'there to see someone.' When asked about the vehicles, Tran said he was 'not involved.'"
+        }
+      ],
+      "explanation": "Tran never mentioned insurance information or being cut off. He said he was 'there to see someone' and denied being involved with the vehicles. The report fabricates an entirely different explanation that paints the subject as having a benign reason for being there.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer Corbin spent approximately ten minutes taking W-1's statement before joining me with the subject.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Officers arrived at 7:08 p.m. Milward contacted Tran at 7:09:46 p.m. Tran drew his gun at 7:10:03 p.m."
+        }
+      ],
+      "explanation": "The entire encounter from arrival to shooting was approximately 2 minutes (7:08 to 7:10). The report claims ten minutes were spent on W-1's statement alone, grossly inflating the timeline. There was no extended statement-taking period before the shooting.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I then turned my back to the subject briefly to radio dispatch with an update.",
+      "report_location": "Narrative, paragraph 4, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "It was Officer Milward (mapped to Corbin in the report) who turned his back to the subject, not Officer Fox (mapped to Navarro). Milward turned his back and walked away after telling Tran he would be with him in a second."
+        }
+      ],
+      "explanation": "The report attributes the back-turning to the reporting officer (Navarro/Fox) when it was actually the other officer (Corbin/Milward) who turned his back. This swaps the critical vulnerability — who had their back turned when the subject drew the weapon.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "During this time, Officer Corbin maintained visual contact with the subject.",
+      "report_location": "Narrative, paragraph 4, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Neither officer was directly watching the subject when he drew his weapon. Fox was with W-1, and Milward had turned his back."
+        }
+      ],
+      "explanation": "Nobody maintained visual contact. Milward walked away with his back turned, and Fox was at W-1's vehicle. The report omits the critical gap in observation that allowed the subject to draw his weapon undetected.",
+      "discrepancy_type": "omission",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "After a brief standoff lasting approximately thirty seconds, the subject raised the firearm and fired a single shot that struck the pavement near my feet.",
+      "report_location": "Narrative, paragraph 5, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Tran fired two rounds at Officer Milward. One round pierced his bulletproof vest in the right upper chest. Milward fell to the ground."
+        }
+      ],
+      "explanation": "Multiple errors: (1) There was no standoff — Tran drew and fired within seconds (7:10:03 to 7:10:07). (2) Tran fired two rounds, not one. (3) A round struck Officer Milward in the chest, not the pavement. (4) The shots were directed at Milward, not the reporting officer. The report minimizes the attack and omits the officer being shot.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I returned fire, discharging two rounds. Simultaneously, Officer Corbin discharged one round.",
+      "report_location": "Narrative, paragraph 5, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Five rapid gunshots from Officer Fox's position."
+        }
+      ],
+      "explanation": "Fox fired five rounds, not two. Officer Milward was on the ground after being shot and did not fire — the report gives him a shot he never fired. Total rounds are minimized from 5 to 3, and attribution is wrong.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "We began CPR within approximately one minute of the shooting.",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "After the shooting at approximately 7:10 p.m., officers did not approach until approximately 7:16:35 p.m. when a K-9 team was used to safely approach and disarm the subject."
+        }
+      ],
+      "explanation": "Officers waited approximately 6 minutes (7:10 to 7:16:35) before approaching, not one minute. A tactical plan was formulated, equipment gathered, and a K-9 was deployed. CPR was not administered — paramedics who arrived at 7:20 p.m. found no pulse. The report compresses a deliberate tactical delay into immediate action.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Paramedics from the La Habra Fire Department arrived within five minutes and transported the subject to a local hospital, where he was pronounced deceased approximately two hours later.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Los Angeles County Fire Department paramedics arrived at approximately 7:20 p.m. Paramedics did not find a pulse or respiration. Tran was pronounced deceased at approximately 7:26 p.m. on scene."
+        }
+      ],
+      "explanation": "Three errors: (1) Paramedics were from Los Angeles County FD, not La Habra FD. (2) The subject was pronounced deceased on scene at 7:26 p.m. — six minutes after paramedics arrived, not two hours later at a hospital. (3) The subject was never transported. The report fabricates a hospital transport that did not occur.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "One firearm was recovered from the subject: a .40 caliber Glock semi-automatic pistol.",
+      "report_location": "Narrative, paragraph 7, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Two firearms were recovered: a fabricated Glock-style 9mm ghost gun with no serial number AND a Glock 22 .40 caliber with a flashlight."
+        }
+      ],
+      "explanation": "Two firearms were recovered, not one. The report omits the ghost gun entirely. The DA investigation and evidence log confirm both weapons: a Glock-style 9mm ghost gun and a Glock 22 .40 caliber with mounted Streamlight flashlight.",
+      "discrepancy_type": "omission",
+      "difficulty": "easy"
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "scenario_id": "sc-027",
+  "evidence_id": "ocda-006-sanchez-video",
+  "report_id": "sc-027_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Second scenario for the Sanchez case. Officers pursue a wanted suspect through a residential area at dusk. After helicopter PA announcements, the suspect exits and is shot by a perimeter officer. Discrepancies focus on timing, sequence, omissions, and exaggeration rather than direct contradictions. Based on OCDA OIS investigation of Raul Sanchez, Anaheim PD, Nov 13 2020.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 1645 hours, I was assigned to a perimeter position.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Radio traffic and helicopter communications establish the timeline."
+        }
+      ],
+      "explanation": "The report states the officer was assigned to perimeter at 4:45 PM, but the DA investigation shows officers were still searching at that time and the perimeter at 7914 Adams was set up later. The 911 call was at 4:15, not '15 minutes earlier' from 4:45. This compresses the timeline by approximately 30 minutes.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "APD Sgt. McClintock then identified the suspect from a wanted flyer and broadcast the identification to units. Following this identification, helicopter officers began making public address announcements.",
+      "report_location": "Narrative, paragraph 2, sentences 3-4",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "PA announcements from helicopter began before the wanted flyer was distributed."
+        }
+      ],
+      "explanation": "The report implies PA announcements started after the flyer identification, but the DA letter shows the suspect was already in the residence and PA announcements began from the time Sanchez was seen entering. The flyer was distributed at 4:56 PM — well into the standoff. The report reverses the sequence.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Repeated announcements were made from the helicopter in English only, directing the subject to come out with his hands up.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Announcements were made in both English and Spanish and addressed Sanchez by his full name."
+        }
+      ],
+      "explanation": "The DA investigation states announcements were made in both English and Spanish, and Sanchez was addressed by name. The report omits the Spanish announcements and the use of the subject's name — significant details given the subject is Hispanic.",
+      "discrepancy_type": "omission",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject could be seen through the windows of 7896 Adams pacing on the ground floor.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject was observed walking up and down the stairs inside the residence, not just pacing on the ground floor."
+        }
+      ],
+      "explanation": "The DA investigation states Sanchez was seen 'walking up and down the stairs' — moving between floors. The report minimizes this to 'pacing on the ground floor,' which omits the fact that the subject was moving throughout the residence, potentially looking for exits or weapons.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I observed the subject exit from the front door of 7896 Adams.",
+      "report_location": "Narrative, paragraph 4, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject exited from the rear of the residence, not the front door."
+        }
+      ],
+      "explanation": "The DA investigation clearly states 'Sanchez was observed exiting the rear of the residence.' The report says 'front door' — a direct factual error about how the subject left the building.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The encounter lasted approximately two minutes.",
+      "report_location": "Narrative, paragraph 4, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "The encounter from exit to shooting occurred within seconds, not minutes."
+        }
+      ],
+      "explanation": "The DA investigation describes the encounter as rapid — Sanchez ran toward officers and the shooting happened 'within seconds.' The report inflates this to 'approximately two minutes,' which substantially misrepresents the speed of events and the time available for decision-making.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject initially raised his hands but almost immediately lowered both hands to his sides and took several quick steps toward us.",
+      "report_location": "Narrative, paragraph 4, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject did not raise his hands. He ran directly toward officers without stopping, charged forward and closed the gap."
+        }
+      ],
+      "explanation": "The DA investigation states Sanchez 'did not comply with the officers' commands and ran towards them' — he charged forward without ever raising his hands. The report fabricates a brief compliance moment ('initially raised his hands') that did not occur, which would alter the legal analysis of the use of force.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "I discharged my firearm five times.",
+      "report_location": "Narrative, paragraph 4, sentence 5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Three gunshots audible on bodycam audio."
+        }
+      ],
+      "explanation": "Forensic analysis determined three cartridge cases were collected from the scene, matching three rounds fired from Officer Abuhadwan's Springfield Armory pistol. The report claims five shots — an exaggeration of the actual number.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The subject fell to the ground approximately ten feet from our position.",
+      "report_location": "Narrative, paragraph 4, sentence 6",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Subject fell approximately 15-20 feet from the officers' position."
+        }
+      ],
+      "explanation": "The DA investigation states Sanchez 'slipped and fell to the ground approximately 15 to 20 feet from the officers.' The report minimizes this to '10 feet,' making the subject appear closer and thus more threatening.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject had sustained gunshot wounds to both arms and his abdomen.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Medical records show wounds to each leg and the back, not arms and abdomen."
+        }
+      ],
+      "explanation": "Medical examination at UCIMC found three gunshot wounds: one to each leg and one to the back. The report describes wounds to 'both arms and his abdomen' — entirely wrong body locations. This misrepresents the direction of fire (back wounds suggest the subject may have been turning away).",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Paramedics arrived within approximately two minutes.",
+      "report_location": "Narrative, paragraph 5, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Paramedics arrived at approximately 5:43 PM, about 6 minutes after the shooting at approximately 5:37 PM."
+        }
+      ],
+      "explanation": "The DA investigation places the shooting at approximately 5:37 PM and paramedic arrival at 5:43 PM — a gap of about 6 minutes. The report claims 'within approximately two minutes,' understating the delay in medical treatment by two-thirds.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "No weapons or contraband were recovered from the subject's person or the immediate area.",
+      "report_location": "Narrative, paragraph 5, sentence 4",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "A cell phone was recovered from the grass near the shed in the northeast corner of the yard of 7914 Adams."
+        }
+      ],
+      "explanation": "While no firearm was found on the subject (which is itself significant and omitted from the framing), a cell phone belonging to a resident of 7896 Adams was found dropped near the shed. The report's blanket statement that nothing was recovered from 'the immediate area' omits this evidence. More significantly, the report omits that no weapon was found on the subject — a critical fact for evaluating the use of force.",
+      "discrepancy_type": "omission",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The suspect had initially been the subject of a 911 call approximately fifteen minutes earlier reporting a male brandishing a firearm from a vehicle.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "911 call at 4:15 PM matches the general timeframe described."
+        }
+      ],
+      "explanation": "The 911 call was at 4:15 PM reporting a male brandishing a firearm. This is broadly accurate in its description of the initial call.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Officer Ramirez and I took up a perimeter position in the backyard of 7914 Adams, located near the residence where the suspect was believed to be hiding.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officers Abuhadwan and Montalvan were positioned in the backyard of 7914 Adams."
+        }
+      ],
+      "explanation": "The DA investigation confirms the officers' perimeter position at 7914 Adams, which is three houses west of 7896 Adams. The location is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The PA announcements also warned that a police canine would be deployed if the subject attempted to run.",
+      "report_location": "Narrative, paragraph 3 (omitted from report)",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "PA announcements included K9 warning."
+        }
+      ],
+      "explanation": "The DA investigation confirms that PA announcements warned a canine would be deployed if Sanchez tried to run. The report omits this detail entirely. This is significant because it shows the subject was given an additional deterrent warning before choosing to flee.",
+      "discrepancy_type": "omission",
+      "difficulty": "hard"
+    }
+  ]
+}

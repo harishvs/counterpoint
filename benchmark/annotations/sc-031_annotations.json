@@ -1,0 +1,298 @@
+{
+  "scenario_id": "sc-031",
+  "evidence_id": "ocda-013-wong-video",
+  "report_id": "sc-031_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Second scenario for the Wong/Placentia PD case, focusing on temporal mismatches, sequence errors, omissions, and exaggerations. Officers confront a non-compliant subject in a parked vehicle overnight; escalates to less-lethal deployment and fatal shooting.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 0115 hours, I was patrolling the rear parking lot.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Timestamps on bodycam and dispatch records indicate initial patrol contact at approximately 1:09 a.m., not 1:15 a.m."
+        }
+      ],
+      "explanation": "The DA investigation establishes Eriksen was on patrol at approximately 1:09:02 a.m. The report shifts the start time forward by 6 minutes, compressing the timeline.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I observed a silver two-door Honda Civic parked behind the Total Woman Gym in the southernmost stall near the dumpster enclosure.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The vehicle was parked in the northernmost marked parking stall behind Ralph's Grocery, south of the dumpster enclosure — not in the southernmost stall behind Total Woman Gym."
+        }
+      ],
+      "explanation": "The DA letter states the Honda was in 'the northernmost marked parking stall behind Ralph's Grocery at the Village Center at Rose Shopping Center, 860 North Rose Drive, Placentia,' south of a cinderblock dumpster enclosure. The report swaps north/south and attributes it to a different business.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The vehicle was parked facing east.",
+      "report_location": "Narrative, paragraph 2, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The vehicle was parked head in, facing west."
+        }
+      ],
+      "explanation": "The DA letter states the vehicle was 'parked head in, facing west.' The report says facing east — an east/west swap.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The Patrol Video System in my vehicle was also recording during this incident.",
+      "report_location": "Narrative, paragraph 1, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "The PVS was not activated during the incident per the DA investigation."
+        }
+      ],
+      "explanation": "The DA investigation explicitly states 'The PVS was not activated during this incident.' The report claims it was recording — a direct fabrication of evidence documentation.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject refused to open the door or roll down the window for approximately two minutes.",
+      "report_location": "Narrative, paragraph 3, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Officer spent several minutes trying to convince the subject to open the door, from approximately 1:10:37 to 1:11:45 — and continued through 1:14:47."
+        }
+      ],
+      "explanation": "The DA letter states Eriksen 'spent several minutes trying to convince Mr. Wong to open the door or roll down the window.' The actual duration from first contact to window opening was approximately 5 minutes. The report minimizes this to 'approximately two minutes.'",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "At approximately 0117 hours, I radioed dispatch that I was conducting a vehicle check and requested Code 1 assistance.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Dispatch radio at approximately 1:10:37 a.m. for vehicle check. Code 1 assistance requested separately at approximately 1:12:44 a.m."
+        }
+      ],
+      "explanation": "Two errors: (1) The vehicle check was radioed at approximately 1:10:37, not 0117. (2) The vehicle check and Code 1 request were separate events — the vehicle check came first, and the Code 1 was requested later at 1:12:44 when Wong started the engine. The report conflates them into a single simultaneous action.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer Rojas arrived on scene within approximately two minutes of my Code 1 request and positioned Unit #13 behind my vehicle, approximately thirty feet from the Honda.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Navarro parked Unit #13 perpendicular to the driver's side of the Honda, not behind the reporting officer's vehicle."
+        }
+      ],
+      "explanation": "The DA letter states Navarro 'arrived and parked his marked PPD patrol vehicle, Unit #13, perpendicular to the driver's side of the Honda.' The report claims Unit #13 was positioned 'behind my vehicle' — wrong position and orientation.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer Rojas agreed we should proceed immediately.",
+      "report_location": "Narrative, paragraph 5, sentence 4",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Officer Navarro recommended they wait for additional units."
+        }
+      ],
+      "explanation": "The DA investigation states Navarro 'recommended they wait for additional officers.' The report reverses this, claiming the second officer agreed to proceed immediately — the opposite of what was said.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Sergeant Torres and additional officers arrived approximately fifteen minutes after my initial contact.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Additional officers arrived over a period starting around 1:20 a.m., approximately 3 minutes after the first backup. Total elapsed from initial contact approximately 11 minutes."
+        }
+      ],
+      "explanation": "The DA letter places additional officers arriving 'over the next nearly three minutes' after the backup request. The total elapsed from initial contact (~1:09) to Sgt Garza assuming command (~1:20:47) is about 11 minutes, not 15. The report exaggerates the wait time.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Dispatch advised that the Honda was registered to the subject and that the subject had no prior criminal history.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Dispatch confirmed no firearms registered to the subject — not 'no criminal history.' Wong had a criminal history dating to 2014 including possession, paraphernalia, and carrying a switchblade."
+        }
+      ],
+      "explanation": "Dispatch advised 'no firearms were registered to Mr. Wong' — not 'no prior criminal history.' Wong had prior arrests. The report substitutes a more favorable dispatch notification, omitting that the firearms check was the key intelligence.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Officer Herrera began giving the subject commands in both English and Spanish for approximately ninety seconds.",
+      "report_location": "Narrative, paragraph 7, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Officer Iniguez gave commands for approximately three and a half minutes."
+        }
+      ],
+      "explanation": "The DA letter states commands were given 'for the next three and a half minutes' — approximately 210 seconds. The report claims only ninety seconds, minimizing the duration of de-escalation attempts by more than half.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officer Dunn fired the first 40mm Less Lethal projectile into the passenger side window, shattering the glass.",
+      "report_location": "Narrative, paragraph 8, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The first 40mm projectile was fired into the lower-left corner of the driver's side window, near the side-view mirror. The glass remained in place due to the window tint — it did not shatter."
+        }
+      ],
+      "explanation": "Two errors: (1) The projectile hit the driver's side window, not the passenger side. (2) The glass 'remained in place due to the window tint' and did not shatter. The report gets both the target and the result wrong.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The round struck the front bumper of Unit #13.",
+      "report_location": "Narrative, paragraph 9, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The first round fired by Wong struck the driver's side of the windshield of Unit #13, penetrating between the driver and passenger front seats."
+        }
+      ],
+      "explanation": "Wong's round hit the windshield of Unit #13, not the front bumper. The projectile actually traveled through the cabin between the front seats. The report significantly downplays the threat by placing the impact on the bumper.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I observed the subject seated in the driver's seat.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Bodycam shows Wong seated in the driver's seat of the Honda Civic."
+        }
+      ],
+      "explanation": "Wong was in the driver's seat throughout the encounter. This accurately reflects the video evidence.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officers immediately began administering CPR.",
+      "report_location": "Narrative, paragraph 11, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Valdez immediately began chest compressions after Wong was removed from the vehicle."
+        }
+      ],
+      "explanation": "The DA investigation confirms officers began chest compressions immediately after removing Wong from the vehicle at approximately 1:33:37 a.m. This claim is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I was wearing a PPD uniform with a Body Worn Camera activated throughout.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer in PPD uniform visible in video. BWC was activated throughout per the DA investigation."
+        }
+      ],
+      "explanation": "The DA letter confirms Eriksen wore a PPD police uniform and that 'The BWC was activated throughout the incident.' This is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "Officer Rojas arrived on scene within approximately two minutes of my Code 1 request and positioned Unit #13 behind my vehicle, approximately thirty feet from the Honda.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Distance between Unit #13 and the Honda is difficult to estimate precisely from the bodycam angle."
+        }
+      ],
+      "explanation": "While the positioning of Unit #13 is wrong (perpendicular, not behind — captured in cl-007), the 'approximately thirty feet' distance claim is difficult to verify or refute from bodycam footage alone. The DA letter does not specify an exact distance.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The subject was pronounced deceased at approximately 0150 hours.",
+      "report_location": "Narrative, final paragraph",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "At 2:17 a.m. a UCIMC Trauma Surgeon pronounced Mr. Wong deceased."
+        }
+      ],
+      "explanation": "Wong was pronounced deceased at 2:17 a.m., not 1:50 a.m. The report shifts the time of death 27 minutes earlier. At 1:50 the subject was being loaded into the ambulance for transport — he had not yet arrived at the hospital.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    }
+  ]
+}

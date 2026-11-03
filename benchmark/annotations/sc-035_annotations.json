@@ -1,0 +1,252 @@
+{
+  "scenario_id": "sc-035",
+  "evidence_id": "ocda-017-aguirre-video",
+  "report_id": "sc-035_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Second scenario for the Aguirre/La Habra PD case. Officers respond to a vehicle stripping call, encounter a subject in a stolen Escalade who refuses to comply, rams through an auto body shop, and is shot as the vehicle accelerates toward officers. Focuses on temporal, sequence, and magnitude distortions.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 0245 hours, dispatch received a 911 call from a named witness reporting subjects breaking into vehicles.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Dispatch call referenced at approximately 2:37 a.m."
+        }
+      ],
+      "explanation": "The actual dispatch call was at 2:37 a.m., not 2:45. The report shifts the start time forward by 8 minutes, compressing the timeline. Additionally, the call was anonymous, not from a named witness.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "At approximately 0249 hours, I indicated I would respond along with K9 Officer Falk and Trainee Vega.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Officers indicated response at approximately 2:41 a.m."
+        }
+      ],
+      "explanation": "Officers actually indicated they would respond at approximately 2:41 a.m., not 2:49. The 8-minute shift compresses the gap between the call and the response.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The vehicle's engine was off and no lights were visible.",
+      "report_location": "Narrative, paragraph 2, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The Escalade's lights were on and audible music was playing when Coleman first observed it."
+        }
+      ],
+      "explanation": "The DA letter states the Escalade's lights were on and it was playing audible music. The report minimizes the vehicle's state to make the subject appear less active upon arrival.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I exited my patrol vehicle and approached the passenger side of the Escalade.",
+      "report_location": "Narrative, paragraph 2, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Officer Coleman approached the passenger side of the Escalade."
+        }
+      ],
+      "explanation": "The DA letter confirms Coleman exited and approached the passenger side. This is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I immediately observed the subject in the driver's seat and a second individual in the rear passenger seat.",
+      "report_location": "Narrative, paragraph 2, sentence 4",
+      "claim_type": "identity_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Aguirre was the sole occupant of the Escalade."
+        }
+      ],
+      "explanation": "The DA letter states Aguirre was the sole occupant. The report fabricates a second individual in the vehicle.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject responded clearly in English that he understood and would comply when he was ready. Body-worn cameras were activated from the outset of the contact.",
+      "report_location": "Narrative, paragraph 2, sentences 6-7",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Aguirre made 'all kinds of weird statements' indicating non-cooperation. Initial contact was not captured on BWC."
+        }
+      ],
+      "explanation": "Two errors: (1) Aguirre made 'all kinds of weird statements' and refused to comply, not a clear cooperative response. (2) The initial contact was NOT captured on BWC — cameras were activated later when additional officers arrived. The report reverses the sequence to suggest compliance and full documentation.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "K9 Officer Falk arrived approximately fifteen minutes after my initial contact with the subject.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "K9 unit arrived 'shortly after' initial contact, parking behind the Escalade."
+        }
+      ],
+      "explanation": "The DA letter says the K9 unit arrived 'shortly after' Coleman's initial contact at 2:46 — within about a minute, not fifteen minutes. The report exaggerates the delay, perhaps to suggest the officer was alone and unsupported for an extended period.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject immediately became hostile, producing a black handgun from under his seat and waving it toward officers through the driver's side window.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "No weapon was ever observed or recovered. Aguirre made hand gestures simulating a gun and flashed gang signs, but no actual firearm was produced.",
+          "transcript_excerpt": "Officers observed hand gestures simulating a firearm."
+        }
+      ],
+      "explanation": "No firearm was found on Aguirre or in the Escalade. The subject made gestures simulating a gun but never produced an actual weapon. The report fabricates a gun being displayed early in the encounter.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "A single 40mm OC round was deployed through the front windshield, which immediately caused the subject to cover his face and cease yelling.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Two OC rounds were deployed into the vehicle. After the first, the subject did not comply and instead continued revving the engine and yelling. After the second, he remained unaffected.",
+          "transcript_excerpt": "Subject continued yelling profanities after OC deployment."
+        }
+      ],
+      "explanation": "Two errors: (1) Two OC rounds were deployed, not one — the report omits the second. (2) The subject was 'unaffected' by both rounds and continued yelling, not immediately subdued. The report minimizes the resistance.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject placed the vehicle in drive and accelerated straight forward through the gate at what I estimated to be approximately 45 miles per hour.",
+      "report_location": "Narrative, paragraph 6, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "The Escalade first reversed toward the K9 vehicle and officers, then shifted to drive. Event data recorder showed speeds of 10-20 mph during the three impact events, not 45 mph."
+        }
+      ],
+      "explanation": "Two errors: (1) The subject first reversed, then drove forward — the report omits the reverse maneuver that forced officers to scatter. (2) The event data recorder showed speeds of 10-20 mph, not 45. The report exaggerates speed and omits the initial reverse.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The entire sequence from initial acceleration to exit through the building took less than ten seconds.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "The sequence involved reversing, colliding with the K9 vehicle, driving forward, crashing into multiple vehicles, ramming two garage doors, and driving through the building — a complex multi-minute event."
+        }
+      ],
+      "explanation": "The actual sequence involved reversing into the K9 vehicle, driving forward through gates, crashing into parked cars, ramming a rollup door, driving through the garage, pushing a Mercedes through a second door, and emerging on the street — far more than ten seconds. The report compresses a drawn-out ramming sequence into a brief event.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I discharged my patrol rifle four rounds in approximately four seconds. Sergeant Ingram discharged his sidearm five rounds. Officer Navarro also discharged her sidearm three rounds.",
+      "report_location": "Narrative, paragraph 7, sentences 4-6",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Multiple gunshots audible on bodycam."
+        }
+      ],
+      "explanation": "Coleman actually fired 7 rounds in 1.77 seconds (report says 4 in 4 seconds — minimized count, exaggerated duration). Torres fired 10 rounds in 3.2 seconds (report says 5). Robles attempted to fire but her weapon malfunctioned (report says Navarro fired 3 rounds). Total actual: 17 rounds. Report claims: 12. The report also misattributes shots to the wrong officer.",
+      "discrepancy_type": "minimization",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Paramedics from Los Angeles County Fire Department arrived within two minutes of the shooting and transported the subject to a local hospital, where he was pronounced deceased approximately one hour later.",
+      "report_location": "Narrative, paragraph 8, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "LA County Fire was staging nearby and was summoned after the vehicle was secured. Aguirre was pronounced deceased at the scene, not transported to a hospital."
+        }
+      ],
+      "explanation": "Aguirre was pronounced deceased at the scene by paramedics, not transported to a hospital. The report fabricates a hospital transport and delayed death.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "A loaded semi-automatic pistol was recovered from the subject's lap during the vehicle search.",
+      "report_location": "Narrative, paragraph 8, sentence 2",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "No weapon was found on Aguirre or recovered from the vehicle. The Escalade was stolen and the subject was unarmed."
+        }
+      ],
+      "explanation": "No firearm was recovered from Aguirre or the vehicle. The evidence list in the DA letter does not include any weapon belonging to the subject. This is a complete fabrication.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject raised his right arm holding the previously observed handgun and pointed it directly at Sergeant Ingram.",
+      "report_location": "Narrative, paragraph 7, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Coleman could not see Aguirre's hand from his position at the B-pillar. He saw Aguirre raise his right arm toward the passenger front window in what he interpreted as a shooting position, but could not see what was in his hand."
+        }
+      ],
+      "explanation": "Coleman stated he could not see Aguirre's hand from his vantage point and could not confirm a weapon. He saw the arm raised in what appeared to be a shooting position. The claim that a gun was 'previously observed' and 'pointed directly' goes beyond what the video can confirm, but the arm-raising motion is real.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    }
+  ]
+}

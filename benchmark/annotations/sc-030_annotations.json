@@ -1,0 +1,250 @@
+{
+  "scenario_id": "sc-030",
+  "evidence_id": "ocda-011-reinhold-video",
+  "report_id": "sc-030_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Second scenario for the Reinhold case, focusing on temporal, sequence, omission, and minimization discrepancies. Deputies stop a homeless man for a pedestrian violation; after a prolonged foot pursuit and ground struggle over a holstered weapon, a deputy fires twice. Based on OCDA OIS investigation of Kurt Andreas Reinhold, OC Sheriff, Sep 23 2020.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 1415 hours, Deputy Orozco and I were on a routine patrol.",
+      "report_location": "Narrative, paragraph 1, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Time indicators and dispatch records show the encounter began at approximately 1332 hours, not 1415."
+        }
+      ],
+      "explanation": "The DA letter establishes the incident began at approximately 1:32 PM. The report shifts the time forward by 43 minutes to 1415 hours.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I was driving the vehicle and Deputy Orozco was in the front passenger seat.",
+      "report_location": "Narrative, paragraph 1, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Deputy Israel (the driver equivalent) was driving. Deputy Duran (the reporting officer equivalent) was the passenger typing on his computer."
+        }
+      ],
+      "explanation": "The DA letter establishes Israel drove and Duran was in the passenger seat typing a report. The fictional report swaps who was driving.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "I believed he may be homeless and decided to initiate a welfare contact.",
+      "report_location": "Narrative, paragraph 1, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "The stop was initiated because Deputy Israel observed Reinhold walk across the street against a solid red hand signal — a Vehicle Code violation, not a welfare contact."
+        }
+      ],
+      "explanation": "The actual reason for the stop was a pedestrian traffic violation observed by the driver. The report reframes this as a voluntary welfare check, which mischaracterizes the legal basis for the detention.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I approached the subject and initiated a conversation in a calm manner. I asked the subject if he needed any services.",
+      "report_location": "Narrative, paragraph 2, sentences 2-3",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Deputy exited the vehicle and told Reinhold 'Hey stop.' When Reinhold was told he was 'detained,' he asked 'For what?' and was told it was for jaywalking."
+        }
+      ],
+      "explanation": "The actual initial contact was a detention command ('Hey stop'), not a welfare inquiry. The subject was informed he was detained for jaywalking, not offered services. The report fabricates a softer initial approach.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I informed the subject that I had observed him earlier in the evening at the Ole Hanson Pool Center, and that the property owners had expressed concern about trespassing.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "No mention of the prior Ole Hanson encounter during the street contact."
+        }
+      ],
+      "explanation": "The Ole Hanson Pool Center encounter happened the night before (Sept 22) and involved different deputies (Harris and Perez in addition to Duran). It was never raised during the Sept 23 street contact. The report inserts a prior-night event into the current encounter's timeline as if it was discussed.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject stayed on the sidewalk at all times and did not enter the roadway during this portion of the encounter.",
+      "report_location": "Narrative, paragraph 3, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Reinhold walked away into the middle of the street, entering El Camino Real. Civilian witness described him walking 'illegally' in the middle of the street."
+        }
+      ],
+      "explanation": "The DA letter and civilian witnesses confirm Reinhold walked into the middle of El Camino Real, requiring deputies to enter the roadway to direct traffic. The report falsely claims the subject remained on the sidewalk, omitting the dangerous roadway entry.",
+      "discrepancy_type": "omission",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Deputy Orozco and I followed the subject on foot for approximately 100 yards along El Camino Real.",
+      "report_location": "Narrative, paragraph 4, sentence 1",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Deputies followed Reinhold for approximately 300 yards before reaching the Miramar Hotel area."
+        }
+      ],
+      "explanation": "The DA letter states 'After travelling approximately 300 yards.' The report reduces this to 100 yards, minimizing the extent of the pursuit.",
+      "discrepancy_type": "minimization",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject became increasingly agitated and lightly brushed my arm once as he gestured while speaking.",
+      "report_location": "Narrative, paragraph 4, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Reinhold slapped Deputy Israel's hand away and then hit his hand and arm three additional times during a period of about one minute and thirty seconds."
+        }
+      ],
+      "explanation": "The DA letter describes four deliberate strikes over 1.5 minutes, constituting battery (PC 243(b)). The report minimizes this to 'lightly brushed my arm once,' dramatically understating the physical resistance.",
+      "discrepancy_type": "minimization",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Deputy Orozco secured the subject by his jacket and guided him to the ground.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Deputy Duran grabbed Reinhold by his backpack (not jacket) and took him to the ground."
+        }
+      ],
+      "explanation": "The DA letter states Duran grabbed Reinhold by his backpack. The report says jacket — a minor but verifiable factual error.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "After a brief pause, I discharged my firearm once.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Two gunshots audible. Autopsy: two gunshot wounds. Two cartridge cases recovered."
+        }
+      ],
+      "explanation": "The DA letter, autopsy, and ballistics all establish two shots were fired. The report claims only one, omitting the second shot which was fired after Israel yelled 'He's still got my gun, shoot him again!'",
+      "discrepancy_type": "omission",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject immediately became compliant and was rolled onto his back.",
+      "report_location": "Narrative, paragraph 6, sentence 4",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "After the first shot, Reinhold continued to resist and fight. Deputy Israel still felt Reinhold resist and continue attempting to get his gun. Only after the second shot did Reinhold's body go limp."
+        }
+      ],
+      "explanation": "The DA letter describes continued resistance after the first shot, requiring a second. The report omits this continued resistance, implying immediate compliance after one shot. This hides the most critical escalation moment.",
+      "discrepancy_type": "omission",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "A subsequent toxicology screening indicated the presence of methamphetamine in the subject's system.",
+      "report_location": "Narrative, paragraph 7, sentence 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Toxicology report from postmortem blood."
+        }
+      ],
+      "explanation": "The DA letter explicitly states: 'No alcohol or illicit drugs were detected' in Reinhold's postmortem blood. The report fabricates a positive methamphetamine finding, which would falsely imply drug-impaired behavior as justification.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Body-worn camera footage (both deputies, continuously recording from start of contact)",
+      "report_location": "Evidence Collected, item 1",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "BWC footage exists but the DA letter does not specify whether it was continuous from the start of contact or activated partway through."
+        }
+      ],
+      "explanation": "The DA letter references BWC footage but does not detail activation timing. Whether cameras were recording from the initial contact or activated later is not clearly established in the available evidence.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "We provided first aid until paramedics arrived approximately two minutes later.",
+      "report_location": "Narrative, paragraph 6, sentence 5",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "ambiguous",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "Deputies began chest compressions and continued until OCFA paramedics arrived. Exact response time not specified in the DA letter."
+        }
+      ],
+      "explanation": "The DA letter confirms deputies performed chest compressions until paramedics arrived but does not specify the exact response time. Two minutes is plausible but unverified.",
+      "discrepancy_type": "ambiguous_language",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Deputy Orozco stood approximately ten feet behind me as backup.",
+      "report_location": "Narrative, paragraph 2, sentence 5",
+      "claim_type": "location_description",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The backup deputy positioned behind the lead deputy during initial contact."
+        }
+      ],
+      "explanation": "The DA letter describes Duran acting as backup while Israel took the lead. A backup position behind the lead officer is consistent with the described roles.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}

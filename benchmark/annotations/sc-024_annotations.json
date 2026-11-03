@@ -1,0 +1,250 @@
+{
+  "scenario_id": "sc-024",
+  "evidence_id": "ocda-003-emch-video",
+  "report_id": "sc-024_report.txt",
+  "annotator": "counterpoint-team",
+  "annotation_date": "2026-11-03",
+  "scenario_summary": "Second report for the Emch bodycam video, focusing on temporal/sequence errors, omissions, and exaggerations. Officers respond to 911 call, subject refuses commands, is Tased, draws a handgun, officers fire. Based on OCDA OIS investigation of Michael Emch Jr, Seal Beach PD, Jan 16 2023.",
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The residence is subject to an active domestic violence restraining order prohibiting a former partner from approaching within 50 yards.",
+      "report_location": "Narrative, paragraph 1, sentence 4",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Court records show the restraining order prohibited contact within 100 yards, not 50 yards."
+        }
+      ],
+      "explanation": "The DA letter states the restraining order prohibited Emch from 'coming within 100 yards of her residence.' The report halves the distance to 50 yards, minimizing the severity of the violation.",
+      "discrepancy_type": "minimization",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The subject responded that he was visiting a friend and that she had invited him over.",
+      "report_location": "Narrative, paragraph 3, sentence 1",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Emch replied he was there to see the reporting party. He did not claim to have been invited."
+        }
+      ],
+      "explanation": "Emch said he was there to see 'the reporting party,' not 'a friend,' and never claimed she invited him. The addition of an invitation fabricates a defense for the subject's presence near a restraining-order-protected address.",
+      "discrepancy_type": "fabrication",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Officer Pruitt arrived on scene approximately four minutes after I made initial contact with the subject.",
+      "report_location": "Narrative, paragraph 3, sentence 4",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "BWC timestamps show Knight arrived at 9:40:47 and Balderrama arrived at 9:42:01 — approximately 74 seconds later, not four minutes."
+        }
+      ],
+      "explanation": "BWC footage shows Balderrama arrived roughly 1 minute 14 seconds after Knight, not four minutes. The report inflates the gap, exaggerating how long the reporting officer was alone with the subject before backup arrived.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject paused momentarily and faced me, then turned and entered the enclosed patio area. At that point, I warned the subject I would deploy my Taser.",
+      "report_location": "Narrative, paragraph 4, sentences 4-5",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "transcript_excerpt": "Balderrama warned about Taser deployment before the subject entered the patio. Balderrama said 'Dude, I'm going to Tase you' as Emch began to re-enter the patio."
+        }
+      ],
+      "explanation": "The DA letter describes Balderrama warning about the Taser as Emch 'began to re-enter the enclosed patio,' then deploying it as Emch 'proceeded to walk back into the enclosed patio area.' The report reverses the sequence — claiming the warning came after entry, not before.",
+      "discrepancy_type": "sequence_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I deployed my Taser, striking the subject in the upper back. The subject fell forward onto his stomach on the patio floor.",
+      "report_location": "Narrative, paragraph 4, sentences 7-8",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The subject fell onto his left side and then flat on his back, not forward onto his stomach."
+        }
+      ],
+      "explanation": "The Taser strike location (back) is accurate, but the fall is wrong. The DA letter states Emch 'fell into the enclosed area onto his left side and then flat on his back.' The report claims forward onto stomach — opposite of actual.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Immediately after the Taser deployment, Officer Pruitt advanced to the patio threshold.",
+      "report_location": "Narrative, paragraph 5, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "BWC shows a 4-second gap: Taser at 9:42:35, Knight approaches patio threshold at 9:42:39. This gap included Emch disappearing from view and Knight drawing his handgun."
+        }
+      ],
+      "explanation": "The report says 'immediately after' but BWC timestamps show Knight (the other officer) reached the threshold at 9:42:39, four seconds after the Taser at 9:42:35. During those four seconds, Emch fell, Knight lost sight of him, heard screaming, and drew his handgun. The report compresses a critical 4-second gap.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject rolled from his stomach to his back, reached toward his left hip, and produced a black handgun.",
+      "report_location": "Narrative, paragraph 5, sentence 2",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "The subject was already on his back after the Taser fall. He reached for the gun from his right-side waistband, not his left hip."
+        }
+      ],
+      "explanation": "Two errors: (1) The subject was already on his back (no roll from stomach), consistent with the incorrect fall direction in cl-005. (2) He reached toward his right-side waistband, not his left hip. The DA letter states 'reached for what appeared to be a black, Glock handgun from his right-side waistband.'",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer Pruitt, fearing for my safety, discharged his firearm, firing seven rounds. I simultaneously transitioned from my Taser to my duty weapon and discharged nine rounds.",
+      "report_location": "Narrative, paragraph 5, sentences 4-5",
+      "claim_type": "action_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Extended gunfire audible on BWC audio."
+        }
+      ],
+      "explanation": "The shot counts are dramatically understated. The DA letter states Knight fired 21 rounds (full magazine plus chamber, no reload) and Balderrama fired a total of 9 rounds (from his duty weapon, after also deploying the Taser a second time at 9:42:42). The report attributes 7 to Knight's stand-in and 9 to the Taser officer — reversing who fired more, and cutting Knight's actual 21 rounds to 7.",
+      "discrepancy_type": "minimization",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "During this time, the subject was heard to say, \"Just let me die.\"",
+      "report_location": "Narrative, paragraph 6, sentence 2",
+      "claim_type": "spoken_statement",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "audio",
+          "transcript_excerpt": "Emch stated 'Finish me off' at approximately 9:43:06."
+        }
+      ],
+      "explanation": "The DA letter quotes Emch as saying 'Finish me off,' which is a request directed at the officers. The report changes this to 'Just let me die,' which is passive and undirected. The actual quote is more confrontational.",
+      "discrepancy_type": "direct_contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject's movements near the weapon continued intermittently for approximately three minutes before additional units arrived.",
+      "report_location": "Narrative, paragraph 6, sentence 3",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "BWC shows Pistilli arrived at approximately 9:48:46 — about 6 minutes after the shooting at 9:42:44, not 3 minutes."
+        }
+      ],
+      "explanation": "Pistilli arrived approximately 6 minutes after the shooting began, not 3 minutes. The report halves the wait time, minimizing how long the officers held a wounded subject at gunpoint before help arrived.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Officer Holt arrived at approximately 2143 hours and secured the handgun.",
+      "report_location": "Narrative, paragraph 6, sentence 4",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "BWC confirms Pistilli arrived at 9:48:46, not 9:43. The weapon was secured nearly 6 minutes after shooting, not 1 minute."
+        }
+      ],
+      "explanation": "The report claims the third officer arrived at 2143 (9:43 PM), just one minute after the shooting. Actual arrival was 9:48:46 — almost 6 minutes later. This dramatically compresses the timeline of how long the subject was unsecured with a weapon nearby.",
+      "discrepancy_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Sixteen (16) cartridge cases, WIN 9MM LUGER",
+      "report_location": "Evidence Collected, item 3",
+      "claim_type": "object_description",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Evidence markers show substantially more than 16 9mm casings collected at the scene."
+        }
+      ],
+      "explanation": "Knight fired 21 9mm rounds and Balderrama fired 7 9mm rounds, for 28 total 9mm casings. The report lists only 16, omitting 12 casings. Additionally, four .40 S&W casings from Emch's weapon were also found but not listed.",
+      "discrepancy_type": "omission",
+      "difficulty": "hard"
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "OCFA Engine 84 arrived at approximately 2148 hours and transported the subject to UCI Medical Center.",
+      "report_location": "Narrative, paragraph 7, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "conflict",
+      "evidence_references": [
+        {
+          "modality": "both",
+          "visual_description": "OCFA arrived at approximately 9:52 PM, not 9:48 PM. Transport did not begin until approximately 10:02 PM."
+        }
+      ],
+      "explanation": "The DA letter states OCFA arrived at approximately 9:52 PM, and Emch was loaded into the ambulance at approximately 10:02 PM. The report moves the arrival 4 minutes earlier, compressing the timeline.",
+      "discrepancy_type": "temporal_mismatch",
+      "difficulty": "medium"
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I was dispatched to the location and arrived at approximately 2140 hours, ahead of Officer Pruitt.",
+      "report_location": "Narrative, paragraph 2, sentence 1",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "BWC confirms Knight arrived at 9:40:47 PM, ahead of Balderrama."
+        }
+      ],
+      "explanation": "The arrival time of approximately 9:40 PM and the order of arrival (Knight first, then Balderrama) are both confirmed by BWC timestamps.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject was pronounced deceased at approximately 2232 hours.",
+      "report_location": "Narrative, paragraph 7, sentence 2",
+      "claim_type": "temporal_sequence",
+      "ground_truth_relationship": "supported",
+      "evidence_references": [
+        {
+          "modality": "visual",
+          "visual_description": "Hospital records confirm time of death at 10:32 PM."
+        }
+      ],
+      "explanation": "The DA letter confirms Emch was pronounced deceased at 10:32 PM. This is accurate.",
+      "discrepancy_type": "none",
+      "difficulty": "easy"
+    }
+  ]
+}
