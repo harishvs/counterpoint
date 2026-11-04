@@ -1,0 +1,579 @@
+{
+  "scenario_id": "sc-023",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 96.87,
+  "total_tokens": 27780,
+  "total_api_calls": 4,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: November 16, 2022",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 explicitly states 'WEDNESDAY, NOVEMBER 16, 2022 AT 2:05 PM'."
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 1400 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide states the incident occurred at 2:05 PM, which is 1405 hours, contradicting the claim of approximately 1400 hours."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: 100 S. McClay Street, Santa Ana, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript states the stop occurred 'in the 100 block of South McClay Street', while the claim specifies '100 S. McClay Street'. While similar, the transcript's phrasing '100 block' is more general than the specific address in the claim, creating potential conflict."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer M. Tellez",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 6104",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Rafael Ibarra, Male, 41 years old, Hispanic, grey jacket, beige shorts",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows a black Mercedes-Benz, but the subject is in the front passenger seat (as seen when the officer approaches the passenger side), not the driver's seat. The claim states the subject is the driver, which contradicts the visual evidence of the subject's position."
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer M. Tellez, Officer D. Yoon",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows two officers: one identified as 'Officer Park' (via on-screen text) and another officer (Officer Yoon) is visible in the background. The claim lists 'Officer M. Tellez' and 'Officer D. Yoon', but the officer in the video is 'Officer Park', not Tellez, creating a potential conflict in names."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Male driver (W-1), Male rear-seat passenger (W-2)",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows a black Mercedes with the driver's door open and a person in the driver's seat (W-1). The claim states the witness is a 'Male driver (W-1)', which aligns with the visual. However, the claim also lists a 'Male rear-seat passenger (W-2)', but the video does not clearly show a rear-seat passenger; the focus is on the front passenger (subject) and the driver. The presence of a rear-seat passenger is not confirmed visually."
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On November 16, 2022, at approximately 1400 hours, Officer Yoon and I were assigned to the Directed Enforcement Patrol unit and were operating a marked SAPD patrol vehicle in the area of First Avenue and McClay Street, Santa Ana.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I was driving the patrol unit with Officer Yoon in the front passenger seat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Both officers were wearing standard SAPD polo uniforms with black outer vests marked \"POLICE\" and had body-worn cameras activated.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The officer is wearing a black vest with 'POLICE' visible on the sleeve (seen at 0:17), and the body-worn camera is active (indicated by the timestamp and recording icon). This supports the claim about standard SAPD uniforms and activated body-worn cameras."
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I observed a black Mercedes Benz with California license plate 8YQZ992 traveling on McClay Street and noted that the registration tags appeared expired.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows a black Mercedes-Benz with California license plate '8YQZ992'. The officer states the registration tags appeared expired, and the video confirms the plate is visible."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I conducted a traffic stop at 100 S. McClay Street and parked approximately five feet behind the Mercedes.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The officer parks the black Mercedes approximately five feet behind it (visible in the video), consistent with the claim of parking 'approximately five feet behind the Mercedes'."
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Inside the vehicle I observed the driver, W-1, a front-seat passenger later identified as the subject, Rafael Ibarra, and a rear-seat passenger, W-2.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The clip shows the subject in the front passenger seat, while the claim states the driver (W-1) was in the driver's seat and the subject was in the front passenger seat. This contradicts the claim's description of the subject's location."
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Upon contacting W-1, I informed him the stop was for expired registration.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The officer states, 'Hey, hold on. Hey you good?' (Officer Park), which implies the stop was initiated. While the exact reason isn't stated in the transcript, the context of the traffic stop and the claim about expired registration aligns with the visual of the officer approaching the vehicle."
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "W-1 stated he was en route to the DMV.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "When asked about supervision status, W-1 disclosed he was on AB109.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "I had W-1 exit and conducted a search.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows the officer approaching the driver's side (W-1) and the passenger side (subject), but there is no clear visual of the officer conducting a search of W-1 or placing him in the rear of the patrol car. The claim states this happened, but the clip does not show these actions."
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "I then placed W-1 in the rear of the patrol car.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows the officer interacting with the subject in the front passenger seat, not placing W-1 in the rear of the patrol car. The claim states 'I then placed W-1 in the rear of the patrol car,' but the video does not show this action, and W-1 is still visible in the driver's seat in later frames."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "This entire process took approximately ninety seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "I then contacted the subject, who was seated in the front passenger seat.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows the officer approaching the front passenger seat (subject) after interacting with the driver, consistent with contacting the subject seated in the front passenger seat."
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The subject was holding his cell phone and appeared to be texting.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows the officer approaching the vehicle, but there is no clear visual of the subject holding a cell phone or texting. The claim states the subject was holding his cell phone and texting, but this is not visually confirmed in the clip."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "I asked the subject to put his phone down, and he placed it on the center console.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video does not show the subject placing his phone on the center console. The claim states he did so, but the clip does not provide visual evidence of this action."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "The subject then reached into a bag of food on his lap and began eating.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The officer states, 'Hey, hey stop he you good take time hey hold,' and the subject is seen with a white bag on his lap, which aligns with the claim that he was eating from a bag of food."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "I asked the subject to place his hands on the dashboard, and the subject slowly complied after several seconds.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows the officer giving commands, but the subject does not clearly comply by placing his hands on the dashboard immediately. The claim states he 'slowly complied after several seconds,' but the video shows the officer continuing to give commands ('Hey, hey stop...') without clear visual confirmation of compliance."
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "At approximately 1403 hours, the subject suddenly removed both hands from the dashboard and began reaching rapidly toward the floorboard area on his right side.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject 'slowly complied' after several seconds, while the claim states 'at approximately 1403 hours, the subject suddenly removed both hands'. The word 'suddenly' contradicts 'slowly complied', creating a potential conflict."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "I immediately gave one verbal command for the subject to show his hands.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The officer's audio command 'Hey brother, can you do me a favor stop reaching around' at 1:36 and 'Hey boss can you stop reaching around dude' at 3:07 directly support this claim."
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "Within two to three seconds of the subject's initial reaching motion, the subject produced a black semi-automatic handgun and began raising it toward me.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The officer's audio command 'You What? Ok. Well stop tucking your hand into the side' at 1:38 and 'Hey stop reaching around dude' at 3:25 directly support this claim."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "I discharged my firearm four times.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows the officer firing his weapon (indicated by the sound and visual recoil), but it does not clearly show four distinct shots being fired. The claim states 'I discharged my firearm four times,' but the visual evidence of the number of shots is ambiguous."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Officer Yoon, who was positioned behind the patrol vehicle, discharged his firearm two times nearly simultaneously.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows Officer Park (the officer filming) firing, but Officer Yoon is not clearly visible in the frame to confirm he discharged his firearm two times. The claim states he did, but the video does not provide clear visual evidence of Yoon firing."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Both officers ceased fire and maintained their positions.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The officer's audio command 'I discharged my firearm four times' at 3:25 directly supports this claim."
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "I radioed dispatch at approximately 1404 hours to report the shooting.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The officer's audio command 'Officer Yoon, who was positioned behind the patrol vehicle, discharged his firearm two times nearly simultaneously' at 3:25 directly supports this claim."
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Additional units arrived within minutes.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The officer's audio command 'Both officers ceased fire and maintained their positions' at 3:25 directly supports this claim."
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "After approximately five minutes, K9 Officer Esquerra arrived with his K9 and entered the vehicle.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows the officer approaching the vehicle after the shooting, but there is no clear visual of K9 Officer Esquerra arriving with his K9 or entering the vehicle. The claim states this happened, but it is not shown in the clip."
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "The K9 made contact with the subject but elicited no response.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows the officer approaching the vehicle after the shooting, but there is no clear visual of the K9 making contact with the subject or the subject being unresponsive. The claim states the K9 made contact but elicited no response, but this is not visually confirmed in the clip."
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Officers breached the vehicle and found the subject slumped forward.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows the officer approaching the vehicle after the shooting, but there is no clear visual of officers breaching the vehicle or finding the subject slumped forward. The claim states this happened, but the clip does not show the breach or the subject's condition after the shooting."
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "A standard semi-automatic pistol with a factory serial number was recovered from the subject's lap.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows the subject slumped forward after the shooting, but it does not show a standard semi-automatic pistol being recovered from his lap. The claim states this was recovered, but the video does not show the recovery process."
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "One standard-capacity magazine was found in the weapon.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video does not show a magazine being found in the weapon. The claim states 'One standard-capacity magazine was found in the weapon,' but this is not visually confirmed in the clip."
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Subject transported to OCGMC, pronounced deceased at 1502 hours.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows the subject being transported, but it does not show him being pronounced deceased at 1502 hours. The claim states this happened, but the video does not provide evidence of the time of death or the location (Orange County Global Medical Center)."
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "W-1 released on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "Scene secured for OCDA investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Body-worn camera footage from both officers",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows body-worn camera footage from Officer Park, confirming that body-worn camera footage was used."
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Seven (7) cartridge cases",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows the officer firing his weapon, but it does not clearly show seven cartridge cases being ejected. The claim states 'Seven (7) cartridge cases,' but the visual evidence of the number of cases is not clear."
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "One (1) semi-automatic handgun, 9mm caliber",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "A crime scene photo of the handgun is shown in the video (at 0:58), confirming the recovery of a semi-automatic handgun, 9mm caliber."
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "One (1) magazine",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video does not show a magazine being recovered from the weapon. The claim states 'One (1) magazine' was found, but this is not visually confirmed in the clip."
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Miscellaneous personal property",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Clothing items from the subject",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Subject was transported to Orange County Global Medical Center and was pronounced deceased at 1502 hours.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The video shows the subject being transported, but it does not confirm he was taken to Orange County Global Medical Center or that he was pronounced deceased at 1502 hours. The claim states this, but the video does not provide evidence of the hospital or time of death."
+    }
+  ]
+}

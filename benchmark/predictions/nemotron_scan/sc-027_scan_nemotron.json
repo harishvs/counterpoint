@@ -1,0 +1,387 @@
+{
+  "scenario_id": "sc-027",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 120.61,
+  "total_tokens": 35879,
+  "total_api_calls": 6,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-027",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: November 13, 2020",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card at 00:13 states the incident date is Friday, November 13, 2020."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 1615\u20131740 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows the time as 17:37:35, which is 1740 hours, contradicting the claim of approximately 1615-1740 hours. The clip starts at 17:37, so the incident occurred after 1615 hours."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: 7900 block of Adams Way, Anaheim, CA",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card at 00:13 lists the location as 7914 Adams Way, Buena Park, California, which is within the 7900 block of Adams Way."
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer K. Abudeen",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage identifies the officer as 'OFC. K. ABUHADWAN', which matches the claim of Officer K. Abudeen (likely a typo in the claim)."
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 5923",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Marco Espinoza, Male, 22 years old, Hispanic, shaved head, dark clothing",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Officer K. Abudeen, Officer D. Ramirez",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "APD helicopter \"Angel\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The text preceding the video states it is from 'Anaheim PD Helicopter Angel,' and the aerial footage matches helicopter surveillance."
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "multiple APD and BPPD patrol units",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "On November 13, 2020, at approximately 1645 hours, I was assigned to a perimeter position in connection with an ongoing search for a male suspect who had fled from officers on foot in the area of Adams Way and Grand Avenue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The suspect had initially been the subject of a 911 call approximately fifteen minutes earlier reporting a male brandishing a firearm from a vehicle in the vicinity of a 7-Eleven parking lot near Beach Boulevard.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "After officers located the suspect near the 7-Eleven, the suspect fled on foot",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "the suspect fled on foot, and after a brief foot pursuit was observed by the helicopter entering the yard of a residence on Adams Way",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The aerial footage shows a helicopter observing a person entering a residential yard, consistent with the suspect fleeing into a yard."
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officers established a perimeter",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "APD Sgt. McClintock then identified the suspect from a wanted flyer and broadcast the identification to units",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "Following this identification, helicopter officers began making public address announcements directing the suspect to exit the residence",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "Officer Ramirez and I took up a perimeter position in the backyard of 7914 Adams, located near the residence where the suspect was believed to be hiding",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "For roughly twenty minutes, repeated announcements were made from the helicopter in English only, directing the subject to come out with his hands up",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "During this time, the subject could be seen through the windows of 7896 Adams pacing on the ground floor",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "At approximately 1737 hours, I observed the subject exit from the front door of 7896 Adams and walk in the direction of our position at 7914 Adams",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the time as 17:37:35, which is approximately 1737 hours, matching the claim that the subject exited at 1737 hours."
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The encounter lasted approximately two minutes",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "As the subject entered the backyard, Officer Ramirez and I ordered him to show his hands",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the officer ordering the subject to show his hands, which aligns with the claim."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "The subject initially raised his hands but almost immediately lowered both hands to his sides and took several quick steps toward us",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject raising his hands and then lowering them, taking steps toward the officers, which aligns with the claim."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "At this point, believing the subject was armed and posed an imminent threat, I discharged my firearm five times",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video does not show the officer discharging his firearm five times. The audio does not clearly indicate gunfire, and the subject does not fall to the ground in the clip."
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "The subject fell to the ground approximately ten feet from our position",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video does not show the subject falling to the ground ten feet from the officers' position."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "After the subject was down, Officer Ramirez and I approached and secured the subject in handcuffs",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The subject had sustained gunshot wounds to both arms and his abdomen",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "We applied pressure bandages",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Paramedics arrived within approximately two minutes and transported the subject to a local hospital, where he was treated and survived",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "No weapons or contraband were recovered from the subject's person or the immediate area",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Body-worn camera footage (Officer Abudeen, Officer Ramirez)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage is identified as being from Officer Abudeen's body-worn camera, supporting the claim."
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Five (5) cartridge cases, Winchester 45 Auto",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "One (1) pair dark shorts",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Crime scene photographs",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Subject transported to hospital, underwent treatment, survived",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Scene secured for OCDASAU investigation",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Officer Signature: K. Abudeen",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage identifies the officer as 'OFC. K. ABUHADWAN', supporting the claim of Officer K. Abudeen."
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Date of Report: November 14, 2020",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    }
+  ]
+}

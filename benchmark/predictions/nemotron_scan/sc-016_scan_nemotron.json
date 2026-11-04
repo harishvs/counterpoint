@@ -2,118 +2,26 @@
   "scenario_id": "sc-016",
   "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
   "pipeline": "scan",
-  "processing_time_seconds": 131.34,
-  "total_tokens": 41043,
+  "processing_time_seconds": 177.08,
+  "total_tokens": 49214,
   "total_api_calls": 6,
   "claims": [
     {
       "claim_id": "cl-001",
-      "claim_text": "Case Number: SC-016",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
-    },
-    {
-      "claim_id": "cl-002",
       "claim_text": "Date of Incident: June 24, 2020",
       "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 400.0,
+          "end_seconds": 436.813787
         }
       ],
-      "evidence_observations": "The title card states 'June 24, 2020 AT 0109 HOURS', confirming the date of the incident."
+      "evidence_observations": "The evidence tag next to the gun in the photo of the gun from scene reads '6-24-20'."
     },
     {
-      "claim_id": "cl-003",
+      "claim_id": "cl-002",
       "claim_text": "Time of Incident: Approximately 0103 hours",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The title card states 'June 24, 2020 AT 0109 HOURS', and the 911 call transcript begins at '1:03 A.M.', indicating the time of the incident was approximately 0103 hours."
-    },
-    {
-      "claim_id": "cl-004",
-      "claim_text": "Location: 22800 block of Loumont Drive, Lake Forest, CA",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The title card states '22851 Loumont Drive, Lake Forest', which corresponds to the 22800 block of Loumont Drive in Lake Forest, CA."
-    },
-    {
-      "claim_id": "cl-005",
-      "claim_text": "Reporting Officer: Deputy M. Calder",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
-    },
-    {
-      "claim_id": "cl-006",
-      "claim_text": "Badge Number: 7831",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
-    },
-    {
-      "claim_id": "cl-007",
-      "claim_text": "Subject: Female, approximately 25-30 years old, dressed in dark clothing",
-      "evidence_relationship": "potential_conflict",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
-        }
-      ],
-      "evidence_observations": "The video shows a person standing on the sidewalk, but it is unclear if the subject is female, approximately 25-30 years old, or dressed in dark clothing due to the low visibility and distance."
-    },
-    {
-      "claim_id": "cl-008",
-      "claim_text": "Deputy M. Calder, Badge Number 7831, responded to the scene",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
-    },
-    {
-      "claim_id": "cl-009",
-      "claim_text": "Deputy R. Vega, Deputy S. Whitfield, and Deputy A. Navarro responded to the scene",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
-    },
-    {
-      "claim_id": "cl-010",
-      "claim_text": "The reporting party stated he was hiding in a bedroom closet",
-      "evidence_relationship": "potential_conflict",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The transcript states 'he's hiding in the closet and I'm hiding in the bathroom', indicating the reporting party (Sunshine) is in the bathroom, not a bedroom closet."
-    },
-    {
-      "claim_id": "cl-011",
-      "claim_text": "The call was disconnected and dispatcher attempts to reestablish contact were unsuccessful",
       "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
@@ -122,24 +30,101 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "At timestamp 02:00, the audio states 'it's a one-story residence. The line disconnected.' indicating the call was disconnected."
+      "evidence_observations": "The transcript states 'Carmen Timer 01:03:50' at the beginning of the video, indicating the time is approximately 0103 hours."
     },
     {
-      "claim_id": "cl-012",
-      "claim_text": "At approximately 0109 hours, Deputy M. Calder arrived on Loumont Drive and turned off emergency lights",
-      "evidence_relationship": "supported",
+      "claim_id": "cl-003",
+      "claim_text": "Location: 22800 block of Loumont Drive, Lake Forest, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Deputy M. Calder",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 7831",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Female, approximately 25-30 years old, dressed in dark clothing",
+      "evidence_relationship": "potential_conflict",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The timestamp shows 'Current Time: 01:09:11' at the start of the clip, indicating Deputy M. Calder arrived around 0109 hours and turned off emergency lights."
+      "evidence_observations": "The video shows a person standing on the sidewalk, but it is difficult to determine the subject's gender or age with certainty. The person appears to be wearing dark clothing, but the claim specifies a female subject approximately 25-30 years old, which cannot be confirmed from the video alone."
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Deputy M. Calder, Badge Number: 7831",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 436.813787
+        }
+      ],
+      "evidence_observations": "The video shows Deputy R. Ruelas, but the claim refers to Deputy M. Calder. The video does not show Deputy M. Calder."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Deputy R. Vega",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Deputy S. Whitfield",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Deputy A. Navarro",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "No witnesses were present at the scene",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "On June 24, 2020, at approximately 0103 hours, Orange County Communications Center received a 911 call reporting a residential burglary at 22851 Loumont Drive, Lake Forest",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-013",
-      "claim_text": "Deputy M. Calder parked directly in front of 22851 Loumont Drive and exited his vehicle",
+      "claim_text": "The reporting party stated that someone had broken a rear window and entered the residence",
       "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "not_retrieved",
       "evidence_references": [],
@@ -147,20 +132,15 @@
     },
     {
       "claim_id": "cl-014",
-      "claim_text": "Deputy M. Calder walked eastbound along the north sidewalk toward the residence using a flashlight",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
-        }
-      ],
-      "evidence_observations": "The video shows Deputy M. Calder walking eastbound along the north sidewalk using a flashlight."
+      "claim_text": "The reporting party was a male caller who believed the intruder was still inside the home",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-015",
-      "claim_text": "A gray sedan was parked on the street near 22855 Loumont Drive",
+      "claim_text": "Deputy Vega was dispatched to the call",
       "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "not_retrieved",
       "evidence_references": [],
@@ -168,46 +148,36 @@
     },
     {
       "claim_id": "cl-016",
-      "claim_text": "A female subject was standing on the north sidewalk approximately 40 feet from Deputy M. Calder's position",
+      "claim_text": "Deputies Calder, Whitfield, and Navarro also responded",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "While en route, dispatch advised that the reporting party stated he was hiding in a bedroom closet",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The call was subsequently disconnected",
       "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The video shows a person standing on the north sidewalk approximately 40 feet from the patrol vehicle's position."
-    },
-    {
-      "claim_id": "cl-017",
-      "claim_text": "The subject was dressed entirely in black, including a black hooded sweatshirt with the hood pulled up",
-      "evidence_relationship": "potential_conflict",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
-        }
-      ],
-      "evidence_observations": "The video shows a person standing on the sidewalk, but it is unclear if the subject is dressed entirely in black, including a black hooded sweatshirt with the hood pulled up, due to the low visibility and distance."
-    },
-    {
-      "claim_id": "cl-018",
-      "claim_text": "The subject was holding a black semi-automatic handgun in her left hand, pointed toward the ground",
-      "evidence_relationship": "potential_conflict",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
-        }
-      ],
-      "evidence_observations": "The video shows a person standing on the sidewalk, but it is unclear if the subject is holding a black semi-automatic handgun in her left hand, pointed toward the ground, due to the low visibility and distance."
+      "evidence_observations": "The transcript states 'the line disconnected' at 02:59, indicating the call was disconnected."
     },
     {
       "claim_id": "cl-019",
-      "claim_text": "Deputy M. Calder drew his department-issued sidearm and began issuing commands",
+      "claim_text": "The dispatcher's attempts to reestablish contact were unsuccessful",
       "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "not_retrieved",
       "evidence_references": [],
@@ -215,77 +185,112 @@
     },
     {
       "claim_id": "cl-020",
-      "claim_text": "Deputy M. Calder yelled, \"Drop the weapon! Let me see your hands! Get on the ground!\"",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "claim_text": "At approximately 0109 hours, I arrived on Loumont Drive and turned off my emergency lights",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 436.813787
+        }
+      ],
+      "evidence_observations": "The timestamp in the bottom center of the video reads '01:12:31', which is after 0109 hours, and the deputy is seen exiting the vehicle and walking toward the residence."
     },
     {
       "claim_id": "cl-021",
-      "claim_text": "The subject did not respond and remained motionless",
-      "evidence_relationship": "potential_conflict",
+      "claim_text": "I parked directly in front of 22851 Loumont Drive and exited my vehicle",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 400.0,
+          "end_seconds": 436.813787
         }
       ],
-      "evidence_observations": "The video shows a person standing on the sidewalk, but it is unclear if the subject remained motionless, as the person appears to be moving slightly."
+      "evidence_observations": "The deputy is seen exiting the vehicle and walking toward the residence, consistent with parking in front of the residence and exiting."
     },
     {
       "claim_id": "cl-022",
-      "claim_text": "Deputy M. Calder took cover behind the sedan",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "claim_text": "Using my flashlight, I began walking eastbound along the north sidewalk toward the residence",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The officer is seen walking eastbound along the north sidewalk with a flashlight, which aligns with the claim that he was walking eastbound along the north sidewalk toward the residence."
     },
     {
       "claim_id": "cl-023",
-      "claim_text": "Deputy M. Calder broadcast over the radio that he had a subject at gunpoint",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "claim_text": "I heard a noise to my left and observed a female subject standing on the north sidewalk approximately 40 feet from my position",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows a female subject standing on the north sidewalk approximately 40 feet from the officer's position, and she is dressed in dark clothing."
     },
     {
       "claim_id": "cl-024",
-      "claim_text": "Deputy R. Vega arrived at approximately 0110 hours and parked approximately 20 feet behind Deputy M. Calder's position",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "claim_text": "The subject was dressed entirely in black, including a black hooded sweatshirt with the hood pulled up",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows a female subject dressed entirely in black, including a black hooded sweatshirt with the hood pulled up."
     },
     {
       "claim_id": "cl-025",
-      "claim_text": "Deputy S. Whitfield took a position behind Deputy R. Vega's vehicle",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "claim_text": "I illuminated the subject with my flashlight and immediately observed that she was holding a black semi-automatic handgun in her left hand, pointed toward the ground",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer illuminating the subject with his flashlight and observing that she is holding a black semi-automatic handgun in her left hand, pointed toward the ground."
     },
     {
       "claim_id": "cl-026",
-      "claim_text": "Deputy A. Navarro arrived at approximately 0111 hours and took cover near the front of Deputy M. Calder's vehicle",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "claim_text": "I drew my department-issued sidearm and began issuing commands",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer drawing his department-issued sidearm and beginning to issue commands, which aligns with the claim."
     },
     {
       "claim_id": "cl-027",
-      "claim_text": "Over approximately ninety seconds, Deputy M. Calder repeatedly ordered the subject to drop the weapon and get on the ground",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "claim_text": "I yelled, \"Drop the weapon! Let me see your hands! Get on the ground!\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer yelling commands, which aligns with the claim."
     },
     {
       "claim_id": "cl-028",
-      "claim_text": "The subject stood still and appeared to be scanning the area, turning her head from side to side",
-      "evidence_relationship": "potential_conflict",
+      "claim_text": "The subject did not respond and remained motionless",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
@@ -293,20 +298,12 @@
           "end_seconds": 310.0
         }
       ],
-      "evidence_observations": "The video shows a person standing on the sidewalk, but it is unclear if the subject was scanning the area, turning her head from side to side, due to the low visibility and distance."
+      "evidence_observations": "The video shows the subject remaining motionless and not responding to the officer's commands."
     },
     {
       "claim_id": "cl-029",
-      "claim_text": "The subject made no verbal response to Deputy M. Calder's commands or those of the other deputies",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
-    },
-    {
-      "claim_id": "cl-030",
-      "claim_text": "At approximately 0111 hours and 30 seconds, the subject abruptly raised the handgun to shoulder level with both hands and aimed it directly at Deputy M. Calder's position behind the sedan",
-      "evidence_relationship": "potential_conflict",
+      "claim_text": "I took cover behind the sedan",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
@@ -314,58 +311,205 @@
           "end_seconds": 310.0
         }
       ],
-      "evidence_observations": "The video shows a person standing on the sidewalk, but it is unclear if the subject abruptly raised the handgun to shoulder level with both hands and aimed it directly at Deputy M. Calder's position behind the sedan, as the person's actions are not clearly visible."
+      "evidence_observations": "The video shows the officer taking cover behind a sedan."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "I broadcast over the radio that I had a subject at gunpoint",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer broadcasting over the radio that he has a subject at gunpoint."
     },
     {
       "claim_id": "cl-031",
-      "claim_text": "Deputy M. Calder discharged his firearm five times at the subject",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "claim_text": "Deputy Vega arrived at approximately 0110 hours and parked approximately 20 feet behind my position",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows Deputy Vega arriving at approximately 0110 hours and parking approximately 20 feet behind the officer's position."
     },
     {
       "claim_id": "cl-032",
-      "claim_text": "Deputy S. Whitfield discharged his firearm three times simultaneously",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "claim_text": "Deputy Whitfield took a position behind Deputy Vega's vehicle",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows Deputy Whitfield taking a position behind Deputy Vega's vehicle."
     },
     {
       "claim_id": "cl-033",
-      "claim_text": "The subject fell to the ground and the weapon came to rest beside her",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "claim_text": "At approximately 0111 hours, Deputy Navarro arrived and took cover position near the front of my vehicle",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows Deputy Navarro arriving and taking cover position near the front of the officer's vehicle."
     },
     {
       "claim_id": "cl-034",
-      "claim_text": "Deputy R. Vega kicked the weapon away from the subject's reach",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "claim_text": "Over the following approximately ninety seconds, I repeatedly ordered the subject to drop the weapon and get on the ground",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer repeatedly ordering the subject to drop the weapon and get on the ground over approximately ninety seconds."
     },
     {
       "claim_id": "cl-035",
-      "claim_text": "The weapon appeared to be a realistic-looking semi-automatic pistol",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "claim_text": "The subject stood still but appeared to be scanning the area, turning her head from side to side",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject standing still and appearing to scan the area, turning her head from side to side."
     },
     {
       "claim_id": "cl-036",
-      "claim_text": "Deputies began rendering first aid to the subject",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "claim_text": "At no point did the subject make any verbal response to my commands or those of the other deputies",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject not making any verbal response to the officer's commands or those of the other deputies."
     },
     {
       "claim_id": "cl-037",
+      "claim_text": "At approximately 0111 hours and 30 seconds, the subject abruptly raised the handgun to shoulder level with both hands and aimed it directly at my position behind the sedan",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject abruptly raising the handgun to shoulder level with both hands and aiming it directly at the officer's position behind the sedan."
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "I discharged my firearm five times at the subject",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer discharging his firearm five times at the subject."
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Deputy Whitfield simultaneously discharged his firearm three times",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows Deputy Whitfield discharging his firearm three times simultaneously with the officer."
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "The subject fell to the ground and the weapon came to rest beside her",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject falling to the ground and the weapon coming to rest beside her."
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "Deputies Vega and Whitfield approached the subject and secured the scene",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows Deputies Vega and Whitfield approaching the subject and securing the scene."
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Deputy Vega kicked the weapon away from the subject's reach",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows Deputy Vega kicking the weapon away from the subject's reach."
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Upon closer inspection, the weapon appeared to be a realistic-looking semi-automatic pistol",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows the weapon appearing to be a realistic-looking semi-automatic pistol."
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Deputies immediately began rendering first aid",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows the deputies beginning to render first aid."
+    },
+    {
+      "claim_id": "cl-045",
       "claim_text": "Orange County Fire Authority Engine #19 arrived at approximately 0119 hours and paramedics assumed medical care",
       "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "not_retrieved",
@@ -373,7 +517,7 @@
       "evidence_observations": ""
     },
     {
-      "claim_id": "cl-038",
+      "claim_id": "cl-046",
       "claim_text": "The subject was transported to Mission Hospital by ambulance",
       "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "not_retrieved",
@@ -381,7 +525,7 @@
       "evidence_observations": ""
     },
     {
-      "claim_id": "cl-039",
+      "claim_id": "cl-047",
       "claim_text": "The weapon recovered at the scene was later determined to be a Daisy 340 BB Spring Repeater Pistol, a realistic-looking replica handgun",
       "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "not_retrieved",
@@ -389,77 +533,8 @@
       "evidence_observations": ""
     },
     {
-      "claim_id": "cl-040",
-      "claim_text": "The 911 call reporting the burglary originated from the subject's own cell phone",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The title card states '911 Call Received by OCSD from Sunshine Kamila Salac's cell phone'."
-    },
-    {
-      "claim_id": "cl-041",
-      "claim_text": "No burglary had actually occurred at 22851 Loumont Drive",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
-    },
-    {
-      "claim_id": "cl-042",
-      "claim_text": "Eight (8) cartridge casings were recovered from the scene",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
-    },
-    {
-      "claim_id": "cl-043",
-      "claim_text": "One (1) Daisy 340 BB Spring Repeater Pistol, black, was recovered",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
-    },
-    {
-      "claim_id": "cl-044",
-      "claim_text": "Subject's clothing items with apparent blood were collected",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
-    },
-    {
-      "claim_id": "cl-045",
-      "claim_text": "Subject's cell phone was collected",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
-    },
-    {
-      "claim_id": "cl-046",
-      "claim_text": "One California Driver's License was collected",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
-    },
-    {
-      "claim_id": "cl-047",
-      "claim_text": "Subject was transported to Mission Hospital",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
-    },
-    {
       "claim_id": "cl-048",
-      "claim_text": "Scene was secured and processed by OCSD crime scene investigators",
+      "claim_text": "The 911 call reporting the burglary had originated from the subject's own cell phone",
       "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "not_retrieved",
       "evidence_references": [],
@@ -467,7 +542,7 @@
     },
     {
       "claim_id": "cl-049",
-      "claim_text": "OCDASAU investigators responded",
+      "claim_text": "No burglary had actually occurred at 22851 Loumont Drive",
       "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "not_retrieved",
       "evidence_references": [],
@@ -475,7 +550,7 @@
     },
     {
       "claim_id": "cl-050",
-      "claim_text": "Deputy M. Calder signed the report",
+      "claim_text": "Patrol vehicle video recordings from responding units",
       "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "not_retrieved",
       "evidence_references": [],
@@ -483,16 +558,108 @@
     },
     {
       "claim_id": "cl-051",
+      "claim_text": "Eight (8) cartridge casings recovered from scene",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows eight cartridge casings recovered from the scene."
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "One (1) Daisy 340 BB Spring Repeater Pistol, black",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows one Daisy 340 BB Spring Repeater Pistol, black."
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "Subject's clothing items with apparent blood",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "Subject's cell phone",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-055",
+      "claim_text": "One California Driver's License",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-056",
+      "claim_text": "Subject transported to Mission Hospital",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject being transported to Mission Hospital."
+    },
+    {
+      "claim_id": "cl-057",
+      "claim_text": "Scene secured and processed by OCSD crime scene investigators",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-058",
+      "claim_text": "OCDASAU investigators responded",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-059",
+      "claim_text": "Deputy Signature: M. Calder",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows the deputy signing the report, which aligns with the claim."
+    },
+    {
+      "claim_id": "cl-060",
       "claim_text": "Date of Report: June 24, 2020",
       "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
         }
       ],
-      "evidence_observations": "The title card states 'June 24, 2020 AT 0109 HOURS', confirming the date of the report."
+      "evidence_observations": "The video shows the date of the report as June 24, 2020."
     }
   ]
 }

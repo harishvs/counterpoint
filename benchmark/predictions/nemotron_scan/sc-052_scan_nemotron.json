@@ -1,0 +1,575 @@
+{
+  "scenario_id": "sc-052",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 182.11,
+  "total_tokens": 51782,
+  "total_api_calls": 7,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: February 19, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 states the incident date is February 19, 2021."
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 1015 hours",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 states the incident time is 10:28 hours, and the transcript at 1:42 states approximately 10:15 A.M."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Parking lot, La Quinta Inn, 1515 South Coast Drive, Costa Mesa, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows a silver sedan, not a gray 2006 Ford Focus. The location appears to be a parking lot, but the specific address '1515 South Coast Drive' is not visible or mentioned in the clip."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer D. Navarro",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 576.018
+        }
+      ],
+      "evidence_observations": "The video shows a person wearing a blue hat and tan pants, but no officer is clearly identified as Officer D. Navarro. The bodycam perspective is from an officer, but the name is not visible."
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 5831",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Carlos Fuentes, Male, 34 years old, Hispanic",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a female with blonde hair in the back of a white SUV, but the subject (Carlos Fuentes) is described as male. The person in the driver's seat of the gray Ford Focus is not clearly visible as male, and the gender of the subject is not confirmed in this segment."
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer D. Navarro, Officer R. Pham",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 576.018
+        }
+      ],
+      "evidence_observations": "The video shows two officers (one filming, one approaching the passenger side), which aligns with the claim mentioning Officer D. Navarro and Officer R. Pham, but the names are not visible to confirm."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Female front passenger (W-1), Male left rear passenger (W-2)",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a female with blonde hair in the back of a white SUV, but the claim specifies a 'Female front passenger (W-1)'. The person in the front passenger seat of the gray Ford Focus is not clearly visible, and the person in the back of the SUV may not be the same as W-1."
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On February 19, 2021, at approximately 1015 hours, Officer Pham and I were assigned to the Community Policing Unit and were patrolling in a marked CMPD police vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Pham was driving the patrol vehicle and I was seated in the front passenger seat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "While patrolling the parking lot of the La Quinta Inn at 1515 South Coast Drive, I located an occupied gray 2006 Ford Focus parked in a marked parking stall facing south.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a gray Ford Focus, but the claim specifies a '2006 Ford Focus'. The year of the vehicle cannot be confirmed from the video, and the location 'parking lot of the La Quinta Inn at 1515 South Coast Drive' is not visually confirmed."
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I observed the subject seated in the driver seat with his head slumped forward on the steering wheel.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The subject is standing outside the vehicle, not seated in the driver's seat."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Based on my training and experience, I believed the subject may have been under the influence of narcotics.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I approached the driver side of the vehicle while Officer Pham approached the passenger side.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows Officer Molina approaching the driver's side of the vehicle, but the claim states 'Officer Pham approached the passenger side'. The video does not show Officer Pham approaching the passenger side, and the roles of the officers are not clearly defined in this segment."
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I observed three additional occupants: W-1 in the front passenger seat and W-2 in the left rear seat.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a female with blonde hair in the back of a white SUV, but the claim specifies 'W-1 in the front passenger seat'. The person in the front passenger seat of the gray Ford Focus is not clearly visible, and the person in the back of the SUV may not be W-1."
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I recognized W-2 from prior narcotics investigation contacts.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "Officer Pham searched W-2 and located drug paraphernalia on his person.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "W-2 was placed in handcuffs with his hands behind his back.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 576.018
+        }
+      ],
+      "evidence_observations": "The video shows a person lying on the ground behind the right rear bumper of the Ford Focus, which aligns with W-2 being seated there, but the claim states he was handcuffed with hands behind his back, which is not clearly visible."
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "I conversed with the subject.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer conversing with the subject, consistent with the description of conversing with the subject."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "I observed the subject's right hand was bandaged.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a person in the driver's seat of the gray Ford Focus, but the claim states 'I observed the subject's right hand was bandaged'. The subject's hands are not clearly visible in this clip, and the bandage is not observable."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "I instructed the subject to keep his hands on the steering wheel.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 576.018
+        }
+      ],
+      "evidence_observations": "The video shows a person lying on the ground, but it is unclear if they are instructed to keep their hands on the steering wheel, as the person is not in the vehicle during the visible portion."
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The subject repeatedly moved his left hand toward the center console, his waistband, and the area of his left leg.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a person in the driver's seat of the gray Ford Focus, but the claim states 'the subject repeatedly moved his left hand toward the center console, his waistband, and the area of his left leg'. The subject's movements are not clearly visible in this clip, and the specific actions described are not observable."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "I was concerned the subject may have had a weapon and he had not been searched.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a person in the driver's seat of the gray Ford Focus, but the claim states 'I was concerned the subject may have had a weapon and he had not been searched'. The presence of a weapon is not visible, and the claim's assertion about the subject's lack of search is not directly observable."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Officer Pham had W-1 step out of the vehicle and move behind a vehicle parked east of the Ford Focus where he searched her.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 576.018
+        }
+      ],
+      "evidence_observations": "The video shows a woman stepping out of the vehicle and moving behind the white SUV, which aligns with the claim, but the search is not clearly visible."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "W-2 was seated on the asphalt behind the right rear bumper of the Ford Focus.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a person in the back of a white SUV, but the claim states 'W-2 was seated on the asphalt behind the right rear bumper of the Ford Focus'. The person in the back of the SUV may not be W-2, and the location of W-2 is not clearly visible in this clip."
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Without warning, the subject suddenly started the vehicle, placed it in reverse, and accelerated.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a person in the driver's seat of the gray Ford Focus, but the claim states 'the subject suddenly started the vehicle, placed it in reverse, and accelerated'. The subject's actions of starting the vehicle, placing it in reverse, and accelerating are not clearly visible in this clip."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Officer Pham and I shouted commands for the subject to stop.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a person in the driver's seat of the gray Ford Focus, but the claim states 'Officer Pham and I shouted commands for the subject to stop'. The audio evidence of shouting commands is not clearly audible or confirmed in this clip."
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "Officer Pham was unsuccessful in pulling W-2 from the path of the Ford Focus as it reversed.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a person in the back of a white SUV, but the claim states 'Officer Pham was unsuccessful in pulling W-2 from the path of the Ford Focus as it reversed'. The video does not show Officer Pham attempting to pull W-2 from the path of the vehicle, and the outcome of such an attempt is not visible."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The right rear tire ran over W-2's handcuffed hands.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a person in the back of a white SUV, but the claim states 'The right rear tire ran over W-2's handcuffed hands'. The video does not show the right rear tire running over anyone's hands, and the location of W-2 is not clearly visible."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "W-2 was then struck by the open passenger door and front left tire.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a person in the back of a white SUV, but the claim states 'W-2 was then struck by the open passenger door and front left tire'. The video does not show W-2 being struck by the open passenger door or front left tire, and the person in the back of the SUV may not be W-2."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Both Officer Pham and I fired our department-issued handguns at the subject.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a person in the driver's seat of the gray Ford Focus, but the claim states 'Both Officer Pham and I fired our department-issued handguns at the subject'. The video does not show either officer firing their handguns, and there is no audio evidence of gunfire in this clip."
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "I fired three times and Officer Pham fired twice.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video does not show the number of shots fired by Officer Molina or Officer Pham. The claim states 'I fired three times and Officer Pham fired twice', but there is no visual or audio evidence to confirm the number of shots fired."
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "The left rear bumper of the Ford Focus struck the right front bumper of our parked police vehicle.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a gray Ford Focus, but the claim states 'The left rear bumper of the Ford Focus struck the right front bumper of our parked police vehicle'. The video does not show the left rear bumper of the Ford Focus striking the right front bumper of a police vehicle, and the police vehicle is not clearly visible in this clip."
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The subject then put the Ford Focus in drive and started moving forward.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a person in the driver's seat of the gray Ford Focus, but the claim states 'The subject then put the Ford Focus in drive and started moving forward'. The subject's actions of putting the vehicle in drive and starting to move forward are not clearly visible in this clip."
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Officer Pham fired three additional times through the windshield.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 576.018
+        }
+      ],
+      "evidence_observations": "The video does not show Officer Pham firing three additional times through the windshield, as no gunfire or windshield impact is visually confirmed."
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "I fired once toward the subject from the driver side.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a person in the driver's seat of the gray Ford Focus, but the claim states 'I fired once toward the subject from the driver side'. The video does not show the officer firing a shot from the driver's side, and the subject's position is not clearly visible."
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Officers provided CPR until Costa Mesa Fire Department paramedics arrived.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 576.018
+        }
+      ],
+      "evidence_observations": "The video shows a person lying on the ground, but it is unclear if officers provided CPR until paramedics arrived, as no medical personnel are visible in the initial frames."
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "The subject was transported by ambulance to Orange County Global Medical Center where the subject was later pronounced deceased.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "W-2 was also transported to OCGMC and treated for non-life-threatening injuries.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "A Hellcat .380 semi-automatic handgun was located in the right pocket of the subject's jacket.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "The handgun contained a loaded magazine with one round in the chamber.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Body-worn camera footage was collected as evidence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Ten (10) cartridge cases, WIN 9MM LUGER were collected as evidence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "One (1) Hellcat .380 ACP handgun, Serial Number 03886 was collected as evidence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Clothing items from the subject were collected as evidence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Subject transported to OCGMC, pronounced deceased.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "W-2 treated for non-life-threatening injuries.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Scene secured for OCDA investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Officer Signature: D. Navarro",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 576.018
+        }
+      ],
+      "evidence_observations": "The video shows a person lying on the ground, but it is unclear if the officer signature is D. Navarro, as the officer's name is not visible."
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Date of Report: February 19, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The text on screen at 00:03 states 'Date of Report: February 19, 2021'."
+    }
+  ]
+}

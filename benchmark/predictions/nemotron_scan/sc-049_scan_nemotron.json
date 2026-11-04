@@ -1,0 +1,535 @@
+{
+  "scenario_id": "sc-049",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 123.49,
+  "total_tokens": 39634,
+  "total_api_calls": 6,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-049",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: June 24, 2020",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card states 'June 24, 2020 AT 0109 HOURS', which aligns with the claim of June 24, 2020."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 0110 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 436.813787
+        }
+      ],
+      "evidence_observations": "The timestamp on the bodycam footage shows '01:12:31' at the start of the clip, indicating the time is approximately 01:12, not 01:10 as claimed."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: 22851 Loumont Drive, Lake Forest, CA",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card states '22851 Loumont Drive, Lake Forest', matching the claim."
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Deputy J. Navarro",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 8392",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Kaylee Morgan, Female, 28 years old, all black clothing",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows a person standing on the sidewalk, but it is too dark and distant to confirm if they are wearing all black clothing or if they are female."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Deputy J. Navarro, Deputy M. Chen, Deputy R. Vega, Deputy L. Park",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witness(es): Resident at 22851 Loumont Drive",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "On June 24, 2020, at approximately 0110 hours, I was dispatched to 22851 Loumont Drive, Lake Forest, regarding a residential burglary in progress.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The reporting party, a female, stated via 911 that someone had broken a side window and entered the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The reporting party stated she was hiding in the bathroom and her boyfriend was in a closet.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript shows the subject stating 'he's hiding in the closet and I'm hiding in the bathroom'."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "At approximately 0115 hours, I arrived on Loumont Drive, parking three houses east of the target address.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I turned off my headlights and patrol vehicle lights as I approached.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I exited my vehicle and walked west toward 22851 Loumont Drive, using my flashlight to scan the area.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "At approximately 0116 hours, while approaching, I observed a gray sedan parked on the north side of the street directly in front of 22855 Loumont Drive.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "I heard a sound from my left.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "Audio transcript at 01:46 states 'he's hiding he's hiding yeah where is he hiding we're hiding he's'."
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "I turned and observed the subject standing on the north sidewalk, under a street light, approximately 15 feet south of my position.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows a person standing on the sidewalk under a street light, but it is too dark and distant to confirm if they are approximately 15 feet south of the officer's position."
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The subject was dressed entirely in black and had the hood of her sweatshirt pulled up over her head.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows a person standing on the sidewalk, but it is too dark and distant to confirm if they are dressed entirely in black with a hood up."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "I immediately noticed the subject was holding a dark object in her left hand at waist level.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows a person standing on the sidewalk, but it is too dark and distant to confirm if they are holding a dark object in their left hand at waist level."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "I drew my weapon and illuminated the subject with my flashlight.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows a person standing on the sidewalk, but it is too dark and distant to confirm if the officer drew a weapon and illuminated the subject with a flashlight."
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "I immediately identified the object as a black handgun.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows a person standing on the sidewalk, but it is too dark and distant to confirm if they were holding a black handgun."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "I ordered the subject: \"Let me see your hands! Drop it! Get on the ground!\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The officer is heard giving commands to the subject, consistent with the claim of ordering the subject to drop the weapon and get on the ground."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "The subject did not comply with any commands.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The subject does not appear to comply with the officer's commands during the clip."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "At approximately 0117 hours, Deputies Vega and Chen arrived on scene in separate vehicles.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "I broadcast that I had a suspect at gunpoint.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The subject then raised the handgun to chest height with both hands and began walking across the street in my direction.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows a person walking across the street, but it is too dark and distant to confirm if they raised the handgun to chest height and began walking toward the officer."
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "At 0118 hours, I observed the subject suddenly lower the weapon, turn away from me, and walk back toward the tree line.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows a person walking back toward the tree line, but it is too dark and distant to confirm if they lowered the weapon and turned away."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject paused briefly, then turned to face me again.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The subject pauses briefly and then turns to face the officer again, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "I requested a K-9 unit via radio.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "At approximately 0119 hours, the subject once again raised the handgun with both hands, pointed it directly at Deputy Vega, and began advancing toward our position.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows a person raising a handgun and advancing, but it is too dark and distant to confirm if they pointed it directly at Deputy Vega and began advancing toward the position."
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Deputies Vega, Chen, and I opened fire simultaneously.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The officer and two other individuals (presumably Deputies Vega and Chen) open fire simultaneously, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "A total of eight rounds were fired by the three deputies within approximately two seconds.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "Three individuals fire weapons within a short timeframe, consistent with the claim of eight rounds fired within approximately two seconds."
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The subject fell to the ground and released the weapon.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The subject falls to the ground and releases the weapon, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "At 0120 hours, I approached the subject with Deputies Chen and Vega.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The officer approaches the subject with two other individuals, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Deputy Vega kicked the weapon away from the subject's reach.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "One individual kicks the weapon away from the subject's reach, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Upon inspection, Deputy Vega determined the weapon appeared to be a replica or BB gun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Deputies assessed the subject's condition and began administering first aid.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "At approximately 0125 hours, OCFA Engine #19 arrived on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Paramedics initiated treatment.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "At 0134 hours, the subject was transported by ambulance to Mission Hospital.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "At approximately 0131 hours, I made contact with a resident at 22851 Loumont Drive.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "The resident stated that no one in the household had called 911, and they had been asleep when the commotion began.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Body-worn camera footage (four deputies)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The video clip shows body-worn camera footage from four deputies, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Eight (8) cartridge cases",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "Eight cartridge cases are visible on the ground after the incident, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "One (1) black handgun (determined to be a BB gun)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "A black handgun is visible on the ground after the subject falls, consistent with the claim (though the claim notes it was determined to be a BB gun)."
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Cell phone belonging to subject",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Subject transported to Mission Hospital.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Subject subsequently pronounced deceased.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Scene secured for OCDA investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    }
+  ]
+}

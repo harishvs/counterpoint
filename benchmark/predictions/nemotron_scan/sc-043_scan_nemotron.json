@@ -1,0 +1,277 @@
+{
+  "scenario_id": "sc-043",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 272.19,
+  "total_tokens": 49770,
+  "total_api_calls": 10,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-043",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: September 13, 2022",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately Approximately 1700 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video timestamp indicates the time is approximately 08:00 hours (8:00 AM), contradicting the claim of approximately 1700 hours (5:00 PM)."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: Westminster, CA",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video clip displays text indicating the incident location is 9081 Bolsa Avenue, Westminster, California, which matches the claim."
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer B. Lennox",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 8312",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer B. Lennox, Officer G. Vang",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The audio identifies 'Officer Doan' and 'Officer Bouffard', but the claim states 'Officer B. Lennox' and 'Officer G. Vang', indicating a potential conflict in officer identification."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "On September 13, 2022, at approximately 1700 hours, officers responded to a report of a male subject armed with a metal pole behaving erratically in the area.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The subject is seen holding a long object resembling a pipe or pole and walking erratically in a foggy environment."
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Surveillance footage from a nearby business showed the subject striking vehicles and a fire hydrant with the pole.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Vang and I arrived on scene and observed the subject holding a metal pole in his right hand.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The audio states 'get out of here' and 'put the part down', but the claim specifies the subject was holding a 'metal pole in his right hand', which is not clearly confirmed in this segment."
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "We identified ourselves as police officers and commanded the subject to drop the pole.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The audio includes commands like 'stop walking' and 'put the part down', but the claim states officers identified themselves as police and commanded the subject to drop the pole, which is not clearly heard in this segment."
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The subject did not comply and advanced toward officers in an aggressive posture with the pole raised in a batter stance.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The subject is walking away from the officer initially and does not appear to be in an aggressive posture with the pole raised in a batter stance during this segment."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I deployed my department-issued TASER, which did not have the desired effect.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The audio contains the phrase 'Hey, if you got a shot on the taser, get it,' indicating the officer deployed a taser."
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I then transitioned to my duty firearm.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The officer is clearly holding and aiming a duty firearm (pistol) throughout the clip, indicating transition to or readiness with a firearm."
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject continued advancing despite commands to stop.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The subject is walking away from the officer and does not appear to be advancing toward officers in this segment."
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I fired five rounds from my duty weapon.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The subject fell to the ground.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a subject on the ground after the confrontation, consistent with falling to the ground."
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "Officers immediately approached, handcuffed the subject, and began administering medical aid.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows officers approaching the subject on the ground, with one officer stating 'You guys good?' and another instructing to 'Roll so we can help you,' indicating handcuffing and medical aid."
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "Paramedics were called and arrived within minutes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "The subject communicated in Vietnamese during portions of the encounter.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The audio does not indicate the subject communicating in Vietnamese; the commands heard are in English."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Body-worn camera footage",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video clip shows body-worn camera footage of the incident."
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows officers securing the scene and requesting unit backup, indicating the scene is being secured for investigation."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Officer Signature: Lennox",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Date of Report: September 13, 2022",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    }
+  ]
+}

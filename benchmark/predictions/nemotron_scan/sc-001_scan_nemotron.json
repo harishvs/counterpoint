@@ -2,8 +2,8 @@
   "scenario_id": "sc-001",
   "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
   "pipeline": "scan",
-  "processing_time_seconds": 163.52,
-  "total_tokens": 48601,
+  "processing_time_seconds": 165.81,
+  "total_tokens": 48898,
   "total_api_calls": 7,
   "claims": [
     {
@@ -17,20 +17,20 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The transcript states 'February 19, 2021' and the text slide confirms 'FEBRUARY 19, 2021'."
+      "evidence_observations": "The transcript states 'February 19, 2021' and the text slide at 0:41 confirms 'On February 19, 2021, at approximately 10:15 A.M.'"
     },
     {
       "claim_id": "cl-002",
       "claim_text": "Time of Incident: Approximately 1015 hours",
-      "evidence_relationship": "supported",
+      "evidence_relationship": "potential_conflict",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
         }
       ],
-      "evidence_observations": "The transcript states 'at approximately 10:15 A.M.' and the text slide confirms '10:28 HOURS'."
+      "evidence_observations": "The video shows a timestamp of 10:28:17, which is approximately 1028 hours, not 1015 hours."
     },
     {
       "claim_id": "cl-003",
@@ -48,15 +48,10 @@
     {
       "claim_id": "cl-004",
       "claim_text": "Reporting Officer: Officer J. Reyes",
-      "evidence_relationship": "potential_conflict",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
-        }
-      ],
-      "evidence_observations": "The video shows an officer speaking, but the name 'Officer J. Reyes' is not confirmed. The officer's voice is heard, but the name is not stated in the transcript or visible in the video."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-005",
@@ -77,7 +72,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The transcript states the subject was in the driver's seat, while the claim states the subject was in the passenger seat."
+      "evidence_observations": "The text slide at 0:41 states the subject is 'Jose David Valdez', while the claim states 'Marcus Deleon'. The transcript at 1:41 states 'Valdez was in the driver seat'."
     },
     {
       "claim_id": "cl-007",
@@ -86,11 +81,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 500.0,
+          "end_seconds": 576.018
         }
       ],
-      "evidence_observations": "The video shows Officer Molina (not J. Reyes or T. Sandoval) interacting with the subject. The officer's name is not confirmed as J. Reyes or T. Sandoval in the clip."
+      "evidence_observations": "The video shows two officers, but does not clearly identify them as Officer J. Reyes and Officer T. Sandoval."
     },
     {
       "claim_id": "cl-008",
@@ -99,11 +94,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The video shows a female passenger with long blonde hair, but the claim specifies a 'front-seat passenger' while the video shows her exiting the vehicle from the rear passenger side. The claim also mentions a male rear-seat passenger, but the video shows a male passenger in the front passenger seat initially."
+      "evidence_observations": "The clip shows a male passenger (W-2) and a female driver (W-1), but the claim specifies a female front-seat passenger (W-1) and a male rear-seat passenger (W-2). The video shows the female in the driver's seat and the male in the front passenger seat, contradicting the claim's seating arrangement."
     },
     {
       "claim_id": "cl-009",
@@ -132,7 +127,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The claim states the vehicle was parked in a marked stall facing north, but the transcript states the vehicle was 'slumped over the steering wheel' and 'ran over one of his passengers'."
+      "evidence_observations": "The text slide at 0:41 states the vehicle is a '2006 Ford Focus' and the transcript at 1:41 states 'Valdez was in the driver seat', while the claim states 'gray 2006 Ford Focus parked in a marked stall facing north'."
     },
     {
       "claim_id": "cl-012",
@@ -145,7 +140,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The claim states the subject was in the front passenger seat, but the transcript states the subject was in the driver's seat."
+      "evidence_observations": "The text slide at 0:41 states 'Valdez was in the driver seat slumped over the steering wheel', while the claim states 'Marcus Deleon, seated in the front passenger seat'."
     },
     {
       "claim_id": "cl-013",
@@ -166,7 +161,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The claim states there were two additional occupants, a female in the driver's seat and a male in the rear seat. The transcript states the subject was in the driver's seat, implying the female was likely the driver and the male was in the rear seat, but the claim's description of the female as being in the driver's seat conflicts with the subject being in the driver's seat."
+      "evidence_observations": "The text slide at 0:41 states 'Valdez was in the driver seat', while the claim states 'a female in the driver's seat (W-1) and a male in the left rear seat (W-2)'."
     },
     {
       "claim_id": "cl-015",
@@ -175,11 +170,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The transcript states 'I approached the passenger side of the vehicle'."
+      "evidence_observations": "The video shows Officer Molina approaching the passenger side of the vehicle and making contact with the subject."
     },
     {
       "claim_id": "cl-016",
@@ -188,102 +183,72 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The transcript states 'I instructed the subject to step out of the vehicle and place his hands where I could see them.'"
+      "evidence_observations": "The video shows Officer Molina instructing the subject to put his hands behind his back and interlace his fingers."
     },
     {
       "claim_id": "cl-017",
       "claim_text": "The subject appeared disoriented and was slow to respond to my commands.",
-      "evidence_relationship": "supported",
+      "evidence_relationship": "potential_conflict",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The transcript states 'The subject appeared disoriented and was slow to respond to my commands.'"
+      "evidence_observations": "The video shows the male passenger standing and responding to commands, but the claim states he 'appeared disoriented and was slow to respond'. The video shows him responding relatively quickly and standing upright."
     },
     {
       "claim_id": "cl-018",
       "claim_text": "I observed that the subject's right hand was bandaged.",
-      "evidence_relationship": "potential_conflict",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
-        }
-      ],
-      "evidence_observations": "The video does not show the subject's right hand being bandaged. The officer's hands are visible, but no bandage is apparent on the subject's hand."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-019",
-      "claim_text": "During our conversation, the subject became increasingly agitated and stated, \"You're not taking me in, I'll kill you before that happens.\"",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The transcript states 'the subject became increasingly agitated and stated, \"You're not taking me in, I'll kill you before that happens.\"'"
+      "claim_text": "the subject became increasingly agitated and stated, \"You're not taking me in, I'll kill you before that happens.\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-020",
       "claim_text": "Officer Sandoval approached the driver's side and made contact with W-1.",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The transcript states 'Officer Sandoval approached the driver's side and made contact with W-1.'"
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-021",
       "claim_text": "Officer Sandoval recognized W-2 from prior narcotics investigations and removed W-2 from the vehicle to conduct a search.",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The transcript states 'Officer Sandoval recognized W-2 from prior narcotics investigations and removed W-2 from the vehicle to conduct a search.'"
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-022",
       "claim_text": "Officer Sandoval located drug paraphernalia on W-2's person and placed W-2 in handcuffs.",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The transcript states 'Officer Sandoval located drug paraphernalia on W-2's person and placed W-2 in handcuffs.'"
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-023",
       "claim_text": "W-2 was seated on the pavement behind the rear bumper of the Ford Focus.",
-      "evidence_relationship": "potential_conflict",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
-        }
-      ],
-      "evidence_observations": "The video shows the female passenger exiting the vehicle from the rear passenger side and sitting on the pavement behind the rear bumper of the Saturn Vue, not the Ford Focus mentioned in the claim."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-024",
@@ -292,11 +257,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The transcript states 'Without warning, the subject reached across to the driver's side, started the vehicle, and slowly began to roll the vehicle backward.'"
+      "evidence_observations": "The video shows the subject reaching across to the driver's side and starting the vehicle, which then begins to roll backward."
     },
     {
       "claim_id": "cl-025",
@@ -305,11 +270,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The transcript states 'I immediately gave loud verbal commands for the subject to stop the vehicle and put it in park.'"
+      "evidence_observations": "The video shows the officer giving loud verbal commands for the subject to stop the vehicle and put it in park."
     },
     {
       "claim_id": "cl-026",
@@ -318,11 +283,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The transcript states 'As the vehicle continued to reverse, I observed W-2 move clear of the vehicle's path.'"
+      "evidence_observations": "The video shows the subject continuing to reverse the vehicle, and the officer observing W-2 move clear of the vehicle's path."
     },
     {
       "claim_id": "cl-027",
@@ -331,24 +296,24 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The transcript states 'The rear bumper of the Ford Focus made contact with the front bumper of our patrol vehicle.'"
+      "evidence_observations": "The video shows the rear bumper of the Ford Focus making contact with the front bumper of the patrol vehicle."
     },
     {
       "claim_id": "cl-028",
-      "claim_text": "The subject shifted the vehicle into drive and accelerated forward in the direction of Officer Sandoval, who was standing directly in the vehicle's path.",
+      "claim_text": "the subject shifted the vehicle into drive and accelerated forward in the direction of Officer Sandoval, who was standing directly in the vehicle's path.",
       "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The transcript states 'The subject shifted the vehicle into drive and accelerated forward in the direction of Officer Sandoval, who was standing directly in the vehicle's path.'"
+      "evidence_observations": "The video shows the subject shifting the vehicle into drive and accelerating forward in the direction of Officer Molina, who is standing in the vehicle's path."
     },
     {
       "claim_id": "cl-029",
@@ -357,11 +322,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The transcript states 'Fearing for the safety of Officer Sandoval and the remaining witnesses, I discharged my firearm three times toward the vehicle.'"
+      "evidence_observations": "The video shows the officer discharging his firearm three times toward the vehicle."
     },
     {
       "claim_id": "cl-030",
@@ -370,24 +335,19 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The transcript states 'Officer Sandoval simultaneously discharged his firearm twice through the front windshield.'"
+      "evidence_observations": "The video shows Officer Molina discharging his firearm twice through the front windshield."
     },
     {
       "claim_id": "cl-031",
       "claim_text": "The vehicle came to a stop after traveling approximately 15 feet forward.",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The transcript states 'The vehicle came to a stop after traveling approximately 15 feet forward.'"
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-032",
@@ -396,11 +356,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The transcript states 'I approached the vehicle and observed the subject was unresponsive.'"
+      "evidence_observations": "The video shows the officer approaching the vehicle and observing the subject was unresponsive."
     },
     {
       "claim_id": "cl-033",
@@ -409,141 +369,91 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The transcript states 'Officer Sandoval and I removed the subject from the vehicle and immediately began administering CPR.'"
+      "evidence_observations": "The video shows Officer Molina and Officer Lopez removing the subject from the vehicle and beginning to administer CPR."
     },
     {
       "claim_id": "cl-034",
       "claim_text": "Costa Mesa Fire Department paramedics arrived on scene and transported the subject to Orange County Global Medical Center, where the subject was later pronounced deceased.",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The transcript states 'Costa Mesa Fire Department paramedics arrived on scene and transported the subject to Orange County Global Medical Center, where the subject was later pronounced deceased.'"
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-035",
       "claim_text": "A search of the subject's person revealed a loaded Hellcat .380 semi-automatic handgun in the right pocket of his jacket.",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The transcript states 'A search of the subject's person revealed a loaded Hellcat .380 semi-automatic handgun in the right pocket of his jacket.'"
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-036",
       "claim_text": "The weapon had a loaded magazine but no round in the chamber.",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The transcript states 'The weapon had a loaded magazine but no round in the chamber.'"
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-037",
       "claim_text": "Body-worn camera footage (approximately 25 minutes)",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The transcript states 'Body-worn camera footage (approximately 25 minutes)'."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-038",
       "claim_text": "Ten (10) cartridge cases, WIN 9MM LUGER",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The transcript states 'Ten (10) cartridge cases, WIN 9MM LUGER'."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-039",
       "claim_text": "One (1) Hellcat .380 ACP handgun, Serial Number 03886",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The transcript states 'One (1) Hellcat .380 ACP handgun, Serial Number 03886'."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-040",
       "claim_text": "Clothing items from the subject",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The transcript states 'Clothing items from the subject'."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-041",
       "claim_text": "Passenger side rearview mirror housing",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The transcript states 'Passenger side rearview mirror housing'."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-042",
       "claim_text": "Subject transported to OCGMC, pronounced deceased.",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The transcript states 'Subject transported to OCGMC, pronounced deceased.'"
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-043",
       "claim_text": "W-2 treated for non-life-threatening injuries.",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The transcript states 'W-2 treated for non-life-threatening injuries.'"
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-044",
@@ -552,24 +462,19 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The transcript states 'Scene secured for investigation.'"
+      "evidence_observations": "The video shows the scene being secured for investigation as the officers continue to interact with the occupants."
     },
     {
       "claim_id": "cl-045",
       "claim_text": "Officer Signature: J. Reyes",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The transcript states 'Officer Signature: J. Reyes'."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-046",
@@ -582,7 +487,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The transcript states 'Date of Report: February 19, 2021'."
+      "evidence_observations": "The text slide at 0:41 states 'Date of Report: February 19, 2021'."
     }
   ]
 }

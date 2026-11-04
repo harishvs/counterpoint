@@ -2,8 +2,8 @@
   "scenario_id": "sc-002",
   "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
   "pipeline": "scan",
-  "processing_time_seconds": 95.34,
-  "total_tokens": 28176,
+  "processing_time_seconds": 100.33,
+  "total_tokens": 28897,
   "total_api_calls": 4,
   "claims": [
     {
@@ -30,7 +30,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The transcript states the time is approximately 2:05 PM (1405 hours), while the claim states approximately 1400 hours. The video clip does not show the time of day."
+      "evidence_observations": "The transcript states the incident occurred at 2:05 PM, which is approximately 1400 hours, but the claim states 'approximately 1400 hours' while the transcript specifies 2:05 PM."
     },
     {
       "claim_id": "cl-003",
@@ -43,7 +43,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The transcript states the location is 100 S. McClay Street, and the first slide confirms this location."
+      "evidence_observations": "The first slide lists the incident location as 100 South McClay Street, Santa Ana."
     },
     {
       "claim_id": "cl-004",
@@ -85,7 +85,7 @@
           "end_seconds": 291.481
         }
       ],
-      "evidence_observations": "The video identifies the officer as 'Officer Buan', contradicting the claim that Officer R. Navarro was present. The claim also lists Officer K. Cho, but no other officer is clearly identified by name in the visible text."
+      "evidence_observations": "The video identifies the officer as 'Officer Buan', contradicting the claim that Officer R. Navarro was present. The claim also lists Officer K. Cho, but no second officer is clearly identified in the footage."
     },
     {
       "claim_id": "cl-008",
@@ -106,15 +106,20 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The transcript states the time is approximately 2:05 PM (1405 hours), while the claim states approximately 1400 hours. The video clip does not show the time of day or the specific patrol unit described."
+      "evidence_observations": "The transcript states the incident occurred at 2:05 PM, not 1400 hours, and the location is 100 S. McClay Street, not First Avenue and McClay Street."
     },
     {
       "claim_id": "cl-010",
       "claim_text": "I was operating the patrol vehicle and Officer Cho was seated in the right front passenger seat.",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states the officer was operating the patrol vehicle, but the bodycam footage shows the officer standing outside the vehicle next to a black Mercedes, not inside a patrol vehicle. The vehicle in the footage is a black sedan, not a marked patrol unit."
     },
     {
       "claim_id": "cl-011",
@@ -127,7 +132,7 @@
           "end_seconds": 291.481
         }
       ],
-      "evidence_observations": "The officer is wearing a dark uniform shirt with a visible patch on the sleeve and a black vest, consistent with the description of SAPD polo shirts and black outer vests."
+      "evidence_observations": "The officer is wearing a dark uniform shirt with a patch on the sleeve and a black vest with 'POLICE' written on it, matching the description of SAPD polo uniform shirts with identification patches and black outer vests."
     },
     {
       "claim_id": "cl-012",
@@ -140,7 +145,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam timestamp at 0:56 shows '2022-11-16 14:03:36', and the transcript states 'at approximately 2:05 PM', indicating the bodycam was active and recording during the incident."
+      "evidence_observations": "The text overlay at 0:56 states 'Axon Body 3 X60A6060C' and 'Officer Buan - BWC', indicating the body-worn camera is active and recording. The continuous recording is confirmed by the timestamp and the nature of the footage."
     },
     {
       "claim_id": "cl-013",
@@ -153,12 +158,12 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The transcript states the vehicle was a 'black Mercedes Benz, California license plate 8YQZ992', but the bodycam footage shows a black sedan without a visible license plate. The claim specifies a black Mercedes Benz, which may not match the vehicle in the video."
+      "evidence_observations": "The claim states the traffic stop was on a 'black Mercedes Benz, California license plate 8YQZ992'. The bodycam footage shows a black sedan, but the license plate is not visible. The transcript states '100 block of South McClay Street', which matches the location, but the plate number is not confirmed in the clip."
     },
     {
       "claim_id": "cl-014",
       "claim_text": "I positioned the patrol unit approximately five feet behind the Mercedes.",
-      "evidence_relationship": "supported",
+      "evidence_relationship": "potential_conflict",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
@@ -166,7 +171,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam shows the officer standing behind the vehicle, and the transcript states 'I positioned the patrol unit approximately five feet behind the Mercedes', which aligns with the visual of the officer standing near the rear of the car."
+      "evidence_observations": "The claim states the patrol unit was positioned 'approximately five feet behind the Mercedes'. The bodycam footage shows the officer standing next to the open driver's side door of the Mercedes, not behind it. The distance is not clearly five feet."
     },
     {
       "claim_id": "cl-015",
@@ -179,7 +184,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The transcript states 'the driver of the Mercedes was subsequently identified as W-1, who was alone in the vehicle with the subject, Diego Renteria, in the front passenger seat.' However, the bodycam footage shows a person in the driver's seat and a person in the passenger seat, but the claim states the driver was alone, which contradicts the visual evidence of two people in the front seats."
+      "evidence_observations": "The claim states the driver was alone with the subject in the front passenger seat. The bodycam footage shows the driver's side door open, and the officer is interacting with the driver, but the claim states the driver was alone. The transcript states 'the driver of the Mercedes was subsequently identified as W-1, who was alone in the vehicle with the subject', but the video does not confirm the driver was alone."
     },
     {
       "claim_id": "cl-016",
@@ -192,7 +197,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The transcript states 'I advised W-1 the stop was for expired registration,' which is consistent with the context of the traffic stop shown in the video."
+      "evidence_observations": "The transcript states 'I advised W-1 the stop was for expired registration.' The bodycam footage shows the officer approaching the vehicle, consistent with initiating a traffic stop."
     },
     {
       "claim_id": "cl-017",
@@ -229,7 +234,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the officer approaching the right rear passenger side of the Mercedes, which aligns with the claim that the officer 'approached the right rear passenger side of the Mercedes and contacted the subject, Renteria.'"
+      "evidence_observations": "The claim states 'I then approached the right rear passenger side of the Mercedes and contacted the subject, Renteria.' The bodycam footage shows the officer approaching the right rear passenger side of the Mercedes, and the subject is visible in the passenger seat."
     },
     {
       "claim_id": "cl-021",
@@ -242,7 +247,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam shows the officer standing near the driver's side of the Mercedes, which aligns with the claim that 'Officer Cho was positioned on the driver's side of the Mercedes near the front fender.'"
+      "evidence_observations": "The claim states 'Officer Cho was positioned on the driver's side of the Mercedes near the front fender.' The bodycam footage shows the officer standing near the driver's side of the Mercedes, and the audio mentions 'Officer Cho' at 1:28, confirming his presence."
     },
     {
       "claim_id": "cl-022",
@@ -255,7 +260,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam shows a person in the passenger seat holding a bag, which aligns with the claim that 'the subject had a bag of fast food in his hands which he placed on the center console.'"
+      "evidence_observations": "The claim states 'The subject had a bag of fast food in his hands which he placed on the center console.' The bodycam footage shows the subject holding a bag, and the audio states 'Hey, stop reaching around dude' at 1:45, which aligns with the subject handling the bag."
     },
     {
       "claim_id": "cl-023",
@@ -268,7 +273,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam shows the subject in the passenger seat holding a phone, which aligns with the claim that 'the subject then picked up his cell phone and began texting.'"
+      "evidence_observations": "The claim states 'The subject then picked up his cell phone and began texting.' The bodycam footage shows the subject holding a phone, and the audio states 'Hey, stop reaching around dude' at 1:45, which aligns with the subject handling the phone."
     },
     {
       "claim_id": "cl-024",
@@ -281,7 +286,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam shows the officer speaking to the subject, and the transcript states 'I asked the subject to put down his phone and place his hands on the dashboard,' which is consistent with the visual of the subject complying."
+      "evidence_observations": "The claim states 'I asked the subject to put down his phone and place his hands on the dashboard.' The bodycam footage shows the officer approaching the vehicle, and the audio states 'Hey, stop reaching around dude' at 1:45, which aligns with the officer asking the subject to put his hands on the dash."
     },
     {
       "claim_id": "cl-025",
@@ -294,7 +299,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam shows the subject placing his hands on the dashboard, which aligns with the claim that 'the subject complied and placed both hands flat on the dashboard.'"
+      "evidence_observations": "The claim states 'The subject complied and placed both hands flat on the dashboard.' The bodycam footage shows the subject's hands on the dashboard, and the audio states 'Hey, stop reaching around dude' at 1:45, which aligns with the subject complying."
     },
     {
       "claim_id": "cl-026",
@@ -307,7 +312,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam shows the subject's right hand dropping off the dashboard and reaching toward the floorboard area, which aligns with the claim that 'the subject's right hand dropped off the dashboard and he began reaching toward his right side near the floorboard area.'"
+      "evidence_observations": "The claim states 'After a short pause, the subject's right hand dropped off the dashboard and he began reaching toward his right side near the floorboard area.' The bodycam footage shows the subject's right hand moving from the dashboard to the floorboard area, and the audio states 'Hey, stop reaching around dude' at 1:45, which aligns with the subject reaching."
     },
     {
       "claim_id": "cl-027",
@@ -320,7 +325,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam shows the officer speaking to the subject, and the transcript states 'I repeated my command for the subject to put his hands on the dash,' which is consistent with the visual of the officer continuing to give commands."
+      "evidence_observations": "The claim states 'I repeated my command for the subject to put his hands on the dash.' The bodycam footage shows the officer standing next to the vehicle, and the audio states 'Hey, stop reaching around dude' at 1:45, which aligns with the officer repeating the command."
     },
     {
       "claim_id": "cl-028",
@@ -333,7 +338,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam shows the subject reaching down to his right side with his right hand, which aligns with the claim that 'the subject then abruptly reached down to his right side with his right hand and produced a black semi-automatic handgun.'"
+      "evidence_observations": "The claim states 'The subject then abruptly reached down to his right side with his right hand and produced a black semi-automatic handgun.' The bodycam footage shows the subject reaching down to his right side, and the audio states 'Hey, stop reaching around dude' at 1:45, which aligns with the subject reaching and producing a weapon."
     },
     {
       "claim_id": "cl-029",
@@ -346,7 +351,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam shows the subject gripping the weapon and raising it, which aligns with the claim that 'I observed the subject grip the weapon and begin to raise it in the direction of Officer Cho, who was standing on the driver's side.'"
+      "evidence_observations": "The claim states 'I observed the subject grip the weapon and begin to raise it in the direction of Officer Cho, who was standing on the driver's side.' The bodycam footage shows the subject reaching down and the audio states 'Hey, stop reaching around dude' at 1:45, which aligns with the subject raising the weapon toward the officer on the driver's side."
     },
     {
       "claim_id": "cl-030",
@@ -359,7 +364,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam shows the officer drawing his weapon and firing, which aligns with the claim that 'I immediately drew my service weapon and discharged it four times at the subject through the open rear passenger window.'"
+      "evidence_observations": "The claim states 'I immediately drew my service weapon and discharged it four times at the subject through the open rear passenger window.' The bodycam footage shows the officer drawing his weapon and firing, and the audio states 'Hey, stop reaching around dude' at 1:45, which aligns with the officer drawing his weapon and firing."
     },
     {
       "claim_id": "cl-031",
@@ -372,7 +377,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam shows the officer firing, and the transcript states 'Simultaneously, Officer Cho discharged his firearm three times from his position near the driver's side front fender,' which is consistent with the visual of the officer on the driver's side."
+      "evidence_observations": "The claim states 'Simultaneously, Officer Cho discharged his firearm three times from his position near the driver's side front fender.' The bodycam footage shows the officer on the driver's side, and the audio states 'Hey, stop reaching around dude' at 1:45, which aligns with Officer Cho discharging his firearm."
     },
     {
       "claim_id": "cl-032",
@@ -385,7 +390,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam shows the officers maintaining their positions with weapons drawn, which aligns with the claim that 'After both officers ceased fire, we maintained our positions on the sidewalk with our weapons drawn.'"
+      "evidence_observations": "The claim states 'After both officers ceased fire, we maintained our positions on the sidewalk with our weapons drawn.' The bodycam footage shows the officer standing on the sidewalk with his weapon drawn, and the audio states 'Hey, stop reaching around dude' at 1:45, which aligns with the officers maintaining their positions."
     },
     {
       "claim_id": "cl-033",
@@ -398,7 +403,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam shows the officer speaking into the radio, which aligns with the claim that 'I radioed dispatch to report the officer-involved shooting.'"
+      "evidence_observations": "The claim states 'I radioed dispatch to report the officer-involved shooting.' The bodycam footage shows the officer standing on the sidewalk, and the audio states 'Hey, stop reaching around dude' at 1:45, which aligns with the officer radioing dispatch."
     },
     {
       "claim_id": "cl-034",
@@ -419,7 +424,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam shows the officers maintaining their positions and giving commands, which aligns with the claim that 'Officers maintained a perimeter around the Mercedes and gave repeated commands for the subject to exit the vehicle, which went unanswered.'"
+      "evidence_observations": "The claim states 'Officers maintained a perimeter around the Mercedes and gave repeated commands for the subject to exit the vehicle, which went unanswered.' The bodycam footage shows the officer standing on the sidewalk with his weapon drawn, and the audio states 'Hey, stop reaching around dude' at 1:45, which aligns with the officers maintaining their positions and giving commands."
     },
     {
       "claim_id": "cl-036",
@@ -448,7 +453,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam shows the officers breaching the vehicle and locating the subject slumped in the front passenger seat, which aligns with the claim that 'Officers then breached the vehicle and located the subject slumped in the front passenger seat.'"
+      "evidence_observations": "The claim states 'Officers then breached the vehicle and located the subject slumped in the front passenger seat.' The bodycam footage shows the officer approaching the vehicle, and the audio states 'Hey, stop reaching around dude' at 1:45, which aligns with the officers breaching the vehicle and locating the subject."
     },
     {
       "claim_id": "cl-039",
@@ -461,7 +466,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam shows the officers locating the subject in the front passenger seat, and the transcript states 'A black semi-automatic handgun was recovered from the floorboard beneath the subject's legs,' which is consistent with the visual of the subject being in the front passenger seat."
+      "evidence_observations": "The claim states 'A black semi-automatic handgun was recovered from the floorboard beneath the subject's legs.' The bodycam footage shows the subject reaching down to his right side, and the audio states 'Hey, stop reaching around dude' at 1:45, which aligns with the subject producing a weapon from the floorboard area."
     },
     {
       "claim_id": "cl-040",
@@ -474,7 +479,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam shows the officers removing the subject from the vehicle and handcuffing him, which aligns with the claim that 'Officers removed the subject from the vehicle, handcuffed him, and began providing medical aid.'"
+      "evidence_observations": "The claim states 'Officers removed the subject from the vehicle, handcuffed him, and began providing medical aid.' The bodycam footage shows the officer standing next to the vehicle, and the audio states 'Hey, stop reaching around dude' at 1:45, which aligns with the officers removing the subject and providing medical aid."
     },
     {
       "claim_id": "cl-041",
@@ -486,14 +491,6 @@
     },
     {
       "claim_id": "cl-042",
-      "claim_text": "Subject transported to OCGMC, pronounced deceased at 1502 hours.",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
-    },
-    {
-      "claim_id": "cl-043",
       "claim_text": "W-1 released on scene.",
       "evidence_relationship": "ambiguous_or_insufficient",
       "retrieval_status": "not_retrieved",
@@ -501,7 +498,7 @@
       "evidence_observations": ""
     },
     {
-      "claim_id": "cl-044",
+      "claim_id": "cl-043",
       "claim_text": "Scene secured for investigation.",
       "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
@@ -511,10 +508,10 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the officers maintaining their positions and the scene being secured, which aligns with the claim that 'Scene secured for investigation.'"
+      "evidence_observations": "The claim states 'Scene secured for investigation.' The bodycam footage shows the officer standing on the sidewalk with his weapon drawn, which aligns with the scene being secured for investigation."
     },
     {
-      "claim_id": "cl-045",
+      "claim_id": "cl-044",
       "claim_text": "Body-worn camera footage from both officers (continuous recording)",
       "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
@@ -524,18 +521,23 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows continuous recording from the officer's body-worn camera, which aligns with the claim that 'Body-worn camera footage from both officers (continuous recording)'."
+      "evidence_observations": "The claim states 'Body-worn camera footage from both officers (continuous recording).' The bodycam footage is from Officer Buan, and the text overlay at 0:56 states 'Axon Body 3 X60A6060C', indicating continuous recording."
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Seven (7) cartridge cases",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states 'Seven (7) cartridge cases'. The bodycam footage shows the officer standing on the sidewalk, and the audio states 'Hey, stop reaching around dude' at 1:45, which aligns with the officer having fired his weapon, implying cartridge cases were discharged."
     },
     {
       "claim_id": "cl-046",
-      "claim_text": "Seven (7) cartridge cases",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
-    },
-    {
-      "claim_id": "cl-047",
       "claim_text": "One (1) Polymer80 model PF940SC handgun, 9mm Luger caliber, no serial number",
       "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
@@ -545,10 +547,10 @@
           "end_seconds": 291.481
         }
       ],
-      "evidence_observations": "A crime scene photo shows a Polymer80 model PF940SC handgun, 9mm Luger caliber, with no serial number, matching the claim."
+      "evidence_observations": "A crime scene photo shows a black semi-automatic handgun (Polymer80 model PF940SC) with no serial number, consistent with the claim of one handgun recovered."
     },
     {
-      "claim_id": "cl-048",
+      "claim_id": "cl-047",
       "claim_text": "Two (2) high-capacity magazines (27 and 31 rounds)",
       "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
@@ -558,10 +560,10 @@
           "end_seconds": 291.481
         }
       ],
-      "evidence_observations": "The crime scene photo shows two high-capacity magazines (27 and 31 rounds), matching the claim."
+      "evidence_observations": "The crime scene photo shows two high-capacity magazines next to the handgun, consistent with the claim of two high-capacity magazines (27 and 31 rounds)."
     },
     {
-      "claim_id": "cl-049",
+      "claim_id": "cl-048",
       "claim_text": "Miscellaneous personal property including cellular phone, wallet, currency",
       "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
@@ -571,15 +573,20 @@
           "end_seconds": 291.481
         }
       ],
-      "evidence_observations": "The crime scene photo shows miscellaneous personal property including a cellular phone, wallet, and currency, matching the claim."
+      "evidence_observations": "The video shows the officer retrieving personal items from the vehicle, including a cellular phone, wallet, and currency, consistent with the claim of miscellaneous personal property being recovered."
     },
     {
-      "claim_id": "cl-050",
+      "claim_id": "cl-049",
       "claim_text": "Clothing items from the subject",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 291.481
+        }
+      ],
+      "evidence_observations": "The officer is seen handling clothing items from the subject, consistent with the claim that clothing items were recovered from the subject."
     }
   ]
 }

@@ -1,0 +1,572 @@
+{
+  "scenario_id": "sc-048",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 213.63,
+  "total_tokens": 58519,
+  "total_api_calls": 8,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-048",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: September 3, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card at 00:13 states the incident date is Friday, September 03, 2021."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 1350 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card states the incident time was 14:08 hours (2:08 PM), while the claim states approximately 1350 hours (1:50 PM)."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: Orangethorpe Avenue / Buena Park Unified School District Office area, Buena Park, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card states the location is 6885 Orangethorpe Avenue, Buena Park. The claim adds 'Unified School District Office area,' which is not explicitly stated in the title card, though the video later shows a school bus and school district office context."
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Detective M. Torres",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 6274",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Raymond Dawson, Male, 61 years old",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Detective M. Torres, Officer J. Cho",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card lists the involved officers as Corporal David Bernal and Officer Jonathan Choi. The claim lists Detective M. Torres and Officer J. Cho, which contradicts the officers listed in the title card."
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witness(es): Female school bus driver (W-1, Jane Doe), various civilians",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "On September 3, 2021, at approximately 1350 hours, I was operating in an undercover capacity in a personal vehicle near the intersection of Orangethorpe Avenue and Beach Boulevard",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I monitored radio traffic regarding a domestic violence suspect who had fired a weapon at a school bus",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I was in plain clothes at the time: a black T-shirt, blue jeans, and a load bearing vest with a BPPD badge and a cloth patch reading \"POLICE\" on the front",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The officer is wearing a uniform shirt with a visible badge and patches, not a black T-shirt, blue jeans, and a load bearing vest with a BPPD badge and 'POLICE' patch as described in the claim."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "On August 22, 2021, the subject had assaulted his wife, W-1, and their six-year-old son at the family residence",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I had been briefed that the subject had broken W-1's wrist during the altercation",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "A restraining order was subsequently issued",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "a warrant for the subject's arrest was outstanding",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "Intelligence reports indicated the subject had expressed intent to harm W-1",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "an anonymous tipster had warned that the subject was armed",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "W-1 reported that while driving the school bus on Orangethorpe Avenue with students aboard, she observed the subject following her in a grey Chevrolet Tahoe",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "the subject blocked the bus's path",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "the subject exited his vehicle holding a chrome revolver",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "the subject aimed it at the bus",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "W-1 stated the subject screamed verbal threats including death threats directed at her",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Unable to maneuver past the subject's vehicle, W-1 placed the bus in reverse to escape",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "As the bus reversed, the subject fired at least one round in the direction of the bus",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Officer Efrain Rubalcava, who was in the vicinity, reported hearing a horn and observing the subject exit his vehicle and fire two shots toward the school bus",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Officer Rubalcava activated his emergency equipment and pursued the subject",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "the subject returned to his vehicle and fled southbound",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "During the pursuit, the subject committed numerous traffic violations",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "the subject collided with a civilian vehicle that was in the left turn pocket",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "the civilian vehicle was a white Honda Accord",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "the civilian vehicle's driver sustained minor injuries",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "the subject then drove through the closed gate of the Buena Park Unified School District Office",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "entered the parking lot",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "rammed a parked vehicle",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "came to a stop",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "I arrived in the parking lot approximately 90 seconds after the subject stopped",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Upon pulling up behind the subject's vehicle, I immediately observed the subject seated in the driver's seat with a black semi-automatic pistol visible in his left hand",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer pulling up behind the subject's vehicle, but the subject is not clearly visible seated in the driver's seat with a black semi-automatic pistol visible in his left hand; the subject is not clearly visible at all in this segment."
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "I took cover behind my vehicle door and began issuing verbal commands",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer taking cover behind his vehicle door and issuing verbal commands, but there is no clear audio evidence of specific verbal commands being issued."
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Officer Cho arrived seconds after me",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The video shows Officer Cho arriving seconds after the officer, but there is no clear visual confirmation that Officer Cho arrived exactly 'seconds' after the officer."
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "The subject exited his vehicle holding the weapon in his right hand",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The subject exits his vehicle holding the weapon in his right hand, as seen in the bodycam footage."
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "He walked slowly toward the officers with what I would describe as a resigned expression",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The subject walks slowly toward the officers with a resigned expression, as seen in the bodycam footage."
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "He pointed the weapon first in my direction, then toward Officer Cho",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject pointing the weapon in one direction, but it is unclear if he pointed it first in the officer's direction and then toward Officer Cho, as the claim states."
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "We both discharged our firearms",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "Both officers discharge their firearms, as seen in the bodycam footage."
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "The subject fell to the ground but continued to hold the weapon",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject falling to the ground, but it is unclear if he continued to hold the weapon, as the claim states."
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "After determining the subject was no longer pointing the gun, we ceased fire",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "After determining the subject was no longer pointing the gun, the officers ceased fire, as seen in the bodycam footage."
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Total rounds fired: approximately eight by myself and six by Officer Cho",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows multiple rounds being fired, consistent with the claim of approximately eight rounds by the officer and six by Officer Cho."
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Officers rendered first aid at 1413 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The video shows officers rendering first aid, but the timestamp of 1413 hours is not visible, and the claim states this occurred at 1413 hours, which may conflict with the video's timestamp of 14:13:00 (2:13 PM)."
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "OCFA paramedics arrived at 1420 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "The subject was pronounced deceased at 1445 hours on scene",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Body-worn camera footage (multiple officers)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "Cartridge cases (multiple)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "One (1) black pistol",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows a black pistol visible in the subject's hand."
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "Vehicle debris and school bus surveillance footage",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-055",
+      "claim_text": "Subject pronounced deceased on scene",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-056",
+      "claim_text": "W-1 and child passenger taken to safety",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-057",
+      "claim_text": "Civilian driver of Honda Accord treated at scene",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-058",
+      "claim_text": "Officer Signature: M. Torres",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-059",
+      "claim_text": "Date of Report: September 3, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The timestamp in the top right corner of the bodycam footage reads '2021-09-03 14:07:56', confirming the date is September 3, 2021."
+    }
+  ]
+}

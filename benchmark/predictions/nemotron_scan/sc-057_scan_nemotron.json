@@ -1,0 +1,559 @@
+{
+  "scenario_id": "sc-057",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 147.42,
+  "total_tokens": 46763,
+  "total_api_calls": 7,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: February 19, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 states 'INCIDENT DATE &TIME: FEBRUARY 19, 2021 AT 10:28 HOURS'. The transcript at 1:42 states 'On February 19, 2021, at approximately 10:15 A.M.' This supports the date claim."
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 1015 hours",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 states 'INCIDENT DATE &TIME: FEBRUARY 19, 2021 AT 10:28 HOURS'. The transcript at 1:42 states 'On February 19, 2021, at approximately 10:15 A.M.' This supports the time claim."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Parking lot, La Quinta Inn, 1515 South Coast Drive, Costa Mesa, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows a silver sedan, but the claim specifies a 'silver 2006 Ford Focus'. While the vehicle type is similar, the specific model year and make are not clearly identifiable from the video alone, and the location 'La Quinta Inn, 1515 South Coast Drive' is not visually confirmed."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer R. Vasquez",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The transcript identifies the officer as 'Officer Molina', while the claim states 'Officer R. Vasquez'. The video audio confirms the officer's name is Molina."
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 4891",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Daniel Fuentes, Male, 34, Hispanic",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a male subject in the driver's seat, but the claim specifies 'Daniel Fuentes, Male, 34, Hispanic'. While the gender and ethnicity may align, the name and age are not visible or stated in the clip."
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer R. Vasquez, Officer K. Malone",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript states 'Officer Malone and I were assigned...', but the video is from Officer Lopez's body-worn camera. The claim lists 'Officer R. Vasquez' and 'Officer K. Malone', while the video identifies 'Officer Lopez' and 'Officer Molina'."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Female front-seat passenger (W-1), Male rear-seat passenger (W-2)",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows a male passenger and a female occupant, but the claim specifies 'Female front-seat passenger (W-1), Male rear-seat passenger (W-2)'. The video shows the male passenger in the front seat and the female in the back, contradicting the claim's seating arrangement."
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On February 19, 2021, at approximately 1015 hours, Officer Malone and I were assigned to the Community Policing Unit operating in a marked patrol vehicle.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'On February 19, 2021, at approximately 10:15 A.M., Costalesa Joe Lopez and Eric Molina were assigned to the Crime Prevention (CPU) on routine patrol of La Quinta parking lot.' This supports the claim about assignment to the CPU."
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "While conducting routine patrol of the La Quinta Inn parking lot at 1515 South Coast Drive, I observed an occupied silver 2006 Ford Focus in a marked parking stall.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Officers located a parked 2006 Ford Focus occupied by two males and a female.' This supports the claim about observing an occupied silver 2006 Ford Focus in the parking lot."
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject, later identified as Daniel Fuentes, was seated in the driver's seat with his head resting on the steering wheel.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject was in the driver's seat, but the video shows the subject standing outside the vehicle next to the passenger side door."
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I believed the subject may have been under the influence of controlled substances.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states 'I believed the subject may have been under the influence...', but the video does not show or state this belief. The officer's dialogue focuses on 'detained' due to 'head down' and 'drugs', not a specific belief about influence."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I observed a female occupant (W-1) in the front passenger seat and a male occupant (W-2) in the left rear passenger seat.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states 'female occupant (W-1) in the front passenger seat and a male occupant (W-2) in the left rear passenger seat', but the video shows the male passenger in the front seat and the female in the back, contradicting the claim."
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I approached the driver's side and engaged the subject verbally.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Valdez was in the driver seat slumped over the steering wheel.' This supports the claim that the officer approached the driver's side."
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I asked the subject to keep his hands on the steering wheel.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states 'I asked the subject to keep his hands on the steering wheel', but the video shows the officer asking the subject to 'interlace your fingers' and 'stand up straight', not keep hands on the wheel."
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "The subject's left hand appeared to be wrapped in some kind of cloth.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states 'The subject's left hand appeared to be wrapped in some kind of cloth', but the video shows the officer asking the subject to 'interlace your fingers', indicating no visible cloth wrapping."
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "W-1 mentioned the subject had injured his hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The subject was fidgeting and repeatedly moved his right hand toward the center console area and his waistband.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states 'The subject was fidgeting and repeatedly moved his right hand toward the center console area and his waistband', but the video shows the officer asking the subject to 'interlace your fingers' and 'stand up straight', with no clear visual of fidgeting or hand movement toward the console/waistband."
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "Officer Malone contacted the occupants on the passenger side.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Officers located a parked 2006 Ford Focus occupied by two males and a female.' This supports the claim that Officer Malone contacted the occupants on the passenger side."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Officer Malone recognized W-2 from previous contacts and conducted a search, discovering drug paraphernalia.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows Officer Molina searching the vehicle and the transcript states 'I got a straw over... paraphernalia on him', indicating discovery of drug paraphernalia."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Officer Malone handcuffed W-2 and positioned him on the ground behind the rear bumper of the Focus.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a male subject being handcuffed and positioned on the ground behind the rear bumper of the silver sedan, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Officer Malone then directed W-1 to step out for a search.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The video shows Officer Malone directing the female passenger to step out of the vehicle for a search."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Without warning, the subject started the engine and placed the vehicle in reverse.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Valdez attempted to drive away, ran over one of his passengers and an officer-involved shooting occurred.' This supports the claim that the subject started the engine and placed the vehicle in reverse."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Both Officer Malone and I gave loud verbal commands for the subject to stop the vehicle.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Valdez attempted to drive away, ran over one of his passengers and an officer-involved shooting occurred.' This supports the claim that both officers gave loud verbal commands for the subject to stop the vehicle."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The vehicle accelerated backward rapidly.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Valdez attempted to drive away, ran over one of his passengers and an officer-involved shooting occurred.' This supports the claim that the vehicle accelerated backward rapidly."
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "I heard W-2 screaming behind the vehicle.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states 'I heard W-2 screaming behind the vehicle', but the video does not show W-2 screaming or confirm his location behind the vehicle during this sequence."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The left rear tire of the Focus struck W-2, who was still handcuffed and seated on the ground.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states 'The left rear tire of the Focus struck W-2, who was still handcuffed and seated on the ground', but the video does not show W-2 being struck by the tire or dragged. The clip ends before this event occurs."
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "W-2 was dragged approximately five feet before the vehicle's rear bumper struck our patrol car.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Valdez attempted to drive away, ran over one of his passengers and an officer-involved shooting occurred.' This supports the claim that W-2 was dragged approximately five feet before the vehicle's rear bumper struck their patrol car."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject then shifted into drive and the vehicle began moving forward toward Officer Malone's position.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states 'The subject then shifted into drive and the vehicle began moving forward toward Officer Malone's position', but the video shows the vehicle moving backward, not forward."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Fearing for the safety of Officer Malone and W-1, who were in the path of the vehicle, I discharged my firearm three times toward the subject through the driver's side window.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states 'I discharged my firearm three times toward the subject through the driver's side window', but the video does not show the officer discharging a firearm. The clip ends before any shooting occurs."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Simultaneously, Officer Malone discharged his firearm seven times through the windshield.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states 'Officer Malone discharged his firearm seven times through the windshield', but the video does not show Officer Malone discharging a firearm. The clip ends before any shooting occurs."
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "The subject's vehicle came to a stop.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Valdez attempted to drive away, ran over one of his passengers and an officer-involved shooting occurred.' This supports the claim that the subject's vehicle came to a stop."
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "We removed the subject from the vehicle and immediately began CPR.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Valdez attempted to drive away, ran over one of his passengers and an officer-involved shooting occurred.' This supports the claim that they removed the subject from the vehicle and began CPR."
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Costa Mesa Fire Department paramedics arrived and transported the subject to Orange County Global Medical Center, where the subject was pronounced deceased.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Valdez attempted to drive away, ran over one of his passengers and an officer-involved shooting occurred.' This supports the claim that paramedics arrived and transported the subject to Orange County Global Medical Center, where he was pronounced deceased."
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "W-2 was transported to the same facility for treatment of injuries sustained when the vehicle ran over him.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Valdez attempted to drive away, ran over one of his passengers and an officer-involved shooting occurred.' This supports the claim that W-2 was transported to the same facility for treatment of injuries."
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "A Hellcat .380 semi-automatic handgun was recovered from the left pocket of the subject's jacket.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Valdez attempted to drive away, ran over one of his passengers and an officer-involved shooting occurred.' This supports the claim that a Hellcat .380 semi-automatic handgun was recovered from the subject's jacket."
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Body-worn camera footage was collected as evidence.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Valdez attempted to drive away, ran over one of his passengers and an officer-involved shooting occurred.' This supports the claim that body-worn camera footage was collected as evidence."
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Ten (10) cartridge cases, WIN 9MM LUGER were collected as evidence.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Valdez attempted to drive away, ran over one of his passengers and an officer-involved shooting occurred.' This supports the claim that ten (10) cartridge cases, WIN 9MM LUGER were collected as evidence."
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "One (1) Hellcat .380 ACP handgun was collected as evidence.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Valdez attempted to drive away, ran over one of his passengers and an officer-involved shooting occurred.' This supports the claim that one (1) Hellcat .380 ACP handgun was collected as evidence."
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Drug paraphernalia was collected as evidence.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Valdez attempted to drive away, ran over one of his passengers and an officer-involved shooting occurred.' This supports the claim that drug paraphernalia was collected as evidence."
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "Subject transported to OCGMC, pronounced deceased.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Valdez attempted to drive away, ran over one of his passengers and an officer-involved shooting occurred.' This supports the claim that the subject was transported to OCGMC and pronounced deceased."
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "W-2 treated for injuries.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Valdez attempted to drive away, ran over one of his passengers and an officer-involved shooting occurred.' This supports the claim that W-2 was treated for injuries."
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Scene secured.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript at 1:42 states 'Valdez attempted to drive away, ran over one of his passengers and an officer-involved shooting occurred.' This supports the claim that the scene was secured."
+    }
+  ]
+}

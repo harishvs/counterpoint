@@ -1,0 +1,442 @@
+{
+  "scenario_id": "sc-051",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 154.91,
+  "total_tokens": 52189,
+  "total_api_calls": 8,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-051",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: January 8, 2023",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 states 'SUNDAY, JANUARY 8, 2023 AT 8:47 A.M.' which confirms the date of the incident."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 0847 hours",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 states 'SUNDAY, JANUARY 8, 2023 AT 8:47 A.M.' which confirms the time of the incident as approximately 0847 hours."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: Warner Avenue at Red Hill Avenue, Tustin, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 states the location as 'WARNER AVENUE AND COMPASS AVENUE, TUSTIN CA', while the claim states 'Warner Avenue at Red Hill Avenue, Tustin, CA'. The video does not show Red Hill Avenue."
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer A. Crawford",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 3491",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Eduardo Flores, Male, 52 years old, Hispanic, bloody clothing",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
+        }
+      ],
+      "evidence_observations": "The subject is seen lying on the road wearing a light-colored shirt and dark pants, not 'bloody clothing' as described in the claim. The claim also specifies 'Eduardo Flores', which is not visible or audible in the clip."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Officer A. Crawford, Officer L. Park, Officer E. Torres",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
+        }
+      ],
+      "evidence_observations": "The video shows two officers (Officer Diaz and another officer) and a third officer (Officer Torres) visible in the background. The claim lists Officer A. Crawford, Officer L. Park, and Officer E. Torres, which does not match the visible officers."
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witness(es): Reporting Party #3 (caller who observed the subject on Warner Avenue)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states that on January 8, 2023, at approximately 0847 hours, Officer Park and the reporting officer were dispatched to a report of a male Hispanic walking westbound on Warner Avenue at Red Hill Avenue carrying a large butcher knife with blood on his hands and clothing. The caller confirms seeing a Mexican man with a chef's knife and what looked like blood on his hands, and the timeframe matches the 0847 hour mark."
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "On January 8, 2023, at approximately 0847 hours, Officer Park and I were dispatched to a report of a male Hispanic walking westbound on Warner Avenue at Red Hill Avenue carrying a large butcher knife with blood on his hands and clothing.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 states the incident location as 'WARNER AVENUE AND COMPASS AVENUE, TUSTIN CA', while the claim states 'Warner Avenue at Red Hill Avenue, Tustin, CA'. The video does not show Red Hill Avenue, and the time mentioned in the claim (0847 hours) matches the video's stated time, but the location discrepancy creates a potential conflict."
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The caller described the subject as a significant threat to public safety and stated the subject appeared to be in a highly agitated and volatile state, gesticulating wildly and shouting at passing vehicles.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Prior to our response, SAPD officers had briefly contacted the subject approximately one hour earlier at St. Andrew Place and Birch Street in Santa Ana after receiving similar reports.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Those officers noted the subject was walking with a knife and both hands appeared cut.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The SAPD officers made a brief attempt at a welfare check but the subject was uncooperative and refused medical treatment.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject walked away and the SAPD officers, having determined there was no immediate crime, cleared the call without further action.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "Officer Park and I arrived at approximately 0846 hours and located the subject walking southbound on the east sidewalk of Warner Avenue.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject was walking southbound on the east sidewalk of Warner Avenue. The caller mentions being on Warner coming from the 55 freeway towards Red Hill, which implies the subject was walking southbound, but the specific side (east vs. west) is not confirmed in the audio."
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The subject had a large knife in his right hand and apparent blood on his hands and clothing.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
+        }
+      ],
+      "evidence_observations": "The claim states the subject had a large knife in his right hand, but the video shows the subject lying on the ground with a knife visible near his hand, and the claim's description of the knife's position and the subject's posture may not align with the visual evidence."
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "Officers immediately drew their service handguns and began issuing commands from approximately 50 feet.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states officers immediately drew their service handguns and began issuing commands from approximately 50 feet. The clip does not mention officers drawing handguns or the distance of 50 feet; it only mentions verbal dialogue and commands."
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "Torres drew his service handgun, then holstered it and deployed his department-issued Taser.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Torres positioned himself in the southbound lanes, approximately 30 feet from the subject, walking parallel.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
+        }
+      ],
+      "evidence_observations": "The claim states Officer Torres positioned himself 30 feet from the subject, but the video shows the subject lying on the road with officers standing several feet away, and the exact distance is not visually verifiable."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "For the next several minutes, Officers Park, Crawford, and Torres engaged the subject in extended verbal dialogue, calmly and repeatedly requesting that he put down the knife and accept medical assistance.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states that for the next several minutes, Officers Park, Crawford, and Torres engaged the subject in extended verbal dialogue, calmly and repeatedly requesting that he put down the knife and accept medical assistance. The caller confirms the subject was 'a little disturbing' and the officers were trying to get him to put down the knife."
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The subject ignored all attempts at de-escalation.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject ignored all attempts at de-escalation. The caller mentions the subject was 'a little disturbing' but does not explicitly state that he ignored all attempts at de-escalation. The audio suggests the subject was walking and not immediately aggressive."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "The commands included: \"Drop the knife,\" \"Have a seat,\" \"Don't come towards us,\" and \"Back up.\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states the commands included: 'Drop the knife,' 'Have a seat,' 'Don't come towards us,' and 'Back up.' The caller mentions the subject was walking down the street, and the officers were trying to get him to stop, which aligns with these commands."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "The subject continued walking but at a slow, nonthreatening pace, keeping distance from the officers.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
+        }
+      ],
+      "evidence_observations": "The subject is seen walking and then lying on the ground, not walking at a 'slow, nonthreatening pace' while keeping distance from the officers."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "At approximately 0847:20 hours, the subject suddenly looked over his left shoulder toward Officer Torres, then pivoted and charged directly at Officer Park from a distance of approximately 32 feet.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 states the incident time as 8:47 A.M., while the claim states 0847:20 hours. The video does not show the subject looking over his left shoulder or pivoting to charge Officer Park from 32 feet, as the clip is a text-based presentation of investigation details rather than bodycam footage."
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Officer Park retreated while Officer Torres attempted to deploy his Taser but was unable to due to the subject's sudden change of direction.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states Officer Park retreated while Officer Torres attempted to deploy his Taser but was unable to due to the subject's sudden change of direction. The clip does not mention Officer Park retreating or Officer Torres attempting to deploy a Taser, so this is not supported."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Officers Park and Crawford then fired their service weapons.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states Officers Park and Crawford then fired their service weapons. The clip does not mention any gunfire or officers firing their weapons, so this is not supported."
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "Officer Park fired five rounds and Officer Crawford fired five rounds, for a total of ten gunshots within approximately 1.57 seconds.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states Officer Park fired five rounds and Officer Crawford fired five rounds, for a total of ten gunshots within approximately 1.57 seconds. The clip does not mention any gunfire or the number of rounds fired, so this is not supported."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject collapsed in the northbound lane of Warner Avenue, the knife still in his right hand.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject collapsed in the northbound lane of Warner Avenue, the knife still in his right hand. The caller mentions the subject was walking southbound, so collapsing in the northbound lane would be a contradiction. The clip does not mention the subject collapsing or the direction of the lane."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Officers immediately holstered their weapons, approached the subject, and began chest compressions within 30 seconds.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
+        }
+      ],
+      "evidence_observations": "The audio contains the command 'I got it' followed by gunfire, and the visual shows the subject collapsing, consistent with the claim that paramedics arrived within three minutes at approximately 0850 hours."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Paramedics were requested immediately and arrived within three minutes, at approximately 0850 hours.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
+        }
+      ],
+      "evidence_observations": "The audio contains the command 'I got it' followed by gunfire, and the visual shows the subject collapsing, consistent with the claim that the subject was pronounced deceased on scene."
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Despite resuscitation efforts, the subject was pronounced deceased.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Body-worn camera footage (Officers Park and Crawford; Officer Torres's PVS delayed)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
+        }
+      ],
+      "evidence_observations": "The video shows a chef's knife with blood on it, consistent with the claim of one chef's knife approximately 9 inches."
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Ten (10) cartridge cases, .40 caliber S&W",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "One (1) chef's knife, approximately 9 inches",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
+        }
+      ],
+      "evidence_observations": "The video shows the subject lying on the ground, consistent with the claim that he was pronounced deceased on scene."
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Cell phone",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Subject pronounced deceased on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Scene secured for OCDA investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Traffic diverted on Warner Avenue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    }
+  ]
+}

@@ -1,0 +1,590 @@
+{
+  "scenario_id": "sc-035",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 465.95,
+  "total_tokens": 121376,
+  "total_api_calls": 16,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-035",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: September 26, 2019",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video timestamp in the top right corner reads '2019-09-26', confirming the date of the incident."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 0245\u20130315 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video timestamp shows the time as 0307 hours, which contradicts the claim of approximately 0245-0315 hours, as the footage starts at 0307."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: 1250 East La Habra Boulevard, La Habra, CA (Metro Auto Sales / Express Auto Recon)",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows a location with a black SUV and a chain-link fence, but there is no visual evidence of 'Metro Auto Sales / Express Auto Recon' or '1250 East La Habra Boulevard'. The location appears to be a different lot or area."
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer A. Kowalski",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 5127",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Marcus Delgado, Male, 29 years old, Hispanic, visible tattoos",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows a subject in the driver's seat, contradicting the claim that the subject was 'Marcus Delgado' with visible tattoos (no tattoos are clearly visible on the subject in the driver's seat)."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Officer A. Kowalski, K9 Officer R. Falk, Trainee C. Vega, Officer J. Navarro, Sergeant B. Ingram, Sergeant M. Fuentes",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witness(es): Auto body shop owner (W-1)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "On September 26, 2019, at approximately 0245 hours, dispatch received a 911 call from a named witness reporting subjects breaking into vehicles near Alpine Street and La Habra Boulevard.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "At approximately 0249 hours, I indicated I would respond along with K9 Officer Falk and Trainee Vega.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Upon arrival, I observed a black Cadillac Escalade parked inside the fenced lot at the rear of Metro Auto Sales.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows a black SUV, but it is not clearly identifiable as a 'black Cadillac Escalade', and the vehicle is not confirmed to be parked inside a fenced lot at the rear of Metro Auto Sales."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The vehicle's engine was off and no lights were visible.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows a black SUV, but the engine status is not visible, and there are no visible lights to confirm the engine was off and no lights were visible."
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I exited my patrol vehicle and approached the passenger side of the Escalade.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows a person in the driver's seat, contradicting the claim that the officer approached the 'passenger side' of the Escalade."
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I immediately observed the subject in the driver's seat and a second individual in the rear passenger seat.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows a person in the driver's seat, contradicting the claim that there was a 'second individual in the rear passenger seat'."
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I issued verbal commands for both occupants to exit the vehicle and show their hands.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video does not show any verbal commands being issued for occupants to exit the vehicle and show their hands."
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The subject responded clearly in English that he understood and would comply when he was ready.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video does not show any subject responding clearly in English that he understood and would comply when he was ready."
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "Body-worn cameras were activated from the outset of the contact.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video does not show any indication that body-worn cameras were activated from the outset of the contact."
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "K9 Officer Falk arrived approximately fifteen minutes after my initial contact with the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "He positioned the K9 vehicle at the west edge of the property and began issuing PA commands from the driver's side.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 900.0,
+          "end_seconds": 1010.0
+        }
+      ],
+      "evidence_observations": "The video shows officers near the vehicle, but there is no clear visual evidence of a K9 vehicle positioned at the west edge of the property or PA commands being issued from the driver's side."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "The subject immediately became hostile, producing a black handgun from under his seat and waving it toward officers through the driver's side window.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video does not show the subject producing a black handgun from under his seat and waving it toward officers through the driver's side window."
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Officers took cover and called for additional units.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video does not show officers taking cover or calling for additional units."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Over the next approximately five minutes, the subject intermittently revved the engine and yelled.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video does not show the subject intermittently revving the engine and yelling over the next five minutes."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "At approximately 0258 hours, Sergeant Fuentes arrived and authorized deployment of less-lethal munitions.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 900.0,
+          "end_seconds": 1010.0
+        }
+      ],
+      "evidence_observations": "At 02:58, a sergeant arrives (visible in the video), and shortly after, less-lethal munitions are deployed (a projectile is fired through the windshield), supporting the claim."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "A single 40mm OC round was deployed through the front windshield, which immediately caused the subject to cover his face and cease yelling.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 900.0,
+          "end_seconds": 1010.0
+        }
+      ],
+      "evidence_observations": "A 40mm OC round is deployed through the front windshield, causing the subject to cover his face and stop yelling, as seen in the video."
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Within approximately thirty seconds, the subject placed the vehicle in drive and accelerated straight forward through the gate at what I estimated to be approximately 45 miles per hour.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows the vehicle accelerating through the gate, but it does not confirm the speed was approximately 45 miles per hour or that the entire sequence took less than ten seconds."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The vehicle struck one parked car in the lot before continuing through the metal rollup door on the far side.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows the vehicle striking a parked car and continuing through a metal rollup door, but it does not confirm the vehicle continued through the building or that the sequence took less than ten seconds."
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The entire sequence from initial acceleration to exit through the building took less than ten seconds.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows the vehicle emerging on the South Bedford Street side and stopping on the apron of the driveway, but it does not confirm the subject was 'I' or that the sequence took less than ten seconds."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "Upon emerging on the South Bedford Street side, the Escalade came to a stop on the apron of the driveway.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer repositioning to the west sidewalk approximately thirty feet from the Escalade, but it does not confirm the subject raised his right arm holding the handgun and pointed it directly at Sergeant Ingram."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "I had repositioned to the west sidewalk approximately thirty feet from the Escalade.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows Sergeant Ingram positioned approximately forty feet to the south on South Bedford Street, but it does not confirm the subject raised his right arm holding the handgun and pointed it directly at him."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Sergeant Ingram was positioned approximately forty feet to the south on South Bedford Street.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer discharging his patrol rifle four rounds in approximately four seconds, but it does not confirm that Sergeant Ingram discharged his sidearm five rounds or that Officer Navarro discharged her sidearm three rounds."
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "The subject raised his right arm holding the previously observed handgun and pointed it directly at Sergeant Ingram.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video does not show the vehicle stopping after the shots were fired, nor does it confirm the subject was pronounced deceased approximately one hour later."
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "I discharged my patrol rifle four rounds in approximately four seconds.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video does not show paramedics from Los Angeles County Fire Department arriving within two minutes of the shooting or transporting the subject to a local hospital."
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Sergeant Ingram discharged his sidearm five rounds.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video does not show the subject being pronounced deceased approximately one hour later."
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Officer Navarro also discharged her sidearm three rounds from a position near the gate.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video does not show a loaded semi-automatic pistol being recovered from the subject's lap during the vehicle search."
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "The vehicle stopped after the shots were fired.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video does not show body-worn camera footage from all officers on scene, nor does it confirm the recovery of a semi-automatic pistol from the subject."
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Paramedics from Los Angeles County Fire Department arrived within two minutes of the shooting and transported the subject to a local hospital.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video does not show the subject being transported to the hospital or pronounced deceased."
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "The subject was pronounced deceased approximately one hour later.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video does not show the scene being secured for investigation."
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "A loaded semi-automatic pistol was recovered from the subject's lap during the vehicle search.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 900.0,
+          "end_seconds": 1010.0
+        }
+      ],
+      "evidence_observations": "A loaded semi-automatic pistol is visible in the subject's lap during the vehicle search after the stop, matching the claim."
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Body-worn camera footage from all officers on scene",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows body-worn camera footage from multiple officers on scene, as indicated by the different camera feeds (Ofc. C. Robles, Ofc. T. Nelson, Ofc. J. Coleman)."
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "One (1) 2012 Black Cadillac Escalade",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The video shows a black vehicle, which matches the description of one (1) 2012 Black Cadillac Escalade."
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "One (1) patrol rifle (Officer Kowalski)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "One (1) sidearm (Sergeant Ingram)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "One (1) sidearm (Officer Navarro)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Twelve (12) fired cartridge cases collected at the scene",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "One (1) semi-automatic pistol recovered from subject",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 900.0,
+          "end_seconds": 1010.0
+        }
+      ],
+      "evidence_observations": "A loaded semi-automatic pistol is recovered from the subject's lap during the vehicle search, as seen when the vehicle stops and officers approach."
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Subject transported to hospital, pronounced deceased.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 900.0,
+          "end_seconds": 1010.0
+        }
+      ],
+      "evidence_observations": "The scene appears secured as officers maintain positions and the area is cordoned off, consistent with securing the scene for investigation."
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Officer Signature: A. Kowalski",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Date of Report: September 26, 2019",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1000.0,
+          "end_seconds": 1110.0
+        }
+      ],
+      "evidence_observations": "The timestamp on the bodycam footage (e.g., 2019-09-26 11:08:50) confirms the date of the report is September 26, 2019."
+    }
+  ]
+}

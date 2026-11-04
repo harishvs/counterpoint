@@ -1,0 +1,539 @@
+{
+  "scenario_id": "sc-028",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 362.83,
+  "total_tokens": 70736,
+  "total_api_calls": 10,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: December 24, 2022",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 states the incident date is Saturday, December 24, 2022."
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 0045 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 states the incident time is 1:00 A.M., while the claim states approximately 0045 hours."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: 9200 block of Bolsa Avenue, Westminster, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 states the location is 9081 Bolsa Avenue, while the claim states the 9200 block of Bolsa Avenue."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer C. Ngo",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 4102",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Duc Phan, Male, 30 years old, Asian, gray jacket, blue jeans",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The subject is wearing a light-colored hoodie (not a gray jacket) and blue jeans, but the jacket color is not clearly gray; it appears more like a light beige or off-white hoodie. The claim specifies 'gray jacket', which may not match the visual evidence."
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer C. Ngo, Officer L. Trang, Officer P. DeSilva",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows Officer Doan and Officer Dam, but there is no clear visual confirmation of Officer C. Ngo, Officer L. Trang, or Officer P. DeSilva. The transcript mentions these officers, but their presence is not visually confirmed in this clip."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Store Owner (reporting party)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On December 24, 2022, at approximately 0045 hours, I was dispatched to a business at 9196 Bolsa Avenue in the City of Westminster regarding an incident of vandalism.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I was wearing my WPD long-sleeved utility uniform with identification patches and a black tactical vest marked \"POLICE.\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The officer is wearing a long-sleeved uniform and a black tactical vest, which matches the description. The body-worn camera is visible on the vest."
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I had a Body Worn Camera mounted on my vest.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video is bodycam footage from 'Officer Doan's body worn camera' as stated in the introductory text, confirming the presence of a body-worn camera."
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I arrived on scene at approximately 0055 hours, approximately ten minutes after receiving the dispatch.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The timestamp shows '00:55:55', indicating the officer arrived at approximately 0055 hours, about ten minutes after the 0045 dispatch time mentioned in claim 9."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The store owner informed me that a male subject had struck the front of his business and an exterior surveillance camera with a metal object.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The store owner showed me cell phone footage from his surveillance system depicting the incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "He stated the subject had left the area roughly twenty minutes before my arrival.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "At approximately 0056 hours, I located the subject, later identified as Duc Phan, in the south alley behind 9262 Bolsa Avenue.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer in a narrow alley, but the claim specifies 'south alley behind 9262 Bolsa Avenue'. The video shows the 'north alley' (per audio), and the location is not confirmed as 9262 Bolsa Avenue."
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "He was wearing a gray jacket and blue jeans and carrying a metal pole approximately 30 inches long in his right hand.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The subject is carrying a metal pipe (not a pole), and the video shows a long, thin object, but the claim specifies a 'metal pole approximately 30 inches long'. The object's length and type are not clearly confirmed as a pole."
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "I exited my vehicle and ordered the subject to stop, drop the weapon, and sit down.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The officer commands the subject to 'sit down' and 'stop', but the subject is walking away, not sitting. The claim states the officer 'ordered the subject to stop, drop the weapon, and sit down', but the subject is walking away, not complying with sitting."
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The subject refused all commands and walked westbound away from me.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The subject is seen walking away from the officer, and the audio states 'walking away from me', confirming the subject fled the location on foot."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "I drew my service weapon and followed the subject on foot westbound through the alley toward Bolsa Avenue.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The officer is seen following the subject on foot through the alley, consistent with the claim of following the subject westbound through the alley toward Bolsa Avenue."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Approximately ninety seconds later, Officer Trang arrived at the scene and joined me on foot.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Together we continued following the subject as he turned northbound onto the sidewalk along Bolsa Avenue.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The subject is seen turning northbound onto the sidewalk along Bolsa Avenue, which matches the claim."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Officer Trang and I gave commands in English only throughout the encounter.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The officers are heard giving commands in English only, which matches the claim."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "The subject remained non-compliant but walked at a slow, steady pace without any aggressive gestures.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The subject is walking away from the officer, but the claim states the subject 'remained non-compliant but walked at a slow, steady pace without any aggressive gestures'. The subject is actively fleeing, which contradicts the claim of walking at a slow, steady pace without aggression."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The foot pursuit continued westbound on Bolsa Avenue for approximately two blocks over a period of roughly eight minutes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "During this time the subject made no threatening movements and kept the pole at his side.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The subject is walking away from the officer, but the claim states the subject 'made no threatening movements and kept the pole at his side'. The subject is actively fleeing, which may imply threatening behavior, and the pole is not clearly visible as being kept at the side."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "At approximately 0103 hours, Officer DeSilva arrived and the three of us continued following the subject into a shopping center parking lot at 9081 Bolsa Avenue.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows Officer DeSilva arriving and the three officers continuing to follow the subject into a shopping center parking lot, which matches the claim."
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "Once in the parking lot, the subject suddenly stopped and turned toward officers.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The subject is seen stopping and turning toward the officers in the parking lot, which matches the claim."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "He held the pole loosely at waist level.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject 'held the pole loosely at waist level', but the video shows the subject walking away with the object in hand, and the audio mentions 'metal pipe', not a pole. The object's position is not clearly confirmed as waist level."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "I again commanded the subject to drop the weapon.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The officer is heard commanding the subject to 'drop the weapon', and the subject is seen walking away with the object, indicating the command was issued."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "After a brief pause of approximately fifteen seconds, the subject raised the pole to roughly chest height.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject raised the pole to 'roughly chest height', but the video shows the subject walking away with the object in hand. The video does not show the subject raising the pole to chest height, and the audio does not confirm this action."
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Believing the subject was preparing to strike, I discharged my firearm two times.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states the officer discharged the firearm two times, but the video does not show any gunfire or discharge. The audio may contain this information, but the visual evidence does not confirm it."
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Officer Trang simultaneously deployed his TASER.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The officer is heard stating they want the subject to get their taser out, which implies Officer Trang deployed his TASER."
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The subject dropped the pole and fell to the ground.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject 'dropped the pole and fell to the ground', but the video ends before the subject falls. The subject is still walking when the clip ends, so the fall is not shown."
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Officer DeSilva immediately moved in and handcuffed the subject, who was conscious but did not speak.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The officer is seen moving in and handcuffing the subject, which matches the description."
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "I holstered my weapon and began administering first aid.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The officer is seen holstering his weapon and beginning to administer first aid, which matches the description."
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "We requested paramedics, who arrived within approximately three minutes and transported the subject to a local hospital.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "The subject survived his injuries, which I understand were limited to a wound to his right arm.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Body-worn camera footage (Officers Ngo, Trang, DeSilva)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows body-worn camera footage from multiple officers, including Officer Doan, Officer Dam, and others."
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Two (2) cartridge cases, WIN 9MM LUGER",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "One (1) Staccato C2, 9mm semi-automatic handgun",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "One (1) TASER unit",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "One (1) metal pole, approximately 30 inches",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Surveillance camera footage from store owner",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Subject transported to local hospital, survived.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Officer Signature: C. Ngo",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Date of Report: December 24, 2022",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 states the date of report is December 24, 2022."
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "scenario_id": "sc-039",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 219.42,
+  "total_tokens": 69173,
+  "total_api_calls": 10,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: August 30, 2023",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 2136 hours",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The transcript timestamps (e.g., [3:18], [4:00]) indicate the time is around 2136-2148 hours, supporting the claim of approximately 2136 hours."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Old Ranch Condominium, 3600 block of Aster Street, Seal Beach, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer K. Thornton",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 7234",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Corporal Estrada and I were dispatched to a residence in the Old Ranch Condominium development",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "a male subject attempting to kick down the caller's front door",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:45 states 'On Monday, January 16, 2023, at approximately 9:36 PM, officers from the Seal Beach Police Department were dispatched to 120 Old Ranch Rd regarding an unknown male kicking the front door attempting to gain entry into the residence.' This supports the claim of a male subject attempting to kick down the caller's front door."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The caller described the male as wearing a jacket, mask, beanie, and dark brown work boots",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The caller describes the subject as wearing 'a jacket, mask, beanie' and 'dark brown like work boots with laces'."
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I arrived at approximately 2140 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I observed a male subject, later identified as the subject, peering over the brick perimeter wall of the enclosed rear patio area. Only his head was visible",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I stood in the walkway approximately 40 feet east",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I used my flashlight to illuminate the subject",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The dispatcher states 'I see shadows' and the caller says 'the cop is shining a light on him right now,' indicating the use of a flashlight to illuminate the subject."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I identified myself and commanded him to come out of the enclosed area",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The officer speaks to the subject, and the transcript indicates he commanded the subject to come out ('come out here')."
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The subject stated he was there to see the reporting party",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The subject states 'I am here to get my money', which aligns with the claim that he was there to see the reporting party."
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I informed him the reporting party had called police and did not want him there",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The officer says 'she doesn't want you here' and 'she told us she's calling us', indicating the reporting party did not want the subject there."
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I instructed the subject to show me his hands",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The officer says 'I need to see to (redact) I can't see your hands' and 'I don't need you I don't need to show you my hands', which indicates he is instructing the subject to show his hands."
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "He refused and told me to stop shining the flashlight on his face",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The officer says 'I can't see your hands', but the subject does not explicitly state he refused to show his hands or told the officer to stop shining the light on his face in this clip."
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "At approximately 2142 hours, Corporal Estrada arrived and parked approximately 200 to 300 feet south",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The subject then disappeared behind the patio wall",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The officer draws his duty weapon, which is visible in the video as he moves toward the subject."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "I drew my duty weapon",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The officer draws his duty weapon (visible in the video as he points it forward)."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "At approximately 2142 hours, the subject exited the patio area wearing a baggy black jacket, blue jeans, a black hat, and clear glasses",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "He had a beverage can in his right hand",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The officer says 'get your hands out of your pocket now', which implies the subject placed his right hand into his right front jacket pocket."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "I ordered the subject to put his hands up",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The officer commands 'put your hands up', which is audible in the transcript and implied by the officer's posture and actions."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "He ignored my commands and continued walking toward me",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The subject is seen walking toward the officer after being told to put his hands up, indicating he ignored commands and continued walking."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "He moved the beverage can from his right hand to his left hand",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "He placed his right hand into his right front jacket pocket",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The officer commands 'get your hands out of your pocket', but the subject is seen with his hands up and not reaching into his pocket in the visible footage."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "and turned back toward the enclosed patio",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "Corporal Estrada warned he would deploy a Taser",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "At approximately 2142 hours, Corporal Estrada deployed his Taser, striking the subject in the back",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The subject fell onto his left side and then flat on his back",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "The subject reached toward his right-side waistband and drew what appeared to be a black Glock handgun",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "He pointed the weapon in the direction of Corporal Estrada",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "I fired my duty weapon 21 rounds",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Corporal Estrada fired nine rounds from his handgun",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The scene was secured for investigation, as indicated by the text overlay at the end of the video."
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "The subject stated \"Finish me off\" while on his back",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Officers held him at gunpoint until a third officer arrived at approximately 2148 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "removed the gun from near the subject's right hand",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "and handcuffed him",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "OCFA Engine 84 arrived at approximately 2152 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "The weapon was a Glock 22, .40-caliber, registered to the subject's father",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "Scene secured for investigation",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The scene appears secured as the officers hold the subject at gunpoint and wait for backup, consistent with securing a scene for investigation."
+    }
+  ]
+}

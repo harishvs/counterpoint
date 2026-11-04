@@ -2,8 +2,8 @@
   "scenario_id": "sc-004",
   "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
   "pipeline": "scan",
-  "processing_time_seconds": 153.67,
-  "total_tokens": 45755,
+  "processing_time_seconds": 162.48,
+  "total_tokens": 47425,
   "total_api_calls": 6,
   "claims": [
     {
@@ -17,7 +17,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The title slide explicitly states 'WEDNESDAY, JULY 13, 2022 AT 5:33 AM'."
+      "evidence_observations": "The title card at 00:13 explicitly states 'WEDNESDAY, JULY 13, 2022 AT 5:33 AM'."
     },
     {
       "claim_id": "cl-002",
@@ -30,7 +30,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The title slide states the time was 5:33 AM, while the claim states approximately 0515 hours (5:15 AM)."
+      "evidence_observations": "The title card states the time is 5:33 AM, while the claim states approximately 0515 hours (5:15 AM)."
     },
     {
       "claim_id": "cl-003",
@@ -43,33 +43,23 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The title slide states the location is '2211 NEWPORT BLVD., COSTA MESA, CA'. The claim states 'Advanced Marine Service, 2211 Newport Boulevard, Costa Mesa, CA'. While the address matches, the claim adds 'Advanced Marine Service' which is not explicitly confirmed in the visible text, though it is highly likely the business name. However, the primary conflict is the time discrepancy noted in claim 2."
+      "evidence_observations": "The title card states the location is '2211 NEWPORT BLVD., COSTA MESA, CA'. The claim states 'Advanced Marine Service, 2211 Newport Boulevard, Costa Mesa, CA'. While the address matches, the claim adds a specific business name not visible in the title card."
     },
     {
       "claim_id": "cl-004",
       "claim_text": "Reporting Officer: Sgt. M. Park",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 400.0,
-          "end_seconds": 489.824943
-        }
-      ],
-      "evidence_observations": "The bodycam footage shows a badge number '3851' on the officer's uniform, and the report signature is 'Sgt. M. Park'."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-005",
       "claim_text": "Badge Number: 3851",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 400.0,
-          "end_seconds": 489.824943
-        }
-      ],
-      "evidence_observations": "The bodycam footage shows a badge number '3851' on the officer's uniform."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-006",
@@ -82,15 +72,15 @@
     {
       "claim_id": "cl-007",
       "claim_text": "Officer(s): Sgt. M. Park, Officer D. Tran, Officer C. Webb, Officer K. Ruiz, Officer A. Mateo",
-      "evidence_relationship": "supported",
+      "evidence_relationship": "potential_conflict",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 400.0,
-          "end_seconds": 489.824943
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows multiple officers, and the report lists the officers as Sgt. M. Park, Officer D. Tran, Officer C. Webb, Officer K. Ruiz, and Officer A. Mateo."
+      "evidence_observations": "The title card lists 'Sgt. Bang Le', 'Officer Jake Jacobi', and 'Officer Oscar Nicolas' as involved officers. The claim lists 'Sgt. M. Park, Officer D. Tran, Officer C. Webb, Officer K. Ruiz, Officer A. Mateo'. These names do not match the officers listed in the title card."
     },
     {
       "claim_id": "cl-008",
@@ -459,11 +449,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
         }
       ],
-      "evidence_observations": "The title slide explicitly states 'DATE OF REPORT: JULY 13, 2022'."
+      "evidence_observations": "The bodycam timestamp in the top right corner reads '07/13/2022 05:29:35', confirming the date of the report is July 13, 2022."
     }
   ]
 }

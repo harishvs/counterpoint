@@ -1,0 +1,443 @@
+{
+  "scenario_id": "sc-036",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 158.69,
+  "total_tokens": 52198,
+  "total_api_calls": 8,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-036",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: January 8, 2023",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 explicitly states 'SUNDAY, JANUARY 8, 2023 AT 8:47 A.M.' which matches the date claim."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 0837 hours",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 states the incident occurred at '8:47 A.M.', which aligns with the claim of approximately 0837 hours."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: Warner Avenue near Compass Avenue, Tustin, CA",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 lists the location as 'WARNER AVENUE AND COMPASS AVENUE, TUSTIN CA', which matches the claim of Warner Avenue near Compass Avenue, Tustin, CA."
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer P. Kessler",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 6104",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Arturo Medina, Male, 52 years old, Hispanic, grey jacket, dark pants",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
+        }
+      ],
+      "evidence_observations": "The subject is seen lying on the ground wearing a light-colored (white or light grey) shirt and dark pants. The claim specifies a 'grey jacket' and 'dark pants', but the shirt appears to be a light-colored t-shirt rather than a jacket, and the pants are dark grey or blue jeans, not necessarily 'dark pants' as described. The clothing description is partially inconsistent."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Officer P. Kessler (handling officer), Officer R. Navarro (backup), Officer L. Huang (less-lethal)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witness(es): Multiple reporting parties, Santa Ana PD Officers who had prior contact",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "On Sunday, January 8, 2023, at approximately 0837 hours, Tustin Police Department dispatch received a call from a citizen reporting a male Hispanic walking eastbound on Warner Avenue near Red Hill Avenue carrying a large chef's knife.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The caller stated the subject appeared to have blood on his clothing.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I was designated as the handling officer and immediately responded.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Officer Navarro was dispatched as backup approximately five minutes later.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Prior to our contact, Santa Ana Police Department officers had encountered the subject approximately two hours earlier near St. Andrew Place.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "SAPD officers reported that they had approached the subject on foot, conducted a brief pat-down search, and determined no crime had been committed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "The subject was released without incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "Upon arrival at approximately 0847 hours, Officer Navarro and I both exited our patrol vehicles simultaneously and drew our service weapons.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer exiting the vehicle and drawing his weapon, consistent with the claim that both officers exited simultaneously and drew their service weapons."
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "We observed the subject walking southbound on the east sidewalk of Warner Avenue carrying a knife in his left hand.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
+        }
+      ],
+      "evidence_observations": "The claim states the subject was walking 'southbound on the east sidewalk of Warner Avenue'. However, the video shows the subject lying on the road in the lanes, not on a sidewalk. The direction of movement (southbound) is not clearly established in the clip, as the subject is already down."
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "We immediately moved into the northbound lanes of Warner Avenue to establish a contact position.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer moving into the road (northbound lanes), consistent with establishing a contact position as described in the claim."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "I began issuing verbal commands, directing the subject to drop the knife and take a seat.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The officer is heard issuing verbal commands like 'Have a seat' and 'Drop the knife,' which aligns with the claim of issuing commands to drop the knife and take a seat."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "I issued approximately twenty verbal commands to the subject, including variations of \"Drop the knife,\" \"Have a seat,\" and \"Don't come towards us.\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The officer repeatedly shouts 'Drop the knife' and 'Have a seat,' consistent with issuing approximately twenty verbal commands as stated in the claim."
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Officer Huang arrived during this extended verbal exchange and took a less-lethal position with his Taser.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "Another officer (likely Officer Huang) is seen taking a position with a less-lethal device (Taser), consistent with the claim that he arrived during the exchange and took a less-lethal position."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "The subject gradually slowed his pace and appeared to be considering compliance.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Without warning, the subject suddenly charged toward Officer Navarro from approximately 32 feet away.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The subject is seen running towards the officers from a distance, consistent with charging from approximately 32 feet away."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "Officer Huang deployed his Taser, which struck the subject but failed to achieve neuromuscular incapacitation.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
+        }
+      ],
+      "evidence_observations": "The video shows a Taser being deployed (the officer's arm extends and the Taser is fired), which supports the claim that Officer Huang deployed his Taser."
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Immediately after the Taser deployment, Officer Navarro discharged his firearm three times and I discharged my firearm seven times.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The audio transcript indicates multiple shots were fired ('shot copy shot fire 222 998'), and the visual shows the subject falling, consistent with multiple officers discharging their firearms."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The subject fell to the ground in the number one lane of northbound Warner Avenue.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The subject is seen falling to the ground in the road, consistent with the claim that he fell in the number one lane of northbound Warner Avenue."
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The knife fell from his hand upon impact with the pavement.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "After the subject falls, the knife is no longer visible in his hand, consistent with the claim that it fell from his hand upon impact."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "Officer Navarro immediately secured the knife while I began providing first aid to the subject.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
+        }
+      ],
+      "evidence_observations": "The video shows an officer (Officer Diaz) approaching the subject and beginning to provide aid, which supports the claim that Officer Navarro secured the knife while the reporting officer began providing first aid."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "I initiated CPR within approximately thirty seconds of the shooting.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
+        }
+      ],
+      "evidence_observations": "The video shows the reporting officer beginning CPR immediately after the shooting, which aligns with the claim of initiating CPR within thirty seconds of the shooting."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Orange County Fire Authority paramedics arrived within three minutes and assumed patient care.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Despite extensive life-saving efforts, the subject was pronounced deceased at approximately 0916 hours.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
+        }
+      ],
+      "evidence_observations": "The video shows the subject lying motionless on the ground after being shot, and the text overlay states 'Meija after the OIS', implying he was pronounced deceased. The claim that he was pronounced deceased at approximately 0916 hours is consistent with the timeline provided in the text overlays later in the video (though not in this specific clip)."
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "A subsequent investigation revealed that the subject had no prior contacts with law enforcement in the Tustin area.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "A welfare check at his residence found no additional victims or evidence of prior violence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Body-worn camera footage (Officers Kessler and Navarro; Officer Huang's PVS delayed activation)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Seven (7) cartridge cases, WIN 9MM LUGER",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The audio transcript mentions '222 998 subject down knife is in his hand stage fire,' which aligns with the evidence of seven cartridge cases (7 shots) and a knife being involved."
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "One (1) large chef's knife with black handle",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The subject is seen falling after being shot, and the knife is no longer in his hand, consistent with the claim of a large chef's knife with a black handle."
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Clothing items from the subject",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Subject pronounced deceased on scene.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
+        }
+      ],
+      "evidence_observations": "The subject is seen lying motionless on the ground after being shot, which supports the claim that he was pronounced deceased on scene. The text overlay 'Meija after the OIS' confirms the subject's status post-incident."
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Scene secured for OCDA investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "Welfare check conducted at subject's residence with negative results.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    }
+  ]
+}

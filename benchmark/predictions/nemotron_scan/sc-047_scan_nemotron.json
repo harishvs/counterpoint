@@ -1,0 +1,473 @@
+{
+  "scenario_id": "sc-047",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 144.65,
+  "total_tokens": 46152,
+  "total_api_calls": 7,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-047",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: August 6, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:12 states 'FRIDAY, AUGUST 6, 2021 AT 7:10 PM', which matches the date of August 6, 2021."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 1908 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript states the caller is 'like three minutes away' and mentions 'Harbor Boulevard near Wingstop', while the claim states 'approximately 1908 hours'. The video does not provide a specific time of incident."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: 150 North Euclid Street, La Habra, CA (Police Station Front)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:12 states 'INCIDENT LOCATION LA HABRA POLICE DEPARTMENT 150 NORTH EUCLID STREET, LA HABRA, CA'."
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer R. Whitfield",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 5518",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Daniel Pham, Male, 22 years old, Asian, black clothing",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The video shows a male subject in black clothing, but the claim specifies 'Daniel Pham, Male, 22 years old, Asian'. The video does not confirm the subject's name, age, or ethnicity."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Officer R. Whitfield, Officer K. Milward",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The video identifies the officer as 'Officer MILWARD', but the claim lists 'Officer R. Whitfield' and 'Officer K. Milward'. The claim's officer names do not match the video's officer identification."
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witness(es): Female motorist (W-1, Jane Doe)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "On August 6, 2021, at approximately 1908 hours, Officer Milward and I were dispatched to a report of a suspicious vehicle at the front of the La Habra Police Department station at 150 North Euclid Street.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states the incident occurred at '1908 hours' and at '150 North Euclid Street', while the transcript indicates the caller is 'three minutes away' on 'Harbor Boulevard near Wingstop'. The video does not confirm the time or exact location."
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Dispatch informed us that a female motorist had reported being aggressively pursued by a dark-colored sedan from the freeway to the station.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript shows the dispatcher asking 'What kind of car is following you?' and the caller responding 'It's a Toyota. An older Toyota. It's all black.' This aligns with the claim of a 'dark-colored sedan'."
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The female appeared extremely frightened and in a state of near-panic.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript shows the female caller stating 'I'm currently getting followed' and 'I don't know if I cut them off', indicating fear and panic."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Officer Milward and I responded in separate marked police vehicles.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Upon arrival at approximately 1910 hours, I observed a dark blue Toyota Camry parked on the street in front of the station, and the female motorist's vehicle was parked on the sidewalk area near the front entrance.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The video shows a dark blue sedan parked on the street, but the claim states the female motorist's vehicle was parked on the sidewalk area near the front entrance. The video does not clearly show a vehicle parked on the sidewalk."
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject was standing near the station's front doors and appeared to be attempting to gain entry.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "A male subject is seen standing near the station's front doors, appearing to attempt to gain entry."
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "His demeanor was calm and casual, suggesting he was unconcerned about the police presence.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The subject's demeanor appears calm and casual as he stands near the door, but the claim states he was 'unconcerned about the police presence,' which is not directly observable as the police presence is not yet established in the clip."
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "He seemed relaxed as he pushed buttons on the intercom.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The subject is seen pushing buttons on the intercom, which aligns with the claim that he 'seemed relaxed as he pushed buttons on the intercom.'"
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "I made contact with the female motorist, W-1, who appeared visibly shaken and distraught.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer making contact with a female motorist who appears shaken, consistent with the claim that she was 'visibly shaken and distraught'."
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "She stated she felt terrorized during the drive from the freeway and feared for her life.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The female caller states, 'Can anyone come outside. Like I'm really scared,' and 'I have my headlights on,' indicating fear and terror during the drive."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Officer Milward approached the subject and initiated a brief conversation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Officer Milward described the subject as cooperative and forthcoming.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The subject stated he was at the station to visit a friend and appeared genuinely confused about why officers were present.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Officer Milward informed the subject he would be with him shortly and walked away.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Within moments, the subject retrieved what appeared to be a semi-automatic pistol from his waistband.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript states 'Officer MILWARD. Fox observed, as she at fired. Officer FOX deployed her firearm and an officer-involved shooting occurred.' This contradicts the claim that the subject retrieved a pistol from his waistband, as the transcript indicates the female officer (Fox) fired first."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "the subject racked the slide in what could be interpreted as a threatening manner",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript states 'Officer FOX deployed her firearm and an officer-involved shooting occurred.' This contradicts the claim that the subject racked the slide in a threatening manner, as the transcript indicates the female officer fired first."
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "and aimed it in Officer Milward's general direction.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript states 'Officer FOX deployed her firearm and an officer-involved shooting occurred.' This contradicts the claim that the subject aimed the firearm in Officer Milward's general direction, as the transcript indicates the female officer fired first."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The action seemed deliberate but the subject's facial expression was difficult to read \u2014 it could have been interpreted as angry, determined, or possibly confused.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript states 'Officer FOX deployed her firearm and an officer-involved shooting occurred.' This contradicts the claim that the subject discharged two rounds, as the transcript indicates the female officer fired first."
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "Officer Milward spun around upon hearing the sound and observed the subject in what he perceived as a firing stance.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript states 'Officer FOX deployed her firearm and an officer-involved shooting occurred.' This contradicts the claim that one round struck Officer Milward, as the transcript indicates the female officer fired first."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject then discharged two rounds.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript states 'Officer FOX deployed her firearm and an officer-involved shooting occurred.' This contradicts the claim that the narrator immediately drew their service weapon and discharged five rounds, as the transcript indicates the female officer fired first."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "It was unclear from my vantage point whether the rounds were aimed directly at Officer Milward or fired in a more general direction.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript states 'Officer FOX deployed her firearm and an officer-involved shooting occurred.' This contradicts the claim that the subject fell to the ground immediately after the narrator fired, as the transcript indicates the female officer fired first."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "One round appeared to strike Officer Milward somewhere in the torso area, causing him to collapse.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript states 'Officer FOX deployed her firearm and an officer-involved shooting occurred.' This contradicts the claim that the subject appeared to still be holding a firearm after falling, as the transcript indicates the female officer fired first."
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "The impact seemed severe, though I could not determine the exact location of the wound from where I was positioned.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript states 'Officer FOX deployed her firearm and an officer-involved shooting occurred.' This contradicts the claim that additional officers arrived within minutes, as the transcript indicates the female officer fired first."
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "I immediately drew my service weapon and discharged what I believe was approximately five rounds toward the subject.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript states 'Officer FOX deployed her firearm and an officer-involved shooting occurred.' This contradicts the claim that the subject was pronounced deceased on scene, as the transcript indicates the female officer fired first."
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The subject fell to the ground.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript states 'Officer FOX deployed her firearm and an officer-involved shooting occurred.' This contradicts the claim that Officer Milward was transported to the hospital for treatment of a gunshot wound, as the transcript indicates the female officer fired first."
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "The rapidity of events made it difficult to distinguish the exact sequence \u2014 it felt nearly simultaneous.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The rapidity of events is evident from the quick sequence of the subject falling and the officer's actions, supporting the claim that it 'felt nearly simultaneous.'"
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "The subject appeared to still be holding a firearm after falling, though visibility was limited due to the fading daylight.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject falling, but it is unclear if he was still holding a firearm after falling due to limited visibility and the fading daylight."
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Additional officers arrived within minutes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Officers used a K-9 to approach and secure the subject at approximately 1916 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Medical attention was provided to both Officer Milward and the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Subject pronounced deceased on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "Officer Milward transported to hospital for treatment of gunshot wound.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    }
+  ]
+}

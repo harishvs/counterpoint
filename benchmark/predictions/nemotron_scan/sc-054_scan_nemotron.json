@@ -1,0 +1,558 @@
+{
+  "scenario_id": "sc-054",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 208.53,
+  "total_tokens": 61661,
+  "total_api_calls": 7,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-054",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: March 2-3, 2022",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript indicates the call occurred at approximately 9:30 PM on March 2, 2022, while the claim states the incident date is March 2-3, 2022. The transcript does not specify the exact date, but the initial text slide confirms the date as March 2, 2022."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 2044 hours through 0411 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 00:13 states the incident occurred at 03:52 A.M. on March 3, 2022. The claim states 'Approximately 2044 hours through 0411 hours', which corresponds to 8:44 PM to 4:11 AM. This time range (2044-0411) does not align with the 03:52 A.M. time shown in the video, creating a conflict."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: 615 South Resh Street, Anaheim, CA",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 00:13 states '615 SOUTH RESH STREET, ANAHEIM CA', which directly matches the location claim."
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Sergeant A. Lehman",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 6108",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Darius Crawford, Male, known to have mental health issues and prior firearm-related incidents",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Sergeant A. Lehman, Officer R. Weber, Officer C. Guo, Officer P. Salicos, Officer B. Morrison, Officer D. Hasani, Officer B. Mullins",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witness(es): W-1 (ex-girlfriend of subject)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "On March 2, 2022, at approximately 2044 hours, Anaheim Police Department received a call from W-1, the ex-girlfriend of the subject.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript indicates the caller is a male ('Ma'am' is used by the dispatcher, and the caller refers to himself as 'I'm going to get shot, Ma'am'), while the claim states W-1 is the ex-girlfriend of the subject. The transcript does not confirm the caller's gender or relationship to the subject."
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "W-1 stated that while inside the residence they shared at 615 South Resh Street, the subject had pointed a handgun at her in the living room and threatened to kill her and their neighbors.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "W-1 stated the subject had exited the house at one point, aimed the gun upwards into the air, and fired a shot.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The caller states 'He's shooting in the air, but he's got a big gun and he's threatening me' and 'That's going to shoot me.' This indicates the subject fired a shot into the air."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "W-1 stated she then walked out of the residence and called the police.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "W-1 told Sergeant Lehman that the handgun was one of two firearms the subject possessed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "W-1 stated that the subject was currently alone inside the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "W-1 stated the subject had not been taking his prescribed medication for unknown mental health issues.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "W-1 told officers, \"He's been off his meds for weeks and he keeps saying he wants to go out in a blaze of glory.\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "APD officers established a perimeter around the residence and made numerous attempts to communicate with the subject, none of which were successful.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "At approximately 0022 hours on March 3, the APD Tactical Response Group was notified.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "At approximately 0205 hours, SWAT officers assumed responsibility for maintaining a perimeter on the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "At approximately 0308 hours, APD Officer Ernesto Sena began making PA announcements encouraging the subject to exit the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Officer Sena was the primary negotiator.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "At various times between 0314 and 0338, the subject walked out onto the front porch, yelled unintelligibly at officers, and then returned inside.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The transcript at 05:01 states 'still moving at the door hey he's still his door he's been there' and 05:07 states 'what is it oh he's got his hand he's got a gun', indicating the subject walked out onto the porch and returned inside."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "At approximately 0341 hours, the subject walked out onto the front porch and simulated a handgun with his fingers, pointed it at a police vehicle, and then returned inside.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "At approximately 0347 hours, Officer Sena played a recorded surrender request from W-1 over the PA system.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Approximately one minute later, the subject walked out onto the front porch, yelled unintelligibly, and returned inside.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "At approximately 0350 hours, Officer Sena again played the surrender request.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The subject walked onto the front porch holding what appeared to be a short-barreled AR-15 style firearm with a double drum magazine inserted.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject was holding a 'short-barreled AR-15 style firearm with a double drum magazine,' but the video shows a white car and officers outside; no firearm is clearly visible in the subject's hand during this timeframe."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject looked at the officers and said, \"You want to do this? Let's do this.\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "He did not point the weapon at any officers and shortly thereafter returned inside.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject did not point the weapon at any officers, but the video shows officers with weapons drawn and aiming toward the white car, suggesting potential engagement."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "At approximately 0351 hours, Officer Sena played the surrender request once more.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Approximately one minute later, the subject walked out onto the front porch with a revolver in his right hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "The subject pointed the handgun up in the air and then in a northeast direction toward a marked APD police K9 patrol vehicle parked in front of the residence.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject pointed the handgun up in the air and toward a K9 vehicle, but the video shows officers outside with a white car and no clear view of a K9 vehicle or officer in the front passenger seat."
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The K9 vehicle was occupied by APD Officer Sena who was seated in the front passenger seat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Officers Weber, Guo, Hasani, and Leist were standing behind the vehicle using it for cover.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "An armored APD vehicle was also in front of the residence with Officers Morrison and Salicos inside utilizing gun ports.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Once the subject pointed the handgun toward officers, Weber, Guo, Salicos, and Morrison fired upon the subject using their APD-issued rifles.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "The subject immediately fell to a seated position facing north on the front porch with the revolver still held in his right hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "He did not respond to commands to drop the gun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "An arrest team formed and moved to the gate in front of the incident location.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "At approximately 0356 hours, Officer Hasani deployed a 40 mm Less Lethal round at the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "The subject moved but did not drop the handgun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Officer Hasani deployed another Less Lethal round.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "The subject still did not drop the handgun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Officer Mullins then deployed a K9 which caused the subject to drop the handgun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "The K9 pulled the subject east from the porch onto the sidewalk in front of the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "At approximately 0400 hours, officers searched the residence and other officers administered first aid and CPR on the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Anaheim Fire Department paramedics who had been staged nearby were summoned at approximately 0404 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "After examination, the subject's heart rhythm was found to be asystole.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "The subject was pronounced deceased by paramedics at approximately 0411 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "W-1 later told investigators, \"I knew this was going to happen. I tried to get him help but nobody listened to me.\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "Body-worn camera footage from multiple officers",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows body-worn camera footage from multiple officers (Officer Joe Gonzalez, Officer Kenneth Weber)."
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "One (1) .38 caliber Smith and Wesson revolver",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a revolver being pointed at the white sedan, which aligns with the claim of a .38 caliber Smith and Wesson revolver."
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "One (1) short-barreled AR-15 style firearm with double drum magazine (recovered from living room sofa)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-055",
+      "claim_text": "Multiple rifle cartridge cases",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-056",
+      "claim_text": "Scene photographs",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-057",
+      "claim_text": "Subject pronounced deceased on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-058",
+      "claim_text": "Residence searched and secured.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-059",
+      "claim_text": "OCDA investigation initiated.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-060",
+      "claim_text": "Officer Signature: A. Lehman",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-061",
+      "claim_text": "Date of Report: March 3, 2022",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 00:13 states 'DATE OF REPORT: MARCH 3, 2022', which directly matches the claim."
+    }
+  ]
+}

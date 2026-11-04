@@ -1,0 +1,290 @@
+{
+  "scenario_id": "sc-045",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 87.67,
+  "total_tokens": 27870,
+  "total_api_calls": 6,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: September 23, 2020",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card at 00:12 explicitly states 'WEDNESDAY, SEPTEMBER 23, 2020'."
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately Approximately 1324 hours",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card at 00:12 states the time is '1312 HOURS'. The claim says 'approximately 1324 hours', which is close enough to be considered supported by the 'approximately' qualifier, though the exact time in the video is 1312."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: 100 block of Avenida San Pablo, San Clemente, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows the vehicle driving through an intersection and then down a street. While the location is San Clemente, the specific '100 block of Avenida San Pablo' is not visually confirmed in this clip. The claim is specific about the block number which is not visible."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Deputy F. Harmon",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 2876",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officer(s): Deputy F. Harmon, Deputy J. Calloway",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "On September 23, 2020, at approximately 1324 hours, Deputy Calloway and I observed a pedestrian jaywalking across a roadway in the 100 block of Avenida San Pablo, San Clemente.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states the incident occurred in the '100 block of Avenida San Pablo'. The video shows the vehicle driving through an intersection and then down a street, but the specific street name 'Avenida San Pablo' and block number are not visually confirmed. The claim also states 'observed a pedestrian jaywalking', which is visually supported (the yellow circle highlights a person crossing), but the location specificity is the potential conflict."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "We were in plain clothes driving an unmarked vehicle.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states 'in plain clothes driving an unmarked vehicle'. The video shows a white SUV with 'SHERIFF' markings on the side (visible at 00:27), which contradicts the claim of an 'unmarked vehicle'."
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Deputy Calloway was driving.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states 'Deputy Calloway was driving'. The video shows Deputy Israel speaking and the camera perspective suggests he is the passenger (or the camera is mounted on the passenger side), while Deputy Duran is heard speaking. The claim identifies Deputy Calloway as the driver, but the video audio identifies Deputy Duran as speaking to the subject, and Deputy Israel as the one initiating contact. The visual shows a white Sheriff's vehicle, and the audio identifies Deputy Israel and Deputy Duran, not Calloway."
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "We contacted the subject to discuss the infraction.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "At 01:49, Deputy Israel says 'Hey, you need to stop.' This indicates contact was made with the subject to discuss the infraction (jaywalking)."
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject initially refused to provide identification.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The subject stated, \"I didn't jaywalk.\"",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states 'The subject stated, \"I didn't jaywalk.\"' The video shows Deputy Israel saying 'This is a jaywalk. He needs to have a... it's a control.' This implies the subject was jaywalking, but the specific quote 'I didn't jaywalk' is not heard in this clip."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The subject attempted to walk away.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject walking away from the officers, but the audio transcript indicates the subject was confronting the officers rather than walking away initially."
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Officers followed on foot, attempting de-escalation.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows officers exiting the vehicle and walking on foot toward the subject, consistent with following on foot after a traffic stop."
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject stated he did not want to be detained.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "At 01:49, Deputy Israel says 'Hey, you need to stop.' The subject is seen walking away (01:00-01:02), indicating he did not want to be detained initially."
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "A physical altercation ensued during which the subject attempted to grab Deputy Calloway's firearm from the holster.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows officers approaching the subject, but there is no clear visual evidence of a physical struggle or the subject attempting to grab a firearm from a holster."
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "Deputy Calloway yelled for the subject to let go.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The audio transcript shows Deputy Israel saying 'Because I'm telling you to stop', but there is no audio evidence of Deputy Calloway yelling for the subject to let go."
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "A bystander was heard calling out \"Shoot him again!\" during the incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "Deputy Calloway discharged his firearm during the struggle.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows a physical struggle, but there is no clear visual or audio evidence that Deputy Calloway discharged his firearm during the struggle."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Officers immediately began administering CPR.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Paramedics were summoned to the scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Body-worn camera footage",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video is explicitly labeled 'OCSD Patrol vehicle video' at the top, indicating it is body-worn camera footage."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Officer Signature: Harmon",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "Date of Report: September 23, 2020",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card at 00:12 states 'Date of Report: September 23, 2020'."
+    }
+  ]
+}

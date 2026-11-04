@@ -1,0 +1,484 @@
+{
+  "scenario_id": "sc-050",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 375.3,
+  "total_tokens": 103381,
+  "total_api_calls": 16,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: September 26, 2019",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title slide states the incident occurred on Thursday, September 26, 2019, which matches the timestamp visible in the bodycam footage (2019-09-26)."
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 0237 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 900.0,
+          "end_seconds": 1010.0
+        }
+      ],
+      "evidence_observations": "The video timestamp shows '2019-09-26 02:38:00' to '02:38:18', indicating the time is approximately 02:38, not 02:37. The clip starts at 02:38, so the exact time of the incident's start is not visible, but the visible time is 02:38."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: 1250 East La Habra Boulevard (Metro Auto Sales / Express Auto Recon), La Habra, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a location with a chain-link fence and a large metal structure, but the specific address '1250 East La Habra Boulevard' is not visible. The claim identifies the location as 'Metro Auto Sales / Express Auto Recon', which is not confirmed in the visible footage."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer D. Hartman",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 7156",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Rafael Espinoza, Male, 29 years old, visible tattoos",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title slide identifies the subject as Randolph Valentino Aguirre. The claim states the subject is Rafael Espinoza. The bodycam footage shows a person in the driver's seat, but the claim's description of 'visible tattoos' is not clearly visible in the low-light footage."
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer D. Hartman, K9 Officer T. Murray, Officer Trainee C. Ramos, Sergeant E. Lowe",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows officers labeled as 'Ofc. C. Robles', 'Ofc. T. Nelson', and 'Ofc. J. Coleman'. The claim lists 'Officer D. Hartman, K9 Officer T. Murray, Officer Trainee C. Ramos, Sergeant E. Lowe'. There is no visual evidence of Officer D. Hartman, K9 Officer T. Murray, or Sergeant E. Lowe in the provided clip. Officer C. Ramos is not visible; the name 'Ofc. C. Robles' is shown instead."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Business owner (W-1)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On September 26, 2019, at approximately 0237 hours, La Habra Police Department dispatch received an anonymous call reporting multiple subjects dismantling a vehicle in the area of 200 South Alpine Street.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officers Hartman, K9 Officer Murray, Officer Trainee Ramos, and Sergeant Lowe indicated they would respond.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 900.0,
+          "end_seconds": 1010.0
+        }
+      ],
+      "evidence_observations": "The video shows multiple officers arriving on scene, including those with K9 units, consistent with the report that officers Hartman, Murray, Ramos, and Lowe responded."
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Upon arrival, I traveled eastbound on Alpine Street and observed that the chain-link gate at the rear of Metro Auto Sales was open.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states the officer observed the chain-link gate at the rear of Metro Auto Sales was open. The bodycam footage shows a chain-link gate that appears to be closed or partially closed, and the officer is approaching from a different angle (near a vehicle), not necessarily from the rear of the gate."
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I parked in the apron of the driveway and observed a black Cadillac Escalade with its lights on and engine running.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a black vehicle, but it is not clearly identifiable as a 'black Cadillac Escalade'. The claim specifies the vehicle type and that its lights were on and engine running, but these details are not confirmed in the footage."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I approached the vehicle on foot from the driver's side and observed the subject seated in the driver's seat.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states the officer approached the vehicle from the driver's side. The bodycam footage shows the officer approaching the passenger side of the vehicle (the side with the gate), not the driver's side."
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I activated my body-worn camera, identified myself as La Habra Police, and ordered the subject to exit the vehicle.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The video shows an officer activating a camera and approaching a vehicle, but the specific action of 'identifying himself as La Habra Police' and 'ordering the subject to exit the vehicle' is not audible or visible in this segment."
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject initially appeared to comply, lowering the driver's side window.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject appeared to comply by lowering the window. The bodycam footage shows the officer approaching the passenger side, and there is no clear visual or audio evidence of the subject lowering a window or complying with an order to exit."
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "He briefly raised one hand and then closed the window.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject raised one hand and then closed the window. The bodycam footage shows the officer approaching the passenger side, and there is no clear visual or audio evidence of the subject raising a hand or closing a window."
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "K9 Officer Murray arrived and deployed the K9 from the vehicle.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The video shows a K9 officer and a K9, but the specific arrival and deployment of 'K9 Officer Murray' is not audible or visible in this clip."
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "Murray positioned himself on the east edge of the gate and began issuing K9 warnings through the PA system.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states K9 Officer Murray arrived and deployed the K9 from the vehicle. The bodycam footage shows Officer T. Nelson (not Murray) with the K9, and the audio does not confirm Murray's presence or actions."
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "I then moved to a position behind the passenger side door of the K9 vehicle.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states the officer moved to a position behind the passenger side door of the K9 vehicle. The bodycam footage shows the officer moving around the vehicle, but the specific positioning behind the passenger side door is not clearly visible or confirmed."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Sergeant Lowe arrived on scene and assumed command.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "Sergeant Lowe is visible in the video (labeled 'Ofc. J. Coleman' in some frames, but the claim identifies him as Sergeant Lowe; the video shows a senior officer taking command, which aligns with the claim). The claim states he 'assumed command', which is supported by his actions directing others."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Lowe directed officers to deploy OC rounds to force the subject from the vehicle.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 900.0,
+          "end_seconds": 1010.0
+        }
+      ],
+      "evidence_observations": "The video does not show any OC rounds being deployed, so the claim that Sergeant Lowe directed officers to deploy OC rounds cannot be verified from the clip."
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Officer Ramos positioned herself on the west side of the gate.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states Officer Ramos positioned herself on the west side of the gate. The bodycam footage shows Officer C. Robles (left panel) and Officer T. Nelson (right panel), but no clear indication of Officer Ramos's position or actions."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Prior to deploying OC, the subject revved the engine, turned up the radio, and began yelling obscenities in English from the sunroof.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject revved the engine, turned up the radio, and yelled obscenities from the sunroof. The bodycam footage is dark and shaky, with no clear audio evidence of engine revving, radio turning up, or yelling from the sunroof."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "At approximately 0301 hours, Sergeant Lowe deployed the first OC round into the vehicle.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states at approximately 0301 hours, Sergeant Lowe deployed the first OC round. The bodycam footage timestamp shows 03:07:26, which is 6 minutes after 0301 hours, and there is no clear visual or audio evidence of OC rounds being deployed at 0301 hours."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The subject then placed the vehicle in reverse and accelerated toward the K9 vehicle and officers positioned behind it.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject placed the vehicle in reverse and accelerated toward the K9 vehicle. The bodycam footage shows the officer moving around the vehicle, but there is no clear visual or audio evidence of the vehicle accelerating toward the K9 or officers."
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Several officers were forced to move to avoid being struck.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states several officers were forced to move to avoid being struck. The bodycam footage shows the officer moving around the vehicle, but there is no clear visual or audio evidence of officers being forced to move or being struck."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The subject then shifted into drive, crashed through the gate, and collided with multiple parked vehicles inside the auto body shop.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject crashed through the gate and collided with multiple parked vehicles. The bodycam footage shows the officer moving around the vehicle, but there is no clear visual or audio evidence of the vehicle crashing through the gate or colliding with other vehicles."
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "After crashing into the garage bay, the subject drove the Escalade through the metal rollup door and exited onto the street.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject drove the Escalade through the metal rollup door and exited onto the street. The bodycam footage shows the officer moving around the vehicle, but there is no clear visual or audio evidence of the vehicle driving through a rollup door or exiting onto the street."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "I could see into the vehicle through the passenger window and observed the subject had a look of determination on his face.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject had a look of determination on his face. The bodycam footage is dark and shaky, with no clear visual evidence of the subject's facial expression."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The subject raised his right arm toward the passenger-side window.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject raised his right arm toward the passenger-side window. The bodycam footage shows the officer approaching the passenger side, but there is no clear visual or audio evidence of the subject raising his arm."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Officer Murray fired seven rounds from his Colt AR-15A4 rifle.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states Officer Murray fired seven rounds from his Colt AR-15A4 rifle. The bodycam footage shows Officer T. Nelson, not Murray, and there is no clear audio evidence of gunfire or confirmation of the weapon used."
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Sergeant Lowe then fired ten rounds from his Glock 21C.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states Sergeant Lowe fired ten rounds from his Glock 21C. The bodycam footage shows Officer T. Nelson, not Lowe, and there is no clear audio evidence of gunfire or confirmation of the weapon used."
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Officer Ramos attempted to fire but her weapon malfunctioned.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states Officer Ramos attempted to fire but her weapon malfunctioned. The bodycam footage shows Officer C. Robles, not Ramos, and there is no clear audio or visual evidence of a weapon malfunction."
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The subject was struck and the Escalade came to a stop.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject was struck and the Escalade came to a stop. The bodycam footage shows the officer moving around the vehicle, but there is no clear visual or audio evidence of the subject being struck or the vehicle stopping."
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "After securing the scene, officers discovered the business owner, W-1, who had been asleep inside the shop during the entire incident and was awakened by the collision noises.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 900.0,
+          "end_seconds": 1010.0
+        }
+      ],
+      "evidence_observations": "The video does not show the business owner (W-1) being discovered or awakened by the collision noises, so this claim cannot be verified from the clip."
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Subject deceased at scene.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 900.0,
+          "end_seconds": 1010.0
+        }
+      ],
+      "evidence_observations": "The video does not show the subject being deceased at the scene, so this claim cannot be verified from the clip."
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Business owner W-1 uninjured.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 900.0,
+          "end_seconds": 1010.0
+        }
+      ],
+      "evidence_observations": "The video does not show the business owner (W-1) being uninjured, so this claim cannot be verified from the clip."
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Scene secured for OCDA investigation.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 900.0,
+          "end_seconds": 1010.0
+        }
+      ],
+      "evidence_observations": "The video does not show the scene being secured for OCDA investigation, so this claim cannot be verified from the clip."
+    }
+  ]
+}

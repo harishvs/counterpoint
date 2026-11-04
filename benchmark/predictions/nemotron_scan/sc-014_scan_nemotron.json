@@ -2,8 +2,8 @@
   "scenario_id": "sc-014",
   "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
   "pipeline": "scan",
-  "processing_time_seconds": 177.75,
-  "total_tokens": 53152,
+  "processing_time_seconds": 184.11,
+  "total_tokens": 54608,
   "total_api_calls": 7,
   "claims": [
     {
@@ -17,7 +17,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The text on screen at 0:13 states 'FRIDAY, AUGUST 6, 2021 AT 7:10 PM'."
+      "evidence_observations": "The title card at 00:13 states 'FRIDAY, AUGUST 6, 2021 AT 7:10 PM'."
     },
     {
       "claim_id": "cl-002",
@@ -30,7 +30,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The text on screen states the incident occurred at 7:10 PM, which is 1910 hours. The claim states approximately 1908 hours."
+      "evidence_observations": "The title card states the incident occurred at 7:10 PM, which is 1910 hours. The claim states approximately 1908 hours."
     },
     {
       "claim_id": "cl-003",
@@ -43,7 +43,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The text on screen states the location is '150 North Euclid Street, La Habra, CA'. The claim states 'Front entrance, Ridgemont Police Department'. The video shows the La Habra Police Department, not Ridgemont."
+      "evidence_observations": "The title card states the location is '150 North Euclid Street, La Habra, CA'. The claim states 'Front entrance, Ridgemont Police Department'. The video does not show the name 'Ridgemont Police Department'."
     },
     {
       "claim_id": "cl-004",
@@ -68,24 +68,19 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 400.0,
-          "end_seconds": 510.0
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The video shows a person in a black t-shirt and black pants, but it is not possible to confirm the subject's identity as 'Daniel Kwon', age 22, Asian, or the specific brand of shoes (Converse). The person is seen from behind and the face is not clearly visible."
+      "evidence_observations": "The video shows a male subject in a black t-shirt and black pants standing outside the building. While the claim describes 'Daniel Kwon, Male, 22 years old, Asian, black T-shirt, black pants, black Converse shoes', the video does not show his face clearly enough to confirm his identity, age, ethnicity, or shoe type, though the clothing description matches."
     },
     {
       "claim_id": "cl-007",
       "claim_text": "Officer(s): Officer L. Castillo, Officer R. Webb",
-      "evidence_relationship": "potential_conflict",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 400.0,
-          "end_seconds": 510.0
-        }
-      ],
-      "evidence_observations": "The video shows one officer (Officer MILWARD) and another officer (Officer FOX) arriving. The claim states 'Officer L. Castillo, Officer R. Webb'. The text overlay identifies the officers as 'Officer MILWARD' and 'Officer FOX', which contradicts the claim."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-008",
@@ -98,7 +93,7 @@
           "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows a male subject (Daniel Kwon) standing outside the building. The claim refers to a 'Female victim/complainant (W-1)'. The visual evidence contradicts the claim as the subject is male, not female."
+      "evidence_observations": "The claim states 'Female victim/complainant (W-1, reporting party for tailgating complaint)'. The video shows a female caller on the phone (transcript: 'FEMME CALLER: And parking. I have my headlights on.') and a male subject (Daniel Kwon). However, the video does not show a female victim at the scene, nor does it confirm she is the reporting party for a tailgating complaint, as the audio is a 911 call and the visual shows a male subject."
     },
     {
       "claim_id": "cl-009",
@@ -111,7 +106,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The transcript states the time as approximately 7:03 P.M. (1903 hours), not 1905 hours as claimed."
+      "evidence_observations": "The text states the incident occurred at 'approximately 1905 hours' and the caller states she is 'like three minutes away' at 3:02. The text also states the location as 'front of the Ridgemont Police Department' while the caller states she is on 'Harbor Boulevard near Wingstop'."
     },
     {
       "claim_id": "cl-010",
@@ -124,6 +119,14 @@
     {
       "claim_id": "cl-011",
       "claim_text": "Each of us drove a separate marked black and white police vehicle and wore department-issued navy-blue uniforms with badges and body-worn cameras.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officer Webb and I arrived at approximately 1908 hours.",
       "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
@@ -132,20 +135,7 @@
           "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows two officers (Officer Milward and Officer Webb) arriving at the scene. The transcript states they wore 'department-issued navy-blue uniforms with badges and body-worn cameras'. The footage confirms they are wearing uniforms and have body-worn cameras."
-    },
-    {
-      "claim_id": "cl-012",
-      "claim_text": "Officer Webb and I arrived at approximately 1908 hours.",
-      "evidence_relationship": "potential_conflict",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 100.0,
-          "end_seconds": 210.0
-        }
-      ],
-      "evidence_observations": "The transcript indicates the time as approximately 7:03 P.M. (1903 hours), not 1908 hours as claimed."
+      "evidence_observations": "The bodycam timestamp shows '19:08:17', which aligns with the claim that Officer Webb and the reporting officer arrived at approximately 1908 hours. The footage begins with the officer approaching the scene, consistent with arrival."
     },
     {
       "claim_id": "cl-013",
@@ -158,12 +148,20 @@
           "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows a dark blue sedan (not a 1998 Toyota Camry) parked on the street, not on the pedestrian sidewalk. The claim states the vehicle was parked 'behind W-1's vehicle on the pedestrian sidewalk', which contradicts the visual evidence of the vehicle being parked on the street."
+      "evidence_observations": "The claim states 'I parked behind a dark blue 1998 Toyota Camry that was parked behind W-1's vehicle on the pedestrian sidewalk'. The video shows a dark blue car (possibly a sedan) parked on the street/sidewalk area, but it is not clearly identifiable as a 1998 Toyota Camry, and the claim's description of the vehicle's position relative to W-1's vehicle is not visually confirmed in this clip."
     },
     {
       "claim_id": "cl-014",
       "claim_text": "Officer Webb parked his unit behind mine.",
-      "evidence_relationship": "supported",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The station lobby was open and staffed at the time of our arrival.",
+      "evidence_relationship": "potential_conflict",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
@@ -171,39 +169,46 @@
           "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows two officers (Officer Milward and Officer Webb) arriving at the scene. The claim states 'Officer Webb parked his unit behind mine', which aligns with the visual sequence of the officers arriving and parking."
-    },
-    {
-      "claim_id": "cl-015",
-      "claim_text": "The station lobby was open and staffed at the time of our arrival.",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "evidence_observations": "The claim states 'The station lobby was open and staffed at the time of our arrival.' The video shows a man (the subject) standing near the entrance, but there is no visual evidence of a staffed lobby or any personnel inside the station at the time of arrival."
     },
     {
       "claim_id": "cl-016",
       "claim_text": "I approached W-1, who remained seated in her vehicle.",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The claim states 'I approached W-1, who remained seated in her vehicle.' The video shows a male subject (Daniel Kwon) standing outside the building, not a female victim seated in a vehicle. The video does not show W-1 or her vehicle in this segment."
     },
     {
       "claim_id": "cl-017",
       "claim_text": "W-1 stated that a male driving the Toyota had been following her since she exited the northbound 57 freeway at Lambert Road.",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The claim states 'W-1 stated that a male driving the Toyota had been following her since she exited the northbound 57 freeway at Lambert Road.' The video shows a male subject (Daniel Kwon) and a dark blue car, but there is no audio or visual evidence in this clip confirming the subject was following W-1 from the freeway at that specific time."
     },
     {
       "claim_id": "cl-018",
       "claim_text": "W-1 stated she recognized the individual as someone she had seen in her neighborhood before.",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The claim states 'W-1 stated she recognized the individual as someone she had seen in her neighborhood before.' The video shows a male subject (Daniel Kwon), but there is no audio or visual evidence in this clip confirming that W-1 recognized him or that he was someone she had seen in her neighborhood."
     },
     {
       "claim_id": "cl-019",
@@ -216,12 +221,12 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The female caller is described as appearing frightened and still on the phone with dispatch in the transcript."
+      "evidence_observations": "The caller states she is 'still on the phone with dispatch' at 3:02, which aligns with the claim that she was 'still on the phone with dispatch'."
     },
     {
       "claim_id": "cl-020",
       "claim_text": "Officer Webb approached the subject, later identified as Daniel Kwon, who was standing at the front entrance of the station near the intercom.",
-      "evidence_relationship": "supported",
+      "evidence_relationship": "potential_conflict",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
@@ -229,12 +234,12 @@
           "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows a male subject (Daniel Kwon) standing at the front entrance of the station near the intercom. The claim states 'Officer Webb approached the subject, later identified as Daniel Kwon, who was standing at the front entrance of the station near the intercom.' This aligns with the visual evidence."
+      "evidence_observations": "The claim states 'Officer Webb approached the subject, later identified as Daniel Kwon, who was standing at the front entrance of the station near the intercom.' The video shows a male subject (Daniel Kwon) standing near the entrance, but the claim attributes the approach to Officer Webb, while the bodycam footage is from Officer Milward. There is no visual evidence of Officer Webb approaching the subject in this clip."
     },
     {
       "claim_id": "cl-021",
       "claim_text": "Officer Webb asked the subject what was going on.",
-      "evidence_relationship": "supported",
+      "evidence_relationship": "potential_conflict",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
@@ -242,12 +247,12 @@
           "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows Officer Webb approaching the subject at the front entrance. The claim states 'Officer Webb asked the subject what was going on.' While the audio is not transcribed for this exact moment, the visual context supports the interaction."
+      "evidence_observations": "The claim states 'Officer Webb asked the subject what was going on.' The video shows Officer Milward (not Webb) approaching the subject, and the audio transcript shows the dispatcher speaking, not Officer Webb asking the subject. There is no audio evidence of Officer Webb speaking to the subject in this clip."
     },
     {
       "claim_id": "cl-022",
       "claim_text": "The subject stated he was \"just waiting for a friend.\"",
-      "evidence_relationship": "supported",
+      "evidence_relationship": "potential_conflict",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
@@ -255,20 +260,12 @@
           "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the subject standing at the front entrance. The claim states 'The subject stated he was \"just waiting for a friend.\"' While the audio is not transcribed for this exact moment, the visual context supports the interaction."
+      "evidence_observations": "The claim states 'The subject stated he was \"just waiting for a friend.\"' The video shows the subject standing near the entrance, but there is no audio evidence in this clip of the subject speaking to an officer about waiting for a friend. The audio is from a 911 call, not a direct conversation with the subject."
     },
     {
       "claim_id": "cl-023",
       "claim_text": "Officer Webb asked the subject whether he was involved with the vehicles parked in front of the station, and the subject said he was not.",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
-    },
-    {
-      "claim_id": "cl-024",
-      "claim_text": "Officer Webb remained facing the subject and continued to question him.",
-      "evidence_relationship": "supported",
+      "evidence_relationship": "potential_conflict",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
@@ -276,7 +273,20 @@
           "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows Officer Webb facing the subject and continuing to question him. The claim states 'Officer Webb remained facing the subject and continued to question him.' This aligns with the visual evidence of the officer maintaining his position and engaging with the subject."
+      "evidence_observations": "The claim states 'Officer Webb asked the subject whether he was involved with the vehicles parked in front of the station, and the subject said he was not.' The video shows the subject standing near the entrance, but there is no audio evidence of Officer Webb asking this question or the subject responding in this clip."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Officer Webb remained facing the subject and continued to question him.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The claim states 'Officer Webb remained facing the subject and continued to question him.' The video shows Officer Milward (not Webb) facing the subject, and the audio is from a 911 call, not a direct conversation between Officer Webb and the subject. There is no visual or audio evidence of Officer Webb questioning the subject in this clip."
     },
     {
       "claim_id": "cl-025",
@@ -285,11 +295,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 100.0,
-          "end_seconds": 210.0
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The transcript does not describe the subject producing a firearm from his right jacket pocket, racking the slide, or pointing it at Officer Webb."
+      "evidence_observations": "The claim states 'Without warning, the subject produced a firearm from his right jacket pocket, racked the slide, and pointed it at Officer Webb from a distance of approximately 15 feet.' The video shows the subject standing near the entrance, but there is no visual evidence of him producing a firearm, racking the slide, or pointing it at Officer Webb in this clip. The audio is from a 911 call, not a direct confrontation."
     },
     {
       "claim_id": "cl-026",
@@ -298,11 +308,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 100.0,
-          "end_seconds": 210.0
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The transcript does not include the narrator shouting 'Drop the weapon! Drop it now!'"
+      "evidence_observations": "The claim states 'I saw the subject raise the weapon and immediately shouted, \"Drop the weapon! Drop it now!\"' The video shows the subject standing near the entrance, but there is no visual evidence of him raising a weapon or the officer shouting commands in this clip. The audio is from a 911 call, not a direct confrontation."
     },
     {
       "claim_id": "cl-027",
@@ -311,11 +321,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 100.0,
-          "end_seconds": 210.0
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The transcript does not state that the subject fired three rounds at Officer Webb."
+      "evidence_observations": "The claim states 'The subject then fired three rounds at Officer Webb.' The video shows the subject standing near the entrance, but there is no visual or audio evidence of gunfire in this clip. The audio is from a 911 call, not a direct confrontation with gunfire."
     },
     {
       "claim_id": "cl-028",
@@ -324,11 +334,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 100.0,
-          "end_seconds": 210.0
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The transcript does not mention a round striking Officer Webb's ballistic vest in the left upper chest area."
+      "evidence_observations": "The claim states 'One round struck Officer Webb's ballistic vest in the left upper chest area, causing him to stumble backward but remain standing.' The video shows the subject standing near the entrance, but there is no visual evidence of Officer Webb being struck by a bullet or stumbling backward in this clip. The audio is from a 911 call, not a direct confrontation."
     },
     {
       "claim_id": "cl-029",
@@ -337,11 +347,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 100.0,
-          "end_seconds": 210.0
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The transcript does not describe the narrator drawing their firearm and firing three rounds at the subject."
+      "evidence_observations": "The claim states 'I drew my department-issued firearm and fired three rounds at the subject.' The video shows Officer Milward's perspective, but there is no visual evidence of him drawing his firearm or firing in this clip. The audio is from a 911 call, not a direct confrontation."
     },
     {
       "claim_id": "cl-030",
@@ -350,11 +360,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 100.0,
-          "end_seconds": 210.0
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The transcript does not state that one round struck the subject in the torso, causing him to fall to the ground."
+      "evidence_observations": "The claim states 'One round struck the subject in the torso, causing him to fall to the ground.' The video shows the subject standing near the entrance, but there is no visual evidence of him being shot or falling to the ground in this clip. The audio is from a 911 call, not a direct confrontation."
     },
     {
       "claim_id": "cl-031",
@@ -363,11 +373,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 100.0,
-          "end_seconds": 210.0
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The transcript does not mention the narrator maintaining their position and issuing commands for the subject to drop the firearm and show his hands."
+      "evidence_observations": "The claim states 'After the subject fell, I maintained my position and continued to issue commands for the subject to drop the firearm and show his hands.' The video shows the subject standing near the entrance, but there is no visual evidence of him falling or the officer maintaining position and issuing commands in this clip. The audio is from a 911 call, not a direct confrontation."
     },
     {
       "claim_id": "cl-032",
@@ -376,11 +386,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 100.0,
-          "end_seconds": 210.0
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The transcript states the time as approximately 7:03 P.M. (1903 hours), not 1910 hours as claimed."
+      "evidence_observations": "The claim states 'At approximately 1910 hours, I radioed that a suspect was down and that Officer Webb had been struck.' The bodycam timestamp shows '19:08:17' at the start of the clip, and the subject is still standing. There is no visual or audio evidence in this clip of the officer radioing at 1910 hours or the subject being down."
     },
     {
       "claim_id": "cl-033",
@@ -425,15 +435,10 @@
     {
       "claim_id": "cl-038",
       "claim_text": "Body-worn camera footage (approximately 35 minutes)",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
-        }
-      ],
-      "evidence_observations": "The bodycam footage timestamp reads '2021-08-06 19:08:17', confirming the footage duration is approximately 35 minutes (from 00:00:30 to 00:35:00)."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-039",
@@ -478,10 +483,15 @@
     {
       "claim_id": "cl-044",
       "claim_text": "Officer Webb's uniform with apparent blood",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The claim states 'Officer Webb's uniform with apparent blood.' The video shows Officer Milward's uniform, which appears to be dark (possibly navy blue), but there is no visual evidence of blood on the uniform in this clip. The claim refers to Officer Webb, not Officer Milward, and there is no visual evidence of blood on any uniform in this segment."
     },
     {
       "claim_id": "cl-045",
@@ -526,7 +536,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The text on screen at 0:13 states 'DATE OF REPORT: AUGUST 6, 2021'."
+      "evidence_observations": "The title card at 00:13 states 'Date of Report: August 6, 2021'."
     }
   ]
 }

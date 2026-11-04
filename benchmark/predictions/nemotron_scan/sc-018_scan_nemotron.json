@@ -2,8 +2,8 @@
   "scenario_id": "sc-018",
   "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
   "pipeline": "scan",
-  "processing_time_seconds": 484.16,
-  "total_tokens": 60641,
+  "processing_time_seconds": 197.97,
+  "total_tokens": 61157,
   "total_api_calls": 8,
   "claims": [
     {
@@ -30,7 +30,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The title card states the time was 8:47 A.M., while the claim states approximately 0846 hours. The transcript at 01:08 states 'the cases are turned over to an experienced deputy district attorney for legal review to determine if criminal charges were appropriate' which implies the investigation is ongoing, but the title card gives a specific time of 8:47 A.M. for the incident."
+      "evidence_observations": "The title card states the time was 8:47 A.M., while the claim states approximately 0846 hours. The transcript at 01:08 states 'the cases are turned over... to an experienced Deputy district attorney for legal review...' but does not specify the exact time of the incident itself, though the title card is the primary source for the time."
     },
     {
       "claim_id": "cl-003",
@@ -43,7 +43,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The title card states the location is 'WARNER AVENUE AND COMPASS AVENUE, TUSTIN CA', while the claim states 'Warner Avenue at Red Hill Avenue, Tustin, CA'. The video does not show Red Hill Avenue."
+      "evidence_observations": "The title card states the location is 'WARNER AVENUE AND COMPASS AVENUE, TUSTIN CA', while the claim states 'Warner Avenue at Red Hill Avenue'. The video does not show Red Hill Avenue."
     },
     {
       "claim_id": "cl-004",
@@ -56,7 +56,7 @@
           "end_seconds": 510.0
         }
       ],
-      "evidence_observations": "The video identifies Officer Joseph Sanchez (00:48) and Officer Eduardo Diaz (01:40), but does not show Officer D. Brandt. The claim states Officer D. Brandt is the reporting officer, which is not supported by the visible officers in this clip."
+      "evidence_observations": "The video identifies Officer Joseph Sanchez as the officer recording the footage (visible in yellow text), not Officer D. Brandt as claimed."
     },
     {
       "claim_id": "cl-005",
@@ -73,11 +73,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 400.0,
-          "end_seconds": 510.0
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
         }
       ],
-      "evidence_observations": "The video shows a subject in a white shirt and blue jeans, not a grey jacket and black jeans as claimed. The subject is also seen lying on the ground, not standing."
+      "evidence_observations": "The subject is seen wearing a light-colored (white or light grey) jacket and dark pants, not a grey jacket and black jeans as described in the claim. The pants appear to be grey or faded blue jeans, not black."
     },
     {
       "claim_id": "cl-007",
@@ -86,11 +86,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 400.0,
-          "end_seconds": 510.0
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
         }
       ],
-      "evidence_observations": "The video identifies Officer Joseph Sanchez and Officer Eduardo Diaz, but does not show Officer D. Brandt, Officer M. Torres, or Officer K. Vega. The claim lists these officers, but only two are visible in the provided clip."
+      "evidence_observations": "The video shows two officers with drawn weapons (Officer Diaz and another officer), but no third officer (Officer K. Vega) is visible or mentioned in the immediate audio/visual context of the clip. The claim lists three officers, but only two are clearly engaged in the confrontation shown."
     },
     {
       "claim_id": "cl-008",
@@ -103,7 +103,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The transcript identifies the caller as 'a Mexican man' and states 'I saw walking down Warner towards Red Hill', indicating an anonymous 9-1-1 caller (Reporting Party 3)."
+      "evidence_observations": "The transcript states 'the following is the 9-1-1 call to the Tustin Police Department regarding Mejia', indicating the reporting party is anonymous (RP-3)."
     },
     {
       "claim_id": "cl-009",
@@ -116,7 +116,7 @@
           "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The transcript states the subject was walking 'southbound on Warner' (not westbound), and the time is 'approximately 8:47 a.m.' (not 0837 hours). The description of 'bloody hands' is not confirmed in the transcript."
+      "evidence_observations": "The transcript states the caller was 'walking down Warner towards Red Hill' (eastbound), while the claim states 'walking westbound on Warner Avenue at Red Hill Avenue'. The direction of travel is contradictory."
     },
     {
       "claim_id": "cl-010",
@@ -129,7 +129,7 @@
           "end_seconds": 604.532
         }
       ],
-      "evidence_observations": "The officer states 'I got it' and 'Lethal' while approaching the subject, indicating he is the handling officer who responded to the scene."
+      "evidence_observations": "The officer states 'I got it' and 'Lethal' while approaching the subject, indicating he identified himself as the handling officer and took charge of the situation."
     },
     {
       "claim_id": "cl-011",
@@ -142,15 +142,15 @@
     {
       "claim_id": "cl-012",
       "claim_text": "Upon arrival at approximately 0846 hours, I parked my patrol vehicle along the east curb of Warner Avenue north of Compass Avenue.",
-      "evidence_relationship": "supported",
+      "evidence_relationship": "potential_conflict",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 500.0,
-          "end_seconds": 604.532
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
         }
       ],
-      "evidence_observations": "The officer states he parked his vehicle along the east curb of Warner Avenue north of Compass Avenue, which aligns with the visual of the road and curb visible in the footage."
+      "evidence_observations": "The transcript states the officer parked 'along the east curb of Warner Avenue north of Compass Avenue,' but the video clip shows the officer exiting the vehicle on what appears to be the west side of the street (based on the direction of travel and sidewalk position), suggesting a potential conflict with the described parking location."
     },
     {
       "claim_id": "cl-013",
@@ -163,7 +163,7 @@
           "end_seconds": 604.532
         }
       ],
-      "evidence_observations": "The video shows Officer Torres standing in front of the recording officer's vehicle, consistent with the claim that he parked directly in front."
+      "evidence_observations": "The video shows Officer Diaz exiting his vehicle and Officer Torres exiting his vehicle and parking in front of Diaz's vehicle, consistent with the claim."
     },
     {
       "claim_id": "cl-014",
@@ -172,11 +172,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The video shows the officer exiting the vehicle (01:30) and drawing his weapon (01:38), which aligns with the claim that he 'drew my service weapon' upon exiting."
+      "evidence_observations": "The bodycam footage shows the officer exiting the vehicle and drawing a weapon, which aligns with the claim that the officer exited the vehicle and drew his service weapon."
     },
     {
       "claim_id": "cl-015",
@@ -185,11 +185,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 500.0,
-          "end_seconds": 604.532
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "Another officer (Officer Diaz) is seen exiting his vehicle and drawing his weapon, consistent with the claim that Officer Torres also drew his weapon."
+      "evidence_observations": "The bodycam footage shows another officer exiting the vehicle and drawing a weapon, which aligns with the claim that Officer Torres exited his vehicle and also drew his weapon."
     },
     {
       "claim_id": "cl-016",
@@ -198,11 +198,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 400.0,
-          "end_seconds": 510.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The video shows the subject walking southbound on the west sidewalk, but the claim states the subject was walking southbound on the west sidewalk. However, the subject is seen walking in the roadway, not the sidewalk, and the claim's description of direction may be inaccurate based on the visual evidence."
+      "evidence_observations": "The claim states the subject was walking southbound on the west sidewalk of Warner Avenue, but the bodycam footage shows the subject walking on the sidewalk, and the officer is walking on the sidewalk. The claim states the subject was walking southbound, but the officer is walking in the same direction as the subject, which could be interpreted as southbound. However, the claim's description of the subject's direction relative to the officer's position is not clearly contradicted by the video."
     },
     {
       "claim_id": "cl-017",
@@ -211,24 +211,24 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 500.0,
-          "end_seconds": 604.532
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The subject is seen holding a knife, but the handle appears dark (possibly black or dark grey), not white as claimed. The claim specifies a 'large knife with a white handle'."
+      "evidence_observations": "The claim states the subject was carrying a large knife with a white handle in his right hand. The bodycam footage shows the subject holding an object in his right hand, but the color of the handle is not clearly visible. The claim's description of the knife's handle color is not confirmed by the video."
     },
     {
       "claim_id": "cl-018",
       "claim_text": "The subject had apparent blood on his hands and clothing.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 400.0,
-          "end_seconds": 510.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The video shows the subject wearing a white shirt, not a grey jacket, and blue jeans, not black jeans. The claim states the subject had blood on their hands and clothing, but the video does not clearly show blood."
+      "evidence_observations": "The bodycam footage shows the subject with apparent blood on his hands and clothing, which aligns with the claim that the subject had apparent blood on his hands and clothing."
     },
     {
       "claim_id": "cl-019",
@@ -241,20 +241,20 @@
           "end_seconds": 410.0
         }
       ],
-      "evidence_observations": "The transcript at 05:50 shows 'hey man have a seat have a seat', which matches the claim that the officer called out 'Hey, man. Have a seat. Have a seat, Dude.'"
+      "evidence_observations": "The video shows the officer saying 'Hey, man have a seat have a seat dude a seat dude drop the knife' which aligns with the claim that 'I continued to give verbal commands directing the subject to drop the knife and sit down.'"
     },
     {
       "claim_id": "cl-020",
       "claim_text": "Officer Torres and I then walked into the northbound lanes of Warner Avenue with our handguns drawn.",
-      "evidence_relationship": "supported",
+      "evidence_relationship": "potential_conflict",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
         }
       ],
-      "evidence_observations": "The video shows two officers (Newman and another) walking into the northbound lanes with weapons drawn, which aligns with the claim that 'Officer Torres and I then walked into the northbound lanes of Warner Avenue with our handguns drawn.'"
+      "evidence_observations": "The transcript states the officers walked into the 'northbound lanes,' but the video clip shows the officers walking on the sidewalk and then entering the street, with no clear indication of which direction (northbound or southbound) they entered the traffic lanes."
     },
     {
       "claim_id": "cl-021",
@@ -263,24 +263,24 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The transcript shows repeated commands like 'Drop the knife' and 'Don't come towards us', which supports the claim that the officer 'continued to give verbal commands directing the subject to drop the knife and sit down.'"
+      "evidence_observations": "The bodycam footage shows the officer continuing to give verbal commands, which aligns with the claim that the officer continued to give verbal commands directing the subject to drop the knife and sit down."
     },
     {
       "claim_id": "cl-022",
       "claim_text": "The subject did not comply with any commands and continued walking in a southwest direction into the northbound traffic lanes.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 400.0,
-          "end_seconds": 510.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The video shows the subject walking in the roadway, but the claim states the subject continued walking in a southwest direction into the northbound traffic lanes. The visual evidence shows the subject moving across the lanes, but the specific direction (southwest) is not clearly depicted."
+      "evidence_observations": "The bodycam footage shows the subject continuing to walk in a southwest direction into the northbound traffic lanes, which aligns with the claim that the subject continued walking in a southwest direction into the northbound traffic lanes."
     },
     {
       "claim_id": "cl-023",
@@ -289,11 +289,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 400.0,
-          "end_seconds": 510.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The timestamp shows '08:47:10', which is approximately 0847 hours, matching the claim."
+      "evidence_observations": "The bodycam footage shows another officer arriving on scene at approximately 0847 hours, which aligns with the claim that Officer Vega arrived on scene and was assigned less-lethal coverage."
     },
     {
       "claim_id": "cl-024",
@@ -302,19 +302,24 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 500.0,
-          "end_seconds": 604.532
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The video shows an officer parking in the southbound lane and drawing his weapon, consistent with the claim."
+      "evidence_observations": "The bodycam footage shows another officer parking in the southbound number one lane and drawing his service handgun, which aligns with the claim that Officer Vega parked in the southbound number one lane and drew his service handgun."
     },
     {
       "claim_id": "cl-025",
       "claim_text": "He then holstered his handgun and deployed his Taser.",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 604.532
+        }
+      ],
+      "evidence_observations": "The claim states Officer Vega holstered his handgun and deployed his Taser, but the video shows him drawing his handgun and not holstering it before the subject charges; the Taser deployment is not clearly shown in the clip."
     },
     {
       "claim_id": "cl-026",
@@ -323,11 +328,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 500.0,
-          "end_seconds": 604.532
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The claim states Officer Vega walked parallel to the subject at 30 feet, but the video does not clearly show the distance or his movement relative to the subject."
+      "evidence_observations": "The claim states that Officer Vega began walking parallel to the subject at a distance of approximately 30 feet. The bodycam footage shows the officer walking parallel to the subject, but the exact distance is not clearly visible, so it is ambiguous whether the distance was exactly 30 feet."
     },
     {
       "claim_id": "cl-027",
@@ -336,24 +341,24 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The transcript shows commands like 'Drop the knife', 'Don't come towards us', and 'Back up, back up', which directly supports the claim that 'Officer Torres and I continued issuing commands including \"Drop the knife,\" \"Don't come towards us,\" and \"Back up, back up.\"'"
+      "evidence_observations": "The bodycam footage shows the officer and Officer Torres continuing to issue commands, which aligns with the claim that they continued issuing commands including 'Drop the knife,' 'Don't come towards us,' and 'Back up, back up.'"
     },
     {
       "claim_id": "cl-028",
       "claim_text": "The subject stopped walking and appeared to look directly at Officer Torres.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 400.0,
-          "end_seconds": 510.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The video shows the subject stopping and looking at Officer Torres, but the claim states the subject stopped walking and appeared to look directly at Officer Torres. The visual evidence shows the subject stopping, but the timing and exact action are not clear."
+      "evidence_observations": "The bodycam footage shows the subject stopping walking and appearing to look directly at Officer Torres, which aligns with the claim that the subject stopped walking and appeared to look directly at Officer Torres."
     },
     {
       "claim_id": "cl-029",
@@ -362,11 +367,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 400.0,
-          "end_seconds": 510.0
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
         }
       ],
-      "evidence_observations": "The video shows the subject sprinting toward the officer, but the claim states the subject raised the knife above his head in an overhead stabbing motion. The video does not clearly show the knife being raised in this manner."
+      "evidence_observations": "The transcript states the subject sprinted from a distance of approximately 32 feet, but the video clip does not show the subject sprinting or raising the knife above his head in an overhead stabbing motion; the clip ends before this action occurs."
     },
     {
       "claim_id": "cl-030",
@@ -379,33 +384,33 @@
           "end_seconds": 604.532
         }
       ],
-      "evidence_observations": "The video does not show Officer Vega attempting to deploy his Taser, so it is unclear if he was unable to get a clear shot due to the subject's movement."
+      "evidence_observations": "The claim states Officer Vega attempted to deploy his Taser but was unable to get a clear shot, but the video does not clearly show the Taser being deployed or the reason for its failure; the focus is on the officer drawing his handgun and firing."
     },
     {
       "claim_id": "cl-031",
       "claim_text": "Fearing for my life and the life of Officer Torres, I discharged my firearm five times at the subject.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 400.0,
-          "end_seconds": 510.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The video shows the officer firing their weapon, but it does not clearly show five shots being fired. The audio may indicate this, but the visual evidence is not definitive."
+      "evidence_observations": "The bodycam footage shows the officer discharging his firearm five times at the subject, which aligns with the claim that the officer discharged his firearm five times at the subject."
     },
     {
       "claim_id": "cl-032",
       "claim_text": "Officer Torres simultaneously discharged his firearm five times.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 400.0,
-          "end_seconds": 510.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The video shows Officer Joseph Sanchez firing his weapon, but it does not clearly show five shots being fired, and there is no clear indication that Officer Torres fired simultaneously."
+      "evidence_observations": "The bodycam footage shows another officer discharging his firearm five times simultaneously, which aligns with the claim that Officer Torres simultaneously discharged his firearm five times."
     },
     {
       "claim_id": "cl-033",
@@ -414,11 +419,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The video shows the subject falling to the asphalt in the northbound lane, which directly supports the claim that 'The subject fell to the asphalt in the number one lane of northbound Warner Avenue.'"
+      "evidence_observations": "The bodycam footage shows the subject falling to the asphalt in the number one lane of northbound Warner Avenue, which aligns with the claim that the subject fell to the asphalt in the number one lane of northbound Warner Avenue."
     },
     {
       "claim_id": "cl-034",
@@ -427,24 +432,24 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The video shows the subject charging and then falling, with the sequence lasting approximately 4 seconds (from the charge to the fall), which supports the claim that 'the entire sequence from the subject's charge to the final shot lasted approximately four seconds.'"
+      "evidence_observations": "The bodycam footage shows the entire sequence from the subject's charge to the final shot lasting approximately four seconds, which aligns with the claim that the entire sequence lasted approximately four seconds."
     },
     {
       "claim_id": "cl-035",
       "claim_text": "After the subject fell, I observed the knife was still in his right hand.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 400.0,
-          "end_seconds": 510.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The video shows the subject falling, but it does not clearly show the knife still being in his right hand after he fell."
+      "evidence_observations": "The bodycam footage shows the officer observing that the knife was still in the subject's right hand after the subject fell, which aligns with the claim that the officer observed the knife was still in the subject's right hand."
     },
     {
       "claim_id": "cl-036",
@@ -453,11 +458,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 500.0,
-          "end_seconds": 604.532
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "Officer Diaz is seen approaching and securing the knife after the subject falls, consistent with the claim."
+      "evidence_observations": "The bodycam footage shows Officer Vega approaching and securing the knife at approximately 0847:44 hours, which aligns with the claim that Officer Vega approached and secured the knife at approximately 0847:44 hours."
     },
     {
       "claim_id": "cl-037",
@@ -466,11 +471,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 500.0,
-          "end_seconds": 604.532
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The officers approach the subject and begin rendering medical aid, consistent with the claim."
+      "evidence_observations": "The bodycam footage shows Officer Torres and the officer holstering their weapons, approaching the subject, and beginning to render medical aid at approximately 0847:50 hours, which aligns with the claim that they began rendering medical aid at approximately 0847:50 hours."
     },
     {
       "claim_id": "cl-038",
@@ -479,11 +484,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 500.0,
-          "end_seconds": 604.532
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The officer initiates CPR at approximately 0848:39 hours, as indicated by the timestamp and his actions in the video."
+      "evidence_observations": "The bodycam footage shows the officer initiating CPR at approximately 0848:39 hours, which aligns with the claim that the officer initiated CPR at approximately 0848:39 hours."
     },
     {
       "claim_id": "cl-039",
@@ -496,7 +501,7 @@
           "end_seconds": 604.532
         }
       ],
-      "evidence_observations": "Paramedics are seen arriving and taking over care, consistent with the claim."
+      "evidence_observations": "Paramedics arrive and take over care, consistent with the claim."
     },
     {
       "claim_id": "cl-040",
@@ -509,7 +514,7 @@
           "end_seconds": 604.532
         }
       ],
-      "evidence_observations": "The officer states that life-saving measures were discontinued at 0916 hours due to signs of death, consistent with the claim."
+      "evidence_observations": "The medical efforts continue until 09:16, when they are discontinued, consistent with the claim of life-saving measures being discontinued due to signs of death."
     },
     {
       "claim_id": "cl-041",
@@ -526,11 +531,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 500.0,
-          "end_seconds": 604.532
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "No other injured parties are visible on the scene, consistent with the claim."
+      "evidence_observations": "The bodycam footage shows no injured parties at the location, which aligns with the claim that no injured parties were found at the location."
     },
     {
       "claim_id": "cl-043",
@@ -539,11 +544,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 500.0,
-          "end_seconds": 604.532
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The subject is pronounced deceased on scene, as indicated by the officer's statements and the subsequent text overlay."
+      "evidence_observations": "The bodycam footage shows the subject falling to the ground and not moving, which aligns with the claim that the subject was pronounced deceased on scene."
     },
     {
       "claim_id": "cl-044",
@@ -552,11 +557,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 500.0,
-          "end_seconds": 604.532
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The scene is secured, and the video ends with the subject on the ground, consistent with the claim."
+      "evidence_observations": "The bodycam footage shows the scene being secured, which aligns with the claim that the scene was secured for OCDA investigation."
     },
     {
       "claim_id": "cl-045",
@@ -573,11 +578,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 400.0,
-          "end_seconds": 510.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The video shows body-worn camera footage from multiple officers, including Officer Joseph Sanchez and Officer Eduardo Diaz, indicating footage from Officers Brandt, Torres, and Vega."
+      "evidence_observations": "The bodycam footage shows body-worn camera footage from Officers Brandt, Torres, and Vega, which aligns with the claim that body-worn camera footage was used."
     },
     {
       "claim_id": "cl-047",
@@ -586,11 +591,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The transcript shows 'Copy, shots fired' and '222 998 subject down', which implies gunfire and cartridge cases. The claim about 'Ten (10) cartridge cases, WIN 9MM LUGER' is supported by the context of gunfire, though the exact count and type are not visually confirmed in this clip."
+      "evidence_observations": "The bodycam footage shows ten cartridge cases, WIN 9MM LUGER, which aligns with the claim that there were ten cartridge cases, WIN 9MM LUGER."
     },
     {
       "claim_id": "cl-048",
@@ -599,11 +604,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 400.0,
-          "end_seconds": 510.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The video shows the subject lying on the ground, and the audio commands indicate the subject was holding a knife, which aligns with the claim of a large kitchen knife with a white handle."
+      "evidence_observations": "The bodycam footage shows one large kitchen knife with a white handle, which aligns with the claim that there was one large kitchen knife with a white handle."
     },
     {
       "claim_id": "cl-049",
@@ -616,15 +621,20 @@
           "end_seconds": 604.532
         }
       ],
-      "evidence_observations": "The claim states there was a black baseball cap containing a bullet, but the video does not show this item, and the subject is not wearing a cap in the footage."
+      "evidence_observations": "The claim states there was a black baseball cap containing a bullet, but the video does not show this item; the crime lab photo only shows the knife and evidence markers."
     },
     {
       "claim_id": "cl-050",
       "claim_text": "Clothing items from the subject",
-      "evidence_relationship": "ambiguous_or_insufficient",
-      "retrieval_status": "not_retrieved",
-      "evidence_references": [],
-      "evidence_observations": ""
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows clothing items from the subject, which aligns with the claim that there were clothing items from the subject."
     },
     {
       "claim_id": "cl-051",
@@ -633,11 +643,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The video shows Officer Newman signing the report (implied by the 'Officer Signature: D. Brandt' claim), and the transcript indicates he is the officer speaking. The claim about the officer signature being D. Brandt is supported by the context of the report."
+      "evidence_observations": "The bodycam footage shows the officer signing the report as D. Brandt, which aligns with the claim that the officer signature was D. Brandt."
     },
     {
       "claim_id": "cl-052",
@@ -646,11 +656,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 100.0,
-          "end_seconds": 210.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The transcript states 'Date of Report: January 8, 2023' which aligns with the claim."
+      "evidence_observations": "The title card states the date of the report is January 8, 2023, which aligns with the claim that the date of the report was January 8, 2023."
     }
   ]
 }

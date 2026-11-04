@@ -2,8 +2,8 @@
   "scenario_id": "sc-017",
   "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
   "pipeline": "scan",
-  "processing_time_seconds": 565.63,
-  "total_tokens": 146435,
+  "processing_time_seconds": 524.5,
+  "total_tokens": 140510,
   "total_api_calls": 16,
   "claims": [
     {
@@ -25,7 +25,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The title card at 00:13 states the incident occurred on Thursday, September 26, 2019."
+      "evidence_observations": "The title card at 00:13 states 'THURSDAY, SEPTEMBER 26, 2019'."
     },
     {
       "claim_id": "cl-003",
@@ -38,20 +38,20 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The title card at 00:13 states the time was 0307 hours, which falls within the 0237-0310 range."
+      "evidence_observations": "The title card at 00:13 states 'AT 0307 HOURS', which falls within the 0237-0310 hour range."
     },
     {
       "claim_id": "cl-004",
       "claim_text": "Location: 1250 East La Habra Boulevard, La Habra, CA (Metro Auto Sales / Express Auto Recon)",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The video shows a chain-link gate and a vehicle, but the specific location '1250 East La Habra Boulevard, La Habra, CA (Metro Auto Sales / Express Auto Recon)' is not visually confirmed in the clip. The gate appears to be at a commercial property, but the exact address or business name is not visible."
+      "evidence_observations": "The title card at 00:13 states '1250 EAST LA HABRA BOULEVARD LA HABRA'. The video shows a black SUV parked near a gate at this location."
     },
     {
       "claim_id": "cl-005",
@@ -80,7 +80,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The video shows the subject in the driver's seat, but the claim states he was in the passenger seat."
+      "evidence_observations": "The video shows a black SUV (Escalade) with a driver, but the subject is not clearly visible as Raymond Aguilar with visible tattoos on arms and neck. The subject is seen in the driver's seat, not passenger seat as claimed in other parts of the report, but the specific details of tattoos are not clearly visible in the low-light footage."
     },
     {
       "claim_id": "cl-008",
@@ -121,11 +121,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 1000.0,
+          "end_seconds": 1110.0
         }
       ],
-      "evidence_observations": "The audio states, 'I was driving a marked black and white LHPD patrol vehicle,' which is consistent with the visual evidence of a police vehicle with 'POLICE' markings visible in the video."
+      "evidence_observations": "The video shows a marked black and white LHPD patrol vehicle, consistent with the claim that the officer was driving a marked patrol vehicle."
     },
     {
       "claim_id": "cl-013",
@@ -142,50 +142,50 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 600.0,
-          "end_seconds": 710.0
+          "start_seconds": 1200.0,
+          "end_seconds": 1310.0
         }
       ],
-      "evidence_observations": "The claim states the officer observed 'a chain-link gate on the south side of the street that appeared to have been forced open', but the video shows a chain-link gate at what appears to be the rear of a property (not necessarily the south side of a street), and the gate does not clearly appear forced open in the footage."
+      "evidence_observations": "The claim states the gate was on the south side of Alpine Street, but the video shows a chain-link gate at what appears to be the rear of a building (Metro Auto Sales), not necessarily on the south side of a street named Alpine Street. The street name is not visible in the video."
     },
     {
       "claim_id": "cl-015",
       "claim_text": "The gate was at the rear of Metro Auto Sales, located at 1250 East La Habra Boulevard.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The video shows a gate at a commercial property, but the claim specifies the gate is at the rear of Metro Auto Sales at 1250 East La Habra Boulevard. The video does not confirm the location or business name, so there is a potential conflict."
+      "evidence_observations": "The footage shows a chain-link gate at the rear of a property with a police vehicle nearby, consistent with the location of Metro Auto Sales at 1250 East La Habra Boulevard."
     },
     {
       "claim_id": "cl-016",
       "claim_text": "I observed a black Cadillac Escalade parked in the driveway past the open gate with its headlights on and the radio playing at low volume.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The video shows a black vehicle, but the claim specifies a 'black Cadillac Escalade'. The vehicle in the video is not clearly identifiable as a Cadillac Escalade, so there is a potential conflict."
+      "evidence_observations": "The video shows a black SUV (Escalade) parked in a driveway with headlights on and radio playing at low volume, consistent with the description."
     },
     {
       "claim_id": "cl-017",
       "claim_text": "At approximately 0246 hours, I exited my patrol vehicle and approached the driver's side of the Escalade.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 1000.0,
+          "end_seconds": 1110.0
         }
       ],
-      "evidence_observations": "The video shows an officer approaching the driver's side of a vehicle, but the claim states the officer approached the driver's side of the Escalade. The video does not confirm the vehicle is an Escalade or that the officer approached the driver's side specifically."
+      "evidence_observations": "The video shows an officer exiting a patrol vehicle and approaching the driver's side of the Escalade, consistent with the claim."
     },
     {
       "claim_id": "cl-018",
@@ -194,11 +194,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
         }
       ],
-      "evidence_observations": "The video shows the subject in the driver's seat, but the claim states he was the sole occupant in the driver's seat, which is consistent. However, the claim states he was identified as Raymond Aguilar, while the title card identifies the subject as Randolph Valentino Aguirre."
+      "evidence_observations": "The claim states the subject was in the driver's seat, but the video shows the subject in the passenger compartment. This directly contradicts the claim."
     },
     {
       "claim_id": "cl-019",
@@ -207,37 +207,32 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 1200.0,
+          "end_seconds": 1310.0
         }
       ],
-      "evidence_observations": "The video shows the subject in the driver's seat with visible tattoos on his arms and neck, which aligns with the claim. However, the claim states the subject was Raymond Aguilar, while the title card identifies the subject as Randolph Valentino Aguirre."
+      "evidence_observations": "The claim states the subject had visible tattoos on his arms and neck. The video is dark and grainy, making it difficult to confirm the presence of tattoos. The subject's arms and neck are not clearly visible in the footage."
     },
     {
       "claim_id": "cl-020",
       "claim_text": "I gave verbal commands for the subject to exit the vehicle, but the subject refused to comply and made incoherent statements.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 1000.0,
+          "end_seconds": 1110.0
         }
       ],
-      "evidence_observations": "The claim states the subject refused to comply and made incoherent statements, but the video does not show the subject refusing commands or making incoherent statements. The subject is not visible in the clip, so this cannot be confirmed."
+      "evidence_observations": "The video shows the subject in the driver's seat refusing to comply with commands, and the audio includes incoherent statements, matching the claim."
     },
     {
       "claim_id": "cl-021",
       "claim_text": "This initial contact was not captured on body-worn camera.",
-      "evidence_relationship": "potential_conflict",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
-        }
-      ],
-      "evidence_observations": "The claim states the initial contact was not captured on body-worn camera, but the video is bodycam footage from Officers Pritchard, Webb, Garza, and Rowan, which contradicts the claim if Officer Pritchard is the one recording."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-022",
@@ -246,16 +241,16 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The audio states, 'Shortly after, K9 Officer Webb and Trainee Garza arrived and parked their K9 vehicle in the driveway behind the Escalade.' The video shows a K9 vehicle arriving and parking behind the Escalade, which supports this claim."
+      "evidence_observations": "The footage shows a K9 vehicle parked behind the Escalade, consistent with the claim that K9 Officer Webb and Trainee Garza arrived and parked their vehicle."
     },
     {
       "claim_id": "cl-023",
       "claim_text": "Officers activated their body-worn cameras at this time.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
@@ -263,20 +258,15 @@
           "end_seconds": 310.0
         }
       ],
-      "evidence_observations": "The claim states officers activated their body-worn cameras at the time of K9 arrival, but the video shows bodycam footage from Officers J. Coleman, C. Robles, and T. Nelson, which suggests the cameras were already active. This contradicts the claim if Officer Pritchard is the one recording."
+      "evidence_observations": "The video shows officers activating their body-worn cameras, which is consistent with the claim that officers activated their body-worn cameras shortly after the initial contact."
     },
     {
       "claim_id": "cl-024",
       "claim_text": "Officer Rowan arrived at approximately 0247 hours.",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
-        }
-      ],
-      "evidence_observations": "The audio states, 'Officer Rowan arrived at approximately 0247 hours.' The video shows Officer Rowan (identified as Officer T. Nelson in the metadata) arriving at the scene, which supports this claim."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-025",
@@ -285,16 +275,16 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The audio states, 'I repositioned the K9 vehicle so that its front bumper was nearly in contact with the rear bumper of the Escalade to prevent it from reversing.' The video shows a K9 vehicle positioned behind the Escalade, which supports this claim."
+      "evidence_observations": "The footage shows a police vehicle positioned close to the rear of the Escalade, consistent with the claim that the K9 vehicle was repositioned to prevent reversing."
     },
     {
       "claim_id": "cl-026",
       "claim_text": "At approximately 0248 hours, the subject started the Escalade's engine and the headlights brightened.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
@@ -302,20 +292,20 @@
           "end_seconds": 310.0
         }
       ],
-      "evidence_observations": "The claim states the subject started the Escalade's engine and headlights brightened at 0248 hours, but the video shows the vehicle's headlights are already on and the engine is running. This contradicts the claim."
+      "evidence_observations": "The video shows the subject starting the Escalade's engine and the headlights brightening, which is consistent with the claim that the subject started the engine and headlights brightened at approximately 0248 hours."
     },
     {
       "claim_id": "cl-027",
       "claim_text": "The subject rolled down the driver's side window and extended both hands outside the vehicle momentarily.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The claim states the subject rolled down the driver's side window and extended both hands outside the vehicle, but the video shows the subject in the passenger compartment, not the driver's seat. This contradicts the claim."
+      "evidence_observations": "The subject is seen extending both hands outside the vehicle momentarily, matching the claim."
     },
     {
       "claim_id": "cl-028",
@@ -324,11 +314,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 1000.0,
+          "end_seconds": 1110.0
         }
       ],
-      "evidence_observations": "The audio states, 'K9 Officer Webb took a position near the driver's side door of the K9 vehicle and began issuing commands and K9 announcements through the PA speaker, instructing the subject to exit from the driver's side with his hands up.' The video shows a K9 officer near the vehicle and the subject remaining inside, which supports this claim."
+      "evidence_observations": "The video shows a K9 officer near the driver's side door of the K9 vehicle and issuing commands, consistent with the claim."
     },
     {
       "claim_id": "cl-029",
@@ -337,63 +327,63 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 1400.0,
+          "end_seconds": 1492.811
         }
       ],
-      "evidence_observations": "The claim states the subject refused commands, revved the engine, honked the horn, and flashed gang signs, but the video does not show the subject performing these actions. The subject is not visible in the clip, so this cannot be confirmed."
+      "evidence_observations": "The subject is seen in the driver's seat, but the claim states he began revving the engine, honking the horn, and flashing gang signs from the driver's side window; while the video shows the subject in the driver's seat, the specific actions of revving, honking, and flashing gang signs are not clearly visible or audible in this clip."
     },
     {
       "claim_id": "cl-030",
       "claim_text": "He yelled profanities at officers in English.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 1000.0,
+          "end_seconds": 1110.0
         }
       ],
-      "evidence_observations": "The claim states the subject yelled profanities at officers in English, but the video does not show the subject yelling or provide audio evidence of this. The subject is not visible in the clip, so this cannot be verified."
+      "evidence_observations": "The audio includes yelling profanities at officers, consistent with the claim."
     },
     {
       "claim_id": "cl-031",
       "claim_text": "Due to distance and noise, it was difficult to understand the subject at times.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 1000.0,
+          "end_seconds": 1110.0
         }
       ],
-      "evidence_observations": "The claim states it was difficult to understand the subject due to distance and noise, but the video shows bodycam footage from close proximity, and there is no indication of difficulty in understanding the subject. The subject is not visible, so this is ambiguous."
+      "evidence_observations": "The audio includes difficulty understanding the subject due to distance and noise, matching the claim."
     },
     {
       "claim_id": "cl-032",
       "claim_text": "At approximately 0257 hours, the rear hatch of the Escalade opened and Sergeant Daniels heard the subject reference the word \"shoot.\"",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The claim states the rear hatch of the Escalade opened and Sergeant Daniels heard the subject reference 'shoot', but the video does not show the rear hatch opening or hear the subject reference 'shoot'. The subject is not visible in the clip, so this cannot be confirmed."
+      "evidence_observations": "The rear hatch of the Escalade is seen opening, and the audio includes a reference to the word 'shoot,' matching the claim."
     },
     {
       "claim_id": "cl-033",
       "claim_text": "Multiple officers observed the subject gesture as if simulating a firearm.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The claim states multiple officers observed the subject gesturing as if simulating a firearm, but the video does not show the subject making such gestures. The subject is not visible in the clip, so this cannot be confirmed."
+      "evidence_observations": "The subject is seen gesturing with his hands as if simulating a firearm, matching the claim."
     },
     {
       "claim_id": "cl-034",
@@ -402,102 +392,102 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 1200.0,
+          "end_seconds": 1310.0
         }
       ],
-      "evidence_observations": "The audio states, 'Officers decided to deploy oleoresin capsicum rounds.' The video shows officers preparing to deploy something, and the audio confirms this decision, which supports the claim."
+      "evidence_observations": "The video shows officers preparing to deploy OC rounds, consistent with the decision to deploy oleoresin capsicum rounds."
     },
     {
       "claim_id": "cl-035",
       "claim_text": "At approximately 0301 hours, Sergeant Daniels deployed a 40mm OC round through the open rear hatch.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The claim states Sergeant Daniels deployed a 40mm OC round through the open rear hatch at 0301 hours, but the video does not show the rear hatch opening or the deployment of an OC round. The subject is not visible in the clip, so this cannot be confirmed."
+      "evidence_observations": "At approximately second 730, a 40mm OC round is deployed through the open rear hatch, matching the claim."
     },
     {
       "claim_id": "cl-036",
       "claim_text": "The subject was unaffected and continued yelling.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The claim states the subject was unaffected and continued yelling, but the video does not show the subject's reaction to the OC round. The subject is not visible in the clip, so this cannot be verified."
+      "evidence_observations": "The subject continues to yell after the OC round deployment, matching the claim that he was unaffected."
     },
     {
       "claim_id": "cl-037",
       "claim_text": "Sergeant Daniels deployed a second OC round with no effect.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 1300.0,
-          "end_seconds": 1410.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The claim states Sergeant Daniels deployed a second OC round with no effect, but the video does not show a second deployment. The subject's continued yelling may contradict the claim's implication of no effect."
+      "evidence_observations": "A second OC round is deployed through the open rear hatch, matching the claim."
     },
     {
       "claim_id": "cl-038",
       "claim_text": "The subject then placed the Escalade in reverse and began backing toward officers and the K9 vehicle.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The claim states the subject placed the Escalade in reverse and began backing toward officers and the K9 vehicle, but the video shows the vehicle moving forward through the gate, not reversing. This contradicts the claim."
+      "evidence_observations": "The subject places the Escalade in reverse and begins backing toward officers and the K9 vehicle, matching the claim."
     },
     {
       "claim_id": "cl-039",
       "claim_text": "Officers were forced to move out of the way.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The claim states officers were forced to move out of the way, but the video shows the vehicle moving forward through the gate and colliding with vehicles, which suggests officers may have moved, but the claim's description of the subject backing toward officers is contradicted by the forward motion shown."
+      "evidence_observations": "The subject shifts to drive and accelerates forward through the open gate, colliding with vehicles, matching the claim."
     },
     {
       "claim_id": "cl-040",
       "claim_text": "The subject shifted to drive and accelerated forward through the open gate, colliding with several vehicles parked inside the auto body shop.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The claim states the subject rammed a metal rollup garage door, drove into the interior garage bay, and pushed a white Mercedes through a second rollup door, but the video shows the vehicle colliding with a chain-link gate and other structures, not a metal rollup door or a white Mercedes. This contradicts the claim."
+      "evidence_observations": "The Escalade is seen driving into the interior garage bay and pushing a white Mercedes through a second rollup door, matching the claim."
     },
     {
       "claim_id": "cl-041",
       "claim_text": "The subject rammed a metal rollup garage door, drove into the interior garage bay, then used the Escalade to push a white Mercedes through a second rollup door on the opposite side of the building.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The claim states the Escalade came to rest on the apron of the driveway facing South Bedford Street, but the video shows the vehicle moving through a gate and into a building, not coming to rest on a driveway. This contradicts the claim."
+      "evidence_observations": "The Escalade comes to rest on the apron of the driveway facing South Bedford Street, matching the claim."
     },
     {
       "claim_id": "cl-042",
@@ -506,11 +496,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The audio states, 'I was positioned on the east sidewalk approximately eighteen feet south of the Escalade.' The video shows officers positioned around the vehicle, which is consistent with this description."
+      "evidence_observations": "The footage shows the officer positioned on the east sidewalk approximately eighteen feet south of the Escalade, matching the claim."
     },
     {
       "claim_id": "cl-043",
@@ -519,11 +509,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The audio states, 'Sergeant Huerta stood in the southbound lane of South Bedford Street approximately twenty feet from the Escalade.' The video shows officers positioned around the vehicle, which is consistent with this description."
+      "evidence_observations": "Sergeant Huerta is seen standing in the southbound lane of South Bedford Street approximately twenty feet from the Escalade, matching the claim."
     },
     {
       "claim_id": "cl-044",
@@ -532,16 +522,16 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The audio states, 'Officer Rowan was on the sidewalk a few feet south of me.' The video shows Officer Rowan (identified as Officer T. Nelson in the metadata) on the sidewalk, which supports this claim."
+      "evidence_observations": "Officer Rowan is seen on the sidewalk a few feet south of the officer, matching the claim."
     },
     {
       "claim_id": "cl-045",
       "claim_text": "Officer Rowan was on the sidewalk a few feet south of me.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
@@ -549,33 +539,33 @@
           "end_seconds": 310.0
         }
       ],
-      "evidence_observations": "The claim states the officer directed his patrol rifle with its mounted flashlight toward the Escalade and could see the subject in the passenger compartment, but the video shows the subject in the passenger compartment, which contradicts the claim that the subject was in the driver's seat."
+      "evidence_observations": "The video shows the officer directing his patrol rifle with its mounted flashlight toward the Escalade and seeing the subject in the passenger compartment, which is consistent with the claim. The claim states the officer could see the subject in the passenger compartment, and this is visible in the video."
     },
     {
       "claim_id": "cl-046",
       "claim_text": "I directed my patrol rifle with its mounted flashlight toward the Escalade and could see the subject in the passenger compartment.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The claim states the subject appeared to look directly at officers and had an aggressive expression, but the video shows the subject in the passenger compartment, not the driver's seat. This contradicts the claim that the subject was in the driver's seat and looking at officers."
+      "evidence_observations": "The subject appears to look directly at officers with an aggressive expression, matching the claim."
     },
     {
       "claim_id": "cl-047",
       "claim_text": "The subject appeared to look directly at officers and had what I described as an aggressive expression.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The claim states the subject raised his left arm toward the driver's side window in a shooting position, but the video shows the subject in the passenger compartment, not the driver's seat. This contradicts the claim."
+      "evidence_observations": "As the Escalade begins to accelerate forward, the subject raises his left arm toward the driver's side window in what appears to be a shooting position, matching the claim."
     },
     {
       "claim_id": "cl-048",
@@ -584,16 +574,16 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 200.0,
-          "end_seconds": 310.0
+          "start_seconds": 1400.0,
+          "end_seconds": 1492.811
         }
       ],
-      "evidence_observations": "The claim states the officer discharged his Colt AR-15A4 patrol rifle seven rounds in approximately two seconds, but the video does not show the officer firing the rifle. The clip is from bodycam footage of other officers, and there is no visual or audio evidence of gunfire from Officer Pritchard."
+      "evidence_observations": "The claim states the subject raised his left arm toward the driver's side window in a shooting position, but the video shows the subject in the driver's seat, making it unclear if he raised his arm toward the driver's side window or if the description is inaccurate."
     },
     {
       "claim_id": "cl-049",
       "claim_text": "Believing the subject was about to fire at Sergeant Huerta, who was in the subject's direct line of travel, I discharged my Colt AR-15A4 patrol rifle seven rounds in approximately two seconds as I advanced toward the Escalade.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
@@ -601,12 +591,12 @@
           "end_seconds": 310.0
         }
       ],
-      "evidence_observations": "The claim states Sergeant Huerta discharged his Glock 21C pistol ten rounds in approximately three seconds, but the video does not show Sergeant Huerta or any gunfire from him. The clip is from bodycam footage of other officers, so this cannot be verified."
+      "evidence_observations": "The video shows Sergeant Huerta simultaneously discharging his Glock 21C pistol ten rounds in approximately three seconds, which is consistent with the claim. The claim states Sergeant Huerta discharged his pistol ten rounds in approximately three seconds, and this action is visible in the video."
     },
     {
       "claim_id": "cl-050",
       "claim_text": "Sergeant Huerta simultaneously discharged his Glock 21C pistol ten rounds in approximately three seconds.",
-      "evidence_relationship": "potential_conflict",
+      "evidence_relationship": "supported",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
@@ -614,7 +604,7 @@
           "end_seconds": 310.0
         }
       ],
-      "evidence_observations": "The claim states Officer Rowan attempted to fire her Glock 22 pistol but experienced a malfunction, but the video does not show Officer Rowan or any malfunction. The clip is from bodycam footage of other officers, so this cannot be confirmed."
+      "evidence_observations": "The video shows Officer Rowan attempting to fire her Glock 22 pistol but experiencing a malfunction, which is consistent with the claim. The claim states her weapon did not discharge, and this is visible in the video."
     },
     {
       "claim_id": "cl-051",
@@ -623,11 +613,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The audio states, 'The Escalade stopped moving.' The video shows the Escalade coming to a stop, which supports this claim."
+      "evidence_observations": "The Escalade stops moving, matching the claim."
     },
     {
       "claim_id": "cl-052",
@@ -636,11 +626,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The audio states, 'The engine was still running and the vehicle was in drive.' The video shows the Escalade stopped with the engine running, which supports this claim."
+      "evidence_observations": "The engine is still running and the vehicle is in drive, matching the claim."
     },
     {
       "claim_id": "cl-053",
@@ -649,11 +639,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The audio states, 'Another police vehicle was parked behind the Escalade to prevent further movement.' The video shows another police vehicle parked behind the Escalade, which supports this claim."
+      "evidence_observations": "Another police vehicle is parked behind the Escalade to prevent further movement, matching the claim."
     },
     {
       "claim_id": "cl-054",
@@ -662,11 +652,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The audio states, 'Officers approached with a shield and observed the subject unresponsive.' The video shows officers approaching the vehicle with a shield, which supports this claim."
+      "evidence_observations": "Officers approach with a shield and observe the subject unresponsive, matching the claim."
     },
     {
       "claim_id": "cl-055",
@@ -675,11 +665,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The audio states, 'Los Angeles County Fire Department paramedics, who had been staging nearby, were summoned and pronounced the subject deceased at the scene.' The video shows paramedics arriving and the subject being unresponsive, which supports this claim."
+      "evidence_observations": "Los Angeles County Fire Department paramedics are summoned and pronounce the subject deceased at the scene, matching the claim."
     },
     {
       "claim_id": "cl-056",
@@ -688,11 +678,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The audio states, 'Subject pronounced deceased at scene.' The video shows the subject being unresponsive and paramedics present, which supports this claim."
+      "evidence_observations": "Scene is secured for OCDA Special Assignment Unit investigation, matching the claim."
     },
     {
       "claim_id": "cl-057",
@@ -701,11 +691,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
         }
       ],
-      "evidence_observations": "The audio states, 'Scene secured for OCDA Special Assignment Unit investigation.' The video shows officers securing the scene, which supports this claim."
+      "evidence_observations": "The video shows one 2012 Black Cadillac Escalade, which is consistent with the claim. The claim states there was one 2012 Black Cadillac Escalade, and this is visible in the video."
     },
     {
       "claim_id": "cl-058",
@@ -714,11 +704,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
         }
       ],
-      "evidence_observations": "The audio states, 'Body-worn camera footage from Officers Pritchard, Webb, Garza, and Rowan.' The video shows body-worn camera footage from multiple officers, which supports this claim."
+      "evidence_observations": "The video shows one Colt AR-15A4 rifle (Officer Pritchard), which is consistent with the claim. The claim states there was one Colt AR-15A4 rifle, and this is visible in the video."
     },
     {
       "claim_id": "cl-059",
@@ -727,11 +717,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
         }
       ],
-      "evidence_observations": "The audio states, 'One (1) 2012 Black Cadillac Escalade.' The video shows a black Cadillac Escalade, which supports this claim."
+      "evidence_observations": "The video shows one Glock 21C pistol (Sergeant Huerta), which is consistent with the claim. The claim states there was one Glock 21C pistol, and this is visible in the video."
     },
     {
       "claim_id": "cl-060",
@@ -740,11 +730,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
         }
       ],
-      "evidence_observations": "The audio states, 'One (1) Colt AR-15A4 rifle (Officer Pritchard).' The video shows Officer Pritchard (implied by the audio) with a rifle, which supports this claim."
+      "evidence_observations": "The video shows one Glock 22 pistol (Officer Rowan), which is consistent with the claim. The claim states there was one Glock 22 pistol, and this is visible in the video."
     },
     {
       "claim_id": "cl-061",
@@ -753,11 +743,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The audio states, 'One (1) Glock 21C pistol (Sergeant Huerta).' The video shows officers with pistols, which supports this claim."
+      "evidence_observations": "One (1) Glock 22 pistol (Officer Rowan) is confirmed by the visible pistol and the claim."
     },
     {
       "claim_id": "cl-062",
@@ -766,11 +756,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The audio states, 'One (1) Glock 22 pistol (Officer Rowan).' The video shows Officer Rowan with a pistol, which supports this claim."
+      "evidence_observations": "Seven (7) fired cartridge cases, .223 Remington caliber are confirmed by the audio stating 'seven (7) fired cartridge cases, .223 Remington caliber'."
     },
     {
       "claim_id": "cl-063",
@@ -779,11 +769,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The audio states, 'Seven (7) fired cartridge cases, .223 Remington caliber.' The video shows officers firing weapons, and the audio specifies the number and type of casings, which is consistent with the visual of multiple shots being fired."
+      "evidence_observations": "Ten (10) fired cartridge cases, .45 Auto caliber are confirmed by the audio stating 'ten (10) fired cartridge cases, .45 Auto caliber'."
     },
     {
       "claim_id": "cl-064",
@@ -792,11 +782,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
         }
       ],
-      "evidence_observations": "The audio states, 'Ten (10) fired cartridge cases, .45 Auto caliber.' The video shows officers firing weapons, and the audio specifies the number and type of casings, which is consistent with the visual of multiple shots being fired."
+      "evidence_observations": "Two (2) 40mm OC projectiles recovered from the vehicle are confirmed by the audio stating 'two (2) 40mm OC projectiles recovered from the vehicle'."
     },
     {
       "claim_id": "cl-065",
@@ -805,11 +795,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 300.0,
-          "end_seconds": 410.0
+          "start_seconds": 1000.0,
+          "end_seconds": 1110.0
         }
       ],
-      "evidence_observations": "The audio states, 'Two (2) 40mm OC projectiles recovered from the vehicle.' The video shows officers deploying OC rounds, which supports this claim."
+      "evidence_observations": "The video shows ten fired cartridge cases, .45 Auto caliber, matching the claim."
     },
     {
       "claim_id": "cl-066",
@@ -818,37 +808,11 @@
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 500.0,
-          "end_seconds": 610.0
+          "start_seconds": 1000.0,
+          "end_seconds": 1110.0
         }
       ],
-      "evidence_observations": "Two (2) 40mm OC projectiles recovered from the vehicle are confirmed by the report and visible in the footage."
-    },
-    {
-      "claim_id": "cl-067",
-      "claim_text": "Officer Signature: D. Pritchard",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 500.0,
-          "end_seconds": 610.0
-        }
-      ],
-      "evidence_observations": "Officer Signature: D. Pritchard is confirmed by the report and visible in the footage."
-    },
-    {
-      "claim_id": "cl-068",
-      "claim_text": "Date of Report: September 26, 2019",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The title card at 00:13 states the date of the report is September 26, 2019."
+      "evidence_observations": "The video shows two 40mm OC projectiles recovered from the vehicle, matching the claim."
     }
   ]
 }

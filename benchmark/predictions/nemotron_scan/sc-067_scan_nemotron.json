@@ -1,0 +1,364 @@
+{
+  "scenario_id": "sc-067",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 136.27,
+  "total_tokens": 42742,
+  "total_api_calls": 7,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-067",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: November 5, 2021",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 2315 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The claim states the time is approximately 2315 hours (11:15 PM). The video's timestamp shows 19:10:23 (7:10 PM). This is a clear conflict in time, indicating the claim refers to a different time than what is shown in the clip."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: Intersection of Beach Boulevard and Orangethorpe Avenue, La Habra, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer Y. Singh",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 3367",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Kevin Dang, Male, 30, Vietnamese",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Officer Y. Singh, Officer E. Mora",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witness(es): None specified",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "On November 5, 2021, at approximately 2315 hours, Officer E. Mora and I were dispatched to the location regarding the reported incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I was operating the patrol vehicle with Officer E. Mora in the passenger seat.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The claim states the officer was operating the patrol vehicle with Officer E. Mora in the passenger seat. The video shows the officer outside the vehicle, walking on foot, and no vehicle interior or passenger is visible. This contradicts the claim, indicating a potential conflict."
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I activated my body-worn camera prior to arriving on scene.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The claim states the officer activated the body-worn camera prior to arriving on scene. The video begins with the officer already on foot and the camera recording, with no visual or audio indication of activation prior to this moment. This suggests the claim may be incorrect, creating a potential conflict."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Upon arrival at Intersection of Beach Boulevard and Orangethorpe Avenue, La Habra, CA, I observed the subject in the area matching the description provided by dispatch.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I was the primary officer and approached the subject first.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The claim states the officer was the primary officer and approached the subject first. The video shows the officer moving toward a vehicle where a suspect is present, but the sequence of approach and positioning is not clearly established. The officer appears to be the only one visible, but the claim's assertion of being 'first' is not verifiable from this clip alone."
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I identified myself verbally and directed the subject to stop.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "The subject was cooperative during initial contact.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The lighting conditions were adequate for observation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "I gave clear verbal commands for the subject to comply with our instructions.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The situation escalated when the subject failed to follow directives.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The claim states the situation escalated when the subject failed to follow directives. The video shows the suspect moving and eventually dropping the gun, which may indicate compliance rather than failure to follow directives. The phrase 'suspect dropped the gun' suggests the subject did respond to commands, potentially contradicting the claim of escalation due to non-compliance."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "The subject made a sudden movement toward his waistband.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject made a sudden movement toward his waistband. The video shows the suspect near the vehicle, and the transcript mentions 'the gun's facing into the PD,' implying the gun was visible and pointed. However, a 'sudden movement toward the waistband' is not clearly depicted in the clip, and the timing is unclear. This creates a potential conflict."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Officer E. Mora was positioned to my right, approximately ten feet away.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The claim states Officer E. Mora was positioned to the officer's right, approximately ten feet away. The video shows only one officer (Officer FOX) visible, and no other officer is seen in the frame. The spatial relationship described is not supported by the visual evidence, indicating a potential conflict."
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The encounter lasted approximately three minutes before the use of force.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Based on the totality of the circumstances and my training, I perceived an imminent threat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "I discharged my firearm in response to an immediate threat.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The claim states the officer discharged their firearm in response to an immediate threat. The video ends before any shots are fired, and the transcript mentions 'suspect dropped the gun' and 'or I'll shoot,' but no actual discharge of the firearm is shown or heard. This claim is contradicted by the absence of evidence in the clip, indicating a potential conflict."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "Medical aid was rendered immediately after the subject was secured.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Paramedics arrived within approximately five minutes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Officer E. Mora and I maintained scene security until investigative units arrived.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "No bystanders were present in the immediate area during the incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "All evidence was properly collected and secured at the scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The subject's weapon was recovered at the scene.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject's weapon was recovered at the scene. The video shows the suspect dropping the gun, which may imply recovery, but the clip ends before any recovery is shown. The transcript mentions 'suspect dropped the gun,' but does not confirm it was recovered. This creates a potential conflict as the claim assumes completion of recovery not shown."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Body-worn camera footage",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Cartridge cases",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Subject's weapon",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The claim states 'Subject's weapon' was recovered. The video shows the suspect dropping the gun, which may indicate the weapon was left at the scene, but the clip ends before any recovery is shown. The transcript mentions 'suspect dropped the gun,' but does not confirm it was recovered. This suggests a potential conflict if the weapon was not actually recovered."
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Crime scene photographs",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Subject received medical treatment.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Officer Signature: Singh",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Date of Report: November 5, 2021",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    }
+  ]
+}

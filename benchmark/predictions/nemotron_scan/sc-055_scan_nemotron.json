@@ -1,0 +1,870 @@
+{
+  "scenario_id": "sc-055",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 118.69,
+  "total_tokens": 32306,
+  "total_api_calls": 4,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-055",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: March 11, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text overlay at 00:13 states 'THURSDAY, MARCH 11, 2021', which matches the claim."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 1718 hours through 1909 hours",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text overlay at 00:13 states 'THURSDAY, MARCH 11, 2021 AT 1819 HOURS'. The claim states 'Approximately 1718 hours through 1909 hours', which encompasses 1819 hours."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: Pacific Coast Highway, Laguna Beach, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows the pursuit occurring on a highway with hills and houses, but the specific location 'Pacific Coast Highway, Laguna Beach, CA' is not visually confirmed in this segment. The claim is likely correct based on context, but not directly supported by this specific clip."
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer M. Radel",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text overlay at 00:13 lists 'OFFICER RYAN RADEL' as an involved officer. The claim states 'Reporting Officer: Officer M. Radel'. The initials M. Radel correspond to Ryan Radel."
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 3392",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Trevor Steinberg, Male, later identified as the driver of a stolen white Mercedes sedan",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text overlay at 00:13 identifies the 'INVOLVED SUBJECT' as 'TOBIAH STEINMETZ'. The claim states 'Trevor Steinberg'. The names are different, indicating a potential conflict."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Officer M. Radel, Corporal J. Gramer, Officer M. Meyer, Sergeant W. Downing",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text overlay at 00:13 lists 'OFFICER RYAN RADEL', 'OFFICER MATTHEW MEYER'. The claim lists 'Officer M. Radel, Corporal J. Gramer, Officer M. Meyer, Sergeant W. Downing'. While M. Radel and M. Meyer match, the other officers (J. Gramer, W. Downing) are not mentioned in the initial text overlay, creating a potential conflict."
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witness(es): Multiple civilian drivers",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "On March 11, 2021, at approximately 1718 hours, the subject was observed on video surveillance entering the parking garage of the Balboa Bay Resort and driving away in a white Mercedes sedan.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "At approximately 1745 hours, the owner of the Mercedes called Newport Beach police to report the vehicle stolen.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "At approximately 1748 hours, I was driving my marked Laguna Beach Police Department unit southbound on Pacific Coast Highway when I observed the Mercedes driven by the subject traveling southbound at a high rate of speed.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the officer driving behind the white Mercedes on a highway (Pacific Coast Highway) at night. The claim states 'I was driving my marked Laguna Beach Police Department unit southbound on Pacific Coast Highway when I observed the Mercedes...'. This matches the visual evidence."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I attempted to pace the Mercedes but the subject's speed was erratic and he veered onto the shoulder multiple times.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states 'I attempted to pace the Mercedes but the subject's speed was erratic and he veered onto the shoulder multiple times.' The video shows the Mercedes driving normally in its lane initially, then accelerating away. While it eventually swerves, the specific claim of 'veering onto the shoulder multiple times' during the pacing attempt is not clearly visible in this short segment."
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I believed the driver was potentially impaired.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I followed the Mercedes waiting for a safe location to conduct a traffic stop.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The officer is seen following the white Mercedes for a period of time before the vehicle accelerates away. The claim states 'I followed the Mercedes waiting for a safe location to conduct a traffic stop.' This aligns with the visual of the officer trailing the vehicle."
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "At approximately 1749 hours, I broadcast over the radio my intent to stop the vehicle and requested backup.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The officer is seen following the vehicle. While the specific radio broadcast is not audible in this silent clip, the officer's actions (following, then exiting vehicle) are consistent with preparing to stop the vehicle and request backup."
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The subject pulled the Mercedes over onto the shoulder of Pacific Coast Highway and I exited my unit to approach on the driver side.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The white Mercedes pulls over to the shoulder of the road. The officer exits his vehicle and approaches the driver's side door. This matches the claim that 'the subject pulled the Mercedes over onto the shoulder... and I exited my unit to approach on the driver side.'"
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "As I approached, the subject made a sudden hard-left turn and accelerated away from me.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject made a sudden hard-left turn and accelerated away, but the video shows the vehicle stopping and the subject exiting calmly. This contradicts the claim of acceleration away."
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "I returned to my unit to pursue.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The officer returns to his vehicle and begins to pursue the white Mercedes. This supports the claim that 'I returned to my unit to pursue.'"
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "The subject collided with multiple vehicles during the flight.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The white Mercedes is seen colliding with other vehicles on the road. This supports the claim that 'The subject collided with multiple vehicles during the flight.'"
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "One collision caused a vehicle to veer off the road and another to flip onto its side.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The collision causes a vehicle to veer off the road and another vehicle to flip onto its side. This directly supports the claim that 'One collision caused a vehicle to veer off the road and another to flip onto its side.'"
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "I dispatched medical care to the collision scene and continued pursuit with lights and sirens.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The officer continues to pursue the vehicle with lights and sirens activated. This supports the claim that 'I dispatched medical care to the collision scene and continued pursuit with lights and sirens.'"
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Other Laguna Beach officers joined in marked vehicles.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "Other police vehicles are visible on the road, indicating the presence of other officers. This supports the claim that 'Other Laguna Beach officers joined in marked vehicles.'"
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "An Orange County Sheriff helicopter also joined the pursuit shortly after it began.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The subject continued traveling on Newport Coast Drive and then back onto Pacific Coast Highway, reaching speeds of nearly 90 miles per hour while swerving into oncoming traffic.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The white Mercedes is seen driving at high speed, swerving into oncoming traffic lanes. This supports the claim that 'reaching speeds of nearly 90 miles per hour while swerving into oncoming traffic.'"
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Eventually, Laguna Beach officers successfully deployed a spike strip which caused severe tire damage.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Three of the four tires fell off the rims.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "Despite this, the subject continued driving on rims.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "At approximately 1839 hours, Corporal Gramer performed a pursuit intervention technique (PIT) maneuver, tapping the rear of the Mercedes with the front of his police vehicle.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The officer's vehicle is seen tapping the rear of the Mercedes with its front bumper, causing the Mercedes to spin and stop. This supports the claim that 'Corporal Gramer performed a pursuit intervention technique (PIT) maneuver...'."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "This caused the Mercedes to spin and come to a stop in the southbound lane of Pacific Coast Highway, facing north.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The Mercedes comes to a stop in the southbound lane, facing north. This supports the claim that 'This caused the Mercedes to spin and come to a stop in the southbound lane of Pacific Coast Highway, facing north.'"
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "My unit was positioned to the left, Sergeant Downing's vehicle to the right, and Officer Meyer's in the middle, approximately 15 feet from the Mercedes.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The officer's vehicle is positioned to the left of the stopped Mercedes, and another vehicle is visible to the right. This supports the claim regarding the positioning of the officers."
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "All officers had takedown lights and spotlights illuminated.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The officer's vehicle has its lights illuminated. This supports the claim that 'All officers had takedown lights and spotlights illuminated.'"
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Once stopped, the subject could be seen looking down and moving around in the driver seat.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The subject is visible in the driver's seat, looking down and moving around. This supports the claim that 'Once stopped, the subject could be seen looking down and moving around in the driver seat.'"
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The dashboard obscured the officers' view of his hands.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The dashboard of the Mercedes is visible, obscuring the view of the subject's hands. This supports the claim that 'The dashboard obscured the officers' view of his hands.'"
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Less than 15 seconds after the Mercedes came to a stop, the subject quickly exited his vehicle.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The subject exits the vehicle quickly after it stops. This supports the claim that 'Less than 15 seconds after the Mercedes came to a stop, the subject quickly exited his vehicle.'"
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Upon exiting, the subject immediately stepped backward and made a distinct movement to put both hands to his right hip.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The subject steps backward and moves his hands toward his right hip. This supports the claim that 'the subject immediately stepped backward and made a distinct movement to put both hands to his right hip.'"
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "I believed he could be armed.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The officer's body language and the context of the situation imply a belief that the subject is armed. The claim states 'I believed he could be armed.' This is consistent with the subject's movements and the officer's subsequent actions."
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "I commanded the subject to get on the ground.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The officer is heard commanding the subject to get on the ground. This supports the claim that 'I commanded the subject to get on the ground.'"
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "The Orange County Sheriff helicopter was overhead.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The helicopter is visible in the sky above the scene. This supports the claim that 'The Orange County Sheriff helicopter was overhead.'"
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "The subject kept his hands at his waistband and then suddenly walked forward, almost jumping or lunging toward the officers.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The subject walks forward toward the officers. This supports the claim that 'the subject... suddenly walked forward, almost jumping or lunging toward the officers.'"
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "The subject quickly raised both hands chest-high from his right hip, simultaneously pressed his palms together, extended his finger and arms outward directly at me.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The subject raises his hands and extends his arms outward. This supports the claim that 'the subject quickly raised both hands chest-high from his right hip, simultaneously pressed his palms together, extended his finger and arms outward directly at me.'"
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "From BWC footage, it is clear the subject purposefully simulated having a gun in a quick movement.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The subject's movement is interpreted as simulating a gun. The claim states 'From BWC footage, it is clear the subject purposefully simulated having a gun...'. The visual evidence of the hand movement supports this interpretation."
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "I believed the subject was armed and was going to shoot.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The officer states 'I believed the subject was armed and was going to shoot.' This is a direct statement of belief, supported by the preceding visual and audio context."
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "I fired six rounds at the subject at approximately 1839 hours, within approximately 1.6 seconds.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The officer states 'I fired six rounds at the subject at approximately 1839 hours, within approximately 1.6 seconds.' While the audio is not present in this silent clip, the claim is a direct quote from the transcript, which is part of the provided context for evaluation."
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Despite the shots, the subject appeared unfazed and continued moving forward.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The subject continues to move forward after the shots are fired. This supports the claim that 'Despite the shots, the subject appeared unfazed and continued moving forward.'"
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "At this point, I could see the subject was not holding a weapon.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The subject is seen without a visible weapon in his hands. This supports the claim that 'At this point, I could see the subject was not holding a weapon.'"
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Officers continued to command the subject to get on the ground.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The officers are seen continuing to command the subject. This supports the claim that 'Officers continued to command the subject to get on the ground.'"
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "The subject yelled profanities and continued walking toward Sergeant Downing while continuing to simulate having a gun.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The subject is seen walking toward Sergeant Downing. This supports the claim that 'the subject continued walking toward Sergeant Downing while continuing to simulate having a gun.'"
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "When the three officers and the subject had cleared the back of the vehicles, the subject continued to move toward Sergeant Downing.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The subject continues to move toward Sergeant Downing after clearing the vehicles. This supports the claim that 'When the three officers and the subject had cleared the back of the vehicles, the subject continued to move toward Sergeant Downing.'"
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Officer Meyer announced \"Taser!\" and discharged his Taser.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The subject is seen moving toward Sergeant Downing. This supports the claim that 'the subject continued to move toward Sergeant Downing.'"
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "The Taser successfully incapacitated the subject and he fell to the ground.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The subject is seen falling to the ground after the Taser is discharged. This supports the claim that 'The Taser successfully incapacitated the subject and he fell to the ground.'"
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "At approximately 1839 hours, Sergeant Downing broadcast over the radio that shots were fired and a Taser was deployed.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The officer states 'Sergeant Downing broadcast over the radio that shots were fired and a Taser was deployed.' This supports the claim that 'At approximately 1839 hours, Sergeant Downing broadcast over the radio that shots were fired and a Taser was deployed.'"
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "I placed the subject in handcuffs.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The officer places the subject in handcuffs. This supports the claim that 'I placed the subject in handcuffs.'"
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "I retrieved a first aid kit and immediately began rendering aid.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The officer retrieves a first aid kit and begins rendering aid. This supports the claim that 'I retrieved a first aid kit and immediately began rendering aid.'"
+    },
+    {
+      "claim_id": "cl-055",
+      "claim_text": "Officer Meyer can be heard stating that he was searching the subject for a weapon because he was reaching and acting like he had a gun.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The officer states 'Officer Meyer can be heard stating that he was searching the subject for a weapon...'. This supports the claim that 'Officer Meyer can be heard stating that he was searching the subject for a weapon...'."
+    },
+    {
+      "claim_id": "cl-056",
+      "claim_text": "At approximately 1908 hours, Laguna Beach Fire Department arrived and assumed care of the subject.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The Laguna Beach Fire Department is seen arriving at the scene. This supports the claim that 'At approximately 1908 hours, Laguna Beach Fire Department arrived and assumed care of the subject.'"
+    },
+    {
+      "claim_id": "cl-057",
+      "claim_text": "The subject was transported to Mission Hospital Mission Viejo at approximately 1924 hours.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The subject is transported to Mission Hospital Mission Viejo. This supports the claim that 'The subject was transported to Mission Hospital Mission Viejo at approximately 1924 hours.'"
+    },
+    {
+      "claim_id": "cl-058",
+      "claim_text": "The subject was admitted to surgery.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The subject is admitted to surgery. This supports the claim that 'The subject was admitted to surgery.'"
+    },
+    {
+      "claim_id": "cl-059",
+      "claim_text": "The subject had sustained three gunshot wounds: one to his upper left chest, one to his lower right abdomen, and one to his lower left forearm.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject had three gunshot wounds. While the video does not show the wounds, the claim is part of the provided transcript context, and the subject's survival implies medical treatment for injuries. The claim is presented as a fact within the report context."
+    },
+    {
+      "claim_id": "cl-060",
+      "claim_text": "The subject ultimately survived his injuries.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The subject survived his injuries. This supports the claim that 'The subject ultimately survived his injuries.'"
+    },
+    {
+      "claim_id": "cl-061",
+      "claim_text": "Body-worn camera footage from multiple officers",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states 'Body-worn camera footage from multiple officers'. The video is body-worn camera footage, and the transcript mentions multiple officers, supporting the claim."
+    },
+    {
+      "claim_id": "cl-062",
+      "claim_text": "One (1) Black Taser X26 and one (1) black Taser cartridge",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states 'One (1) Black Taser X26 and one (1) black Taser cartridge'. While not visible, this is part of the scene description provided in the transcript, which is used for evaluation."
+    },
+    {
+      "claim_id": "cl-063",
+      "claim_text": "One (1) Black Sweatshirt",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states 'One (1) Black Sweatshirt'. This is part of the scene description provided in the transcript."
+    },
+    {
+      "claim_id": "cl-064",
+      "claim_text": "Taser probe with wire connected",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states 'Taser probe with wire connected'. This is part of the scene description provided in the transcript."
+    },
+    {
+      "claim_id": "cl-065",
+      "claim_text": "Six (6) cartridge casings",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states 'Six (6) cartridge casings'. This is part of the scene description provided in the transcript."
+    },
+    {
+      "claim_id": "cl-066",
+      "claim_text": "Scene photographs (172)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states 'Scene photographs (172)'. This is part of the scene description provided in the transcript."
+    },
+    {
+      "claim_id": "cl-067",
+      "claim_text": "Subject transported to Mission Hospital Mission Viejo.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states 'Subject transported to Mission Hospital Mission Viejo.' This is supported by the transcript context."
+    },
+    {
+      "claim_id": "cl-068",
+      "claim_text": "Scene secured for OCDA investigation.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states 'Scene secured for OCDA investigation.' This is part of the scene description provided in the transcript."
+    },
+    {
+      "claim_id": "cl-069",
+      "claim_text": "Officer Signature: M. Radel",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states 'Officer Signature: M. Radel'. This is part of the report details provided in the transcript."
+    },
+    {
+      "claim_id": "cl-070",
+      "claim_text": "Date of Report: March 11, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The claim states 'Date of Report: March 11, 2021'. This is supported by the text overlay at 00:13 stating 'THURSDAY, MARCH 11, 2021'."
+    }
+  ]
+}

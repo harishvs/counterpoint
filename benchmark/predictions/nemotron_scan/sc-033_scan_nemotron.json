@@ -1,0 +1,437 @@
+{
+  "scenario_id": "sc-033",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 175.69,
+  "total_tokens": 50036,
+  "total_api_calls": 8,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: September 3, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card at 00:13 states 'FRIDAY SEPTEMBER 03, 2021 AT 14:08 HOURS', confirming the date."
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 1345\u20131415 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card states the incident occurred at 14:08 hours, while the claim suggests 1345-1415 hours. The clip does not show the time of the initial dispatch or arrival, so the exact time of the incident is not visible in this segment."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Orangethorpe Avenue to Buena Park Unified School District Office, Buena Park, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card states the location is '6885 ORANGETHORPE AVENUE, BUENA PARK'. The claim specifies 'Orangethorpe Avenue to Buena Park Unified School District Office', which is not explicitly confirmed in the text shown in this clip."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Sergeant R. Navarro",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 6104",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Dominic Hargrove, Male, 61 years old, Black, grey Chevrolet Tahoe",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows a grey Chevrolet Tahoe being pursued, but it is impossible to visually confirm the subject's identity (Dominic Hargrove), age (61), gender (Male), race (Black), or that he was the driver."
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Sergeant R. Navarro, Officer P. Langston",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The video shows multiple officers, including one identified as 'POLICE' on his vest, but no specific names like 'Sergeant R. Navarro' or 'Officer P. Langston' are visible or audible. The badge number 6104 is not visible."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Victim(s): Maria Salinas (W-1), school bus driver; one child passenger (age 6)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On September 3, 2021, at approximately 1345 hours, I received a dispatch call regarding a domestic disturbance involving an armed individual near a school bus on Orangethorpe Avenue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I was assigned as the primary responding unit and departed from the station within ninety seconds of receiving the call, arriving in the vicinity of the pursuit approximately three minutes later.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "While en route, Officer Fuentes broadcast over the radio that the subject had displayed a firearm near a school bus.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Upon my arrival, I observed the subject's grey Chevrolet Tahoe traveling southbound on Western Avenue, pursued by a single marked patrol unit.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video shows a grey Chevrolet Tahoe being pursued, but it does not show the vehicle traveling southbound on Western Avenue, nor does it show a single marked patrol unit pursuing it at this specific moment."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I activated my emergency lights and sirens and assumed the lead pursuit position at approximately 1400 hours.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video timestamp shows 14:07, which is approximately 1400 hours. The officer is seen driving with emergency lights activated, supporting the claim that they activated emergency lights and sirens and assumed the lead pursuit position around 1400 hours."
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "From the time I took the lead, the pursuit continued for approximately two minutes before the subject entered the school district parking lot.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject entering the school district parking lot after the pursuit, which aligns with the claim that the pursuit continued for approximately two minutes before the subject entered the parking lot."
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject drove through an open gate into the Buena Park Unified School District Office parking lot.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject driving through an open gate into the Buena Park Unified School District parking lot, which supports the claim that the subject drove through an open gate into the office parking lot."
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I followed him inside.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer following the subject into the parking lot, which supports the claim that the officer followed the subject inside."
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The subject's vehicle struck a parked vehicle at moderate speed, causing minor displacement of approximately two feet.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject's vehicle striking a parked vehicle, causing minor displacement, which supports the claim that the vehicle struck a parked vehicle at moderate speed."
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The subject immediately exited his vehicle and began walking eastbound across the parking lot.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject exiting the vehicle and walking eastbound across the parking lot, which supports the claim that the subject immediately exited his vehicle and began walking eastbound."
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "I did not observe a weapon in the subject's hands as he exited.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The subject is seen exiting the vehicle and walking, but the video does not clearly show his hands to confirm whether a weapon was visible."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "After walking approximately fifteen yards, the subject turned to face my position.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject walking approximately fifteen yards and then turning to face the officer's position, which supports the claim that the subject walked approximately fifteen yards and turned to face the officer."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "It was at this point that I first observed a black handgun in his right hand.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The claim states 'It was at this point that I first observed a black handgun in his right hand,' but the video does not show the subject holding a weapon. The video cuts to a black screen with text, so there is no visual evidence of the handgun, creating a potential conflict."
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The subject raised the weapon and pointed it in my direction.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The claim states 'The subject raised the weapon and pointed it in my direction,' but the video does not show the subject raising a weapon or pointing it. The video cuts to a black screen with text, so there is no visual evidence of this action."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "I discharged my firearm eight times.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The video does not show the officer discharging his firearm. The audio contains commands like 'stand by' and 'right now', but no clear count of gunshots is audible or visible."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Officer Langston, who had arrived seconds after me, discharged his firearm twelve times from a position behind a second patrol vehicle approximately forty yards to my left.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The subject continued advancing for approximately twenty seconds before collapsing.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject continuing to advance for approximately twenty seconds before collapsing, which supports the claim that the subject continued advancing for approximately twenty seconds before collapsing."
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Upon the subject falling to the ground, we immediately ceased fire and I broadcast a request for emergency medical services at approximately 1410 hours.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject falling to the ground, and the claim states that the officer broadcast a request for emergency medical services at approximately 1410 hours. While the video does not show the broadcast, the subject falling to the ground aligns with the timing of the request."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "We approached the subject within approximately two minutes, secured the weapon, and applied handcuffs.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The officers are seen approaching the subject, securing the weapon, and applying handcuffs after he falls."
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "We then began chest compressions.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The officers are seen performing chest compressions on the subject on the ground."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "Orange County Fire Authority paramedics arrived approximately eight minutes later at 1418 hours and took over life-saving measures.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The subject was pronounced deceased on scene at approximately 1430 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Subject pronounced deceased on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "W-1 and child passenger sheltered at Buena Park Middle School.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The scene appears to be secured as officers are seen attending to the subject and the area is cordoned off."
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Body-worn camera footage (Sergeant Navarro, Officer Langston)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The video is identified as body-worn camera footage from Sergeant Navarro and Officer Langston."
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Aerial surveillance recording",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "School bus surveillance recording",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "One (1) black semi-automatic pistol",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Twenty (20) cartridge cases recovered from scene",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Bullet fragments and vehicle debris",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    }
+  ]
+}

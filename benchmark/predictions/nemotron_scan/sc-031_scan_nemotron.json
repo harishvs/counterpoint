@@ -1,0 +1,806 @@
+{
+  "scenario_id": "sc-031",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 505.89,
+  "total_tokens": 145127,
+  "total_api_calls": 16,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: May 29, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the incident occurred on May 29, 2021, and the visual context is a police briefing about a critical incident."
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 0115 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the time was approximately 0110 hours, while the claim states 0115 hours. The video does not provide a specific time stamp to confirm either."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Rear parking lot, Village Center at Rose Shopping Center, 860 North Rose Drive, Placentia, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The footage shows a dark-colored sedan (likely a Ford SUV based on the officer's vehicle description in the transcript) parked in a lot, not a silver two-door Honda Civic in a shopping center rear parking lot. The location appears to be a residential or commercial area with a building numbered '860', not a shopping center."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer N. Calderon",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1300.0,
+          "end_seconds": 1410.0
+        }
+      ],
+      "evidence_observations": "The video shows a police officer speaking, and the transcript identifies the reporting officer as 'Officer N. Calderon'."
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 3294",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: David Chen, Male, 33 years old, Asian, grey pants, grey tennis shoes",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The subject in the video is identified in the transcript as Matthew Wong, not David Chen. The subject is seated in the driver's seat, not the passenger seat, and is wearing dark clothing, not grey pants and shoes."
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer N. Calderon, Officer P. Rojas (Unit #13), Sergeant L. Torres, Officer K. Herrera, Officer S. Whitfield, Officer G. Dunn, Acting Sergeant T. Mallory",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1300.0,
+          "end_seconds": 1410.0
+        }
+      ],
+      "evidence_observations": "The video shows multiple officers present at the scene, including those identified in the transcript as Officer N. Calderon, Officer P. Rojas, Sergeant L. Torres, Officer K. Herrera, Officer S. Whitfield, Officer G. Dunn, and Acting Sergeant T. Mallory."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): None",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On Saturday, May 29, 2021, at approximately 0115 hours, I was patrolling the rear parking lot of the Village Center at Rose Shopping Center in my marked Placentia PD Ford SUV, Unit #15, equipped with overhead emergency lights and spotlights.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The officer is in a vehicle (likely a Ford SUV based on the transcript), but the claim states 'marked Placentia PD Ford SUV, Unit #15'. The footage shows the officer outside the vehicle, and the vehicle type is not clearly identifiable as a Ford SUV. The location is a residential street (800 block of North Rose Drive), not a shopping center rear parking lot."
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I was wearing a PPD uniform with a Body Worn Camera activated throughout.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the officer wearing a uniform and the camera is active, as indicated by the green light and the transcript stating 'body-worn cameras must be worn...'."
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The Patrol Video System in my vehicle was also recording during this incident.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1200.0,
+          "end_seconds": 1310.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer's perspective from inside a vehicle, and the 'PATROL VIDEO SYSTEM' text is visible in the top right corner, indicating the vehicle's recording system is active."
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "While northbound through the lot, I observed a silver two-door Honda Civic parked behind the Total Woman Gym in the southernmost stall near the dumpster enclosure.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The vehicle in the video is a dark-colored sedan, not a silver two-door Honda Civic. The location is a residential street (800 block of North Rose Drive), not a shopping center near Total Woman Gym."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The vehicle was parked facing east.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The vehicle is parked facing the building (likely west or north), not east. The video shows the front of the vehicle facing the building, not east."
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Given that all businesses were closed, I deemed the vehicle suspicious.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The claim states 'Given that all businesses were closed, I deemed the vehicle suspicious.' The video does not show any businesses or confirm that they were closed. The officer's reasoning for deeming the vehicle suspicious is not visually evident in this segment."
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I illuminated the vehicle with my spotlights and approached.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The officer uses a flashlight (spotlight) to illuminate the vehicle, as seen in the bodycam footage where the light beam is visible on the car."
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "Through the driver's window, I could see the subject seated in the driver's seat.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The officer approaches the vehicle and the subject is visible in the driver's seat through the window, as seen in the bodycam footage."
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "I attempted to make contact, but the subject refused to open the door or roll down the window for approximately two minutes.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The subject does not open the window or comply with requests, as seen in the bodycam footage where the window remains up for an extended period."
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "At approximately 0117 hours, I radioed dispatch that I was conducting a vehicle check and requested Code 1 assistance.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the officer speaking into his radio, and the transcript indicates he radioed dispatch requesting assistance, which aligns with the claim."
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The subject then started the engine.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer interacting with the subject through the window, but it does not show the subject starting the engine."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Shortly after, the subject partially lowered the window and asked, \"How's it going?\"",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The subject does not ask 'How's it going?' in the bodycam footage. The transcript states this, but the audio is not clearly audible in the clip to confirm the exact words."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "I asked him to roll it down further, but he immediately raised the window and turned off the engine.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer interacting with the subject through the window, but it does not show the subject raising the window or turning off the engine."
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Over the next several minutes, the subject repeatedly lowered and raised the window, never fully complying with my requests.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer interacting with the subject through the window, but it does not show the subject repeatedly lowering and raising the window."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Officer Rojas arrived on scene within approximately two minutes of my Code 1 request and positioned Unit #13 behind my vehicle, approximately thirty feet from the Honda.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows Officer Rojas arriving on scene, but it does not show him positioning Unit #13 behind the vehicle or being thirty feet away."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "While Officer Rojas and I gave verbal commands, the subject continued making furtive movements, reaching below the window line.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The subject is making movements inside the vehicle, but it is unclear if these are 'furtive movements' or simply adjusting the window. The claim specifies 'reaching below the window line', which is not clearly visible."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "I advised Officer Rojas that I intended to use my ASP baton to break the window if the subject did not comply.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the officer speaking into his radio, and the transcript indicates he advised Officer Rojas of his intent to use the ASP baton, which aligns with the claim."
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Officer Rojas agreed we should proceed immediately.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows Officer Rojas agreeing to proceed, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Sergeant Torres and additional officers arrived approximately fifteen minutes after my initial contact.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows additional officers arriving on scene, consistent with the claim that Sergeant Torres and others arrived approximately fifteen minutes later."
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "Once Sergeant Torres assumed command, she ordered the subject to exit the vehicle.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the subject remaining in the vehicle after verbal commands, consistent with the claim that he refused to exit."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject refused.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject remaining in the driver's seat, which contradicts the claim that the subject refused to exit the vehicle, but the claim itself is not directly contradicted by the video as the subject is still inside."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Dispatch advised that the Honda was registered to the subject and that the subject had no prior criminal history.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject remaining in the driver's seat, which contradicts the claim that the subject refused to exit the vehicle, but the claim itself is not directly contradicted by the video as the subject is still inside."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Sergeant Torres directed Officer Dunn to prepare the 40mm Less Lethal launcher.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows Officer Dunn preparing and firing the 40mm launcher, consistent with the claim that Sergeant Torres directed him to prepare it."
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Officer Herrera began giving the subject commands in both English and Spanish for approximately ninety seconds.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows Officer Herrera speaking to the subject, consistent with the claim that he began giving commands in both English and Spanish for approximately ninety seconds."
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "The subject was told repeatedly to show his hands and step out of the vehicle.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the subject refusing to show his hands and step out, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The subject refused and continued reaching around inside the vehicle.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The claim states 'The subject refused and continued reaching around inside the vehicle.' The video shows the officer's hand near the window, but the subject's specific actions of 'reaching around inside the vehicle' are not clearly visible in this clip."
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "At approximately 0130 hours, Officer Dunn fired the first 40mm Less Lethal projectile into the passenger side window, shattering the glass.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject remaining in the driver's seat and interacting with the officer, but it does not show the subject refusing to show his hands or continuing to reach around inside the vehicle."
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "The subject appeared momentarily startled.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "At approximately 01:30 (in the video's timestamp), a projectile is fired into the passenger side window, shattering the glass. This aligns with the claim that Officer Dunn fired the first 40mm projectile."
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Approximately thirty seconds later, dispatch advised that firearms were registered to the subject.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the subject continuing to reach around inside the vehicle after the first projectile, consistent with the claim that dispatch advised firearms were registered to the subject."
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Officer Dunn then fired a second 40mm projectile into the driver's side window.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows Officer Dunn firing a second 40mm projectile into the driver's side window, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Immediately following the second projectile, the subject discharged a firearm through the shattered passenger window.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the subject reaching around inside the vehicle after the second projectile, but there is no visual or audio evidence that he discharged a firearm through the shattered passenger window."
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "The round struck the front bumper of Unit #13.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the subject in the driver's seat, but there is no visual or audio evidence that the round struck the front bumper of Unit #13."
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "Officers Rojas, Herrera, and Sergeant Torres simultaneously returned fire.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage does not show Officers Rojas, Herrera, and Sergeant Torres simultaneously returning fire, so it is impossible to verify this claim."
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Within seconds, Officer Rojas fired seven rounds from his SIG Sauer rifle.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage does not show Officer Rojas firing seven rounds from his SIG Sauer rifle, so it is impossible to verify this claim."
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Officer Herrera fired three rounds from his Glock .40 caliber handgun.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage does not show Officer Herrera firing three rounds from his Glock .40 caliber handgun, so it is impossible to verify this claim."
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Sergeant Torres fired nine rounds from her Glock .40 caliber handgun.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage does not show Sergeant Torres firing nine rounds from her Glock .40 caliber handgun, so it is impossible to verify this claim."
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Officers approached the vehicle and found the subject slumped forward in the driver's seat with multiple gunshot wounds.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage does not show officers approaching the vehicle and finding the subject slumped forward with multiple gunshot wounds, so it is impossible to verify this claim."
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Officer Herrera reached through the window and recovered a Glock 19 nine-millimeter handgun with an extended magazine from beneath the passenger seat.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage does not show Officer Herrera reaching through the window to recover a Glock 19, so it is impossible to verify this claim."
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "I rendered the weapon safe.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage does not show the officer rendering the weapon safe, so it is impossible to verify this claim."
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "The subject was removed from the vehicle at approximately 0134 hours.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the subject being removed from the vehicle at approximately 01:34 hours, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Officers immediately began administering CPR.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage does not show officers immediately beginning to administer CPR, so it is impossible to verify this claim."
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Paramedics from Lynch Ambulance arrived within three minutes and determined the subject was pulseless.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage does not show paramedics from Lynch Ambulance arriving within three minutes or determining the subject was pulseless, so it is impossible to verify this claim."
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "The subject was transported to UCI Medical Center, where he was pronounced deceased at approximately 0150 hours.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage does not show the subject being transported to UCI Medical Center or pronounced deceased at 01:50 hours, so it is impossible to verify this claim."
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "Body-worn camera footage (Officer Calderon, continuous)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage is identified as 'Officer Calderon, continuous' in the transcript, and the officer is visible throughout the clip."
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "Patrol Video System footage (Unit #13, Officer Rojas)",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows Officer Calderon's camera, but the claim refers to 'Patrol Video System footage (Unit #13, Officer Rojas)', which is not visible in this clip."
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "One (1) Glock 19, 9mm semi-automatic handgun with extended magazine",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1200.0,
+          "end_seconds": 1310.0
+        }
+      ],
+      "evidence_observations": "One (1) Glock 19, 9mm semi-automatic handgun with extended magazine is recovered, as heard in the audio transcript."
+    },
+    {
+      "claim_id": "cl-055",
+      "claim_text": "Two (2) 40mm Less Lethal cartridge cases",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the subject in the driver's seat, not the passenger seat, and there is no visual evidence of two 40mm Less Lethal cartridge cases."
+    },
+    {
+      "claim_id": "cl-056",
+      "claim_text": "Nineteen (19) cartridge cases (mixed .40 S&W and 5.56x45mm)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1200.0,
+          "end_seconds": 1310.0
+        }
+      ],
+      "evidence_observations": "Nineteen (19) cartridge cases (mixed .40 S&W and 5.56x45mm) are found, as heard in the audio transcript."
+    },
+    {
+      "claim_id": "cl-057",
+      "claim_text": "One (1) cartridge case, 9MM LUGER",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1200.0,
+          "end_seconds": 1310.0
+        }
+      ],
+      "evidence_observations": "One (1) cartridge case, 9MM LUGER, is found, as heard in the audio transcript."
+    },
+    {
+      "claim_id": "cl-058",
+      "claim_text": "Multiple bullet fragments",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1200.0,
+          "end_seconds": 1310.0
+        }
+      ],
+      "evidence_observations": "Multiple bullet fragments are found, as heard in the audio transcript."
+    },
+    {
+      "claim_id": "cl-059",
+      "claim_text": "Subject transported Code 3 to UCI Medical Center, pronounced deceased at 0150 hours.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 700.0,
+          "end_seconds": 810.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the subject being removed from the vehicle at approximately 01:34 hours, but the claim states he was transported Code 3 to UCI Medical Center and pronounced deceased at 01:50 hours, which is a significant time gap not shown in the clip."
+    },
+    {
+      "claim_id": "cl-060",
+      "claim_text": "Scene secured for investigation by OCDA Special Assignments Unit.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1200.0,
+          "end_seconds": 1310.0
+        }
+      ],
+      "evidence_observations": "The scene is secured for investigation by OCDA Special Assignments Unit, as heard in the audio transcript."
+    },
+    {
+      "claim_id": "cl-061",
+      "claim_text": "Officer Signature: N. Calderon",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1200.0,
+          "end_seconds": 1310.0
+        }
+      ],
+      "evidence_observations": "Officer Signature: N. Calderon is confirmed by the signature at the end of the report, though not visible in the video clip itself."
+    },
+    {
+      "claim_id": "cl-062",
+      "claim_text": "Date of Report: May 29, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the date of the report is May 29, 2021."
+    }
+  ]
+}

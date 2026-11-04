@@ -1,0 +1,403 @@
+{
+  "scenario_id": "sc-030",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 123.36,
+  "total_tokens": 36199,
+  "total_api_calls": 6,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: September 23, 2020",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card at 00:12 explicitly states 'WEDNESDAY, SEPTEMBER 23, 2020'."
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 1415 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card states the time is 1312 hours, while the claim states approximately 1415 hours. The video footage shows daylight consistent with midday/early afternoon, but the specific time is not visually confirmed."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: El Camino Real, near Miramar Hotel, San Clemente, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows the vehicle driving on a road with palm trees and commercial buildings. While 'El Camino Real' is mentioned in the title card, the specific location 'near Miramar Hotel' is not visually confirmed in this clip. The video shows a street intersection and a parking lot, but no clear view of the Miramar Hotel."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Deputy C. Whitfield",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 7204",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Garrett Hollis, Male, 42 years old, White, casual clothing with backpack",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 446.195
+        }
+      ],
+      "evidence_observations": "The video shows a physical altercation where the subject is on the ground and a deputy is on top of him. The subject is wearing dark clothing, not casual clothing, and appears to be in a struggle, which contradicts the description of 'casual clothing with backpack'."
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Deputy C. Whitfield, Deputy M. Orozco",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card lists 'Deputy Jonathan Israel' and 'Deputy Eduardo Duran' as involved officers, which contradicts the claim listing 'Deputy C. Whitfield' and 'Deputy M. Orozco'."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Civilian pedestrian (W-1), Off-duty military servicemember (W-2)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On September 23, 2020, at approximately 1415 hours, Deputy Orozco and I were on a routine patrol of the San Clemente area in our marked Sheriff's Department Ford Explorer.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card states the time is 1312 hours, while the claim states approximately 1415 hours. The video shows daylight, but the specific time is not visually confirmed."
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I was driving the vehicle and Deputy Orozco was in the front passenger seat.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card lists 'Deputy Jonathan Israel' and 'Deputy Eduardo Duran' as involved officers. The claim states the reporting officer is 'Deputy C. Whitfield' and that 'Deputy Orozco' was in the passenger seat. The video shows Deputy Israel speaking, but no 'C. Whitfield' or 'Orozco' is identified in the audio or visuals."
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "While traveling northbound on El Camino Real, I observed a male subject walking on the east side of the road.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows the vehicle driving on a road, but it is not clear if the subject is walking on the east side of the road. The video shows a person walking near a corner, but the specific side of the road is not clearly identifiable as 'east side'."
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Based on the subject's general appearance, I believed he may be homeless and decided to initiate a welfare contact.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I parked the Explorer on the shoulder of El Camino Real, and we both exited the vehicle simultaneously.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I approached the subject, later identified as Garrett Hollis, and initiated a conversation in a calm manner.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I asked the subject if he needed any services.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "The subject briefly acknowledged me but showed no interest in speaking further and continued walking.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows the vehicle driving and then stopping, but it does not show the subject continuing to walk without speaking. The audio mentions 'Hey, you need to stop' but does not confirm the subject's lack of interest in speaking further."
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "Deputy Orozco stood approximately ten feet behind me as backup.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows the vehicle driving and then stopping, but it does not show Deputy Orozco standing ten feet behind the reporting officer. The audio mentions 'Don't make case law Gabriel' but does not confirm the positioning of Deputy Orozco."
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "After a brief verbal exchange, I informed the subject that I had observed him earlier in the evening at the Ole Hanson Pool Center, and that the property owners had expressed concern about trespassing.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The subject became verbally upset, stating he had permission to be there, and began walking southbound away from us along the sidewalk.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject walking, but it does not show the subject becoming verbally upset or stating he had permission to be there. The audio mentions 'Don't make case law Gabriel' but does not confirm the subject's verbal response."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "The subject stayed on the sidewalk at all times and did not enter the roadway during this portion of the encounter.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject walking, but it does not show the subject staying on the sidewalk at all times. The video shows the subject walking near a corner and then into a parking lot, which may indicate entering the roadway or parking area."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Deputy Orozco and I followed the subject on foot for approximately 100 yards along El Camino Real.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "During this time, the subject became increasingly agitated and lightly brushed my arm once as he gestured while speaking.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject walking, but it does not show the subject lightly brushing the officer's arm. The audio mentions 'Don't make case law Gabriel' but does not confirm physical contact."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "After this brief contact, the subject calmed down and we were able to redirect him to the area near the Miramar Hotel.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "At the Miramar Hotel location, the subject cooperated initially but then attempted to walk away again.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "Deputy Orozco secured the subject by his jacket and guided him to the ground.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video clip covers seconds 100-210 of the bodycam recording. The claim states Deputy Orozco secured the subject by his jacket and guided him to the ground. However, the video shows the subject being confronted by multiple officers, and there is no clear visual evidence of the specific action described in the claim."
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Both the subject and Deputy Orozco ended up on a grass strip adjacent to the sidewalk.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The video shows both the subject and Deputy Orozco ending up on a grass strip adjacent to the sidewalk, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "I moved to assist.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "While Deputy Orozco was on the ground with the subject, he reported feeling the subject tug at his equipment belt.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 446.195
+        }
+      ],
+      "evidence_observations": "The claim states that Deputy Orozco reported feeling the subject tug at his equipment belt, but the video does not clearly show this action. The struggle is visible, but the specific detail of tugging at the equipment belt is not evident."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "Deputy Orozco then stated that the subject had his hand on his holstered firearm.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 446.195
+        }
+      ],
+      "evidence_observations": "The claim states that the subject had his hand on the holstered firearm, but the video does not clearly show the subject's hand on the holster. The struggle is visible, but the specific detail of the hand on the holster is not evident."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "I drew my service weapon and commanded the subject to let go.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video clip covers seconds 100-210 of the bodycam recording. The officer is heard commanding the subject to let go and drawing his service weapon, which aligns with the claim that he drew his service weapon and commanded the subject to let go."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "After a brief pause, I discharged my firearm once.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 446.195
+        }
+      ],
+      "evidence_observations": "The video shows the officer discharging his firearm once, which aligns with the claim that 'After a brief pause, I discharged my firearm once.'"
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "The subject immediately became compliant and was rolled onto his back.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 446.195
+        }
+      ],
+      "evidence_observations": "The video shows the subject becoming compliant and being rolled onto his back, which aligns with the claim that 'The subject immediately became compliant and was rolled onto his back.'"
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "We provided first aid until paramedics arrived approximately two minutes later.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "A subsequent toxicology screening indicated the presence of methamphetamine in the subject's system.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "The subject was transported to a local hospital and was later pronounced deceased.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 446.195
+        }
+      ],
+      "evidence_observations": "The video shows the scene being secured, which aligns with the claim that 'Scene secured for investigation.'"
+    }
+  ]
+}

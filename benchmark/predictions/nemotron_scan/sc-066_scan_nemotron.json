@@ -1,0 +1,456 @@
+{
+  "scenario_id": "sc-066",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 348.78,
+  "total_tokens": 107319,
+  "total_api_calls": 16,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: September 25, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The timestamp in the top right corner of the bodycam footage reads '2021-05-29', which corresponds to September 25, 2021 (using the US date format MM-DD-YY)."
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 0510 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The timestamp shows the time is approximately 01:12:19 (1:12 AM), not 0510 hours (5:10 AM)."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: 400 block of East Yorba Linda Boulevard, Placentia, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states the location is the '400 block of East Yorba Linda Boulevard'. The transcript states the officer was patrolling the '800 block of North Rose Drive'. The bodycam footage shows a building with the number '800' visible on the wall, confirming the location is the 800 block, not the 400 block."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer B. Hensley",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The lower third graphic identifies the speaker as 'Joe Connell, Sergeant', not Officer B. Hensley. The video does not show Officer B. Hensley."
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 4890",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Andrew Kim, Male, 38, Asian",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject is 'Andrew Kim, Male, 38, Asian'. The transcript and the photo shown at 0:16 identify the subject as 'Matthew Wong', a male, 33 years old, resident of Yorba Linda. This directly contradicts the claim."
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer B. Hensley, Officer C. Orozco",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states the officers are 'Officer B. Hensley, Officer C. Orozco'. The transcript states the primary officer attempted to contact 'Mr Wong'. The bodycam footage shows the officer approaching the vehicle. While the name 'Orozco' is mentioned in the transcript, the claim lists two officers, and the clip only shows one officer (the primary officer) interacting with the subject. The claim's description of the officers' positions and actions may not align with the single officer shown."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): W-1 (female occupant of vehicle)",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a person inside the vehicle, but it is unclear if this person is a female occupant (W-1) or the subject (Andrew Kim). The claim specifies a female occupant, but the person visible appears to be male."
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On September 25, 2021, at approximately 0510 hours, Officer C. Orozco and I were dispatched to the location regarding the reported incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I was operating the patrol vehicle with Officer C. Orozco in the passenger seat.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1100.0,
+          "end_seconds": 1210.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer approaching the vehicle from the outside, but it is unclear if the officer was operating the patrol vehicle with Officer C. Orozco in the passenger seat during this specific interaction."
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I activated my body-worn camera prior to arriving on scene.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1100.0,
+          "end_seconds": 1210.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage begins at 01:32:13, which is after the claimed time of arrival. The claim states the officer activated the camera prior to arriving, but the video starts after arrival, so this cannot be confirmed from this clip."
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Upon arrival at 400 block of East Yorba Linda Boulevard, Placentia, CA, I observed the subject in the area matching the description provided by dispatch.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer approaching the vehicle, but it is unclear if the subject matches the dispatch description, as the subject's appearance is not clearly described in the clip."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I was the primary officer and approached the subject first.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer approaching the vehicle, but it is unclear if the officer was the primary officer or if another officer approached first."
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I identified myself verbally and directed the subject to stop.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1100.0,
+          "end_seconds": 1210.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer approaching the vehicle with a weapon drawn, but there is no audio evidence of the officer identifying himself or directing the subject to stop in this segment."
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject was cooperative during initial contact.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states 'The subject was cooperative during initial contact.' The bodycam footage shows the officer approaching the vehicle. The transcript states 'Mr Wong failed to comply with numerous requests' and 'refusing to follow the officer's repeated requests'. This indicates the subject was not cooperative, contradicting the claim."
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "The lighting conditions were adequate for observation.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video is very dark, making it difficult to determine if the lighting conditions were adequate for observation. The officer is using a flashlight, suggesting the lighting was inadequate."
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "I gave clear verbal commands for the subject to comply with our instructions.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The subject repeatedly fails to roll down the window or follow instructions, indicating the commands were not followed or were unclear."
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The situation escalated when the subject failed to follow directives.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1100.0,
+          "end_seconds": 1210.0
+        }
+      ],
+      "evidence_observations": "The subject is not complying with directives; instead, the officer is pointing a weapon, and the subject is not seen making a sudden movement toward his waistband until later in the clip."
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The subject made a sudden movement toward his waistband.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The subject makes a sudden movement by starting the vehicle and reversing it, but there is no clear visual or audio evidence of a movement toward his waistband."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Officer C. Orozco was positioned to my right, approximately ten feet away.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1100.0,
+          "end_seconds": 1210.0
+        }
+      ],
+      "evidence_observations": "The video shows Officer No. 1 (Joe Connell) approaching the vehicle, but it is unclear if Officer C. Orozco was positioned to his right, as the second officer is not visible in this segment."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "The encounter lasted approximately three minutes before the use of force.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "I perceived an imminent threat.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1100.0,
+          "end_seconds": 1210.0
+        }
+      ],
+      "evidence_observations": "The officer is pointing a weapon at the subject, but there is no clear visual or audio evidence of an 'imminent threat' being perceived in this segment."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "I discharged my firearm in response to an immediate threat.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "The officer states 'a 40 millimeter sponge round was deployed', indicating non-lethal force was used, which contradicts the claim that he discharged his firearm."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Medical aid was rendered immediately after the subject was secured.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1300.0,
+          "end_seconds": 1410.0
+        }
+      ],
+      "evidence_observations": "The transcript states 'officers immediately began rendering Aid', and the video shows officers attending to the subject, confirming medical aid was rendered immediately after securing the scene."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "Paramedics arrived within approximately five minutes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Officer C. Orozco and I maintained scene security until investigative units arrived.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1100.0,
+          "end_seconds": 1210.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer pointing a weapon at the subject, but it is unclear if Officer C. Orozco was maintaining scene security, as the second officer is not visible in this segment."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "No bystanders were present in the immediate area during the incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "All evidence was properly collected and secured at the scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject's weapon was recovered at the scene.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1100.0,
+          "end_seconds": 1210.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer pointing a weapon at the subject, but it is unclear if the subject's weapon was recovered at the scene, as the clip ends before any recovery of a weapon is shown."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Body-worn camera footage",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The claim states 'Body-worn camera footage'. The entire clip is body-worn camera footage, as indicated by the timestamp 'AXON BODY 3' and the visual perspective. This claim is directly supported by the clip."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Cartridge cases",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1300.0,
+          "end_seconds": 1410.0
+        }
+      ],
+      "evidence_observations": "Cartridge cases are visible on the ground in the video (e.g., at 00:46), confirming their presence at the scene."
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Subject's weapon",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1100.0,
+          "end_seconds": 1210.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer pointing a weapon at the subject, but it is unclear if the subject's weapon was recovered at the scene, as the clip ends before any recovery is shown."
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Crime scene photographs",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1300.0,
+          "end_seconds": 1410.0
+        }
+      ],
+      "evidence_observations": "Crime scene photographs are referenced in the transcript ('evidentiary photograph of the gun'), and the video shows such photos (e.g., the gun on the ground)."
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Subject received medical treatment.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1300.0,
+          "end_seconds": 1410.0
+        }
+      ],
+      "evidence_observations": "The transcript states 'Mr Wong was transported to a local hospital', confirming he received medical treatment, though the video shows the scene after the incident."
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1300.0,
+          "end_seconds": 1410.0
+        }
+      ],
+      "evidence_observations": "The scene is secured as officers manage the area and wait for paramedics, consistent with 'Scene secured for investigation'."
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Officer Signature: Hensley",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Date of Report: September 25, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The timestamp in the top right corner of the bodycam footage reads '2021-05-29', which corresponds to September 25, 2021."
+    }
+  ]
+}

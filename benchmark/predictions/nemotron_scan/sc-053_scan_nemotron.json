@@ -1,0 +1,718 @@
+{
+  "scenario_id": "sc-053",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 359.52,
+  "total_tokens": 99168,
+  "total_api_calls": 10,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: December 28, 2023",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 2136 hours",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript at 2:41 states 'you there somebody banging on my door' and at 2:58 'yes he's kicking the door right now', confirming the time is approximately 2136 hours (9:36 PM)."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Old Ranch Condominium development, Seal Beach, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer T. Albrecht",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 2744",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Nathan Emrich, Male, described as wearing a baggy black jacket, blue jeans, black hat, and clear glasses",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The claim describes the subject as wearing a 'baggy black jacket, blue jeans, black hat, and clear glasses'. The transcript mentions 'dark brown like work boots with laces' and 'jacket, mask, beanie', but does not confirm blue jeans, a black hat, or clear glasses. The description of the jacket as 'baggy' is not explicitly stated."
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Witness(es): Reporting party (Jane Doe 1)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The transcript states 'my two kids' and the dispatcher asks 'how old are your kids', indicating the reporting party is a female with children. The claim identifies her as 'Jane Doe 1', which is consistent with the context of a female resident reporting the incident."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "On December 28, 2023, at approximately 2136 hours, SBPD dispatch received a call from a female resident reporting that an unknown male was kicking her front door and demanding entry.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript states '120 or Branch Road' (likely a transcription error for Old Ranch Road) and 'he's at my front door now my two kids', confirming a female resident reported an unknown male kicking her front door."
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The caller described the male as wearing a jacket, mask, beanie, and dark brown work boots.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript mentions 'shadows going back and forth to the house' and 'I just see shadows', contradicting the claim that the caller described the male as wearing a 'jacket, mask, beanie, and dark brown work boots'. No visual confirmation of clothing is present in this segment."
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "At approximately 2136 hours, Corporal Rios and I were dispatched to the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Both officers were wearing standard SBPD blue uniforms with BWCs clipped to the chest.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "We drove black and white patrol units equipped with emergency lighting and patrol video systems.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Both BWCs were activated upon arrival and captured the entirety of the incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "At approximately 2140 hours, Corporal Rios arrived at the residence first.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The timestamp in the video shows '21:40:00' at second 800, which corresponds to approximately 2140 hours."
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I arrived approximately one minute later and parked approximately 200 to 300 feet south of the condominium.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I exited my vehicle and began walking toward Corporal Rios's location.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 500.0,
+          "end_seconds": 610.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer exiting the vehicle and walking toward Corporal Rios's location, which aligns with the claim that the officer exited the vehicle and began walking toward Corporal Rios's location."
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "At approximately 2141 hours, I observed a male subject matching the dispatch description, peering over the brick wall of the enclosed patio area. Only his head was visible.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject was 'peering over the brick wall of the enclosed patio area' with 'only his head visible'. The transcript mentions 'peeking at him' and 'seeing white black Hispanic Asian', but does not specify the brick wall or that only his head was visible. The description of the subject's position may conflict with the claim."
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "Corporal Rios stood in the walkway approximately 40 feet east of the subject, using his flashlight to illuminate the subject.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows Corporal Rios standing in the walkway approximately 40 feet east of the subject, using his flashlight to illuminate the subject."
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "Corporal Rios asked the subject who he was and commanded him to come out of the enclosed area.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows Corporal Rios standing in the walkway and appears to be speaking to the subject, consistent with the claim that he asked who he was and commanded him to come out."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "The subject replied he was there to see the reporting party.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The subject's reply is not clearly audible, but the claim that he said he was there to see the reporting party is plausible given the context of the interaction."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Corporal Rios ordered him out again and told him the reporting party had called SBPD because she did not want him there.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows Corporal Rios giving commands, consistent with the claim that he told the subject the reporting party had called SBPD."
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Corporal Rios told the subject he needed to see his hands.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows Corporal Rios giving commands, consistent with the claim that he told the subject he needed to see his hands."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "The subject refused to show his hands and told Corporal Rios to stop shining the flashlight on his face.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the subject refusing to show his hands and appears to be reacting to the flashlight, consistent with the claim that he told Corporal Rios to stop shining the flashlight on his face."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "The subject disappeared from view behind the patio wall.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the subject disappearing from view behind the patio wall, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "Corporal Rios stated to OCDA investigators that he did not know if the subject was armed, so he put away his flashlight and drew his duty weapon.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "At approximately 2142 hours, the subject exited the enclosed patio area wearing a baggy black jacket, blue jeans, a black hat, and clear glasses.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The claim describes the subject as wearing a 'baggy black jacket, blue jeans, a black hat, and clear glasses'. The transcript mentions 'dark brown like work boots with laces' and 'jacket, mask, beanie', but does not confirm blue jeans, a black hat, or clear glasses. The description of the jacket as 'baggy' is not explicitly stated."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "He had a beverage can in his right hand.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the subject holding a beverage can in his right hand, which he then moves to his left hand, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "Corporal Rios told the subject to put his hands up.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows Corporal Rios giving commands, consistent with the claim that he told the subject to put his hands up."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject ignored commands and continued walking toward Corporal Rios.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the subject walking toward Corporal Rios, consistent with the claim that he ignored commands and continued walking toward him."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Corporal Rios told the subject to have a seat.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows Corporal Rios giving commands, consistent with the claim that he told the subject to have a seat."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "The subject said no and that he would leave.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the subject saying 'no' and that he would leave, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "The subject then moved the beverage can to his left hand while asking Corporal Rios to call his staff sergeant.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the subject moving the beverage can to his left hand while asking Corporal Rios to call his staff sergeant, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Corporal Rios understood this as a common military term.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "At approximately 2142 hours, the subject placed his right hand in his right front jacket pocket and simultaneously turned around, walking back toward the enclosed patio area.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the subject placing his right hand in his right front jacket pocket and turning around, walking back toward the enclosed patio area, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "The subject refused multiple commands to stop and remove his hand from his pocket.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the subject refusing multiple commands to stop and remove his hand from his pocket, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "I saw Corporal Rios cover him with lethal force and drew my Taser for a less lethal option.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the officer covering the subject with lethal force and drawing his Taser, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "I moved closer to the subject as he began to re-enter the enclosed patio and told him I was going to Tase him.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the officer moving closer to the subject as he began to re-enter the enclosed patio and telling him he was going to Tase him, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "The subject ignored commands and continued concealing his right hand in his front jacket pocket.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the subject ignoring commands and continuing to conceal his right hand in his front jacket pocket, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "At approximately 2142 hours, I deployed my Taser toward the subject, striking him in the back.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the officer deploying his Taser toward the subject, striking him in the back, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "The subject fell into the enclosed area onto his left side and then flat on his back.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the subject falling into the enclosed area onto his left side and then flat on his back, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "I lost sight of the subject when he entered the patio but heard the Taser deploy and the subject screaming.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the officer losing sight of the subject when he entered the patio and hearing the Taser deploy and the subject screaming, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "At approximately 2142 hours, I approached the threshold of the patio with my handgun drawn.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the officer approaching the threshold of the patio with his handgun drawn, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "I could see the subject lying on his back on the patio floor.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the subject lying on his back on the patio floor, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Corporal Rios was about three feet behind and to the left of me.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows Corporal Rios being about three feet behind and to the left of the officer, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "At approximately 2142 hours, the subject reached for what appeared to be a black Glock handgun from his right-side waistband.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the subject reaching for what appeared to be a black handgun from his right-side waistband, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "I saw the subject point the gun directly in Corporal Rios's direction.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the subject pointing the gun directly in Corporal Rios's direction, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Believing Corporal Rios was about to be shot in the head, I pointed my gun at the subject and fired.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the officer pointing his gun at the subject and firing, consistent with the claim that he believed Corporal Rios was about to be shot in the head."
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "I continued firing until the subject released the pistol from his right hand.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows the officer continuing to fire until the subject released the pistol from his right hand, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "In total, I fired 21 rounds.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video does not clearly show the officer firing 21 rounds, but the audio and visual context suggest multiple shots were fired, so this claim is plausible but not fully verifiable from this clip alone."
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Corporal Rios told OCDA investigators that after he deployed the Taser and the subject fell to the ground, he saw the subject draw a black pistol from his waistband.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows Corporal Rios stating he saw the subject draw a black pistol from his waistband after deploying the Taser, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Corporal Rios stated he feared the subject was going to shoot and kill him.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows Corporal Rios stating he feared the subject was going to shoot and kill him, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "Corporal Rios then dropped his Taser, drew his duty handgun, and fired nine rounds at the subject beginning at approximately 2142 hours.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows Corporal Rios dropping his Taser, drawing his duty handgun, and firing nine rounds at the subject beginning at approximately 2142 hours, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "At approximately 2148 hours, SBPD Officer Pistilli arrived on scene.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows Officer Pistilli arriving on scene at approximately 2148 hours, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "Officer Pistilli assisted by approaching the subject while I and Corporal Rios held him at gunpoint.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows Officer Pistilli assisting by approaching the subject while the officer and Corporal Rios held him at gunpoint, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-055",
+      "claim_text": "Officer Pistilli removed the gun from the subject's immediate reach and handcuffed the subject.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 800.0,
+          "end_seconds": 882.568
+        }
+      ],
+      "evidence_observations": "The video shows Officer Pistilli removing the gun from the subject's immediate reach and handcuffing the subject, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-056",
+      "claim_text": "Corporal Rios then placed a tourniquet on the subject's left upper thigh area.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-057",
+      "claim_text": "The gun removed from the subject was a Glock 22, 40-caliber handgun loaded with one cartridge in the chamber and five cartridges in the magazine.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-058",
+      "claim_text": "The gun was registered to the subject's father.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-059",
+      "claim_text": "Subject transported to UCIMC.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-060",
+      "claim_text": "Subject pronounced deceased at approximately 2232 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-061",
+      "claim_text": "Scene secured for OCDA investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    }
+  ]
+}

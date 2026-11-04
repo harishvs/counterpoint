@@ -1,0 +1,457 @@
+{
+  "scenario_id": "sc-032",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 150.54,
+  "total_tokens": 47242,
+  "total_api_calls": 7,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-032",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: August 6, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 states the incident date is Friday, August 6, 2021."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 1920 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide states the incident time is 7:10 PM, while the claim states approximately 1920 hours (7:20 PM)."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: Front entrance, Ridgemont Police Department, 150 North Euclid Street, La Habra, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide states the location is 150 North Euclid Street, La Habra, CA, which is the La Habra Police Department, not the Ridgemont Police Department. The video shows the La Habra Police Department seal."
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer A. Navarro",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 4481",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Kevin Phan, Male, 22 years old, Asian, black T-shirt, black pants",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The subject is seen wearing a black t-shirt and black pants, which matches the description. However, the claim specifies 'Kevin Phan, Male, 22 years old, Asian', which cannot be verified from the video alone as no face is clearly shown or identified."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Officer A. Navarro, Officer D. Corbin",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows two officers, one of whom is identified as Officer Fox in the text overlay, but the names 'Officer A. Navarro' and 'Officer D. Corbin' are not visible or confirmed in the clip."
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witness(es): Female victim/complainant (W-1)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "On August 6, 2021, at approximately 1920 hours, Officer Corbin and I were dispatched to the front of the Ridgemont Police Department following a 9-1-1 call from a female motorist reporting that she was being followed by an unknown male in a dark sedan.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The claim states the caller was a 'female motorist' reporting she was 'being followed by an unknown male in a dark sedan'. The video shows a female caller reporting she is 'really scared' and that 'he's reversing and parking', with no mention of being followed by a dark sedan or a male. The audio indicates she is calling for help, not reporting a pursuit."
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Communications advised that the caller had been followed for approximately five minutes from the 57 freeway.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officer Corbin and I responded in a single marked patrol vehicle, with Officer Corbin driving and myself in the passenger seat.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The claim states the officers responded in a 'single marked patrol vehicle'. The video shows Officer Milward exiting his own vehicle (a white SUV), suggesting he was in a separate vehicle, not a passenger in a single patrol car with Officer Corbin."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "We arrived on scene within approximately two minutes of dispatch, at approximately 1922 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Upon arrival, I observed W-1's vehicle parked on the street adjacent to the station, and the subject's dark blue Toyota Camry parked directly behind W-1.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The claim states W-1's vehicle was parked on the street adjacent to the station. The video shows a dark blue sedan (Toyota Camry) parked on the street, but it is unclear if this is W-1's vehicle or the subject's vehicle. The claim specifies 'dark blue Toyota Camry parked directly behind W-1', which is not visually confirmed."
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject was already inside the station lobby speaking with the front desk clerk when we made entry.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I contacted the subject first and asked him to step outside.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The claim states the officer contacted the subject first and asked him to step outside. The video shows the officer approaching the subject who is already outside the building, and the subject is seen walking away from the building, not being asked to step out."
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The subject was cooperative and calmly walked outside with me.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject was 'cooperative and calmly walked outside'. The video shows the subject walking out of the building, but his demeanor is not clearly calm, and the officer's actions (e.g., drawing a weapon) suggest tension, contradicting 'calmly'."
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "Once outside, the subject identified himself and stated that he had followed W-1 because she had cut him off on the freeway and he wanted to exchange insurance information.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "Officer Corbin, meanwhile, contacted W-1 in her vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "W-1 was visibly shaken and explained that the subject had followed her for several miles.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Officer Corbin spent approximately ten minutes taking W-1's statement before joining me with the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "I informed the subject that W-1 did not wish to exchange information and that he should leave the area.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "The subject became verbally agitated, raising his voice and gesturing with both hands.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject became 'verbally agitated, raising his voice and gesturing with both hands'. The video shows the subject walking calmly, and there is no audio evidence of him raising his voice or gesturing with both hands."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "I then turned my back to the subject briefly to radio dispatch with an update.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The claim states the officer turned his back to radio dispatch. The video shows the officer turning away from the subject to look at the sky/building, but there is no clear indication he was radioing dispatch during this time."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "During this time, Officer Corbin maintained visual contact with the subject.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The claim states Officer Corbin maintained visual contact with the subject. The video shows Officer Milward (the camera wearer) looking at the subject, but it is unclear if Officer Corbin is maintaining visual contact, as he is not visible in the clip."
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "At approximately 1935 hours, I heard Officer Corbin shout a warning.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "I turned to see the subject holding a firearm at his side.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The claim states the subject was holding a firearm at his side. The video does not show the subject holding a firearm; instead, he is seen walking with his hands at his sides, and no weapon is visible."
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "I immediately drew my weapon and issued commands for the subject to drop the gun.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer drawing his weapon and issuing commands for the subject to drop the gun, which aligns with the claim."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "After a brief standoff lasting approximately thirty seconds, the subject raised the firearm and fired a single shot that struck the pavement near my feet.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "I returned fire, discharging two rounds.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject raising the firearm and firing a single shot that strikes the pavement near the officer's feet, as described in the claim."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Simultaneously, Officer Corbin discharged one round.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer returning fire, discharging two rounds, which aligns with the claim."
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "The subject fell to the ground.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows Officer Corbin discharging one round, which aligns with the claim."
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "I immediately holstered my weapon and, together with Officer Corbin, approached the subject to render first aid.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject falling to the ground after the shots were fired, which aligns with the claim."
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "We began CPR within approximately one minute of the shooting.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Paramedics from the La Habra Fire Department arrived within five minutes and transported the subject to a local hospital.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "the subject was pronounced deceased approximately two hours later.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "One firearm was recovered from the subject: a .40 caliber Glock semi-automatic pistol.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Body-worn camera footage (approximately 40 minutes)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Three (3) .40 caliber cartridge cases",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "One (1) Glock .40 caliber semi-automatic pistol",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "One (1) iPhone",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Subject transported to hospital, pronounced deceased.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "W-1 released after providing statement.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    }
+  ]
+}

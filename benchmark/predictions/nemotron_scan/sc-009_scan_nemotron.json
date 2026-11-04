@@ -2,8 +2,8 @@
   "scenario_id": "sc-009",
   "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
   "pipeline": "scan",
-  "processing_time_seconds": 116.2,
-  "total_tokens": 30528,
+  "processing_time_seconds": 114.46,
+  "total_tokens": 30356,
   "total_api_calls": 4,
   "claims": [
     {
@@ -25,7 +25,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The title card states 'THURSDAY, MARCH 11, 2021', which matches the claim."
+      "evidence_observations": "The text slide at 00:12 states 'THURSDAY, MARCH 11, 2021', which matches the claim."
     },
     {
       "claim_id": "cl-003",
@@ -38,7 +38,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The title card states 'THURSDAY, MARCH 11, 2021 AT 1819 HOURS', which falls within the claimed time range of 1818 to 1839 hours."
+      "evidence_observations": "The text slide at 00:12 states 'THURSDAY, MARCH 11, 2021 AT 1819 HOURS', which aligns with the claim's time range of approximately 1818 to 1839 hours."
     },
     {
       "claim_id": "cl-004",
@@ -51,7 +51,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The title card states '30514 COAST HIGHWAY LAGUNA BEACH, CA', which matches the claim. The bodycam footage shows a road consistent with a coastal highway."
+      "evidence_observations": "The text slide at 00:12 states '30514 COAST HIGHWAY LAGUNA BEACH, CA', which matches the claim's location."
     },
     {
       "claim_id": "cl-005",
@@ -64,7 +64,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The title card lists 'OFFICER RYAN RADEL' and 'OFFICER MATTHEW MEYER' as involved officers, while the claim states 'Officer D. Kessler'. The video shows Officer Ryan Radel exiting his vehicle, not Officer D. Kessler."
+      "evidence_observations": "The text slide at 00:12 lists 'OFFICER RYAN RADEL' and 'OFFICER MATTHEW MEYER' as involved officers, while the claim states 'Officer D. Kessler'."
     },
     {
       "claim_id": "cl-006",
@@ -85,7 +85,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The claim describes the subject as 'Tyler Brandt, Male, approximately 30 years old, White, black sweatshirt, light blue t-shirt underneath'. The title card identifies the subject as 'TOBIAH STEINMETZ'. The bodycam footage shows a white Mercedes, but the subject's clothing is not clearly visible until later in the clip, and the name is different."
+      "evidence_observations": "The video shows a white Mercedes sedan, not a subject in a black sweatshirt and light blue t-shirt. The claim describes a person, while the video shows a vehicle."
     },
     {
       "claim_id": "cl-008",
@@ -98,7 +98,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The claim lists 'Officer D. Kessler, Corporal A. Novak (PIT maneuver), Officer M. Trujillo, Sergeant R. Holt'. The title card lists 'OFFICER RYAN RADEL' and 'OFFICER MATTHEW MEYER'. The video shows Officer Ryan Radel, but no other officers are clearly identified by name in the footage shown. The claim's list of officers does not match the title card."
+      "evidence_observations": "The text slide at 00:12 lists 'OFFICER RYAN RADEL' and 'OFFICER MATTHEW MEYER' as involved officers, while the claim lists 'Officer D. Kessler, Corporal A. Novak (PIT maneuver), Officer M. Trujillo, Sergeant R. Holt'."
     },
     {
       "claim_id": "cl-009",
@@ -119,7 +119,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the perspective of an officer driving a patrol vehicle southbound on a highway at dusk/night, consistent with the claim."
+      "evidence_observations": "The bodycam footage shows a view from inside a patrol vehicle driving on a road at dusk/night, consistent with the claim of driving southbound on Pacific Coast Highway."
     },
     {
       "claim_id": "cl-011",
@@ -132,7 +132,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows a white Mercedes sedan traveling ahead of the patrol vehicle at a high rate of speed, consistent with the claim."
+      "evidence_observations": "The bodycam footage shows a white Mercedes sedan driving ahead of the patrol vehicle at a high rate of speed, consistent with the claim."
     },
     {
       "claim_id": "cl-012",
@@ -145,20 +145,15 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the patrol vehicle following the white Mercedes, and the Mercedes is seen veering on and off the shoulder of the road."
+      "evidence_observations": "The bodycam footage shows the white Mercedes veering onto the shoulder and then back onto the road, indicating erratic driving behavior."
     },
     {
       "claim_id": "cl-013",
       "claim_text": "I believed the driver was potentially impaired",
-      "evidence_relationship": "potential_conflict",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The claim states 'I believed the driver was potentially impaired'. The video does not show any clear signs of impairment (e.g., erratic steering, failure to signal) that would support this belief, though the high speed and erratic driving could suggest it."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-014",
@@ -171,7 +166,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the patrol vehicle following the white Mercedes. While audio is not transcribed, the claim states the officer broadcast intent to stop and requested backup, which is consistent with standard procedure shown in the footage."
+      "evidence_observations": "The bodycam footage shows the officer approaching the vehicle, and the text slide states the officer broadcast intent to conduct a stop at 1819 hours."
     },
     {
       "claim_id": "cl-015",
@@ -184,7 +179,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the white Mercedes pulling onto the northbound shoulder of the highway, consistent with the claim that the driver appeared to comply."
+      "evidence_observations": "The bodycam footage shows the white Mercedes pulling onto the northbound shoulder, consistent with the claim of initial compliance."
     },
     {
       "claim_id": "cl-016",
@@ -197,20 +192,20 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows an officer (Officer Ryan Radel) exiting his patrol vehicle and approaching the white Mercedes on the passenger side."
+      "evidence_observations": "The bodycam footage shows an officer exiting the patrol vehicle and approaching the white Mercedes on the passenger side."
     },
     {
       "claim_id": "cl-017",
       "claim_text": "As I reached the rear quarter panel of the Mercedes, the driver abruptly accelerated away from the traffic stop",
-      "evidence_relationship": "supported",
+      "evidence_relationship": "potential_conflict",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the white Mercedes accelerating away from the stopped position as the officer approaches, consistent with the claim."
+      "evidence_observations": "The claim states the driver accelerated away, but the video shows the vehicle already stopped and the subject exiting, indicating the pursuit had already ended."
     },
     {
       "claim_id": "cl-018",
@@ -223,7 +218,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the white Mercedes making a hard right turn across the lanes of traffic, consistent with the claim."
+      "evidence_observations": "The bodycam footage shows the white Mercedes making a hard right turn across the road, consistent with the claim."
     },
     {
       "claim_id": "cl-019",
@@ -236,7 +231,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the patrol vehicle pursuing the white Mercedes, which is consistent with the claim of a pursuit ensued."
+      "evidence_observations": "The bodycam footage shows the patrol vehicle pursuing the white Mercedes, indicating a pursuit ensued."
     },
     {
       "claim_id": "cl-020",
@@ -249,7 +244,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The claim states 'the subject collided with two civilian vehicles, causing one vehicle to overturn'. The video shows the pursuit continuing, but does not clearly show any collisions with civilian vehicles or vehicles overturning. The footage is too distant and fast-paced to confirm this specific detail."
+      "evidence_observations": "The video shows the white Mercedes colliding with another vehicle, but it is unclear if two civilian vehicles were involved or if one overturned."
     },
     {
       "claim_id": "cl-021",
@@ -262,20 +257,15 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the patrol vehicle continuing the pursuit with emergency lights and sirens activated (implied by the flashing lights and context)."
+      "evidence_observations": "The bodycam footage shows the patrol vehicle continuing the pursuit with emergency lights activated."
     },
     {
       "claim_id": "cl-022",
       "claim_text": "Additional Laguna Beach Police units joined the pursuit",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The bodycam footage shows the pursuit continuing, and while other vehicles are visible, the claim states 'Additional Laguna Beach Police units joined the pursuit'. The video does not clearly show other police units joining, but it is plausible given the context of a high-speed chase."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-023",
@@ -288,15 +278,10 @@
     {
       "claim_id": "cl-024",
       "claim_text": "The subject reached speeds of approximately 90 miles per hour",
-      "evidence_relationship": "potential_conflict",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The claim states 'The subject reached speeds of approximately 90 miles per hour'. The video does not provide a clear visual indication of the exact speed, though the pursuit is fast. Without a speedometer reading or clear reference points, this claim is difficult to verify."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-025",
@@ -309,7 +294,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the white Mercedes driving on the wrong side of the road and swerving into oncoming traffic during the pursuit."
+      "evidence_observations": "The bodycam footage shows the white Mercedes driving on the wrong side of the road and swerving into oncoming traffic."
     },
     {
       "claim_id": "cl-026",
@@ -338,28 +323,18 @@
     {
       "claim_id": "cl-029",
       "claim_text": "Corporal Novak successfully executed a pursuit intervention technique (PIT) maneuver, bringing the Mercedes to a stop in the southbound lane of Pacific Coast Highway",
-      "evidence_relationship": "potential_conflict",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The claim states 'Corporal Novak successfully executed a pursuit intervention technique (PIT) maneuver, bringing the Mercedes to a stop in the southbound lane of Pacific Coast Highway'. The video shows the white Mercedes stopping, but it is not clear if a PIT maneuver was used, nor is it clear if the stop occurred in the southbound lane (the video shows the car stopping in the right lane, which could be the shoulder or a lane). The name 'Corporal Novak' is not visible in the video."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-030",
       "claim_text": "The vehicle came to rest facing north",
-      "evidence_relationship": "potential_conflict",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The claim states 'The vehicle came to rest facing north'. The bodycam footage shows the white Mercedes coming to a stop, but the direction it is facing is not clearly visible due to the angle and distance. The claim's description may not match the visual evidence."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-031",
@@ -372,15 +347,10 @@
     {
       "claim_id": "cl-032",
       "claim_text": "All units had their takedown lights and spotlights illuminated and directed at the subject",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The bodycam footage shows the patrol vehicle stopping, and the claim states that 'All units had their takedown lights and spotlights illuminated and directed at the subject'. While the video shows the patrol vehicle's lights, the claim's description of all units' lights is not directly observable but is plausible given the context."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-033",
@@ -401,7 +371,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the subject remaining seated in the driver's seat for a period after the vehicle stops, consistent with the claim of 'approximately 30 seconds'."
+      "evidence_observations": "The bodycam footage shows the subject remaining seated in the driver's seat for approximately 30 seconds after the vehicle comes to a stop."
     },
     {
       "claim_id": "cl-035",
@@ -414,12 +384,12 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the subject exiting the vehicle and turning to face the officers, consistent with the claim."
+      "evidence_observations": "The bodycam footage shows the subject exiting the vehicle and turning to face the officers."
     },
     {
       "claim_id": "cl-036",
       "claim_text": "The subject placed his left hand behind his back and made a distinct reaching motion toward his left hip area",
-      "evidence_relationship": "supported",
+      "evidence_relationship": "potential_conflict",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
@@ -427,7 +397,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the subject placing his left hand behind his back and making a reaching motion toward his left hip area, consistent with the claim."
+      "evidence_observations": "The video shows the subject placing his left hand behind his back and reaching toward his left hip, but it is unclear if this is consistent with reaching for a concealed firearm."
     },
     {
       "claim_id": "cl-037",
@@ -440,7 +410,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The claim states 'I interpreted this movement as consistent with someone reaching for a concealed firearm'. The video shows the movement, but the officer's internal interpretation is not audible or visible, so this claim is based on the officer's perception rather than observable evidence."
+      "evidence_observations": "The video shows the subject reaching toward his left hip, but the officer's interpretation of this movement as reaching for a concealed firearm is not visually confirmed."
     },
     {
       "claim_id": "cl-038",
@@ -453,20 +423,20 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the officer commanding the subject to get on the ground, which is consistent with the claim."
+      "evidence_observations": "The bodycam footage shows the officer commanding the subject to get on the ground."
     },
     {
       "claim_id": "cl-039",
       "claim_text": "The subject did not comply and instead began advancing toward me and the other officers in a rapid, deliberate manner",
-      "evidence_relationship": "supported",
+      "evidence_relationship": "potential_conflict",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the subject advancing toward the officers in a rapid, deliberate manner after not complying with the command to get on the ground, consistent with the claim."
+      "evidence_observations": "The claim states the subject did not comply and advanced, but the video shows the subject getting on the ground, indicating compliance."
     },
     {
       "claim_id": "cl-040",
@@ -479,7 +449,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the subject extending both arms forward at chest height with hands together, consistent with the claim of simulating pointing a firearm."
+      "evidence_observations": "The bodycam footage shows the subject extending both arms forward at chest height with hands together, simulating pointing a firearm."
     },
     {
       "claim_id": "cl-041",
@@ -492,12 +462,12 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the officer discharging his firearm (implied by the claim and the context of the scene), firing four rounds at approximately 1839 hours. The video does not show the actual firing, but the claim is consistent with the sequence of events shown."
+      "evidence_observations": "The bodycam footage shows the officer discharging his firearm, with audible gunshots and muzzle flashes visible."
     },
     {
       "claim_id": "cl-042",
       "claim_text": "Despite being struck, the subject remained on his feet and continued advancing toward the officers",
-      "evidence_relationship": "supported",
+      "evidence_relationship": "potential_conflict",
       "retrieval_status": "retrieved",
       "evidence_references": [
         {
@@ -505,7 +475,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the subject remaining on his feet and continuing to advance toward the officers after being struck, consistent with the claim."
+      "evidence_observations": "The video shows the subject remaining on his feet and continuing to advance, but it is unclear if he remained on his feet despite being struck."
     },
     {
       "claim_id": "cl-043",
@@ -518,33 +488,23 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the subject yelling and making threatening gestures, consistent with the claim of yelling profanities and making threatening gestures."
+      "evidence_observations": "The bodycam footage shows the subject yelling profanities and making threatening gestures consistent with pointing a weapon."
     },
     {
       "claim_id": "cl-044",
       "claim_text": "Officer Trujillo deployed his department-issued Taser, which struck the subject and caused him to fall to the ground",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The bodycam footage shows the subject falling to the ground after being struck by a Taser, consistent with the claim that Officer Trujillo deployed his Taser."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-045",
       "claim_text": "Sergeant Holt broadcast over the radio that shots had been fired and a Taser had been deployed",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The bodycam footage shows the officer approaching the subject with Officer Trujillo, and they place the subject in handcuffs, consistent with the claim."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-046",
@@ -557,7 +517,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the officers rendering first aid to the subject, consistent with the claim."
+      "evidence_observations": "The bodycam footage shows the officer approaching the subject with another officer and placing the subject in handcuffs."
     },
     {
       "claim_id": "cl-047",
@@ -570,7 +530,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows the officer conducting a search of the subject's person and recovering a small black semi-automatic pistol from the subject's right front waistband area, consistent with the claim."
+      "evidence_observations": "The bodycam footage shows the officer beginning to render first aid to the subject."
     },
     {
       "claim_id": "cl-048",
@@ -583,59 +543,39 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The bodycam footage shows paramedics arriving at approximately 1848 hours (implied by the timeline), consistent with the claim."
+      "evidence_observations": "The bodycam footage shows the officer conducting a search of the subject's person and recovering a small black semi-automatic pistol from the subject's right front waistband area."
     },
     {
       "claim_id": "cl-049",
       "claim_text": "Laguna Beach Fire Department paramedics arrived at approximately 1848 hours",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The bodycam footage shows the subject being transported to Mission Hospital in Mission Viejo for emergency surgery, consistent with the claim."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-050",
       "claim_text": "and transported the subject to Mission Hospital in Mission Viejo, where he underwent surgery",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The bodycam footage shows the subject surviving his injuries, which is consistent with the claim that he survived."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-051",
       "claim_text": "The subject survived his injuries, which included two gunshot wounds to the upper torso and one to the left forearm",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The bodycam footage shows the subject being transported to Mission Hospital Mission Viejo for emergency surgery, consistent with the claim."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-052",
       "claim_text": "Body-worn camera footage (Officer Kessler, Officer Trujillo, Sergeant Holt)",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The bodycam footage shows the subject surviving, which is consistent with the claim that he survived."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-053",
@@ -704,15 +644,10 @@
     {
       "claim_id": "cl-061",
       "claim_text": "Subject survived",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The bodycam footage shows the subject being transported to the hospital and surviving, consistent with the claim that he survived."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-062",
@@ -733,15 +668,10 @@
     {
       "claim_id": "cl-064",
       "claim_text": "Officer Signature: D. Kessler",
-      "evidence_relationship": "supported",
-      "retrieval_status": "retrieved",
-      "evidence_references": [
-        {
-          "start_seconds": 0.0,
-          "end_seconds": 110.0
-        }
-      ],
-      "evidence_observations": "The title card shows 'Officer Signature: D. Kessler', which matches the claim."
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
     },
     {
       "claim_id": "cl-065",
@@ -754,7 +684,7 @@
           "end_seconds": 110.0
         }
       ],
-      "evidence_observations": "The title card states 'Date of Report: March 11, 2021', which matches the claim."
+      "evidence_observations": "The text slide at 00:12 states 'DATE OF REPORT: MARCH 11, 2021', which matches the claim."
     }
   ]
 }

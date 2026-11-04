@@ -1,0 +1,533 @@
+{
+  "scenario_id": "sc-056",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 186.16,
+  "total_tokens": 50203,
+  "total_api_calls": 6,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-056",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: September 23, 2020",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card at 00:13 states 'WEDNESDAY, SEPTEMBER 23, 2020'."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 1332 hours",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card at 00:13 states 'AT 1312 HOURS'."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: El Camino Real, San Clemente, CA",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card at 00:13 states '2222 SOUTH EL CAMINO REAL SAN CLEMENTE, CA'."
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Deputy E. Duran",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 7721",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Karl Reinhardt, Male, homeless individual",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Deputy E. Duran, Deputy J. Israel",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card lists 'DEPUTY JONATHAN ISRAEL' and 'DEPUTY EDUARDO DURAN'. The transcript shows 'Deputy Israel' and 'Deputy Duran' speaking."
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witness(es): John Doe #1 (civilian on El Camino Real), John Doe #2 (Marine from Camp Pendleton)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "On September 23, 2020, at approximately 1332 hours, Deputy Israel and I were working a two-person patrol shift in the city of San Clemente.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card states 'WEDNESDAY, SEPTEMBER 23, 2020 AT 1312 HOURS'. The transcript shows Deputy Israel speaking at 00:28 and Deputy Duran speaking at 01:06, indicating they were working together."
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Both Deputies wore OCSD-issued green uniforms with bullet-proof vests and gun belts.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I was the driver and Deputy Israel was in the front passenger seat of our marked OCSD Ford Explorer.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video clip shows the perspective of a bodycam, but it is unclear whether the camera is mounted on the driver or passenger seat. The claim states the reporting officer was the driver and Deputy Israel was in the front passenger seat, but the footage does not clearly show the seating arrangement to confirm this."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "While traveling southbound on El Camino Real, Deputy Israel observed the subject, later identified as Karl Reinhardt, traveling northbound on the sidewalk.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Deputy Israel recognized the subject from a prior trespassing contact the previous night at the Ole Hanson Pool Center.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Because the subject had been aggressive during the previous encounter and had made threatening statements toward deputies, we decided to make contact to check on his welfare and offer services.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I drove past the subject and parked the Explorer southbound on El Camino Real.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The vehicle is seen driving and then stopping, consistent with parking the Explorer southbound on El Camino Real."
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "Deputy Israel exited the vehicle first and told the subject to stop.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows the vehicle stopping, and Deputy Israel is seen exiting the vehicle and approaching the subject, consistent with telling the subject to stop."
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The subject ignored Deputy Israel's commands and kept walking away.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The subject is seen walking away from the vehicle and continuing to walk, ignoring commands, as seen in the video from 00:50 onwards."
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "Deputy Israel took the lead in attempting to contact the subject while I acted as backup.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "Deputy Israel is seen exiting the vehicle and approaching the subject, while Deputy Duran remains in the vehicle, consistent with Deputy Israel taking the lead and Deputy Duran acting as backup."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "When Deputy Israel told the subject he was being detained, the subject asked what for.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Deputy Israel told him it was for jaywalking, as Deputy Israel had observed the subject walk across the street against a solid red hand signal.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The subject disagreed and continued walking away from us.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The subject is seen walking away from the vehicle and continuing to walk, ignoring commands, as seen in the video from 00:50 onwards."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "The subject walked into the middle of the street.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The subject is seen walking into the middle of the street, as seen in the video from 01:00 onwards."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Deputy Israel entered the street and attempted to direct traffic around the subject while trying to guide him back to the sidewalk.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "At no point did either deputy raise their voice, use profanity, or attempt to escalate the situation.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The video shows Deputy Israel speaking calmly and not raising his voice, using no profanity, and not attempting to escalate the situation, as seen in the transcript and the calm demeanor in the video."
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "While directing the subject, the subject slapped Deputy Israel's hand and arm three additional times during a period of approximately one minute and thirty seconds.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video clip shows the subject physically resisting the deputies, including slapping or striking Deputy Israel's hand and arm multiple times, which contradicts the claim that 'at no point did either deputy raise their voice, use profanity, or attempt to escalate the situation.' While the claim refers to deputy actions, the subject's physical resistance is visible and contradicts the idea that the situation was not escalated."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Because the subject had become physically assaultive, we increased our use of force to gain compliance.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The video clip covers seconds 200-310 of the bodycam recording. The claim states that because the subject had become physically assaultive, they increased their use of force to gain compliance. The audio contains shouting and the visual shows physical struggle, but the specific escalation of force is not clearly detailed in this segment."
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "After traveling approximately 300 yards, we were able to direct the subject back to the westbound sidewalk on El Camino Real in front of the Miramar Hotel.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject attempted to walk back into the street.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Deputy Israel blocked his path and the subject tried to shove him out of the way.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "I then grabbed the subject by his backpack and took him to the ground.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "When I took the subject to the ground, he landed on top of Deputy Israel.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "I was on top of the subject's lower half.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Deputy Israel's back was on the ground with the subject's left shoulder on top of his chest.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "The subject continued to resist by attempting to get up.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Because the subject had been continuously resisting and had physically struck Deputy Israel multiple times, I believed he posed a significant threat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "While on the ground, Deputy Israel felt his gun belt being pulled and heard the rattling of his gun in its holster.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Deputy Israel released his right hand to secure his weapon and at that point felt the subject's left hand on the grip of his pistol, pulling it.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Deputy Israel shouted to me that the subject had his gun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Fearing for Deputy Israel's life and my own, I drew my weapon.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "I told the subject twice to drop it or I would shoot.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "The subject continued to resist and I could hear Deputy Israel still screaming that the subject had his gun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Because the subject had already assaulted Deputy Israel and was now attempting to disarm him, and because I feared the subject would use the gun against us, I fired one round into the subject's upper torso.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "The subject continued to resist.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "I heard Deputy Israel say the subject still had his gun, so I fired a second round into the upper portion of the subject's chest.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "The subject's body went limp.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Deputy Israel immediately put out on the radio that shots had been fired.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "I rolled the subject onto his back and both of us began chest compressions until paramedics arrived.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Subject transported to hospital, later pronounced deceased.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Scene secured for OCDA investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Video surveillance from Miramar Hotel captured portions of the incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "Body-worn camera footage (Deputy Israel's BWC; Deputy Duran's BWC was not activated)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "Deputy Duran's firearm: Glock 17 Gen5, 9mm",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "Deputy Israel's firearm: SIG Sauer P226, 9mm",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-055",
+      "claim_text": "Two (2) cartridge cases from the scene",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-056",
+      "claim_text": "Buccal swabs and DNA evidence",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    }
+  ]
+}

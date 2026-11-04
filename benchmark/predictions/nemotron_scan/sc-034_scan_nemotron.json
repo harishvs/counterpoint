@@ -1,0 +1,561 @@
+{
+  "scenario_id": "sc-034",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 134.61,
+  "total_tokens": 41449,
+  "total_api_calls": 6,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-034",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: June 24, 2020",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card states 'June 24, 2020 AT 0109 HOURS', which aligns with the claim of June 24, 2020."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 0115 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card states '0109 HOURS', while the claim states '0115 hours'."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: 22800 block of Loumont Drive, Lake Forest, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card states '22851 Loumont Drive', while the claim states '22800 block of Loumont Drive'."
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Deputy K. Padilla",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 6204",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Female, approximately 25-30 years old, dressed in dark clothing with hooded sweatshirt",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 436.813787
+        }
+      ],
+      "evidence_observations": "The video shows a person in dark clothing with a hood, but it is unclear if this is the subject described as a female in a hooded sweatshirt."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Deputy K. Padilla, Badge Number: 6204",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Deputy L. Orozco",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Deputy T. Yoon",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Deputy J. Faulkner",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Witness(es): None at scene",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "On June 24, 2020, at approximately 0115 hours, Orange County Communications Center received a 911 call from a cell phone reporting a residential burglary in progress at 22851 Loumont Drive, Lake Forest.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card states 'June 24, 2020 AT 0109 HOURS' and '22851 Loumont Drive, Lake Forest', matching the claim's details."
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The caller reported hearing glass breaking and stated that an intruder had entered the home through a front window.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The caller was a female and that she and her boyfriend were sheltering inside the residence.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states 'No, my boyfriend is here with me' and 'I'm hiding in the bathroom', indicating the caller and her boyfriend were inside."
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "Deputy Orozco was initially dispatched to the location.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "Deputies Padilla, Yoon, and Faulkner also responded due to the nature of the call.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "Dispatch informed us that the caller's line had gone dead and could not be reestablished.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "I was the first unit to arrive at approximately 0105 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "I parked four houses west on Loumont Drive and proceeded on foot using my flashlight.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Within approximately thirty seconds of beginning my approach, I observed the subject standing under a tree on the sidewalk south of the residence, approximately 25 to 30 feet from my position.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The subject is visible standing under a tree on the sidewalk, approximately 25 to 30 feet from the camera's position."
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The subject was wearing all black with the hood of her sweatshirt pulled over her head.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The subject is visible wearing dark clothing with the hood of her sweatshirt pulled over her head."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "I illuminated the subject with my flashlight and observed that she was holding what appeared to be a black handgun at her side in her right hand, pointed toward the ground.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The subject is visible holding an object in her right hand that appears to be a black handgun pointed toward the ground."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "I drew my service weapon and took a position of cover behind a gray sedan parked on the street.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 436.813787
+        }
+      ],
+      "evidence_observations": "The video shows a person drawing their service weapon and taking a position of cover behind a gray sedan parked on the street."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "I immediately began giving verbal commands, ordering the subject to show her hands, drop the weapon, and get on the ground.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The officer is issuing verbal commands, ordering the subject to show her hands, drop the weapon, and get on the ground."
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "The subject did not comply and appeared frozen in place.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The subject is visible standing still and not complying with the verbal commands."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Deputies Orozco and Yoon arrived approximately five minutes after my initial contact with the subject and took cover positions behind their vehicles.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 436.813787
+        }
+      ],
+      "evidence_observations": "The video shows deputies arriving and taking cover positions behind their vehicles."
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The three of us continued issuing verbal commands over the following several minutes.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 436.813787
+        }
+      ],
+      "evidence_observations": "The video shows three officers continuing to issue verbal commands over several minutes."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject slowly began walking in my direction, holding the weapon at shoulder height with both hands.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The subject is visible slowly walking in the officer's direction, holding the weapon at shoulder height with both hands."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "She then reversed course and walked back toward the tree.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The subject is visible reversing course and walking back toward the tree."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Deputy Faulkner arrived last and retrieved a rifle from his vehicle before joining our position.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 436.813787
+        }
+      ],
+      "evidence_observations": "The video shows a person retrieving a rifle from their vehicle before joining the position."
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "At that point the subject had been standing under the tree for approximately ten minutes since my initial contact.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 436.813787
+        }
+      ],
+      "evidence_observations": "The video shows a subject standing under the tree for approximately ten minutes since initial contact."
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "The subject then abruptly turned and pointed the handgun in the direction of the deputies.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The subject is visible abruptly turning and pointing the handgun in the direction of the deputies."
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "I discharged my firearm three times.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The officer is visible discharging his firearm three times."
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Deputy Yoon discharged his firearm five times.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 436.813787
+        }
+      ],
+      "evidence_observations": "The video shows a person discharging their firearm five times."
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "The subject immediately collapsed and the weapon dropped from her hands.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The subject is visible collapsing and the weapon dropping from her hands."
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "We approached the subject and secured the weapon.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 436.813787
+        }
+      ],
+      "evidence_observations": "The video shows officers approaching the subject and securing the weapon."
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Deputies began administering first aid.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 436.813787
+        }
+      ],
+      "evidence_observations": "The video shows officers beginning to administer first aid."
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Paramedics arrived at approximately 0125 hours, approximately ten minutes after the shooting.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "The subject was transported by ambulance.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "She was later pronounced deceased at the hospital.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Upon examination, the weapon was determined to be a Daisy 340 BB Spring Repeater Pistol, a realistic replica.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Investigation subsequently revealed the 911 call had been placed from the subject's own phone, and no burglary had occurred at the reported address.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Patrol vehicle video recordings from all responding units",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Ten (10) cartridge casings recovered from the scene",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 436.813787
+        }
+      ],
+      "evidence_observations": "The video shows ten (10) cartridge casings recovered from the scene."
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "One (1) Daisy 340 BB Spring Repeater Pistol, black",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 436.813787
+        }
+      ],
+      "evidence_observations": "The video shows one (1) Daisy 340 BB Spring Repeater Pistol, black."
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Subject's clothing items",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Subject's cell phone and California Driver's License",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Subject transported to hospital, later pronounced deceased.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Scene secured for OCDASAU investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Deputy Signature: K. Padilla",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "Date of Report: June 24, 2020",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The title card states 'June 24, 2020 AT 0109 HOURS', matching the claim's date."
+    }
+  ]
+}
