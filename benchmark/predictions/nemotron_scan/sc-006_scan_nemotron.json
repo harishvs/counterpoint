@@ -1,0 +1,568 @@
+{
+  "scenario_id": "sc-006",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 157.62,
+  "total_tokens": 43716,
+  "total_api_calls": 6,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-006",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: November 13, 2020",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide at 0:13 states the incident date is Friday, November 13, 2020."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 1615\u20131740 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide states the incident time is 5:38 P.M., which is 17:38 hours, contradicting the claimed time of 1615-1740 hours."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: 7900 block of Adams Way, Anaheim, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text slide states the location is 7914 Adams Way, Buena Park, California, which is not the 7900 block of Adams Way in Anaheim, CA."
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer K. Nassiri",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 3841",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Diego Renteria, Male, 22 years old, Hispanic, shaved head, black jacket with white stripes, black shorts",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Officer K. Nassiri, Officer D. Montoya",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "APD helicopter \"Angel\" responded",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The text at 1:46 states 'video footage are made public and published on the Orange County District Attorney's website' and the text at 1:10 states 'The video is from Anaheim PD Helicopter Angel'. The helicopter footage shown is from a police helicopter, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "A 911 call reported a male subject brandishing a firearm at a reporting party in a vehicle",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The suspect was traveling in a gray Toyota sedan",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The suspect was last seen pulling into the 7-Eleven parking lot at Beach Boulevard and Lincoln Avenue",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "At approximately 1619 hours, APD Officer Dahl arrived at the 7-Eleven",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "A male matching the suspect description was walking on Lincoln Avenue just north of the parking lot",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject, later identified as Diego Renteria, immediately fled southbound on foot upon seeing Officer Dahl",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "The subject entered the Walmart parking lot",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "Officer Dahl broadcast a description of the subject: a Hispanic male with a shaved head, wearing a black jacket with white stripes on the sleeves and black shorts",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "At approximately 1629 hours, Officer T. Ross and Officer A. Gutierrez observed the subject walking eastbound on Adams Way near Grand Avenue",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "Upon seeing the officers, the subject fled on foot and jumped a wall into the yard of a residence at 7944 Adams Way",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "The APD helicopter \"Angel\" responded and began establishing an aerial perimeter",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The text at 1:46 states 'video footage are made public and published on the Orange County District Attorney's website' and the text at 1:10 states 'The video is from Anaheim PD Helicopter Angel'. The helicopter footage shown is from a police helicopter, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Additional units set up a ground perimeter",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The text at 1:46 states 'video footage are made public and published on the Orange County District Attorney's website' and the text at 1:10 states 'The video is from Anaheim PD Helicopter Angel'. The helicopter footage shown is from a police helicopter, consistent with the claim."
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "At approximately 1656 hours, APD Sgt. J. Harmon distributed a wanted flyer identifying the subject as Renteria",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "The subject was wanted by the Buena Park Police Department in connection with a residential burglary in which a firearm was stolen",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "The flyer cautioned that the subject should be considered armed and dangerous",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "Officer Montoya and I were assigned to maintain a perimeter position in the backyard of 7914 Adams, approximately three houses east of 7896 Adams",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Beginning at approximately 1700 hours, officers within the helicopter made repeated public address announcements in English and Spanish",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The subject was directed to exit the residence at 7896 Adams with his hands raised",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The subject was observed through the windows walking up and down the stairs but made no effort to comply",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "At approximately 1737 hours, I observed the subject exit from the front door of 7896 Adams",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "At approximately 17:37 (video timestamp), the subject exits the front door of the residence and walks toward the officers' position in the backyard."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The subject walked directly toward our position in the backyard of 7914 Adams",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The subject walks directly toward the officers' position in the backyard of 7914 Adams, as observed in the video."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "There was adequate ambient lighting from nearby streetlights, and I was able to clearly see the subject's hands and movements as he approached",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "There is adequate ambient lighting from nearby streetlights, and the subject's hands and movements are clearly visible as he approaches."
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "The subject was carrying an object in his right hand that I believed to be a dark-colored handgun",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 468.183946
+        }
+      ],
+      "evidence_observations": "The speaker states they believed the subject was carrying a dark-colored handgun, but the video does not clearly show a handgun in the subject's right hand."
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "The subject stopped approximately 20 feet from our position",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The subject stops approximately 20 feet from the officers' position."
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The subject raised both hands above his head",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The subject raises both hands above his head."
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "The subject suddenly lowered his right hand toward his waistband",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The subject suddenly lowers his right hand toward his waistband."
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "I discharged my firearm four times at the subject's center mass",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The officer discharges his firearm four times at the subject's center mass."
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "The subject fell to the ground",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The subject falls to the ground after being shot."
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Officer Montoya and I approached and handcuffed the subject",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "Officer Montoya and the reporting officer approach and handcuff the subject."
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "The subject had sustained gunshot wounds to his upper torso and right arm",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The subject has sustained gunshot wounds to his upper torso and right arm."
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "A tourniquet and medical bandages were applied",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "A tourniquet and medical bandages are applied to the subject."
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "At approximately 1743 hours, paramedics arrived and transported the subject to UCI Medical Center",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 468.183946
+        }
+      ],
+      "evidence_observations": "The speaker states paramedics arrived at approximately 1743 hours and transported the subject to UCI Medical Center, which is consistent with the text overlay stating paramedics arrived and transported Sanchez to a trauma center."
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "The subject underwent surgery and survived",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "A search of the immediate area revealed a black semi-automatic handgun on the ground approximately three feet from where the subject fell",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "The subject was carrying an object in his right hand that I believed to be a dark-colored handgun",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 468.183946
+        }
+      ],
+      "evidence_observations": "The speaker states they believed the object was a dark-colored handgun, but the video does not clearly show a handgun in the subject's right hand."
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "The subject was carrying a black semi-automatic handgun",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The subject is carrying a black semi-automatic handgun."
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "The black semi-automatic handgun was on the ground approximately three feet from where the subject fell",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "The subject was transported to UCIMC",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "The subject underwent surgery",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "The subject survived",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "The scene was secured for investigation by OCDASAU",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Body-worn camera footage (Officer Nassiri, Officer Montoya)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "Body-worn camera footage is shown, recorded by Officer Nassiri (implied by claim) and Officer Montoya."
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "Four (4) cartridge cases, Winchester 45 Auto",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "One (1) Adidas tennis shoe",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "One (1) pair black shorts",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-055",
+      "claim_text": "One (1) cellphone",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-056",
+      "claim_text": "Crime scene photographs (191)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    }
+  ]
+}

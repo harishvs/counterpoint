@@ -1,0 +1,1155 @@
+{
+  "scenario_id": "sc-013",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 710.25,
+  "total_tokens": 190759,
+  "total_api_calls": 16,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: May 29, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the incident occurred on May 29, 2021, and the video title card confirms 'Critical Incident Community Briefing 21-02049'."
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 0109 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the time was approximately 0110 hours, while the claim states 0109 hours. The video does not provide a specific timestamp to verify this minute difference."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Parking lot, Village Center at Rose Shopping Center, 860 North Rose Drive, Placentia, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows a dark-colored sedan (appears to be a dark gray or black sedan, possibly a Toyota Camry or similar) parked in a driveway or alleyway next to a white lattice fence, not a gray four-door Honda Accord in a shopping center parking lot. The location appears to be a residential area, not the Village Center at Rose Shopping Center."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer D. Hartman",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 5183",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Kevin Tran, Male, 33 years old, Asian",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows a man identified as Matthew Wong in the mugshot, but the claim states the subject is Kevin Tran. The transcript identifies the subject as Matthew Wong, contradicting the claim that the subject is Kevin Tran."
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer D. Hartman, Officer R. Coelho, Sergeant M. Bishop, Officer A. Cruz, Officer L. Vega, Officer J. Pratt",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): None",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On Saturday, May 29, 2021, at approximately 0109 hours, I was on routine patrol in a marked Placentia Police Department black and white Ford SUV, Unit #15.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the speaker is Sergeant Joe Connell, and the video identifies him as such. The claim describes a routine patrol in a marked black and white Ford SUV, which aligns with the context of a police officer speaking in uniform."
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "My vehicle was equipped with overhead emergency lights, side spotlights, and a Patrol Video System (PVS).",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1100.0,
+          "end_seconds": 1210.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer's vehicle equipped with emergency lights (visible as red and blue flashing lights) and a body-worn camera (visible in the footage). The transcript confirms the vehicle was equipped with overhead emergency lights, side spotlights, and a Patrol Video System (PVS)."
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Both the PVS and my Body Worn Camera were activated throughout the incident.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 310.0
+        }
+      ],
+      "evidence_observations": "The bodycam timestamp indicates the camera is active, and the officer is holding a flashlight, suggesting the Body Worn Camera is active. The officer is also holding a flashlight, which is consistent with using a PVS."
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I was in full PPD uniform.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The speaker is identified as Sergeant Joe Connell of the Placentia Police Department and is wearing a full police uniform, matching the claim."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "While northbound through the rear parking lot of the shopping center, I observed a gray four-door Honda Accord, California license plate #5AMS437, parked in the northernmost marked stall behind Ralph's Grocery, south of a cinderblock dumpster enclosure.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows a dark-colored sedan parked in what appears to be a residential driveway or alley, not a gray four-door Honda Accord in a shopping center parking lot. The location and vehicle description do not match the claim."
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The vehicle was parked head-in, facing east.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows a dark-colored sedan parked in a residential area, not a gray four-door Honda Accord in a shopping center parking lot. The vehicle description and location do not match the claim."
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I found it suspicious that a car would be parked behind a closed shopping center at that hour.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the officer found it suspicious that a car was parked behind a closed shopping center at that hour, which matches the claim."
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I have patrolled this center approximately three times per week and have rarely encountered vehicles there at night.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "I pulled in behind the Honda, activated my spotlights, and attempted to see inside the vehicle.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer approaching a dark-colored sedan in a residential area, not a gray four-door Honda Accord in a shopping center parking lot. The vehicle and location do not match the claim."
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "Due to heavy dark tint on all windows, I was unable to observe the interior.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows a dark-colored sedan with tinted windows, but it does not show the officer being unable to observe the interior due to tint. The officer is seen using a flashlight to illuminate the interior, suggesting visibility was possible with the light."
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "I approached the driver's door and illuminated the inside of the vehicle with my handheld flashlight.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the officer approached the driver's door and used a handheld flashlight, which matches the claim."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "I observed the subject, later identified as Kevin Tran, seated in the driver's seat.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject seated in the driver's seat, but the claim states the subject is Kevin Tran. The transcript identifies the subject as Matthew Wong, contradicting the claim."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Due to the window tint, I could not determine whether there were other occupants.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the officer could not determine if there were other occupants due to window tint, which matches the claim."
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "At approximately 0110 hours, I radioed PPD Dispatch that I was conducting a vehicle check.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the officer radioed dispatch at approximately 0110 hours to conduct a vehicle check, which matches the claim."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "I spent approximately five minutes attempting to convince the subject to open the door or roll down the window so that I could speak with him.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the officer spent approximately five minutes attempting to get the subject to comply, which matches the claim."
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "The subject initially ignored my requests.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject initially ignored the officer's requests, which matches the claim."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "I knocked repeatedly on the window and asked the subject to roll down the window.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the officer knocked repeatedly on the window and asked the subject to roll down the window, which matches the claim."
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "The subject did not comply.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject did not comply, which matches the claim."
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "At approximately 0112 hours, the subject started the engine.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject started the engine at approximately 0112 hours, which matches the claim."
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "I yelled at him to roll down the window and requested Code 1 assistance over the radio.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the officer yelled at the subject to roll down the window and requested Code 1 assistance, which matches the claim."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "Shortly after, the subject lowered the driver's side window approximately two to three inches.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer approaching the vehicle, but it does not show the subject lowering the driver's side window approximately two to three inches. The claim states this occurred, but the clip does not visually confirm it."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The subject stated, \"How's it going?\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject said, 'How's it going?' which matches the claim."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "I responded, \"It's going alright man. Can you roll down the window all the way?\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the officer responded and asked the subject to roll down the window all the way, which matches the claim."
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "The subject did not comply and shortly thereafter turned off the engine.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject did not comply and turned off the engine, which matches the claim."
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Over the next several minutes, I continued to give the subject verbal commands to roll down the window.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the officer continued to give verbal commands to roll down the window for several minutes, which matches the claim."
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The subject intermittently lowered the window a few inches and then immediately raised it again.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows the officer approaching the vehicle, but it does not show the subject intermittently lowering the window a few inches and then immediately raising it again. The claim states this occurred, but the clip does not visually confirm this action."
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "At one point, the subject restarted the engine, placed the vehicle in reverse, and backed up several inches before placing it back in park.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject restarted the engine, placed it in reverse, backed up, and then placed it back in park, which matches the claim."
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "I broadcast over the radio that the vehicle was trying to leave.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the officer broadcast that the vehicle was trying to leave, which matches the claim."
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Officer Coelho arrived on scene and parked his marked PPD patrol vehicle, Unit #13, perpendicular to the driver's side of the Honda.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states Officer Coelho arrived and parked his vehicle perpendicular to the driver's side of the Honda, which matches the claim."
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Both Officer Coelho and I observed the subject making repeated furtive movements inside the vehicle, reaching below the window line where we could not see his hands.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states both officers observed the subject making furtive movements and reaching below the window line, which matches the claim."
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Officer Coelho asked, \"What are you reaching for?\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states Officer Coelho asked, 'What are you reaching for?' which matches the claim."
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "I stated, \"I don't know what you're reaching for, but you need to stop reaching.\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the officer told the subject he did not know what he was reaching for but needed to stop, which matches the claim."
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "I told Officer Coelho that I did not know if the subject was arming himself and that I intended to use my ASP baton to break the window.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the officer intended to use his ASP baton to break the window, which matches the claim."
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Officer Coelho recommended we wait for additional units.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states Officer Coelho recommended waiting for additional units, which matches the claim."
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Over the next three minutes, Officers Vega, Cruz, Pratt, Sergeant Bishop, and Acting Sergeant Chen arrived on scene.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states that Officers Vega, Cruz, Pratt, Sergeant Bishop, and Acting Sergeant Chen arrived on scene, which matches the claim."
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "During that time, Officer Coelho and I remained near the Honda with our handguns drawn and repeatedly instructed the subject to roll down the window and show us his hands.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states that both officers remained near the Honda with handguns drawn and repeatedly instructed the subject to comply, which matches the claim."
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "The subject refused to comply with any of our commands.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject refused to comply with any commands, which matches the claim."
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "At approximately 0121 hours, Sergeant Bishop ordered the subject to turn off the vehicle.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states Sergeant Bishop ordered the subject to turn off the vehicle at approximately 0121 hours, which matches the claim."
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "The subject refused.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject refused to turn off the vehicle, which matches the claim."
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "PPD Dispatch notified us that the Honda was registered to the subject.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states PPD Dispatch notified them that the Honda was registered to the subject, which matches the claim."
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Dispatch also advised that no firearms were registered to the subject.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states dispatch advised that no firearms were registered to the subject, which matches the claim."
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Officer Cruz directed Officer Pratt to deploy the 40mm Less Lethal launcher.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states Officer Cruz directed Officer Pratt to deploy the 40mm Less Lethal launcher, which matches the claim."
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Officer Pratt positioned himself behind the open driver door of Unit #13 approximately ten to fifteen feet south of the Honda.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states Officer Pratt positioned himself behind the open driver door of Unit #13, approximately ten to fifteen feet south of the Honda, which matches the claim."
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "For the next approximately three and a half minutes, Officer Vega gave the subject repeated commands in both English and Spanish, including to show his hands, place them above his head, exit the vehicle, and surrender peacefully.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states that for approximately three and a half minutes, Officer Vega gave repeated commands in English and Spanish, which matches the claim."
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "The subject was told he was being detained.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject was told he was being detained, which matches the claim."
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "The subject refused to comply and instead kept his hands below the window frame and out of sight, moving around inside the vehicle and looking side to side.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject refused to comply and kept his hands below the window frame, which matches the claim."
+    },
+    {
+      "claim_id": "cl-055",
+      "claim_text": "At approximately 0125 hours, Officer Pratt alerted officers that the subject appeared to be digging around inside the vehicle.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states that at approximately 0125 hours, Officer Pratt alerted officers that the subject appeared to be digging inside the vehicle, which matches the claim."
+    },
+    {
+      "claim_id": "cl-056",
+      "claim_text": "The subject turned toward the passenger side of the Honda, leaned to his right, and reached toward the passenger floorboard.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The video shows the subject turning toward the passenger side of the Honda and reaching toward the passenger floorboard, but the claim states he reached toward the passenger floorboard. This appears to be consistent, but the claim's description of the action is not fully supported by the visual evidence."
+    },
+    {
+      "claim_id": "cl-057",
+      "claim_text": "Officer Coelho, positioned behind the passenger door of Unit #13, announced that the subject was armed and reaching around inside the vehicle.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states Officer Coelho announced the subject was armed and reaching inside the vehicle, which matches the claim."
+    },
+    {
+      "claim_id": "cl-058",
+      "claim_text": "Officer Cruz directed Officer Pratt to fire the 40mm into the driver's side window, and Officer Pratt gave the warning \"Forty Mike-Mike\" to alert other officers.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states Officer Cruz directed Officer Pratt to fire the 40mm projectile into the driver's side window and gave the warning 'Forty Mike-Mike', which matches the claim."
+    },
+    {
+      "claim_id": "cl-059",
+      "claim_text": "Officer Pratt fired the first 40mm Less Lethal projectile into the lower-left corner of the driver's side window near the side-view mirror.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states Officer Pratt fired the first projectile into the lower-left corner of the driver's side window, which matches the claim."
+    },
+    {
+      "claim_id": "cl-060",
+      "claim_text": "The projectile penetrated the window, but the glass remained in place due to the window tint.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the projectile penetrated the window but the glass remained in place due to tint, which matches the claim."
+    },
+    {
+      "claim_id": "cl-061",
+      "claim_text": "The subject appeared startled by the projectile and immediately began reaching around the back seat and under the seat.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject appeared startled and began reaching around the back seat and under the seat, which matches the claim."
+    },
+    {
+      "claim_id": "cl-062",
+      "claim_text": "Approximately two minutes later, PPD Dispatch advised that multiple firearms were registered to the subject.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states PPD Dispatch advised that multiple firearms were registered to the subject, which matches the claim."
+    },
+    {
+      "claim_id": "cl-063",
+      "claim_text": "Officer Cruz directed Officer Pratt to fire a second 40mm projectile into the driver's side window.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states Officer Cruz directed Officer Pratt to fire a second 40mm projectile into the driver's side window, which matches the claim."
+    },
+    {
+      "claim_id": "cl-064",
+      "claim_text": "Shortly thereafter, the subject started the engine.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject started the engine shortly after the second projectile, which matches the claim."
+    },
+    {
+      "claim_id": "cl-065",
+      "claim_text": "Officer Vega announced, \"Turn off the car right now. You are being detained.\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states Officer Vega announced the subject was being detained and told him to turn off the car, which matches the claim."
+    },
+    {
+      "claim_id": "cl-066",
+      "claim_text": "Officers continued attempting to convince the subject to comply for approximately three additional minutes without success.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states officers continued attempting to convince the subject to comply for approximately three additional minutes without success, which matches the claim."
+    },
+    {
+      "claim_id": "cl-067",
+      "claim_text": "At approximately 0132 hours, Officer Pratt fired a third 40mm Less Lethal projectile into the top of the driver's door window near the A-pillar.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states that at approximately 0132 hours, Officer Pratt fired a third 40mm projectile into the top of the driver's door window, which matches the claim."
+    },
+    {
+      "claim_id": "cl-068",
+      "claim_text": "Approximately one second later, the subject discharged a firearm through the driver's side door window, shattering it.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states that approximately one second later, the subject discharged a firearm through the driver's side door window, shattering it, which matches the claim."
+    },
+    {
+      "claim_id": "cl-069",
+      "claim_text": "The first round fired by the subject struck the passenger side of the windshield of Unit #13.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the first round struck the passenger side of the windshield of Unit #13, which matches the claim."
+    },
+    {
+      "claim_id": "cl-070",
+      "claim_text": "Officers Coelho, Cruz, and Sergeant Bishop simultaneously returned fire.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states that Officers Coelho, Cruz, and Sergeant Bishop simultaneously returned fire, which matches the claim."
+    },
+    {
+      "claim_id": "cl-071",
+      "claim_text": "Within three seconds, Sergeant Bishop fired nine rounds from his Glock .40 caliber handgun, Officer Coelho fired three rounds from his Glock .40 caliber handgun, and Officer Cruz fired seven rounds from his SIG Sauer rifle.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states that within three seconds, Sergeant Bishop fired nine rounds, Officer Coelho fired three rounds, and Officer Cruz fired seven rounds, which matches the claim."
+    },
+    {
+      "claim_id": "cl-072",
+      "claim_text": "Officers approached the driver's side door and observed the subject had sustained multiple gunshot wounds and was slumped over toward the center console.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states that officers observed the subject had sustained multiple gunshot wounds and was slumped over toward the center console, which matches the claim."
+    },
+    {
+      "claim_id": "cl-073",
+      "claim_text": "Officer Cruz reached through the broken window and recovered a Polymer80 nine-millimeter semi-automatic handgun from the subject's lap area.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states Officer Cruz recovered a Polymer80 nine-millimeter semi-automatic handgun from the subject's lap area, which matches the claim."
+    },
+    {
+      "claim_id": "cl-074",
+      "claim_text": "I rendered the handgun safe by removing the magazine and ejecting a live cartridge from the chamber.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the officer rendered the handgun safe by removing the magazine and ejecting a live cartridge, which matches the claim."
+    },
+    {
+      "claim_id": "cl-075",
+      "claim_text": "The subject was removed from the vehicle and officers immediately began chest compressions.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject was removed from the vehicle and officers began chest compressions, which matches the claim."
+    },
+    {
+      "claim_id": "cl-076",
+      "claim_text": "Paramedics arrived and determined the subject was pulseless.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states paramedics arrived and determined the subject was pulseless, which matches the claim."
+    },
+    {
+      "claim_id": "cl-077",
+      "claim_text": "Advanced lifesaving measures were performed.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states advanced lifesaving measures were performed, which matches the claim."
+    },
+    {
+      "claim_id": "cl-078",
+      "claim_text": "The subject was transported to UCI Medical Center, where he was pronounced deceased at approximately 0217 hours.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject was transported to UCI Medical Center and pronounced deceased at approximately 0217 hours, which matches the claim."
+    },
+    {
+      "claim_id": "cl-079",
+      "claim_text": "Subject transported Code 3 to UCI Medical Center, pronounced deceased at 0217 hours.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the subject was transported Code 3 and pronounced deceased at 0217 hours, which matches the claim."
+    },
+    {
+      "claim_id": "cl-080",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the scene was secured for investigation, which matches the claim."
+    },
+    {
+      "claim_id": "cl-081",
+      "claim_text": "Body-worn camera footage (Officer Hartman)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states body-worn camera footage was from Officer Hartman, which matches the claim."
+    },
+    {
+      "claim_id": "cl-082",
+      "claim_text": "Patrol Video System footage (Officer Coelho, Unit #13)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states patrol video system footage was from Officer Coelho, Unit #13, which matches the claim."
+    },
+    {
+      "claim_id": "cl-083",
+      "claim_text": "One (1) Polymer80 9mm semi-automatic handgun (ghost gun, no serial number)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states there was one Polymer80 9mm semi-automatic handgun (ghost gun, no serial number), which matches the claim."
+    },
+    {
+      "claim_id": "cl-084",
+      "claim_text": "Three (3) 40mm Less Lethal cartridge cases",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states there were three 40mm Less Lethal cartridge cases, which matches the claim."
+    },
+    {
+      "claim_id": "cl-085",
+      "claim_text": "Twelve (12) cartridge cases, WIN 40 S&W",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states there were twelve 40 S&W cartridge cases, which matches the claim."
+    },
+    {
+      "claim_id": "cl-086",
+      "claim_text": "Four (4) cartridge cases, 5.56x45mm rifle, WCC 14+",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states there were four 5.56x45mm rifle cartridge cases, which matches the claim."
+    },
+    {
+      "claim_id": "cl-087",
+      "claim_text": "One (1) cartridge case, FC 9MM LUGER",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states there was one 9MM LUGER cartridge case, which matches the claim."
+    },
+    {
+      "claim_id": "cl-088",
+      "claim_text": "Multiple bullet fragments",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states there were multiple bullet fragments, which matches the claim."
+    },
+    {
+      "claim_id": "cl-089",
+      "claim_text": "Officer Signature: D. Hartman",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the officer signature was D. Hartman, which matches the claim."
+    },
+    {
+      "claim_id": "cl-090",
+      "claim_text": "Date of Report: May 29, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The transcript states the date of the report was May 29, 2021, which matches the claim."
+    }
+  ]
+}

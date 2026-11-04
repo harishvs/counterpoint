@@ -1,0 +1,532 @@
+{
+  "scenario_id": "sc-014",
+  "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "pipeline": "scan",
+  "processing_time_seconds": 177.75,
+  "total_tokens": 53152,
+  "total_api_calls": 7,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: August 6, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text on screen at 0:13 states 'FRIDAY, AUGUST 6, 2021 AT 7:10 PM'."
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 1908 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text on screen states the incident occurred at 7:10 PM, which is 1910 hours. The claim states approximately 1908 hours."
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Front entrance, Ridgemont Police Department, 150 North Euclid Street, La Habra, CA",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text on screen states the location is '150 North Euclid Street, La Habra, CA'. The claim states 'Front entrance, Ridgemont Police Department'. The video shows the La Habra Police Department, not Ridgemont."
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer L. Castillo",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 3592",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Daniel Kwon, Male, 22 years old, Asian, black T-shirt, black pants, black Converse shoes",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows a person in a black t-shirt and black pants, but it is not possible to confirm the subject's identity as 'Daniel Kwon', age 22, Asian, or the specific brand of shoes (Converse). The person is seen from behind and the face is not clearly visible."
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer L. Castillo, Officer R. Webb",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 400.0,
+          "end_seconds": 510.0
+        }
+      ],
+      "evidence_observations": "The video shows one officer (Officer MILWARD) and another officer (Officer FOX) arriving. The claim states 'Officer L. Castillo, Officer R. Webb'. The text overlay identifies the officers as 'Officer MILWARD' and 'Officer FOX', which contradicts the claim."
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Female victim/complainant (W-1, reporting party for tailgating complaint)",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows a male subject (Daniel Kwon) standing outside the building. The claim refers to a 'Female victim/complainant (W-1)'. The visual evidence contradicts the claim as the subject is male, not female."
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On August 6, 2021, at approximately 1905 hours, I was dispatched to the front of the Ridgemont Police Department in response to a report of an aggressive driver who had followed a female motorist (W-1) from the freeway to the station.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript states the time as approximately 7:03 P.M. (1903 hours), not 1905 hours as claimed."
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Webb was dispatched simultaneously.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Each of us drove a separate marked black and white police vehicle and wore department-issued navy-blue uniforms with badges and body-worn cameras.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows two officers (Officer Milward and Officer Webb) arriving at the scene. The transcript states they wore 'department-issued navy-blue uniforms with badges and body-worn cameras'. The footage confirms they are wearing uniforms and have body-worn cameras."
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officer Webb and I arrived at approximately 1908 hours.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript indicates the time as approximately 7:03 P.M. (1903 hours), not 1908 hours as claimed."
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I parked behind a dark blue 1998 Toyota Camry that was parked behind W-1's vehicle on the pedestrian sidewalk in front of the station.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows a dark blue sedan (not a 1998 Toyota Camry) parked on the street, not on the pedestrian sidewalk. The claim states the vehicle was parked 'behind W-1's vehicle on the pedestrian sidewalk', which contradicts the visual evidence of the vehicle being parked on the street."
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Officer Webb parked his unit behind mine.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows two officers (Officer Milward and Officer Webb) arriving at the scene. The claim states 'Officer Webb parked his unit behind mine', which aligns with the visual sequence of the officers arriving and parking."
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The station lobby was open and staffed at the time of our arrival.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I approached W-1, who remained seated in her vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "W-1 stated that a male driving the Toyota had been following her since she exited the northbound 57 freeway at Lambert Road.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "W-1 stated she recognized the individual as someone she had seen in her neighborhood before.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "W-1 appeared frightened and was still on the phone with dispatch.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The female caller is described as appearing frightened and still on the phone with dispatch in the transcript."
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Officer Webb approached the subject, later identified as Daniel Kwon, who was standing at the front entrance of the station near the intercom.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows a male subject (Daniel Kwon) standing at the front entrance of the station near the intercom. The claim states 'Officer Webb approached the subject, later identified as Daniel Kwon, who was standing at the front entrance of the station near the intercom.' This aligns with the visual evidence."
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Officer Webb asked the subject what was going on.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows Officer Webb approaching the subject at the front entrance. The claim states 'Officer Webb asked the subject what was going on.' While the audio is not transcribed for this exact moment, the visual context supports the interaction."
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The subject stated he was \"just waiting for a friend.\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows the subject standing at the front entrance. The claim states 'The subject stated he was \"just waiting for a friend.\"' While the audio is not transcribed for this exact moment, the visual context supports the interaction."
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Officer Webb asked the subject whether he was involved with the vehicles parked in front of the station, and the subject said he was not.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Officer Webb remained facing the subject and continued to question him.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage shows Officer Webb facing the subject and continuing to question him. The claim states 'Officer Webb remained facing the subject and continued to question him.' This aligns with the visual evidence of the officer maintaining his position and engaging with the subject."
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "Without warning, the subject produced a firearm from his right jacket pocket, racked the slide, and pointed it at Officer Webb from a distance of approximately 15 feet.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript does not describe the subject producing a firearm from his right jacket pocket, racking the slide, or pointing it at Officer Webb."
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "I saw the subject raise the weapon and immediately shouted, \"Drop the weapon! Drop it now!\"",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript does not include the narrator shouting 'Drop the weapon! Drop it now!'"
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The subject then fired three rounds at Officer Webb.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript does not state that the subject fired three rounds at Officer Webb."
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "One round struck Officer Webb's ballistic vest in the left upper chest area, causing him to stumble backward but remain standing.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript does not mention a round striking Officer Webb's ballistic vest in the left upper chest area."
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "I drew my department-issued firearm and fired three rounds at the subject.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript does not describe the narrator drawing their firearm and firing three rounds at the subject."
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "One round struck the subject in the torso, causing him to fall to the ground.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript does not state that one round struck the subject in the torso, causing him to fall to the ground."
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "After the subject fell, I maintained my position and continued to issue commands for the subject to drop the firearm and show his hands.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript does not mention the narrator maintaining their position and issuing commands for the subject to drop the firearm and show his hands."
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "At approximately 1910 hours, I radioed that a suspect was down and that Officer Webb had been struck.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 210.0
+        }
+      ],
+      "evidence_observations": "The transcript states the time as approximately 7:03 P.M. (1903 hours), not 1910 hours as claimed."
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Additional officers arrived at approximately 1911 hours to render aid to Officer Webb.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Officers formulated a plan to approach the subject, and at approximately 1916 hours, the subject was disarmed, moved to the sidewalk, and handcuffed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "At approximately 1920 hours, paramedics from the Los Angeles County Fire Department arrived and determined the subject had no pulse or respiration.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "The subject was pronounced deceased at approximately 1926 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "A subsequent search recovered two firearms from the subject's person: a Glock-style 9mm semi-automatic pistol with no serial number and a .40 caliber Glock semi-automatic pistol with a mounted flashlight.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Body-worn camera footage (approximately 35 minutes)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "The bodycam footage timestamp reads '2021-08-06 19:08:17', confirming the footage duration is approximately 35 minutes (from 00:00:30 to 00:35:00)."
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Five (5) .40 caliber cartridge cases, headstamped \"FEDERAL 40 S&W\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Two (2) 9mm cartridge cases, headstamped \"WIN 9mm LUGER\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "One (1) Glock-style 9mm pistol, no serial number",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "One (1) Glock .40 caliber semi-automatic pistol with flashlight",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "One (1) iPhone",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Officer Webb's uniform with apparent blood",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Subject pronounced deceased on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Officer Webb transported for medical treatment of gunshot wound to chest.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Officer Signature: L. Castillo",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": ""
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Date of Report: August 6, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "The text on screen at 0:13 states 'DATE OF REPORT: AUGUST 6, 2021'."
+    }
+  ]
+}
