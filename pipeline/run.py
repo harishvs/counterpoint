@@ -24,23 +24,18 @@ BENCHMARK_DIR = Path(__file__).resolve().parent.parent / "benchmark"
 ANNOTATIONS_DIR = BENCHMARK_DIR / "annotations"
 PREDICTIONS_DIR = BENCHMARK_DIR / "predictions"
 
-SCENARIO_TO_CASE = {
-    "sc-001": "ocda-001-valdez",
-    "sc-002": "ocda-002-montes",
-    "sc-003": "ocda-003-emch",
-    "sc-004": "ocda-004-vargas",
-    "sc-005": "ocda-005-brown",
-    "sc-006": "ocda-006-sanchez",
-    "sc-007": "ocda-007-to",
-    "sc-009": "ocda-009-steinmetz",
-    "sc-011": "ocda-011-reinhold",
-    "sc-013": "ocda-013-wong",
-    "sc-014": "ocda-014-tran",
-    "sc-015": "ocda-015-baxter",
-    "sc-016": "ocda-016-salac",
-    "sc-017": "ocda-017-aguirre",
-    "sc-018": "ocda-018-mejia",
-}
+def _build_scenario_map() -> dict[str, str]:
+    """Build scenario-to-case mapping from annotation files."""
+    mapping = {}
+    for f in sorted(ANNOTATIONS_DIR.glob("*.json")):
+        with open(f) as fh:
+            ann = json.load(fh)
+        case_id = ann["evidence_id"].replace("-video", "").replace("-pdf", "")
+        mapping[ann["scenario_id"]] = case_id
+    return mapping
+
+
+SCENARIO_TO_CASE = _build_scenario_map() if ANNOTATIONS_DIR.exists() else {}
 
 
 def run_claim_first(scenario_id: str, config: PipelineConfig) -> ScenarioPrediction:
