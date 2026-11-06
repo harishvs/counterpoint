@@ -118,4 +118,4 @@ Active development. Benchmark complete, pipeline functional, first evaluation ru
 
 ## License
 
-TBD
+Apache License 2.0. See [LICENSE](LICENSE).
