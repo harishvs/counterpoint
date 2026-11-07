@@ -214,11 +214,64 @@ def run_video_scan(scenario_id: str, config: PipelineConfig) -> ScenarioPredicti
     )
 
 
+def load_claims(scenario_id: str, source: str, config: PipelineConfig):
+    """The claims to verify: "extract" (the LLM adapter reads the report), "gt" (the
+    annotated claims, an upper bound for verification), or a predictions directory whose
+    `<scenario>_*.json` claims are reused (to compare verifiers on the same claims)."""
+    from .schemas import ExtractedClaim
+    if source == "extract":
+        return extract_claims(config.reports_dir / f"{scenario_id}_report.txt",
+                              make_adapter(config))
+    if source == "gt":
+        with open(ANNOTATIONS_DIR / f"{scenario_id}_annotations.json") as fh:
+            rows = json.load(fh)["claims"]
+    else:
+        files = sorted(Path(source).glob(f"{scenario_id}_*.json"))
+        if not files:
+            raise FileNotFoundError(f"no {scenario_id}_*.json in {source}")
+        with open(files[0]) as fh:
+            rows = json.load(fh)["claims"]
+    return [ExtractedClaim(claim_id=r["claim_id"], claim_text=r["claim_text"],
+                           report_location=r.get("report_location", "")) for r in rows]
+
+
+def run_swiftpick_scan(scenario_id: str, config: PipelineConfig, args) -> ScenarioPrediction:
+    """Short chunks, every claim a choice question, answered by a swiftpick server."""
+    from .stages.decide import SwiftpickClient, aggregate, scan
+    case_id = SCENARIO_TO_CASE[scenario_id]
+    video_path = config.evidence_dir / f"{case_id}-video.mp4"
+    transcript_path = config.transcript_dir / f"{case_id}.json" if config.transcript_dir else None
+    if not video_path.exists():
+        print(f"  [{scenario_id}] No video found at {video_path}")
+        return ScenarioPrediction(scenario_id=scenario_id, model="none", pipeline="swiftpick-scan")
+    client = SwiftpickClient(args.endpoint.removesuffix("/v1"))
+    start = time.time()
+    claims = load_claims(scenario_id, args.claims_from, config)
+    print(f"  [{scenario_id}] {len(claims)} claims from {args.claims_from}")
+    raw = scan(claims, video_path, transcript_path, client, config.evidence_dir / "chunks-swiftpick",
+               length=args.chunk_seconds, stride=args.stride, with_audio=not args.no_audio)
+    raw["scenario_id"], raw["claims_from"] = scenario_id, args.claims_from
+    raw_dir = args.out / "raw"
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    with open(raw_dir / f"{scenario_id}_swiftpick-scan_raw.json", "w") as fh:
+        json.dump(raw, fh)
+    return ScenarioPrediction(
+        scenario_id=scenario_id, model=client.health().get("model", "swiftpick"),
+        pipeline="swiftpick-scan", claims=aggregate(raw, args.conflict_threshold),
+        processing_time_seconds=round(time.time() - start, 2),
+        total_tokens=client.tokens, total_api_calls=client.calls,
+    )
+
+
 def get_scenarios(args) -> list[str]:
     if args.scenario:
         return [args.scenario]
     if args.all:
-        return sorted(SCENARIO_TO_CASE.keys())
+        ids = sorted(SCENARIO_TO_CASE.keys())
+        if args.shard:  # "i/n": every n-th scenario from the i-th, to run n servers at once
+            i, n = (int(x) for x in args.shard.split("/"))
+            ids = ids[i::n]
+        return ids
     return []
 
 
@@ -233,7 +286,15 @@ def main():
     parser.add_argument("--endpoint", default="http://localhost:8000/v1",
                         help="Model endpoint URL (for Nemotron/vLLM)")
     parser.add_argument("--pipeline", default="claim-first",
-                        choices=["claim-first", "single-pass", "scan"])
+                        choices=["claim-first", "single-pass", "scan", "swiftpick-scan"])
+    parser.add_argument("--claims-from", default="extract",
+                        help='swiftpick-scan: "extract", "gt", or a predictions directory')
+    parser.add_argument("--chunk-seconds", type=float, default=20.0)
+    parser.add_argument("--stride", type=float, default=15.0)
+    parser.add_argument("--no-audio", action="store_true",
+                        help="swiftpick-scan: do not send each chunk's audio")
+    parser.add_argument("--conflict-threshold", type=float, default=0.5)
+    parser.add_argument("--shard", help='with --all: "i/n", run every n-th scenario from the i-th')
     parser.add_argument("--out", type=Path, default=PREDICTIONS_DIR)
     args = parser.parse_args()
 
@@ -260,11 +321,14 @@ def main():
             prediction = run_single_pass(sid, config)
         elif args.pipeline == "scan":
             prediction = run_video_scan(sid, config)
+        elif args.pipeline == "swiftpick-scan":
+            prediction = run_swiftpick_scan(sid, config, args)
         else:
             print(f"  Pipeline '{args.pipeline}' not yet implemented")
             continue
 
-        out_path = args.out / f"{sid}_{args.pipeline}_{args.adapter}.json"
+        tag = "swiftpick" if args.pipeline == "swiftpick-scan" else args.adapter
+        out_path = args.out / f"{sid}_{args.pipeline}_{tag}.json"
         with open(out_path, "w") as f:
             json.dump(prediction.to_dict(), f, indent=2)
         print(f"\n  Saved to {out_path}")
