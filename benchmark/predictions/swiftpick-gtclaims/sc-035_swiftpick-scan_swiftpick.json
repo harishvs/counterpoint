@@ -1,0 +1,170 @@
+{
+  "scenario_id": "sc-035",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 76.85,
+  "total_tokens": 441492,
+  "total_api_calls": 100,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 0245 hours, dispatch received a 911 call from a named witness reporting subjects breaking into vehicles.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8858
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "At approximately 0249 hours, I indicated I would respond along with K9 Officer Falk and Trainee Vega.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8774
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The vehicle's engine was off and no lights were visible.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1350.0,
+          "end_seconds": 1370.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7174
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I exited my patrol vehicle and approached the passenger side of the Escalade.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 525.0,
+          "end_seconds": 545.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7258
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I immediately observed the subject in the driver's seat and a second individual in the rear passenger seat.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 570.0,
+          "end_seconds": 590.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5733
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject responded clearly in English that he understood and would comply when he was ready. Body-worn cameras were activated from the outset of the contact.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1095.0,
+          "end_seconds": 1115.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5472
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "K9 Officer Falk arrived approximately fifteen minutes after my initial contact with the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9154
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject immediately became hostile, producing a black handgun from under his seat and waving it toward officers through the driver's side window.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9018
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "A single 40mm OC round was deployed through the front windshield, which immediately caused the subject to cover his face and cease yelling.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.914
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject placed the vehicle in drive and accelerated straight forward through the gate at what I estimated to be approximately 45 miles per hour.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 810.0,
+          "end_seconds": 830.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7554
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The entire sequence from initial acceleration to exit through the building took less than ten seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9004
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I discharged my patrol rifle four rounds in approximately four seconds. Sergeant Ingram discharged his sidearm five rounds. Officer Navarro also discharged her sidearm three rounds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8876
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Paramedics from Los Angeles County Fire Department arrived within two minutes of the shooting and transported the subject to a local hospital, where he was pronounced deceased approximately one hour later.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9193
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "A loaded semi-automatic pistol was recovered from the subject's lap during the vehicle search.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9167
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject raised his right arm holding the previously observed handgun and pointed it directly at Sergeant Ingram.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8762
+    }
+  ]
+}

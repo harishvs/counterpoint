@@ -1,0 +1,185 @@
+{
+  "scenario_id": "sc-013",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 71.46,
+  "total_tokens": 426849,
+  "total_api_calls": 94,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "I observed a gray four-door Honda Accord, California license plate #5AMS437, parked in the northernmost marked stall behind Ralph's Grocery.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9479
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The vehicle was parked head-in, facing east.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9368
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Both the PVS and my Body Worn Camera were activated throughout the incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9015
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "At approximately 0112 hours, the subject started the engine.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 180.0,
+          "end_seconds": 200.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7032
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject stated, \"How's it going?\" I responded, \"It's going alright man. Can you roll down the window all the way?\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 345.0,
+          "end_seconds": 365.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7384
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "PPD Dispatch notified us that the Honda was registered to the subject. Dispatch also advised that no firearms were registered to the subject.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 780.0,
+          "end_seconds": 800.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7238
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "I told Officer Coelho that I did not know if the subject was arming himself and that I intended to use my ASP baton to break the window. Officer Coelho recommended we wait for additional units.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9218
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The first round fired by the subject struck the passenger side of the windshield of Unit #13.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1065.0,
+          "end_seconds": 1085.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5626
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The subject discharged a firearm through the driver's side door window, shattering it.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1065.0,
+          "end_seconds": 1085.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6171
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Cruz reached through the broken window and recovered a Polymer80 nine-millimeter semi-automatic handgun from the subject's lap area.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1155.0,
+          "end_seconds": 1175.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5717
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I rendered the handgun safe by removing the magazine and ejecting a live cartridge from the chamber.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9284
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Four (4) cartridge cases, 5.56x45mm rifle, WCC 14+",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9304
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Due to heavy dark tint on all windows, I was unable to observe the interior.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1140.0,
+          "end_seconds": 1160.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6612
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The subject was transported to UCI Medical Center, where he was pronounced deceased at approximately 0217 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9275
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officer Vega gave the subject repeated commands in both English and Spanish.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 885.0,
+          "end_seconds": 905.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6719
+    }
+  ]
+}

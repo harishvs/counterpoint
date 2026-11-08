@@ -1,0 +1,316 @@
+{
+  "scenario_id": "sc-041",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 27.88,
+  "total_tokens": 222277,
+  "total_api_calls": 37,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-041",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9286
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: February 16, 2022",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 20.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6944
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 0130 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 315.0,
+          "end_seconds": 335.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5152
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: 1400 block of West Gage Avenue, Anaheim, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9299
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer L. Pratt",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9202
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 6018",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9334
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Multiple responding units",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9036
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "On February 16, 2022, at approximately 0130 hours, W-1 called 911 to report that the subject, her boyfriend, was inside her residence with firearms and had threatened to shoot her.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.928
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "W-1 described two firearms: a revolver and an AR-15 style rifle with a double drum magazine.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 525.0,
+          "end_seconds": 545.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5538
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officers from multiple units responded to the scene in the 1400 block of West Gage Avenue, Anaheim.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9286
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Officers established a perimeter.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9235
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The subject was observed on the front porch of the residence holding a revolver in his left hand.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 345.0,
+          "end_seconds": 365.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.599
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Officers repeatedly commanded the subject to drop the weapon.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 480.0,
+          "end_seconds": 500.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8534
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "At approximately 0235 hours, Tactical Response Group personnel arrived and assumed responsibility for the incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9065
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Over the course of several hours, the subject alternated between the front porch and the interior of the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.918
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "The subject aimed a finger gun gesture at officers and then retreated inside.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 480.0,
+          "end_seconds": 500.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5808
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The subject eventually exited the residence carrying the revolver.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9297
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "He walked off the porch toward officers.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9238
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "An officer deployed a 40mm less-lethal launcher round, which did not appear to have an effect.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9483
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "The subject continued advancing and fell to a seated position on the front lawn.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9241
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Officers deployed a K9, which engaged the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9282
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "A SWAT officer fired lethal rounds when the subject, still holding the revolver, continued to pose a threat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9381
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "After the subject was down, the K9 pulled the subject from the porch area onto the sidewalk.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9331
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Officers rendered medical aid.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 495.0,
+          "end_seconds": 515.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6538
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "An AR-15 style rifle with a double drum magazine was later found inside the residence on the living room sofa.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 525.0,
+          "end_seconds": 545.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5789
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Body-worn camera footage",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 405.0,
+          "end_seconds": 425.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9467
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8951
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "Officer Signature: Pratt",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9212
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "Date of Report: February 16, 2022",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9261
+    }
+  ]
+}

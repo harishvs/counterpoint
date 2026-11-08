@@ -1,0 +1,102 @@
+{
+  "scenario_id": "sc-042",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 21.96,
+  "total_tokens": 108938,
+  "total_api_calls": 31,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Officers responded to a 911 call reporting a person with a firearm.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9284
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Officers used a public address system to broadcast announcements in both English and Spanish.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9264
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject was located fleeing on foot northbound.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 225.0,
+          "end_seconds": 245.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6645
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject scaled a wall and ran through adjacent properties.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 225.0,
+          "end_seconds": 245.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6168
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Officers maintained verbal commands for the subject to stop and show his hands.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 360.0,
+          "end_seconds": 380.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8944
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "An officer fired three rounds when the subject made a threatening movement.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9518
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officers approached and began rendering medical aid.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 435.0,
+          "end_seconds": 455.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5402
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "No firearm was recovered from the subject's immediate possession.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9403
+    }
+  ]
+}

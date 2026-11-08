@@ -1,0 +1,155 @@
+{
+  "scenario_id": "sc-029",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 13.77,
+  "total_tokens": 73485,
+  "total_api_calls": 17,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 1730 hours, I was patrolling Pacific Coast Highway when I received a dispatch advisory regarding a stolen white Mercedes sedan.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9114
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The vehicle had been reported stolen approximately 30 minutes earlier.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9285
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "I located the Mercedes at approximately 1735 hours and initiated a traffic stop.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9149
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Shortly after the pursuit began, Laguna Beach officers deployed a spike strip, which deflated the Mercedes' tires.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9065
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "During the pursuit, which lasted approximately 45 minutes, the subject drove at speeds exceeding 90 miles per hour.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9267
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject drove erratically but did not collide with any other vehicles.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 135.0,
+          "end_seconds": 155.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6573
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject remained in the vehicle for roughly two minutes before exiting from the driver's side door.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9128
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The entire engagement from the subject exiting the vehicle to my firing lasted approximately 15 seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9009
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "After the shots were fired, the subject dropped to the ground immediately.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 165.0,
+          "end_seconds": 185.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6063
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Laguna Beach Fire Department paramedics arrived within approximately five minutes and transported the subject to a nearby hospital.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9159
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject was treated for two gunshot wounds to the torso.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9166
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I discharged my firearm, firing six rounds at the subject at approximately 1812 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9105
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "An Orange County Sheriff helicopter joined the pursuit and provided aerial tracking.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8962
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Three patrol units converged on the stopped vehicle, positioning approximately 15 feet away with takedown lights illuminated.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9149
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Upon exiting, the subject initially stood still with his arms at his sides.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8847
+    }
+  ]
+}

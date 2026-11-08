@@ -1,0 +1,416 @@
+{
+  "scenario_id": "sc-059",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 70.58,
+  "total_tokens": 577852,
+  "total_api_calls": 59,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-059",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9273
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: December 30, 2022",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 20.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6422
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 1553 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9327
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: 100 block of 12th Street, Seal Beach, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9354
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer F. Goodwin",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9212
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 3298",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.947
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Craig Holloway, Male, approximately 50, White",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9325
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Officer F. Goodwin, Officer H. Nakamura",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9267
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witness(es): W-1 (neighbor who called 911)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9208
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "On December 30, 2022, at approximately 1553 hours, Officer Nakamura and I responded to a 911 call regarding a male subject described as being outside a residence appearing intoxicated and possibly armed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9354
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The caller, W-1, a neighbor, described the subject as a white male in his fifties holding a can.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9223
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Upon arrival, I observed the subject standing on the front walkway of the residence holding what appeared to be a beer can in his left hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.926
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "His right hand was at his side.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.94
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I identified myself as Seal Beach Police and instructed the subject to place his hands where I could see them.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9232
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject stared at us but did not comply.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 630.0,
+          "end_seconds": 650.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6236
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "The subject turned and walked toward the front door.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 375.0,
+          "end_seconds": 395.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.776
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "As he reached the porch area, he reached into the right pocket of his jacket and produced a black semi-automatic handgun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9382
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "Officer Nakamura deployed his TASER, striking the subject in the torso.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.938
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The subject fell backward against the door frame but remained standing.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.939
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "The subject raised the handgun and pointed it in our direction.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 825.0,
+          "end_seconds": 845.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6418
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "I discharged my firearm twelve times.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 675.0,
+          "end_seconds": 695.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5567
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Officer Nakamura discharged his firearm nine times.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 780.0,
+          "end_seconds": 800.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5511
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "The subject fell to the ground on his back on the porch.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 660.0,
+          "end_seconds": 680.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6733
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "We approached cautiously.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9196
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The subject was still holding the handgun.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 705.0,
+          "end_seconds": 725.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7944
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Officer Nakamura kicked the weapon away from the subject's hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9507
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "We immediately began rendering medical aid.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9033
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "Seal Beach Fire Department paramedics arrived at approximately 1610 hours and provided additional medical treatment.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9214
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject was pronounced deceased at the scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9139
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The handgun recovered from the scene was determined to be registered to the subject's father.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9552
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "The weapon was loaded with a round in the chamber.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9468
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Body-worn camera footage",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 705.0,
+          "end_seconds": 725.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9577
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Twenty-one (21) cartridge cases",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9335
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "One (1) semi-automatic handgun",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 840.0,
+          "end_seconds": 860.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6938
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "One (1) TASER cartridge",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9336
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Subject pronounced deceased at scene.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 855.0,
+          "end_seconds": 875.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6046
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.899
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Officer Signature: Goodwin",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9301
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Date of Report: December 30, 2022",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9412
+    }
+  ]
+}

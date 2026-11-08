@@ -80,3 +80,26 @@
 - AFPD scenarios (SC-019-021, 069-071) matched 0/15 claims — videos not on GPU
 - Negative examples (SC-037-046) had some false positives (19 total across 10 scenarios)
 - Consistent with Run 3 results at 15-scenario scale
+
+## Run 5: swiftpick-30B-A3B — short-chunk scan, typed questions (2026-11-08)
+- **Pipeline**: `swiftpick-scan` (20 s chunks, 15 s stride; each request: one chunk's video at 540p, its audio, its transcript, every claim as a supported / potential_conflict / ambiguous_or_insufficient choice question)
+- **Model**: harishvs/swiftpick-30B-A3B (bf16, zero-shot on media), 8 servers on RTX PRO 6000 Blackwell (96 GB)
+- **Scenarios**: the 65 with video (920 annotated claims); the 6 AFPD scenarios have no video
+- **Claims**: arm A = Run 4's extracted claims; arm B = the annotated claims
+
+**F1 does not separate systems here.** 57.8% of the claims are conflicts, so flagging every claim scores P 0.578, R 1.000, F1 0.733, above every run in this log. Threshold-free scores (AUROC: how often a true conflict scores above a non-conflict; 0.5 = no signal), claims matched by text:
+
+| System | AUROC | 95% CI (by scenario) |
+|---|---|---|
+| Run 4 Nemotron scan (its labels, same 65 scenarios) | 0.521 | |
+| swiftpick, max P(conflict) over chunks (arm B) | 0.553 | |
+| **swiftpick, P(conflict) at the most decisive chunk (arm B)** | **0.628** | 0.586-0.669 |
+| same, arm A (Run 4's claims) | 0.640 | |
+| same, transcript only (no video, no audio) | 0.558 | 0.517-0.597 |
+| control: claim text only, no evidence | 0.434 | |
+
+- The most decisive chunk is the one with the lowest P(ambiguous_or_insufficient); this rule was found on arm A and confirmed on arm B (same scenarios).
+- Video + audio add +0.035 to +0.104 AUROC over the transcript alone.
+- Ranked by that score, the top 10% of claims are 68.5% conflicts (base rate 57.8%).
+- Re-scored with text-only claim matching, Run 4 is P 0.620 R 0.237 F1 0.343 and Run 2 is P 0.711 R 0.192 F1 0.302 (published 0.354 and 0.127).
+- Analysis: `benchmark/results/swiftpick-analysis/`.

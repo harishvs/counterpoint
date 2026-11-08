@@ -1,0 +1,146 @@
+{
+  "scenario_id": "sc-004",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 9.03,
+  "total_tokens": 61548,
+  "total_api_calls": 33,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Officers D. Tran and C. Webb were dispatched to the location, arriving at approximately 0518 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9365
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "W-1 reported observing a male individual using a hammer to break into the business through a rear window.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9315
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Officer Tran observed the subject inside the business going through cabinets and drawers while holding a large knife, approximately eight to ten inches in length, in his left hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9307
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Each of us was equipped with a body-worn camera.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 120.0,
+          "end_seconds": 140.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7162
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Officer Ruiz and I approached the front doors with our handguns drawn and pointed in the low-ready position.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.929
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "We called out, 'Costa Mesa Police Department!' and ordered the subject to drop the knife and exit the business.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9196
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "He turned away from the officers and began pacing through different rooms of the business.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9222
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer Webb obtained a 40mm less-lethal rubber-bullet launcher and took up a position behind me.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 345.0,
+          "end_seconds": 365.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6703
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Officer Tran would deploy his Taser as the less-lethal option.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9368
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject emerged from a room on the southeast side of the building carrying what appeared to be a shotgun in his right hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.938
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject fell forward onto his back inside the business.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9307
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officers forced entry into the business through the front doors, handcuffed the subject, and began rendering medical aid.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9141
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The firearm recovered from the scene was later determined to be a loaded semi-automatic rifle, .223 caliber, which did not belong to the business.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9433
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The subject was conscious, alert, and screaming profanities.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9089
+    }
+  ]
+}

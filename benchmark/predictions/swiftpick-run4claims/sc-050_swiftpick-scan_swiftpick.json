@@ -1,0 +1,397 @@
+{
+  "scenario_id": "sc-050",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 120.97,
+  "total_tokens": 961984,
+  "total_api_calls": 100,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: September 26, 2019",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 75.0,
+          "end_seconds": 95.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8969
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 0237 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8741
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: 1250 East La Habra Boulevard (Metro Auto Sales / Express Auto Recon), La Habra, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8858
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer D. Hartman",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9007
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 7156",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9269
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Rafael Espinoza, Male, 29 years old, visible tattoos",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9201
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer D. Hartman, K9 Officer T. Murray, Officer Trainee C. Ramos, Sergeant E. Lowe",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8899
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Business owner (W-1)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9142
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On September 26, 2019, at approximately 0237 hours, La Habra Police Department dispatch received an anonymous call reporting multiple subjects dismantling a vehicle in the area of 200 South Alpine Street.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8962
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officers Hartman, K9 Officer Murray, Officer Trainee Ramos, and Sergeant Lowe indicated they would respond.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8892
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Upon arrival, I traveled eastbound on Alpine Street and observed that the chain-link gate at the rear of Metro Auto Sales was open.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 795.0,
+          "end_seconds": 815.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5476
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I parked in the apron of the driveway and observed a black Cadillac Escalade with its lights on and engine running.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8927
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I approached the vehicle on foot from the driver's side and observed the subject seated in the driver's seat.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 360.0,
+          "end_seconds": 380.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5165
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I activated my body-worn camera, identified myself as La Habra Police, and ordered the subject to exit the vehicle.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 330.0,
+          "end_seconds": 350.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8019
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject initially appeared to comply, lowering the driver's side window.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9067
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "He briefly raised one hand and then closed the window.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9109
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "K9 Officer Murray arrived and deployed the K9 from the vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8977
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "Murray positioned himself on the east edge of the gate and began issuing K9 warnings through the PA system.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8977
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "I then moved to a position behind the passenger side door of the K9 vehicle.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1275.0,
+          "end_seconds": 1295.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5805
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Sergeant Lowe arrived on scene and assumed command.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8788
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Lowe directed officers to deploy OC rounds to force the subject from the vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9101
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Officer Ramos positioned herself on the west side of the gate.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9003
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Prior to deploying OC, the subject revved the engine, turned up the radio, and began yelling obscenities in English from the sunroof.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.914
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "At approximately 0301 hours, Sergeant Lowe deployed the first OC round into the vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.883
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The subject then placed the vehicle in reverse and accelerated toward the K9 vehicle and officers positioned behind it.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 135.0,
+          "end_seconds": 155.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6564
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Several officers were forced to move to avoid being struck.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1290.0,
+          "end_seconds": 1310.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.808
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The subject then shifted into drive, crashed through the gate, and collided with multiple parked vehicles inside the auto body shop.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 810.0,
+          "end_seconds": 830.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7224
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "After crashing into the garage bay, the subject drove the Escalade through the metal rollup door and exited onto the street.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 825.0,
+          "end_seconds": 845.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5568
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "I could see into the vehicle through the passenger window and observed the subject had a look of determination on his face.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9013
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The subject raised his right arm toward the passenger-side window.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9022
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Officer Murray fired seven rounds from his Colt AR-15A4 rifle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.91
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Sergeant Lowe then fired ten rounds from his Glock 21C.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8957
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Officer Ramos attempted to fire but her weapon malfunctioned.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8906
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The subject was struck and the Escalade came to a stop.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.885
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "After securing the scene, officers discovered the business owner, W-1, who had been asleep inside the shop during the entire incident and was awakened by the collision noises.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8947
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Subject deceased at scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8643
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Business owner W-1 uninjured.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8999
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Scene secured for OCDA investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8916
+    }
+  ]
+}

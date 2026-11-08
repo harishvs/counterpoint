@@ -1,0 +1,165 @@
+{
+  "scenario_id": "sc-022",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 30.93,
+  "total_tokens": 173030,
+  "total_api_calls": 39,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 1045 hours, while conducting a routine patrol of the La Quinta Inn parking lot at 1515 South Coast Drive, I observed an occupied gray 2006 Ford Focus in a marked stall facing north.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9247
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The subject appeared to be slumped over the steering wheel.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 135.0,
+          "end_seconds": 155.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7487
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "I engaged the subject in conversation for approximately five minutes, during which time Officer Fuentes contacted the passengers.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9262
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "During this conversation, the subject was cooperative and kept his hands visible on the steering wheel as instructed.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 240.0,
+          "end_seconds": 260.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5251
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I noted that his left hand appeared to have a bandage on it.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.942
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Immediately after W-1 was removed from the vehicle, the subject started the engine and placed the vehicle in reverse.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9224
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The vehicle reversed at a moderate speed, and the rear bumper made brief contact with the front of our patrol vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9407
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "W-2, who was positioned approximately ten feet from the vehicle's path, was not struck during this movement.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9385
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I fired a total of five rounds toward the vehicle. Officer Fuentes fired approximately five rounds as well.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 435.0,
+          "end_seconds": 455.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5112
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The encounter from the time the subject started the vehicle until shots were fired lasted approximately forty-five seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9324
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The vehicle traveled forward an estimated thirty feet before coming to rest.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9418
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Paramedics from Costa Mesa Fire Department arrived approximately twenty minutes later and transported the subject to Orange County Global Medical Center.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.93
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "A subsequent search of the subject's person did not locate any weapons. The vehicle was processed and no firearms were recovered from inside.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9401
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "We removed the subject from the vehicle and began CPR.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9199
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "W-2 released at scene without injury.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 555.0,
+          "end_seconds": 575.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6597
+    }
+  ]
+}

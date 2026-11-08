@@ -1,0 +1,515 @@
+{
+  "scenario_id": "sc-052",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 51.91,
+  "total_tokens": 432640,
+  "total_api_calls": 39,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: February 19, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 435.0,
+          "end_seconds": 455.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9325
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 1015 hours",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 120.0,
+          "end_seconds": 140.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5754
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Parking lot, La Quinta Inn, 1515 South Coast Drive, Costa Mesa, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9265
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer D. Navarro",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9235
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 5831",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9349
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Carlos Fuentes, Male, 34 years old, Hispanic",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9396
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer D. Navarro, Officer R. Pham",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9306
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Female front passenger (W-1), Male left rear passenger (W-2)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9318
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On February 19, 2021, at approximately 1015 hours, Officer Pham and I were assigned to the Community Policing Unit and were patrolling in a marked CMPD police vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9059
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Pham was driving the patrol vehicle and I was seated in the front passenger seat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9319
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "While patrolling the parking lot of the La Quinta Inn at 1515 South Coast Drive, I located an occupied gray 2006 Ford Focus parked in a marked parking stall facing south.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9313
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I observed the subject seated in the driver seat with his head slumped forward on the steering wheel.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 135.0,
+          "end_seconds": 155.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7611
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Based on my training and experience, I believed the subject may have been under the influence of narcotics.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 150.0,
+          "end_seconds": 170.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.874
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I approached the driver side of the vehicle while Officer Pham approached the passenger side.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9313
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I observed three additional occupants: W-1 in the front passenger seat and W-2 in the left rear seat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9325
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I recognized W-2 from prior narcotics investigation contacts.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9353
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "Officer Pham searched W-2 and located drug paraphernalia on his person.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9377
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "W-2 was placed in handcuffs with his hands behind his back.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9407
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "I conversed with the subject.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 285.0,
+          "end_seconds": 305.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9002
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "I observed the subject's right hand was bandaged.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9309
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "I instructed the subject to keep his hands on the steering wheel.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 420.0,
+          "end_seconds": 440.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9556
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The subject repeatedly moved his left hand toward the center console, his waistband, and the area of his left leg.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9337
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "I was concerned the subject may have had a weapon and he had not been searched.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9331
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Officer Pham had W-1 step out of the vehicle and move behind a vehicle parked east of the Ford Focus where he searched her.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.929
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "W-2 was seated on the asphalt behind the right rear bumper of the Ford Focus.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9314
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Without warning, the subject suddenly started the vehicle, placed it in reverse, and accelerated.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9388
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Officer Pham and I shouted commands for the subject to stop.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9339
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "Officer Pham was unsuccessful in pulling W-2 from the path of the Ford Focus as it reversed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9474
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The right rear tire ran over W-2's handcuffed hands.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9322
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "W-2 was then struck by the open passenger door and front left tire.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 510.0,
+          "end_seconds": 530.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.612
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Both Officer Pham and I fired our department-issued handguns at the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9324
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "I fired three times and Officer Pham fired twice.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9353
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "The left rear bumper of the Ford Focus struck the right front bumper of our parked police vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9506
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The subject then put the Ford Focus in drive and started moving forward.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9158
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Officer Pham fired three additional times through the windshield.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9386
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "I fired once toward the subject from the driver side.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 450.0,
+          "end_seconds": 470.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5511
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Officers provided CPR until Costa Mesa Fire Department paramedics arrived.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9235
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "The subject was transported by ambulance to Orange County Global Medical Center where the subject was later pronounced deceased.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9244
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "W-2 was also transported to OCGMC and treated for non-life-threatening injuries.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9356
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "A Hellcat .380 semi-automatic handgun was located in the right pocket of the subject's jacket.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9503
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "The handgun contained a loaded magazine with one round in the chamber.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9513
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Body-worn camera footage was collected as evidence.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 420.0,
+          "end_seconds": 440.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9505
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Ten (10) cartridge cases, WIN 9MM LUGER were collected as evidence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9417
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "One (1) Hellcat .380 ACP handgun, Serial Number 03886 was collected as evidence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9453
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Clothing items from the subject were collected as evidence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9273
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Subject transported to OCGMC, pronounced deceased.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9093
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "W-2 treated for non-life-threatening injuries.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 555.0,
+          "end_seconds": 575.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5349
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Scene secured for OCDA investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8893
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Officer Signature: D. Navarro",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9219
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Date of Report: February 19, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 435.0,
+          "end_seconds": 455.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8853
+    }
+  ]
+}

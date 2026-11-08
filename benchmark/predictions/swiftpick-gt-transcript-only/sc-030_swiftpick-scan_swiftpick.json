@@ -1,0 +1,155 @@
+{
+  "scenario_id": "sc-030",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 8.04,
+  "total_tokens": 54729,
+  "total_api_calls": 30,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 1415 hours, Deputy Orozco and I were on a routine patrol.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.889
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I was driving the vehicle and Deputy Orozco was in the front passenger seat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8874
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "I believed he may be homeless and decided to initiate a welfare contact.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9023
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I approached the subject and initiated a conversation in a calm manner. I asked the subject if he needed any services.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 195.0,
+          "end_seconds": 215.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6163
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I informed the subject that I had observed him earlier in the evening at the Ole Hanson Pool Center, and that the property owners had expressed concern about trespassing.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.922
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject stayed on the sidewalk at all times and did not enter the roadway during this portion of the encounter.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8553
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Deputy Orozco and I followed the subject on foot for approximately 100 yards along El Camino Real.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8828
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject became increasingly agitated and lightly brushed my arm once as he gestured while speaking.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8853
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Deputy Orozco secured the subject by his jacket and guided him to the ground.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8885
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "After a brief pause, I discharged my firearm once.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8794
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject immediately became compliant and was rolled onto his back.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8513
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "A subsequent toxicology screening indicated the presence of methamphetamine in the subject's system.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9452
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Body-worn camera footage (both deputies, continuously recording from start of contact)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 285.0,
+          "end_seconds": 305.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6008
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "We provided first aid until paramedics arrived approximately two minutes later.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9019
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Deputy Orozco stood approximately ten feet behind me as backup.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8856
+    }
+  ]
+}

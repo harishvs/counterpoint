@@ -252,7 +252,7 @@ def run_swiftpick_scan(scenario_id: str, config: PipelineConfig, args) -> Scenar
                length=args.chunk_seconds, stride=args.stride, with_audio=not args.no_audio,
                with_video=not args.no_video)
     raw["scenario_id"], raw["claims_from"] = scenario_id, args.claims_from
-    raw_dir = args.out / "raw"
+    raw_dir = args.out / "chunk-probs"
     raw_dir.mkdir(parents=True, exist_ok=True)
     with open(raw_dir / f"{scenario_id}_swiftpick-scan_raw.json", "w") as fh:
         json.dump(raw, fh)

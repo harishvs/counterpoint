@@ -1,0 +1,155 @@
+{
+  "scenario_id": "sc-011",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 22.33,
+  "total_tokens": 130204,
+  "total_api_calls": 30,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "We were in standard blue OCSD patrol uniforms with department-issued badges and equipment.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8977
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I observed the subject jaywalking across El Camino Real against a solid red hand pedestrian signal. I alerted Deputy Galvan to the violation.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 45.0,
+          "end_seconds": 65.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5098
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Deputy Galvan parked the Explorer on El Camino Real and we both exited the vehicle. I took the lead in contacting the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8802
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject stated, \"I didn't do anything wrong,\" and immediately began walking away from us in the direction of oncoming traffic.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9176
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "At no point did we raise our voices aggressively or use profane language.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 270.0,
+          "end_seconds": 290.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7784
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject punched me in the face with a closed fist, causing me to stagger backward.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9015
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject then shoved Deputy Galvan, who nearly fell into the traffic lane.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8816
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Over the course of approximately three minutes, the subject struck both of us multiple times as we attempted de-escalation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8891
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Deputy Galvan then felt the subject grasp the handle of his department-issued SIG Sauer P226 service weapon, which was holstered on Deputy Galvan's right hip.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8838
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Deputy Galvan screamed, \"He's still got my gun, shoot him again!\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8846
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I discharged my firearm three times into the subject's chest.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9054
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Three (3) cartridge cases from scene",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9186
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Deputy Galvan and I rolled the subject onto his back and began administering chest compressions.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8891
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Deputy Galvan broadcast \"shots fired\" over the radio.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8824
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I commanded the subject to release the weapon, stating, \"Drop it or I'll shoot.\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9012
+    }
+  ]
+}

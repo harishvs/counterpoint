@@ -1,0 +1,151 @@
+{
+  "scenario_id": "sc-007",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 18.02,
+  "total_tokens": 114893,
+  "total_api_calls": 62,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 0044 hours, I was dispatched to Imperial - Health & Beauty, a business located at 9196 Bolsa Avenue, regarding a reported vandalism.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9288
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "A male subject wearing a gray shirt had used a wooden baseball bat to repeatedly strike the front of the business and an exterior surveillance camera.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9258
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The footage captured a male wearing a gray jacket and blue jeans striking the camera with a white-colored stick or pole.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9047
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject was carrying a long pole in his left hand.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 285.0,
+          "end_seconds": 305.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7182
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject immediately complied by stopping and placing the pole on the ground, but then quickly picked it up again and began walking westbound away from me.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9184
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officer Kessler spoke to the subject only in English.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 390.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5307
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "While walking, the subject struck a fire hydrant on the south sidewalk of 9200 Bolsa with the metal pole, producing a loud noise.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9299
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject turned and began walking southbound across all traffic lanes of Bolsa Avenue.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 270.0,
+          "end_seconds": 290.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5202
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The subject raised it above his head in an overhead striking position.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9425
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject then charged directly toward Officer Kessler, who was closest to the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9284
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I discharged my firearm three times at the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9358
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officers moved in and handcuffed the subject, who remained conscious. We immediately began rendering medical aid.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9179
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Orange County Fire Authority paramedics arrived at approximately 0107 hours and assumed patient care.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.912
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I drew my TASER Electronic Control Weapon and followed the subject on foot. At approximately 0057 hours, I holstered my TASER and transitioned to my service weapon as the subject continued to ignore my commands.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9112
+    }
+  ]
+}

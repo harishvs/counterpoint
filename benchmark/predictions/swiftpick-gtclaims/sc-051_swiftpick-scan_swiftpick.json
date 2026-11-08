@@ -1,0 +1,175 @@
+{
+  "scenario_id": "sc-051",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 29.58,
+  "total_tokens": 181357,
+  "total_api_calls": 40,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The caller described the subject as a significant threat to public safety and stated the subject appeared to be in a highly agitated and volatile state, gesticulating wildly and shouting at passing vehicles.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9281
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The SAPD officers made a brief attempt at a welfare check but the subject was uncooperative and refused medical treatment.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9309
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject walked away and the SAPD officers, having determined there was no immediate crime, cleared the call without further action.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 465.0,
+          "end_seconds": 485.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6132
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject had a large knife in his right hand.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 480.0,
+          "end_seconds": 500.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7397
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Officers immediately drew their service handguns and began issuing commands from approximately 50 feet.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 405.0,
+          "end_seconds": 425.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6996
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Torres drew his service handgun, then holstered it and deployed his department-issued Taser.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9345
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "For the next several minutes, Officers Park, Crawford, and Torres engaged the subject in extended verbal dialogue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8963
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject continued walking but at a slow, nonthreatening pace, keeping distance from the officers.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 465.0,
+          "end_seconds": 485.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.599
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The subject suddenly looked over his left shoulder toward Officer Torres, then pivoted and charged directly at Officer Park from a distance of approximately 32 feet.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.936
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Park fired five rounds and Officer Crawford fired five rounds, for a total of ten gunshots within approximately 1.57 seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.94
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Officers immediately holstered their weapons, approached the subject, and began chest compressions within 30 seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9286
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Paramedics were requested immediately and arrived within three minutes, at approximately 0850 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9385
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The subject collapsed in the northbound lane of Warner Avenue, the knife still in his right hand.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 465.0,
+          "end_seconds": 485.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7902
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The commands included: 'Drop the knife,' 'Have a seat,' 'Don't come towards us,' and 'Back up.'",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 390.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9785
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officer Torres attempted to deploy his Taser but was unable to due to the subject's sudden change of direction.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9511
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "scenario_id": "sc-046",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 69.44,
+  "total_tokens": 506561,
+  "total_api_calls": 94,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-046",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9236
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: October 10, 2021",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 90.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7046
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 2100 hours",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 90.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5027
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: Placentia, CA",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1350.0,
+          "end_seconds": 1370.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9053
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer N. Blackwell",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9173
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 3647",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.928
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer N. Blackwell, Officer S. Park",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9282
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "On October 10, 2021, at approximately 2100 hours, officers responded to reports of a subject in a vehicle who was behaving erratically and may have been armed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.937
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Officer Park and I arrived on scene in marked patrol vehicles.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.904
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "We observed the subject seated in the driver's seat of a vehicle.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1140.0,
+          "end_seconds": 1160.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9262
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "As we approached, the subject started the engine.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 570.0,
+          "end_seconds": 590.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5593
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officers gave verbal commands in both English and Spanish for the subject to turn off the vehicle and show his hands.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 885.0,
+          "end_seconds": 905.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6403
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The subject did not comply and produced a firearm.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 930.0,
+          "end_seconds": 950.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8698
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The subject fired two rounds toward officers from inside the vehicle.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1065.0,
+          "end_seconds": 1085.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5942
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officer Park and I returned fire.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1200.0,
+          "end_seconds": 1220.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5362
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I fired multiple rounds from my duty rifle.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1200.0,
+          "end_seconds": 1220.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8301
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The subject was struck and the vehicle came to a stop.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9204
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "Officers approached the vehicle and found two firearms: a handgun and a rifle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9328
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "Officers rendered the scene safe and provided medical aid.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1320.0,
+          "end_seconds": 1340.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9783
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "The subject was pronounced deceased.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1335.0,
+          "end_seconds": 1355.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9247
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Body-worn camera footage",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1095.0,
+          "end_seconds": 1115.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9615
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8819
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Officer Signature: Blackwell",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9194
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Date of Report: October 10, 2021",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1005.0,
+          "end_seconds": 1025.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5034
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "scenario_id": "sc-049",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 19.83,
+  "total_tokens": 129026,
+  "total_api_calls": 29,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 0110 hours, I was dispatched to 22851 Loumont Drive regarding a residential burglary in progress.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 15.0,
+          "end_seconds": 35.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.548
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The reporting party stated she was hiding in the bathroom and her boyfriend was in a closet.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 165.0,
+          "end_seconds": 185.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8412
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "At approximately 0115 hours, I arrived on Loumont Drive, parking three houses east of the target address.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9072
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I observed a gray sedan parked on the north side of the street directly in front of 22855 Loumont Drive.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9126
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject was standing on the north sidewalk, under a street light, approximately 15 feet south of my position.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.906
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "I immediately identified the object as a black handgun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.914
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "At approximately 0117 hours, Deputies Vega and Chen arrived on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.891
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "At 0118 hours, I observed the subject suddenly lower the weapon, turn away from me, and walk back toward the tree line.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8916
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "At approximately 0119 hours, the subject once again raised the handgun with both hands, pointed it directly at Deputy Vega.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.888
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Deputies Vega, Chen, and I opened fire simultaneously.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9083
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "A total of eight rounds were fired by the three deputies within approximately two seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9132
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "At 0120 hours, I approached the subject with Deputies Chen and Vega.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8817
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "At approximately 0125 hours, OCFA Engine #19 arrived on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8988
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "At approximately 0131 hours, I made contact with a resident at 22851 Loumont Drive. The resident stated that no one in the household had called 911.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 15.0,
+          "end_seconds": 35.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5056
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Deputy Vega determined the weapon appeared to be a replica or BB gun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9187
+    }
+  ]
+}

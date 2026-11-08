@@ -1,0 +1,543 @@
+{
+  "scenario_id": "sc-024",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 76.24,
+  "total_tokens": 673727,
+  "total_api_calls": 59,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-024",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9294
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: January 16, 2023",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 750.0,
+          "end_seconds": 770.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9525
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 2136 hours",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 540.0,
+          "end_seconds": 560.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.707
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: Old Ranch Condominium development, Seal Beach, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9233
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Corporal M. Cervantes",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9233
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 2764",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9458
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Nathan Collier, Male, 47 years old, White, dark jacket, jeans, hat, clear-lens glasses",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9356
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Corporal M. Cervantes, Officer A. Pruitt",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9256
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witness(es): Female resident (W-1), two minor children present in residence",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 195.0,
+          "end_seconds": 215.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8003
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "On January 16, 2023, at approximately 2136 hours, SBPD dispatch received a 9-1-1 call from a female resident (W-1) reporting that an unknown male was attempting to force entry into her residence at the Old Ranch Condominium development.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9259
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "W-1 stated she was home alone with her two young children.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9414
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "She described the male as wearing a jacket, beanie, and dark boots.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 270.0,
+          "end_seconds": 290.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8625
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The residence is subject to an active domestic violence restraining order prohibiting a former partner from approaching within 50 yards.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9517
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I was dispatched to the location and arrived at approximately 2140 hours, ahead of Officer Pruitt.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9378
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The condominium has a rear courtyard enclosed by an approximately eight-foot brick wall with a gate.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9466
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I observed the subject standing at the courtyard gate at approximately 2141 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9231
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "I stood approximately 40 feet east of his position and illuminated the subject with my flashlight.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9218
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "I identified myself as SBPD and commanded the subject to step away from the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9253
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The subject responded that he was visiting a friend and that she had invited him over.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 620.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5696
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "I continued issuing commands.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 750.0,
+          "end_seconds": 770.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8627
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "The subject appeared agitated and was pacing.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9156
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Officer Pruitt arrived on scene approximately four minutes after I made initial contact with the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9441
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Officer Pruitt parked his vehicle and proceeded on foot to my position.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9229
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "The subject became increasingly noncompliant.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 750.0,
+          "end_seconds": 770.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9249
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "He concealed his left hand inside his jacket, turned, and began walking back toward the patio entrance.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.929
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "I gave loud verbal commands for the subject to stop and remove his hands from his clothing.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 750.0,
+          "end_seconds": 770.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9492
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The subject paused momentarily and faced me, then turned and entered the enclosed patio area.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 750.0,
+          "end_seconds": 770.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6548
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "I warned the subject I would deploy my Taser.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 750.0,
+          "end_seconds": 770.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9614
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "When the subject continued walking away, I deployed my Taser, striking the subject in the upper back.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9384
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The subject fell forward onto his stomach on the patio floor.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.93
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Immediately after the Taser deployment, Officer Pruitt advanced to the patio threshold.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9314
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "The subject rolled from his stomach to his back, reached toward his left hip, and produced a black handgun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9321
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "The subject pointed the weapon upward in my general direction.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9394
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Officer Pruitt, fearing for my safety, discharged his firearm, firing seven rounds.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 660.0,
+          "end_seconds": 680.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5715
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "I simultaneously transitioned from my Taser to my duty weapon and discharged nine rounds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9339
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "After confirming the threat was neutralized, we held our positions and maintained cover.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9176
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "During this time, the subject was heard to say, \"Just let me die.\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9051
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "The subject's movements near the weapon continued intermittently for approximately three minutes before additional units arrived.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9347
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Officer Holt arrived at approximately 2143 hours and secured the handgun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9303
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "The weapon was a Glock 22, .40-caliber, loaded with one in the chamber and five in the magazine.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9481
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "OCFA Engine 84 arrived at approximately 2148 hours and transported the subject to UCI Medical Center.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9273
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "The subject was pronounced deceased at approximately 2232 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9261
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "A subsequent search found no additional weapons on the subject's person.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9508
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Body-worn camera footage from Corporal Cervantes and Officer Pruitt",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8724
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "One (1) Glock 22, .40-caliber handgun with six (6) live rounds",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9461
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Sixteen (16) cartridge cases, WIN 9MM LUGER",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9384
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Clothing and personal effects",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 270.0,
+          "end_seconds": 290.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5231
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Subject transported to UCI Medical Center, pronounced deceased.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.914
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "W-1 and children confirmed uninjured.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9267
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Scene secured for OCDA investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9048
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Officer Signature: M. Cervantes",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9343
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "Date of Report: January 16, 2023",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 750.0,
+          "end_seconds": 770.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9299
+    }
+  ]
+}

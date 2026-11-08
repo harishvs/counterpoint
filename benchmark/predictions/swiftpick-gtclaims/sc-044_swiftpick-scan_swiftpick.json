@@ -1,0 +1,110 @@
+{
+  "scenario_id": "sc-044",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 12.34,
+  "total_tokens": 62435,
+  "total_api_calls": 17,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The subject was driving a stolen vehicle at speeds exceeding 90 miles per hour on the wrong side of the road.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9185
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The pursuit lasted approximately seven minutes.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 120.0,
+          "end_seconds": 140.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6283
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "A PIT maneuver was executed in the southbound lanes.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 120.0,
+          "end_seconds": 140.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.505
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Three of the four tires fell off the rims.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9262
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Three patrol units positioned themselves approximately 15 feet away.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9195
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject remained seated for less than 15 seconds then exited yelling profanities.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9005
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "One officer fired six rounds from his duty weapon.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9238
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Another officer deployed a TASER.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8995
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The subject was later determined to be unarmed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9237
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "He made threatening gestures toward officers with both hands moving to his right hip area.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9067
+    }
+  ]
+}

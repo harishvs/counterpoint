@@ -1,0 +1,145 @@
+{
+  "scenario_id": "sc-055",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 4.5,
+  "total_tokens": 31789,
+  "total_api_calls": 17,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 1718 hours, the subject was observed on video surveillance entering the parking garage of the Balboa Bay Resort.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9049
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "At approximately 1745 hours, the owner of the Mercedes called Newport Beach police to report the vehicle stolen.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9282
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "At approximately 1748 hours, I was driving my marked Laguna Beach Police Department unit southbound on Pacific Coast Highway when I observed the Mercedes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9073
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "At approximately 1749 hours, I broadcast over the radio my intent to stop the vehicle and requested backup.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8931
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "As I approached, the subject made a sudden hard-left turn and accelerated away from me.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8967
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Three of the four tires fell off the rims.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9428
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "At approximately 1839 hours, Corporal Gramer performed a pursuit intervention technique (PIT) maneuver.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8814
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Less than 15 seconds after the Mercedes came to a stop, the subject quickly exited his vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8483
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I fired six rounds at the subject at approximately 1839 hours, within approximately 1.6 seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9079
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Meyer announced 'Taser!' and discharged his Taser.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8415
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "At approximately 1908 hours, Laguna Beach Fire Department arrived and assumed care of the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8987
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The subject was transported to Mission Hospital Mission Viejo at approximately 1924 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9254
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The subject had sustained three gunshot wounds: one to his upper left chest, one to his lower right abdomen, and one to his lower left forearm.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9225
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The subject ultimately survived his injuries.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.892
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I placed the subject in handcuffs. I retrieved a first aid kit and immediately began rendering aid.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8643
+    }
+  ]
+}

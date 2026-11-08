@@ -1,0 +1,175 @@
+{
+  "scenario_id": "sc-005",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 10.47,
+  "total_tokens": 78241,
+  "total_api_calls": 37,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "W-1 stated that the subject possessed a single firearm, a small handgun.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 345.0,
+          "end_seconds": 365.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8235
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "At approximately 0022 hours, the Tactical Response Group (TRG) was activated and assumed responsibility for the incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9214
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Beginning at approximately 0308 hours, Officer Vega, the primary negotiator, began making PA announcements encouraging the subject to exit the residence peacefully.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9115
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "At approximately 0314 hours and again at 0322 hours, the subject briefly emerged onto the rear patio of the residence, shouted at officers, and returned inside each time.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9292
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "At approximately 0341 hours, the subject came out onto the front porch and pointed what appeared to be a handgun directly at officers using both hands in a shooting stance.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 315.0,
+          "end_seconds": 335.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5288
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "At approximately 0350 hours, in response to a recorded surrender request from W-1, the subject emerged holding a short-barreled rifle with a standard 30-round magazine.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 345.0,
+          "end_seconds": 365.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5974
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject exited the front door holding the same rifle in his left hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9307
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject raised the rifle to shoulder level and pointed it directly at the marked K9 patrol vehicle parked in front of the residence where several officers were positioned.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9234
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The subject fell forward onto the porch in a prone position.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 495.0,
+          "end_seconds": 515.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6949
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject was observed lying face-down with no weapon in his hands.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 450.0,
+          "end_seconds": 470.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7721
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Officer Kapoor deployed two 40 mm Less Lethal rounds as a precaution but the subject showed no response.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.931
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officer Diaz subsequently deployed the K9, which made contact with the subject and pulled him from the porch onto the sidewalk.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9159
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "A subsequent search of the residence recovered one firearm: a .38 caliber revolver, Smith and Wesson, found on the porch near the front door. No rifle was recovered from the residence.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 345.0,
+          "end_seconds": 365.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7384
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Anaheim Fire Department paramedics arrived at approximately 0404 hours; the subject was pronounced deceased at approximately 0411 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.928
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The situation was classified as a Negotiator Driven Incident under Penal Code section 1370 due to information that the subject had previously been found mentally incompetent.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9229
+    }
+  ]
+}

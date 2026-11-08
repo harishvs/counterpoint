@@ -1,0 +1,685 @@
+{
+  "scenario_id": "sc-055",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 28.98,
+  "total_tokens": 268582,
+  "total_api_calls": 17,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-055",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9208
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: March 11, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 180.0,
+          "end_seconds": 200.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9286
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 1718 hours through 1909 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9118
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: Pacific Coast Highway, Laguna Beach, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8977
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer M. Radel",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9183
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 3392",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9291
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Subject: Trevor Steinberg, Male, later identified as the driver of a stolen white Mercedes sedan",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9069
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer(s): Officer M. Radel, Corporal J. Gramer, Officer M. Meyer, Sergeant W. Downing",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 15.0,
+          "end_seconds": 35.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5222
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Witness(es): Multiple civilian drivers",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8955
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "On March 11, 2021, at approximately 1718 hours, the subject was observed on video surveillance entering the parking garage of the Balboa Bay Resort and driving away in a white Mercedes sedan.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9084
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "At approximately 1745 hours, the owner of the Mercedes called Newport Beach police to report the vehicle stolen.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9175
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "At approximately 1748 hours, I was driving my marked Laguna Beach Police Department unit southbound on Pacific Coast Highway when I observed the Mercedes driven by the subject traveling southbound at a high rate of speed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8788
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I attempted to pace the Mercedes but the subject's speed was erratic and he veered onto the shoulder multiple times.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9116
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I believed the driver was potentially impaired.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9055
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I followed the Mercedes waiting for a safe location to conduct a traffic stop.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.893
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "At approximately 1749 hours, I broadcast over the radio my intent to stop the vehicle and requested backup.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9119
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The subject pulled the Mercedes over onto the shoulder of Pacific Coast Highway and I exited my unit to approach on the driver side.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8976
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "As I approached, the subject made a sudden hard-left turn and accelerated away from me.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9026
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "I returned to my unit to pursue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8982
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "The subject collided with multiple vehicles during the flight.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8862
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "One collision caused a vehicle to veer off the road and another to flip onto its side.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9114
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "I dispatched medical care to the collision scene and continued pursuit with lights and sirens.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9137
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Other Laguna Beach officers joined in marked vehicles.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9048
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "An Orange County Sheriff helicopter also joined the pursuit shortly after it began.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9041
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The subject continued traveling on Newport Coast Drive and then back onto Pacific Coast Highway, reaching speeds of nearly 90 miles per hour while swerving into oncoming traffic.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9071
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Eventually, Laguna Beach officers successfully deployed a spike strip which caused severe tire damage.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9081
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Three of the four tires fell off the rims.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9277
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "Despite this, the subject continued driving on rims.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9052
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "At approximately 1839 hours, Corporal Gramer performed a pursuit intervention technique (PIT) maneuver, tapping the rear of the Mercedes with the front of his police vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9149
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "This caused the Mercedes to spin and come to a stop in the southbound lane of Pacific Coast Highway, facing north.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9157
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "My unit was positioned to the left, Sergeant Downing's vehicle to the right, and Officer Meyer's in the middle, approximately 15 feet from the Mercedes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9134
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "All officers had takedown lights and spotlights illuminated.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9182
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Once stopped, the subject could be seen looking down and moving around in the driver seat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8743
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The dashboard obscured the officers' view of his hands.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.892
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Less than 15 seconds after the Mercedes came to a stop, the subject quickly exited his vehicle.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 150.0,
+          "end_seconds": 170.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6536
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Upon exiting, the subject immediately stepped backward and made a distinct movement to put both hands to his right hip.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.895
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "I believed he could be armed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9095
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "I commanded the subject to get on the ground.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 165.0,
+          "end_seconds": 185.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9355
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "The Orange County Sheriff helicopter was overhead.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8914
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "The subject kept his hands at his waistband and then suddenly walked forward, almost jumping or lunging toward the officers.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8913
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "The subject quickly raised both hands chest-high from his right hip, simultaneously pressed his palms together, extended his finger and arms outward directly at me.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9057
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "From BWC footage, it is clear the subject purposefully simulated having a gun in a quick movement.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9005
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "I believed the subject was armed and was going to shoot.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8942
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "I fired six rounds at the subject at approximately 1839 hours, within approximately 1.6 seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.918
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Despite the shots, the subject appeared unfazed and continued moving forward.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8994
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "At this point, I could see the subject was not holding a weapon.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8852
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Officers continued to command the subject to get on the ground.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 165.0,
+          "end_seconds": 185.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9293
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "The subject yelled profanities and continued walking toward Sergeant Downing while continuing to simulate having a gun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9025
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "When the three officers and the subject had cleared the back of the vehicles, the subject continued to move toward Sergeant Downing.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9068
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Officer Meyer announced \"Taser!\" and discharged his Taser.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8898
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "The Taser successfully incapacitated the subject and he fell to the ground.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 165.0,
+          "end_seconds": 185.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5313
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "At approximately 1839 hours, Sergeant Downing broadcast over the radio that shots were fired and a Taser was deployed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8977
+    },
+    {
+      "claim_id": "cl-053",
+      "claim_text": "I placed the subject in handcuffs.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 180.0,
+          "end_seconds": 200.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6997
+    },
+    {
+      "claim_id": "cl-054",
+      "claim_text": "I retrieved a first aid kit and immediately began rendering aid.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9027
+    },
+    {
+      "claim_id": "cl-055",
+      "claim_text": "Officer Meyer can be heard stating that he was searching the subject for a weapon because he was reaching and acting like he had a gun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9082
+    },
+    {
+      "claim_id": "cl-056",
+      "claim_text": "At approximately 1908 hours, Laguna Beach Fire Department arrived and assumed care of the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8947
+    },
+    {
+      "claim_id": "cl-057",
+      "claim_text": "The subject was transported to Mission Hospital Mission Viejo at approximately 1924 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9196
+    },
+    {
+      "claim_id": "cl-058",
+      "claim_text": "The subject was admitted to surgery.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9113
+    },
+    {
+      "claim_id": "cl-059",
+      "claim_text": "The subject had sustained three gunshot wounds: one to his upper left chest, one to his lower right abdomen, and one to his lower left forearm.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.929
+    },
+    {
+      "claim_id": "cl-060",
+      "claim_text": "The subject ultimately survived his injuries.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9086
+    },
+    {
+      "claim_id": "cl-061",
+      "claim_text": "Body-worn camera footage from multiple officers",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 180.0,
+          "end_seconds": 200.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8761
+    },
+    {
+      "claim_id": "cl-062",
+      "claim_text": "One (1) Black Taser X26 and one (1) black Taser cartridge",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9317
+    },
+    {
+      "claim_id": "cl-063",
+      "claim_text": "One (1) Black Sweatshirt",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9183
+    },
+    {
+      "claim_id": "cl-064",
+      "claim_text": "Taser probe with wire connected",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.916
+    },
+    {
+      "claim_id": "cl-065",
+      "claim_text": "Six (6) cartridge casings",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9172
+    },
+    {
+      "claim_id": "cl-066",
+      "claim_text": "Scene photographs (172)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8904
+    },
+    {
+      "claim_id": "cl-067",
+      "claim_text": "Subject transported to Mission Hospital Mission Viejo.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9124
+    },
+    {
+      "claim_id": "cl-068",
+      "claim_text": "Scene secured for OCDA investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8939
+    },
+    {
+      "claim_id": "cl-069",
+      "claim_text": "Officer Signature: M. Radel",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9216
+    },
+    {
+      "claim_id": "cl-070",
+      "claim_text": "Date of Report: March 11, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 210.0,
+          "end_seconds": 230.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9028
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "scenario_id": "sc-021",
+  "model": "none",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 0.0,
+  "total_tokens": 0,
+  "total_api_calls": 0,
+  "claims": []
+}

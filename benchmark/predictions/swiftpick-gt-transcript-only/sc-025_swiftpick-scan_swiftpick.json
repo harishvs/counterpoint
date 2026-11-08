@@ -1,0 +1,160 @@
+{
+  "scenario_id": "sc-025",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 8.85,
+  "total_tokens": 62802,
+  "total_api_calls": 33,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 0520 hours, Officer C. Webb and I responded to an ADT commercial burglary alarm activation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9257
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "We arrived on scene within approximately two minutes of the dispatch call.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9383
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "I walked the exterior perimeter of the building alone while Officer Webb remained at the front entrance to secure it.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9281
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Within approximately ten minutes, Sgt. Park, Officer Ruiz, and Officer Mateo arrived on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9296
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "He appeared calm and did not exhibit threatening behavior during this period.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 225.0,
+          "end_seconds": 245.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8516
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officer Mateo was designated to deploy a Taser as the less-lethal option.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.94
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Sgt. Park obtained a 40mm less-lethal launcher and positioned himself near the security gate.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 345.0,
+          "end_seconds": 365.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6721
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "I discharged my firearm approximately four times.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9424
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "In total, officers fired approximately fifteen rounds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9472
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "We forced entry within approximately thirty seconds of the last shot.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9163
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject was barely conscious and unresponsive during transport.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9191
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The rifle recovered from the scene was later identified as belonging to the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9356
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The subject emerged from a room on the southwest side of the building carrying a rifle in his right hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9377
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Officers immediately ordered the subject to drop the weapon.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 285.0,
+          "end_seconds": 305.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8227
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "It was a semi-automatic weapon chambered in .22 caliber with a full magazine.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9537
+    }
+  ]
+}

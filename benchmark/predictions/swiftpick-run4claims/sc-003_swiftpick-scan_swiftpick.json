@@ -1,0 +1,477 @@
+{
+  "scenario_id": "sc-003",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 123.61,
+  "total_tokens": 621689,
+  "total_api_calls": 59,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: January 16, 2023",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 750.0,
+          "end_seconds": 770.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9512
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 2136 hours",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 540.0,
+          "end_seconds": 560.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7287
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Old Ranch Condominium development, Seal Beach, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9236
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer D. Harmon",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9274
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 3851",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9447
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Thomas Weller, Male, 47 years old, White, baggy black jacket, blue jeans, black hat",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9322
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer D. Harmon, Corporal R. Fuentes",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 20.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.549
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Female resident (W-1), reported domestic violence restraining order against subject",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 450.0,
+          "end_seconds": 470.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7451
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On January 16, 2023, at approximately 2136 hours, dispatch received a 9-1-1 call from a female resident (W-1) reporting that an unknown male was kicking her front door and demanding entry at her residence within the Old Ranch Condominium development in Seal Beach.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9268
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "W-1 described the male as wearing a jacket, mask, beanie, and dark brown work boots.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 270.0,
+          "end_seconds": 290.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9281
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Corporal Fuentes and I were dispatched to the location.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9108
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I arrived at the residence at approximately 2140 hours and observed the property.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 620.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7505
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The residence is a two-story condominium with an enclosed rear courtyard surrounded by an approximately eight-foot-high brick perimeter wall with an entry gate facing Aster Street.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9483
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "At approximately 2141 hours, I observed a male subject, later identified as Thomas Weller, standing on the concrete walkway outside the courtyard gate.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9171
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject was in full view and matched the description provided by dispatch.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 495.0,
+          "end_seconds": 515.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6699
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I stood approximately 40 feet east of the subject and used my flashlight to illuminate him.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9259
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "I identified myself as a police officer and ordered the subject to approach me with his hands visible.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9246
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The subject stated he was there to visit a friend and asked me to call my supervisor.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.926
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The subject held a beverage can in his left hand throughout the encounter.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9397
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "I noted the subject was wearing a baggy black jacket, blue jeans, and clear glasses.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9463
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Corporal Fuentes arrived at approximately 2142 hours, parking his patrol vehicle approximately 200 to 300 feet south of the condominium.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9404
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "As Corporal Fuentes approached on foot, the subject became increasingly noncompliant.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 750.0,
+          "end_seconds": 770.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8993
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "The subject placed his left hand in his front jacket pocket, turned his back to me, and began walking toward the enclosed patio area in the direction of W-1's residence.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 750.0,
+          "end_seconds": 770.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5327
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "I gave repeated commands for the subject to stop and show his hands, which the subject ignored.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 630.0,
+          "end_seconds": 650.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9565
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The subject stated, \"I will not sit down; I will not sit down.\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 630.0,
+          "end_seconds": 650.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9375
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "As the subject walked back into the enclosed patio area with his back to the officers, Corporal Fuentes warned the subject that he would deploy his Taser.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 750.0,
+          "end_seconds": 770.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.853
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The subject continued to ignore commands.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 630.0,
+          "end_seconds": 650.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.921
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "At approximately 2142 hours, Corporal Fuentes deployed his Taser, striking the subject in the chest.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9406
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject fell forward onto his stomach within the enclosed patio area.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9317
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "I approached the threshold of the patio and observed the subject lying face down.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 675.0,
+          "end_seconds": 695.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7234
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Corporal Fuentes was approximately ten feet to my right.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9338
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "The subject then reached toward his left waistband with his right hand and produced what appeared to be a black semi-automatic handgun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9342
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "The subject raised the weapon and pointed it in my direction.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 825.0,
+          "end_seconds": 845.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6722
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Fearing for my life and the life of Corporal Fuentes, I discharged my duty weapon, firing approximately twelve rounds.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 780.0,
+          "end_seconds": 800.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6721
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Corporal Fuentes simultaneously drew his duty weapon and fired approximately nine rounds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9421
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "The subject released the weapon and ceased movement.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9262
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "After confirming the subject was no longer an active threat, Corporal Fuentes and I maintained our positions and held the subject at gunpoint.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9355
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "At approximately 2148 hours, Officer Pistilli arrived on scene and secured the weapon from the subject's immediate reach.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9339
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Officer Pistilli handcuffed the subject and applied a tourniquet to the subject's upper left thigh.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9243
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "The weapon was later identified as a Glock 22, .40-caliber handgun, registered to the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9466
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "Orange County Fire Authority paramedics arrived on scene and transported the subject to UCI Medical Center, where the subject was pronounced deceased at approximately 2232 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9144
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "W-1 and her children confirmed unharmed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.931
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.904
+    }
+  ]
+}

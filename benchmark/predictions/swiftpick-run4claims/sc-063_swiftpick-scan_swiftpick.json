@@ -1,0 +1,418 @@
+{
+  "scenario_id": "sc-063",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 71.67,
+  "total_tokens": 580556,
+  "total_api_calls": 62,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: October 8, 2022",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 20.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6522
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 1045 hours",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 645.0,
+          "end_seconds": 665.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6536
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Trask Avenue near Magnolia Street, Westminster, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9304
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer V. Phan",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9269
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 3189",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9327
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Binh Nguyen, Male, 45, Vietnamese",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9319
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer V. Phan, Officer L. Gutierrez",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9276
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Multiple witnesses at commercial area",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9216
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On October 8, 2022, at approximately 1045 hours, Officer L. Gutierrez and I were dispatched to the location regarding the reported incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9277
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I was operating the patrol vehicle with Officer L. Gutierrez in the passenger seat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.926
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I activated my body-worn camera prior to arriving on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9063
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Upon arrival at Trask Avenue near Magnolia Street, Westminster, CA, I observed the subject in the area matching the description provided by dispatch.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9239
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I was the primary officer and approached the subject first.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.921
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I identified myself verbally and directed the subject to stop.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 525.0,
+          "end_seconds": 545.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6339
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject was cooperative during initial contact.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 150.0,
+          "end_seconds": 170.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8088
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "The lighting conditions were adequate for observation.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 675.0,
+          "end_seconds": 695.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5887
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "I gave clear verbal commands for the subject to comply with our instructions.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 690.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8955
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The situation escalated when the subject failed to follow directives.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 285.0,
+          "end_seconds": 305.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9323
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The subject made a sudden movement toward his waistband.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9375
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Officer L. Gutierrez was positioned to my right, approximately ten feet away.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9363
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "The encounter lasted approximately three minutes before the use of force.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9307
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Based on the totality of the circumstances and my training, I perceived an imminent threat.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 285.0,
+          "end_seconds": 305.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5451
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "I discharged my firearm in response to an immediate threat.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 675.0,
+          "end_seconds": 695.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8294
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Medical aid was rendered immediately after the subject was secured.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 840.0,
+          "end_seconds": 860.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5727
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "Paramedics arrived within approximately five minutes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9314
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Officer L. Gutierrez and I maintained scene security until investigative units arrived.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9286
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "No bystanders were present in the immediate area during the incident.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 510.0,
+          "end_seconds": 530.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7056
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "All evidence was properly collected and secured at the scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9372
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The subject's weapon was recovered at the scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9359
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Body-worn camera footage",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 690.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9576
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Cartridge cases",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9026
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Subject's weapon",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 285.0,
+          "end_seconds": 305.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7519
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Crime scene photographs",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.861
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Subject received medical treatment.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 885.0,
+          "end_seconds": 905.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7431
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9022
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Officer Signature: Phan",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9238
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Date of Report: October 8, 2022",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 690.0,
+          "end_seconds": 710.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5869
+    }
+  ]
+}

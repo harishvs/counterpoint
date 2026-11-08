@@ -1,0 +1,121 @@
+{
+  "scenario_id": "sc-046",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 22.98,
+  "total_tokens": 113978,
+  "total_api_calls": 94,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Officers responded to reports of a subject behaving erratically who may have been armed.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1155.0,
+          "end_seconds": 1175.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8924
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The subject was seated in the driver's seat of a vehicle.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 165.0,
+          "end_seconds": 185.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9644
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject started the engine as officers approached.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 180.0,
+          "end_seconds": 200.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7705
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Officers gave verbal commands in both English and Spanish.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9406
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject produced a firearm and fired two rounds toward officers.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 975.0,
+          "end_seconds": 995.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5159
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "I fired multiple rounds from my duty rifle.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 975.0,
+          "end_seconds": 995.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6492
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officers found two firearms: a handgun and a rifle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9438
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject was pronounced deceased.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1335.0,
+          "end_seconds": 1355.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9503
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Officers gave commands in both English and Spanish for the subject to turn off the vehicle and show his hands.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9445
+    }
+  ]
+}

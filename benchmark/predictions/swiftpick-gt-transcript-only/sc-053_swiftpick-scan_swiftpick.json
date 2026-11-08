@@ -1,0 +1,150 @@
+{
+  "scenario_id": "sc-053",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 16.47,
+  "total_tokens": 116744,
+  "total_api_calls": 59,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Corporal Rios arrived at the residence first.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9363
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I arrived approximately one minute later and parked approximately 200 to 300 feet south of the condominium.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9258
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Corporal Rios stood in the walkway approximately 40 feet east of the subject, using his flashlight to illuminate the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9235
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Corporal Rios asked the subject who he was and commanded him to come out of the enclosed area.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 620.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7421
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I was concerned for the reporting party and her two young children and decided to deploy my Taser.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9088
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "I deployed my Taser toward the subject, striking him in the back.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9282
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "I saw the subject point the gun directly in Corporal Rios's direction. Believing Corporal Rios was about to be shot in the head, I pointed my gun at the subject and fired.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9133
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "In total, I fired 21 rounds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9327
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Corporal Rios then dropped his Taser, drew his duty handgun, and fired nine rounds at the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9265
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Pistilli removed the gun from the subject's immediate reach and handcuffed the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9212
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Corporal Rios then placed a tourniquet on the subject's left upper thigh area.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9374
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The gun was registered to the subject's father.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9535
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The subject fell into the enclosed area onto his left side and then flat on his back.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9372
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Corporal Rios was about three feet behind and to the left of me.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9387
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "He had a beverage can in his right hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9494
+    }
+  ]
+}

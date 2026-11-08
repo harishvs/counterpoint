@@ -1,0 +1,155 @@
+{
+  "scenario_id": "sc-016",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 8.13,
+  "total_tokens": 55553,
+  "total_api_calls": 29,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The reporting party stated that someone had broken a rear window and entered the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9183
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Dispatch advised that the reporting party was a male caller who believed the intruder was still inside the home.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 90.0,
+          "end_seconds": 110.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6326
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "I parked directly in front of 22851 Loumont Drive and exited my vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9126
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I began walking eastbound along the north sidewalk toward the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8936
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I observed a female subject standing on the north sidewalk approximately 40 feet from my position.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9073
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "She was holding a black semi-automatic handgun in her left hand, pointed toward the ground.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9105
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "I took cover behind the sedan and broadcast over the radio that I had a subject at gunpoint.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8745
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "At no point did the subject make any verbal response to my commands or those of the other deputies.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 360.0,
+          "end_seconds": 380.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6248
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The subject abruptly raised the handgun to shoulder level with both hands and aimed it directly at my position behind the sedan.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8778
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I discharged my firearm five times at the subject. Deputy Whitfield simultaneously discharged his firearm three times.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9068
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject fell to the ground and the weapon came to rest beside her.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9166
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Deputy Vega kicked the weapon away from the subject's reach.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9224
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The weapon recovered at the scene was later determined to be a Daisy 340 BB Spring Repeater Pistol, a realistic-looking replica handgun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9372
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Investigation revealed that the 911 call reporting the burglary had originated from the subject's own cell phone, and that no burglary had actually occurred at 22851 Loumont Drive.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8957
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Eight (8) cartridge casings recovered from scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9396
+    }
+  ]
+}

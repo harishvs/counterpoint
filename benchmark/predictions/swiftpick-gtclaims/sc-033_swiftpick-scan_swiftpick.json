@@ -1,0 +1,165 @@
+{
+  "scenario_id": "sc-033",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 32.92,
+  "total_tokens": 183978,
+  "total_api_calls": 42,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 1345 hours, I received a dispatch call regarding a domestic disturbance involving an armed individual near a school bus.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9299
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I was assigned as the primary responding unit and departed from the station within ninety seconds of receiving the call, arriving in the vicinity of the pursuit approximately three minutes later.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9375
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject had displayed a firearm near a school bus.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9311
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I observed the subject's grey Chevrolet Tahoe traveling southbound on Western Avenue, pursued by a single marked patrol unit.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.939
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "From the time I took the lead, the pursuit continued for approximately two minutes before the subject entered the school district parking lot.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 390.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5038
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject drove through an open gate into the Buena Park Unified School District Office parking lot.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 390.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5407
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject's vehicle struck a parked vehicle at moderate speed, causing minor displacement of approximately two feet.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9447
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject immediately exited his vehicle and began walking eastbound across the parking lot. I did not observe a weapon in the subject's hands as he exited.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 525.0,
+          "end_seconds": 545.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5266
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I discharged my firearm eight times.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9298
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Langston discharged his firearm twelve times from a position approximately forty yards to my left.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9423
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject continued advancing for approximately twenty seconds before collapsing.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9276
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "We approached the subject within approximately two minutes, secured the weapon, and applied handcuffs.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9331
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Orange County Fire Authority paramedics arrived approximately eight minutes later at 1418 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9284
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The subject was pronounced deceased on scene at approximately 1430 hours.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 620.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8878
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Twenty (20) cartridge cases recovered from scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9392
+    }
+  ]
+}

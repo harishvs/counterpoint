@@ -1,0 +1,165 @@
+{
+  "scenario_id": "sc-018",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 30.66,
+  "total_tokens": 179797,
+  "total_api_calls": 40,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "RP-3 regarding a male Hispanic walking westbound on Warner Avenue at Red Hill Avenue carrying a large knife in his bloody hands.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9238
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I immediately observed the subject walking southbound on the west sidewalk of Warner Avenue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9353
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject was carrying a large knife with a white handle in his right hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9435
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Officer Torres parked directly in front of my vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9379
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I called out to the subject, saying 'Hey, man. Have a seat. Have a seat, Dude.'",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 390.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9436
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officer Vega parked in the southbound number one lane and drew his service handgun. He then holstered his handgun and deployed his Taser.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9287
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject stopped walking and appeared to look directly at Officer Torres.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9342
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject turned and sprinted directly toward me from a distance of approximately 32 feet, raising the knife above his head in an overhead stabbing motion.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 240.0,
+          "end_seconds": 260.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5235
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I discharged my firearm five times at the subject. Officer Torres simultaneously discharged his firearm five times.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9383
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The entire sequence from the subject's charge to the final shot lasted approximately four seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8759
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "After the subject fell, I observed the knife was still in his right hand.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 480.0,
+          "end_seconds": 500.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8247
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officer Vega approached and secured the knife at approximately 0847:44 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.934
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I initiated Cardiopulmonary Resuscitation (CPR) at approximately 0848:39 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9297
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "A welfare check was subsequently conducted at the subject's last known residence. No injured parties were found at the location.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 540.0,
+          "end_seconds": 560.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5938
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officer Vega attempted to deploy his Taser but was unable to get a clear shot due to the subject's sudden movement.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9458
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "scenario_id": "sc-002",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 5.82,
+  "total_tokens": 37792,
+  "total_api_calls": 20,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The driver of the Mercedes was subsequently identified as W-1, who was alone in the vehicle with the subject, Diego Renteria, in the front passenger seat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.92
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Officer Cho was positioned on the driver's side of the Mercedes near the front fender.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9367
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject complied and placed both hands flat on the dashboard.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 195.0,
+          "end_seconds": 215.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5467
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I observed the subject grip the weapon and begin to raise it in the direction of Officer Cho, who was standing on the driver's side.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9288
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I immediately drew my service weapon and discharged it four times at the subject through the open rear passenger window.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9222
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Simultaneously, Officer Cho discharged his firearm three times from his position near the driver's side front fender.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9317
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "A black semi-automatic handgun was recovered from the floorboard beneath the subject's legs.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9418
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "At approximately 1400 hours, I initiated a traffic stop on a black Mercedes Benz, California license plate 8YQZ992, at 100 S. McClay Street, after observing that the vehicle's registration tags had expired.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9363
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "W-1 responded that he was on AB109 supervision.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9252
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject then picked up his cell phone and began texting.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9182
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "After a short pause, the subject's right hand dropped off the dashboard and he began reaching toward his right side near the floorboard area.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 195.0,
+          "end_seconds": 215.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6807
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Both officers were wearing SAPD polo uniform shirts with identification patches and black outer vests clearly marked \"POLICE.\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9315
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "At approximately 1409 hours, a K9 unit arrived. The K9 was deployed into the vehicle at approximately 1414 hours but the subject was unresponsive.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.927
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I then approached the right rear passenger side of the Mercedes and contacted the subject, Renteria.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9142
+    }
+  ]
+}

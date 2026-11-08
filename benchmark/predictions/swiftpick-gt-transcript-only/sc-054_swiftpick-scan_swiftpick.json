@@ -1,0 +1,175 @@
+{
+  "scenario_id": "sc-054",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 10.34,
+  "total_tokens": 75318,
+  "total_api_calls": 37,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "W-1 stated that while inside the residence they shared, the subject had pointed a handgun at her in the living room and threatened to kill her and their neighbors.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 195.0,
+          "end_seconds": 215.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6236
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "W-1 stated the subject had exited the house at one point, aimed the gun upwards into the air, and fired a shot.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 180.0,
+          "end_seconds": 200.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8615
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "W-1 told officers, \"He's been off his meds for weeks and he keeps saying he wants to go out in a blaze of glory.\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9291
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject walked out onto the front porch and simulated a handgun with his fingers, pointed it at a police vehicle, and then returned inside.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 480.0,
+          "end_seconds": 500.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.508
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject looked at the officers and said, \"You want to do this? Let's do this.\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9269
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject walked out onto the front porch with a revolver in his right hand.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 330.0,
+          "end_seconds": 350.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6625
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject pointed the handgun up in the air and then in a northeast direction toward a marked APD police K9 patrol vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9225
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject immediately fell to a seated position facing north on the front porch with the revolver still held in his right hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9183
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The K9 pulled the subject east from the porch onto the sidewalk in front of the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9352
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "W-1 later told investigators, \"I knew this was going to happen. I tried to get him help but nobody listened to me.\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9147
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "He did not point the weapon at any officers and shortly thereafter returned inside.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 480.0,
+          "end_seconds": 500.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7852
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Anaheim Fire Department paramedics who had been staged nearby were summoned at approximately 0404 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9268
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "She stated that the subject was currently alone inside the residence.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 180.0,
+          "end_seconds": 200.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5732
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "W-1 told Sergeant Lehman that the handgun was one of two firearms the subject possessed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9394
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject was pronounced deceased by paramedics at approximately 0411 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9177
+    }
+  ]
+}

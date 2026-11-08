@@ -1,0 +1,145 @@
+{
+  "scenario_id": "sc-048",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 11.19,
+  "total_tokens": 78421,
+  "total_api_calls": 42,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "On August 22, 2021, the subject had assaulted his wife, W-1, and their six-year-old son at the family residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9365
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I had been briefed that the subject had broken W-1's wrist during the altercation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9323
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "An anonymous tipster had warned that the subject was armed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9482
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "W-1 reported that while driving the school bus on Orangethorpe Avenue with students aboard, she observed the subject following her in a grey Chevrolet Tahoe.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9208
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject blocked the bus's path, exited his vehicle holding a chrome revolver, and aimed it at the bus.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9211
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "W-1 stated the subject screamed verbal threats including death threats directed at her.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9276
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject fired at least one round in the direction of the bus.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9427
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The civilian vehicle was a white Honda Accord, and its driver sustained minor injuries.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9533
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I immediately observed the subject seated in the driver's seat with a black semi-automatic pistol visible in his left hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9193
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "He walked slowly toward the officers with what I would describe as a resigned expression.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9299
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Total rounds fired: approximately eight by myself and six by Officer Cho.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9369
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officers rendered first aid at 1413 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9269
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "OCFA paramedics arrived at 1420 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9315
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I arrived in the parking lot approximately 90 seconds after the subject stopped.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9145
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I was operating in an undercover capacity in a personal vehicle near the intersection of Orangethorpe Avenue and Beach Boulevard.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9296
+    }
+  ]
+}

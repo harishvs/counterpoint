@@ -1,0 +1,313 @@
+{
+  "scenario_id": "sc-042",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 24.23,
+  "total_tokens": 175495,
+  "total_api_calls": 31,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Case Number: SC-042",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.922
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Date of Incident: July 25, 2020",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 20.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6413
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Time of Incident: Approximately 0200 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.923
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Location: 7900 block of Adams Avenue, Anaheim, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.931
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Reporting Officer: Officer P. Whitfield",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9251
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Badge Number: 5189",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.935
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer P. Whitfield, Multiple units",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9198
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "On July 25, 2020, at approximately 0200 hours, officers responded to a 911 call reporting a person with a firearm in the area of the 7900 block of Adams Avenue, Anaheim.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9388
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The caller reported hearing a gunshot.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officers established a perimeter and used a public address system to broadcast announcements in both English and Spanish for the subject to exit and surrender.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9309
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject was eventually located fleeing on foot northbound from the residence.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 225.0,
+          "end_seconds": 245.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5993
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officers pursued on foot.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 330.0,
+          "end_seconds": 350.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8414
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The subject scaled a wall and ran through adjacent properties.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 225.0,
+          "end_seconds": 245.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.613
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "During the pursuit, officers maintained verbal commands for the subject to stop and show his hands.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 360.0,
+          "end_seconds": 380.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8995
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject was cornered in a dark area near the rear of a building.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 210.0,
+          "end_seconds": 230.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5705
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "Officers ordered the subject to get on the ground.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 360.0,
+          "end_seconds": 380.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7769
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The subject did not immediately comply.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 315.0,
+          "end_seconds": 335.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6875
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "An officer fired three rounds when the subject made a threatening movement.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9527
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "The subject fell to the ground.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 360.0,
+          "end_seconds": 380.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6707
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Officers approached and began rendering medical aid.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 435.0,
+          "end_seconds": 455.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5461
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "The subject sustained gunshot wounds and was transported to the hospital.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9238
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "No firearm was recovered from the subject's immediate possession.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9389
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "A firearm was located in the area consistent with the initial 911 call about shots fired.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9361
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Body-worn camera footage was collected as evidence.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 330.0,
+          "end_seconds": 350.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9304
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8934
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Officer Signature: Whitfield",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9234
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Date of Report: July 25, 2020",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 255.0,
+          "end_seconds": 275.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5347
+    }
+  ]
+}

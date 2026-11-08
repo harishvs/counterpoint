@@ -1,0 +1,150 @@
+{
+  "scenario_id": "sc-056",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 21.04,
+  "total_tokens": 130894,
+  "total_api_calls": 30,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Deputy Israel observed the subject traveling northbound on the sidewalk. Deputy Israel recognized the subject from a prior trespassing contact the previous night.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9116
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Because the subject had been aggressive during the previous encounter and had made threatening statements toward deputies, we decided to make contact to check on his welfare and offer services.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8948
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Deputy Israel exited the vehicle first and told the subject to stop.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8957
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Deputy Israel took the lead in attempting to contact the subject while I acted as backup.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.909
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "At no point did either deputy raise their voice, use profanity, or attempt to escalate the situation.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 270.0,
+          "end_seconds": 290.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7928
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject slapped Deputy Israel's hand and arm three additional times during a period of approximately one minute and thirty seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9078
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Because the subject had become physically assaultive, we increased our use of force to gain compliance.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8945
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "After traveling approximately 300 yards, we were able to direct the subject back to the westbound sidewalk on El Camino Real.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.909
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I then grabbed the subject by his backpack and took him to the ground.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8846
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Because the subject had been continuously resisting and had physically struck Deputy Israel multiple times, I believed he posed a significant threat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9081
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Because the subject had already assaulted Deputy Israel and was now attempting to disarm him, and because I feared the subject would use the gun against us, I fired one round.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8841
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Deputy Israel immediately put out on the radio that shots had been fired.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9054
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I rolled the subject onto his back and both of us began chest compressions until paramedics arrived.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9041
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I told the subject twice to drop it or I would shoot.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9055
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Deputy Israel felt his gun belt being pulled and heard the rattling of his gun in its holster.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8936
+    }
+  ]
+}

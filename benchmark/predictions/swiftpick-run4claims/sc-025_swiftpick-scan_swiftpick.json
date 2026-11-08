@@ -1,0 +1,493 @@
+{
+  "scenario_id": "sc-025",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 41.43,
+  "total_tokens": 353650,
+  "total_api_calls": 33,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: July 13, 2022",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 255.0,
+          "end_seconds": 275.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9279
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 0520 hours",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 225.0,
+          "end_seconds": 245.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9025
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Advanced Marine Service, 2211 Newport Boulevard, Costa Mesa, CA",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 135.0,
+          "end_seconds": 155.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8207
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer D. Tran",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9285
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 2784",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9351
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Marco Delgado, Male, 35 years old, Hispanic",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9397
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer D. Tran, Officer C. Webb, Sgt. M. Park, Officer K. Ruiz, Officer A. Mateo",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9266
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Area resident (W-1)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9148
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On July 13, 2022, at approximately 0520 hours, Officer C. Webb and I responded to an ADT commercial burglary alarm activation at Advanced Marine Service, 2211 Newport Boulevard, Costa Mesa.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9311
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "We arrived on scene within approximately two minutes of the dispatch call",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9393
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Both officers were in department-issued uniforms and marked vehicles equipped with body-worn cameras, which were activated upon arrival.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 270.0,
+          "end_seconds": 290.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.566
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I walked the exterior perimeter of the building alone while Officer Webb remained at the front entrance to secure it.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9252
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "During my perimeter check, I contacted an area resident (W-1) who stated she had seen an individual using a hammer to damage property inside the business.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9334
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I then located a broken front door window with glass on the ground.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9279
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I scaled a locked security gate and took up an observation position approximately 15 to 20 feet from the front door, from which I could see the subject inside the business going through cabinets while holding a knife.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9295
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I radioed for additional units.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 240.0,
+          "end_seconds": 260.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7358
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "Within approximately ten minutes, Sgt. Park, Officer Ruiz, and Officer Mateo arrived on scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9351
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "At approximately 0528 hours, Sgt. Park and Officer Ruiz approached the front doors.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.921
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "They identified themselves and ordered the subject to drop the knife and exit the building.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 210.0,
+          "end_seconds": 230.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9105
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "The subject briefly looked in their direction, then turned back and continued pacing through the business.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.925
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "He appeared calm and did not exhibit threatening behavior during this period.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 225.0,
+          "end_seconds": 245.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8503
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "At approximately 0530 hours, Sgt. Park developed a tactical plan.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9215
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Officer Mateo was designated to deploy a Taser as the less-lethal option.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.946
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Sgt. Park obtained a 40mm less-lethal launcher and positioned himself near the security gate.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9307
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "Over the next several minutes, the subject wandered through different rooms.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8966
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "At approximately 0533 hours, the subject emerged from a room on the southwest side of the building carrying a rifle in his right hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9261
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "Officers immediately ordered the subject to drop the weapon.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 285.0,
+          "end_seconds": 305.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8559
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The subject hesitated briefly near the interior doorway, then walked toward the front of the building.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9413
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "As the subject raised the rifle toward the broken window, I discharged my firearm approximately four times.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9483
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Officers Ruiz and Park also fired.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9253
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "In total, officers fired approximately fifteen rounds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9427
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "The subject collapsed inside the business.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9236
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Officers immediately approached the subject, who had fallen approximately three feet from the front window.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.935
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "We forced entry within approximately thirty seconds of the last shot and began rendering medical aid.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9295
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "Costa Mesa Fire Department paramedics arrived within five minutes and the subject was transported to the hospital.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9272
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "The subject was barely conscious and unresponsive during transport.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9306
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "The rifle recovered from the scene was later identified as belonging to the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9463
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "It was a semi-automatic weapon chambered in .22 caliber with a full magazine.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9478
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Body-worn camera footage from all officers on scene",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 320.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8561
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Fifteen (15) cartridge cases",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9221
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "One (1) rifle recovered from inside the business",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 435.0,
+          "end_seconds": 455.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7335
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Knife",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 225.0,
+          "end_seconds": 245.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9323
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Multiple bullet fragments",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9093
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Glass from broken windows",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9113
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Subject transported to hospital.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 465.0,
+          "end_seconds": 485.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5029
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8967
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Business owner notified.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9177
+    }
+  ]
+}

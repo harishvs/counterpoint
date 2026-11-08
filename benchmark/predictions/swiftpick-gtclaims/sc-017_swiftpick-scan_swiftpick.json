@@ -1,0 +1,180 @@
+{
+  "scenario_id": "sc-017",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 79.06,
+  "total_tokens": 439492,
+  "total_api_calls": 100,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "I observed a chain-link gate on the south side of the street that appeared to have been forced open.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 810.0,
+          "end_seconds": 830.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9115
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I observed a black Cadillac Escalade parked in the driveway past the open gate with its headlights on and the radio playing at low volume.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9079
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "I exited my patrol vehicle and approached the driver's side of the Escalade.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 345.0,
+          "end_seconds": 365.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5418
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I gave verbal commands for the subject to exit the vehicle, but the subject refused to comply and made incoherent statements.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 345.0,
+          "end_seconds": 365.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7903
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "This initial contact was not captured on body-worn camera.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 180.0,
+          "end_seconds": 200.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6824
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject rolled down the driver's side window and extended both hands outside the vehicle momentarily.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9052
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "K9 Officer Webb took a position near the driver's side door of the K9 vehicle and began issuing commands and K9 announcements through the PA speaker, instructing the subject to exit from the driver's side with his hands up.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8891
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "He yelled profanities at officers in English.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 945.0,
+          "end_seconds": 965.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8095
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "At approximately 0301 hours, Sergeant Daniels deployed a 40mm OC round through the open rear hatch.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8925
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject shifted to drive and accelerated forward through the open gate, colliding with several vehicles parked inside the auto body shop.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1290.0,
+          "end_seconds": 1310.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5615
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I was positioned on the east sidewalk approximately eighteen feet south of the Escalade.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9024
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I observed the subject raise his left arm toward the driver's side window in what appeared to be a shooting position.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8854
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I discharged my Colt AR-15A4 patrol rifle seven rounds in approximately two seconds as I advanced toward the Escalade.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8994
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The Escalade stopped moving. The engine was still running and the vehicle was in drive.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1350.0,
+          "end_seconds": 1370.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6875
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject appeared to look directly at officers and had what I described as an aggressive expression.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9086
+    }
+  ]
+}

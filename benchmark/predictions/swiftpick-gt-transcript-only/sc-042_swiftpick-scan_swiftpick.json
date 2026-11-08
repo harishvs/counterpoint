@@ -1,0 +1,82 @@
+{
+  "scenario_id": "sc-042",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 7.84,
+  "total_tokens": 31183,
+  "total_api_calls": 31,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Officers responded to a 911 call reporting a person with a firearm.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9309
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Officers used a public address system to broadcast announcements in both English and Spanish.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9252
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject was located fleeing on foot northbound.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9407
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject scaled a wall and ran through adjacent properties.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.936
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Officers maintained verbal commands for the subject to stop and show his hands.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9294
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "An officer fired three rounds when the subject made a threatening movement.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9405
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officers approached and began rendering medical aid.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8997
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "No firearm was recovered from the subject's immediate possession.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9323
+    }
+  ]
+}

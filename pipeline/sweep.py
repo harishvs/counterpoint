@@ -1,7 +1,7 @@
 """Precision/recall/F1 of a swiftpick scan at every conflict threshold, from its saved
 per-chunk probabilities (no model calls).
 
-    python3 -m pipeline.sweep benchmark/predictions/swiftpick/raw
+    python3 -m pipeline.sweep benchmark/predictions/swiftpick/chunk-probs
 
 Claims are matched to the annotations by text (evaluate.py's Jaccard >= 0.3), never by
 claim_id alone: an extractor's own cl-001 is not the annotation's cl-001. Claims taken from
@@ -10,6 +10,10 @@ the annotations ("--claims-from gt") keep their ids and match exactly.
 A threshold picked on the benchmark itself flatters it, so the script also reports a 2-fold
 choice: the threshold that maximizes F1 on the even-numbered scenarios, scored on the odd
 ones, and the other way round.
+
+On this benchmark F1 rewards flagging everything: 57.8% of the claims with video are
+conflicts, so flag-all scores F1 0.733. Compare systems by AUROC
+(benchmark/results/swiftpick-analysis/), not by this curve's best F1.
 """
 
 from __future__ import annotations

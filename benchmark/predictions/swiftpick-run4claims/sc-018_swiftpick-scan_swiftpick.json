@@ -1,0 +1,553 @@
+{
+  "scenario_id": "sc-018",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 84.2,
+  "total_tokens": 458594,
+  "total_api_calls": 40,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: January 8, 2023",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 405.0,
+          "end_seconds": 425.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8685
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 0846 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9245
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Warner Avenue at Red Hill Avenue, Tustin, CA",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 135.0,
+          "end_seconds": 155.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.741
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer D. Brandt",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9181
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 5391",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9306
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Ricardo Flores, Male, 52 years old, Hispanic, grey jacket, black jeans",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9326
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer D. Brandt (handling officer), Officer M. Torres (backup), Officer K. Vega (less-lethal)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9278
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Reporting Party 3 (RP-3, anonymous 9-1-1 caller)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9202
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On Sunday, January 8, 2023, at approximately 0837 hours, the Tustin Police Department received a 9-1-1 call from RP-3 regarding a male Hispanic walking westbound on Warner Avenue at Red Hill Avenue carrying a large knife in his bloody hands.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9258
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I was designated as the handling officer and responded to the location.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9054
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Officer Torres was dispatched as backup.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9333
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Upon arrival at approximately 0846 hours, I parked my patrol vehicle along the east curb of Warner Avenue north of Compass Avenue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9299
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Officer Torres parked directly in front of my vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9364
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I exited my vehicle and drew my service weapon.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 390.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7151
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officer Torres exited his vehicle and also drew his weapon.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9318
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I immediately observed the subject, later identified as Ricardo Flores, walking southbound on the west sidewalk of Warner Avenue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9328
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "The subject was carrying a large knife with a white handle in his right hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9436
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The subject had apparent blood on his hands and clothing.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 270.0,
+          "end_seconds": 290.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.947
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "I called out to the subject, saying \"Hey, man. Have a seat. Have a seat, Dude.\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 390.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9455
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Officer Torres and I then walked into the northbound lanes of Warner Avenue with our handguns drawn.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9191
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "I continued to give verbal commands directing the subject to drop the knife and sit down.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 390.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.948
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The subject did not comply with any commands and continued walking in a southwest direction into the northbound traffic lanes.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 465.0,
+          "end_seconds": 485.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5422
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "At approximately 0847 hours, Officer Vega arrived on scene and was assigned less-lethal coverage.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9194
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Officer Vega parked in the southbound number one lane and drew his service handgun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9325
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "He then holstered his handgun and deployed his Taser.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9284
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Officer Vega began walking parallel to the subject at a distance of approximately 30 feet.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.934
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "At approximately 0847:10 hours, Officer Torres and I continued issuing commands including \"Drop the knife,\" \"Don't come towards us,\" and \"Back up, back up.\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 405.0,
+          "end_seconds": 425.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.819
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "The subject stopped walking and appeared to look directly at Officer Torres.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.934
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "Without warning, the subject turned and sprinted directly toward me from a distance of approximately 32 feet, raising the knife above his head in an overhead stabbing motion.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 240.0,
+          "end_seconds": 260.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5345
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "Officer Vega attempted to deploy his Taser but was unable to get a clear shot due to the subject's sudden movement.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9456
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Fearing for my life and the life of Officer Torres, I discharged my firearm five times at the subject.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 510.0,
+          "end_seconds": 530.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.502
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "Officer Torres simultaneously discharged his firearm five times.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9431
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "The subject fell to the asphalt in the number one lane of northbound Warner Avenue.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 345.0,
+          "end_seconds": 365.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5763
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The entire sequence from the subject's charge to the final shot lasted approximately four seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8797
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "After the subject fell, I observed the knife was still in his right hand.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 480.0,
+          "end_seconds": 500.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8271
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "Officer Vega approached and secured the knife at approximately 0847:44 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.933
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Officer Torres and I holstered our weapons, approached the subject, and began rendering medical aid at approximately 0847:50 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9264
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "I initiated Cardiopulmonary Resuscitation (CPR) at approximately 0848:39 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9302
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Orange County Fire Authority paramedics arrived at approximately 0853 hours and assumed patient care.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.91
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Life-saving measures were discontinued at approximately 0916 hours due to obvious signs of death.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9329
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "A welfare check was subsequently conducted at the subject's last known residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9216
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "No injured parties were found at the location.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 540.0,
+          "end_seconds": 560.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.832
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Subject pronounced deceased on scene.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 555.0,
+          "end_seconds": 575.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.533
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Scene secured for OCDA investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8989
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Welfare check conducted at subject's residence with negative results.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.931
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Body-worn camera footage (Officers Brandt, Torres, and Vega)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8583
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Ten (10) cartridge cases, WIN 9MM LUGER",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9386
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "One (1) large kitchen knife with white handle",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9413
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "One (1) black baseball cap containing a bullet",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9353
+    },
+    {
+      "claim_id": "cl-050",
+      "claim_text": "Clothing items from the subject",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9043
+    },
+    {
+      "claim_id": "cl-051",
+      "claim_text": "Officer Signature: D. Brandt",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9213
+    },
+    {
+      "claim_id": "cl-052",
+      "claim_text": "Date of Report: January 8, 2023",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 405.0,
+          "end_seconds": 425.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8024
+    }
+  ]
+}

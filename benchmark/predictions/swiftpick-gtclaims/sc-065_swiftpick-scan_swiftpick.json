@@ -1,0 +1,160 @@
+{
+  "scenario_id": "sc-065",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 18.12,
+  "total_tokens": 126304,
+  "total_api_calls": 30,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 1300 hours, Deputy N. Robles and I responded to the call.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8905
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I was the primary officer and approached the subject first.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9007
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject was cooperative during initial contact.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 180.0,
+          "end_seconds": 200.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7337
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I gave clear verbal commands for the subject to comply.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 180.0,
+          "end_seconds": 200.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6154
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject made a sudden movement toward his waistband.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8944
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Deputy N. Robles was positioned to my right, approximately ten feet away.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8945
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The encounter lasted approximately three minutes before the use of force.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9048
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "I discharged my firearm in response to an immediate threat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9067
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Medical aid was rendered immediately after the subject was secured.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9177
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Paramedics arrived within approximately five minutes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9249
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "No bystanders were present in the immediate area during the incident.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 285.0,
+          "end_seconds": 305.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6405
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "All evidence was properly collected and secured at the scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9249
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The subject's weapon was recovered at the scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9188
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I activated my body-worn camera prior to the encounter.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8791
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The lighting conditions were adequate for observation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.895
+    }
+  ]
+}

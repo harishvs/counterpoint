@@ -1,0 +1,155 @@
+{
+  "scenario_id": "sc-026",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 26.2,
+  "total_tokens": 171550,
+  "total_api_calls": 37,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "W-1 reported that the subject had pointed a handgun at her inside the residence at 615 South Resh Street, threatened to kill her and the neighbors, and fired a shot inside the home.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9367
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "She stated that the subject owned two firearms and had not been taking his prescribed psychiatric medication.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9456
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "At approximately 0005 hours on March 4, the Tactical Response Group was activated.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9224
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Upon arrival, SWAT officers immediately assumed control of the perimeter and positioned an armored vehicle in front of the residence.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9243
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I was designated as the primary negotiator and began PA announcements at approximately 0210 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9167
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "At approximately 0236 hours, the subject first appeared at the front door. He stepped onto the front porch, yelled at officers, and returned inside after approximately 45 seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9296
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "During the third appearance at 0251 hours, I observed the subject make a finger-gun gesture toward the armored vehicle, which I documented in my notes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.937
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "At approximately 0310 hours, in response to a recorded surrender request from W-1, the subject exited the front door holding what appeared to be an AR-15 style rifle. The subject held the weapon at his side and stood on the porch for approximately 15 seconds before returning inside without pointing the weapon at officers.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 315.0,
+          "end_seconds": 335.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5278
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Immediately after this appearance, at approximately 0312 hours, the subject emerged again holding a small revolver in his left hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9162
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject raised the revolver, pointed it toward the sky, and then lowered it toward the armored vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9369
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "An arrest team approached and found the subject seated against the front wall of the residence with the revolver on the ground beside him.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9237
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officer Hassan deployed a 40 mm Less Lethal round as a precaution.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.938
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Anaheim Fire Department paramedics, who had been staged in the area, were summoned and arrived at approximately 0330 hours. The subject was pronounced deceased at approximately 0342 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9213
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "A search of the residence and porch area recovered one firearm: the .38 caliber Smith and Wesson revolver found beside the subject on the porch. No other firearms were located.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 510.0,
+          "end_seconds": 530.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5423
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The K9 pulled the subject from the porch onto the front lawn.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9322
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "scenario_id": "sc-045",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 21.34,
+  "total_tokens": 160354,
+  "total_api_calls": 30,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: September 23, 2020",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 390.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8272
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately Approximately 1324 hours",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 390.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6248
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: 100 block of Avenida San Pablo, San Clemente, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9024
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Deputy F. Harmon",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9045
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 2876",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9279
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officer(s): Deputy F. Harmon, Deputy J. Calloway",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 20.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5082
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "On September 23, 2020, at approximately 1324 hours, Deputy Calloway and I observed a pedestrian jaywalking across a roadway in the 100 block of Avenida San Pablo, San Clemente.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8926
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "We were in plain clothes driving an unmarked vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8939
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Deputy Calloway was driving.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8766
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "We contacted the subject to discuss the infraction.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8945
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "The subject initially refused to provide identification.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9273
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The subject stated, \"I didn't jaywalk.\"",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 45.0,
+          "end_seconds": 65.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5384
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The subject attempted to walk away.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 135.0,
+          "end_seconds": 155.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6119
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Officers followed on foot, attempting de-escalation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.897
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject stated he did not want to be detained.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9195
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "A physical altercation ensued during which the subject attempted to grab Deputy Calloway's firearm from the holster.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 405.0,
+          "end_seconds": 425.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6292
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "Deputy Calloway yelled for the subject to let go.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8735
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "A bystander was heard calling out \"Shoot him again!\" during the incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9004
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "Deputy Calloway discharged his firearm during the struggle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8989
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Officers immediately began administering CPR.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8842
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Paramedics were summoned to the scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9011
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "Body-worn camera footage",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 45.0,
+          "end_seconds": 65.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8685
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8953
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Officer Signature: Harmon",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9153
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "Date of Report: September 23, 2020",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 15.0,
+          "end_seconds": 35.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7017
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "scenario_id": "sc-023",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 5.6,
+  "total_tokens": 37672,
+  "total_api_calls": 20,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "This entire process took approximately ninety seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8318
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The subject was holding his cell phone and appeared to be texting. I asked the subject to put his phone down, and he placed it on the center console. The subject then reached into a bag of food on his lap and began eating.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9258
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "At approximately 1403 hours, the subject suddenly removed both hands from the dashboard and began reaching rapidly toward the floorboard area on his right side.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 195.0,
+          "end_seconds": 215.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7697
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I immediately gave one verbal command for the subject to show his hands.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9266
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Within two to three seconds of the subject's initial reaching motion, the subject produced a black semi-automatic handgun and began raising it toward me.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9243
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officer Yoon, who was positioned behind the patrol vehicle, discharged his firearm two times nearly simultaneously.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.931
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "A standard semi-automatic pistol with a factory serial number was recovered from the subject's lap. One standard-capacity magazine was found in the weapon.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9469
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Paramedics arrived shortly after and treated the subject for gunshot wounds to his upper torso.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9207
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "After approximately five minutes, K9 Officer Esquerra arrived with his K9 and entered the vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9089
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I observed a black Mercedes Benz with California license plate 8YQZ992 traveling on McClay Street and noted that the registration tags appeared expired.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9529
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "When asked about supervision status, W-1 disclosed he was on AB109.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9353
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The subject was transported to Orange County Global Medical Center and was pronounced deceased at 1502 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.919
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Both officers were wearing standard SAPD polo uniforms with black outer vests marked \"POLICE\" and had body-worn cameras activated.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9196
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I radioed dispatch at approximately 1404 hours to report the shooting.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9301
+    }
+  ]
+}

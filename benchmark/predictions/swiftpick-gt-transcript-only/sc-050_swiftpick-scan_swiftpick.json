@@ -1,0 +1,160 @@
+{
+  "scenario_id": "sc-050",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 27.77,
+  "total_tokens": 189280,
+  "total_api_calls": 100,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "I activated my body-worn camera, identified myself as La Habra Police, and ordered the subject to exit the vehicle.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1170.0,
+          "end_seconds": 1190.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5992
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "K9 Officer Murray arrived and deployed the K9 from the vehicle. Murray positioned himself on the east edge of the gate and began issuing K9 warnings through the PA system.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8811
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Sergeant Lowe arrived on scene and assumed command. Lowe directed officers to deploy OC rounds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8993
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Prior to deploying OC, the subject revved the engine, turned up the radio, and began yelling obscenities in English from the sunroof.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8677
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject then placed the vehicle in reverse and accelerated toward the K9 vehicle and officers positioned behind it.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8964
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "After crashing into the garage bay, the subject drove the Escalade through the metal rollup door and exited onto the street.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 320.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7284
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officers Hartman and Ramos moved to the northwest corner of Alpine and Bedford.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9337
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject raised his right arm toward the passenger-side window.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9125
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Officer Murray fired seven rounds from his Colt AR-15A4 rifle. Sergeant Lowe then fired ten rounds from his Glock 21C.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9252
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Ramos attempted to fire but her weapon malfunctioned.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9081
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I approached the vehicle on foot from the driver's side and observed the subject seated in the driver's seat.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 360.0,
+          "end_seconds": 380.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5259
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "He briefly raised one hand and then closed the window.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9091
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "Officers then observed the Escalade emerge from the garage at high speed and accelerate eastbound on South Bedford Street.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9006
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Officers discovered the business owner, W-1, who had been asleep inside the shop during the entire incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8891
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "At approximately 0301 hours, Sergeant Lowe deployed the first OC round into the vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9046
+    }
+  ]
+}

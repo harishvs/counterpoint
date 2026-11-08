@@ -1,0 +1,160 @@
+{
+  "scenario_id": "sc-028",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 17.31,
+  "total_tokens": 121155,
+  "total_api_calls": 62,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 0045 hours, I was dispatched to a business at 9196 Bolsa Avenue in the City of Westminster regarding an incident of vandalism.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9239
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I arrived on scene at approximately 0055 hours, approximately ten minutes after receiving the dispatch.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9295
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "He stated the subject had left the area roughly twenty minutes before my arrival.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9281
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "He was wearing a gray jacket and blue jeans and carrying a metal pole approximately 30 inches long in his right hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9466
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I drew my service weapon and followed the subject on foot westbound through the alley toward Bolsa Avenue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.919
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Approximately ninety seconds later, Officer Trang arrived at the scene and joined me on foot.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9034
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer Trang and I gave commands in English only throughout the encounter.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 390.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6758
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "The subject remained non-compliant but walked at a slow, steady pace without any aggressive gestures.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 570.0,
+          "end_seconds": 590.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7143
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "The foot pursuit continued westbound on Bolsa Avenue for approximately two blocks over a period of roughly eight minutes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9211
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "He held the pole loosely at waist level. I again commanded the subject to drop the weapon. After a brief pause of approximately fifteen seconds, the subject raised the pole to roughly chest height.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9299
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I discharged my firearm two times.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9295
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officer DeSilva immediately moved in and handcuffed the subject, who was conscious but did not speak.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9205
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "We requested paramedics, who arrived within approximately three minutes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9249
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "The subject survived his injuries, which I understand were limited to a wound to his right arm.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9266
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I exited my vehicle and ordered the subject to stop, drop the weapon, and sit down. The subject refused all commands and walked westbound away from me.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 285.0,
+          "end_seconds": 305.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.743
+    }
+  ]
+}

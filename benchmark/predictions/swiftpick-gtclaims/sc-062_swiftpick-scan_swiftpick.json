@@ -1,0 +1,165 @@
+{
+  "scenario_id": "sc-062",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 19.72,
+  "total_tokens": 132653,
+  "total_api_calls": 31,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 2340 hours, Officer J. Yamada and I responded to the call.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9378
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I was the primary officer and approached the subject first.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9261
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject was cooperative during initial contact.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 435.0,
+          "end_seconds": 455.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.558
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I gave clear verbal commands for the subject to comply.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 435.0,
+          "end_seconds": 455.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8399
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject made a sudden movement toward his waistband.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 420.0,
+          "end_seconds": 440.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9063
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Officer J. Yamada was positioned to my right, approximately ten feet away.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9369
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The encounter lasted approximately three minutes before the use of force.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9332
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "I discharged my firearm in response to an immediate threat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9317
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Medical aid was rendered immediately after the subject was secured.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 435.0,
+          "end_seconds": 455.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5184
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Paramedics arrived within approximately five minutes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9344
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "No bystanders were present in the immediate area during the incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9536
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "All evidence was properly collected and secured at the scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9414
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The subject's weapon was recovered at the scene.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9427
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I activated my body-worn camera prior to the encounter.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9149
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The lighting conditions were adequate for observation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9375
+    }
+  ]
+}

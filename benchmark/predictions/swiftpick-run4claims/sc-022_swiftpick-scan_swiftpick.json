@@ -1,0 +1,455 @@
+{
+  "scenario_id": "sc-022",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 49.46,
+  "total_tokens": 408109,
+  "total_api_calls": 39,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: February 19, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 435.0,
+          "end_seconds": 455.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9294
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 1045 hours",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9285
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Parking lot, La Quinta Inn, 1515 South Coast Drive, Costa Mesa, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9253
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer D. Navarro",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9243
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 3891",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9335
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Ruben Castillo, Male, 34 years old, Hispanic, black jacket, gray plaid shorts",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9306
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer D. Navarro, Officer M. Fuentes",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9308
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Female front-seat passenger (W-1), Male rear-seat passenger (W-2)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9339
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On February 19, 2021, at approximately 1045 hours, Officer Fuentes and I were on patrol assigned to the Community Policing Unit in a marked CMPD patrol vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9105
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "I was operating the vehicle and Officer Fuentes was seated in the front passenger seat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9308
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "At approximately 1045 hours, while conducting a routine patrol of the La Quinta Inn parking lot at 1515 South Coast Drive, I observed an occupied gray 2006 Ford Focus in a marked stall facing north.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9211
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "The subject appeared to be slumped over the steering wheel.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 135.0,
+          "end_seconds": 155.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.738
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I made contact with the subject, later identified as Ruben Castillo.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9346
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I observed a female front-seat passenger (W-1) and a male rear-seat passenger (W-2).",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9309
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "I engaged the subject in conversation for approximately five minutes, during which time Officer Fuentes contacted the passengers.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9249
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "During this conversation, the subject was cooperative and kept his hands visible on the steering wheel as instructed.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 240.0,
+          "end_seconds": 260.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5233
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "I noted that his left hand appeared to have a bandage on it.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.942
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "Officer Fuentes searched W-2 and located drug paraphernalia.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9335
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "Officer Fuentes placed W-2 in handcuffs and directed W-2 to sit on the ground near the rear of the Focus.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9329
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Officer Fuentes then had W-1 exit the vehicle and escorted her to a nearby location for a pat-down search.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9202
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Immediately after W-1 was removed from the vehicle, the subject started the engine and placed the vehicle in reverse.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9184
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "I gave verbal commands for the subject to stop.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 390.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.865
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "The vehicle reversed at a moderate speed, and the rear bumper made brief contact with the front of our patrol vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9387
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "W-2, who was positioned approximately ten feet from the vehicle's path, was not struck during this movement.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9374
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "The subject then placed the vehicle in drive and began moving forward.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9127
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "Officer Fuentes and I discharged our firearms.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9098
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "I fired a total of five rounds toward the vehicle.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 435.0,
+          "end_seconds": 455.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6453
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "Officer Fuentes fired approximately five rounds as well.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9379
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "The encounter from the time the subject started the vehicle until shots were fired lasted approximately forty-five seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9324
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "The vehicle traveled forward an estimated thirty feet before coming to rest.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9415
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "Officer Fuentes and I approached the vehicle and found the subject unresponsive.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9318
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "We removed the subject from the vehicle and began CPR.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9194
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Paramedics from Costa Mesa Fire Department arrived approximately twenty minutes later and transported the subject to Orange County Global Medical Center.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9276
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "The subject was subsequently pronounced deceased.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 555.0,
+          "end_seconds": 575.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7661
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "A subsequent search of the subject's person did not locate any weapons.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.946
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "The vehicle was processed and no firearms were recovered from inside.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9385
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "Subject transported to OCGMC, pronounced deceased.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9096
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "W-2 released at scene without injury.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 555.0,
+          "end_seconds": 575.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6681
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8921
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Body-worn camera footage (approximately 25 minutes)",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8312
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "Cartridge cases recovered from scene",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9208
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "Clothing items from the subject",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.902
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "Vehicle processed for evidence",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9047
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Officer Signature: D. Navarro",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9237
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Date of Report: February 19, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 435.0,
+          "end_seconds": 455.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8827
+    }
+  ]
+}

@@ -1,0 +1,516 @@
+{
+  "scenario_id": "sc-014",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 80.15,
+  "total_tokens": 433855,
+  "total_api_calls": 39,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Date of Incident: August 6, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 390.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8792
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Time of Incident: Approximately 1908 hours",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 360.0,
+          "end_seconds": 380.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.733
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Location: Front entrance, Ridgemont Police Department, 150 North Euclid Street, La Habra, CA",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9212
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "Reporting Officer: Officer L. Castillo",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9152
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Badge Number: 3592",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9445
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Subject: Daniel Kwon, Male, 22 years old, Asian, black T-shirt, black pants, black Converse shoes",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9365
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer(s): Officer L. Castillo, Officer R. Webb",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.926
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Witness(es): Female victim/complainant (W-1, reporting party for tailgating complaint)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 240.0,
+          "end_seconds": 260.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7741
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "On August 6, 2021, at approximately 1905 hours, I was dispatched to the front of the Ridgemont Police Department in response to a report of an aggressive driver who had followed a female motorist (W-1) from the freeway to the station.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9293
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Officer Webb was dispatched simultaneously.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.924
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Each of us drove a separate marked black and white police vehicle and wore department-issued navy-blue uniforms with badges and body-worn cameras.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.923
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officer Webb and I arrived at approximately 1908 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9365
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "I parked behind a dark blue 1998 Toyota Camry that was parked behind W-1's vehicle on the pedestrian sidewalk in front of the station.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9335
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Officer Webb parked his unit behind mine.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9361
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The station lobby was open and staffed at the time of our arrival.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9359
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I approached W-1, who remained seated in her vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9195
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "W-1 stated that a male driving the Toyota had been following her since she exited the northbound 57 freeway at Lambert Road.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9399
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "W-1 stated she recognized the individual as someone she had seen in her neighborhood before.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9451
+    },
+    {
+      "claim_id": "cl-019",
+      "claim_text": "W-1 appeared frightened and was still on the phone with dispatch.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 300.0,
+          "end_seconds": 320.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5969
+    },
+    {
+      "claim_id": "cl-020",
+      "claim_text": "Officer Webb approached the subject, later identified as Daniel Kwon, who was standing at the front entrance of the station near the intercom.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9271
+    },
+    {
+      "claim_id": "cl-021",
+      "claim_text": "Officer Webb asked the subject what was going on.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9305
+    },
+    {
+      "claim_id": "cl-022",
+      "claim_text": "The subject stated he was \"just waiting for a friend.\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9261
+    },
+    {
+      "claim_id": "cl-023",
+      "claim_text": "Officer Webb asked the subject whether he was involved with the vehicles parked in front of the station, and the subject said he was not.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 345.0,
+          "end_seconds": 365.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.7354
+    },
+    {
+      "claim_id": "cl-024",
+      "claim_text": "Officer Webb remained facing the subject and continued to question him.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9188
+    },
+    {
+      "claim_id": "cl-025",
+      "claim_text": "Without warning, the subject produced a firearm from his right jacket pocket, racked the slide, and pointed it at Officer Webb from a distance of approximately 15 feet.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.942
+    },
+    {
+      "claim_id": "cl-026",
+      "claim_text": "I saw the subject raise the weapon and immediately shouted, \"Drop the weapon! Drop it now!\"",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 480.0,
+          "end_seconds": 500.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5246
+    },
+    {
+      "claim_id": "cl-027",
+      "claim_text": "The subject then fired three rounds at Officer Webb.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9359
+    },
+    {
+      "claim_id": "cl-028",
+      "claim_text": "One round struck Officer Webb's ballistic vest in the left upper chest area, causing him to stumble backward but remain standing.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9443
+    },
+    {
+      "claim_id": "cl-029",
+      "claim_text": "I drew my department-issued firearm and fired three rounds at the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9358
+    },
+    {
+      "claim_id": "cl-030",
+      "claim_text": "One round struck the subject in the torso, causing him to fall to the ground.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 525.0,
+          "end_seconds": 545.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6812
+    },
+    {
+      "claim_id": "cl-031",
+      "claim_text": "After the subject fell, I maintained my position and continued to issue commands for the subject to drop the firearm and show his hands.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.933
+    },
+    {
+      "claim_id": "cl-032",
+      "claim_text": "At approximately 1910 hours, I radioed that a suspect was down and that Officer Webb had been struck.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9312
+    },
+    {
+      "claim_id": "cl-033",
+      "claim_text": "Additional officers arrived at approximately 1911 hours to render aid to Officer Webb.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9339
+    },
+    {
+      "claim_id": "cl-034",
+      "claim_text": "Officers formulated a plan to approach the subject, and at approximately 1916 hours, the subject was disarmed, moved to the sidewalk, and handcuffed.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9276
+    },
+    {
+      "claim_id": "cl-035",
+      "claim_text": "At approximately 1920 hours, paramedics from the Los Angeles County Fire Department arrived and determined the subject had no pulse or respiration.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 540.0,
+          "end_seconds": 560.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6054
+    },
+    {
+      "claim_id": "cl-036",
+      "claim_text": "The subject was pronounced deceased at approximately 1926 hours.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 540.0,
+          "end_seconds": 560.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6706
+    },
+    {
+      "claim_id": "cl-037",
+      "claim_text": "A subsequent search recovered two firearms from the subject's person: a Glock-style 9mm semi-automatic pistol with no serial number and a .40 caliber Glock semi-automatic pistol with a mounted flashlight.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9373
+    },
+    {
+      "claim_id": "cl-038",
+      "claim_text": "Body-worn camera footage (approximately 35 minutes)",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 525.0,
+          "end_seconds": 545.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5651
+    },
+    {
+      "claim_id": "cl-039",
+      "claim_text": "Five (5) .40 caliber cartridge cases, headstamped \"FEDERAL 40 S&W\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9351
+    },
+    {
+      "claim_id": "cl-040",
+      "claim_text": "Two (2) 9mm cartridge cases, headstamped \"WIN 9mm LUGER\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9385
+    },
+    {
+      "claim_id": "cl-041",
+      "claim_text": "One (1) Glock-style 9mm pistol, no serial number",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "cl-042",
+      "claim_text": "One (1) Glock .40 caliber semi-automatic pistol with flashlight",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9417
+    },
+    {
+      "claim_id": "cl-043",
+      "claim_text": "One (1) iPhone",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9302
+    },
+    {
+      "claim_id": "cl-044",
+      "claim_text": "Officer Webb's uniform with apparent blood",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9087
+    },
+    {
+      "claim_id": "cl-045",
+      "claim_text": "Subject pronounced deceased on scene.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 375.0,
+          "end_seconds": 395.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5489
+    },
+    {
+      "claim_id": "cl-046",
+      "claim_text": "Officer Webb transported for medical treatment of gunshot wound to chest.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 540.0,
+          "end_seconds": 560.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.521
+    },
+    {
+      "claim_id": "cl-047",
+      "claim_text": "Scene secured for investigation.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.899
+    },
+    {
+      "claim_id": "cl-048",
+      "claim_text": "Officer Signature: L. Castillo",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9268
+    },
+    {
+      "claim_id": "cl-049",
+      "claim_text": "Date of Report: August 6, 2021",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 390.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.822
+    }
+  ]
+}

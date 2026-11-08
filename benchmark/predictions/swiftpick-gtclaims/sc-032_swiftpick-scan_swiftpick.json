@@ -1,0 +1,155 @@
+{
+  "scenario_id": "sc-032",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 30.14,
+  "total_tokens": 174437,
+  "total_api_calls": 39,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 1920 hours, Officer Corbin and I were dispatched to the front of the Ridgemont Police Department following a 9-1-1 call from a female motorist.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9257
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "Communications advised that the caller had been followed for approximately five minutes from the 57 freeway.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9288
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Officer Corbin and I responded in a single marked patrol vehicle, with Officer Corbin driving and myself in the passenger seat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.937
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject was already inside the station lobby speaking with the front desk clerk when we made entry.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 270.0,
+          "end_seconds": 290.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6107
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I contacted the subject first and asked him to step outside.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9367
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject was cooperative and calmly walked outside with me.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 480.0,
+          "end_seconds": 500.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6059
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject identified himself and stated that he had followed W-1 because she had cut him off on the freeway and he wanted to exchange insurance information.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9351
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer Corbin spent approximately ten minutes taking W-1's statement before joining me with the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9404
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I then turned my back to the subject briefly to radio dispatch with an update.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9059
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "During this time, Officer Corbin maintained visual contact with the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9254
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "After a brief standoff lasting approximately thirty seconds, the subject raised the firearm and fired a single shot that struck the pavement near my feet.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9392
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "I returned fire, discharging two rounds. Simultaneously, Officer Corbin discharged one round.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9366
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "We began CPR within approximately one minute of the shooting.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9316
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "Paramedics from the La Habra Fire Department arrived within five minutes and transported the subject to a local hospital, where he was pronounced deceased approximately two hours later.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9336
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "One firearm was recovered from the subject: a .40 caliber Glock semi-automatic pistol.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.95
+    }
+  ]
+}

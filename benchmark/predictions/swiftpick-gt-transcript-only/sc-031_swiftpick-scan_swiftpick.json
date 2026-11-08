@@ -1,0 +1,202 @@
+{
+  "scenario_id": "sc-031",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 27.88,
+  "total_tokens": 217472,
+  "total_api_calls": 94,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "At approximately 0115 hours, I was patrolling the rear parking lot.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.911
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I observed a silver two-door Honda Civic parked behind the Total Woman Gym in the southernmost stall near the dumpster enclosure.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9486
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The vehicle was parked facing east.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9603
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The Patrol Video System in my vehicle was also recording during this incident.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.8983
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject refused to open the door or roll down the window for approximately two minutes.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 390.0,
+          "end_seconds": 410.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5547
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "At approximately 0117 hours, I radioed dispatch that I was conducting a vehicle check and requested Code 1 assistance.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9333
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "Officer Rojas arrived on scene within approximately two minutes of my Code 1 request and positioned Unit #13 behind my vehicle, approximately thirty feet from the Honda.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9264
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer Rojas agreed we should proceed immediately.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1260.0,
+          "end_seconds": 1280.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6136
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "Sergeant Torres and additional officers arrived approximately fifteen minutes after my initial contact.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9371
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Dispatch advised that the Honda was registered to the subject and that the subject had no prior criminal history.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9515
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Officer Herrera began giving the subject commands in both English and Spanish for approximately ninety seconds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9201
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Officer Dunn fired the first 40mm Less Lethal projectile into the passenger side window, shattering the glass.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 705.0,
+          "end_seconds": 725.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5352
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The round struck the front bumper of Unit #13.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9417
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I observed the subject seated in the driver's seat.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 165.0,
+          "end_seconds": 185.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9173
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officers immediately began administering CPR.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 1320.0,
+          "end_seconds": 1340.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8804
+    },
+    {
+      "claim_id": "cl-016",
+      "claim_text": "I was wearing a PPD uniform with a Body Worn Camera activated throughout.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 270.0,
+          "end_seconds": 290.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6483
+    },
+    {
+      "claim_id": "cl-017",
+      "claim_text": "Officer Rojas arrived on scene within approximately two minutes of my Code 1 request and positioned Unit #13 behind my vehicle, approximately thirty feet from the Honda.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9264
+    },
+    {
+      "claim_id": "cl-018",
+      "claim_text": "The subject was pronounced deceased at approximately 0150 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9293
+    }
+  ]
+}

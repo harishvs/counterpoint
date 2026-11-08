@@ -1,0 +1,155 @@
+{
+  "scenario_id": "sc-024",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 44.87,
+  "total_tokens": 266329,
+  "total_api_calls": 59,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "The residence is subject to an active domestic violence restraining order prohibiting a former partner from approaching within 50 yards.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9507
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The subject responded that he was visiting a friend and that she had invited him over.",
+      "evidence_relationship": "potential_conflict",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 600.0,
+          "end_seconds": 620.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5622
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Officer Pruitt arrived on scene approximately four minutes after I made initial contact with the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9462
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "The subject paused momentarily and faced me, then turned and entered the enclosed patio area. At that point, I warned the subject I would deploy my Taser.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 750.0,
+          "end_seconds": 770.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.8614
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "I deployed my Taser, striking the subject in the upper back. The subject fell forward onto his stomach on the patio floor.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9341
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "Immediately after the Taser deployment, Officer Pruitt advanced to the patio threshold.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9311
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject rolled from his stomach to his back, reached toward his left hip, and produced a black handgun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9321
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "Officer Pruitt, fearing for my safety, discharged his firearm, firing seven rounds. I simultaneously transitioned from my Taser to my duty weapon and discharged nine rounds.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9334
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "During this time, the subject was heard to say, \"Just let me die.\"",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.906
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject's movements near the weapon continued intermittently for approximately three minutes before additional units arrived.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9325
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Officer Holt arrived at approximately 2143 hours and secured the handgun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9326
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "Sixteen (16) cartridge cases, WIN 9MM LUGER",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9372
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "OCFA Engine 84 arrived at approximately 2148 hours and transported the subject to UCI Medical Center.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9269
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I was dispatched to the location and arrived at approximately 2140 hours, ahead of Officer Pruitt.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.937
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject was pronounced deceased at approximately 2232 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9244
+    }
+  ]
+}

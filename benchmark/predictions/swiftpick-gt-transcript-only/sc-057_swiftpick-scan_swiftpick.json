@@ -1,0 +1,150 @@
+{
+  "scenario_id": "sc-057",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 10.29,
+  "total_tokens": 74624,
+  "total_api_calls": 39,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "I observed an occupied silver 2006 Ford Focus in a marked parking stall.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9405
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "The subject was seated in the driver's seat with his head resting on the steering wheel.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9302
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "The subject's left hand appeared to be wrapped in some kind of cloth.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9426
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "W-1 mentioned the subject had injured his hand.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9349
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "Officer Malone contacted the occupants on the passenger side.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9379
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The vehicle accelerated backward rapidly.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9388
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The left rear tire of the Focus struck W-2, who was still handcuffed and seated on the ground.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9205
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "W-2 was dragged approximately five feet before the vehicle's rear bumper struck our patrol car.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9394
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I discharged my firearm three times toward the subject through the driver's side window.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9284
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "Simultaneously, Officer Malone discharged his firearm seven times through the windshield.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9287
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Costa Mesa Fire Department paramedics arrived and transported the subject to Orange County Global Medical Center.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9252
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "W-2 was transported to the same facility for treatment of injuries sustained when the vehicle ran over him.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9289
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "A Hellcat .380 semi-automatic handgun was recovered from the left pocket of the subject's jacket.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9458
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I asked the subject to keep his hands on the steering wheel.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 420.0,
+          "end_seconds": 440.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.9214
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "The subject was fidgeting and repeatedly moved his right hand toward the center console area and his waistband.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9337
+    }
+  ]
+}

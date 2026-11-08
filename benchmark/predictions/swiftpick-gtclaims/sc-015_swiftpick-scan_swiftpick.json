@@ -1,0 +1,141 @@
+{
+  "scenario_id": "sc-015",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 33.71,
+  "total_tokens": 180912,
+  "total_api_calls": 42,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "I was on the far north side of the city at the time of the broadcast.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9256
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I observed a grey Chevrolet Suburban being pursued southbound by Officer Fuentes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.942
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "Due to damage to Officer Fuentes's vehicle from a prior attempted vehicle stop, I assumed the lead position.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9266
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "At the time I became lead vehicle, the subject had been pursued with continuously activated lights and sirens for over seven minutes.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.936
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject turned into the Buena Park Unified School District Office parking lot, driving through the closed entry gate and dislodging it from its hinges.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9148
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "The subject's vehicle collided with a parked vehicle at low speed before coming to a complete stop.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9391
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The subject remained seated inside the vehicle for approximately thirty seconds before exiting.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9346
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "I observed him holding a handgun in his left hand.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 510.0,
+          "end_seconds": 530.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.5839
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I discharged my firearm thirteen times at the subject.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.938
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The subject walked toward us for several seconds while pointing his weapon before falling to the ground.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9363
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "I immediately requested medical assistance via radio at 1408 hours.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9417
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "It should be noted that the child passenger had already been removed from the bus prior to the shooting at the school district parking lot. W-1 had dropped the child at a school earlier on her route, and the bus was empty at the time the subject fired his weapon at it on Orangethorpe Avenue.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9378
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "He was wearing a black T-shirt, blue jeans, a load bearing vest with a BPPD badge and a large cloth patch that said 'Police' on the front.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9295
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I was aware from radio traffic that the subject had fired at a school bus carrying children and that the subject was armed with a handgun.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9337
+    }
+  ]
+}

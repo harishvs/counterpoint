@@ -1,0 +1,150 @@
+{
+  "scenario_id": "sc-052",
+  "model": "swiftpick-30B-A3B",
+  "pipeline": "swiftpick-scan",
+  "processing_time_seconds": 10.43,
+  "total_tokens": 75443,
+  "total_api_calls": 39,
+  "claims": [
+    {
+      "claim_id": "cl-001",
+      "claim_text": "Officer Pham was driving the patrol vehicle and I was seated in the front passenger seat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9296
+    },
+    {
+      "claim_id": "cl-002",
+      "claim_text": "I located an occupied gray 2006 Ford Focus parked in a marked parking stall facing south.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9448
+    },
+    {
+      "claim_id": "cl-003",
+      "claim_text": "I observed three additional occupants: W-1 in the front passenger seat and W-2 in the left rear seat.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9354
+    },
+    {
+      "claim_id": "cl-004",
+      "claim_text": "I observed the subject's right hand was bandaged.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.94
+    },
+    {
+      "claim_id": "cl-005",
+      "claim_text": "The subject repeatedly moved his left hand toward the center console, his waistband, and the area of his left leg.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9339
+    },
+    {
+      "claim_id": "cl-006",
+      "claim_text": "W-2 was seated on the asphalt behind the right rear bumper of the Ford Focus.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9316
+    },
+    {
+      "claim_id": "cl-007",
+      "claim_text": "The right rear tire ran over W-2's handcuffed hands.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.935
+    },
+    {
+      "claim_id": "cl-008",
+      "claim_text": "W-2 was then struck by the open passenger door and front left tire.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9257
+    },
+    {
+      "claim_id": "cl-009",
+      "claim_text": "I fired three times and Officer Pham fired twice.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9303
+    },
+    {
+      "claim_id": "cl-010",
+      "claim_text": "The left rear bumper of the Ford Focus struck the right front bumper of our parked police vehicle.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9433
+    },
+    {
+      "claim_id": "cl-011",
+      "claim_text": "Officer Pham fired three additional times through the windshield. I fired once toward the subject from the driver side.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.928
+    },
+    {
+      "claim_id": "cl-012",
+      "claim_text": "A Hellcat .380 semi-automatic handgun was located in the right pocket of the subject's jacket.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9492
+    },
+    {
+      "claim_id": "cl-013",
+      "claim_text": "The handgun contained a loaded magazine with one round in the chamber.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9515
+    },
+    {
+      "claim_id": "cl-014",
+      "claim_text": "I observed the subject seated in the driver seat with his head slumped forward on the steering wheel.",
+      "evidence_relationship": "supported",
+      "retrieval_status": "retrieved",
+      "evidence_references": [
+        {
+          "start_seconds": 135.0,
+          "end_seconds": 155.0
+        }
+      ],
+      "evidence_observations": "",
+      "confidence": 0.6478
+    },
+    {
+      "claim_id": "cl-015",
+      "claim_text": "Officers provided CPR until Costa Mesa Fire Department paramedics arrived.",
+      "evidence_relationship": "ambiguous_or_insufficient",
+      "retrieval_status": "not_retrieved",
+      "evidence_references": [],
+      "evidence_observations": "",
+      "confidence": 0.9224
+    }
+  ]
+}
