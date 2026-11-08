@@ -249,7 +249,8 @@ def run_swiftpick_scan(scenario_id: str, config: PipelineConfig, args) -> Scenar
     claims = load_claims(scenario_id, args.claims_from, config)
     print(f"  [{scenario_id}] {len(claims)} claims from {args.claims_from}")
     raw = scan(claims, video_path, transcript_path, client, config.evidence_dir / "chunks-swiftpick",
-               length=args.chunk_seconds, stride=args.stride, with_audio=not args.no_audio)
+               length=args.chunk_seconds, stride=args.stride, with_audio=not args.no_audio,
+               with_video=not args.no_video)
     raw["scenario_id"], raw["claims_from"] = scenario_id, args.claims_from
     raw_dir = args.out / "raw"
     raw_dir.mkdir(parents=True, exist_ok=True)
@@ -293,6 +294,8 @@ def main():
     parser.add_argument("--stride", type=float, default=15.0)
     parser.add_argument("--no-audio", action="store_true",
                         help="swiftpick-scan: do not send each chunk's audio")
+    parser.add_argument("--no-video", action="store_true",
+                        help="swiftpick-scan: do not send the video (transcript and audio only)")
     parser.add_argument("--conflict-threshold", type=float, default=0.5)
     parser.add_argument("--shard", help='with --all: "i/n", run every n-th scenario from the i-th')
     parser.add_argument("--out", type=Path, default=PREDICTIONS_DIR)

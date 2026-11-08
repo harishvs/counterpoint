@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import base64
 import json
+import os
 import subprocess
 import urllib.error
 import urllib.request
@@ -88,16 +89,23 @@ def cut_chunk(video: Path, start: float, end: float, out_dir: Path,
     run = lambda *args: subprocess.run(  # noqa: E731
         ["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{start:.3f}", "-i", str(video),
          "-t", f"{end - start:.3f}", *args], capture_output=True, timeout=180)
+    # Written to a private name, then renamed: shards that share a video cut the same chunks.
+    tmp = out_dir / f".{stem}.{os.getpid()}"
     if not mp4.exists():
         r = run("-an", "-vf", f"scale=-2:{FRAME_HEIGHT}", "-c:v", "libx264",
-                "-preset", "veryfast", "-crf", "23", str(mp4))
+                "-preset", "veryfast", "-crf", "23", "-f", "mp4", f"{tmp}.mp4")
         if r.returncode:
-            mp4.unlink(missing_ok=True)
+            Path(f"{tmp}.mp4").unlink(missing_ok=True)
             return None, None
-    if with_audio and not wav.exists():
-        r = run("-vn", "-ac", "1", "-ar", "16000", str(wav))
-        if r.returncode or wav.stat().st_size < 3200 + 44:  # no audio track, or < 0.1 s
-            wav.unlink(missing_ok=True)
+        os.replace(f"{tmp}.mp4", mp4)
+    if with_audio and not wav.exists() and not (out_dir / f"{stem}.noaudio").exists():
+        r = run("-vn", "-ac", "1", "-ar", "16000", "-f", "wav", f"{tmp}.wav")
+        size = Path(f"{tmp}.wav").stat().st_size if Path(f"{tmp}.wav").exists() else 0
+        if r.returncode or size < 3200 + 44:  # no audio track, or under 0.1 s
+            Path(f"{tmp}.wav").unlink(missing_ok=True)
+            (out_dir / f"{stem}.noaudio").touch()
+        else:
+            os.replace(f"{tmp}.wav", wav)
     return mp4, (wav if with_audio and wav.exists() else None)
 
 
@@ -115,7 +123,8 @@ def _questions(claims: list[ExtractedClaim]) -> dict:
 
 def scan(claims: list[ExtractedClaim], video: Path, transcript: Path | None,
          client: SwiftpickClient, chunk_dir: Path, length: float = CHUNK_SECONDS,
-         stride: float = STRIDE_SECONDS, with_audio: bool = True) -> dict:
+         stride: float = STRIDE_SECONDS, with_audio: bool = True,
+         with_video: bool = True) -> dict:
     """Ask every claim of every chunk; returns the raw per-chunk probabilities."""
     duration = get_video_duration(video)
     chunks = []
@@ -136,7 +145,7 @@ def scan(claims: list[ExtractedClaim], video: Path, transcript: Path | None,
                  f"Transcript of this segment:\n"
                  f"{get_transcript_segment(transcript, start, end)}")
         try:
-            out = client.ask(state, questions, videos=[mp4.read_bytes()],
+            out = client.ask(state, questions, videos=[mp4.read_bytes()] if with_video else [],
                              audio=[wav.read_bytes()] if wav else [])
             entry["probs"] = {cid: a["probabilities"] for cid, a in out["answers"].items()}
         except Exception as e:  # recorded, not fatal: the claim keeps its other chunks
@@ -146,7 +155,7 @@ def scan(claims: list[ExtractedClaim], video: Path, transcript: Path | None,
             print(f"    chunk {i + 1}/{len(bounds)}", flush=True)
     return {
         "video": video.name, "duration": duration, "chunk_seconds": length,
-        "stride_seconds": stride, "with_audio": with_audio,
+        "stride_seconds": stride, "with_audio": with_audio, "with_video": with_video,
         "claims": [{"claim_id": c.claim_id, "claim_text": c.claim_text} for c in claims],
         "chunks": chunks,
     }
